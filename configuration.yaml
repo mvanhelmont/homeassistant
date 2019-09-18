@@ -37,8 +37,8 @@ shell_command:
 weather:
   - platform: buienradar
     forecast: true
-    latitude: 52.370216
-    longitude: 4.895168
+    latitude: !secret lat
+    longitude: !secret lon
 
 homeassistant:
   customize: !include customize.yaml
@@ -89,9 +89,7 @@ alexa_media:
   accounts:
     - email: !secret amazon_user
       password: !secret amazon_password
-      url: amazon.co.uk
-#      exclude_devices:
-#        - "Alexa on this Phone"
+      url: !secret amazon_url
 
 binary_sensor: !include config/binary_sensors.yaml
 zone: !include config/zones.yaml
@@ -106,7 +104,3 @@ media_player: !include_dir_list config/media_players/
 input_boolean: !include_dir_merge_named config/input_boolean/
 light: !include_dir_merge_list config/light/
 alexa: !include config/alexa.yaml
-
-#input_select: !include_dir_merge_named config/input_select/
-#mqtt: !include config/mqtt.yaml
-

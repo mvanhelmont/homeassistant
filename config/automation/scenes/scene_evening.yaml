@@ -111,7 +111,7 @@
     entity_id: script.alexa_speak_engine
     data_template:
       variables:
-        volume: '03'
+        volume: '0.3'
         message: >
           {{ [
           "The sun is down, so the romantic evening is started!",
