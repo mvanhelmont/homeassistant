@@ -99,9 +99,25 @@
 #        - media_player.modipu
 #      message: The scene evening is activated! 
 
+#  - service: script.turn_on
+#    entity_id: script.alexa_speak_engine
+#    data:
+#      variables:
+#        message: 'The sun is below horizon. The Scene evening is activated'
+#        volume: '0.2' 
+
+
   - service: script.turn_on
     entity_id: script.alexa_speak_engine
-    data:
+    data_template:
       variables:
-        message: 'The sun is below horizon. The Scene evening is activated'
-        volume: '0.2' 
+        volume: '03'
+        message: >
+          {{ [
+          "The sun is down, so the romantic evening is started!",
+          "The sunset has begun, i turn on the lights for you",
+          "I think it will begun dark inside the house, let me turn on the lights",
+          "Make some tea, i will help you with the lights",
+          "Sun?, sun?, wherever you are? Ill turn on the lights inside",
+          "There are no lights on! so let me do it for you!"
+          ] | random }} 
