@@ -1,0 +1,18 @@
+- alias: Backup -  HA on Monday and Saterday
+  initial_state: true
+  trigger:
+    - platform: time
+      at: '04:00:00'
+  condition:
+    - condition: time
+      weekday:
+        - mon
+        - sat
+  action:
+    - service: hassio.snapshot_full
+      data_template:
+        name: Full_Backup_{{ now().strftime('%Y%m%d') }} 
+
+    - service: notify.pushover
+      data_template:
+        message: "HASS backup has run. the snapshot name is ---->  Full_Backup_{{ now().strftime('%Y%m%d') }} "

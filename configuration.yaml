@@ -85,6 +85,14 @@ panel_iframe:
     icon: mdi:bus
     url: 'https://9292.nl/amsterdam/tramhalte-metrostation-de-boelelaan-vu'
 
+alexa_media:
+  accounts:
+    - email: !secret amazon_user
+      password: !secret amazon_password
+      url: amazon.co.uk
+#      exclude_devices:
+#        - "Alexa on this Phone"
+
 binary_sensor: !include config/binary_sensors.yaml
 zone: !include config/zones.yaml
 homekit: !include config/homekit.yaml

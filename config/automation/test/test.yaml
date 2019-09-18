@@ -5,7 +5,9 @@
       to: 'on'
  
   action:
-    - service: light.turn_on
-      entity_id: light.dressoir_all
+    - service: script.turn_on
+      entity_id: script.alexa_speak_engine
       data:
-        flash: long
+        variables:
+          message: 'test script to speech'
+          volume: '0.2'

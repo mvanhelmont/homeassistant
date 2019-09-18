@@ -93,8 +93,15 @@
         {% else %} 50
         {% endif %}
 
-  - service: tts.google_translate_say
+#  - service: tts.google_translate_say
+#    data:
+#      entity_id:
+#        - media_player.modipu
+#      message: The scene evening is activated! 
+
+  - service: script.turn_on
+    entity_id: script.alexa_speak_engine
     data:
-      entity_id:
-        - media_player.modipu
-      message: The scene evening is activated! 
+      variables:
+        message: 'The sun is below horizon. The Scene evening is activated'
+        volume: '0.2' 
