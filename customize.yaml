@@ -1,0 +1,528 @@
+zwave.aeon_labs_zw090_z_stick_gen5_eu:
+  friendly_name: Aeon Zwave Gen5
+  homebridge_name: Aeon Zwave Gen5
+weather.br_unknown_station:
+  friendly_name: Buienradar Schiphol Meetpunt
+
+zwave.node_2:
+  friendly_name: Neo Switch iMac
+sensor.node_2_alarm_level:
+  friendly_name: Neo Switch iMac Alarm Level
+sensor.node_2_alarm_type:
+  friendly_name: Neo Switch iMac Alarm Type
+sensor.node_2_current:
+  friendly_name: Neo Switch iMac Current Amp
+sensor.node_2_energy:
+  friendly_name: Neo Switch iMac kWh
+sensor.node_2_exporting:
+  friendly_name: Neo Switch iMac Export
+sensor.node_2_interval:
+  friendly_name: Neo Switch iMac Interval 1
+sensor.node_2_interval_2:
+  friendly_name: Neo Switch iMac Interval 2
+sensor.node_2_interval_3:
+  friendly_name: Neo Switch iMac Interval 3
+sensor.node_2_interval_4:
+  friendly_name: Neo Switch iMac Interval 4
+sensor.node_2_power:
+  friendly_name: Neo Switch iMac Current Watt
+sensor.node_2_power_management:
+  friendly_name: Neo Switch iMac Power Man
+sensor.node_2_previous_reading:
+  friendly_name: Neo Switch iMac Watt 1
+sensor.node_2_previous_reading_2:
+  friendly_name: Neo Switch iMac Watt 2
+sensor.node_2_previous_reading_3:
+  friendly_name: Neo Switch iMac Voltage History
+sensor.node_2_previous_reading_4:
+  friendly_name: Neo Switch iMac Amp Histroy
+sensor.node_2_sourcenodeid:
+  friendly_name: Neo Switch iMac SourceID
+sensor.node_2_voltage:
+  friendly_name: Neo Switch iMac Voltage
+switch.node_2_switch:
+  friendly_name: Neo Switch iMac Switch
+
+zwave.node_5:
+  friendly_name: Neo Switch Kay
+sensor.node_5_alarm_level:
+  friendly_name: Neo Switch Kay Alarm Level
+sensor.node_5_alarm_type:
+  friendly_name: Neo Switch Kay Alarm Type
+sensor.node_5_current:
+  friendly_name: Neo Switch Kay Current Amp
+sensor.node_5_energy:
+  friendly_name: Neo Switch Kay kWh
+sensor.node_5_exporting:
+  friendly_name: Neo Switch Kay Export
+sensor.node_5_interval:
+  friendly_name: Neo Switch Kay Interval 1
+sensor.node_5_interval_2:
+  friendly_name: Neo Switch Kay Interval 2
+sensor.node_5_interval_3:
+  friendly_name: Neo Switch Kay Interval 3
+sensor.node_5_interval_4:
+  friendly_name: Neo Switch Kay Interval 4
+sensor.node_5_power:
+  friendly_name: Neo Switch Kay Current Watt
+sensor.node_5_power_management:
+  friendly_name: Neo Switch Kay Power Man
+sensor.node_5_previous_reading:
+  friendly_name: Neo Switch Kay Watt 1
+sensor.node_5_previous_reading_2:
+  friendly_name: Neo Switch Kay Watt 2
+sensor.node_5_previous_reading_3:
+  friendly_name: Neo Switch Kay Voltage History
+sensor.node_5_previous_reading_4:
+  friendly_name: Neo Switch Kay Amp Histroy
+sensor.node_5_sourcenodeid:
+  friendly_name: Neo Switch Kay SourceID
+sensor.node_5_voltage:
+  friendly_name: Neo Switch Kay Voltage
+switch.node_5_switch:
+  friendly_name: Neo Switch Kay Switch
+
+zwave.node_6:
+  friendly_name: Neo Switch Peter
+sensor.node_6_alarm_level:
+  friendly_name: Neo Switch Peter Alarm Level
+sensor.node_6_alarm_type:
+  friendly_name: Neo Switch Peter Alarm Type
+sensor.node_6_current:
+  friendly_name: Neo Switch Peter Current Amp
+sensor.node_6_energy:
+  friendly_name: Neo Switch Peter kWh
+sensor.node_6_exporting:
+  friendly_name: Neo Switch Peter Export
+sensor.node_6_interval:
+  friendly_name: Neo Switch Peter Interval 1
+sensor.node_6_interval_2:
+  friendly_name: Neo Switch Peter Interval 2
+sensor.node_6_interval_3:
+  friendly_name: Neo Switch Peter Interval 3
+sensor.node_6_interval_4:
+  friendly_name: Neo Switch Peter Interval 4
+sensor.node_6_power:
+  friendly_name: Neo Switch Peter Current Watt
+sensor.node_6_power_management:
+  friendly_name: Neo Switch Peter Power Man
+sensor.node_6_previous_reading:
+  friendly_name: Neo Switch Peter Watt 1
+sensor.node_6_previous_reading_2:
+  friendly_name: Neo Switch Peter Watt 2
+sensor.node_6_previous_reading_3:
+  friendly_name: Neo Switch Peter Voltage History
+sensor.node_6_previous_reading_4:
+  friendly_name: Neo Switch Peter Amp Histroy
+sensor.node_6_sourcenodeid:
+  friendly_name: Neo Switch Peter SourceID
+sensor.node_6_voltage:
+  friendly_name: Neo Switch Peter Voltage
+switch.node_6_switch:
+  friendly_name: Neo Switch Peter Switch
+
+zwave.node_7:
+  friendly_name: Neo Switch Coffee
+sensor.node_7_alarm_level:
+  friendly_name: Neo Switch Coffee Alarm Level
+sensor.node_7_alarm_type:
+  friendly_name: Neo Switch Coffee Alarm Type
+sensor.node_7_current:
+  friendly_name: Neo Switch Coffee Current Amp
+sensor.node_7_energy:
+  friendly_name: Neo Switch Coffee kWh
+sensor.node_7_exporting:
+  friendly_name: Neo Switch Coffee Export
+sensor.node_7_interval:
+  friendly_name: Neo Switch Coffee Interval 1
+sensor.node_7_interval_2:
+  friendly_name: Neo Switch Coffee Interval 2
+sensor.node_7_interval_3:
+  friendly_name: Neo Switch Coffee Interval 3
+sensor.node_7_interval_4:
+  friendly_name: Neo Switch Coffee Interval 4
+sensor.node_7_power:
+  friendly_name: Neo Switch Coffee Current Watt
+sensor.node_7_power_management:
+  friendly_name: Neo Switch Coffee Power Man
+sensor.node_7_previous_reading:
+  friendly_name: Neo Switch Coffee Watt 1
+sensor.node_7_previous_reading_2:
+  friendly_name: Neo Switch Coffee Watt 2
+sensor.node_7_previous_reading_3:
+  friendly_name: Neo Switch Coffee Voltage History
+sensor.node_7_previous_reading_4:
+  friendly_name: Neo Switch Coffee Amp Histroy
+sensor.node_7_sourcenodeid:
+  friendly_name: Neo Switch Coffee SourceID
+sensor.node_7_voltage:
+  friendly_name: Neo Switch Coffee Voltage
+switch.node_7_switch:
+  friendly_name: Neo Switch Coffee Switch
+
+zwave.node_8:
+  friendly_name: Neo Switch Bank
+sensor.node_8_alarm_level:
+  friendly_name: Neo Switch Bank Alarm Level
+sensor.node_8_alarm_type:
+  friendly_name: Neo Switch Bank Alarm Type
+sensor.node_8_current:
+  friendly_name: Neo Switch Bank Current Amp
+sensor.node_8_energy:
+  friendly_name: Neo Switch Bank kWh
+sensor.node_8_exporting:
+  friendly_name: Neo Switch Bank Export
+sensor.node_8_interval:
+  friendly_name: Neo Switch Bank Interval 1
+sensor.node_8_interval_2:
+  friendly_name: Neo Switch Bank Interval 2
+sensor.node_8_interval_3:
+  friendly_name: Neo Switch Bank Interval 3
+sensor.node_8_interval_4:
+  friendly_name: Neo Switch Bank Interval 4
+sensor.node_8_power:
+  friendly_name: Neo Switch Bank Current Watt
+sensor.node_8_power_management:
+  friendly_name: Neo Switch Bank Power Man
+sensor.node_8_previous_reading:
+  friendly_name: Neo Switch Bank Watt 1
+sensor.node_8_previous_reading_2:
+  friendly_name: Neo Switch Bank Watt 2
+sensor.node_8_previous_reading_3:
+  friendly_name: Neo Switch Bank Voltage History
+sensor.node_8_previous_reading_4:
+  friendly_name: Neo Switch Bank Amp Histroy
+sensor.node_8_sourcenodeid:
+  friendly_name: Neo Switch Bank SourceID
+sensor.node_8_voltage:
+  friendly_name: Neo Switch Bank Voltage
+switch.node_8_switch:
+  friendly_name: Neo Switch Bank Switch
+
+zwave.node_9:
+  friendly_name: Neo Switch Hall
+sensor.node_9_alarm_level:
+  friendly_name: Neo Switch Hall Alarm Level
+sensor.node_9_alarm_type:
+  friendly_name: Neo Switch Hall Alarm Type
+sensor.node_9_current:
+  friendly_name: Neo Switch Hall Current Amp
+sensor.node_9_energy:
+  friendly_name: Neo Switch Hall kWh
+sensor.node_9_exporting:
+  friendly_name: Neo Switch Hall Export
+sensor.node_9_interval:
+  friendly_name: Neo Switch Hall Interval 1
+sensor.node_9_interval_2:
+  friendly_name: Neo Switch Hall Interval 2
+sensor.node_9_interval_3:
+  friendly_name: Neo Switch Hall Interval 3
+sensor.node_9_interval_4:
+  friendly_name: Neo Switch Hall Interval 4
+sensor.node_9_power:
+  friendly_name: Neo Switch Hall Current Watt
+sensor.node_9_power_management:
+  friendly_name: Neo Switch Hall Power Man
+sensor.node_9_previous_reading:
+  friendly_name: Neo Switch Hall Watt 1
+sensor.node_9_previous_reading_2:
+  friendly_name: Neo Switch Hall Watt 2
+sensor.node_9_previous_reading_3:
+  friendly_name: Neo Switch Hall Voltage History
+sensor.node_9_previous_reading_4:
+  friendly_name: Neo Switch Hall Amp Histroy
+sensor.node_9_sourcenodeid:
+  friendly_name: Neo Switch Hall SourceID
+sensor.node_9_voltage:
+  friendly_name: Neo Switch Hall Voltage
+switch.node_9_switch:
+  friendly_name: Neo Switch Hall Switch
+
+zwave.node_12:
+  friendly_name: Neo Bedroom Door
+sensor.node_12_alarm_level:
+  friendly_name: Neo Bedroom Door Alarm Level
+sensor.node_12_alarm_type:
+  friendly_name: Neo Bedroom Door Alarm Type
+sensor.node_12_access_control:
+  friendly_name: Neo Bedroom Door Access Control
+sensor.node_12_sourcenodeid:
+  friendly_name: Neo Bedroom Door SourceID
+binary_sensor.node_12:
+  friendly_name: Neo Bedroom Door
+
+zwave.node_10:
+  friendly_name: Neo Diningroom Door
+sensor.node_10_alarm_level:
+  friendly_name: Neo Diningroom Door Alarm Level
+sensor.node_10_alarm_type:
+  friendly_name: Neo Diningroom Door Alarm Type
+sensor.node_10_access_control:
+  friendly_name: Neo Diningroom Door Access Control
+sensor.node_10_sourcenodeid:
+  friendly_name: Neo Diningroom Door SourceID
+binary_sensor.node_10:
+  friendly_name: Neo Diningroom Door
+
+zwave.node_20:
+  friendly_name: Neo Motion Toilet
+sensor.node_20_alarm_level:
+  friendly_name: Neo Motion Toilet Alarm Level
+sensor.node_20_alarm_type:
+  friendly_name: Neo Motion Toilet Alarm Type
+sensor.node_20_burglar:
+  friendly_name: Neo Motion Toilet Burglar
+sensor.node_20_luminance:
+  friendly_name: Neo Motion Toilet Lux
+sensor.node_20_sourcenodeid:
+  friendly_name: Neo Motion Toilet SourceID
+sensor.node_20_temperature:
+  friendly_name: Neo Motion Toilet Temp
+binary_sensor.node_20:
+  friendly_name: Neo Motion Toilet
+
+zwave.node_19:
+  friendly_name: Neo Motion Livingroom
+sensor.node_19_alarm_level:
+  friendly_name: Neo Motion Livingroom Alarm Level
+sensor.node_19_alarm_type:
+  friendly_name: Neo Motion Livingroom Alarm Type
+sensor.node_19_burglar:
+  friendly_name: Neo Motion Livingroom Burglar
+sensor.node_19_luminance:
+  friendly_name: Neo Motion Livingroom Lux
+sensor.node_19_sourcenodeid:
+  friendly_name: Neo Motion Livingroom SourceID
+sensor.node_19_temperature:
+  friendly_name: Neo Motion Livingroom Temp
+binary_sensor.node_19:
+  friendly_name: Neo Motion Livingroom
+
+zwave.node_18:
+  friendly_name: Neo Motion Diningroom
+sensor.node_18_alarm_level:
+  friendly_name: Neo Motion Diningroom Alarm Level
+sensor.node_18_alarm_type:
+  friendly_name: Neo Motion Diningroom Alarm Type
+sensor.node_18_burglar:
+  friendly_name: Neo Motion Diningroom Burglar
+sensor.node_18_luminance:
+  friendly_name: Neo Motion Diningroom Lux
+sensor.node_18_sourcenodeid:
+  friendly_name: Neo Motion Diningroom SourceID
+sensor.node_18_temperature:
+  friendly_name: Neo Motion Diningroom Temp
+binary_sensor.node_18:
+  friendly_name: Neo Motion Diningroom
+
+zwave.node_17:
+  friendly_name: Neo Motion Hallway
+sensor.node_17_alarm_level:
+  friendly_name: Neo Motion Hallway Alarm Level
+sensor.node_17_alarm_type:
+  friendly_name: Neo Motion Hallway Alarm Type
+sensor.node_17_burglar:
+  friendly_name: Neo Motion Hallway Burglar
+sensor.node_17_luminance:
+  friendly_name: Neo Motion Hallway Lux
+sensor.node_17_sourcenodeid:
+  friendly_name: Neo Motion Hallway SourceID
+sensor.node_17_temperature:
+  friendly_name: Neo Motion Hallway Temp
+binary_sensor.node_17:
+  friendly_name: Neo Motion Hallway
+
+zwave.node_16:
+  friendly_name: Neo Motion Kitchen
+sensor.node_16_alarm_level:
+  friendly_name: Neo Motion Kitchen Alarm Level
+sensor.node_16_alarm_type:
+  friendly_name: Neo Motion Kitchen Alarm Type
+sensor.node_16_burglar:
+  friendly_name: Neo Motion Kitchen Burglar
+sensor.node_16_luminance:
+  friendly_name: Neo Motion Kitchen Lux
+sensor.node_16_sourcenodeid:
+  friendly_name: Neo Motion Kitchen SourceID
+sensor.node_16_temperature:
+  friendly_name: Neo Motion Kitchen Temp
+binary_sensor.node_16:
+  friendly_name: Neo Motion Kitchen
+
+zwave.node_15:
+  friendly_name: Neo Motion Bathroom
+sensor.node_15_alarm_level:
+  friendly_name: Neo Motion Bathroom Alarm Level
+sensor.node_15_alarm_type:
+  friendly_name: Neo Motion Bathroom Alarm Type
+sensor.node_15_burglar:
+  friendly_name: Neo Motion Bathroom Burglar
+sensor.node_15_luminance:
+  friendly_name: Neo Motion Bathroom Lux
+sensor.node_15_sourcenodeid:
+  friendly_name: Neo Motion Bathroom SourceID
+sensor.node_15_temperature:
+  friendly_name: Neo Motion Bathroom Temp
+binary_sensor.node_15:
+  friendly_name: Neo Motion Bathroom
+
+zwave.node_14:
+  friendly_name: Neo Motion Bedroom
+sensor.node_14_alarm_level:
+  friendly_name: Neo Motion Bedroom Alarm Level
+sensor.node_14_alarm_type:
+  friendly_name: Neo Motion Bedroom Alarm Type
+sensor.node_14_burglar:
+  friendly_name: Neo Motion Bedroom Burglar
+sensor.node_14_luminance:
+  friendly_name: Neo Motion Bedroom Lux
+sensor.node_14_sourcenodeid:
+  friendly_name: Neo Motion Bedroom SourceID
+sensor.node_14_temperature:
+  friendly_name: Neo Motion Bedroom Temp
+binary_sensor.node_14:
+  friendly_name: Neo Motion Bedroom
+
+zwave.node_13:
+  friendly_name: Fibaro Door
+sensor.node_13_access_control:
+  friendly_name: Fibaro Door Access Control
+sensor.node_13_alarm_level:
+  friendly_name: Fibaro Door Alarm Level
+sensor.node_13_alarm_type:
+  friendly_name: Fibaro Door Alarm Type
+sensor.node_13_burglar:
+  friendly_name: Fibaro Door Burglar
+sensor.node_13_luminance:
+  friendly_name: Fibaro Door Lux
+sensor.node_13_sourcenodeid:
+  friendly_name: Fibaro Door SourceID
+sensor.node_13_temperature:
+  friendly_name: Fibaro Door Temp
+sensor.node_13_power_management:
+  friendly_name: Fibaro Door Power Man
+sensor.node_13_heat:
+  friendly_name: Fibaro Door Heat
+binary_sensor.node_13:
+  friendly_name: Fibaro Door
+
+zwave.node_11:
+  friendly_name: Fibaro Frontdoor
+sensor.node_11_access_control:
+  friendly_name: Fibaro Frontdoor Access Control
+sensor.node_11_alarm_level:
+  friendly_name: Fibaro Frontdoor Alarm Level
+sensor.node_11_alarm_type:
+  friendly_name: Fibaro Frontdoor Alarm Type
+sensor.node_11_burglar:
+  friendly_name: Fibaro Frontdoor Burglar
+sensor.node_11_luminance:
+  friendly_name: Fibaro Frontdoor Lux
+sensor.node_11_sourcenodeid:
+  friendly_name: Fibaro Frontdoor SourceID
+sensor.node_11_temperature:
+  friendly_name: Fibaro Frontdoor Temp
+sensor.node_11_power_management:
+  friendly_name: Fibaro Frontdoor Power Man
+sensor.node_11_heat:
+  friendly_name: Fibaro Frontdoor Heat
+binary_sensor.node_11:
+  friendly_name: Fibaro Frontdoor
+
+switch.toilet:
+  friendly_name: Toilet Switch
+  homebridge_name: Toilet Switch
+switch.newkaku_0114ef92_b:
+  friendly_name: Wall Switch
+  homebridge_name: Wall Switch
+switch.newkaku_0114ef92_c:
+  friendly_name: Window Switch
+  homebridge_name: Window Switch
+switch.newkaku_011fdd46_b:
+  friendly_name: Balcony Switch
+  homebridge_name: Balcony Switch
+switch.newkaku_011fdd46_c:
+  friendly_name: Dressoir Switch
+  homebridge_name: Dressoir Switch
+light.newkaku_01401eb6_a:
+  friendly_name: Diningroom Switch
+  homebridge_name: Diningroom Switch
+
+switch.newkaku_01074522_a:
+  friendly_name: Bedroom Switch
+  homebridge_name: Bedroom Switch
+switch.newkaku_011fad02_b:
+  friendly_name: Sink Switch
+  homebridge_name: Sink Switch
+switch.newkaku_011fad02_c:
+  friendly_name: Cooker Switch
+  homebridge_name: Cooker Switch
+switch.newkaku_014ad3ba_a:
+  friendly_name: Kitchen Switch
+  homebridge_name: Kitchen Switch
+switch.newkaku_01616a32_a:
+  friendly_name: Bathroom Switch
+  homebridge_name: Bathroom Switch
+switch.newkaku_014e5906_a:
+  friendly_name: Test Button
+  homebridge_name: Test Button
+switch.newkaku_016138ba_a:
+  friendly_name: Hallway Switch
+  homebridge_name: Hallway Switch
+
+input_boolean.scene_sleeping:
+  friendly_name: Sleeping
+  homebridge_name: Sleeping
+  icon: mdi:pan
+input_boolean.scene_sexy:
+  friendly_name: Sexy
+  homebridge_name: Sexy
+  icon: mdi:pan
+input_boolean.scene_kodi:
+  friendly_name: Kodi
+  homebridge_name: Kodi
+  icon: mdi:pan
+input_boolean.scene_iptv:
+  friendly_name: IPTV
+  homebridge_name: IPTV
+  icon: mdi:pan
+input_boolean.scene_goodnight:
+  friendly_name: Goodnight
+  homebridge_name: Goodnight
+  icon: mdi:pan
+input_boolean.scene_appletv:
+  friendly_name: Apple TV
+  homebridge_name: Apple TV
+  icon: mdi:pan
+input_boolean.scene_daylight:
+  friendly_name: Daylight
+  homebridge_name: Daylight
+  icon: mdi:pan
+input_boolean.scene_tv:
+  friendly_name: TV
+  homebridge_name: TV
+  icon: mdi:pan
+input_boolean.scene_evening:
+  friendly_name: Evening
+  homebridge_name: Evening
+  icon: mdi:pan
+
+light.livingroom_all:
+  homebridge_name: Livingroom All
+light.dressoir_all:
+  homebridge_name: Dressoir All
+light.bedroom_all:
+  homebridge_name: Master Bedroom 
+light.bathroom_all:
+  homebridge_name: Bathroom All 
+light.kitchen_all:
+  homebridge_name: Kitchen All 
+light.sink_all:
+  homebridge_name: Sink All 
+light.hallway:
+  homebridge_name: Hallway
+light.balcony:
+  homebridge_name: Balcony
+light.toilet_all:
+  homebridge_name: Toilet All
+

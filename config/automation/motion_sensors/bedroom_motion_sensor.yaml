@@ -1,0 +1,53 @@
+- alias: Motion Detection - Bedroom On
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_14
+    to: 'on'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'off'
+
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'off'
+
+# BEDROOM KAKU SWITCH
+    - condition: state
+      entity_id: switch.newkaku_01074522_a
+      state: 'off' 
+
+  action:
+    service: light.turn_on
+    entity_id: light.bedroom_all
+    data_template:
+      kelvin: 4700
+      brightness_pct: >
+        {% if states.binary_sensor.node_12.state == "on" %} 20
+        {% else %} 100
+        {% endif %}
+
+- alias: Motion Detection - Bedroom Off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_14
+    to: 'off'
+
+  condition:                                                                                               
+    - condition: state                                                                                     
+      entity_id: input_boolean.scene_goodnight                                                             
+      state: 'off'
+
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'off'
+
+# BEDROOM KAKU SWITCH
+    - condition: state
+      entity_id: switch.newkaku_01074522_a
+      state: 'off' 
+
+  action:
+    service: light.turn_off
+    entity_id: light.bedroom_all

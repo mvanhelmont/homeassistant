@@ -1,0 +1,36 @@
+scene_appletv:
+  name: Scene AppleTV
+  initial: off
+
+scene_daylight:
+  name: Scene Daylight
+  initial: on 
+
+scene_tv:
+  name: Scene TV
+  initial: off 
+
+scene_sleeping:
+  name: Scene Sleeping
+  initial: off
+
+scene_sexy:
+  name: Scene Sexy
+  initial: off
+
+scene_kodi:
+  name: Scene Kodi
+  initial: off
+
+scene_iptv:
+  name: Scene IPTV
+  initial: off
+
+scene_goodnight:
+  name: Scene Goodnight   
+  initial: off 
+
+scene_evening:
+  name: Scene Evening
+  initial: off
+

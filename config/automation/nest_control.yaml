@@ -1,0 +1,89 @@
+- alias: Control - Nest Control Goodnight Scene
+  trigger:
+
+  - platform: time_pattern
+    minutes: /1
+
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: device_tracker.geofency_peter
+          state: home
+        - condition: state
+          entity_id: device_tracker.geofency_kay
+          state: home
+
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'on'
+
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.entryway
+      data_template:
+        temperature: >
+          {% set temp2 = states('sensor.br_temperature_2') | float %}
+          {% set tempnest2 = states('sensor.entryway_thermostat_target') | float %}
+          {% if temp2 > 16 and tempnest2 > 16 %} 9
+          {% elif temp2 < 15 and tempnest2 > 14 %} 12
+          {% else %} 9
+          {% endif %}
+
+- alias: Control - Nest Control Nobody Home
+  trigger:
+
+  - platform: time_pattern
+    minutes: /1
+
+  condition:
+    - condition: and
+      conditions:
+        - condition: state
+          entity_id: device_tracker.geofency_peter
+          state: not_home
+        - condition: state
+          entity_id: device_tracker.geofency_kay
+          state: not_home
+
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.entryway
+      data_template:
+        temperature: >
+          {% set tempnest3 = states('sensor.entryway_thermostat_target') | float %}
+          {% if tempnest3 > 11 %} 9
+          {% else %} 9
+          {% endif %}
+
+- alias: Control - Nest Control Someone Home
+  trigger:
+
+  - platform: time_pattern
+    minutes: /1
+
+  condition:
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: device_tracker.geofency_peter
+          state: home
+        - condition: state
+          entity_id: device_tracker.geofency_kay
+          state: home
+
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'off'
+
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.entryway
+      data_template:
+        temperature: >
+          {% set temp = states('sensor.br_temperature_2') | float %}
+          {% set tempnest = states('sensor.entryway_thermostat_target') | float %}
+          {% if temp > 16 and tempnest > 14 %} 9
+          {% elif temp < 10 and tempnest < 7 %} 14
+          {% else %} 9
+          {% endif %}

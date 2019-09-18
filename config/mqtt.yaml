@@ -1,0 +1,6 @@
+broker: 127.0.0.1
+port: 1883
+username: poudenes
+password: !secret mqtt_password
+discovery: true
+discovery_prefix: homeassistant

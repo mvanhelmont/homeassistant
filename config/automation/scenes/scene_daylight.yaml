@@ -1,0 +1,38 @@
+- alias: Scene - Daylight
+  trigger:
+
+  - platform: time_pattern
+    minutes: /1
+
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon'
+
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'off'
+
+  action:
+  - service: notify.pushover
+    data:
+      message: Scene Daylight is activated
+
+  - service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.scene_daylight
+
+  - service: input_boolean.turn_off
+    entity_id: 
+      - input_boolean.scene_kodi
+      - input_boolean.scene_tv
+      - input_boolean.scene_iptv
+      - input_boolean.scene_evening
+      - input_boolean.scene_appletv
+      - input_boolean.scene_sexy
+      - input_boolean.scene_goodnight
+
+# TURN OFF ALL LIGHT
+  - service: script.nobody_home
+
+  - service: shell_command.meek_fan_turn_on

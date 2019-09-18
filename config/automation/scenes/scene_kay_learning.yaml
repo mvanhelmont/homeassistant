@@ -1,0 +1,43 @@
+- alias: Control - Kay Learning On
+  trigger:
+
+  - entity_id: switch.kay_learning
+    platform: state
+    to: 'on'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'off'
+
+  action:
+  - service: notify.pushover
+    data:
+      message: Kay Learning is activated
+
+  - service: light.turn_on
+    data:
+      entity_id: light.newkaku_01401eb6_a
+      brightness_pct: 100
+
+- alias: Control - Kay Learning Off
+  trigger:
+
+  - entity_id: switch.kay_learning
+    platform: state
+    to: 'off'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'off'
+
+  action:
+  - service: notify.pushover
+    data:
+      message: Kay Learning is deactivated
+
+  - service: light.turn_on
+    data:
+      entity_id: light.newkaku_01401eb6_a
+      brightness_pct: 50

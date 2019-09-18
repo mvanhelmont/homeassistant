@@ -1,0 +1,61 @@
+- alias: Door Sensor - Diningroom Open Dressoir Off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_10
+    to: 'on'
+
+  condition:
+    - condition: state
+      entity_id: light.dressoir_all
+      state: 'on'
+
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'off'
+
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'off' 
+
+  action:
+    - service: light.turn_off
+      entity_id: light.dressoir_all
+
+    - service: homeassistant.turn_on
+      data_template:
+        entity_id: light.newkaku_01401eb6_a
+        brightness_pct: >
+          {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
+          {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
+          {% else %} 50
+          {% endif %} 
+
+- alias: Door Sensor - Diningroom Closed Dressoir On
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_10
+    to: 'off'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'off'
+
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'off' 
+
+  action:
+    - service: light.turn_on
+      entity_id: light.dressoir_all
+      data:
+        brightness_pct: 100
+
+    - service: homeassistant.turn_on
+      data_template:
+        entity_id: light.newkaku_01401eb6_a
+        brightness_pct: >
+          {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
+          {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
+          {% else %} 50
+          {% endif %}

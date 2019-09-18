@@ -1,0 +1,100 @@
+- alias: Scene - Evening
+  trigger:
+
+  - platform: time_pattern
+    minutes: /1
+
+  - entity_id: device_tracker.geofency_peter
+    platform: state
+    to: home
+
+  - entity_id: device_tracker.geofency_kay
+    platform: state
+    to: home
+
+  - entity_id: sensor.harmony
+    platform: state
+    to: 'Off'
+
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
+
+    - condition: state
+      entity_id: input_boolean.scene_evening
+      state: 'off'
+
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'off'
+
+    - condition: state
+      entity_id: sensor.harmony
+      state: 'Off'
+
+    - condition: or
+      conditions:
+        - condition: state
+          entity_id: device_tracker.geofency_peter
+          state: home
+        - condition: state
+          entity_id: device_tracker.geofency_kay
+          state: home
+
+  action:
+  - service: notify.pushover
+    data:
+      message: Scene evening is activated
+
+  - service: input_boolean.turn_on
+    data:
+      entity_id: input_boolean.scene_evening
+
+  - service: input_boolean.turn_off
+    entity_id:
+      - input_boolean.scene_kodi
+      - input_boolean.scene_tv
+      - input_boolean.scene_iptv
+      - input_boolean.scene_daylight
+      - input_boolean.scene_appletv
+      - input_boolean.scene_sexy
+
+# NANOLEAF LIGHT
+  - service: light.turn_on
+    entity_id: light.nanoleaf
+    data_template:
+      brightness_pct: 30
+      effect: >
+        {% if states.input_select.select_holiday.state == "Christmas" %} Christmas
+        {% elif states.input_select.select_holiday.state == "Easter" %} Easter
+        {% elif states.input_select.select_holiday.state == "Halloween" %} Halloween
+        {% elif states.input_select.select_holiday.state == "Kingsday" %} Kingsday
+        {% elif states.input_select.select_holiday.state == "Bday" %} Fireplace
+        {% else %} Fireplace
+        {% endif %}
+
+# LIGHT
+  - service_template: > 
+       {% if (states.calendar.google_holidays.attributes.message) == 'Christmas' and (states.calendar.google_holidays.state) == 'on' %} script.evening_christmas
+       {% elif (states.calendar.google_holidays.attributes.message) == 'Halloween' and (states.calendar.google_holidays.state) == 'on' %} script.evening_halloween
+       {% elif (states.calendar.google_holidays.attributes.message) == 'Kingsday' and (states.calendar.google_holidays.state) == 'on' %} script.evening_kingsday
+       {% elif (states.calendar.google_holidays.attributes.message) == 'Bday' and (states.calendar.google_holidays.state) == 'on' %} script.evening_birthday
+       {% else %} script.evening_normal
+       {% endif %}
+
+  - service: homeassistant.turn_on
+    data_template:
+      entity_id: light.newkaku_01401eb6_a
+      brightness_pct: >
+        {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
+        {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
+        {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
+        {% else %} 50
+        {% endif %}
+
+  - service: tts.google_translate_say
+    data:
+      entity_id:
+        - media_player.modipu
+      message: The scene evening is activated! 

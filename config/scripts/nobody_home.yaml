@@ -1,0 +1,22 @@
+nobody_home:
+  alias: Nobody Home
+  sequence:
+
+    - service: light.turn_off
+      data:
+        entity_id: 
+          - light.livingroom_all
+          - light.dressoir_all
+          - light.kitchen_all
+          - light.sink_all
+          - light.livingroom_all
+          - light.bedroom_all
+          - light.bathroom_all
+          - light.hallway
+          - light.balcony
+          - light.toilet_all
+          - light.nanoleaf
+
+    - service: remote.turn_off
+      data:
+        entity_id: remote.logitech_harmony

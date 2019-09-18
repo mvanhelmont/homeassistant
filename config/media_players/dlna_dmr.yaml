@@ -1,0 +1,3 @@
+platform: dlna_dmr
+name: "Formuler Z7"
+url: http://192.168.100.17:25826/description.xml

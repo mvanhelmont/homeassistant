@@ -1,0 +1,46 @@
+platform: template
+sensors:
+  batt_diningroomdoor:
+    friendly_name: 'Diningroom Door Battery'
+    value_template: '{{ states.zwave.node_10.attributes.battery_level }}'
+    unit_of_measurement: '%'
+
+  batt_frontdoor:
+    friendly_name: 'Frontdoor Door Battery'
+    value_template: '{{ states.zwave.node_11.attributes.battery_level }}'
+    unit_of_measurement: '%'
+
+  batt_bedroomdoor:
+    friendly_name: 'Bedroom Door Battery'
+    value_template: '{{ states.zwave.node_12.attributes.battery_level }}'
+    unit_of_measurement: '%'
+
+  batt_motion_bedroom:
+    friendly_name: 'Motion Bedroom Battery'
+    value_template: '{{ states.zwave.node_14.attributes.battery_level }}'
+    unit_of_measurement: '%'
+
+  batt_motion_bathroom:
+    friendly_name: 'Motion Bathroom Battery'
+    value_template: '{{ states.zwave.node_15.attributes.battery_level }}'
+    unit_of_measurement: '%'
+
+  batt_motion_kitchen:
+    friendly_name: 'Motion Kitchen Battery'
+    value_template: '{{ states.zwave.node_16.attributes.battery_level }}'
+    unit_of_measurement: '%'
+
+  batt_motion_hallway:
+    friendly_name: 'Motion Hallway Battery'
+    value_template: '{{ states.zwave.node_17.attributes.battery_level }}'
+    unit_of_measurement: '%'
+
+  batt_motion_diningroom:
+    friendly_name: 'Motion Diningroom Battery'
+    value_template: '{{ states.zwave.node_18.attributes.battery_level }}'
+    unit_of_measurement: '%'
+
+  batt_motion_livingroom:
+    friendly_name: 'Motion Livingroom Battery'
+    value_template: '{{ states.zwave.node_19.attributes.battery_level }}'
+    unit_of_measurement: '%'

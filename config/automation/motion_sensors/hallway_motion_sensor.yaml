@@ -1,0 +1,32 @@
+- alias: Motion Detection - Hallway On
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_17
+    to: 'on'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'on'
+
+  action:
+    service: light.turn_on
+    entity_id: light.hallway
+    data:
+      brightness_pct: 20
+      kelvin: 2700
+
+- alias: Motion Detection - Hallway Off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_17
+    to: 'off'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'on'
+
+  action:
+    service: light.turn_off
+    entity_id: light.hallway

@@ -1,0 +1,24 @@
+select_holiday:
+  name: Select Holiday
+  options:
+    - Christmas
+    - Easter
+    - Kingsday
+    - Halloween
+    - Bday
+    - Nothing
+  initial: Nothing
+
+select_kay_leren:
+  name: Kay Leren
+  options:
+    - On
+    - Off
+  initial: Off
+
+select_diningdoor_open:
+  name: Diningdoor Open
+  options:
+    - Open
+    - Closed
+  initial: Closed

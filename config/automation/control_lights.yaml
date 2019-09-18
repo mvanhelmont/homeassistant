@@ -1,0 +1,34 @@
+- alias: Control - Bathroom Lights Are On
+  trigger:
+  - entity_id: binary_sensor.node_15
+    platform: state
+    to: 'off'
+    for:
+      minutes: 5
+
+  condition:
+    condition: state
+    entity_id: input_boolean.scene_goodnight
+    state: 'off'
+
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.newkaku_01616a32_a
+
+
+- alias: Control - Bedroom Lights Are On
+  trigger:
+  - entity_id: binary_sensor.node_14
+    platform: state
+    to: 'off'
+    for:
+      minutes: 5
+
+  condition:
+    condition: state
+    entity_id: input_boolean.scene_goodnight
+    state: 'off'
+ 
+  action:
+    service: homeassistant.turn_off
+    entity_id: switch.newkaku_01074522_a

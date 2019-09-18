@@ -1,0 +1,22 @@
+- alias: Switch - Dressoir On
+  trigger:
+    - platform: state
+      entity_id: switch.newkaku_011fdd46_c
+      to: 'on'
+
+  action:
+    service: light.turn_on
+    entity_id: light.dressoir_all
+    data:
+      kelvin: 2700
+      brightness_pct: 100
+
+- alias: Switch - Dressoir Off
+  trigger:
+    - platform: state
+      entity_id: switch.newkaku_011fdd46_c
+      to: 'off'
+
+  action:
+    service: light.turn_off
+    entity_id: light.dressoir_all

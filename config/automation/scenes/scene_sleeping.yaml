@@ -1,0 +1,48 @@
+- alias: Scene - Sleeping
+  trigger:
+
+  - entity_id: input_boolean.scene_sleeping
+    platform: state
+    to: 'on'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_sleeping
+      state: 'on'
+
+  action:
+  - service: notify.pushover
+    data:
+      message: Scene Sleeping is activated
+
+  - service: light.turn_off
+    entity_id: 
+      - light.bedroom_all
+
+  - service: light.turn_on
+    data:
+      entity_id:
+        - light.bedroom_5
+      brightness_pct: 1
+      effect: 0
+
+  - delay: 00:00:01
+
+  - service: light.turn_on
+    data:
+      entity_id:
+        - light.bedroom_6
+      brightness_pct: 1
+      effect: 0 
+
+  - service: input_boolean.turn_off
+    data:
+      entity_id: input_boolean.scene_sleeping
+
+  - delay: 00:06:00
+
+  - service: light.turn_off
+    data:
+      entity_id:
+        - light.bedroom_5
+        - light.bedroom_6

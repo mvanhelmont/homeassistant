@@ -1,0 +1,180 @@
+kodi_normal:
+  alias: Kodi Normal
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_wall
+        brightness_pct: 70
+
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_window
+        brightness_pct: 20
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_all
+        kelvin: 2700
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 50 }}"
+
+    - service: light.turn_on
+      data:
+        entity_id: light.balcony
+        color_name: blue
+        brightness_pct: 100
+
+kodi_birthday:
+  alias: Kodi Birthday
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_all
+        kelvin: 2700
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_1
+        effect: 0
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_2
+        effect: 0
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_3
+        effect: 0
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data:
+        entity_id: light.balcony
+        brightness_pct: 100
+        effect: 0
+
+kodi_halloween:
+  alias: Kodi Halloween
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_wall
+        color_name: orange
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_window
+        color_name: orange
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_1
+        color_name: blue
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_2
+        color_color: purple
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_3
+        color_name: blue
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data:
+        entity_id: light.balcony
+        color_name: blue
+        brightness_pct: 100
+
+kodi_kingsday:
+  alias: Kodi Kingsday
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_all
+        kelvin: 2700
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_1
+        color_name: red
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_2
+        color_temp: 153
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_3
+        color_name: blue
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+
+    - service: light.turn_on
+      data:
+        entity_id: light.balcony
+        brightness_pct: 100
+        effect: 0
+
+kodi_christmas:
+  alias: Kodi Christmas
+  sequence:
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_1
+        color_name: red
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_2
+        color_name: green
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_3
+        color_name: green
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data:
+        entity_id: light.livingroom_4
+        color_name: red
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_1
+        color_name: blue
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 75 }}"
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_2
+        color_temp: 153
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 75 }}"
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_3
+        color_name: blue
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 75 }}"
+
+    - service: light.turn_on
+      data:
+        entity_id: light.balcony
+        brightness_pct: 100
+        effect: 0

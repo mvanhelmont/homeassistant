@@ -1,0 +1,5 @@
+- platform: rflink
+  automatic_add: true
+  devices:
+    newkaku_01401eb6_a:
+      type: dimmable

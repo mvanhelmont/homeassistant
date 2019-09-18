@@ -1,0 +1,103 @@
+# Configure a default setup of Home Assistant (frontend, api, etc)
+
+frontend:
+  themes: !include config/themes.yaml
+
+default_config:
+config:
+api:
+shopping_list:
+discovery:
+
+http:
+  base_url: !secret base_url_link
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+  ip_ban_enabled: false
+
+speedtestdotnet:
+  scan_interval:
+    minutes: 15
+  monitored_conditions:
+    - ping
+    - download
+    - upload
+
+logger:
+  default: warn
+
+shell_command:
+  meek_fan_turn_off: 'curl http://192.168.100.113/control?cmd=event,FanOff'
+  meek_fan_turn_on: 'curl http://192.168.100.113/control?cmd=event,FanOn'
+
+#hacs:
+ # token: !secret hasc_token
+
+weather:
+  - platform: buienradar
+    forecast: true
+    latitude: 52.370216
+    longitude: 4.895168
+
+homeassistant:
+  customize: !include customize.yaml
+  auth_providers:
+    - type: homeassistant
+
+tts:
+  - platform: google_translate
+
+google:
+  client_id: !secret google_client
+  client_secret: !secret google_secret
+
+notify:
+  - name: Pushover
+    platform: pushover
+    api_key: !secret notify_apikey
+    user_key: !secret notify_userkey
+
+zwave:
+  usb_path: /dev/ttyACM1
+  
+rflink:
+  port: /dev/ttyACM0
+
+remote:
+  - platform: harmony
+    name: Logitech Harmony
+    host: 192.168.100.5
+    scan_interval: 1
+
+nest:
+  client_id: !secret nest_client
+  client_secret: !secret nest_clientsecret
+
+panel_iframe:
+  rijdendetreinen:
+    title: 'NS'
+    icon: mdi:train
+    url: 'https://www.rijdendetreinen.nl/vertrektijden/station/amsterdam-zuid?style=tb&hide_train_numbers=1&hide_stock=1&time=both'
+
+  ov9292:
+    title: 'GVB'
+    icon: mdi:bus
+    url: 'https://9292.nl/amsterdam/tramhalte-metrostation-de-boelelaan-vu'
+
+binary_sensor: !include config/binary_sensors.yaml
+zone: !include config/zones.yaml
+homekit: !include config/homekit.yaml
+recorder: !include config/recorder.yaml
+group: !include_dir_merge_named config/groups/
+automation: !include_dir_merge_list config/automation/
+script: !include_dir_merge_named config/scripts/
+switch: !include config/switch.yaml
+sensor: !include_dir_list config/sensors/
+media_player: !include_dir_list config/media_players/
+input_boolean: !include_dir_merge_named config/input_boolean/
+light: !include_dir_merge_list config/light/
+alexa: !include config/alexa.yaml
+
+#input_select: !include_dir_merge_named config/input_select/
+#mqtt: !include config/mqtt.yaml
+

@@ -1,0 +1,11 @@
+platform: nederlandse_spoorwegen
+email: info@oudenes.photography
+password: !secret ns_password
+routes:
+  - name: A'dam Zuid - A'dam Sloterdijk
+    from: asdz
+    to: ass
+    via: shl
+  - name: A'dam Zuid - Utrecht
+    from: asdz
+    to: ut

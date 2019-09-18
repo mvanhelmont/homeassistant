@@ -1,0 +1,15 @@
+say:
+  alias: Speech TTS
+  sequence:
+    - service: media_player.volume_set
+      data_template:
+        entity_id: "{{ master }}"
+        volume_level: "{{ volume }}"
+
+    - delay: '00:00:02'
+
+    - service: tts.google_translate_say
+      data_template:
+        entity_id: "{{ master }}"
+        message: "{{ what }}"
+

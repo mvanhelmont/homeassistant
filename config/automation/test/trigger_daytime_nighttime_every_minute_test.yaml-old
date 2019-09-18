@@ -1,0 +1,27 @@
+- alias: Trigger DayTime every Minute
+  trigger:
+  - minutes: /1
+    platform: time_pattern
+  condition:
+
+    - condition: state
+      entity_id: sun.sun
+      state: 'above_horizon' 
+
+  action:
+  - data:
+      message: Period of day is DayTime
+    service: notify.pushover
+
+- alias: Trigger NightTime Every Minute
+  trigger:
+  - minutes: /1
+    platform: time_pattern
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon' 
+  action:
+  - data:
+      message: Period of day is NightTime
+    service: notify.pushover

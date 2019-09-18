@@ -1,0 +1,97 @@
+- platform: mqtt
+  name: "Livingroom All"
+  schema: json
+  command_topic: "milight/0xAAAC/rgb_cct/0"
+  state_topic: "milight/states/0xAAAC/rgb_cct/0"
+  qos: 1
+  optimistic: false
+  retain: true
+  brightness: true
+  rgb: true
+  color_temp: true
+  effect: true
+  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8] 
+
+- platform: mqtt
+  name: "Livingroom 1"
+  schema: json
+  command_topic: "milight/0xAAAC/rgb_cct/1"
+  state_topic: "milight/states/0xAAAC/rgb_cct/1"
+  qos: 1
+  optimistic: false
+  retain: true
+  brightness: true
+  rgb: true
+  color_temp: true
+  effect: true
+  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8] 
+
+- platform: mqtt
+  name: "Livingroom 2"
+  schema: json
+  command_topic: "milight/0xAAAC/rgb_cct/2"
+  state_topic: "milight/states/0xAAAC/rgb_cct/2"
+  qos: 1
+  optimistic: false
+  retain: true
+  brightness: true
+  rgb: true
+  color_temp: true
+  effect: true
+  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8] 
+
+- platform: mqtt
+  name: "Livingroom 3"
+  schema: json
+  command_topic: "milight/0xAAAC/rgb_cct/3"
+  state_topic: "milight/states/0xAAAC/rgb_cct/3"
+  qos: 1
+  optimistic: false
+  retain: true
+  brightness: true
+  rgb: true
+  color_temp: true
+  effect: true
+  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8] 
+
+- platform: mqtt
+  name: "Livingroom 4"
+  schema: json
+  command_topic: "milight/0xAAAC/rgb_cct/4"
+  state_topic: "milight/states/0xAAAC/rgb_cct/4"
+  qos: 1
+  optimistic: false
+  retain: true
+  brightness: true
+  rgb: true
+  color_temp: true
+  effect: true
+  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8] 
+
+- platform: mqtt
+  name: "Livingroom Wall"
+  schema: json
+  command_topic: "milight/0xAABB/rgb_cct/1"
+  state_topic: "milight/states/0xAABB/rgb_cct/1"
+  qos: 1
+  optimistic: false
+  retain: true
+  brightness: true
+  rgb: true
+  color_temp: true
+  effect: true
+  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8]
+
+- platform: mqtt
+  name: "Livingroom Window"
+  schema: json
+  command_topic: "milight/0xAABB/rgb_cct/2"
+  state_topic: "milight/states/0xAABB/rgb_cct/2"
+  qos: 1
+  optimistic: false
+  retain: true
+  brightness: true
+  rgb: true
+  color_temp: true
+  effect: true
+  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8]

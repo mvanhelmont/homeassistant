@@ -1,0 +1,22 @@
+- alias: Switch - Window On
+  trigger:
+    - platform: state
+      entity_id: switch.newkaku_0114ef92_c
+      to: 'on'
+
+  action:
+    service: light.turn_on
+    entity_id: light.livingroom_window
+    data:
+      brightness_pct: 100
+      kelvin: 2700
+
+- alias: Switch - Window Off
+  trigger:
+    - platform: state
+      entity_id: switch.newkaku_0114ef92_c
+      to: 'off'
+
+  action:
+    service: light.turn_off
+    entity_id: light.livingroom_window

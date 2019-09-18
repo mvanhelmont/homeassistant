@@ -1,0 +1,38 @@
+- alias: Motion Detection - Kitchen On
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_16
+    to: 'on'
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'off'
+
+  action: 
+# LIGHT
+    - service_template: >
+         {% if (states.calendar.google_holidays.attributes.message) == 'Christmas' and (states.calendar.google_holidays.state) == 'on' %} script.kitchen_christmas_turn_on
+         {% elif (states.calendar.google_holidays.attributes.message) == 'Halloween' and (states.calendar.google_holidays.state) == 'on' %} script.kitchen_halloween_turn_on
+         {% elif (states.calendar.google_holidays.attributes.message) == 'Kingsday' and (states.calendar.google_holidays.state) == 'on' %} script.kitchen_kingsday_turn_on
+         {% elif (states.calendar.google_holidays.attributes.message) == 'Bday' and (states.calendar.google_holidays.state) == 'on' %} script.kitchen_birthday_turn_on
+         {% else %} script.kitchen_normal_turn_on
+         {% endif %} 
+
+- alias: Motion Detection - Kitchen Off
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_16
+    to: 'off'
+
+  condition:                                                                                               
+    - condition: state                                                                                     
+      entity_id: input_boolean.scene_daylight                                                             
+      state: 'off'
+
+  action:
+    - service: light.turn_off
+      entity_id: light.kitchen_all
+
+    - service: light.turn_off
+      entity_id: light.sink_all

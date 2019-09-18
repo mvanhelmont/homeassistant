@@ -1,0 +1,8 @@
+meter_readings:
+  name: Meter readings
+  entities:
+    - sensor.power_consumption
+    - sensor.power_consumption_low   
+    - sensor.power_consumption_normal
+    - sensor.gas_consumption
+
