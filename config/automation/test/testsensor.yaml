@@ -1,9 +1,0 @@
-- alias: TEST SENSOR 5 MIN
-  trigger:
-    platform: template
-    value_template: "{% if as_timestamp(states.sensor.date_time.last_updated) - as_timestamp(states.binary_sensor.node_14.last_updated) > 5*60 %}{% endif %}"
-
-  action:
-  - service: notify.pushover
-    data:
-      message: Sensor Langer dan 5 min uit
