@@ -6,6 +6,8 @@ known_devices.yaml
 .homekit.state
 .google.token
 .storage
+.DS_Store
+._.DS_Store
 cox_usage.json
 cox_usage.py
 *.pyc
