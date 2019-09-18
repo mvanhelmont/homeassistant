@@ -1,4 +1,5 @@
 # Configure a default setup of Home Assistant (frontend, api, etc)
+# Peter Oudenes
 
 frontend:
   themes: !include config/themes.yaml
