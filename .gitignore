@@ -21,6 +21,8 @@ cox_usage.py
 *.pem
 *.txt
 *.sh 
+*.jpg
 ozw_config/
 tts/
 dept/
+www/
