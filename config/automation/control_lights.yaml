@@ -12,9 +12,14 @@
     state: 'off'
 
   action:
-    service: homeassistant.turn_off
-    entity_id: switch.newkaku_01616a32_a
+    - service: homeassistant.turn_off
+      entity_id: switch.newkaku_01616a32_a
 
+#    - service: script.turn_on
+#      entity_id: script.alexa_speak_engine
+#      data_template:
+#        variables:
+#          message: "Bathroom has been turned off"
 
 - alias: Control - Bedroom Lights Are On
   trigger:
@@ -30,5 +35,11 @@
     state: 'off'
  
   action:
-    service: homeassistant.turn_off
-    entity_id: switch.newkaku_01074522_a
+    - service: homeassistant.turn_off
+      entity_id: switch.newkaku_01074522_a
+
+#    - service: script.turn_on
+#      entity_id: script.alexa_speak_engine
+#      data_template:
+#        variables:
+#          message: "Bedroom has been turned off"

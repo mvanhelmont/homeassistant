@@ -1,0 +1,5 @@
+group_family:
+  name: Group Family
+  entities:
+    - device_tracker.geofency_peter
+    - device_tracker.geofency_kay

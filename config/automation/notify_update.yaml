@@ -2,13 +2,13 @@
   hide_entity: True
   trigger:
     platform: state
-    entity_id: updater.updater
+    entity_id: binary_sensor.updater
 
   condition:
     - condition: template
-      value_template: "{{ states('updater.updater') != 'unknown' }}"
+      value_template: "{{ states('binary_sensor.updater') != 'unknown' }}"
 
   action:
   - service: notify.pushover
     data_template:
-      message: "Home Assistant {{ states.updater.updater.state }} is now available. {{now().strftime('%Y-%m-%d %I:%M %p')}}"
+      message: "Home Assistant update is now available. {{now().strftime('%Y-%m-%d %I:%M %p')}}"

@@ -93,8 +93,20 @@
         {% else %} 0
         {% endif %}
 
-  - service: tts.google_translate_say
-    data:
-      entity_id:
-        - media_player.modipu
-      message: The scene movie is activated! 
+#  - service: tts.google_translate_say
+#    data:
+#      entity_id:
+#        - media_player.modipu
+#      message: The scene movie is activated! 
+
+  - service: script.turn_on
+    entity_id: script.alexa_speak_engine
+    data_template:
+      variables:
+#        volume: '0.3'
+        message: >
+          {{ [
+          "I think it will begun dark inside the house, let me turn on the lights. Enjoy the movie!",
+          "Relaxing with a movie? I'll help you with the lights",
+          "There are no lights on! so let me do it for you! Enjoy the movie!"
+          ] | random }} 

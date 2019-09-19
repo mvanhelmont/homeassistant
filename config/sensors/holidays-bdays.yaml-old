@@ -1,9 +1,0 @@
-platform: rest
-resource: /usr/share/hass/homeassistant/www/holidays.json
-name: Holiday
-scan_interval: 5
-value_template: >
-  {% set today = now().month  ~ '/' ~ now().day  %}
-  {% set holiday =  value_json.MAJOR_US.static[ today ] %}
-  {{ holiday }}
-

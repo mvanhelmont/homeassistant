@@ -90,6 +90,8 @@ alexa_media:
     - email: !secret amazon_user
       password: !secret amazon_password
       url: !secret amazon_url
+      exclude_devices:
+        - "Peter's Alexa Apps"
 
 binary_sensor: !include config/binary_sensors.yaml
 zone: !include config/zones.yaml

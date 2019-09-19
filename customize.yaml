@@ -526,3 +526,13 @@ light.balcony:
 light.toilet_all:
   homebridge_name: Toilet All
 
+
+#sensor.batt_diningroomdoor:
+#  templates:
+#    icon_color: if (state > 40) return 'rgb(0,255,0)'; else if (state > 15) return 'rgb(255,255,0)'; else return 'rgb(255,0,0)'
+
+device_tracker.geofency_peter:
+  entity_picture: https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-1/p160x160/67796076_2736488576380966_955797001235070976_n.jpg?_nc_cat=106&_nc_oc=AQkt6fsJMZPAVbT5g4UehbAMQauPLTcpUGi09wPnweRW9vn7eYWzDqbT9SzjdXYmCnQ&_nc_ht=scontent-amt2-1.xx&oh=b9755cb476edf13203581d2e633fb2cf&oe=5E04BF24
+
+device_tracker.geofency_kay:
+  entity_picture: https://scontent-amt2-1.xx.fbcdn.net/v/t1.0-1/p160x160/61533959_2409347502422081_2897556246947168256_n.jpg?_nc_cat=100&_nc_oc=AQlCM0za6UHZV6sjBLoClskykxttnCCaHRk4fbUzZtgoSoKuX11aQjagOPOuykNYNKw&_nc_ht=scontent-amt2-1.xx&oh=7e15bf1e84529c89c3115ef35a6f4fd3&oe=5DFE3358

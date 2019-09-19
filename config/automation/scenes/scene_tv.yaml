@@ -94,8 +94,20 @@
         {% else %} 50
         {% endif %}
 
-  - service: tts.google_translate_say
-    data:
-      entity_id:
-        - media_player.modipu
-      message: The scene tv is activated! 
+#  - service: tts.google_translate_say
+#    data:
+#      entity_id:
+#        - media_player.modipu
+#      message: The scene tv is activated! 
+
+  - service: script.turn_on
+    entity_id: script.alexa_speak_engine
+    data_template:
+      variables:
+#        volume: '0.3'
+        message: >
+          {{ [
+          "The sunset has begun, you are watching TV. So let me turn on the lights for you",
+          "Relax and watch TV, let me turn on the lights",
+          "There are no lights on! so let me do it for you! Enjoy watching TV."
+          ] | random }} 

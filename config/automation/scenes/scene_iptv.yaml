@@ -94,8 +94,15 @@
         {% else %} 50
         {% endif %}
 
-  - service: tts.google_translate_say
-    data:
-      entity_id:
-        - media_player.modipu
-      message: The ip tv goodnight is activated! 
+#  - service: tts.google_translate_say
+#    data:
+#      entity_id:
+#        - media_player.modipu
+#      message: The ip tv goodnight is activated! 
+
+  - service: script.turn_on
+    entity_id: script.alexa_speak_engine
+    data_template:
+      variables:
+#        volume: '0.5'
+        message: "The scene IPTV is activated"
