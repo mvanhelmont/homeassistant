@@ -86,12 +86,6 @@
         - light.livingroom_all
         - light.balcony 
 
-#  - service: tts.google_translate_say
-#    data:
-#      entity_id:
-#        - media_player.modipu
-#      message: The scene goodnight is activated! 
-
   - service: script.turn_on
     entity_id: script.alexa_speak_engine
     data_template:

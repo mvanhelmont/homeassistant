@@ -12,12 +12,12 @@
   action: 
 # LIGHT
     - service_template: >
-         {% if (states.calendar.google_holidays.attributes.message) == 'Christmas' and (states.calendar.google_holidays.state) == 'on' %} script.kitchen_christmas_turn_on
-         {% elif (states.calendar.google_holidays.attributes.message) == 'Halloween' and (states.calendar.google_holidays.state) == 'on' %} script.kitchen_halloween_turn_on
-         {% elif (states.calendar.google_holidays.attributes.message) == 'Kingsday' and (states.calendar.google_holidays.state) == 'on' %} script.kitchen_kingsday_turn_on
-         {% elif (states.calendar.google_holidays.attributes.message) == 'Bday' and (states.calendar.google_holidays.state) == 'on' %} script.kitchen_birthday_turn_on
-         {% else %} script.kitchen_normal_turn_on
-         {% endif %} 
+        {% if (states.sensor.holiday.state) == 'Christmas' %} script.kitchen_christmas_turn_on
+        {% elif (states.sensor.holiday.state) == 'Halloween' %} script.kitchen_halloween_turn_on
+        {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.kitchen_kingsday_turn_on
+        {% elif (states.sensor.holiday.state) == 'Birthday' %} script.kitchen_birthday_turn_on
+        {% else %} script.kitchen_normal_turn_on
+        {% endif %}
 
 - alias: Motion Detection - Kitchen Off
   trigger:

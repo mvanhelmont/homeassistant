@@ -1,5 +1,5 @@
 kitchen_halloween_turn_on:
-  alias: kitchen Halloween Turn On
+  alias: Kitchen Halloween Turn On
   sequence:
     - service: light.turn_on
       data:
