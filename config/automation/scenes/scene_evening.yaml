@@ -66,20 +66,19 @@
     data_template:
       brightness_pct: 30
       effect: >
-        {% if states.input_select.select_holiday.state == "Christmas" %} Christmas
-        {% elif states.input_select.select_holiday.state == "Easter" %} Easter
-        {% elif states.input_select.select_holiday.state == "Halloween" %} Halloween
-        {% elif states.input_select.select_holiday.state == "Kingsday" %} Kingsday
-        {% elif states.input_select.select_holiday.state == "Bday" %} Fireplace
+        {% if (states.sensor.holiday.state) == 'Christmas' %} Christmas
+        {% elif (states.sensor.holiday.state) == 'Halloween' %} Halloween
+        {% elif (states.sensor.holiday.state) == 'Kingsday' %} Kingsday
+        {% elif (states.sensor.holiday.state) == 'Birthday' %} Kingsday
         {% else %} Fireplace
         {% endif %}
 
 # LIGHT
   - service_template: > 
-       {% if (states.calendar.google_holidays.attributes.message) == 'Christmas' and (states.calendar.google_holidays.state) == 'on' %} script.evening_christmas
-       {% elif (states.calendar.google_holidays.attributes.message) == 'Halloween' and (states.calendar.google_holidays.state) == 'on' %} script.evening_halloween
-       {% elif (states.calendar.google_holidays.attributes.message) == 'Kingsday' and (states.calendar.google_holidays.state) == 'on' %} script.evening_kingsday
-       {% elif (states.calendar.google_holidays.attributes.message) == 'Bday' and (states.calendar.google_holidays.state) == 'on' %} script.evening_birthday
+       {% if (states.sensor.holiday.state) == 'Christmas' %} script.evening_christmas
+       {% elif (states.sensor.holiday.state) == 'Halloween' %} script.evening_halloween
+       {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.evening_kingsday
+       {% elif (states.sensor.holiday.state) == 'Birthday' %} script.evening_birthday
        {% else %} script.evening_normal
        {% endif %}
 
@@ -92,20 +91,6 @@
         {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
         {% else %} 50
         {% endif %}
-
-#  - service: tts.google_translate_say
-#    data:
-#      entity_id:
-#        - media_player.modipu
-#      message: The scene evening is activated! 
-
-#  - service: script.turn_on
-#    entity_id: script.alexa_speak_engine
-#    data:
-#      variables:
-#        message: 'The sun is below horizon. The Scene evening is activated'
-#        volume: '0.2' 
-
 
   - service: script.turn_on
     entity_id: script.alexa_speak_engine
