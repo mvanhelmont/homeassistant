@@ -11,3 +11,8 @@ My hardware:
 - RFLink Controller - For some old Clcik On Click Off switches
 - 38 Milight RGBCTT Bulbs
 - 1 Nanoleaf
+- Amazon Alexa
+- AppleTV
+
+Everything is add in Home Assistant. I shared my configuration so you can learn from it.
+ALso when you see improvements let me know... I still learning :D
