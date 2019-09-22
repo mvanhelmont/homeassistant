@@ -33,14 +33,9 @@
       entity_id: sensor.harmony
       state: 'Off'
 
-    - condition: or
-      conditions:
-        - condition: state
-          entity_id: device_tracker.geofency_peter
-          state: home
-        - condition: state
-          entity_id: device_tracker.geofency_kay
-          state: home
+    - condition: state 
+      entity_id: group.group_family
+      state: home
 
   action:
   - service: notify.pushover
@@ -75,6 +70,9 @@
           "Sun?, sun?, wherever you are? Ill turn on the lights inside",
           "There are no lights on! so let me do it for you!"
           ] | random }}
+
+  - delay: '00:00:02'
+
 
 # NANOLEAF LIGHT
   - service: light.turn_on

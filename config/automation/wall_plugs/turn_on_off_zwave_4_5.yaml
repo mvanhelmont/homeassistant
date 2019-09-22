@@ -1,21 +1,13 @@
 - alias: Control - Turn on Zwave 4 and 5
   trigger:
-    - entity_id: device_tracker.geofency_peter
+    - entity_id: group.group_family
       platform: state
-      to: home
-    - entity_id: device_tracker.geofency_kay
-      platform: state 
       to: home
 
   condition:
-    - condition: or
-      conditions:
-        - condition: state
-          entity_id: device_tracker.geofency_kay
-          state: home
-        - condition: state
-          entity_id: device_tracker.geofency_peter
-          state: home
+    - condition: state
+      entity_id: group.group_family
+      state: home
 
   action:
     - service: switch.turn_on
@@ -27,20 +19,13 @@
 
 - alias: Control - Turn off Zwave 4 and 5
   trigger:
-    - entity_id: device_tracker.geofency_kay
-      platform: state
-      to: not_home
-
-    - entity_id: device_tracker.geofency_peter
+    - entity_id: group.group_family
       platform: state
       to: not_home
 
   condition:
     - condition: state
-      entity_id: device_tracker.geofency_kay
-      state: not_home
-    - condition: state
-      entity_id: device_tracker.geofency_peter
+      entity_id: group.group_family
       state: not_home
 
   action:
