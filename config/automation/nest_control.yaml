@@ -5,14 +5,9 @@
     minutes: /1
 
   condition:
-    - condition: or
-      conditions:
-        - condition: state
-          entity_id: device_tracker.geofency_peter
-          state: home
-        - condition: state
-          entity_id: device_tracker.geofency_kay
-          state: home
+    - condition: state
+      entity_id: group.group_family
+      state: home 
 
     - condition: state
       entity_id: input_boolean.scene_goodnight
@@ -37,14 +32,9 @@
     minutes: /1
 
   condition:
-    - condition: and
-      conditions:
-        - condition: state
-          entity_id: device_tracker.geofency_peter
-          state: not_home
-        - condition: state
-          entity_id: device_tracker.geofency_kay
-          state: not_home
+    - condition: state
+      entity_id: group.group_family
+      state: not_home 
 
   action:
     - service: climate.set_temperature
@@ -63,14 +53,9 @@
     minutes: /1
 
   condition:
-    - condition: or
-      conditions:
-        - condition: state
-          entity_id: device_tracker.geofency_peter
-          state: home
-        - condition: state
-          entity_id: device_tracker.geofency_kay
-          state: home
+    - condition: state
+      entity_id: group.group_family
+      state: home 
 
     - condition: state
       entity_id: input_boolean.scene_goodnight

@@ -33,14 +33,9 @@
       entity_id: sensor.harmony
       state: 'Kodi'
 
-    - condition: or
-      conditions:
-        - condition: state
-          entity_id: device_tracker.geofency_peter
-          state: home
-        - condition: state
-          entity_id: device_tracker.geofency_kay
-          state: home
+    - condition: state
+      entity_id: group.group_family
+      state: home 
 
   action:
   - service: notify.pushover

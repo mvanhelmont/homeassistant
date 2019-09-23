@@ -19,11 +19,8 @@
 
   condition:
     - condition: state
-      entity_id: device_tracker.geofency_peter
-      state: 'not_home'
-    - condition: state
-      entity_id: device_tracker.geofency_kay
-      state: 'not_home' 
+      entity_id: group.group_family
+      state: not_home 
 
   action:
   - service: notify.pushover
