@@ -1,0 +1,31 @@
+test_notify_speech:
+  sequence:
+    - service: script.test_say
+      data_template:
+        media_player: "{{ media_player }}"
+        message: "{{ message }}"
+        say_greeting: "false"
+
+test_say:
+  sequence:
+    - service: script.test_speech_processing
+      data_template:
+        media_player: "{{ media_player }}"
+        briefing: !include ../../templates/briefing.yaml
+        title: "{{ title }}"
+
+test_speech_processing:
+  sequence:
+    - service: notify.alexa_media_peter_s_echo_dot
+      data_template:
+        data:
+          type: announce
+          method: all
+        title: >
+          {%- if title is not string -%}
+            Home Assistant
+          {%- else -%}
+            {{ title }}
+          {%- endif -%}
+        message: "{{ briefing }}"
+        target: "{{ media_player }}"

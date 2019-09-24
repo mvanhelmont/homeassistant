@@ -31,14 +31,11 @@ shell_command:
   meek_fan_turn_off: 'curl http://192.168.100.113/control?cmd=event,FanOff'
   meek_fan_turn_on: 'curl http://192.168.100.113/control?cmd=event,FanOn'
 
-hacs:
-  token: !secret hasc_token
-
-weather:
-  - platform: buienradar
-    forecast: true
-    latitude: !secret lat
-    longitude: !secret lon
+#weather:
+#  - platform: buienradar
+#    forecast: true
+#    latitude: !secret lat
+#    longitude: !secret lon
 
 homeassistant:
   customize: !include customize.yaml
@@ -57,12 +54,6 @@ notify:
     platform: pushover
     api_key: !secret notify_apikey
     user_key: !secret notify_userkey
-
-  - name: Pushover System
-    platform: pushover
-    api_key: !secret notify_apikey_system
-    user_key: !secret notify_userkey
-
 
 zwave:
   usb_path: /dev/ttyACM1
@@ -90,14 +81,6 @@ panel_iframe:
     title: 'GVB'
     icon: mdi:bus
     url: 'https://9292.nl/amsterdam/tramhalte-metrostation-de-boelelaan-vu'
-
-alexa_media:
-  accounts:
-    - email: !secret amazon_user
-      password: !secret amazon_password
-      url: !secret amazon_url
-      exclude_devices:
-        - "Peter's Alexa Apps"
 
 binary_sensor: !include config/binary_sensors.yaml
 zone: !include config/zones.yaml

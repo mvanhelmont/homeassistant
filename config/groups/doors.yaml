@@ -1,0 +1,7 @@
+group_door_sensors:
+  name: Group Door Sensors
+  entities:
+    - binary_sensor.node_10
+    - binary_sensor.node_12
+    - input_boolean.fibaro_frontdoor
+    - input_boolean.fibaro_imac

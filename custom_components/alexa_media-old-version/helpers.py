@@ -19,7 +19,7 @@ _LOGGER = logging.getLogger(__name__)
 
 async def add_devices(account: Text,
                       devices: List[EntityComponent],
-                      add_devices_callback: Callable,
+                      add_devices_callback: callable,
                       include_filter: List[Text] = [],
                       exclude_filter: List[Text] = []) -> bool:
     """Add devices using add_devices_callback."""
@@ -36,7 +36,7 @@ async def add_devices(account: Text,
     if devices:
         _LOGGER.debug("%s: Adding %s", account, devices)
         try:
-            add_devices_callback(devices, False)
+            add_devices_callback(devices, True)
             return True
         except HomeAssistantError as exception_:
             message = exception_.message  # type: str
@@ -56,8 +56,7 @@ async def add_devices(account: Text,
             _LOGGER.debug("%s: Unable to add devices: %s",
                           account,
                           message)
-    else:
-        return True
+
     return False
 
 
@@ -90,19 +89,16 @@ def retry_async(limit: int = 5,
         @functools.wraps(func)
         async def wrapper(*args, **kwargs) -> Callable:
             _LOGGER.debug(
-                "%s.%s: Trying with limit %s delay %s catch_exceptions %s",
-                func.__module__[func.__module__.find('.')+1:],
+                "%s: Trying with limit %s delay %s catch_exceptions %s",
                 func.__name__,
                 limit,
                 delay,
                 catch_exceptions)
             retries: int = 0
             result: bool = False
-            next_try: int = 0
             while (not result and retries < limit):
                 if retries != 0:
-                    next_try = delay * 2 ** retries
-                    await asyncio.sleep(next_try)
+                    await asyncio.sleep(delay * 2 ** retries)
                 retries += 1
                 try:
                     result = await func(*args, **kwargs)
@@ -112,18 +108,14 @@ def retry_async(limit: int = 5,
                     template = ("An exception of type {0} occurred."
                                 " Arguments:\n{1!r}")
                     message = template.format(type(ex).__name__, ex.args)
-                    _LOGGER.debug("%s.%s: failure caught due to exception: %s",
-                                  func.__module__[func.__module__.find('.')+1:],
+                    _LOGGER.debug("%s: failure caught due to exception: %s",
                                   func.__name__,
                                   message)
-                _LOGGER.debug("%s.%s: Try: %s/%s after waiting %s seconds result: %s",
-                              func.__module__[func.__module__.find('.')+1:],
+                _LOGGER.debug("%s: Try: %s/%s result: %s",
                               func.__name__,
                               retries,
                               limit,
-                              next_try,
-                              result
-                              )
+                              result)
             return result
         return wrapper
     return wrap

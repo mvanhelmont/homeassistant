@@ -1,0 +1,7 @@
+fibaro_frontdoor:
+  name: Fibaro Frontdoor Sensor
+  initial: off
+
+fibaro_imac:
+  name: Fibaro iMac Sensor
+  initial: off

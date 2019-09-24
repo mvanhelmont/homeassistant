@@ -2,8 +2,15 @@ platform: darksky
 api_key: !secret darsky_apikey
 latitude: 52.370216
 longitude: 4.895168
-forecast: 2
-language: nl
+forecast: 
+  - 0
+  - 1
+  - 2
+hourly_forecast:
+  - 0
+  - 1
+  - 2
+language: en
 scan_interval: 
   minutes: 30
 monitored_conditions:
