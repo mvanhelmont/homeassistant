@@ -10,7 +10,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8] 
+  effect_list: !include ../../templates/light_effects.yaml
 
 - platform: mqtt
   name: "Dressoir 2"
@@ -24,7 +24,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8] 
+  effect_list: !include ../../templates/light_effects.yaml 
 
 - platform: mqtt
   name: "Dressoir 3"
@@ -38,7 +38,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: [0, 1, 2, 3, 4 ,5, 6, 7, 8] 
+  effect_list: !include ../../templates/light_effects.yaml 
 
 - platform: mqtt
   name: "Dressoir All"
@@ -52,5 +52,4 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: [zero, one, two, tree, four, five, six, seven, eight, white_mode, night_mode] 
-
+  effect_list: !include ../../templates/light_effects.yaml 

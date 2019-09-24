@@ -7,9 +7,13 @@
       minutes: 5
 
   condition:
-    condition: state
-    entity_id: input_boolean.scene_goodnight
-    state: 'off'
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'off'
+
+    - condition: state
+      entity_id: switch.newkaku_01616a32_a
+      state: 'on'
 
   action:
     - service: homeassistant.turn_off
@@ -28,10 +32,14 @@
       minutes: 5
 
   condition:
-    condition: state
-    entity_id: input_boolean.scene_goodnight
-    state: 'off'
- 
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'off'
+
+    - condition: state
+      entity_id: switch.newkaku_01074522_a
+      state: 'on' 
+
   action:
     - service: homeassistant.turn_off
       entity_id: switch.newkaku_01074522_a
