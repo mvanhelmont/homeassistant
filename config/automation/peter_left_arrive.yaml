@@ -4,19 +4,11 @@
     event: enter
     platform: zone
     zone: zone.home
-  condition: []
+
   action:
   - data:
       message: Peter arrived home
     service: notify.pushover
-
-#  - delay: 00:00:10
-#
-#  - service: tts.google_translate_say
-#    data:
-#      entity_id: media_player.modipu
-#      message: The scene goodnight is activated! 
-
 
 - alias: Notification - Peter Left Home
   trigger:
@@ -24,7 +16,7 @@
     event: leave
     platform: zone
     zone: zone.home
-  condition: []
+
   action:
   - data:
       message: Peter left home

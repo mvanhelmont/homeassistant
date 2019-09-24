@@ -31,11 +31,12 @@ shell_command:
   meek_fan_turn_off: 'curl http://192.168.100.113/control?cmd=event,FanOff'
   meek_fan_turn_on: 'curl http://192.168.100.113/control?cmd=event,FanOn'
 
-#weather:
-#  - platform: buienradar
-#    forecast: true
-#    latitude: !secret lat
-#    longitude: !secret lon
+weather:
+  - platform: darksky
+    api_key: !secret darsky_apikey
+    mode: daily
+    latitude: !secret lat
+    longitude: !secret lon
 
 homeassistant:
   customize: !include customize.yaml

@@ -4,7 +4,7 @@
     event: enter
     platform: zone
     zone: zone.home
-  condition: []
+
   action:
   - data:
       message: Kay arrived home
@@ -16,7 +16,7 @@
     event: leave
     platform: zone
     zone: zone.home
-  condition: []
+
   action:
   - data:
       message: Kay left home

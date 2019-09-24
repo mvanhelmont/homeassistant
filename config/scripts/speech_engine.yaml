@@ -1,20 +1,34 @@
-test_notify_speech:
+engine_notify_speech:
   sequence:
-    - service: script.test_say
+    - service: script.engine_say
       data_template:
         media_player: "{{ media_player }}"
         message: "{{ message }}"
         say_greeting: "false"
 
-test_say:
+engine_say:
   sequence:
-    - service: script.test_speech_processing
+    - service: media_player.volume_set
+      data_template:
+        entity_id: media_player.peter_s_echo_dot
+        volume_level: >
+          {% if now().strftime('%H')|int < 11 and now().strftime('%H')|int > 6 %}
+            0.3
+          {% elif now().strftime('%H')|int > 11 and now().strftime('%H')|int < 19 %}
+            0.4
+          {% else %}
+            0.3
+          {% endif %}
+
+    - delay: '00:00:02'
+
+    - service: script.engine_speech_processing
       data_template:
         media_player: "{{ media_player }}"
         briefing: !include ../../templates/briefing.yaml
         title: "{{ title }}"
 
-test_speech_processing:
+engine_speech_processing:
   sequence:
     - service: notify.alexa_media_peter_s_echo_dot
       data_template:

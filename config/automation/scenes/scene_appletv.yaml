@@ -55,6 +55,12 @@
       - input_boolean.scene_kodi
       - input_boolean.scene_sexy
 
+# ALEXA SPEECH ENGINE
+  - service: script.engine_say
+    data_template:
+      media_player: media_player.this_device
+      say_scene_appletv: "true"
+
 # NANOLEAF LIGHT
   - service: light.turn_on
     entity_id: light.nanoleaf
@@ -88,13 +94,13 @@
         {% else %} 50
         {% endif %}
 
-  - service: script.turn_on
-    entity_id: script.alexa_speak_engine
-    data_template:
-      variables:
-        message: >
-          {{ [
-          "Enjoy the serie of movie, sun is gone so let me turn on the scene for you",
-          "The Scene Apple TV is activated, enjoy the movie or serie",
-          "Grab some snacks, drinks and enjoy the movie or serie. I will turn on the lights",
-          ] | random }}
+#  - service: script.turn_on
+#    entity_id: script.alexa_speak_engine
+#    data_template:
+#      variables:
+#        message: >
+#          {{ [
+#          "Enjoy the serie of movie, sun is gone so let me turn on the scene for you",
+#          "The Scene Apple TV is activated, enjoy the movie or serie",
+#          "Grab some snacks, drinks and enjoy the movie or serie. I will turn on the lights",
+#          ] | random }}

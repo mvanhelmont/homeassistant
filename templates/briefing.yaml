@@ -23,9 +23,11 @@
   {%- endmacro -%}
 
   {%- macro outside_weather() -%}
-    Outside, today will be {{ state_attr('weather.br_unknown_station', 'forecast')[0]['condition'] }} ... the high will be {{ state_attr('weather.br_unknown_station', 'forecast')[0]['temperature']|int }} degrees.
+    Outside, it is {{ states('sensor.dark_sky_temperature')|int }} degrees. The forcast for today is {{ states('sensor.dark_sky_daily_summary') }}.
   {%- endmacro -%}
-  
+
+
+
     {%- macro greeting_line() -%}
     {%- set hour = now().strftime('%H')|int -%}
     {%- if hour > 0 and hour < 10  %}
@@ -58,6 +60,10 @@
       'I will switch on the lights.  ...  It is getting dark outside.',
       'Time to turn on the front lights.  ...  I am on it.'
     ]|random }}
+  {%- endmacro -%}
+
+  {%- macro testing() -%}
+    this is a test
   {%- endmacro -%}
 
   {# ALL SCENES #}
@@ -196,7 +202,12 @@
     {%- if say_scene_goodnight == "true" -%}
       {{ scene_goodnight() }}
     {%- endif -%}
-    
+
+    {%- if say_testing == "true" -%}
+      {{ testing() }}
+    {%- endif -%}    
+
+
   {%- endmacro -%}
 
 
@@ -259,6 +270,10 @@
 
   {%- if person_arriving is not undefined -%}
     {%- set say_greeting = "false" -%}
+  {%- endif -%}
+
+  {%- if say_testing is not undefined -%}
+    {%- set say_test = "false" -%}
   {%- endif -%}
 
   {#- Get briefing, and strip unnecessary characters. -#}

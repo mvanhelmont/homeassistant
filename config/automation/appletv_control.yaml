@@ -4,7 +4,7 @@
     platform: state
     to: playing
     for:
-      seconds: 5
+      seconds: 10
 
   condition: 
     - condition: state
@@ -35,8 +35,6 @@
     from: playing
     platform: state
     to: idle
-    for:
-      seconds: 5
 
   condition: 
     - condition: state

@@ -11,5 +11,4 @@
   action:
   - service: notify.pushover
     data_template:
-#      message: "Home Assistant update is now available. {{now().strftime('%Y-%m-%d %I:%M %p')}}"
       message: "HA version {{ state_attr('binary_sensor.updater', 'newest_version') }} is released. {{now().strftime('%d-%m-%Y')}}"
