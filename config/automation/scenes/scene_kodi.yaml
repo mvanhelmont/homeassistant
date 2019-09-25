@@ -55,6 +55,12 @@
       - input_boolean.scene_appletv
       - input_boolean.scene_sexy
 
+# TTS TO ALEXA
+  - service: script.engine_say
+    data_template:
+      media_player: media_player.this_device
+      say_scene_kodi: "true"
+
 # NANOLEAF LIGHT
   - service: light.turn_on
     entity_id: light.nanoleaf
@@ -87,14 +93,9 @@
         {% else %} 0
         {% endif %}
 
-  - service: script.turn_on
-    entity_id: script.alexa_speak_engine
-    data_template:
-      variables:
-#        volume: '0.3'
-        message: >
-          {{ [
-          "I think it will begun dark inside the house, let me turn on the lights. Enjoy the movie!",
-          "Relaxing with a movie? I'll help you with the lights",
-          "There are no lights on! so let me do it for you! Enjoy the movie!"
-          ] | random }} 
+# CORRECT THE LIGHT SCENE ON STATUS KODI
+  - service_template: >
+      {% if (states.media_player.kodi.state) == 'playing' %} script.kodi_control_playing
+      {% elif (states.media_player.kodi.state) == 'paused' %} script.kodi_control_paused
+      {% else %} script.kodi_control_idle
+      {% endif %}

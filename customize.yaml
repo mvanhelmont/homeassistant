@@ -547,8 +547,6 @@ sensor.dark_sky_summary:
   friendly_name: Current Summery
 sensor.dark_sky_cloud_coverage:
   friendly_name: Current Clouds
-sensor.dark_sky_daytime_high_temperature_0d:
-  friendly_name: Max Temperature today
 sensor.dark_sky_humidity:
   friendly_name: Current Humidity
 sensor.dark_sky_pressure:

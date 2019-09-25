@@ -1,5 +1,5 @@
 tv_normal:
-  alias: TV Normal
+  alias: TV Normal Light Scene
   sequence:
 
     - service: light.turn_on
@@ -27,7 +27,7 @@ tv_normal:
         effect: 0
 
 tv_birthday:
-  alias: TV Birthday
+  alias: TV Birthday Light Scene
   sequence:
 
     - service: light.turn_on
@@ -61,7 +61,7 @@ tv_birthday:
         effect: 0
 
 tv_halloween:
-  alias: TV Halloween
+  alias: TV Halloween Light Scene
   sequence:
 
     - service: light.turn_on
@@ -101,7 +101,7 @@ tv_halloween:
         effect: 0
 
 tv_kingsday:
-  alias: TV kingsday
+  alias: TV kingsday Light Scene
   sequence:
 
     - service: light.turn_on
@@ -135,7 +135,7 @@ tv_kingsday:
         effect: 0
 
 tv_christmas:
-  alias: TV Christmas
+  alias: TV Christmas Light Scene
   sequence:
     - service: light.turn_on
       data:

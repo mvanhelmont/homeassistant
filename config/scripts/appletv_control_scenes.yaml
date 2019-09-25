@@ -1,5 +1,5 @@
 appletv_control_paused:
-  alias: ApplTV Control Paused Scene
+  alias: AppleTV Control Paused Scene
   sequence:
 
     - service: light.turn_on

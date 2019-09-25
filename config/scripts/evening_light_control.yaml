@@ -1,5 +1,5 @@
 evening_normal:
-  alias: Evening Normal
+  alias: Evening Normal Light Scene
   sequence:
     - service: light.turn_on
       data:
@@ -20,7 +20,7 @@ evening_normal:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
 evening_birthday:
-  alias: Evening Birthday
+  alias: Evening Birthday Light Scene
   sequence:
 
     - service: light.turn_on
@@ -54,7 +54,7 @@ evening_birthday:
         effect: 0
 
 evening_halloween:
-  alias: Evening Halloween
+  alias: Evening Halloween Light Scene
   sequence:
 
     - service: light.turn_on
@@ -88,7 +88,7 @@ evening_halloween:
         effect: 0
 
 evening_kingsday:
-  alias: Evening Kingsday
+  alias: Evening Kingsday Light Scene
   sequence:
 
     - service: light.turn_on
@@ -122,7 +122,7 @@ evening_kingsday:
         effect: 0
 
 evening_christmas:
-  alias: Evening Christmas
+  alias: Evening Christmas Light Scene
   sequence:
     - service: light.turn_on
       data:
