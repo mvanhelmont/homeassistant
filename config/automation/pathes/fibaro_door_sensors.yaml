@@ -1,4 +1,4 @@
-- alias: Patches - Fibaro Frontdoor Sensor Open
+- alias: 'Patches - Fibaro Frontdoor Sensor Open'
   trigger:
   - entity_id: sensor.node_11_access_control
     platform: state
@@ -8,7 +8,7 @@
     - service: homeassistant.turn_on
       entity_id: input_boolean.fibaro_frontdoor
 
-- alias: Patches - Fibaro Frontdoor Sensor Close
+- alias: 'Patches - Fibaro Frontdoor Sensor Close'
   trigger:
   - entity_id: sensor.node_11_access_control
     platform: state
@@ -18,7 +18,7 @@
     - service: homeassistant.turn_off
       entity_id: input_boolean.fibaro_frontdoor
 
-- alias: Patches - Fibaro iMac Sensor Open
+- alias: 'Patches - Fibaro iMac Sensor Open'
   trigger:
   - entity_id: sensor.node_13_access_control
     platform: state
@@ -28,7 +28,7 @@
     - service: homeassistant.turn_on
       entity_id: input_boolean.fibaro_imac
 
-- alias: Patches - Fibaro iMac Sensor Close
+- alias: 'Patches - Fibaro iMac Sensor Close'
   trigger:
   - entity_id: sensor.node_13_access_control
     platform: state

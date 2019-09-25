@@ -1,4 +1,4 @@
-- alias: Motion Detection - Kitchen On
+- alias: 'Motion Detection - Kitchen On'
   trigger:
     platform: state
     entity_id: binary_sensor.node_16
@@ -19,7 +19,7 @@
         {% else %} script.kitchen_normal_turn_on
         {% endif %}
 
-- alias: Motion Detection - Kitchen Off
+- alias: 'Motion Detection - Kitchen Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_16

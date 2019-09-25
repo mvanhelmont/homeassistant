@@ -1,4 +1,4 @@
-- alias: Scene - Kodi
+- alias: 'Scene - Kodi'
   trigger:
 
   - platform: time_pattern

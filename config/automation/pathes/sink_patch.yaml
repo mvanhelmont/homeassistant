@@ -1,4 +1,4 @@
-- alias: Patches - MiLight Sink Group 0
+- alias: 'Patches - MiLight Sink Group 0'
   initial_state: True
   trigger:
     platform: mqtt

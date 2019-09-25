@@ -1,4 +1,4 @@
-- alias: Scene - Daylight
+- alias: 'Scene - Daylight'
   trigger:
 
   - platform: time_pattern

@@ -1,4 +1,4 @@
-- alias: Control - Kay Learning On
+- alias: 'Control - Kay Learning On'
   trigger:
 
   - entity_id: switch.kay_learning
@@ -20,7 +20,7 @@
       entity_id: light.newkaku_01401eb6_a
       brightness_pct: 100
 
-- alias: Control - Kay Learning Off
+- alias: 'Control - Kay Learning Off'
   trigger:
 
   - entity_id: switch.kay_learning

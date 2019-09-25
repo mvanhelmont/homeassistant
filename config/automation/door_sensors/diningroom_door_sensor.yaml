@@ -1,4 +1,4 @@
-- alias: Door Sensor - Diningroom Open Dressoir Off
+- alias: 'Door Sensor - Diningroom Open Dressoir Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_10
@@ -30,7 +30,7 @@
           {% else %} 50
           {% endif %} 
 
-- alias: Door Sensor - Diningroom Closed Dressoir On
+- alias: 'Door Sensor - Diningroom Closed Dressoir On'
   trigger:
     platform: state
     entity_id: binary_sensor.node_10

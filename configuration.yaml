@@ -39,7 +39,8 @@ weather:
     longitude: !secret lon
 
 homeassistant:
-  customize: !include customize.yaml
+  customize: !include_dir_merge_named config/customize/
+#  customize: !include customize.yaml
   auth_providers:
     - type: homeassistant
 

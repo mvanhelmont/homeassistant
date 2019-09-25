@@ -1,4 +1,4 @@
-- alias: Scene - TV
+- alias: 'Scene - TV'
   trigger:
 
   - platform: time_pattern

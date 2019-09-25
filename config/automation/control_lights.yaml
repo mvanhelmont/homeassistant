@@ -1,4 +1,4 @@
-- alias: Control - Bathroom Lights Are On
+- alias: 'Control - Bathroom Lights Are On'
   trigger:
   - entity_id: binary_sensor.node_15
     platform: state
@@ -23,7 +23,7 @@
       data_template:
         message: "Turned off bathroom switch and light"
 
-- alias: Control - Bedroom Lights Are On
+- alias: 'Control - Bedroom Lights Are On'
   trigger:
   - entity_id: binary_sensor.node_14
     platform: state

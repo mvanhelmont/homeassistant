@@ -1,4 +1,4 @@
-- alias: Scene - IPTV
+- alias: 'Scene - IPTV'
   trigger:
 
   - platform: time_pattern

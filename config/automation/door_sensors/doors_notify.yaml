@@ -1,4 +1,4 @@
-- alias: Notification - Door Open
+- alias: 'Notification - Door Open'
   trigger:
     - platform: state
       entity_id: sensor.node_12_access_control,
@@ -11,7 +11,7 @@
     data_template:
       message: ' {{ trigger.from_state.attributes.friendly_name }} door is open'
 
-- alias: Notification - Door Close
+- alias: 'Notification - Door Close'
   trigger:
     - platform: state
       entity_id: sensor.node_12_access_control,

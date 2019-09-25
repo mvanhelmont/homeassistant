@@ -1,0 +1,106 @@
+- alias: 'Scene - Disco'
+  trigger:
+
+  - entity_id: input_boolean.scene_disco
+    platform: state
+    to: 'on'
+
+  action:
+  - service: notify.pushover
+    data:
+      message: Scene disco is activated
+
+# NANOLEAF LIGHT
+  - service: light.turn_on
+    entity_id: light.nanoleaf
+    data:
+      brightness_pct: 30
+      effect: NorthernLight
+
+# LIGHT
+  - service: light.turn_on
+    entity_id: 
+      - light.dressoir_1
+    data:
+      effect: 0 
+      brightness_pct: 100
+
+  - delay:
+      milliseconds: 200
+
+  - service: light.turn_on
+    entity_id:
+      - light.dressoir_2
+    data:
+      effect: 0
+      brightness_pct: 100
+
+  - delay:
+      milliseconds: 200
+
+  - service: light.turn_on
+    entity_id:
+      - light.dressoir_3
+    data:
+      effect: 0
+      brightness_pct: 100
+
+  - delay:
+      milliseconds: 200
+
+  - service: light.turn_on
+    entity_id:
+      - light.livingroom_1
+    data:
+      effect: 0
+      brightness_pct: 100
+
+  - delay:
+      milliseconds: 200
+
+  - service: light.turn_on
+    entity_id:
+      - light.livingroom_2
+    data:
+      effect: 0
+      brightness_pct: 100
+
+  - delay:
+      milliseconds: 200
+
+  - service: light.turn_on
+    entity_id:
+      - light.livingroom_3
+    data:
+      effect: 0
+      brightness_pct: 100
+
+  - delay:
+      milliseconds: 200
+
+  - service: light.turn_on
+    entity_id:
+      - light.livingroom_4
+    data:
+      effect: 0
+      brightness_pct: 100
+
+  - delay:
+      milliseconds: 200
+
+  - service: light.turn_on
+    entity_id:
+      - light.balcony
+    data:
+      effect: 0
+      brightness_pct: 100
+
+  - delay:
+      milliseconds: 200
+
+  - service: light.turn_on
+    entity_id:
+      - light.hallway
+    data:
+      effect: 0
+      brightness_pct: 100

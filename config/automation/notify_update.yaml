@@ -1,4 +1,4 @@
-- alias: "Notification - Update Available Notification"
+- alias: 'Notification - Update Available Notification'
   hide_entity: True
   trigger:
     platform: state

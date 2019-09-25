@@ -1,4 +1,4 @@
-- alias: Scene - Nobody Home
+- alias: 'Scene - Nobody Home'
   trigger:
 
   - platform: time_pattern

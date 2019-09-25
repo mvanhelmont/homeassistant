@@ -1,0 +1,39 @@
+---
+zwave.node_9:
+  friendly_name: Neo Switch Hall
+sensor.node_9_alarm_level:
+  friendly_name: Neo Switch Hall Alarm Level
+sensor.node_9_alarm_type:
+  friendly_name: Neo Switch Hall Alarm Type
+sensor.node_9_current:
+  friendly_name: Neo Switch Hall Current Amp
+sensor.node_9_energy:
+  friendly_name: Neo Switch Hall kWh
+sensor.node_9_exporting:
+  friendly_name: Neo Switch Hall Export
+sensor.node_9_interval:
+  friendly_name: Neo Switch Hall Interval 1
+sensor.node_9_interval_2:
+  friendly_name: Neo Switch Hall Interval 2
+sensor.node_9_interval_3:
+  friendly_name: Neo Switch Hall Interval 3
+sensor.node_9_interval_4:
+  friendly_name: Neo Switch Hall Interval 4
+sensor.node_9_power:
+  friendly_name: Neo Switch Hall Current Watt
+sensor.node_9_power_management:
+  friendly_name: Neo Switch Hall Power Man
+sensor.node_9_previous_reading:
+  friendly_name: Neo Switch Hall Watt 1
+sensor.node_9_previous_reading_2:
+  friendly_name: Neo Switch Hall Watt 2
+sensor.node_9_previous_reading_3:
+  friendly_name: Neo Switch Hall Voltage History
+sensor.node_9_previous_reading_4:
+  friendly_name: Neo Switch Hall Amp Histroy
+sensor.node_9_sourcenodeid:
+  friendly_name: Neo Switch Hall SourceID
+sensor.node_9_voltage:
+  friendly_name: Neo Switch Hall Voltage
+switch.node_9_switch:
+  friendly_name: Neo Switch Hall Switch

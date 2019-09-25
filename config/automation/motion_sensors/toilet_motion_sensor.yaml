@@ -1,4 +1,4 @@
-- alias: Motion Detection - Toilet On
+- alias: 'Motion Detection - Toilet On'
   trigger:
     platform: state
     entity_id: binary_sensor.node_20
@@ -16,7 +16,7 @@
       brightness_pct: 20
       kelvin: 4700
 
-- alias: Motion Detection - Toilet Off
+- alias: 'Motion Detection - Toilet Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_20

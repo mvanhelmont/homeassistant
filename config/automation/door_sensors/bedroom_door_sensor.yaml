@@ -1,4 +1,4 @@
-- alias: Door Sensor - Bedroom Door Open Lights to 20
+- alias: 'Door Sensor - Bedroom Door Open Lights to 20'
   trigger:
     platform: state
     entity_id: binary_sensor.node_12
@@ -20,7 +20,7 @@
       kelvin: 4700
       brightness_pct: 20
 
-- alias: Door Sensor - Bedroom Door Closed Lights to 100
+- alias: 'Door Sensor - Bedroom Door Closed Lights to 100'
   trigger:
     platform: state
     entity_id: binary_sensor.node_12

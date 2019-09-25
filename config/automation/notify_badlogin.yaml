@@ -1,4 +1,4 @@
-- alias: "Notification - Login Failure"
+- alias: 'Notification - Login Failure'
   hide_entity: False
   trigger:
     platform: template

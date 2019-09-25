@@ -1,4 +1,4 @@
-- alias: Scene - Sleeping
+- alias: 'Scene - Sleeping'
   trigger:
 
   - entity_id: input_boolean.scene_sleeping

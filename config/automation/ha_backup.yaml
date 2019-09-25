@@ -1,4 +1,4 @@
-- alias: System - Backup HA on Monday and Saterday
+- alias: 'System - Backup HA on Monday and Saterday'
   initial_state: true
   trigger:
     - platform: time

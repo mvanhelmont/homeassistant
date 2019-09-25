@@ -1,4 +1,4 @@
-- alias: Control - AppleTV is playing
+- alias: 'Control - AppleTV is playing'
   trigger:
   - entity_id: media_player.woonkamer
     platform: state
@@ -14,7 +14,7 @@
   action:
     - service: script.appletv_control_playing
 
-- alias: Control - AppleTV is on pause
+- alias: 'Control - AppleTV is on pause'
   trigger:
   - entity_id: media_player.woonkamer
     from: playing
@@ -29,7 +29,7 @@
   action:
     - service: script.appletv_control_paused
 
-- alias: Control - AppleTV is idle
+- alias: 'Control - AppleTV is idle'
   trigger:
   - entity_id: media_player.woonkamer
     from: playing

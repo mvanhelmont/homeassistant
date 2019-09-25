@@ -1,4 +1,4 @@
-- alias: Scene - 20Min before sunset
+- alias: 'Scene - 20Min before sunset'
   trigger:
 
     platform: sun

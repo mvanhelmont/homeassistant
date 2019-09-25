@@ -1,4 +1,4 @@
-- alias: Motion Detection - Diningroom On
+- alias: 'Motion Detection - Diningroom On'
   trigger:
     platform: state
     entity_id: binary_sensor.node_18
@@ -16,7 +16,7 @@
       kelvin: 2700
       brightness_pct: 20
 
-- alias: Motion Detection - Diningroom Off
+- alias: 'Motion Detection - Diningroom Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_18

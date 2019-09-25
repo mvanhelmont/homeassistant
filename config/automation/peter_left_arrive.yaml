@@ -1,4 +1,4 @@
-- alias: Notification - Peter Arrive Home
+- alias: 'Notification - Peter Arrive Home'
   trigger:
   - entity_id: device_tracker.geofency_peter
     event: enter
@@ -10,7 +10,7 @@
       message: Peter arrived home
     service: notify.pushover
 
-- alias: Notification - Peter Left Home
+- alias: 'Notification - Peter Left Home'
   trigger:
   - entity_id: device_tracker.geofency_peter
     event: leave

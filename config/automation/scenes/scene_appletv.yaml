@@ -1,4 +1,4 @@
-- alias: Scene - AppleTV
+- alias: 'Scene - AppleTV'
   trigger:
 
   - platform: time_pattern

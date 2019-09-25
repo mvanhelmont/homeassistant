@@ -1,0 +1,39 @@
+---
+zwave.node_6:
+  friendly_name: Neo Switch Peter
+sensor.node_6_alarm_level:
+  friendly_name: Neo Switch Peter Alarm Level
+sensor.node_6_alarm_type:
+  friendly_name: Neo Switch Peter Alarm Type
+sensor.node_6_current:
+  friendly_name: Neo Switch Peter Current Amp
+sensor.node_6_energy:
+  friendly_name: Neo Switch Peter kWh
+sensor.node_6_exporting:
+  friendly_name: Neo Switch Peter Export
+sensor.node_6_interval:
+  friendly_name: Neo Switch Peter Interval 1
+sensor.node_6_interval_2:
+  friendly_name: Neo Switch Peter Interval 2
+sensor.node_6_interval_3:
+  friendly_name: Neo Switch Peter Interval 3
+sensor.node_6_interval_4:
+  friendly_name: Neo Switch Peter Interval 4
+sensor.node_6_power:
+  friendly_name: Neo Switch Peter Current Watt
+sensor.node_6_power_management:
+  friendly_name: Neo Switch Peter Power Man
+sensor.node_6_previous_reading:
+  friendly_name: Neo Switch Peter Watt 1
+sensor.node_6_previous_reading_2:
+  friendly_name: Neo Switch Peter Watt 2
+sensor.node_6_previous_reading_3:
+  friendly_name: Neo Switch Peter Voltage History
+sensor.node_6_previous_reading_4:
+  friendly_name: Neo Switch Peter Amp Histroy
+sensor.node_6_sourcenodeid:
+  friendly_name: Neo Switch Peter SourceID
+sensor.node_6_voltage:
+  friendly_name: Neo Switch Peter Voltage
+switch.node_6_switch:
+  friendly_name: Neo Switch Peter Switch

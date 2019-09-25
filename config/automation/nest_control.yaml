@@ -1,4 +1,4 @@
-- alias: Control - Nest Control Goodnight Scene
+- alias: 'Control - Nest Control Goodnight Scene'
   trigger:
 
   - platform: time_pattern
@@ -25,7 +25,7 @@
           {% else %} 9
           {% endif %}
 
-- alias: Control - Nest Control Nobody Home
+- alias: 'Control - Nest Control Nobody Home'
   trigger:
 
   - platform: time_pattern
@@ -46,7 +46,7 @@
           {% else %} 9
           {% endif %}
 
-- alias: Control - Nest Control Someone Home
+- alias: 'Control - Nest Control Someone Home'
   trigger:
 
   - platform: time_pattern

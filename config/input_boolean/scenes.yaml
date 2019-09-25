@@ -1,3 +1,7 @@
+scene_disco:
+  name: Scene Disco
+  initial: off
+
 scene_appletv:
   name: Scene AppleTV
   initial: off
