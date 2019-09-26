@@ -27,7 +27,7 @@ engine_say:
     - service: script.engine_speech_processing
       data_template:
         media_player: "{{ media_player }}"
-        briefing: !include ../../templates/briefing.yaml
+        briefing: !include ../../config/templates/briefing.yaml
         title: "{{ title }}"
 
 engine_speech_processing:

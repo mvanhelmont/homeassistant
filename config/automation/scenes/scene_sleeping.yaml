@@ -13,7 +13,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Scene Sleeping is activated
+      message: "Scene Sleeping is activated"
+      title: "HA Scene System"
 
   - service: light.turn_off
     entity_id: 
@@ -26,7 +27,8 @@
       brightness_pct: 1
       effect: 0
 
-  - delay: 00:00:01
+  - delay:
+      milliseconds: 200
 
   - service: light.turn_on
     data:

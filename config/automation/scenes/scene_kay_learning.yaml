@@ -13,7 +13,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Kay Learning is activated
+      message: "Kay Learning is activated"
+      title: "HA System"
 
   - service: light.turn_on
     data:
@@ -35,7 +36,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Kay Learning is deactivated
+      message: "Kay Learning is deactivated"
+      title: "HA System"
 
   - service: light.turn_on
     data:

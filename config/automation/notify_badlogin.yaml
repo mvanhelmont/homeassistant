@@ -7,4 +7,5 @@
   action:
   - service: notify.pushover
     data_template:
-      message: There is a bad login registered on Home Assistant
+      message: "There is a bad login registered on Home Assistant"
+      title: "HA Security System"

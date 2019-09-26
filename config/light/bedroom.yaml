@@ -10,7 +10,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Bedroom 1"
@@ -24,7 +24,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Bedroom 2"
@@ -38,7 +38,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml 
+  effect_list: !include ../../config/templates/light_effects.yaml 
 
 - platform: mqtt
   name: "Bedroom 3"
@@ -52,7 +52,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml 
+  effect_list: !include ../../config/templates/light_effects.yaml 
 
 - platform: mqtt
   name: "Bedroom 4"
@@ -66,7 +66,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Bedroom 5"
@@ -80,7 +80,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Bedroom 6"
@@ -94,5 +94,5 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml 
+  effect_list: !include ../../config/templates/light_effects.yaml 
 

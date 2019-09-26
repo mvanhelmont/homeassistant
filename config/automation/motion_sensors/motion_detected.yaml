@@ -25,5 +25,6 @@
   action:
   - service: notify.pushover
     data_template:
-      message: registered motion {{ trigger.from_state.attributes.friendly_name  }}
+      message: "registered motion {{ trigger.from_state.attributes.friendly_name  }}"
+      title: "HA Security System"
 

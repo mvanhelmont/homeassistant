@@ -8,7 +8,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Scene disco is activated
+      message: "Scene disco is activated"
+      title: "HA Scene System"
 
 # NANOLEAF LIGHT
   - service: light.turn_on

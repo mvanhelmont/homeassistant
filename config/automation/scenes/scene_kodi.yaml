@@ -40,7 +40,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Scene kodi is activated
+      message: "Scene kodi is activated"
+      title: "HA Scene System"
 
   - service: input_boolean.turn_on
     data:

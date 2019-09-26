@@ -16,7 +16,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Scene Daylight is activated
+      message: "Scene Daylight is activated"
+      title: "HA Scene System"
 
   - service: input_boolean.turn_on
     data:

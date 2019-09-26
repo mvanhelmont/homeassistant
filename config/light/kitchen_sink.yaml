@@ -10,7 +10,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Sink 1"
@@ -24,7 +24,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Sink 2"
@@ -38,7 +38,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Sink 3"
@@ -52,5 +52,5 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 

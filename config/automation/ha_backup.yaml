@@ -16,3 +16,4 @@
     - service: notify.pushover
       data_template:
         message: "HASS backup has run. the snapshot name is ---->  Full_Backup_{{ now().strftime('%Y%m%d') }} "
+        title: "HA System"

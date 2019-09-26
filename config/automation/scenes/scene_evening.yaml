@@ -40,7 +40,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Scene evening is activated
+      message: "Scene evening is activated"
+      title: "HA Scene System"
 
   - service: input_boolean.turn_on
     data:
@@ -55,28 +56,11 @@
       - input_boolean.scene_appletv
       - input_boolean.scene_sexy
 
-# TTS TO ALEXA
-#  - service: script.turn_on
-#    entity_id: script.alexa_speak_engine
-#    data_template:
-#      variables:
-#        volume: '0.3'
-#        message: >
-#          {{ [
-#          "The sun is down, so the romantic evening is started!",
-#          "The sunset has begun, i turn on the lights for you",
-#          "I think it will begun dark inside the house, let me turn on the lights",
-#          "Make some tea, i will help you with the lights",
-#          "Sun?, sun?, wherever you are? Ill turn on the lights inside",
-#          "There are no lights on! so let me do it for you!"
-#          ] | random }}
-
   - service: script.engine_say
     data_template:
       media_player: media_player.this_device
       say_scene_evening: "true"
 
-# NANOLEAF LIGHT
   - service: light.turn_on
     entity_id: light.nanoleaf
     data_template:
@@ -89,7 +73,6 @@
         {% else %} Fireplace
         {% endif %}
 
-# LIGHT
   - service_template: > 
        {% if (states.sensor.holiday.state) == 'Christmas' %} script.evening_christmas
        {% elif (states.sensor.holiday.state) == 'Halloween' %} script.evening_halloween
@@ -98,7 +81,6 @@
        {% else %} script.evening_normal
        {% endif %}
 
-# DINING TABLE
   - service: homeassistant.turn_on
     data_template:
       entity_id: light.newkaku_01401eb6_a

@@ -24,7 +24,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Scene Nobody Home is activated
+      message: "Scene Nobody Home is activated"
+      title: "HA Scene System"
 
   - service: input_boolean.turn_on
     data:

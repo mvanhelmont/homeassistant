@@ -22,6 +22,7 @@
     - service: notify.pushover
       data_template:
         message: "Turned off bathroom switch and light"
+        title: "HA System"
 
 - alias: 'Control - Bedroom Lights Are On'
   trigger:
@@ -47,3 +48,4 @@
     - service: notify.pushover
       data_template:
         message: "Turned off bedroom switch and light"
+        title: "HA System"

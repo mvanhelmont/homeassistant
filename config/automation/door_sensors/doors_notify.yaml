@@ -9,7 +9,8 @@
   action:
   - service: notify.pushover
     data_template:
-      message: ' {{ trigger.from_state.attributes.friendly_name }} door is open'
+      message: " {{ trigger.from_state.attributes.friendly_name }} door is open"
+      title: "HA Security System"
 
 - alias: 'Notification - Door Close'
   trigger:
@@ -22,4 +23,5 @@
   action:
   - service: notify.pushover
     data_template:
-      message: ' {{ trigger.from_state.attributes.friendly_name }} door is closed'
+      message: " {{ trigger.from_state.attributes.friendly_name }} door is closed"
+      title: "HA Security System"

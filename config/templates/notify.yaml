@@ -1,0 +1,82 @@
+  >
+  {%- macro scene_evening() -%}
+    The scene evening is activated
+  {%- endmacro -%}
+
+  {%- macro scene_kodi() -%}
+    The scene kodi is activated
+  {%- endmacro -%}
+  
+  {%- macro scene_goodnight() -%}
+      The scene goodnight is activated
+  {%- endmacro -%}
+  
+  {%- macro scene_appletv() -%}
+      The scene apple tv is activated
+  {%- endmacro -%}
+  
+  {%- macro scene_tv() -%}
+      The scene kodi is activated
+  {%- endmacro -%}
+  
+  {%- macro scene_iptv() -%}
+      The scene iptv is activated
+  {%- endmacro -%}
+
+  {%- macro goodnight_line() -%}
+      The scene goodnight is activated
+  {%- endmacro -%}
+  
+  {# BRIEFING TEMPLATE #}
+  {%- macro get_briefing() -%}
+     {%- if say_scene_evening == "true" -%}
+      {{ scene_evening() }}
+    {%- endif -%}
+
+    {%- if say_scene_kodi == "true" -%}
+      {{ scene_kodi() }}
+    {%- endif -%}
+    
+    {%- if say_scene_tv == "true" -%}
+      {{ scene_tv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_iptv == "true" -%}
+      {{ scene_iptv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_appletv == "true" -%}
+      {{ scene_appletv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_goodnight == "true" -%}
+      {{ scene_goodnight() }}
+    {%- endif -%}
+
+    {%- if say_testing == "true" -%}
+      {{ testing() }}
+    {%- endif -%}    
+
+  {%- endmacro -%}
+
+
+  {# Initialize variables #}
+  {%- if say_scene_evening is undefined -%}
+    {%- set say_scene_evening = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_kodi is undefined -%}
+    {%- set say_scene_kodi = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_tv is undefined -%}
+    {%- set say_scene_tv = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_appletv is undefined -%}
+    {%- set say_scene_appletv = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_goodnight is undefined -%}
+    {%- set say_scene_goodnight = "false" -%}
+  {%- endif -%}

@@ -10,7 +10,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Livingroom 1"
@@ -24,7 +24,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Livingroom 2"
@@ -38,7 +38,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Livingroom 3"
@@ -52,7 +52,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Livingroom 4"
@@ -66,7 +66,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Livingroom Wall"
@@ -80,7 +80,7 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml
 
 - platform: mqtt
   name: "Livingroom Window"
@@ -94,4 +94,4 @@
   rgb: true
   color_temp: true
   effect: true
-  effect_list: !include ../../templates/light_effects.yaml
+  effect_list: !include ../../config/templates/light_effects.yaml

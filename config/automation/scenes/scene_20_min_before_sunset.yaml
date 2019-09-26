@@ -17,7 +17,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Scene 20 Minutes is activated
+      message: "Scene 20 Minutes is activated"
+      title: "HA Scene System"
 
 # NANOLEAF LIGHT
   - service: light.turn_on

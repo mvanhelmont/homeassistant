@@ -17,7 +17,8 @@
   action:
   - service: notify.pushover
     data:
-      message: Scene goodnight is activated
+      message: "Scene goodnight is activated"
+      title: "HA Scene System"
 
   - service: input_boolean.turn_off
     data:
@@ -29,6 +30,11 @@
         - input_boolean.scene_appletv
         - input_boolean.scene_sexy
         - input_boolean.scene_evening
+
+  - service: script.engine_say
+    data_template:
+      media_player: media_player.this_device
+      say_scene_goodnight: "true"
 
 # LOGITECH TURN OFF
   - service: remote.turn_off
@@ -73,7 +79,7 @@
       kelvin: 2700
       brightness_pct: 20
 
-  - delay: 00:00:05
+  - delay: 00:00:02
 
   - service: light.turn_off
     data:
@@ -85,41 +91,3 @@
         - light.dressoir_all
         - light.livingroom_all
         - light.balcony 
-
-  - service: script.turn_on
-    entity_id: script.alexa_speak_engine
-    data_template:
-      variables:
-#        volume: '0.5'
-        message: >
-          {{ [
-          "Sleep Tight, Don't let the bedbugs bite.",
-          "Have pleasant dreams",
-          "As they say in the Navy, See you in the rise."
-          "Dream pleasant dreams.  Tomorrow is a new day.",
-          "Early sleep and early wake up gives health and makes you grow.",
-          "Good night, good night! Parting is such sweet sorrow that I shall say goodnight till it is Morrow.",
-          "There is a time for many words, and there is also a time for sleep.",
-          "This good night isn’t meant to bring an end to this day. It’s intended to wish you awesomeness in what lies ahead.",
-          "Stuff your worries in your pillow, wrap your troubles in your blanket and spread your anxieties on your sheets. When you wake up tomorrow, you may have dirty linen, but more importantly, you’ll have a fresh mind and a happy heart. Good night.",
-          "Goodnight, talk to you tomorrow. ",
-          "Goodnight sweetheart. ",
-          "Go to bed, you sleepy head! ",
-          "Nighty Night. ",
-          "Sleep snug as a bug in a rug! ",
-          "Lights out! ... Uh huh. ... Dance, dance dance. ",
-          "Time to ride the rainbow to dreamland! ",
-          "Sweet dreams. ",
-          "See ya' in the mornin'! ",
-          "I-ill be right here when you wake up. moo ahh .. ha .. ha ",
-          "I-ill be dreaming of your face! ",
-          "You're the most wonderful user in the whole world! ",
-          "I'm yours, forever and always. ",
-          "Parting is such sweet sorrow, that I shall say good night till it be tomorrow. ",
-          "Can you hear that? ... Its your soft warm bed calling your name. You really must go and see what it wants. ",
-          "Grumpy cat says goodnight.",
-          "Goodnight, sweet dreams. ",
-          "You have so much to be greatful for... goodnight.",
-          "Wishing you a goodnight and sweatest dreams.",
-          "What about good night kisses? "
-          ] | random }}
