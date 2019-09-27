@@ -1,0 +1,63 @@
+---
+#- name: 
+#  latitude: 
+#  longitude: 
+#  radius: 300
+#  icon: mdi:map-marker
+#  passive: false
+
+- name: Station Sloterdijk
+  latitude: 52.388976
+  longitude: 4.837424
+  radius: 300
+  icon: mdi:map-marker
+  passive: false
+
+- name: Station Amstel
+  latitude: 52.346696
+  longitude: 4.917745
+  radius: 150
+  icon: mdi:map-marker
+  passive: false
+
+- name: Schiphol Apotheek
+  latitude: 52.302180
+  longitude: 4.861339
+  radius: 100
+  icon: mdi:map-marker
+  passive: false
+
+- name: Schiphol Airport
+  latitude: 52.309679
+  longitude: 4.762314
+  radius: 200
+  icon: mdi:map-marker
+  passive: false
+
+- name: Station Duivendrecht
+  latitude: 52.323576
+  longitude: 4.936463
+  radius: 100
+  icon: mdi:map-marker
+  passive: false
+
+- name: Station Bijlmer
+  latitude: 52.312352
+  longitude: 4.947099
+  radius: 150
+  icon: mdi:map-marker
+  passive: false
+
+- name: Station Haarlem
+  latitude: 52.388007
+  longitude: 4.638609
+  radius: 100
+  icon: mdi:map-marker
+  passive: false
+
+- name: Gelderlandplein
+  latitude: 52.331194
+  longitude: 4.877440
+  radius: 150
+  icon: mdi:map-marker
+  passive: false

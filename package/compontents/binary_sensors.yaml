@@ -1,0 +1,35 @@
+---
+- platform: ping
+  host: 192.168.100.8
+  scan_interval: 60
+  name: iMac Peter
+
+- platform: ping
+  host: 192.168.100.23
+  scan_interval: 60
+  name: Resillio
+
+- platform: ping
+  host: 192.168.100.25
+  scan_interval: 60
+  name: SSH Server
+
+- platform: ping
+  host: 192.168.100.28
+  scan_interval: 60
+  name: HP Printer
+
+- platform: ping
+  host: 192.168.100.70
+  scan_interval: 60
+  name: Milight Hub
+
+- platform: ping
+  host: 192.168.100.111
+  scan_interval: 60
+  name: Meek P1 Meter
+
+- platform: ping
+  host: 192.168.100.113
+  scan_interval: 60
+  name: Meek WC

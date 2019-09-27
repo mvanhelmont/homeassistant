@@ -1,0 +1,29 @@
+- alias: 'Notification - Door Open'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.node_10,
+                 binary_sensor.node_12,
+                 sensor.fibaro_frontdoor_custom_sensor,
+                 sensor.fibaro_imac_custom_sensor
+      to: 'on'
+
+  action:
+  - service: notify.pushover
+    data_template:
+      message: " {{ trigger.from_state.attributes.friendly_name }} door is open"
+      title: "HA Security System"
+
+- alias: 'Notification - Door Close'
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.node_10,
+                 binary_sensor.node_12,
+                 sensor.fibaro_frontdoor_custom_sensor,
+                 sensor.fibaro_imac_custom_sensor 
+      to: 'off'
+
+  action:
+  - service: notify.pushover
+    data_template:
+      message: " {{ trigger.from_state.attributes.friendly_name }} door is closed"
+      title: "HA Security System"

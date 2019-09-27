@@ -1,0 +1,16 @@
+- alias: TEST BUTTON ON 1
+  trigger: 
+    - platform: state
+      entity_id: switch.newkaku_014e5906_a
+      to: 'on'
+ 
+  action:
+
+    - service: script.turn_on
+      entity_id: script.alexa_speak_engine
+      data_template:
+        variables:        
+          volume: '0.4'
+          message1: "This is message 1"
+          message2: " "
+          message3: "This is message 3"

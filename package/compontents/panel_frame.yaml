@@ -1,0 +1,11 @@
+---
+rijdendetreinen:
+  title: 'NS'
+  icon: mdi:train
+  url: 'https://www.rijdendetreinen.nl/vertrektijden/station/amsterdam-zuid?style=tb&hide_train_numbers=1&hide_stock=1&time=b$
+
+---
+ov9292:
+  title: 'GVB'
+  icon: mdi:bus
+  url: 'https://9292.nl/amsterdam/tramhalte-metrostation-de-boelelaan-vu'
