@@ -11,4 +11,3 @@
   color_temp: true
   effect: true
   effect_list: !include ../../package/templates/light_effects.yaml
-

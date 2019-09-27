@@ -1,0 +1,7 @@
+---
+name: Station Bijlmer
+latitude: 52.312352
+longitude: 4.947099
+radius: 150
+icon: mdi:map-marker
+passive: false

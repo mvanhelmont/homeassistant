@@ -1,0 +1,7 @@
+---
+platform: template
+sensors:
+  batt_bedroomdoor:
+    friendly_name: 'Bedroom Door Battery'
+    value_template: '{{ states.zwave.node_12.attributes.battery_level }}'
+    unit_of_measurement: '%'

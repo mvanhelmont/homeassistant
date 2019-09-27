@@ -1,0 +1,7 @@
+---
+platform: template
+sensors:
+  batt_motion_kitchen:
+    friendly_name: 'Motion Kitchen Battery'
+    value_template: '{{ states.zwave.node_16.attributes.battery_level }}'
+    unit_of_measurement: '%'

@@ -1,0 +1,10 @@
+---
+group_motion_sensors:
+  name: Group Motion Sensors
+  entities:
+    - binary_sensor.node_15
+    - binary_sensor.node_16
+    - binary_sensor.node_17
+    - binary_sensor.node_18
+    - binary_sensor.node_19
+    - binary_sensor.node_20

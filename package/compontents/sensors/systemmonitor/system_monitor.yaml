@@ -1,0 +1,13 @@
+---
+platform: systemmonitor
+resources:
+  - type: disk_use_percent
+    arg: /
+  - type: memory_use_percent
+  - type: memory_free
+  - type: swap_use_percent
+  - type: ipv4_address
+  - type: processor_use
+  - type: last_boot
+  - type: disk_free
+    arg: /

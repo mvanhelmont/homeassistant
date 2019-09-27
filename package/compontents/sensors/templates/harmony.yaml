@@ -1,0 +1,21 @@
+---
+platform: template
+sensors:
+  harmony:
+    friendly_name: "Harmony Status"
+    value_template: >
+      {% if states.remote.logitech_harmony.attributes.current_activity == "PowerOff" %}         
+        Off
+      {% elif states.remote.logitech_harmony.attributes.current_activity == "AppleTV" %}
+        Apple TV
+      {% elif states.remote.logitech_harmony.attributes.current_activity == "Ziggo" %}
+        TV
+      {% elif states.remote.logitech_harmony.attributes.current_activity == "AirPlay" %}
+        Airplay
+      {% elif states.remote.logitech_harmony.attributes.current_activity == "Kodi" %}
+        Kodi
+      {% elif states.remote.logitech_harmony.attributes.current_activity == "IPTV" %}
+        IPTV
+      {% elif states.remote.logitech_harmony.attributes.current_activity == "Domoticz" %}
+        Domoticz
+      {% endif %}

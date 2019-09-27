@@ -1,0 +1,7 @@
+---
+platform: template
+sensors:
+  batt_motion_livingroom:
+    friendly_name: 'Motion Livingroom Battery'
+    value_template: '{{ states.zwave.node_19.attributes.battery_level }}'
+    unit_of_measurement: '%'

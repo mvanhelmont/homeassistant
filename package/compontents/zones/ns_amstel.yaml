@@ -1,0 +1,7 @@
+---
+name: Station Amstel
+latitude: 52.346696
+longitude: 4.917745
+radius: 150
+icon: mdi:map-marker
+passive: false

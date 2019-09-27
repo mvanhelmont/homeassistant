@@ -1,0 +1,7 @@
+---
+name: Station Haarlem
+latitude: 52.388007
+longitude: 4.638609
+radius: 100
+icon: mdi:map-marker
+passive: false
