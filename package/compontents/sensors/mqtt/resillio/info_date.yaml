@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "homeassistant/resillio/systemstatus"
+name: "Resillio Last Update"
+value_template: '{{ value_json.datetimedatacollected }}'

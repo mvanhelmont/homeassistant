@@ -21,6 +21,10 @@ shell_command:
   meek_fan_turn_off: 'curl http://192.168.100.113/control?cmd=event,FanOff'
   meek_fan_turn_on: 'curl http://192.168.100.113/control?cmd=event,FanOn'
 
+life360:
+  circles:
+    include: [Family]
+    
 tts:
   - platform: google_translate
 
@@ -41,9 +45,9 @@ sensor: !include_dir_list package/compontents/sensors
 media_player: !include_dir_list package/compontents/media_players
 group: !include_dir_merge_named package/compontents/groups
 input_boolean: !include_dir_merge_named package/compontents/input_boolean
+light: !include_dir_list package/compontents/light/
 
 # NEED TO BE DONE GET ERRORS
-light: !include_dir_merge_list package/light
 binary_sensor: !include package/compontents/binary_sensors/binary_sensors.yaml
 
 # CONFIGURATION HARDWARE
