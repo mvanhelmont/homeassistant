@@ -91,8 +91,8 @@
   
   {%- macro scene_tv() -%}
     {{ [
-      "The scene kodi is activated",
-      "You watching a serie or movie so i activated the scene movie"
+      "The scene tv is activated",
+      "You watching tv so i activated the scene tv"
     ]|random }}
   {%- endmacro -%}
   

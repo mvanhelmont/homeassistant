@@ -3,14 +3,14 @@
 # 
 # https://github.com/poudenes/homeassistant
 
-frontend:
-  themes: !include package/compontents/themes.yaml
-
 default_config:
 config:
 api:
 shopping_list:
 discovery:
+
+frontend:
+  themes: !include package/compontents/themes/themes.yaml
 
 homeassistant:
   customize: !include_dir_merge_named package/customize/
@@ -28,16 +28,6 @@ life360:
 tts:
   - platform: google_translate
 
-panel_iframe:
-  rijdendetreinen:
-    title: 'NS'
-    icon: mdi:train
-    url: 'https://www.rijdendetreinen.nl/vertrektijden/station/amsterdam-zuid?style=tb&hide_train_numbers=1&hide_stock=1&time=both'
-  ov9292:
-    title: 'GVB'
-    icon: mdi:bus
-    url: 'https://9292.nl/amsterdam/tramhalte-metrostation-de-boelelaan-vu'
-
 # CONFIGURATION COMPONENTS ALL DEVICES SPLITUP IN OWN YAML
 zone: !include_dir_list package/compontents/zones
 switch: !include_dir_list package/compontents/switches
@@ -45,10 +35,9 @@ sensor: !include_dir_list package/compontents/sensors
 media_player: !include_dir_list package/compontents/media_players
 group: !include_dir_merge_named package/compontents/groups
 input_boolean: !include_dir_merge_named package/compontents/input_boolean
-light: !include_dir_list package/compontents/light/
-
-# NEED TO BE DONE GET ERRORS
-binary_sensor: !include package/compontents/binary_sensors/binary_sensors.yaml
+light: !include_dir_list package/compontents/light
+binary_sensor: !include_dir_list package/compontents/binary_sensors
+panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 
 # CONFIGURATION HARDWARE
 rflink: !include package/compontents/devices/rflink.yaml
@@ -57,14 +46,14 @@ remote: !include package/compontents/devices/remote.yaml
 alexa: !include package/compontents/devices/alexa.yaml
 nest: !include package/compontents/devices/nest.yaml
 
-logger: !include package/compontents/logger.yaml
-http: !include package/compontents/http.yaml
-google: !include package/compontents/google.yaml
-notify: !include package/compontents/notify.yaml
-speedtestdotnet: !include package/compontents/speedtest.yaml 
-weather: !include package/compontents/weather.yaml
-homekit: !include package/compontents/homekit.yaml
-recorder: !include package/compontents/recorder.yaml
+logger: !include package/compontents/configs/logger.yaml
+http: !include package/compontents/configs/http.yaml
+google: !include package/compontents/configs/google.yaml
+notify: !include package/compontents/configs/notify.yaml
+speedtestdotnet: !include package/compontents/configs/speedtest.yaml 
+weather: !include package/compontents/configs/weather.yaml
+homekit: !include package/compontents/configs/homekit.yaml
+recorder: !include package/compontents/configs/recorder.yaml
 
 automation: !include_dir_merge_list package/automation/
 script: !include_dir_merge_named package/scripts/

@@ -94,6 +94,8 @@
         {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
         {% else %} 50
         {% endif %}
+        
+  - delay: '00:00:05'
 
 # CORRECT THE LIGHT SCENE ON STATUS APPLETV
   - service_template: >

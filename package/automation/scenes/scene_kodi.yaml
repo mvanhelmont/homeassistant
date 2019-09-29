@@ -56,13 +56,11 @@
       - input_boolean.scene_appletv
       - input_boolean.scene_sexy
 
-# TTS TO ALEXA
   - service: script.engine_say
     data_template:
       media_player: media_player.this_device
       say_scene_kodi: "true"
 
-# NANOLEAF LIGHT
   - service: light.turn_on
     entity_id: light.nanoleaf
     data_template:
@@ -75,7 +73,6 @@
         {% else %} Fireplace
         {% endif %}
 
-# LIGHT
   - service_template: >
        {% if (states.sensor.holiday.state) == 'Christmas' %} script.evening_christmas
        {% elif (states.sensor.holiday.state) == 'Halloween' %} script.evening_halloween
@@ -84,7 +81,6 @@
        {% else %} script.evening_normal
        {% endif %}
 
-# DINING TABLE
   - service: homeassistant.turn_on
     data_template:
       entity_id: light.newkaku_01401eb6_a
@@ -93,8 +89,9 @@
         {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
         {% else %} 0
         {% endif %}
+        
+  - delay: '00:00:05'
 
-# CORRECT THE LIGHT SCENE ON STATUS KODI
   - service_template: >
       {% if (states.media_player.kodi.state) == 'playing' %} script.kodi_control_playing
       {% elif (states.media_player.kodi.state) == 'paused' %} script.kodi_control_paused
