@@ -1,8 +1,8 @@
 - alias: 'Control - Nest Control Someone Home'
-  initial_state: "true"
   trigger:
-  - platform: time_pattern
-    minutes: "/1"
+  - platform: state
+    entity_id: group.group_family
+    to: 'home'
 
   condition:
     - condition: state

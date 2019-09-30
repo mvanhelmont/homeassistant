@@ -1,7 +1,8 @@
 - alias: 'Control - Nest Control Nobody Home'
   trigger:
-  - platform: time_pattern
-    minutes: "/1"
+  - platform: state
+    entity_id: group.group_family
+    to: 'not_home'
 
   condition:
     - condition: state

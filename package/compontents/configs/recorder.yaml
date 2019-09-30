@@ -9,7 +9,6 @@ exclude:
     - group
     - script
     - zone
-    - device_tracker
     - updater
   entities:
     - sun.sun
