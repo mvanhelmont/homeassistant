@@ -20,7 +20,7 @@
   condition:
     - condition: state
       entity_id: group.group_family
-      state: not_home 
+      state: 'not_home' 
 
   action:
   - service: notify.pushover

@@ -1,14 +1,18 @@
 - alias: 'Control - Nest Control Someone Home'
+  initial_state: "true"
   trigger:
   - platform: time_pattern
-    minutes: /1
+    minutes: "/1"
+
   condition:
     - condition: state
       entity_id: group.group_family
-      state: home 
+      state: 'home' 
+
     - condition: state
       entity_id: input_boolean.scene_goodnight
       state: 'off'
+
   action:
     - service: climate.set_temperature
       entity_id: climate.entryway

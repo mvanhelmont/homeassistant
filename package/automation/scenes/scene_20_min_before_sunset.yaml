@@ -12,7 +12,7 @@
 
     - condition: state
       entity_id: group.group_family
-      state: home 
+      state: 'home' 
 
   action:
   - service: notify.pushover

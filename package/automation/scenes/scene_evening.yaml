@@ -2,15 +2,15 @@
   trigger:
 
   - platform: time_pattern
-    minutes: /1
+    minutes: "/1"
 
   - entity_id: device_tracker.geofency_peter
     platform: state
-    to: home
+    to: 'home'
 
   - entity_id: device_tracker.geofency_kay
     platform: state
-    to: home
+    to: 'home'
 
   - entity_id: sensor.harmony
     platform: state
@@ -35,7 +35,7 @@
 
     - condition: state 
       entity_id: group.group_family
-      state: home
+      state: 'home'
 
   action:
   - service: notify.pushover

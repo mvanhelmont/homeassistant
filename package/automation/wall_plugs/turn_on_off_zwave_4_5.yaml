@@ -2,12 +2,12 @@
   trigger:
     - entity_id: group.group_family
       platform: state
-      to: home
+      to: 'home'
 
   condition:
     - condition: state
       entity_id: group.group_family
-      state: home
+      state: 'home'
 
   action:
     - service: switch.turn_on
@@ -21,12 +21,12 @@
   trigger:
     - entity_id: group.group_family
       platform: state
-      to: not_home
+      to: 'not_home'
 
   condition:
     - condition: state
       entity_id: group.group_family
-      state: not_home
+      state: 'not_home'
 
   action:
     - service: switch.turn_off

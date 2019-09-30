@@ -2,8 +2,8 @@
 platform: mqtt
 name: "Bedroom 6"
 schema: json
-command_topic: "milight/0xAAAB/rgb_cct/6"
-state_topic: "milight/states/0xAAAB/rgb_cct/6"
+command_topic: "milight/0xAAAB/rgb_cct/2"
+state_topic: "milight/states/0xAAAB/rgb_cct/2"
 qos: 1
 optimistic: false
 retain: true

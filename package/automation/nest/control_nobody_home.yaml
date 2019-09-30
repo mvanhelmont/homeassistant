@@ -1,11 +1,13 @@
 - alias: 'Control - Nest Control Nobody Home'
   trigger:
   - platform: time_pattern
-    minutes: /1
+    minutes: "/1"
+
   condition:
     - condition: state
       entity_id: group.group_family
-      state: not_home 
+      state: 'not_home' 
+
   action:
     - service: climate.set_temperature
       entity_id: climate.entryway
