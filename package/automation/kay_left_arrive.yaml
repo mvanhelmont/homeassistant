@@ -1,25 +1,13 @@
-- alias: 'Notification - Kay Arrive Home'
+- alias: 'Notification - Kay Left or Arrive Home'
   trigger:
   - entity_id: device_tracker.geofency_kay
-    event: enter
-    platform: zone
-    zone: zone.home
+    platform: state
 
   action:
   - service: notify.pushover
-    data:
-      message: "Kay arrived home"
-      title: "HA System"
-
-- alias: 'Notification - Kay Left Home'
-  trigger:
-  - entity_id: device_tracker.geofency_kay
-    event: leave
-    platform: zone
-    zone: zone.home
-
-  action:
-  - service: notify.pushover
-    data:
-      message: "Kay left home"
+    data_template:
+      message: >-
+       {% if (states.device_tracker.geofency_kay.state) == 'home' %} Kay arrived home.
+       {% else %} Kay left home.
+       {% endif %}
       title: "HA System"

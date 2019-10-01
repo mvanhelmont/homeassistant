@@ -1,22 +1,14 @@
-- alias: Switch - Bathroom On
+- alias: Switch - Bathroom On Off
   trigger:
     - platform: state
       entity_id: switch.newkaku_01616a32_a
-      to: 'on'
 
   action:
     service: light.turn_on
     entity_id: light.bathroom_all
-    data:
-      brightness_pct: 100
+    data_template:
+      brightness_pct: >-
+        {% if (states.switch.newkaku_01616a32_a.state) == 'on' %} 100
+        {% else %} 0
+        {% endif %}
       kelvin: 4700
-      
-- alias: Switch - Bathroom Off
-  trigger:
-    - platform: state
-      entity_id: switch.newkaku_01616a32_a
-      to: 'off'
-
-  action:
-    service: light.turn_off
-    entity_id: light.bathroom_all

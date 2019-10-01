@@ -1,22 +1,14 @@
-- alias: Switch - Kitchen On
+- alias: Switch - Kitchen On Off
   trigger:
     - platform: state
       entity_id: switch.newkaku_014ad3ba_a
-      to: 'on'
 
   action:
     service: light.turn_on
     entity_id: light.kitchen_all
-    data:
-      brightness_pct: 100
+    data_template:
+      brightness_pct: >-
+        {% if (states.switch.newkaku_014ad3ba_a.state) == 'on' %} 100
+        {% else %} 0
+        {% endif %}
       kelvin: 2700
-
-- alias: Switch - Kitchen Off
-  trigger:
-    - platform: state
-      entity_id: switch.newkaku_014ad3ba_a
-      to: 'off'
-
-  action:
-    service: light.turn_off
-    entity_id: light.kitchen_all

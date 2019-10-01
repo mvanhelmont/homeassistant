@@ -1,4 +1,4 @@
-- alias: Switch - Dining Table On
+- alias: Switch - Dining Table On Off
   trigger:
     - platform: state
       entity_id: light.newkaku_01401eb6_a
@@ -9,19 +9,6 @@
     entity_id: light.newkaku_01401eb6_a
     data_template:
       brightness_pct: >
-        {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
-        {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
-        {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100
+        {% if (states.switch.kay_learning.state) == 'on' %} 100
         {% else %} 20
         {% endif %}
-
-
-- alias: Switch - Dining Table Off
-  trigger:
-    - platform: state
-      entity_id: light.newkaku_01401eb6_a
-      to: 'off'
-
-  action:
-    service: light.turn_off
-    entity_id: light.newkaku_01401eb6_a
