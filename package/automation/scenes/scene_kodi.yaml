@@ -65,7 +65,7 @@
     entity_id: light.nanoleaf
     data_template:
       brightness_pct: 30
-      effect: >
+      effect: >-
         {% if (states.sensor.holiday.state) == 'Christmas' %} Christmas
         {% elif (states.sensor.holiday.state) == 'Halloween' %} Halloween
         {% elif (states.sensor.holiday.state) == 'Kingsday' %} Kingsday
@@ -84,7 +84,7 @@
   - service: homeassistant.turn_on
     data_template:
       entity_id: light.newkaku_01401eb6_a
-      brightness_pct: >
+      brightness_pct: >-
         {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
         {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
         {% else %} 0
@@ -92,7 +92,7 @@
         
   - delay: '00:00:05'
 
-  - service_template: >
+  - service_template: >-
       {% if (states.media_player.kodi.state) == 'playing' %} script.kodi_control_playing
       {% elif (states.media_player.kodi.state) == 'paused' %} script.kodi_control_paused
       {% else %} script.kodi_control_idle

@@ -67,7 +67,7 @@
     entity_id: light.nanoleaf
     data_template:
       brightness_pct: 30
-      effect: >
+      effect: >-
         {% if (states.sensor.holiday.state) == 'Christmas' %} Christmas
         {% elif (states.sensor.holiday.state) == 'Halloween' %} Halloween
         {% elif (states.sensor.holiday.state) == 'Kingsday' %} Kingsday
@@ -76,7 +76,7 @@
         {% endif %}
 
 # LIGHT
-  - service_template: >
+  - service_template: >-
        {% if (states.sensor.holiday.state) == 'Christmas' %} script.evening_christmas
        {% elif (states.sensor.holiday.state) == 'Halloween' %} script.evening_halloween
        {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.evening_kingsday
@@ -88,7 +88,7 @@
   - service: homeassistant.turn_on
     data_template:
       entity_id: light.newkaku_01401eb6_a
-      brightness_pct: >
+      brightness_pct: >-
         {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
         {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
         {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 

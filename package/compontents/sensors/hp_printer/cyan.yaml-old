@@ -1,0 +1,8 @@
+---
+platform: snmp
+name: 'Printer Ink - Cyan'
+host: 192.168.100.28
+baseoid: 3.6.1.2.1.43.12.1.1.4.1.1
+accept_errors: true
+scan_interval: 86400
+unit_of_measurement: '%'

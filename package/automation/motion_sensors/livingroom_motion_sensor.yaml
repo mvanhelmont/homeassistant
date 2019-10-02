@@ -1,43 +1,12 @@
-- alias: Motion Detection - Livingroom On
+- alias: 'Motion Detection - Livingroom On Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_19
-    to: 'on'
 
   condition:
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'on'
-
-    - condition: state
-      entity_id: light.livingroom_wall
       state: 'off'
-
-    - condition: state
-      entity_id: light.livingroom_window
-      state: 'off' 
-
-    - condition: state
-      entity_id: light.livingroom_all
-      state: 'off'
-
-  action:
-    service: light.turn_on
-    data:
-      entity_id: light.livingroom_all
-      kelvin: 2700
-      brightness_pct: 20
-
-- alias: Motion Detection - Livingroom Off
-  trigger:
-    platform: state
-    entity_id: binary_sensor.node_19
-    to: 'off'
-
-  condition:                                                                                               
-    - condition: state                                                                                     
-      entity_id: input_boolean.scene_goodnight                                                             
-      state: 'on'
 
     - condition: state
       entity_id: switch.newkaku_0114ef92_b
@@ -45,8 +14,14 @@
 
     - condition: state
       entity_id: switch.newkaku_0114ef92_c
-      state: 'off'
+      state: 'off' 
 
   action:
-    service: light.turn_off
+    service: light.turn_on
     entity_id: light.livingroom_all
+    data_template:
+      kelvin: 2700
+      brightness_pct: >-
+        {% if (states.binary_sensor.node_19.state) == 'on' %} 20
+        {% elif (states.binary_sensor.node_19.state) == 'off' %} 0
+        {% endif %}

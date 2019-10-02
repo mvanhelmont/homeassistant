@@ -1,0 +1,8 @@
+---
+platform: snmp
+name: 'Printer Ink - Black'
+host: 192.168.100.28
+baseoid: 3.6.1.2.1.43.12.1.1.4.1.4
+accept_errors: true
+scan_interval: 3600
+unit_of_measurement: '%'

@@ -1,4 +1,4 @@
-- alias: Switch - Sink On Off
+- alias: 'Switch - Sink On Off'
   trigger:
     - platform: state
       entity_id: switch.newkaku_011fad02_b

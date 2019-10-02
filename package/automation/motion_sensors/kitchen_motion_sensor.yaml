@@ -1,8 +1,7 @@
-- alias: 'Motion Detection - Kitchen On'
+- alias: 'Motion Detection - Kitchen On Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_16
-    to: 'on'
 
   condition:
     - condition: state
@@ -10,29 +9,10 @@
       state: 'off'
 
   action: 
-# LIGHT
     - service_template: >
-        {% if (states.sensor.holiday.state) == 'Christmas' %} script.kitchen_christmas_turn_on
-        {% elif (states.sensor.holiday.state) == 'Halloween' %} script.kitchen_halloween_turn_on
-        {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.kitchen_kingsday_turn_on
-        {% elif (states.sensor.holiday.state) == 'Birthday' %} script.kitchen_birthday_turn_on
+        {% if (states.sensor.holiday.state) == 'Christmas' % and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
+        {% elif (states.sensor.holiday.state) == 'Halloween' and (states.input_boolean.scene_goodnight.state) == 'off'%} script.kitchen_halloween_turn_on
+        {% elif (states.sensor.holiday.state) == 'Kingsday' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
+        {% elif (states.sensor.holiday.state) == 'Birthday' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
         {% else %} script.kitchen_normal_turn_on
         {% endif %}
-
-- alias: 'Motion Detection - Kitchen Off'
-  trigger:
-    platform: state
-    entity_id: binary_sensor.node_16
-    to: 'off'
-
-  condition:                                                                                               
-    - condition: state                                                                                     
-      entity_id: input_boolean.scene_daylight                                                             
-      state: 'off'
-
-  action:
-    - service: light.turn_off
-      entity_id: light.kitchen_all
-
-    - service: light.turn_off
-      entity_id: light.sink_all

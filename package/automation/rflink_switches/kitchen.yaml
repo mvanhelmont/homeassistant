@@ -1,4 +1,4 @@
-- alias: Switch - Kitchen On Off
+- alias: 'Switch - Kitchen On Off'
   trigger:
     - platform: state
       entity_id: switch.newkaku_014ad3ba_a

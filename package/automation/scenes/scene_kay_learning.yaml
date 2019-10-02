@@ -1,4 +1,4 @@
-- alias: 'Control - Kay Learning On or Off'
+- alias: 'Scene - Kay Learning'
   trigger:
 
   - entity_id: switch.kay_learning

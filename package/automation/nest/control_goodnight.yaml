@@ -17,7 +17,7 @@
     - service: climate.set_temperature
       entity_id: climate.entryway
       data_template:
-        temperature: >
+        temperature: >-
           {% set temp2 = states('sensor.dark_sky_temperature') | float %}
           {% set tempnest2 = states('sensor.entryway_thermostat_target') | float %}
           {% if temp2 > 16 and tempnest2 > 16 %} 9

@@ -1,5 +1,5 @@
 kodi_normal:
-  alias: Kodi Normal Light Scene
+  alias: 'Kodi Normal Light Scene'
   sequence:
     - service: light.turn_on
       data:
@@ -24,7 +24,7 @@ kodi_normal:
         brightness_pct: 100
 
 kodi_birthday:
-  alias: Kodi Birthday Light Scene
+  alias: 'Kodi Birthday Light Scene'
   sequence:
     - service: light.turn_on
       data:
@@ -57,7 +57,7 @@ kodi_birthday:
         effect: 0
 
 kodi_halloween:
-  alias: Kodi Halloween Light Scene
+  alias: 'Kodi Halloween Light Scene'
   sequence:
     - service: light.turn_on
       data:
@@ -96,7 +96,7 @@ kodi_halloween:
         brightness_pct: 100
 
 kodi_kingsday:
-  alias: Kodi Kingsday Light Scene
+  alias: 'Kodi Kingsday Light Scene'
   sequence:
     - service: light.turn_on
       data:
@@ -129,7 +129,7 @@ kodi_kingsday:
         effect: 0
 
 kodi_christmas:
-  alias: Kodi Christmas Light Scene
+  alias: 'Kodi Christmas Light Scene'
   sequence:
     - service: light.turn_on
       data:

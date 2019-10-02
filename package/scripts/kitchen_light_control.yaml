@@ -1,5 +1,28 @@
+kitchen_normal_turn_on:
+  alias: 'Kitchen Normal Turn On'
+  sequence:
+    - service: light.turn_on
+      entity_id: light.kitchen_all
+      data_template:
+        kelvin: 2700
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == "on" %} 20
+          {% elif (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == "off" %} 100
+          {% else %}0
+          {% endif %}
+
+    - service: light.turn_on
+      entity_id: light.sink_all
+      data_template:
+        kelvin: 2700
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == "on" %} 20
+          {% elif (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == "off" %} 100
+          {% else %}0
+          {% endif %}
+
 kitchen_halloween_turn_on:
-  alias: Kitchen Halloween Turn On
+  alias: 'Kitchen Halloween Turn On'
   sequence:
     - service: light.turn_on
       data:
@@ -14,7 +37,7 @@ kitchen_halloween_turn_on:
         brightness_pct: 100
 
 kitchen_christmas_turn_on:
-  alias: Kitchen Christmas Turn On
+  alias: 'Kitchen Christmas Turn On'
   sequence:
 
     - service: light.turn_on
@@ -36,7 +59,7 @@ kitchen_christmas_turn_on:
         brightness_pct: 100
 
 kitchen_kingsday_turn_on:
-  alias: Kitchen Kingsday Turn On
+  alias: 'Kitchen Kingsday Turn On'
   sequence:
 
     - service: light.turn_on
@@ -64,7 +87,7 @@ kitchen_kingsday_turn_on:
         brightness_pct: 100
 
 kitchen_birthday_turn_on:
-  alias: Kitchen Birthday Turn On
+  alias: 'Kitchen Birthday Turn On'
   sequence:
     - service: light.turn_on
       data:
@@ -93,25 +116,3 @@ kitchen_birthday_turn_on:
         entity_id: light.sink_3
         effect: 0
         brightness_pct: 100
-
-kitchen_normal_turn_on:
-  alias: Kitchen Normal Turn On
-  sequence:
-
-    - service: light.turn_on
-      entity_id: light.kitchen_all
-      data_template:
-        kelvin: 2700
-        brightness_pct: >
-          {% if states.input_boolean.scene_goodnight.state == "on" %} 20
-          {% else %} 100
-          {% endif %}
-
-    - service: light.turn_on
-      entity_id: light.sink_all
-      data_template:
-        kelvin: 2700
-        brightness_pct: >
-          {% if states.input_boolean.scene_goodnight.state == "on" %} 20
-          {% else %} 100
-          {% endif %}

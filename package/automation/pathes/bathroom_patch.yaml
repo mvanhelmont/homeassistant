@@ -7,23 +7,23 @@
     - service: mqtt.publish
       data_template:
         topic: "milight/states/0xAAAD/rgb_cct/1"
-        payload_template: >
+        payload_template: >-
           {{ trigger.payload }}
 
     - service: mqtt.publish
       data_template:
         topic: "milight/states/0xAAAD/rgb_cct/2"
-        payload_template: >
+        payload_template: >-
           {{ trigger.payload }}
 
     - service: mqtt.publish
       data_template:
         topic: "milight/states/0xAAAD/rgb_cct/3"
-        payload_template: >
+        payload_template: >-
           {{ trigger.payload }}
 
     - service: mqtt.publish
       data_template:
         topic: "milight/states/0xAAAD/rgb_cct/4"
-        payload_template: >
+        payload_template: >-
           {{ trigger.payload }}

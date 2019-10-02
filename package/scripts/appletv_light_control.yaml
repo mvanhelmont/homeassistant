@@ -1,5 +1,5 @@
 appletv_normal:
-  alias: AppleTV Normal Light Scene
+  alias: 'AppleTV Normal Light Scene'
   sequence:
 
     - service: light.turn_on
@@ -27,7 +27,7 @@ appletv_normal:
         effect: 0
 
 appletv_birthday:
-  alias: AppleTV Birthday Light Scene
+  alias: 'AppleTV Birthday Light Scene'
   sequence:
 
     - service: light.turn_on
@@ -61,7 +61,7 @@ appletv_birthday:
         effect: 0
 
 appletv_halloween:
-  alias: AppleTV Halloween Light Scene
+  alias: 'AppleTV Halloween Light Scene'
   sequence:
 
     - service: light.turn_on
@@ -101,7 +101,7 @@ appletv_halloween:
         effect: 0
 
 appletv_kingsday:
-  alias: AppleTV Kingsday Light Scene
+  alias: 'AppleTV Kingsday Light Scene'
   sequence:
 
     - service: light.turn_on
@@ -135,7 +135,7 @@ appletv_kingsday:
         effect: 0
 
 appletv_christmas:
-  alias: AppleTV Christmas Light Scene
+  alias: 'AppleTV Christmas Light Scene'
   sequence:
     - service: light.turn_on
       data:

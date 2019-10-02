@@ -1,5 +1,5 @@
 iptv_normal:
-  alias: IPTV Normal Light Scene
+  alias: 'IPTV Normal Light Scene'
   sequence:
     - service: light.turn_on
       data:
@@ -26,7 +26,7 @@ iptv_normal:
         effect: 0
 
 iptv_birthday:
-  alias: IPTV Birthday Light Scene
+  alias: 'IPTV Birthday Light Scene'
   sequence:
 
     - service: light.turn_on
@@ -60,7 +60,7 @@ iptv_birthday:
         effect: 0
 
 iptv_halloween:
-  alias: IPTV Halloween Light Scene
+  alias: 'IPTV Halloween Light Scene'
   sequence:
 
     - service: light.turn_on
@@ -100,7 +100,7 @@ iptv_halloween:
         effect: 0
 
 iptv_kingsday:
-  alias: IPTV Kingsday Light Scene
+  alias: 'IPTV Kingsday Light Scene'
   sequence:
 
     - service: light.turn_on
@@ -134,7 +134,7 @@ iptv_kingsday:
         effect: 0
 
 iptv_christmas:
-  alias: IPTV Christmas Light Scene
+  alias: 'IPTV Christmas Light Scene'
   sequence:
     - service: light.turn_on
       data:

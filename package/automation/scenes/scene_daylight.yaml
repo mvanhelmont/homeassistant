@@ -34,7 +34,7 @@
       - input_boolean.scene_goodnight
 
 # TURN OFF ALL LIGHT
-  - service_template: >
+  - service_template: >-
       {% if (states.group.group_family.state) == 'not_home' %} script.nobody_home 
       {% else %} script.someone_home
       {% endif %}      

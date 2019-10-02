@@ -1,8 +1,7 @@
-- alias: 'Motion Detection - Toilet On'
+- alias: 'Motion Detection - Toilet On Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_20
-    to: 'on'
 
   condition:
     - condition: state
@@ -12,21 +11,9 @@
   action:
     service: light.turn_on
     entity_id: light.toilet_all
-    data:
-      brightness_pct: 20
-      kelvin: 4700
-
-- alias: 'Motion Detection - Toilet Off'
-  trigger:
-    platform: state
-    entity_id: binary_sensor.node_20
-    to: 'off'
-
-  condition:                                                                                               
-    - condition: state                                                                                     
-      entity_id: input_boolean.scene_goodnight                                                             
-      state: 'on'
-
-  action:
-    service: light.turn_off
-    entity_id: light.toilet_all
+    data_template:
+      kelvin: 2700
+      brightness_pct: >-
+        {% if (states.binary_sensor.node_20.state) == 'on' %} 20
+        {% else %} 0
+        {% endif %}

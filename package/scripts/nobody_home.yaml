@@ -1,7 +1,6 @@
 nobody_home:
-  alias: Nobody Home
+  alias: 'Nobody Home'
   sequence:
-
     - service: light.turn_off
       data:
         entity_id: 
@@ -22,9 +21,8 @@ nobody_home:
         entity_id: remote.logitech_harmony
 
 someone_home:
-  alias: Someone Home
+  alias: 'Someone Home'
   sequence:
-
     - service: light.turn_off
       data:
         entity_id:

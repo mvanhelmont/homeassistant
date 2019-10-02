@@ -1,5 +1,5 @@
 pushover_engine:
-  alias: Notify Pushsover Engine
+  alias: 'Notify Pushsover Engine'
   sequence:
     - service: notify.pushover
       data_template:

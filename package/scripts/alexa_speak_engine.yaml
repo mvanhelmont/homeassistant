@@ -1,5 +1,5 @@
 alexa_speak_engine:
-  alias: Alexa Speak Engine
+  alias: 'Alexa Speak Engine'
   sequence:
     - service: media_player.volume_set
       data_template:

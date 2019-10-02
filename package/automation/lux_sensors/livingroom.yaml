@@ -1,0 +1,24 @@
+- alias: 'Control - Lux on Daytime Low'
+  trigger:
+    - platform: numeric_state
+      entity_id: sensor.node_19_luminance
+      below: 50
+
+  condition:
+    - condition: state
+      entity_id: input_boolean.scene_daylight
+      state: 'on'  
+
+  action:
+    - service: light.turn_on
+      entity_id:
+        - light.livingroom_all
+        - light.dressoir_all
+      data: 
+        brightness_pct: 75
+        transition: 10
+
+    - service: script.engine_say
+      data_template:
+        media_player: media_player.this_device
+        say_lux_evening: "true"

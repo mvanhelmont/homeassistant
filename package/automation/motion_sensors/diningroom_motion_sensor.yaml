@@ -1,8 +1,7 @@
-- alias: 'Motion Detection - Diningroom On'
+- alias: 'Motion Detection - Diningroom On Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_18
-    to: 'on'
 
   condition:
     - condition: state
@@ -12,21 +11,9 @@
   action:
     service: light.turn_on
     entity_id: light.dressoir_all
-    data:
+    data_template:
       kelvin: 2700
-      brightness_pct: 20
-
-- alias: 'Motion Detection - Diningroom Off'
-  trigger:
-    platform: state
-    entity_id: binary_sensor.node_18
-    to: 'off'
-
-  condition:                                                                                               
-    - condition: state                                                                                     
-      entity_id: input_boolean.scene_goodnight                                                             
-      state: 'on'
-
-  action:
-    service: light.turn_off
-    entity_id: light.dressoir_all
+      brightness_pct: >-
+        {% if (states.binary_sensor.node_18.state) == 'on' %} 100
+        {% else %} 0
+        {% endif %}

@@ -103,6 +103,9 @@
     ]|random }}
   {%- endmacro -%}
 
+  {%- macro lux_evening() -%}
+      The luminance level is low. Turned on the livingroom and dressoir lights to brightness of 75 percent.
+  {%- endmacro -%}
 
   {%- macro goodnight_line() -%}
     {{ [
@@ -197,6 +200,10 @@
       {{ scene_goodnight() }}
     {%- endif -%}
 
+    {%- if say_lux_evening == "true" -%}
+      {{ lux_evening() }}
+    {%- endif -%}
+
     {%- if say_testing == "true" -%}
       {{ testing() }}
     {%- endif -%}    
@@ -228,6 +235,10 @@
   
   {%- if say_scene_goodnight is undefined -%}
     {%- set say_scene_goodnight = "false" -%}
+  {%- endif -%}
+
+  {%- if say_lux_evening is undefined -%}
+    {%- set say_lux_evening = "false" -%}
   {%- endif -%}
 
   {%- if say_dark_outside is undefined -%}
