@@ -6,8 +6,8 @@ kitchen_normal_turn_on:
       data_template:
         kelvin: 2700
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == "on" %} 20
-          {% elif (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == "off" %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'on' %} 20
+          {% elif (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -16,8 +16,8 @@ kitchen_normal_turn_on:
       data_template:
         kelvin: 2700
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == "on" %} 20
-          {% elif (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == "off" %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'on' %} 20
+          {% elif (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 

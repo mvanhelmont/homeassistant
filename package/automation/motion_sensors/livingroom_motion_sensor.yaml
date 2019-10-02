@@ -6,7 +6,7 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'off'
+      state: 'on'
 
     - condition: state
       entity_id: switch.newkaku_0114ef92_b

@@ -91,3 +91,6 @@
         - light.dressoir_all
         - light.livingroom_all
         - light.balcony 
+
+  - service: input_boolean.turn_off
+    entity_id: input_boolean.lux_level_low 
