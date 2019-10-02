@@ -1,7 +1,7 @@
 ---
 platform: buienradar
-latitude: 52.370216
-longitude: 4.895168
+latitude: !secret latitude
+longitude: !secret longitude
 monitored_conditions:
   - symbol
   - humidity

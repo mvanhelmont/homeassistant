@@ -1,8 +1,8 @@
 ---
 platform: darksky
 api_key: !secret darsky_apikey
-latitude: 52.370216
-longitude: 4.895168
+latitude: !secret latitude
+longitude: !secret longitude
 forecast: 
   - 0
   - 1

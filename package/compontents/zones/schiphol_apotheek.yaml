@@ -1,7 +1,0 @@
----
-name: Schiphol Apotheek
-latitude: 52.302180
-longitude: 4.861339
-radius: 100
-icon: mdi:map-marker
-passive: false

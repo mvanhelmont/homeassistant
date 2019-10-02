@@ -2,5 +2,5 @@
 platform: darksky
 api_key: !secret darsky_apikey
 mode: daily
-latitude: !secret lat
-longitude: !secret lon
+latitude: !secret latitude
+longitude: !secret longitude
