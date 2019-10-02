@@ -1,0 +1,7 @@
+---
+platform: snmp
+name: 'Total prints'
+host: 192.168.100.28
+baseoid: iso.3.6.1.2.1.43.10.2.1.4.1.1
+accept_errors: true
+scan_interval: 86400

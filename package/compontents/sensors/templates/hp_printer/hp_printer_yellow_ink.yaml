@@ -1,0 +1,7 @@
+---
+platform: template
+sensors:
+  hp_yellow_ink:
+    friendly_name: 'HP Yellow Ink Level'
+    unit_of_measurement: '%'
+    value_template: "{{ (states('sensor.printer_ink_yellow')|float / 241 * 100) | round(0) }}" 

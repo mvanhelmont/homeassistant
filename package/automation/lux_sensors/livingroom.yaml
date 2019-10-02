@@ -2,7 +2,7 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.node_19_luminance
-      below: 50
+      below: 90
 
   condition:
     - condition: state
@@ -34,7 +34,7 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.node_19_luminance
-      above: 50
+      above: 90
 
   condition:
     - condition: state

@@ -2,7 +2,7 @@
 platform: snmp
 name: 'Printer Ink - Black'
 host: 192.168.100.28
-baseoid: iso.3.6.1.2.1.43.11.1.1.8.1.4
+#baseoid: iso.3.6.1.2.1.43.11.1.1.8.1.4
+baseoid: iso.3.6.1.2.1.43.11.1.1.7.1.4
 accept_errors: true
 scan_interval: 3600
-#unit_of_measurement: ''
