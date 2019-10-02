@@ -103,12 +103,8 @@
     ]|random }}
   {%- endmacro -%}
 
-  {%- macro lux_evening_on() -%}
+  {%- macro lux_evening() -%}
       The luminance level is low. Turned on the livingroom and dressoir lights to brightness of 75 percent.
-  {%- endmacro -%}
-
-  {%- macro lux_evening_off() -%}
-      The luminance level is normal again. Turned off the livingroom and dressoir lights.
   {%- endmacro -%}
 
   {%- macro goodnight_line() -%}
@@ -204,12 +200,8 @@
       {{ scene_goodnight() }}
     {%- endif -%}
 
-    {%- if say_lux_evening_on == "true" -%}
-      {{ lux_evening_on() }}
-    {%- endif -%}
-
-    {%- if say_lux_evening_off == "true" -%}
-      {{ lux_evening_off() }}
+    {%- if say_lux_evening == "true" -%}
+      {{ lux_evening() }}
     {%- endif -%}
 
     {%- if say_testing == "true" -%}
@@ -245,12 +237,8 @@
     {%- set say_scene_goodnight = "false" -%}
   {%- endif -%}
 
-  {%- if say_lux_evening_on is undefined -%}
-    {%- set say_lux_evening_on = "false" -%}
-  {%- endif -%}
-
-  {%- if say_lux_evening_off is undefined -%}
-    {%- set say_lux_evening_off = "false" -%}
+  {%- if say_lux_evening is undefined -%}
+    {%- set say_lux_evening = "false" -%}
   {%- endif -%}
 
   {%- if say_dark_outside is undefined -%}
