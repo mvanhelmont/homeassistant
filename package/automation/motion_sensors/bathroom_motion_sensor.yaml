@@ -1,4 +1,4 @@
-- alias: Motion Detection - Bathroom On Off
+- alias: 'Motion Detection - Bathroom On Off'
   trigger:
     platform: state
     entity_id: binary_sensor.node_15
@@ -13,7 +13,7 @@
     entity_id: light.bathroom_all
     data_template:
       kelvin: 4700
-      brightness_pct: >
+      brightness_pct: >-
         {% if (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'on' %} 50
         {% elif (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
         {% else %} 0

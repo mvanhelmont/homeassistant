@@ -1,8 +1,8 @@
 - alias: 'Scene - Daylight'
   trigger:
 
-  - platform: time_pattern
-    minutes: "/1"
+  - platform: state
+    entity_id: sun.sun
 
   condition:
     - condition: state
@@ -32,6 +32,7 @@
       - input_boolean.scene_appletv
       - input_boolean.scene_sexy
       - input_boolean.scene_goodnight
+      - input_boolean.lux_level_low
 
 # TURN OFF ALL LIGHT
   - service_template: >-

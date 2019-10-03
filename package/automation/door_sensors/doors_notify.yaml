@@ -1,4 +1,4 @@
-- alias: 'Notification -Random Door Open'
+- alias: 'Notification - Random Door Open'
   trigger:
     - platform: state
       entity_id: 
@@ -11,7 +11,7 @@
   action:
   - service: notify.pushover
     data_template:
-      message: " {{ trigger.from_state.attributes.friendly_name }} door is open"
+      message: "{{ trigger.from_state.attributes.friendly_name }} door is open"
       title: "HA Security System"
 
 - alias: 'Notification - Random Door Close'
@@ -27,5 +27,5 @@
   action:
   - service: notify.pushover
     data_template:
-      message: " {{ trigger.from_state.attributes.friendly_name }} door is closed"
+      message: "{{ trigger.from_state.attributes.friendly_name }} door is closed"
       title: "HA Security System"

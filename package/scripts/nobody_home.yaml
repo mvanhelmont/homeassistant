@@ -14,7 +14,8 @@ nobody_home:
           - light.hallway
           - light.balcony
           - light.toilet_all
-          - light.nanoleaf
+          - light.nanoleaf 
+          - light.newkaku_01401eb6_a
 
     - service: remote.turn_off
       data:

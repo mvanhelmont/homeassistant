@@ -1,5 +1,5 @@
 appletv_control_paused:
-  alias: AppleTV Control Paused Scene
+  alias: 'AppleTV Control Paused Scene'
   sequence:
 
     - service: light.turn_on
@@ -34,7 +34,7 @@ appletv_control_paused:
 
 # AppleTV IS PLAYING
 appletv_control_playing:
-  alias: AppleTV Control Playing Scene
+  alias: 'AppleTV Control Playing Scene'
   sequence:
 
     - service: light.turn_on
@@ -79,7 +79,7 @@ appletv_control_playing:
 
 # AppleTV IS IDLE
 appletv_control_idle:
-  alias: AppleTV Control Idle Scene
+  alias: 'AppleTV Control Idle Scene'
   sequence:
 
     - service: light.turn_on

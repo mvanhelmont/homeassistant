@@ -1,8 +1,7 @@
-- alias: Control - Kodi is playing
+- alias: 'Control - Kodi Status'
   trigger:
   - entity_id: media_player.kodi
     platform: state
-    to: playing
 
   condition: 
     - condition: state
@@ -10,34 +9,8 @@
       state: 'below_horizon'  
 
   action:
-    - service: script.kodi_control_playing
-
-- alias: Control - Kodi is on pause
-  trigger:
-  - entity_id: media_player.kodi
-    from: playing
-    platform: state
-    to: paused
-
-  condition: 
-    - condition: state
-      entity_id: sun.sun
-      state: 'below_horizon' 
- 
-  action:
-    - service: script.kodi_control_paused
-
-- alias: Control - Kodi is idle
-  trigger:
-  - entity_id: media_player.kodi
-    from: playing
-    platform: state
-    to: idle
-
-  condition: 
-    - condition: state
-      entity_id: sun.sun
-      state: 'below_horizon' 
-
-  action:
-    - service: script.kodi_control_idle
+    - service_template: >-
+        {% if (states.media_player.kodi.state) == 'playing' %} script.kodi_control_playing
+        {% elif (states.media_player.kodi.state) == 'paused' %} script.kodi_control_paused
+        {% else %} script.kodi_control_idle
+        {% endif %}

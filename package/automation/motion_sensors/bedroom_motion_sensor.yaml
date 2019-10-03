@@ -21,7 +21,7 @@
     entity_id: light.bedroom_all
     data_template:
       kelvin: 4700
-      brightness_pct: >
+      brightness_pct: >-
         {% if (states.binary_sensor.node_12.state) == "on" and (states.binary_sensor.node_14.state) == 'on' %} 20
         {% elif (states.binary_sensor.node_12.state) == "off" and (states.binary_sensor.node_14.state) == 'on' %} 100
         {% else %} 0

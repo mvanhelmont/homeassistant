@@ -9,7 +9,7 @@
       state: 'off'
 
   action: 
-    - service_template: >
+    - service_template: >-
         {% if (states.sensor.holiday.state) == 'Christmas' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
         {% elif (states.sensor.holiday.state) == 'Halloween' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on
         {% elif (states.sensor.holiday.state) == 'Kingsday' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
