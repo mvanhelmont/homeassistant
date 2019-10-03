@@ -19,7 +19,11 @@
     - service: homeassistant.turn_off
       entity_id: switch.newkaku_01074522_a
 
-    - service: notify.pushover
+    - service: script.turn_on
+      entity_id: script.pushover_engine
       data_template:
-        message: "Turned off bedroom switch and light"
-        title: "HA System"
+        variables: 
+          message: "Turned off bedroom switch and light" 
+          priority: 0
+          sound: bike
+          title: "HA System"

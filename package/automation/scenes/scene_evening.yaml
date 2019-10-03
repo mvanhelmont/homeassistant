@@ -33,11 +33,6 @@
       state: 'home'
 
   action:
-  - service: notify.pushover
-    data:
-      message: "Scene evening is activated"
-      title: "HA Scene System"
-
   - service: input_boolean.turn_on
     data:
       entity_id: input_boolean.scene_evening

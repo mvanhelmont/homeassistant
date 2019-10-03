@@ -16,16 +16,12 @@ homeassistant:
   auth_providers:
     - type: homeassistant
 
-shell_command:
-  meek_fan_turn_off: 'curl http://192.168.100.113/control?cmd=event,FanOff'
-  meek_fan_turn_on: 'curl http://192.168.100.113/control?cmd=event,FanOn'
+#shell_command:
+#  meek_fan_turn_off: 'curl http://192.168.100.113/control?cmd=event,FanOff'
+#  meek_fan_turn_on: 'curl http://192.168.100.113/control?cmd=event,FanOn'
 
-life360:
-  circles:
-    include: [Family]
-    
-tts:
-  - platform: google_translate
+#tts:
+#  - platform: google_translate
 
 # CONFIGURATION COMPONENTS ALL DEVICES SPLITUP IN OWN YAML
 zone: !include_dir_list package/compontents/zones
@@ -40,6 +36,8 @@ panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
 
+shell_command: !include package/compontents/devices/shell_commands.yaml
+tts: !include package/compontents/devices/tts.yaml
 rflink: !include package/compontents/devices/rflink.yaml
 zwave: !include package/compontents/devices/zwave.yaml
 remote: !include package/compontents/devices/remote.yaml

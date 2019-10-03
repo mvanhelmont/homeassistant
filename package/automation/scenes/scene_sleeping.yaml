@@ -6,14 +6,8 @@
     to: 'on'
 
   action:
-  - service: notify.pushover
-    data:
-      message: "Scene Sleeping is activated"
-      title: "HA Scene System"
-
   - service: light.turn_off
-    entity_id: 
-      - light.bedroom_all
+    entity_id: light.bedroom_all
 
 
   - service: light.turn_on

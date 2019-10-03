@@ -9,10 +9,14 @@
       to: 'on'
 
   action:
-  - service: notify.pushover
-    data_template:
-      message: "{{ trigger.from_state.attributes.friendly_name }} door is open"
-      title: "HA Security System"
+    - service: script.turn_on
+      entity_id: script.pushover_engine
+      data_template:
+        variables: 
+          message: "{{ trigger.from_state.attributes.friendly_name }} door is open"
+          priority: 0
+          sound: bike
+          title: "HA Notify Engine"
 
 - alias: 'Notification - Random Door Close'
   trigger:
@@ -25,7 +29,11 @@
       to: 'off'
 
   action:
-  - service: notify.pushover
-    data_template:
-      message: "{{ trigger.from_state.attributes.friendly_name }} door is closed"
-      title: "HA Security System"
+    - service: script.turn_on
+      entity_id: script.pushover_engine
+      data_template:
+        variables:
+          message: "{{ trigger.from_state.attributes.friendly_name }} door is closed"
+          priority: 0
+          sound: bike
+          title: "HA Notify Engine"

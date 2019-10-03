@@ -5,19 +5,23 @@
     platform: state
 
   action:
-  - service: notify.pushover
-    data_template:
-      message: >-
-        {% if (states.input_boolean.scene_guests.state) == 'on' %} "Scene Guests is activated"
-        {% else %} "Scene Guests is deactivated"
-        {% endif %}
-      title: "HA Scene System"
+    - service: script.turn_on
+      entity_id: script.pushover_engine
+      data_template:
+        variables: 
+          message: >-
+            {% if (states.input_boolean.scene_guests.state) == 'on' %} "Scene Guests is activated"
+            {% else %} "Scene Guests is deactivated"
+            {% endif %}
+          priority: 0
+          sound: bike
+          title: "HA Scene System"
 
-  - service_template: >-
-      {% if (states.input_boolean.scene_guests.state) == 'on' %} automation.turn_off
-      {% else %} automation.turn_on
-      {% endif %}
-    entity_id: 
-      - automation.motion_detection_livingroom_on_off
-      - automation.motion_detection_diningroom_on_off
-      - automation.motion_detection_hallway_on_off
+    - service_template: >-
+        {% if (states.input_boolean.scene_guests.state) == 'on' %} automation.turn_off
+        {% else %} automation.turn_on
+        {% endif %}
+      entity_id: 
+        - automation.motion_detection_livingroom_on_off
+        - automation.motion_detection_diningroom_on_off
+        - automation.motion_detection_hallway_on_off

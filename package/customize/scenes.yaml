@@ -1,4 +1,8 @@
 ---
+input_boolean.scene_guests:
+  friendly_name: Guests
+  homebridge_name: Guests
+  icon: mdi:pan
 input_boolean.scene_disco:
   friendly_name: Disco
   homebridge_name: Disco

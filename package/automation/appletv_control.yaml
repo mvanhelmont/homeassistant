@@ -9,7 +9,11 @@
   condition: 
     - condition: state
       entity_id: sun.sun
-      state: 'below_horizon'  
+      state: 'below_horizon'
+
+    - condition: state
+      entity_id: input_boolean.scene_appletv
+      state: 'on'   
 
   action:
     - service: script.appletv_control_playing
@@ -23,6 +27,10 @@
     - condition: state
       entity_id: sun.sun
       state: 'below_horizon' 
+
+    - condition: state
+      entity_id: input_boolean.scene_appletv
+      state: 'on'
  
   action:
     - service_template: >-

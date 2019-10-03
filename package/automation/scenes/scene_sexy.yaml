@@ -6,19 +6,12 @@
     to: 'on'
 
   action:
-  - service: notify.pushover
-    data:
-      message: "Scene sexy is activated"
-      title: "HA Scene System"
-
-# NANOLEAF LIGHT
   - service: light.turn_on
     entity_id: light.nanoleaf
     data:
       brightness_pct: 30
       effect: Romantic
 
-# LIGHT
   - service: light.turn_on
     entity_id: 
       - light.dressoir_all

@@ -17,11 +17,3 @@
        {% if (states.switch.kay_learning.state) == 'on' %} 100
        {% else %} 50
        {% endif %}
-
-  - service: notify.pushover
-    data_template:
-      message: >-
-       {% if (states.switch.kay_learning.state) == 'on' %} Kay learning is activated.
-       {% else %} Kay learning is deactivated.
-       {% endif %}
-      title: "HA System"

@@ -4,10 +4,14 @@
     platform: state
 
   action:
-  - service: notify.pushover
-    data_template:
-      message: >-
-       {% if (states.device_tracker.geofency_peter.state) == 'home' %} Peter is thuis aangekomen.
-       {% else %} Peter is van huis weg gegaan.
-       {% endif %}
-      title: "HA System"
+    - service: script.turn_on
+      entity_id: script.pushover_engine
+      data_template:
+        variables: 
+          message: >-
+            {% if (states.device_tracker.geofency_peter.state) == 'home' %} Peter is thuis aangekomen.
+            {% else %} Peter is van huis weg gegaan.
+            {% endif %}
+          priority: 0
+          sound: bike
+          title: "HA Notify Engine"
