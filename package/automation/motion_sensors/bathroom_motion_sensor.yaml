@@ -1,17 +1,11 @@
-- alias: Motion Detection - Bathroom On
+- alias: Motion Detection - Bathroom On Off
   trigger:
     platform: state
     entity_id: binary_sensor.node_15
-    to: 'on'
 
-# BATHROOM KAKU SWITCH
   condition:
     - condition: state
       entity_id: switch.newkaku_01616a32_a
-      state: 'off'
-
-    - condition: state
-      entity_id: light.bathroom_all
       state: 'off'
 
   action:
@@ -20,22 +14,7 @@
     data_template:
       kelvin: 4700
       brightness_pct: >
-        {% if states.input_boolean.scene_goodnight.state == "on" %} 50
-        {% else %} 100
+        {% if (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'on' %} 50
+        {% elif (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+        {% else %} 0
         {% endif %}
-
-- alias: Motion Detection - Bathroom Off
-  trigger:
-    platform: state
-    entity_id: binary_sensor.node_15
-    to: 'off'
-
-# BATHROOM KAKU SWITCH
-  condition:
-    - condition: state
-      entity_id: switch.newkaku_01616a32_a
-      state: 'off'
-
-  action:
-    service: light.turn_off
-    entity_id: light.bathroom_all

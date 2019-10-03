@@ -25,8 +25,12 @@
       state: 'not_home' 
 
   action:
-  - service: notify.pushover
+  - service: script.turn_on
+    entity_id: script.pushover_engine
     data_template:
-      message: "registered motion {{ trigger.from_state.attributes.friendly_name  }}"
-      title: "HA Security System"
+      variables: 
+        message: "registered motion {{ trigger.from_state.attributes.friendly_name  }}"
+        priority: 2
+        sound: pushover
+        title: "HA Security ALERT"
 

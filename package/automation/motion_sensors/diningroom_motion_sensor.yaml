@@ -14,6 +14,6 @@
     data_template:
       kelvin: 2700
       brightness_pct: >-
-        {% if (states.binary_sensor.node_18.state) == 'on' %} 100
+        {% if (states.binary_sensor.node_18.state) == 'on' %} 20
         {% else %} 0
         {% endif %}

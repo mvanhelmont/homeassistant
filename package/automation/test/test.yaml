@@ -5,16 +5,17 @@
       to: 'on'
 
   action: 
-#    - service: script.turn_on
-#      entity_id: script.pushover_engine
-#      data_template:
-#        variables: 
-#          message: "test"
-#          priority: 2
-#          sound: spacealarm
-
-
-    - service: script.engine_say
+    - service: script.turn_on
+      entity_id: script.pushover_engine
       data_template:
-        media_player: media_player.this_device
-        say_testing: "true"
+        variables: 
+          message: "test"
+          priority: 0
+          sound: bike
+          title: "PUSHOVER ENGINE"
+
+
+#    - service: script.engine_say
+#      data_template:
+#        media_player: media_player.this_device
+#        say_testing: "true"

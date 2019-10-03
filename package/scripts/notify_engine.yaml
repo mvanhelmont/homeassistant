@@ -4,27 +4,32 @@ pushover_engine:
     - service: notify.pushover
       data_template:
         message: "{{ message }}"
-        data: >-
-          {%- macro prio() -%}
-          {% if priority == '2' %}
-            priority: "{{ priority }}"
-            sound: "{{ sound }}"          
-            retry: 60
-            expire: 3600
-          {% else %}
-            priority: "{{ priority }}"
-            sound: "{{ sound }}"
-          {% endif %}
-          {%- endmacro -%}
+        title: "{{ title }}"
+        data:
+          priority: "{{ priority }}"
+          sound: >-
+            {% if priority == '2' %} {{ sound }}
+            {% else %} pushover
+            {% endif %}
+          retry: >-
+            {% if priority == '2' %} 60
+            {% else %} 0
+            {% endif %}
+          expire: >-
+            {% if priority == '2' %} 3600
+            {% else %} 0
+            {% endif %}
 
-          {{ message }}
-
+# PRIORITY LEVEL
+#
 # lowest = -2
 # low = -1
 # normal = 0
 # high = 1
 # Emergency = 2
-
+#
+# SOUNDS FOR PRIORITY
+#
 # pushover - Pushover (default)    
 # bike - Bike    
 # bugle - Bugle    

@@ -1,0 +1,15 @@
+---
+sensor.resillio_last_update:
+  friendly_name: Last Sensors Update
+sensor.resillio_boot_time:
+  friendly_name: Last Boot Time
+sensor.resillio_cpu_temp:
+  friendly_name: CPU Temp.
+sensor.resillio_cpu_usage:
+  friendly_name: CPU Usage
+sensor.resillio_disk_size:
+  friendly_name: Disk Size
+sensor.resillio_disk_usage:
+  friendly_name: Disk Usage
+sensor.resillio_memory_used:
+  friendly_name: Memory Usage
