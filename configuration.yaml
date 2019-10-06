@@ -8,6 +8,11 @@ api:
 shopping_list:
 discovery:
 
+apple_tv_mrp:
+  - name: Woonkamer
+    host: 192.168.100.13
+    port: 49152
+
 frontend:
   themes: !include package/compontents/themes/themes.yaml
 

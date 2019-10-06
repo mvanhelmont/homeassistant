@@ -28,13 +28,19 @@ kitchen_halloween_turn_on:
       data:
         entity_id: light.kitchen_all
         color_name: green
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %}
 
     - service: light.turn_on
       data:
         entity_id: light.sink_all
         kelvin: 2700
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
 kitchen_christmas_turn_on:
   alias: 'Kitchen Christmas Turn On'
@@ -44,19 +50,28 @@ kitchen_christmas_turn_on:
       data:
         entity_id: light.kitchen_all
         kelvin: 2700
-        brightness_pct: 70
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 70
+          {% else %}0
+          {% endif %} 
 
     - service: light.turn_on
       data:
         entity_id: light.sink_all
         color_name: red
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
     - service: light.turn_on
       data:
         entity_id: light.sink_2
         color_name: green
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
 kitchen_kingsday_turn_on:
   alias: 'Kitchen Kingsday Turn On'
@@ -66,25 +81,37 @@ kitchen_kingsday_turn_on:
       data:
         entity_id: light.kitchen_all
         kelvin: 2700
-        brightness_pct: 70
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 70
+          {% else %}0
+          {% endif %} 
 
     - service: light.turn_on
       data:
         entity_id: light.sink_1
         color_name: red
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
     - service: light.turn_on
       data:
         entity_id: light.sink_2
         color_temp: 153 
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
     - service: light.turn_on
       data:
         entity_id: light.sink_3
         color_name: blue
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
 kitchen_birthday_turn_on:
   alias: 'Kitchen Birthday Turn On'
@@ -93,13 +120,19 @@ kitchen_birthday_turn_on:
       data:
         entity_id: light.kitchen_all
         kelvin: 2700
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
     - service: light.turn_on
       data:
         entity_id: light.sink_1
         effect: 0
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
     - delay: 00:00:01
 
@@ -107,7 +140,10 @@ kitchen_birthday_turn_on:
       data:
         entity_id: light.sink_2
         effect: 0
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
 
     - delay: 00:00:01
 
@@ -115,4 +151,7 @@ kitchen_birthday_turn_on:
       data:
         entity_id: light.sink_3
         effect: 0
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %} 
