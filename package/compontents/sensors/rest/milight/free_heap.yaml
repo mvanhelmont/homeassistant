@@ -1,0 +1,5 @@
+---
+platform: rest
+resource: http://192.168.100.70/about
+name: Milight Free Heap
+value_template: '{{ value_json.free_heap }}'

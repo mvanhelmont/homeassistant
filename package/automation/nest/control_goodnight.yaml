@@ -4,6 +4,9 @@
     entity_id: input_boolean.scene_goodnight
     to: 'on'
 
+  - platform: state
+    entity_id: climate.entryway
+
   condition:
     - condition: state
       entity_id: group.group_family

@@ -1,6 +1,6 @@
 - alias: 'Control - AppleTV is playing'
   trigger:
-  - entity_id: media_player.woonkamer_2
+  - entity_id: media_player.woonkamer
     platform: state
     to: playing
     for:
@@ -20,7 +20,7 @@
 
 - alias: 'Control - AppleTV is on pause or idle'
   trigger:
-  - entity_id: media_player.woonkamer_2
+  - entity_id: media_player.woonkamer
     platform: state
 
   condition: 
@@ -34,6 +34,6 @@
  
   action:
     - service_template: >-
-        {% if (states.media_player.woonkamer.state_2) == 'paused' %} script.appletv_control_paused
+        {% if (states.media_player.woonkamer.state) == 'paused' %} script.appletv_control_paused
         {% else %} script.appletv_control_idle
         {% endif %}

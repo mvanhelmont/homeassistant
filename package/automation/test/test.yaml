@@ -15,7 +15,7 @@
           title: "PUSHOVER ENGINE"
 
 
-#    - service: script.engine_say
-#      data_template:
-#        media_player: media_player.this_device
-#        say_testing: "true"
+    - service: script.engine_say
+      data_template:
+        media_player: media_player.this_device
+        say_testing: "true"

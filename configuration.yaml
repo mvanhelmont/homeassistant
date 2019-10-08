@@ -8,11 +8,6 @@ api:
 shopping_list:
 discovery:
 
-apple_tv_mrp:
-  - name: Woonkamer
-    host: 192.168.100.13
-    port: 49152
-
 frontend:
   themes: !include package/compontents/themes/themes.yaml
 
@@ -20,13 +15,6 @@ homeassistant:
   customize: !include_dir_merge_named package/customize/
   auth_providers:
     - type: homeassistant
-
-#shell_command:
-#  meek_fan_turn_off: 'curl http://192.168.100.113/control?cmd=event,FanOff'
-#  meek_fan_turn_on: 'curl http://192.168.100.113/control?cmd=event,FanOn'
-
-#tts:
-#  - platform: google_translate
 
 # CONFIGURATION COMPONENTS ALL DEVICES SPLITUP IN OWN YAML
 zone: !include_dir_list package/compontents/zones
@@ -40,19 +28,22 @@ binary_sensor: !include_dir_list package/compontents/binary_sensors
 panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
+calendar: !include_dir_list package/compontents/caldav
 
+apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
 shell_command: !include package/compontents/devices/shell_commands.yaml
 tts: !include package/compontents/devices/tts.yaml
 rflink: !include package/compontents/devices/rflink.yaml
 zwave: !include package/compontents/devices/zwave.yaml
 remote: !include package/compontents/devices/remote.yaml
-alexa: !include package/compontents/devices/alexa.yaml
 nest: !include package/compontents/devices/nest.yaml
 logger: !include package/compontents/configs/logger.yaml
 http: !include package/compontents/configs/http.yaml
-google: !include package/compontents/configs/google.yaml
+#google: !include package/compontents/configs/google.yaml
 notify: !include package/compontents/configs/notify.yaml
 speedtestdotnet: !include package/compontents/configs/speedtest.yaml 
 weather: !include package/compontents/configs/weather.yaml
 homekit: !include package/compontents/configs/homekit.yaml
 recorder: !include package/compontents/configs/recorder.yaml
+
+#alexa: !include package/compontents/devices/alexa.yaml
