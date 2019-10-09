@@ -21,57 +21,66 @@ sensor.dark_sky_wind_bearing:
   friendly_name: Current Wind Bearing
 sensor.dark_sky_wind_speed:
   friendly_name: Current Wind Speed
+
 sensor.dark_sky_summary_0h:
   friendly_name: Summary Now
 sensor.dark_sky_summary_1h:
   friendly_name: Summary After 1 Hour
 sensor.dark_sky_summary_2h:
   friendly_name: Summary After 2 Hours
+
 sensor.dark_sky_cloud_coverage_0d:
   friendly_name: Cloud Coverage Now
 sensor.dark_sky_cloud_coverage_1d:
   friendly_name: Cloud Coverage Tomorrow
 sensor.dark_sky_cloud_coverage_2d:
-  friendly_name: Cloud Coverage t.d.a.t.
+  friendly_name: Cloud Coverage 2nd Day
+
 sensor.dark_sky_visibility_0d:
   friendly_name: Visibility Now
 sensor.dark_sky_visibility_1d:
   friendly_name: Visibility Tomorrow
 sensor.dark_sky_visibility_2d:
-  friendly_name: Visibility t.d.a.t.
+  friendly_name: Visibility 2nd Day
+
 sensor.dark_sky_wind_speed_0h:
   friendly_name: Wind Speed Now
 sensor.dark_sky_wind_speed_1h:
-  friendly_name: Wind Speed Tomorrow
+  friendly_name: Wind Speed 1 hour
 sensor.dark_sky_wind_speed_2h:
-  friendly_name: Wind Speed t.d.a.t.
+  friendly_name: Wind Speed 2 hours
+
 sensor.dark_sky_summary_0d:
   friendly_name: Summery Now
 sensor.dark_sky_summary_1d:
   friendly_name: Summery Tomorrow
 sensor.dark_sky_summary_2d:
-  friendly_name: Summery t.d.a.t.
+  friendly_name: Summery 2nd Day
+
 sensor.dark_sky_moon_phase_0d:
   friendly_name: Moon Phase Tonight
 sensor.dark_sky_moon_phase_1d:
   friendly_name: Moon Phase Tomorrow
 sensor.dark_sky_moon_phase_2d:
-  friendly_name: Moon Phase t.d.a.t.
+  friendly_name: Moon Phase 2nd Day
+
 sensor.dark_sky_wind_speed_0d:
   friendly_name: Wind Speed Now
 sensor.dark_sky_wind_speed_1d:
   friendly_name: Wind Speed Tomorrow
 sensor.dark_sky_wind_speed_2d:
-  friendly_name: Wind Speed t.d.a.t.
+  friendly_name: Wind Speed 2nd Day
+
 sensor.dark_sky_temperature_0h:
   friendly_name: Tempertrure Now
 sensor.dark_sky_temperature_1h:
   friendly_name: Temperature after 1 hour
 sensor.dark_sky_temperature_2h:
   friendly_name: Temperature after 2 hours
+
 sensor.dark_sky_daytime_high_temperature_0d:
   friendly_name: Max Temperature Now
 sensor.dark_sky_daytime_high_temperature_1d:
   friendly_name: Max Temprature Tomorrow
 sensor.dark_sky_daytime_high_temperature_2d:
-  friendly_name: Max Temprature t.d.a.t.
+  friendly_name: Max Temprature 2nd Day

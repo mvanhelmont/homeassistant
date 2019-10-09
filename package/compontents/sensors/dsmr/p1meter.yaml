@@ -3,4 +3,4 @@ platform: dsmr
 host: 192.168.100.111
 port: 8088
 dsmr_version: 5
-
+precision: 3
