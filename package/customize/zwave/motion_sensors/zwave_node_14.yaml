@@ -15,3 +15,5 @@ sensor.node_14_temperature:
   friendly_name: Neo Motion Bedroom Temp
 binary_sensor.node_14:
   friendly_name: Neo Motion Bedroom
+sensor.node_14_battery_level:
+  friendly_name: Neo Battery Bedroom

@@ -15,3 +15,5 @@ sensor.node_20_temperature:
   friendly_name: Neo Motion Toilet Temp
 binary_sensor.node_20:
   friendly_name: Neo Motion Toilet
+sensor.node_20_battery_level:
+  friendly_name: Neo Battery Toilet

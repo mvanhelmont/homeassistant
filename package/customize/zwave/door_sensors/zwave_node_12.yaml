@@ -20,3 +20,5 @@ sensor.node_12_heat:
   friendly_name: Bedroom Door Heat
 binary_sensor.node_12:
   friendly_name: Bedroom Door
+sensor.node_12_battery_level:
+  friendly_name: Bedroom Battery Door

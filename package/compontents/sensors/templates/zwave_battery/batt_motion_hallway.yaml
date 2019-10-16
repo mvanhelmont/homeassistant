@@ -1,7 +1,0 @@
----
-platform: template
-sensors:
-  batt_motion_hallway:
-    friendly_name: 'Motion Hallway Battery'
-    value_template: '{{ states.zwave.node_17.attributes.battery_level }}'
-    unit_of_measurement: '%'

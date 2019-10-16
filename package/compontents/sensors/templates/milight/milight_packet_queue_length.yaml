@@ -1,0 +1,7 @@
+---
+platform: template
+sensors:
+  esp8266_milight_hub_queue_length:
+    friendly_name: "Milight Packet Queue Length"
+    value_template: |
+      {{ states.sensor.milight_free_heap.attributes["queue_stats"]["length"] }}

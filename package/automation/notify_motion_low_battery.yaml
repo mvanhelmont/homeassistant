@@ -1,0 +1,50 @@
+- alias: 'Notification - Battery Low Alert'
+  trigger:
+    - platform: time
+      at: "09:00:00"
+    - platform: time
+      at: "12:00:00"
+    - platform: time
+      at: "15:00:00"
+    - platform: time
+      at: "18:00:00"
+    - platform: time
+      at: "21:00:00"
+
+  condition:
+    - condition: template
+      value_template: >-
+        {% macro battery_level() %}
+        {%- set threshold = 40 -%}
+        {% set domains = ['zwave'] %}
+        {% for domain in domains -%}
+        {% for item in states[domain] if ((item.attributes.battery_level is defined and item.attributes['battery_level'] | int < threshold) or ("battery" in item.name | lower and ((item.state | int < threshold and item.state|int != 0) or item.state | lower == "low" or item.state | lower == "unknown"))) -%}
+        {% if (item.attributes.battery_level is defined and item.attributes['battery_level'] | int < threshold) -%}
+        {{ item.name }} ({{ item.attributes['battery_level'] }}){%- if not loop.last %}, {% endif -%}{% endif -%}
+        {% if "battery" in item.name | lower and ((item.state | int < threshold and item.state|int != 0) or item.state | lower == "low" or item.state | lower == "unknown") -%}
+        {{ item.name }} ({{ item.state }}){% if not loop.last %}, {%- endif %} {% endif -%}
+        {% endfor %}
+        {%- endfor %}
+        {% endmacro %}
+        {{ battery_level() |trim != "" }}
+
+  action:
+    service: script.pushover_engine
+    data_template:
+      priority: 1
+      sound: bike
+      title: "These devices have low battery levels"
+      message: >-
+        {% macro battery_level() %}
+        {%- set threshold = 40 -%}
+        {% set domains = ['zwave'] %}
+        {% for domain in domains -%}
+        {% for item in states[domain] if ((item.attributes.battery_level is defined and item.attributes['battery_level'] | int < threshold) or ("battery" in item.name | lower and ((item.state | int < threshold and item.state|int != 0) or item.state | lower == "low" or item.state | lower == "unknown"))) -%}
+        {% if (item.attributes.battery_level is defined and item.attributes['battery_level'] | int < threshold) -%}
+        {{ item.name }} ({{ item.attributes['battery_level'] }}){%- if not loop.last %}, {% endif -%}{% endif -%}
+        {% if "battery" in item.name | lower and ((item.state | int < threshold and item.state|int != 0) or item.state | lower == "low" or item.state | lower == "unknown") -%}
+        {{ item.name }} ({{ item.state }}){% if not loop.last %}, {%- endif %} {% endif -%}
+        {% endfor %}
+        {%- endfor %}
+        {% endmacro %}
+        {{ battery_level() }}

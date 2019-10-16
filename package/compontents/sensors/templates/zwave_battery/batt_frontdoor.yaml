@@ -1,7 +1,0 @@
----
-platform: template
-sensors:
-  batt_frontdoor:
-    friendly_name: 'Frontdoor Door Battery'
-    value_template: '{{ states.zwave.node_11.attributes.battery_level }}'
-    unit_of_measurement: '%'

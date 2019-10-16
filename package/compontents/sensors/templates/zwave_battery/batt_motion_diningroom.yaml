@@ -1,7 +1,0 @@
----
-platform: template
-sensors:
-  batt_motion_diningroom:
-    friendly_name: 'Motion Diningroom Battery'
-    value_template: '{{ states.zwave.node_18.attributes.battery_level }}'
-    unit_of_measurement: '%'

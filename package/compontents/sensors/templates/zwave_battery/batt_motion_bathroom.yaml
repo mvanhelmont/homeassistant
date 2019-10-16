@@ -1,7 +1,0 @@
----
-platform: template
-sensors:
-  batt_motion_bathroom:
-    friendly_name: 'Motion Bathroom Battery'
-    value_template: '{{ states.zwave.node_15.attributes.battery_level }}'
-    unit_of_measurement: '%'

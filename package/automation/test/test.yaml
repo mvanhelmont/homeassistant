@@ -1,21 +1,30 @@
-- alias: TEST BUTTON ON 1
+- alias: 'TEST BUTTON ON 1'
   trigger: 
     - platform: state
       entity_id: switch.newkaku_014e5906_a
-      to: 'on'
 
   action: 
-    - service: script.turn_on
-      entity_id: script.pushover_engine
-      data_template:
-        variables: 
-          message: "test"
-          priority: 0
-          sound: bike
-          title: "PUSHOVER ENGINE"
+#    - service: script.pushover_engine
+#      data_template:
+#        message: "test"
+#        priority: 0
+#        sound: bike
+#        title: "PUSHOVER ENGINE"
 
+#    - service: script.engine_say
+#      data_template:
+#        media_player: media_player.this_device
+#        say_testing: "true"
 
-    - service: script.engine_say
-      data_template:
-        media_player: media_player.this_device
-        say_testing: "true"
+#    service: script.engine_say
+#    data_template:
+#      media_player: media_player.this_device
+#      say_scene_appletv: "true"
+#      say_testing: "true"
+
+    service: light.turn_on
+    entity_id:
+      - light.dressoir_all
+    data:
+      transition: 5
+      brightness_pct: 10

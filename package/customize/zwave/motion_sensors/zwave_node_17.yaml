@@ -15,3 +15,5 @@ sensor.node_17_temperature:
   friendly_name: Neo Motion Hallway Temp
 binary_sensor.node_17:
   friendly_name: Neo Motion Hallway
+sensor.node_17_battery_level:
+  friendly_name: Neo Battery Hallway

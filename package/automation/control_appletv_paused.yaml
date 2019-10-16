@@ -1,0 +1,44 @@
+- alias: 'Control - AppleTV is on pause'
+  trigger:
+  - entity_id: media_player.woonkamer
+    platform: state
+    to: 'paused'
+
+  condition: 
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon' 
+
+    - condition: state
+      entity_id: input_boolean.scene_appletv
+      state: 'on'
+ 
+  action:
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.livingroom_wall
+          - light.livingroom_window
+        brightness_pct: 100
+        transition: 3
+
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.kitchen_all
+          - light.sink_all
+          - light.toilet_all
+          - light.balcony
+        brightness_pct: 100
+
+    - service: light.turn_on
+      data:
+        entity_id: light.nanoleaf
+        brightness_pct: 50
+        transition: 3
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.dressoir_all
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+        transition: 3

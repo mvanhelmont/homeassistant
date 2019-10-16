@@ -25,6 +25,15 @@ kitchen_halloween_turn_on:
   alias: 'Kitchen Halloween Turn On'
   sequence:
     - service: light.turn_on
+      entity_id: light.sink_all
+      data_template:
+        kelvin: 2700
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %}0
+          {% endif %}
+
+    - service: light.turn_on
       entity_id: light.kitchen_all
       data_template:
         color_name: green
@@ -32,15 +41,6 @@ kitchen_halloween_turn_on:
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
-
-    - service: light.turn_on
-      entity_id: light.sink_all
-      data_template:
-        kelvin: 2700
-        brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
-          {% else %}0
-          {% endif %} 
 
 kitchen_christmas_turn_on:
   alias: 'Kitchen Christmas Turn On'

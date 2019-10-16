@@ -20,3 +20,5 @@ sensor.node_10_heat:
   friendly_name: Diningroom Door Heat
 binary_sensor.node_10:
   friendly_name: Diningroom Door
+sensor.node_10_battery_level:
+  friendly_name: Diningroom Door Battery

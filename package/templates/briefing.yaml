@@ -63,43 +63,43 @@
   {%- endmacro -%}
 
   {%- macro testing() -%}
-    this is a test
+    this is a test.
   {%- endmacro -%}
 
   {# ALL SCENES #}
   {%- macro scene_evening() -%}
-    "The scene evening is activated"
+    "The scene evening is activated."
   {%- endmacro -%}
 
   {%- macro scene_kodi() -%}
     {{ [
-      "The scene kodi is activated",
-      "You watching a serie or movie so i activated the scene movie"
+      "The scene kodi is activated.",
+      "You watching a serie or movie so i activated the scene movie."
     ]|random }}
   {%- endmacro -%}
   
   {%- macro scene_goodnight() -%}
-    The scene goodnight is activaed
+    The scene goodnight is activated.
   {%- endmacro -%}
   
   {%- macro scene_appletv() -%}
     {{ [
       "The scene apple tv is activated",
-      "You watching a serie or movie so i activated the scene apple tv"
+      "You watching a serie or movie so i activated the scene apple tv."
     ]|random }}
   {%- endmacro -%}
   
   {%- macro scene_tv() -%}
     {{ [
-      "The scene tv is activated",
-      "You watching tv so i activated the scene tv"
+      "The scene tv is activated.",
+      "You watching tv so i activated the scene tv."
     ]|random }}
   {%- endmacro -%}
   
   {%- macro scene_iptv() -%}
     {{ [
-      "The scene iptv is activated",
-      "You watching a serie or movie so i activated the scene iptv"
+      "The scene iptv is activated.",
+      "You watching a serie or movie so i activated the scene iptv."
     ]|random }}
   {%- endmacro -%}
 

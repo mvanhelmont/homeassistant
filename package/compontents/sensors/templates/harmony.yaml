@@ -14,8 +14,6 @@ sensors:
         Airplay
       {% elif states.remote.logitech_harmony.attributes.current_activity == "Kodi" %}
         Kodi
-      {% elif states.remote.logitech_harmony.attributes.current_activity == "IPTV" %}
-        IPTV
       {% elif states.remote.logitech_harmony.attributes.current_activity == "Domoticz" %}
         Domoticz
       {% endif %}
