@@ -12,6 +12,7 @@ exclude:
     - updater
     - light
     - input_boolean
+    - switch
   entities:
     - sun.sun
     - zone.home

@@ -85,7 +85,7 @@
   {%- macro scene_appletv() -%}
     {{ [
       "The scene apple tv is activated",
-      "You watching a serie or movie so i activated the scene apple tv."
+      "Enjoy the movie or serie, activated the scene apple tv."
     ]|random }}
   {%- endmacro -%}
   
@@ -104,11 +104,11 @@
   {%- endmacro -%}
 
   {%- macro lux_evening_on() -%}
-      The luminance level is low. Turned on the livingroom and dressoir lights to brightness of 75 percent.
+      The lux level is low.
   {%- endmacro -%}
 
   {%- macro lux_evening_off() -%}
-      The luminance level is normal again. Turned off the livingroom and dressoir lights.
+      The lux level is normal again.
   {%- endmacro -%}
 
   {%- macro goodnight_line() -%}

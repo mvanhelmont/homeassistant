@@ -20,19 +20,19 @@
       data:
         entity_id: light.livingroom_wall
         brightness_pct: 60
-        transition: 3
+        transition: 4
 
     - service: light.turn_on
       data:
         entity_id: light.livingroom_window
         brightness_pct: 20
-        transition: 3
+        transition: 4
 
     - service: light.turn_on
       data:
         entity_id: light.nanoleaf
         brightness_pct: 30
-        transition: 3
+        transition: 4
 
     - service: light.turn_on
       data:
@@ -46,8 +46,7 @@
           {% if (states.binary_sensor.node_10.state) == 'on' %} 0
           {% else %} 25
           {% endif %}
-        transition: 3
-
+        transition: 4
 
     - service: light.turn_off
       data:

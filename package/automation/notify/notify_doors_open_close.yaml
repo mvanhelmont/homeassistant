@@ -1,5 +1,4 @@
 - alias: 'Notification - Random Door Open'
-  initial_state: false
   trigger:
     - platform: state
       entity_id: 
@@ -18,7 +17,6 @@
         title: "HA Notify Engine"
 
 - alias: 'Notification - Random Door Close'
-  initial_state: false
   trigger:
     - platform: state
       entity_id: 

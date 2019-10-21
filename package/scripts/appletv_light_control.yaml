@@ -3,16 +3,26 @@ appletv_normal:
   sequence:
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.livingroom_wall
         kelvin: 2700
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 60
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.livingroom_window
         kelvin: 2700
-        brightness_pct: 70
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 20
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
 
     - service: light.turn_on
       data_template:
@@ -31,10 +41,26 @@ appletv_birthday:
   sequence:
 
     - service: light.turn_on
-      data:
-        entity_id: light.livingroom_all
+      data_template:
+        entity_id: light.livingroom_wall
         kelvin: 2700
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 60
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.livingroom_window
+        kelvin: 2700
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 20
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3 
 
     - service: light.turn_on
       data_template:
@@ -65,16 +91,26 @@ appletv_halloween:
   sequence:
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.livingroom_wall
-        color_name: orange
-        brightness_pct: 100
+        kelvin: 2700
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 60
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.livingroom_window
-        color_name: orange
-        brightness_pct: 70
+        kelvin: 2700
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 20
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3 
 
     - service: light.turn_on
       data_template:
@@ -105,10 +141,26 @@ appletv_kingsday:
   sequence:
 
     - service: light.turn_on
-      data:
-        entity_id: light.livingroom_all
+      data_template:
+        entity_id: light.livingroom_wall
         kelvin: 2700
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 60
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
+
+    - service: light.turn_on
+      data_template:
+        entity_id: light.livingroom_window
+        kelvin: 2700
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 20
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3 
 
     - service: light.turn_on
       data_template:
@@ -137,29 +189,50 @@ appletv_kingsday:
 appletv_christmas:
   alias: 'AppleTV Christmas Light Scene'
   sequence:
+
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.livingroom_1
         color_name: red
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 60
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.livingroom_2
         color_name: green
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 20
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.livingroom_3
-        color_name: green
-        brightness_pct: 100
+        color_name: red
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 60
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.livingroom_4
-        color_name: red
-        brightness_pct: 100
+        color_name: green
+        brightness_pct: >-
+          {% if (states.media_player.woonkamer.state) == 'playing' %} 20
+          {% elif (states.media_player.woonkamer.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
+        transition: 3
 
     - service: light.turn_on
       data_template:

@@ -1,5 +1,6 @@
 zwave.node_10:
   friendly_name: Diningroom Door
+  homebridge_name: Diningroom Door
 sensor.node_10_access_control:
   friendly_name: Diningroom Door Access Control
 sensor.node_10_alarm_level:
@@ -14,6 +15,7 @@ sensor.node_10_sourcenodeid:
   friendly_name: Diningroom Door SourceID
 sensor.node_10_temperature:
   friendly_name: Diningroom Door Temp
+  homebridge_name: Diningroom Door Temp.
 sensor.node_10_power_management:
   friendly_name: Diningroom Door Power Man
 sensor.node_10_heat:
