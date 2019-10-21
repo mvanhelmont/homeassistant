@@ -1,0 +1,11 @@
+---
+sensor.hp_black_ink:
+  icon: mdi:cup-water
+sensor.hp_cyan_ink:
+  icon: mdi:cup-water
+sensor.hp_magenta_ink:
+  icon: mdi:cup-water
+sensor.hp_yellow_ink:
+  icon: mdi:cup-water
+sensor.total_prints:
+  icon: mdi:file-outline

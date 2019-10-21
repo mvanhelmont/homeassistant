@@ -1,0 +1,120 @@
+---
+light.livingroom_all:
+  homebridge_name: Livingroom
+  icon: mdi:floor-lamp
+light.livingroom_1:
+  homebridge_name: Livingroom 1
+  icon: mdi:floor-lamp
+light.livingroom_2:
+  homebridge_name: Livingroom 2
+  icon: mdi:floor-lamp
+light.livingroom_3:
+  homebridge_name: Livingroom 3
+  icon: mdi:floor-lamp
+light.livingroom_4:
+  homebridge_name: Livingroom 4
+  icon: mdi:floor-lamp
+light.livingroom_wall:
+  homebridge_name: Livingroom Wall
+  icon: mdi:floor-lamp
+light.livingroom_window:
+  homebridge_name: Livingroom Window
+  icon: mdi:floor-lamp
+
+light.dressoir_all:
+  homebridge_name: Dressoir
+  icon: mdi:ceiling-light
+light.dressoir_1:
+  homebridge_name: Dressoir 1
+  icon: mdi:ceiling-light
+light.dressoir_2:
+  homebridge_name: Dressoir 2
+  icon: mdi:ceiling-light
+light.dressoir_3:
+  homebridge_name: Dressoir 3
+  icon: mdi:ceiling-light
+
+light.bedroom_all:
+  homebridge_name: Master Bedroom
+  icon: mdi:ceiling-light 
+light.bedroom_1:
+  homebridge_name: Master Bedroom 1
+  icon: mdi:ceiling-light
+light.bedroom_2:
+  homebridge_name: Master Bedroom 2
+  icon: mdi:ceiling-light
+light.bedroom_3:
+  homebridge_name: Master Bedroom 3
+  icon: mdi:ceiling-light
+light.bedroom_4:
+  homebridge_name: Master Bedroom 4
+  icon: mdi:ceiling-light
+light.bedroom_5:
+  homebridge_name: Master Bedroom 5
+  icon: mdi:ceiling-light
+light.bedroom_6:
+  homebridge_name: Master Bedroom 6
+  icon: mdi:ceiling-light
+
+light.bathroom_all:
+  homebridge_name: Bathroom
+  icon: mdi:ceiling-light 
+light.bathroom_1:
+  homebridge_name: Bathroom 1
+  icon: mdi:ceiling-light
+light.bathroom_2:
+  homebridge_name: Bathroom 2
+  icon: mdi:ceiling-light
+light.bathroom_3:
+  homebridge_name: Bathroom 3 
+  icon: mdi:ceiling-light
+light.bathroom_4:
+  homebridge_name: Bathroom 4
+  icon: mdi:ceiling-light
+
+light.kitchen_all:
+  homebridge_name: Kitchen
+  icon: mdi:ceiling-light 
+light.kitchen_1:
+  homebridge_name: Kitchen 1
+  icon: mdi:ceiling-light
+light.kitchen_2:
+  homebridge_name: Kitchen 2
+  icon: mdi:ceiling-light
+light.kitchen_3:
+  homebridge_name: Kitchen 3
+  icon: mdi:ceiling-light
+
+light.sink_all:
+  homebridge_name: Sink
+  icon: mdi:ceiling-light 
+light.sink_1:
+  homebridge_name: Sink 1
+  icon: mdi:ceiling-light
+light.sink_2:
+  homebridge_name: Sink 2
+  icon: mdi:ceiling-light
+light.sink_3:
+  homebridge_name: Sink 3
+  icon: mdi:ceiling-light
+
+light.hallway:
+  homebridge_name: Hallway
+  icon: mdi:ceiling-light 
+light.balcony:
+
+  homebridge_name: Balcony
+  icon: mdi:ceiling-light 
+
+light.toilet_all:
+  homebridge_name: Toilet
+  icon: mdi:ceiling-light 
+light.toilet_1:
+  homebridge_name: Toilet 1
+  icon: mdi:ceiling-light
+light.toilet_2:
+  homebridge_name: Toilet 2
+  icon: mdi:ceiling-light
+light.toilet_3:
+  homebridge_name: Toilet 3
+  icon: mdi:ceiling-light

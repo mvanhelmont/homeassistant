@@ -1,7 +1,0 @@
----
-sensor.sensor_kay_manual_home:
-  friendly_name: Manual Kay Sensor
-  device_class: presence
-sensor.sensor_peter_manual_home:
-  friendly_name: Manual Peter Sensor
-  device_class: presence
