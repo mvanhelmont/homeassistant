@@ -3,3 +3,8 @@ device_tracker.geofency_peter:
   entity_picture: /local/peter.jpg
 device_tracker.geofency_kay:
   entity_picture: /local/kay.jpg
+  
+binary_sensor.manual_peter_home:
+  device_class: presence
+binary_sensor.manual_kay_home:
+  device_class: presence

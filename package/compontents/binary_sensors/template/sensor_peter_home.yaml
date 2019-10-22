@@ -1,0 +1,7 @@
+---
+platform: template
+sensors:
+  manual_peter_home:
+    friendly_name: "Manual Peter Home Sensor"
+    value_template: "{{ states.input_boolean.peter_home_manual.state == 'on' }}"
+    entity_id: input_boolean.peter_home_manual

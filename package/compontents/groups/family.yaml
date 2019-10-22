@@ -4,3 +4,5 @@ group_family:
   entities:
     - device_tracker.geofency_peter
     - device_tracker.geofency_kay
+    - binary_sensor.manual_peter_home
+    - binary_sensor.manual_kay_home
