@@ -1,3 +1,4 @@
+core
 home-assistant_v2.db
 home-assistant.log
 alexa_media.info@oudenes.photography.pickle
@@ -13,7 +14,6 @@ known_devices.yaml
 ._.DS_Store
 cox_usage.json
 cox_usage.py
-core
 *.pyc
 *.log
 *.db
