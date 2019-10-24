@@ -13,6 +13,7 @@ known_devices.yaml
 ._.DS_Store
 cox_usage.json
 cox_usage.py
+core
 *.pyc
 *.log
 *.db
