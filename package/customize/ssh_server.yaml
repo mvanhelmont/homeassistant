@@ -1,0 +1,24 @@
+---
+sensor.ssh_last_update:
+  friendly_name: Last Sensors Update
+  icon: mdi:update
+sensor.ssh_boot_time:
+  friendly_name: Last Boot Time
+  icon: mdi:clock
+sensor.ssh_cpu_temp:
+  friendly_name: CPU Temp.
+  icon: mdi:temperature-celsius
+sensor.ssh_cpu_usage:
+  friendly_name: CPU Usage
+  icon: mdi:cpu-64-bit
+sensor.ssh_disk_size:
+  friendly_name: Disk Size
+  icon: mdi:harddisk
+sensor.ssh_disk_usage:
+  friendly_name: Disk Usage
+  icon: mdi:harddisk
+sensor.ssh_memory_used:
+  friendly_name: Memory Usage 
+  icon: mdi:memory
+sensor.ssh_power_supply:
+  icon: mdi:power-plug

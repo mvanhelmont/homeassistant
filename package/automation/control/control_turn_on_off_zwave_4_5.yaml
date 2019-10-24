@@ -1,0 +1,15 @@
+- alias: 'Control - Turn On Off Zwave 5,6,7'
+  trigger:
+    - entity_id: group.group_family
+      platform: state
+
+  action:
+    - service_template: >-
+        {% if (states.group.group_family.state) == 'home' %} switch.turn_on
+        {% else %} switch.turn_off
+        {% endif %}
+      data:
+        entity_id:
+          - switch.node_5_switch
+          - switch.node_6_switch
+          - switch.node_7_switch

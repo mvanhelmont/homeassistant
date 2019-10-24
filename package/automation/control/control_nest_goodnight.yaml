@@ -1,0 +1,29 @@
+- alias: 'Control - Nest Control Goodnight Scene'
+  trigger:
+  - platform: state
+    entity_id: input_boolean.scene_goodnight
+    to: 'on'
+
+  - platform: state
+    entity_id: climate.entryway
+
+  condition:
+    - condition: state
+      entity_id: group.group_family
+      state: 'home' 
+
+    - condition: state
+      entity_id: input_boolean.scene_goodnight
+      state: 'on'
+
+  action:
+    - service: climate.set_temperature
+      entity_id: climate.entryway
+      data_template:
+        temperature: >-
+          {% set temp2 = states('sensor.dark_sky_temperature') | float %}
+          {% set tempnest2 = states('sensor.entryway_thermostat_target') | float %}
+          {% if temp2 > 16 and tempnest2 > 16 %} 9
+          {% elif temp2 < 15 and tempnest2 > 14 %} 12
+          {% else %} 9
+          {% endif %}

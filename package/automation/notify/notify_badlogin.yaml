@@ -1,0 +1,13 @@
+- alias: 'Notification - Login Failure'
+  hide_entity: False
+  trigger:
+    platform: template
+    value_template: "{{ states('persistent_notification.http_login') != 'unknown' }}"
+
+  action:
+    - service: script.pushover_engine
+      data_template:
+        message: "There is a bad login registered on Home Assistant"
+        priority: 2
+        sound: bike
+        title: "HA Security ALERT"

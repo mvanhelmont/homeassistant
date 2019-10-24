@@ -1,0 +1,5 @@
+---
+platform: ziggo_mediabox_xl
+host: 192.168.100.41
+name: "Ziggo Mediabox"
+

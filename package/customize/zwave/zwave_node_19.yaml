@@ -1,0 +1,21 @@
+---
+zwave.node_19:
+  friendly_name: Neo Motion Livingroom
+sensor.node_19_alarm_level:
+  friendly_name: Neo Motion Livingroom Alarm Level
+sensor.node_19_alarm_type:
+  friendly_name: Neo Motion Livingroom Alarm Type
+sensor.node_19_burglar:
+  friendly_name: Neo Motion Livingroom Burglar
+sensor.node_19_luminance:
+  friendly_name: Neo Motion Livingroom Lux
+  icon: mdi:weather-partly-cloudy
+sensor.node_19_sourcenodeid:
+  friendly_name: Neo Motion Livingroom SourceID
+sensor.node_19_temperature:
+  friendly_name: Neo Motion Livingroom Temp
+binary_sensor.node_19:
+  friendly_name: Neo Motion Livingroom
+  icon: mdi:motion-sensor
+sensor.node_19_battery_level:
+  friendly_name: Neo Battery Livingroom

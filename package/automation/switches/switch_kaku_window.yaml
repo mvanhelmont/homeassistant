@@ -1,0 +1,14 @@
+- alias: 'Switch - Window On Off'
+  trigger:
+    - platform: state
+      entity_id: switch.newkaku_0114ef92_c
+
+  action:
+    service: light.turn_on
+    entity_id: light.livingroom_window
+    data_template:
+      brightness_pct: >-
+        {% if (states.switch.newkaku_0114ef92_c.state) == 'on' %} 100
+        {% else %} 0
+        {% endif %}
+      kelvin: 2700

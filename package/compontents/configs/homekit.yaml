@@ -1,0 +1,77 @@
+---
+auto_start: false
+filter:
+  include_domains:
+    - climate
+  include_entities:
+    - input_boolean.scene_daylight
+    - input_boolean.scene_evening
+    - input_boolean.scene_goodnight
+    - input_boolean.scene_sleeping
+    - input_boolean.scene_sexy
+    - input_boolean.scene_appletv
+    - input_boolean.scene_disco
+    - input_boolean.scene_tv
+    - input_boolean.scene_kodi
+    - input_boolean.nest_disable_control
+    - input_boolean.scene_guests
+    - switch.kay_learning
+    - binary_sensor.node_14
+    - binary_sensor.node_15
+    - binary_sensor.node_16
+    - binary_sensor.node_17
+    - binary_sensor.node_18
+    - binary_sensor.node_19
+    - binary_sensor.node_20
+    - sensor.node_11_temperature
+    - sensor.node_13_temperature
+    - sensor.node_14_temperature
+    - sensor.node_15_temperature
+    - sensor.node_16_temperature
+    - sensor.node_17_temperature
+    - sensor.node_18_temperature
+    - sensor.node_19_temperature
+    - sensor.node_20_temperature
+    - light.livingroom_all
+    - light.dressoir_all
+    - light.hallway
+    - light.balcony
+    - light.toilet_all
+    - light.bedroom_all
+    - light.bathroom_all
+    - light.kitchen_all
+    - light.sink_all
+    - device_tracker.geofency_peter
+    - device_tracker.geofency_kay
+    - input_boolean.scene_sleeping
+    - input_boolean.scene_goodnight 
+    - sensor.bedroom_nest_protect_co_status
+    - sensor.bedroom_nest_protect_smoke_status
+    - sensor.dining_room_nest_protect_co_status
+    - sensor.dining_room_nest_protect_smoke_status
+    - sensor.living_room_nest_protect_co_status
+    - sensor.living_room_nest_protect_smoke_status
+    - sensor.node_11_temperature
+    - sensor.node_13_temperature
+    - sensor.node_14_temperature
+    - sensor.node_15_temperature
+    - sensor.node_16_temperature
+    - sensor.node_17_temperature
+    - sensor.node_18_temperature
+    - sensor.node_19_temperature
+    - sensor.node_20_temperature
+
+  exclude_entities:
+    - binary_sensor.bedroom_nest_protect_online
+    - binary_sensor.dining_room_nest_protect_online
+    - binary_sensor.living_room_nest_protect_online
+    - binary_sensor.entryway_thermostat_has_leaf
+    - binary_sensor.entryway_thermostat_online
+    - binary_sensor.imac_peter
+    - binary_sensor.meek_hallway
+    - binary_sensor.meek_p1_meter
+    - binary_sensor.meek_wc
+    - binary_sensor.milight_hub
+    - binary_sensor.toshiba_laptop
+    - binary_sensor.asingaborg_away
+  

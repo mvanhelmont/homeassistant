@@ -1,0 +1,303 @@
+  >
+  {# UTILITY FUNCTIONS #}
+  {%- macro get_friendly_list(list) -%}
+    {%- set comma = joiner(', ') -%}
+    {%- for item in list|sort if list|length > 0 -%}
+      {{ ' and' if loop.last and not loop.first else comma() }}
+      {{ item|title }}
+    {%- endfor -%}
+  {%- endmacro -%}
+
+  {%- macro get_friendly_names(entity_list) -%}
+    {% set comma = joiner(', ') %}
+    {%- for entity in entity_list if entity_list|length > 0 and entity_list != [''] -%}
+      {{ ' and' if loop.last and not loop.first else comma() }}
+      {{ state_attr(entity, 'friendly_name')|replace('Light','')|replace('Lamp','')|trim|title  }}
+    {%- endfor -%}
+  {%- endmacro -%}
+
+
+  {# BRIEFING FUNCTIONS #}
+  {%- macro inside_weather() -%}
+    Inside the house, it is {{ states('sensor.entryway_thermostat_temperature')|int }} degrees.
+  {%- endmacro -%}
+
+  {%- macro outside_weather() -%}
+    Outside, it is {{ states('sensor.dark_sky_temperature')|int }} degrees. The forcast for today is {{ states('sensor.dark_sky_daily_summary') }}.
+  {%- endmacro -%}
+
+
+
+    {%- macro greeting_line() -%}
+    {%- set hour = now().strftime('%H')|int -%}
+    {%- if hour > 0 and hour < 10  %}
+      Good morning.
+    {%- elif hour >= 10 and hour < 17 %}
+      Good afternoon.
+    {%- else %}
+      Good evening.
+    {%- endif %}
+  {%- endmacro -%}
+
+  {%- macro light_check() -%}
+    {% set lights_on = states('light').split(',') %}
+    {% if lights_on|length > 0 and lights_on != [''] %}
+
+      {%- if lights_on|length == 1 %}
+        There is 1 light on right now.
+        The {{ get_friendly_names(lights_on) }} light is on.
+      {%- else %}
+        There are {{ lights_on|length }} lights on right now.
+        The {{ get_friendly_names(lights_on) }} lights are on.
+      {%- endif %}
+    {%- endif -%}
+  {%- endmacro -%}
+  
+  {%- macro dark_outside() -%}
+    {{ [
+      'It is pretty dark outside.  ...  I will turn on the lights now.',
+      'It is a little past Sunset.  Time to turn on the lights.',
+      'I will switch on the lights.  ...  It is getting dark outside.',
+      'Time to turn on the front lights.  ...  I am on it.'
+    ]|random }}
+  {%- endmacro -%}
+
+  {%- macro testing() -%}
+    this is a test.
+  {%- endmacro -%}
+
+  {# ALL SCENES #}
+  {%- macro scene_evening() -%}
+    "The scene evening is activated."
+  {%- endmacro -%}
+
+  {%- macro scene_kodi() -%}
+    {{ [
+      "The scene kodi is activated.",
+      "You watching a serie or movie so i activated the scene movie."
+    ]|random }}
+  {%- endmacro -%}
+  
+  {%- macro scene_goodnight() -%}
+    The scene goodnight is activated.
+  {%- endmacro -%}
+  
+  {%- macro scene_appletv() -%}
+    {{ [
+      "The scene apple tv is activated",
+      "Enjoy the movie or serie, activated the scene apple tv."
+    ]|random }}
+  {%- endmacro -%}
+  
+  {%- macro scene_tv() -%}
+    {{ [
+      "The scene tv is activated.",
+      "You watching tv so i activated the scene tv."
+    ]|random }}
+  {%- endmacro -%}
+  
+  {%- macro scene_iptv() -%}
+    {{ [
+      "The scene iptv is activated.",
+      "You watching a serie or movie so i activated the scene iptv."
+    ]|random }}
+  {%- endmacro -%}
+
+  {%- macro lux_evening_on() -%}
+      The lux level is low.
+  {%- endmacro -%}
+
+  {%- macro lux_evening_off() -%}
+      The lux level is normal again.
+  {%- endmacro -%}
+
+  {%- macro goodnight_line() -%}
+    {{ [
+      "Goodnight, talk to you tomorrow. ",
+      "Goodnight sweetheart. ",
+      "Wishing you a goodnight and sweatest dreams.",
+      "What about good night kisses? "
+    ]|random }}
+  {%- endmacro -%}
+  
+  {%- macro goodnight_line() -%}
+    {{ [
+      "Goodnight, talk to you tomorrow. ",
+      "Goodnight sweetheart. ",
+      "Wishing you a goodnight and sweatest dreams.",
+      "What about good night kisses? "
+    ]|random }}
+  {%- endmacro -%}
+
+  {%- macro welcome_home(person) -%}
+    {{ [
+    "Welcome back home " ~ person,
+    "Guess who is home?  ...  " ~ person ~ ", is!",
+    person ~ " is now in the house.",
+    "Welcome Home " ~ person ~ ".  ...  We have missed you.  ...  Or at least Pepper did.",
+    "Pardon the interruption but " ~ person ~ " is home!",
+    "My systems are picking up the presence of additional humans.  ...  " ~ person ~ " has been identified as home."
+    ] | random }}
+  {%- endmacro -%}
+
+
+  {# BRIEFING TEMPLATE #}
+  {%- macro get_briefing() -%}
+    {%- if say_greeting == "true" -%}
+    
+      {{ greeting_line() ~ " ... " }}
+      {{ holiday() ~ " ... " }}
+      
+    {%- endif -%}
+
+    {%- if person_arriving is not undefined -%}
+      {{ welcome_home(person_arriving) ~ " ... " }}
+    {%- endif -%}
+
+    {{ message }}
+
+    {%- if say_dark_outside == "true" -%}
+      {{ dark_outside() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_inside_weather == "true" -%}
+      {{ inside_weather() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_outside_weather == "true" -%}
+      {{ outside_weather() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_light_check == "true" -%}
+      {{ light_check() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_goodbye == "true" -%}
+      {{ " " ~ goodbye_line() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_goodnight == "true" -%}
+      {{ " " ~ goodnight_line() ~ " ... " }}
+    {%- endif -%}
+    
+    {%- if say_scene_evening == "true" -%}
+      {{ scene_evening() }}
+    {%- endif -%}
+
+    {%- if say_scene_kodi == "true" -%}
+      {{ scene_kodi() }}
+    {%- endif -%}
+    
+    {%- if say_scene_tv == "true" -%}
+      {{ scene_tv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_iptv == "true" -%}
+      {{ scene_iptv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_appletv == "true" -%}
+      {{ scene_appletv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_goodnight == "true" -%}
+      {{ scene_goodnight() }}
+    {%- endif -%}
+
+    {%- if say_lux_evening_on == "true" -%}
+      {{ lux_evening_on() }}
+    {%- endif -%}
+
+    {%- if say_lux_evening_off == "true" -%}
+      {{ lux_evening_off() }}
+    {%- endif -%}
+
+    {%- if say_testing == "true" -%}
+      {{ testing() }}
+    {%- endif -%}    
+
+
+  {%- endmacro -%}
+
+
+  {# Initialize variables #}
+  {%- if say_scene_evening is undefined -%}
+    {%- set say_scene_evening = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_kodi is undefined -%}
+    {%- set say_scene_kodi = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_tv is undefined -%}
+    {%- set say_scene_tv = "false" -%}
+  {%- endif -%}
+
+  {%- if say_scene_iptv is undefined -%}
+    {%- set say_scene_iptv = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_appletv is undefined -%}
+    {%- set say_scene_appletv = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_goodnight is undefined -%}
+    {%- set say_scene_goodnight = "false" -%}
+  {%- endif -%}
+
+  {%- if say_lux_evening_on is undefined -%}
+    {%- set say_lux_evening_on = "false" -%}
+  {%- endif -%}
+
+  {%- if say_lux_evening_off is undefined -%}
+    {%- set say_lux_evening_off = "false" -%}
+  {%- endif -%}
+
+  {%- if say_dark_outside is undefined -%}
+    {%- set say_dark_outside = "false" -%}
+  {%- endif -%}
+
+  {%- if say_goodbye is undefined -%}
+    {%- set say_goodbye = "false" -%}
+  {%- endif -%}
+
+  {%- if say_goodnight is undefined -%}
+    {%- set say_goodnight = "false" -%}
+  {%- endif -%}
+
+  {%- if say_greeting is undefined -%}
+    {%- set say_greeting = "false" -%}
+  {%- endif -%}
+
+  {%- if say_inside_weather is undefined -%}
+    {%- set say_inside_weather = "false" -%}
+  {%- endif -%}
+
+  {%- if say_garage_check is undefined -%}
+    {%- set say_garage_check = "false" -%}
+  {%- endif -%}
+
+  {%- if say_light_check is undefined -%}
+    {%- set say_light_check = "false" -%}
+  {%- endif -%}
+
+  {%- if say_outside_weather is undefined -%}
+    {%- set say_outside_weather = "false" -%}
+  {%- endif -%}
+
+  {%- if say_goodnight == "true" -%}
+    {%- set say_greeting = "false" -%}
+  {%- endif -%}
+
+  {%- if person_arriving is not undefined -%}
+    {%- set say_greeting = "false" -%}
+  {%- endif -%}
+
+  {%- if say_testing is not undefined -%}
+    {%- set say_test = "false" -%}
+  {%- endif -%}
+
+  {#- Get briefing, and strip unnecessary characters. -#}
+  {% filter replace("\n", "")|replace("\t", " ")|replace("    ", " ")|replace("   ", " ")|replace("  ", " ")|replace("  ", " ")|replace("... ...", "...") %}
+    {{ get_briefing() }}
+  {% endfilter %}

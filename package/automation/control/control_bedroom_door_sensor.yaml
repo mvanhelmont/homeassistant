@@ -1,0 +1,23 @@
+- alias: 'Door Sensor - Bedroom Door Open Close'
+  trigger:
+    platform: state
+    entity_id: binary_sensor.node_12
+
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
+
+    - condition: state
+      entity_id: light.bedroom_all
+      state: 'on'
+
+  action:
+    service: light.turn_on
+    entity_id: light.bedroom_all
+    data_template:
+      kelvin: 4700
+      brightness_pct: >-
+        {% if (states.binary_sensor.node_12.state) == 'on' %} 20
+        {% else %} 100
+        {% endif %}

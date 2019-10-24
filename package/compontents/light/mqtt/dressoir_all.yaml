@@ -1,0 +1,17 @@
+---
+platform: mqtt
+name: "Dressoir All"
+schema: json
+command_topic: "milight/0xAAAF/rgb_cct/0"
+state_topic: "milight/states/0xAAAF/rgb_cct/0"
+brightness: true
+rgb: true
+color_temp: true
+qos: 1
+optimistic: false
+retain: true
+effect: true
+effect_list: !include /config/package/templates/light_effects.yaml
+availability_topic: "milight/client_status"
+payload_available: 'connected'
+payload_not_available: 'disconnected'

@@ -1,0 +1,24 @@
+alexa_speak_engine:
+  alias: 'Alexa Speak Engine'
+  sequence:
+    - service: media_player.volume_set
+      data_template:
+        entity_id: media_player.peter_s_echo_dot
+        volume_level: >-
+          {% if now().strftime('%H')|int < 11 and now().strftime('%H')|int > 6 %}
+            0.3
+          {% elif now().strftime('%H')|int > 11 and now().strftime('%H')|int < 20 %}
+            0.5
+          {% else %}
+            0.3
+          {% endif %}
+
+    - delay: '00:00:03'
+
+# THIS IS WORKING
+    - service: notify.alexa_media_peter_s_echo_dot
+      data_template:
+        target: media_player.this_device
+        message: "{{ message }}"
+        data:
+          type: announce

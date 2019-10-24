@@ -1,0 +1,6 @@
+---
+group_family_manual:
+  name: Group Family Manual
+  entities:
+    - binary_sensor.manual_peter_home
+    - binary_sensor.manual_kay_home

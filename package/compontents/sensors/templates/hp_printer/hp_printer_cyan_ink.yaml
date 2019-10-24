@@ -1,0 +1,7 @@
+---
+platform: template
+sensors:
+  hp_cyan_ink:
+    friendly_name: 'HP Cyan Ink Level'
+    unit_of_measurement: '%'
+    value_template: "{{ ((states('sensor.hp_cur_cyan') | float) / (states('sensor.hp_max_cyan') | float) * 100) | round(0) }}"

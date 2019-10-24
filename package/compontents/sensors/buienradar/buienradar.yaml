@@ -1,0 +1,17 @@
+---
+platform: buienradar
+latitude: !secret latitude
+longitude: !secret longitude
+monitored_conditions:
+  - symbol
+  - humidity
+  - temperature
+  - windspeed
+  - pressure
+  - stationname
+  - precipitation_forecast_average
+  - precipitation_forecast_total
+  - rainlast24hour
+  - rainlasthour
+  - conditiondetailed
+  - conditionexact

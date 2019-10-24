@@ -1,0 +1,7 @@
+---
+platform: snmp
+name: 'HP Cur Magenta'
+host: 192.168.100.28
+baseoid: iso.3.6.1.2.1.43.11.1.1.9.1.2
+accept_errors: true
+scan_interval: 86400

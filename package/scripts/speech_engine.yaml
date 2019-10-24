@@ -1,0 +1,48 @@
+engine_notify_speech:
+  alias: 'TTS Notify Engine'
+  sequence:
+    - service: script.engine_say
+      data_template:
+        media_player: "{{ media_player }}"
+        message: "{{ message }}"
+        say_greeting: "false"
+
+engine_say:
+  alias: 'TTS Say Briefing Engine'
+  sequence:
+    - service: media_player.volume_set
+      data_template:
+        entity_id: media_player.peter_s_echo_dot
+        volume_level: >-
+          {% if now().strftime('%H')|int < 11 and now().strftime('%H')|int > 6 %}
+            0.3
+          {% elif now().strftime('%H')|int > 11 and now().strftime('%H')|int < 19 %}
+            0.4
+          {% else %}
+            0.3
+          {% endif %}
+
+    - delay: '00:00:02'
+
+    - service: script.engine_speech_processing
+      data_template:
+        media_player: "{{ media_player }}"
+        briefing: !include ../../package/templates/briefing.yaml
+        title: "{{ title }}"
+
+engine_speech_processing:
+  alias: 'TTS Processing Engine'
+  sequence:
+    - service: notify.alexa_media_peter_s_echo_dot
+      data_template:
+        data:
+          type: announce
+          method: all
+        title: >-
+          {%- if title is not string -%}
+            Home Assistant
+          {%- else -%}
+            {{ title }}
+          {%- endif -%}
+        message: "{{ briefing }}"
+        target: "{{ media_player }}"

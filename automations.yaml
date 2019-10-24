@@ -1,0 +1,14 @@
+#- id: '1567097208771'
+#  alias: brightness condition
+#  trigger:
+#  - entity_id: binary_sensor.node_19
+#    platform: state
+#    to: 'on'
+#  condition:
+#  - below: '200'
+#    condition: numeric_state
+#    entity_id: light.livingroom_wall
+#  action:
+#  - data:
+#      message: test
+#    service: notify.pushover

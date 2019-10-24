@@ -1,0 +1,23 @@
+- alias: 'Scene - Sexy'
+  trigger:
+
+  - entity_id: input_boolean.scene_sexy
+    platform: state
+    to: 'on'
+
+  action:
+  - service: light.turn_on
+    entity_id: light.nanoleaf
+    data:
+      brightness_pct: 30
+      effect: Romantic
+
+  - service: light.turn_on
+    entity_id: 
+      - light.dressoir_all
+      - light.livingroom_all
+      - light.hallway
+      - light.balcony
+    data:
+      color_name: red
+      brightness_pct: 50

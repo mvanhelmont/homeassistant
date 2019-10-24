@@ -1,0 +1,4 @@
+---
+zwave.aeon_labs_zw090_z_stick_gen5_eu:
+  friendly_name: Aeon Zwave Gen5
+  homebridge_name: Aeon Zwave Gen5
