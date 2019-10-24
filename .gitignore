@@ -34,4 +34,5 @@ dept/
 www/
 config/automation/test/
 custom_components/hacs/
+custom_components/
 node-red/
