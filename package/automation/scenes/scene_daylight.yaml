@@ -1,6 +1,9 @@
 - alias: 'Scene - Daylight Someone Home'
   trigger:
 
+  - platform: time_pattern
+    minutes: "/1" 
+
   - platform: state
     entity_id: sun.sun
 

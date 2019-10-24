@@ -9,11 +9,13 @@ sensor.node_16_burglar:
   friendly_name: Neo Motion Kitchen Burglar
 sensor.node_16_luminance:
   friendly_name: Neo Motion Kitchen Lux
+  icon: mdi:weather-partly-cloudy
 sensor.node_16_sourcenodeid:
   friendly_name: Neo Motion Kitchen SourceID
 sensor.node_16_temperature:
   friendly_name: Neo Motion Kitchen Temp
 binary_sensor.node_16:
   friendly_name: Neo Motion Kitchen
+  icon: mdi:motion-sensor
 sensor.node_16_battery_level:
   friendly_name: Neo Battery Kitchen

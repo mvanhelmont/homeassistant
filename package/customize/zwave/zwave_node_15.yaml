@@ -9,11 +9,13 @@ sensor.node_15_burglar:
   friendly_name: Neo Motion Bathroom Burglar
 sensor.node_15_luminance:
   friendly_name: Neo Motion Bathroom Lux
+  icon: mdi:weather-partly-cloudy
 sensor.node_15_sourcenodeid:
   friendly_name: Neo Motion Bathroom SourceID
 sensor.node_15_temperature:
   friendly_name: Neo Motion Bathroom Temp
 binary_sensor.node_15:
+  icon: mdi:motion-sensor
   friendly_name: Neo Motion Bathroom
 sensor.node_15_battery_level:
   friendly_name: Neo Battery Bathdoor
