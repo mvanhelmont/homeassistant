@@ -1,6 +1,0 @@
----
-platform: mqtt
-state_topic: "homeassistant/ssh_server/systemstatus"
-name: "SSH CPU Usage"
-unit_of_measurement: '%'
-value_template: '{{ value_json.cpuusage | round (0) }}'

@@ -1,7 +1,0 @@
----
-sensor.toyota_aygo_expdate:
-  friendly_name: APK Vervaldatum
-sensor.toyota_aygo_insured:
-  friendly_name: Verzekerd
-sensor.toyota_aygo_recall:
-  friendly_name: Terugroepstatus

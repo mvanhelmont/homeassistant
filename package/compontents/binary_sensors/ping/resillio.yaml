@@ -1,5 +1,0 @@
----
-platform: ping
-host: 192.168.100.23
-scan_interval: 60
-name: Resillio

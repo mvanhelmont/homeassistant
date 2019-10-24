@@ -1,4 +1,0 @@
----
-platform: nanoleaf
-host: 192.168.100.2
-token: !secret nanoleaf_token

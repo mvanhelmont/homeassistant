@@ -1,3 +1,0 @@
-default: warn
-logs:
-    homeassistant.components.websocket_api: info

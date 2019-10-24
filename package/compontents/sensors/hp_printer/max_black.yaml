@@ -1,7 +1,0 @@
----
-platform: snmp
-name: 'HP Max Black'
-host: 192.168.100.28
-baseoid: iso.3.6.1.2.1.43.11.1.1.8.1.4
-accept_errors: true
-scan_interval: 3600

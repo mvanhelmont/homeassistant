@@ -1,8 +1,0 @@
----
-platform: template
-sensors:
-  sensor_manual_family_home:
-    value_template: >
-      {{ is_state('input_boolean.kay_home_manual', 'on') or
-         is_state('input_boolean.peter_home_manual', 'on') }}
-    device_class: presence

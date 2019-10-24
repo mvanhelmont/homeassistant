@@ -1,8 +1,0 @@
-platform: rdw
-name: "Toyota Aygo"
-plate: 9XBT23
-dateformat: '%d %b %Y'
-sensors:
-  - expdate
-  - insured
-  - recall

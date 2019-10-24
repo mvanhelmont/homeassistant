@@ -1,9 +1,0 @@
----
-platform: airvisual
-api_key: !secret airvisual_api
-scan_interval: 3600
-latitude: !secret latitude
-longitude: !secret longitude
-monitored_conditions:
-  - us
-show_on_map: true

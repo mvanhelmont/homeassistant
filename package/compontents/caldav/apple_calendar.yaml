@@ -1,8 +1,0 @@
----
-platform: caldav
-username: !secret icloud_username
-password: !secret icloud_app_specific_password
-url: https://caldav.icloud.com
-calendars:
-  - Werk
-  - Vangrail

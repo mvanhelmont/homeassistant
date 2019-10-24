@@ -1,8 +1,0 @@
-- alias: 'System - Z-Wave Nightly Heal'
-  hide_entity: True 
-  trigger:
-    platform: time
-    at: '2:31:00'
-
-  action:
-    - service: zwave.heal_network
