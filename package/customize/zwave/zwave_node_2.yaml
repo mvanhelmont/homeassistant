@@ -21,6 +21,7 @@ sensor.node_2_interval_4:
   friendly_name: Neo Switch iMac Interval 4
 sensor.node_2_power:
   friendly_name: Neo Switch iMac Current Watt
+  icon: mdi:flash 
 sensor.node_2_power_management:
   friendly_name: Neo Switch iMac Power Man
 sensor.node_2_previous_reading:

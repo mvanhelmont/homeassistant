@@ -1,3 +1,4 @@
+---
 zwave.node_11:
   friendly_name: Fibaro Frontdoor
 sensor.node_11_access_control:

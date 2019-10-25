@@ -21,6 +21,7 @@ sensor.node_5_interval_4:
   friendly_name: Neo Switch Kay Interval 4
 sensor.node_5_power:
   friendly_name: Neo Switch Kay Current Watt
+  icon: mdi:flash 
 sensor.node_5_power_management:
   friendly_name: Neo Switch Kay Power Man
 sensor.node_5_previous_reading:

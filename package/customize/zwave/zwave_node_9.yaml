@@ -21,6 +21,7 @@ sensor.node_9_interval_4:
   friendly_name: Neo Switch Hall Interval 4
 sensor.node_9_power:
   friendly_name: Neo Switch Hall Current Watt
+  icon: mdi:flash 
 sensor.node_9_power_management:
   friendly_name: Neo Switch Hall Power Man
 sensor.node_9_previous_reading:

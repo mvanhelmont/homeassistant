@@ -21,6 +21,7 @@ sensor.node_7_interval_4:
   friendly_name: Neo Switch Coffee Interval 4
 sensor.node_7_power:
   friendly_name: Neo Switch Coffee Current Watt
+  icon: mdi:flash 
 sensor.node_7_power_management:
   friendly_name: Neo Switch Coffee Power Man
 sensor.node_7_previous_reading:

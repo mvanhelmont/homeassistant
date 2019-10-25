@@ -1,0 +1,5 @@
+---
+sensor.fibaro_frontdoor_custom_sensor:
+  icon: mdi:door 
+sensor.fibaro_imac_custom_sensor
+  icon: mdi:door

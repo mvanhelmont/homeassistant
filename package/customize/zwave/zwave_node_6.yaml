@@ -21,6 +21,7 @@ sensor.node_6_interval_4:
   friendly_name: Neo Switch Peter Interval 4
 sensor.node_6_power:
   friendly_name: Neo Switch Peter Current Watt
+  icon: mdi:flash 
 sensor.node_6_power_management:
   friendly_name: Neo Switch Peter Power Man
 sensor.node_6_previous_reading:

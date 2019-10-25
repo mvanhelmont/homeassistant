@@ -21,6 +21,7 @@ sensor.node_8_interval_4:
   friendly_name: Neo Switch Bank Interval 4
 sensor.node_8_power:
   friendly_name: Neo Switch Bank Current Watt
+  icon: mdi:flash 
 sensor.node_8_power_management:
   friendly_name: Neo Switch Bank Power Man
 sensor.node_8_previous_reading:
