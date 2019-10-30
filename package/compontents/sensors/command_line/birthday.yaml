@@ -1,6 +1,6 @@
 ---
 platform: command_line
-command: 'cat /config/package/calendar.json'
+command: 'cat /config/package/json/birthday.json'
 name: Birthday 
 scan_interval: 21600
 value_template: >-

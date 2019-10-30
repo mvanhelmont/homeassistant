@@ -1,16 +1,16 @@
 - alias: 'Control - Nest Control Someone Home'
   trigger:
   - platform: state
-    entity_id: group.group_family
-    to: 'home'
+    entity_id: binary_sensor.sensor_manual_family_home
+    to: 'on'
 
   - platform: state
     entity_id: climate.entryway
 
   condition:
     - condition: state
-      entity_id: group.group_family
-      state: 'home' 
+      entity_id: binary_sensor.sensor_manual_family_home
+      state: 'on' 
 
     - condition: state
       entity_id: input_boolean.scene_goodnight

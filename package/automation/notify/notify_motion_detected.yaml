@@ -21,8 +21,8 @@
 
   condition:
     - condition: state
-      entity_id: group.group_family
-      state: 'not_home' 
+      entity_id: binary_sensor.sensor_manual_family_home
+      state: 'off' 
 
   action:
   - service: script.pushover_engine

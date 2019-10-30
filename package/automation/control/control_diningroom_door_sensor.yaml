@@ -25,8 +25,20 @@
       entity_id: light.newkaku_01401eb6_a
       data_template:
         brightness_pct: >-
-          {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
-          {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
-          {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100
+          {% if (states.binary_sensor.node_10.state) == 'on' and
+                (states.switch.kay_learning.state) == 'off' and 
+
+                  ((states.sensor.seasons.state) == 'summer' or 
+                   (states.sensor.holiday.state) == 'sprint') %}
+                  0 
+
+          {% elif (states.binary_sensor.node_10.state) == 'on' and 
+                  (states.switch.kay_learning.state) == 'on' %} and
+                  100
+
+          {% elif (states.binary_sensor.node_10.state) == 'off' and 
+                  (states.switch.kay_learning.state) == 'on' %} 
+                  100
+
           {% else %} 50
           {% endif %}

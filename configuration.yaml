@@ -23,15 +23,11 @@ media_player: !include_dir_list package/compontents/media_players
 light: !include_dir_list package/compontents/light
 binary_sensor: !include_dir_list package/compontents/binary_sensors
 calendar: !include_dir_list package/compontents/caldav
-
 group: !include_dir_merge_named package/compontents/groups
 input_boolean: !include_dir_merge_named package/compontents/input_boolean
-#panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
-
 notify: !include_dir_list package/compontents/configs/notify
-
 apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
 shell_command: !include package/compontents/devices/shell_commands.yaml
 tts: !include package/compontents/devices/tts.yaml
@@ -41,11 +37,31 @@ remote: !include package/compontents/devices/remote.yaml
 nest: !include package/compontents/devices/nest.yaml
 logger: !include package/compontents/configs/logger.yaml
 http: !include package/compontents/configs/http.yaml
-#notify: !include package/compontents/configs/notify.yaml
 speedtestdotnet: !include package/compontents/configs/speedtest.yaml 
 weather: !include package/compontents/configs/weather.yaml
 homekit: !include package/compontents/configs/homekit.yaml
 recorder: !include package/compontents/configs/recorder.yaml
+#android_ip_webcam: !include package/compontents/configs/camera.yaml
 
+android_ip_webcam:
+  - host: 192.168.100.9
+    port: 8080
+    motion_sensor: true
+    sensors:
+      - motion
+    switches:
+      - exposure_lock
+      - ffc
+      - focus
+      - gps_active
+      - night_vision
+      - overlay
+      - torch
+      - whitebalance_lock
+      - video_recording
+
+#panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
+#notify: !include package/compontents/configs/notify.yaml
 #google: !include package/compontents/configs/google.yaml
 #alexa: !include package/compontents/devices/alexa.yaml
+

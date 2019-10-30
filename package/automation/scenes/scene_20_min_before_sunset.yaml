@@ -11,8 +11,8 @@
       state: 'on'
 
     - condition: state
-      entity_id: group.group_family
-      state: 'home' 
+      entity_id: binary_sensor.sensor_manual_family_home
+      state: 'on'
 
   action:
   - service: light.turn_on

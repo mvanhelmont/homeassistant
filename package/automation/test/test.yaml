@@ -5,7 +5,13 @@
       to: 'on'
 
   action: 
-
+    - service: light.turn_on
+      data:
+        entity_id: 
+          - light.dressoir_all
+#        color_temp: 153
+        kelvin: 4700
+        brightness_pct: 100
 
 #    - service: script.engine_turn_on_light
 #      data:
@@ -20,11 +26,10 @@
       to: 'off'
 
   action:
-    - service: script.engine_turn_off_light
+    - service: light.turn_off
       data:
-        light: light.dressoir_all
-        brightness_pct: 10
-        transition: 5
+        entity_id: 
+          - light.dressoir_all
 
 #    - service: script.pushover_engine
 #      data_template:

@@ -8,7 +8,7 @@
     entity_id: sun.sun
 
   - platform: state
-    entity_id: group.group_family
+    entity_id: binary_sensor.sensor_manual_family_home
 
   - entity_id: sensor.harmony
     platform: state
@@ -32,8 +32,8 @@
       state: 'Off'
 
     - condition: state 
-      entity_id: group.group_family
-      state: 'home'
+      entity_id: binary_sensor.sensor_manual_family_home
+      state: 'on'
 
   action:
   - service: input_boolean.turn_on

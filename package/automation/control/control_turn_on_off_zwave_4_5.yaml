@@ -1,11 +1,11 @@
 - alias: 'Control - Turn On Off Zwave 5,6,7'
   trigger:
-    - entity_id: group.group_family
+    - entity_id: binary_sensor.sensor_manual_family_home
       platform: state
 
   action:
     - service_template: >-
-        {% if (states.group.group_family.state) == 'home' %} switch.turn_on
+        {% if (states.binary_sensor.sensor_manual_family_home.state) == 'on' %} switch.turn_on
         {% else %} switch.turn_off
         {% endif %}
       data:
