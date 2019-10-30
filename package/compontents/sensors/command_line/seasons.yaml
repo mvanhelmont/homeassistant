@@ -1,11 +1,11 @@
 ---
 platform: command_line
-command: 'cat /config/package/json/seasons.json'
+command: 'cat /config/package/json/calendar.json'
 name: Season
 scan_interval: 21600
 value_template: >-
   {% set today = now().month  ~ '/' ~ now().day  %}
-  {% set season =  value_json.seasons[ today ] %}
+  {% set season =  value_json.json_calendars.seasons[ today ] %}
     {% if season | trim == "" %}
          {% set season =  "No season configured" %}
        {% endif %}

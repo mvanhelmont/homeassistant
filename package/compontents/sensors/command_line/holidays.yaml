@@ -1,11 +1,11 @@
 ---
 platform: command_line
-command: 'cat /config/package/json/holiday.json'
+command: 'cat /config/package/json/calendar.json'
 name: Holiday
 scan_interval: 21600
 value_template: >-
   {% set today = now().month  ~ '/' ~ now().day  %}
-  {% set holiday =  value_json.HA_CALENDAR.holiday[ today ] %}
+  {% set holiday =  value_json.json_calendars.holiday[ today ] %}
     {% if holiday | trim == "" %}
          {% set holiday =  "No holiday today" %}
        {% endif %}

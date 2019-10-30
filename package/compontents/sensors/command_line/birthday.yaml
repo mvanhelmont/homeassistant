@@ -1,11 +1,11 @@
 ---
 platform: command_line
-command: 'cat /config/package/json/birthday.json'
+command: 'cat /config/package/json/calendar.json'
 name: Birthday 
 scan_interval: 21600
 value_template: >-
   {% set today = now().month  ~ '/' ~ now().day  %}
-  {% set birthday =  value_json.HA_CALENDAR.birthday[ today ] %}
+  {% set birthday =  value_json.json_calendars.birthday[ today ] %}
     {% if birthday | trim == "" %}
          {% set birthday =  "No Birthday today" %}
        {% endif %}
