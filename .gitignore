@@ -19,7 +19,6 @@ cox_usage.py
 *.db
 *.conf
 *.xml
-*.json
 *.sqlite
 *.csr
 *.crt
