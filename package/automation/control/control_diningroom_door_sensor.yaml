@@ -28,8 +28,8 @@
           {% if (states.binary_sensor.node_10.state) == 'on' and
                 (states.switch.kay_learning.state) == 'off' and 
 
-                  ((states.sensor.seasons.state) == 'summer' or 
-                   (states.sensor.holiday.state) == 'sprint') %}
+                  ((states.sensor.seasons.state) == 'Summer' or 
+                   (states.sensor.holiday.state) == 'Sprint') %}
                   0 
 
           {% elif (states.binary_sensor.node_10.state) == 'on' and 
