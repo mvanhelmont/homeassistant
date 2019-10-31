@@ -1,0 +1,35 @@
+- alias: 'Scene - Emulate Holiday'
+  trigger:
+
+    platform: sun
+    event: sunset
+
+  condition:
+    - condition: state
+      entity_id: sun.sun
+      state: 'below_horizon'
+
+    - condition: state
+      entity_id: input_boolean.emulate_holiday
+      state: 'on'
+
+  action:
+  - service: light.turn_on
+    entity_id: light.nanoleaf
+    data:
+      brightness_pct: 30
+      effect: Fireplace
+
+  - service: script.evening_normal
+
+  - service: homeassistant.turn_on
+    data:
+      entity_id: light.newkaku_01401eb6_a
+      brightness_pct: 50
+
+  - service: script.pushover_engine
+    data_template:
+      message: "Enjoy holiday, the emulate scene is activated"
+      priority: 2
+      sound: pushover
+      title: "HA Notify Engine"

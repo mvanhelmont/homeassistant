@@ -2,11 +2,11 @@
 #  
 # https://github.com/poudenes/homeassistant
 
-default_config:
-config:
 api:
-shopping_list:
+config:
 discovery:
+default_config:
+shopping_list:
 
 frontend:
   themes: !include package/compontents/themes/themes.yaml
@@ -41,27 +41,9 @@ speedtestdotnet: !include package/compontents/configs/speedtest.yaml
 weather: !include package/compontents/configs/weather.yaml
 homekit: !include package/compontents/configs/homekit.yaml
 recorder: !include package/compontents/configs/recorder.yaml
-#android_ip_webcam: !include package/compontents/configs/camera.yaml
 
-android_ip_webcam:
-  - host: 192.168.100.9
-    port: 8080
-    motion_sensor: true
-    sensors:
-      - motion
-    switches:
-      - exposure_lock
-      - ffc
-      - focus
-      - gps_active
-      - night_vision
-      - overlay
-      - torch
-      - whitebalance_lock
-      - video_recording
-
-#panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
-#notify: !include package/compontents/configs/notify.yaml
-#google: !include package/compontents/configs/google.yaml
-#alexa: !include package/compontents/devices/alexa.yaml
-
+# android_ip_webcam: !include package/compontents/configs/camera.yaml
+# panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
+# notify: !include package/compontents/configs/notify.yaml
+# google: !include package/compontents/configs/google.yaml
+# alexa: !include package/compontents/devices/alexa.yaml

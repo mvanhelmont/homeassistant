@@ -4,20 +4,10 @@
       entity_id: switch.newkaku_014e5906_a
       to: 'on'
 
-  action: 
+  action:
+    - delay: '00:00:{{ (range(2, 5)|random|int) }}'
     - service: light.turn_on
-      data:
-        entity_id: 
-          - light.dressoir_all
-#        color_temp: 153
-        kelvin: 4700
-        brightness_pct: 100
-
-#    - service: script.engine_turn_on_light
-#      data:
-#        light: light.dressoir_all
-#        brightness_pct: 100
-#        transition: 5
+      entity_id: light.dressoir_all
 
 - alias: 'TEST BUTTON OFF'
   trigger:
@@ -26,10 +16,11 @@
       to: 'off'
 
   action:
+    - delay: '00:00:{{ (range(2, 5)|random|int) }}'
     - service: light.turn_off
-      data:
-        entity_id: 
-          - light.dressoir_all
+      entity_id: light.dressoir_all
+
+
 
 #    - service: script.pushover_engine
 #      data_template:

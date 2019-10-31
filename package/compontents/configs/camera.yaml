@@ -1,7 +1,9 @@
 ---
-host: 192.168.100.9
-port: 8080
-scan_interval: 5
+host: !secret ip_cam_host
+port: !secret ip_cam_port
+username: !secret ip_cam_user
+password: !secret ip_cam_pass
+
 motion_sensor: true
 sensors:
   - motion
