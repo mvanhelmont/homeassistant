@@ -1,0 +1,9 @@
+---
+platform: mqtt
+command_topic: "home-assistant/bedroom/switch"
+state_topic: "home-assistant/bedroom/switch"
+payload_on: "ON"
+payload_off: "OFF"
+state_on: "ON"
+state_off: "OFF"
+name: "Bedroom"

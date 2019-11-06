@@ -1,0 +1,14 @@
+platform: flux
+lights:
+  - light.dressoir_all
+name: Fluxer
+start_time: '10:00'
+stop_time: '12:00'
+start_colortemp: 4000
+#sunset_colortemp: 3000
+stop_colortemp: 1900
+brightness: 255
+disable_brightness_adjust: true
+mode: xy
+transition: 30
+interval: 60

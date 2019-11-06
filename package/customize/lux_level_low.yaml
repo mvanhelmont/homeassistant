@@ -2,4 +2,4 @@
 input_boolean.lux_level_low:
   friendly_name: Lux Low
   homebridge_name: Lux Low
-  icon: mdi:pan
+  icon: mdi:nintendo-switch

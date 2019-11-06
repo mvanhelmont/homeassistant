@@ -1,21 +1,21 @@
 ---
 zwave.node_17:
-  friendly_name: Neo Motion Hallway
+  friendly_name: PIR Hallway
 sensor.node_17_alarm_level:
-  friendly_name: Neo Motion Hallway Alarm Level
+  friendly_name: PIR Hallway Alarm Level
 sensor.node_17_alarm_type:
-  friendly_name: Neo Motion Hallway Alarm Type
+  friendly_name: PIR Hallway Alarm Type
 sensor.node_17_burglar:
-  friendly_name: Neo Motion Hallway Burglar
+  friendly_name: PIR Hallway Burglar
 sensor.node_17_luminance:
-  friendly_name: Neo Motion Hallway Lux
+  friendly_name: PIR Hallway Lux
   icon: mdi:weather-partly-cloudy
 sensor.node_17_sourcenodeid:
-  friendly_name: Neo Motion Hallway SourceID
+  friendly_name: PIR Hallway SourceID
 sensor.node_17_temperature:
-  friendly_name: Neo Motion Hallway Temp
+  friendly_name: PIR Hallway Temp
 binary_sensor.node_17:
-  friendly_name: Neo Motion Hallway
+  friendly_name: PIR Hallway
   icon: mdi:motion-sensor
 sensor.node_17_battery_level:
-  friendly_name: Neo Battery Hallway
+  friendly_name: PIR Hallway Battery

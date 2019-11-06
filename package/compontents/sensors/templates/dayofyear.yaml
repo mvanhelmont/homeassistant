@@ -1,0 +1,5 @@
+---
+platform: template
+sensors:
+  dayofyear:
+    value_template: "{{ now().strftime('%j') }}"

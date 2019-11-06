@@ -6,13 +6,9 @@ exclude:
     - automation
     - weblink
     - updater
-    - group
     - script
     - zone
     - updater
-    - light
-    - input_boolean
-    - switch
   entities:
     - sun.sun
     - zone.home

@@ -58,6 +58,9 @@
       kelvin: 4000
       brightness_pct: 100
 
+  - service: switch.turn_on
+    entity_id: switch.newkaku_01616a32_a
+
   - service: shell_command.meek_fan_turn_off
 
   - service: light.turn_on

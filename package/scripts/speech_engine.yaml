@@ -22,7 +22,7 @@ engine_say:
             0.3
           {% endif %}
 
-    - delay: '00:00:02'
+    - delay: '00:00:05'
 
     - service: script.engine_speech_processing
       data_template:

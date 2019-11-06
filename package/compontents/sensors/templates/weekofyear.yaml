@@ -1,0 +1,5 @@
+---
+platform: template
+sensors:
+  weekofyear:
+    value_template: "{{ now().strftime('%U') }}"

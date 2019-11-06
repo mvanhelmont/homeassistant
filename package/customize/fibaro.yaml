@@ -1,5 +1,18 @@
 ---
 sensor.fibaro_frontdoor_custom_sensor:
   icon: mdi:door 
+  templates:
+    rgb_color: >
+      if (state === 'on')
+        return [255, 255, 0];
+      else
+        return [0, 0, 0];
+
 sensor.fibaro_imac_custom_sensor:
-  icon: mdi:door
+  icon: mdi:leak
+  templates:
+    rgb_color: >
+      if (state === 'on')
+        return [255, 255, 0];
+      else
+        return [0, 0, 0];
