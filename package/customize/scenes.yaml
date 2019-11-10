@@ -1,8 +1,4 @@
 ---
-input_boolean.scene_guests:
-  friendly_name: Guests
-  homebridge_name: Guests
-  icon: mdi:nintendo-switch
 input_boolean.scene_disco:
   friendly_name: Disco
   homebridge_name: Disco
@@ -43,10 +39,17 @@ input_boolean.scene_evening:
   friendly_name: Evening
   homebridge_name: Evening
   icon: mdi:nintendo-switch
+
 input_boolean.nest_disable_control:
   friendly_name: DNC
   homebridge_name: Disable Nest Control
   icon: mdi:nintendo-switch
+
 switch.kay_learning:
   friendly_name: Kay Learning
+  icon: mdi:nintendo-switch
+
+input_boolean.scene_guests:
+  friendly_name: Guests
+  homebridge_name: Guests
   icon: mdi:nintendo-switch

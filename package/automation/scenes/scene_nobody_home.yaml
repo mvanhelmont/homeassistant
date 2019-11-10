@@ -48,3 +48,7 @@
   - service: remote.turn_off
     data:
       entity_id: remote.logitech_harmony
+
+  - service: fan.turn_off
+    data:
+      entity_id: fan.afzuiging_badkamer

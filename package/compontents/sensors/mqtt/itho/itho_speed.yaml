@@ -1,0 +1,18 @@
+---
+platform: mqtt
+name: "ITHO Speed"
+state_topic: "ITHO/Fan/State"
+value_template: >-
+  {% if value|float == 0 %}
+    Standby
+  {% elif value|float  == 1 %}
+    Laag
+  {% elif value|float  == 2 %}
+    Medium
+  {% elif value|float  == 3 %}
+    Hoog
+  {% elif value|float  == 4 %}
+    Full
+  {% else %}
+    Hoog(T)
+  {% endif %}

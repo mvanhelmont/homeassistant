@@ -2,23 +2,57 @@
 #  
 # https://github.com/poudenes/homeassistant
 
+#default_config:
+
 api:
 config:
 discovery:
-default_config:
 shopping_list:
+person:
+map:
+ssdp:
+sun:
+system_health:
+updater:
+zeroconf:
 
 frontend:
-  themes: !include package/compontents/themes/themes.yaml
+  extra_html_url:
+    - /local/custom_ui/state-card-custom-fanspeed.html
+#    - /local/custom_ui/state-card-custom-ui.html
+  extra_html_url_es5:
+    - /local/custom_ui/state-card-custom-fanspeed.html
+#    - /local/custom_ui/state-card-custom-ui-es5.html
+#  themes: !include package/compontents/themes/themes.yaml
+
+#customizer:
+  custom_ui: local
 
 homeassistant:
   customize: !include_dir_merge_named package/customize/
+  customize_glob: 
+    fan.*:
+      custom_ui_state_card: state-card-custom-fanspeed
   auth_providers:
     - type: homeassistant
+
+# CONFIG NEEDED
+history:
+  include:
+    domains:
+      - light
+    entities:
+      - device_tracker.geofency_kay
+      - device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f
+      - device_tracker.geofency_peter
+      - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
+
+logbook:
 
 zone: !include_dir_list package/compontents/zones
 switch: !include_dir_list package/compontents/switches
 sensor: !include_dir_list package/compontents/sensors
+fan: !include_dir_list package/compontents/fan
 media_player: !include_dir_list package/compontents/media_players
 light: !include_dir_list package/compontents/light
 binary_sensor: !include_dir_list package/compontents/binary_sensors
@@ -28,6 +62,7 @@ input_boolean: !include_dir_merge_named package/compontents/input_boolean
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
 notify: !include_dir_list package/compontents/configs/notify
+
 apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
 shell_command: !include package/compontents/devices/shell_commands.yaml
 tts: !include package/compontents/devices/tts.yaml
@@ -47,3 +82,4 @@ recorder: !include package/compontents/configs/recorder.yaml
 # notify: !include package/compontents/configs/notify.yaml
 # google: !include package/compontents/configs/google.yaml
 # alexa: !include package/compontents/devices/alexa.yaml
+# mobile_app:

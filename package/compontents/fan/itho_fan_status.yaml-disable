@@ -1,0 +1,35 @@
+---
+platform: mqtt
+name: "ITHO Afzuig"
+state_topic: "ITHO/Fan/State"
+command_topic: "ITHO/Fan/cmd"
+speed_state_topic: "ITHO/Fan/State"
+speed_command_topic: "ITHO/Fan/cmd"
+qos: 0
+payload_on: "State 1"
+payload_off: "State 0"
+payload_low_speed: "State 1"
+payload_medium_speed: "State 2"
+payload_high_speed: "State 3"
+speeds:
+  - low
+  - medium
+  - high
+state_value_template: >-
+  {% if value|float == 0 %}
+    State 0
+  {% else %}
+    State 1
+  {% endif %}
+speed_value_template: >- 
+  {% if value|float == 0 %}
+    State 0
+  {% elif value|float == 1 %}
+    State 1
+  {% elif value|float == 2 %}
+    State 2
+  {% else %}
+    State 3
+  {% endif %}
+
+#optimistic: "true"
