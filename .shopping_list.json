@@ -1,11 +1,11 @@
 [
     {
-        "complete": false,
+        "complete": true,
         "id": "eff879e7b7f24369bff9de6e1d8b1a48",
         "name": "Brood"
     },
     {
-        "complete": false,
+        "complete": true,
         "id": "f88a5767419e42c6bcd1934f6a909816",
         "name": "Vleeswaren"
     },

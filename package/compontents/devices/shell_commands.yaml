@@ -1,3 +1,32 @@
 ---
-meek_fan_turn_off: 'curl http://192.168.100.113/control?cmd=event,FanOff'
-meek_fan_turn_on: 'curl http://192.168.100.113/control?cmd=event,FanOn'
+meek_dressoir_nightscene_on: 'curl http://192.168.100.112/control?cmd=event,nightsceneon'
+meek_dressoir_nightscene_off: 'curl http://192.168.100.112/control?cmd=event,nightsceneoff'
+meek_dressoir_sensor_on: 'curl http://192.168.100.112/control?cmd=event,sensoron'
+meek_dressoir_sensor_off: 'curl http://192.168.100.112/control?cmd=event,sensoroff'
+
+meek_toilet_nightscene_on: 'curl http://192.168.100.113/control?cmd=event,nightsceneon'
+meek_toilet_nightscene_off: 'curl http://192.168.100.113/control?cmd=event,nightsceneoff'
+meek_toilet_sensor_on: 'curl http://192.168.100.113/control?cmd=event,sensoron'
+meek_toilet_sensor_off: 'curl http://192.168.100.113/control?cmd=event,sensoroff'
+
+meek_bedroom_nightscene_on: 'curl http://192.168.100.115/control?cmd=event,nightsceneon'
+meek_bedroom_nightscene_off: 'curl http://192.168.100.115/control?cmd=event,nightsceneoff'
+meek_bedroom_sensor_on: 'curl http://192.168.100.115/control?cmd=event,sensoron'
+meek_bedroom_sensor_off: 'curl http://192.168.100.115/control?cmd=event,sensoroff'
+
+meek_bathroom_nightscene_on: 'curl http://192.168.100.116/control?cmd=event,nightsceneon'
+meek_bathroom_nightscene_off: 'curl http://192.168.100.116/control?cmd=event,nightsceneoff'
+meek_bathroom_sensor_on: 'curl http://192.168.100.116/control?cmd=event,sensoron'
+meek_bathroom_sensor_off: 'curl http://192.168.100.116/control?cmd=event,sensoroff'
+
+meek_kitchen_nightscene_on: 'curl http://192.168.100.117/control?cmd=event,nightsceneon'
+meek_kitchen_nightscene_off: 'curl http://192.168.100.117/control?cmd=event,nightsceneoff'
+meek_kitchen_sensor_on: 'curl http://192.168.100.117/control?cmd=event,sensoron'
+meek_kitchen_sensor_off: 'curl http://192.168.100.117/control?cmd=event,sensoroff'
+
+meek_hallway_nightscene_on: 'curl http://192.168.100.118/control?cmd=event,nightsceneon'
+meek_hallway_nightscene_off: 'curl http://192.168.100.118/control?cmd=event,nightsceneoff'
+meek_hallway_sensor_on: 'curl http://192.168.100.118/control?cmd=event,sensoron'
+meek_hallway_sensor_off: 'curl http://192.168.100.118/control?cmd=event,sensoroff'
+
+

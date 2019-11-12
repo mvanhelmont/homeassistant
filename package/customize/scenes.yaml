@@ -2,54 +2,89 @@
 input_boolean.scene_disco:
   friendly_name: Disco
   homebridge_name: Disco
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_sleeping:
   friendly_name: Sleeping
   homebridge_name: Sleeping
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_sexy:
   friendly_name: Sexy
   homebridge_name: Sexy
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_kodi:
   friendly_name: Kodi
   homebridge_name: Kodi
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_iptv:
   friendly_name: IPTV
   homebridge_name: IPTV
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_goodnight:
   friendly_name: Good night
   homebridge_name: Goodnight
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_appletv:
   friendly_name: Apple TV
   homebridge_name: Apple TV
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_daylight:
   friendly_name: Daylight
   homebridge_name: Daylight
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_tv:
   friendly_name: TV
   homebridge_name: TV
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
+
 input_boolean.scene_evening:
   friendly_name: Evening
   homebridge_name: Evening
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.nest_disable_control:
   friendly_name: DNC
   homebridge_name: Disable Nest Control
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 switch.kay_learning:
   friendly_name: Kay Learning
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_guests:
   friendly_name: Guests
   homebridge_name: Guests
-  icon: mdi:nintendo-switch
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 

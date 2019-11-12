@@ -4,17 +4,26 @@
     entity_id: binary_sensor.node_15
 
   condition:
+#    - condition: state
+#      entity_id: switch.newkaku_01616a32_a
+#      state: 'off'
+
     - condition: state
-      entity_id: switch.newkaku_01616a32_a
+      entity_id: switch.meek_bathroom
       state: 'off'
 
   action:
-    service: light.turn_on
-    entity_id: light.bathroom_all
-    data_template:
-      kelvin: 4700
-      brightness_pct: >-
-        {% if (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'on' %} 50
-        {% elif (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
-        {% else %} 0
-        {% endif %}
+    - service: light.turn_on
+      entity_id: light.bathroom_all
+      data_template:
+        kelvin: 4700
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'on' %} 50
+          {% elif (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% else %} 0
+          {% endif %}
+
+    - service_template: >-
+          {% if (states.binary_sensor.node_15.state) == 'on' %} shell_command.meek_bathroom_sensor_on
+          {% else %} shell_command.meek_bathroom_sensor_off
+          {% endif %}

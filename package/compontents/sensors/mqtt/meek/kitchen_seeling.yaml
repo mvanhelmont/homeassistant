@@ -1,0 +1,4 @@
+---
+platform: mqtt
+name: "Meek Kitchen Seeling Touch1"
+state_topic: "MeekKitchen/touch1/touch1/touch1"

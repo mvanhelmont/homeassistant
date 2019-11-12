@@ -1,60 +1,52 @@
 ---
 input_boolean.emulate_holiday:
-  icon: mdi:nintendo-switch
   friendly_name: Vacation
   homebridge_name: Vacation
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
   
-switch.toilet:
+switch.meek_toilet:
   icon: mdi:nintendo-switch
   friendly_name: Toilet
   homebridge_name: Toilet Switch
 
-switch.livingroom_wall:
-  icon: mdi:nintendo-switch
-  friendly_name: Wall
-  homebridge_name: Wall Switch
-
-switch.livingroom_window:
-  icon: mdi:nintendo-switch
-  friendly_name: Window
-  homebridge_name: Window Switch
-
-switch.dressoir:
+switch.meek_dressoir:
   icon: mdi:nintendo-switch
   friendly_name: Dressoir
   homebridge_name: Dressoir Switch
 
-switch.balcony:
+switch.meek_balcony:
   icon: mdi:nintendo-switch
   friendly_name: Balcony
   homebridge_name: Balcony Switch
 
-switch.hallway:
+switch.meek_hallway:
   icon: mdi:nintendo-switch
   friendly_name: Hallway
   homebridge_name: Hallway Switch
 
-switch.bathroom:
+switch.meek_bathroom:
   icon: mdi:nintendo-switch
   friendly_name: Bathroom
   homebridge_name: Bathroom Switch
 
-switch.bedroom:
+switch.meek_bedroom:
   icon: mdi:nintendo-switch
   friendly_name: Bedroom
   homebridge_name: Bedroom Switch
 
-switch.kitchen_seeling:
+switch.meek_kitchen_seeling:
   icon: mdi:nintendo-switch
   friendly_name: Kitchen
   homebridge_name: Kitchen Switch
 
-switch.kitchen_sink:
+switch.meek_kitchen_sink:
   icon: mdi:nintendo-switch
   friendly_name: Sink
   homebridge_name: Sink Switch
 
-switch.cooking:
+switch.meek_cooking:
   icon: mdi:nintendo-switch
   friendly_name: Cooking
   homebridge_name: Cooking Switch

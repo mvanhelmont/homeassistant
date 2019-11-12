@@ -16,3 +16,8 @@
         {% elif (states.sensor.holiday.state) == 'Birthday' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
         {% else %} script.kitchen_normal_turn_on
         {% endif %}
+
+    - service_template: >-
+          {% if (states.binary_sensor.node_16.state) == 'on' %} shell_command.meek_kitchen_sensor_on
+          {% else %} shell_command.meek_kitchen_sensor_off
+          {% endif %}

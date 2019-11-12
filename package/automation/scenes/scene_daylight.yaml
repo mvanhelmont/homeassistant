@@ -36,9 +36,6 @@
       - input_boolean.scene_goodnight
       - input_boolean.lux_level_low
 
-# TURN OFF ALL LIGHT
-  - service: shell_command.meek_fan_turn_on
-
   - service: light.turn_off
     data:
       entity_id:
@@ -60,3 +57,10 @@
     data:
       entity_id:
         - light.bathroom_all
+
+  - service: shell_command.meek_dressoir_nightscene_off
+  - service: shell_command.meek_toilet_nightscene_off
+  - service: shell_command.meek_bedroom_nightscene_off
+  - service: shell_command.meek_bathroom_nightscene_off
+  - service: shell_command.meek_kitchen_nightscene_off
+  - service: shell_command.meek_hallway_nightscene_off

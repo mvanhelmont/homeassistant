@@ -9,11 +9,16 @@
       state: 'on'
 
   action:
-    service: light.turn_on
-    entity_id: light.dressoir_all
-    data_template:
-      kelvin: 2700
-      brightness_pct: >-
-        {% if (states.binary_sensor.node_18.state) == 'on' %} 20
-        {% else %} 0
-        {% endif %}
+    - service: light.turn_on
+      entity_id: light.dressoir_all
+      data_template:
+        kelvin: 2700
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_18.state) == 'on' %} 20
+          {% else %} 0
+          {% endif %}
+
+    - service_template: >-
+          {% if (states.binary_sensor.node_18.state) == 'on' %} shell_command.meek_dressoir_sensor_on
+          {% else %} shell_command.meek_dressoir_sensor_off
+          {% endif %}

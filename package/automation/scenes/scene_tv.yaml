@@ -60,7 +60,7 @@
         {% elif (states.sensor.holiday.state) == 'Halloween' %} Halloween
         {% elif (states.sensor.holiday.state) == 'Kingsday' %} Kingsday
         {% elif (states.sensor.holiday.state) == 'Birthday' %} Kingsday
-        {% else %} Fireplace
+        {% else %} Kay
         {% endif %}
 
 # LIGHT
