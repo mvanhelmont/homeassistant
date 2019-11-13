@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekKitchen/load/state"
+name: "Meek Kitchen Load"
+unit_of_measurement: '%'

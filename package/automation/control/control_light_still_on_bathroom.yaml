@@ -12,16 +12,16 @@
       state: 'off'
 
     - condition: state
-      entity_id: switch.newkaku_01616a32_a
+      entity_id: switch.bathroom
       state: 'on'
 
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.newkaku_01616a32_a
+      entity_id: switch.bathroom
       
     - service: script.pushover_engine
       data_template:
-        message: "Turned off bathroom switch and light"
+        message: "Nobody in bathroom for 5 minutes. Turned off bathroom switch and light"
         priority: 0
         sound: bike
         title: "HA System"

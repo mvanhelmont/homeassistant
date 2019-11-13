@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekKitchen/web/state"
+name: "Meek Kitchen Web Act."
+unit_of_measurement: '%'

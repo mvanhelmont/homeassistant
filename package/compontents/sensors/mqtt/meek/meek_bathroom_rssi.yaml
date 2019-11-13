@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekBathroom/rssi/state"
+name: "Meek Bathroom RSSI"
+unit_of_measurement: 'db'

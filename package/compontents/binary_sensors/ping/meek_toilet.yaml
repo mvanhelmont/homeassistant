@@ -3,3 +3,4 @@ platform: ping
 host: 192.168.100.113
 scan_interval: 60
 name: Meek WC
+

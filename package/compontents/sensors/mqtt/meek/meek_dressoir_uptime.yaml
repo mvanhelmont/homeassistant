@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekDressoir/systeminfo/uptime"
+name: "Meek Dressoir Uptime"
+unit_of_measurement: 'Min'

@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekDressoir/systeminfo/web"
+name: "Meek Dressoir Web Act."
+unit_of_measurement: '%'

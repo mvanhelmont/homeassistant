@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekDressoir/systeminfo/rssi"
+name: "Meek Dressoir RSSI"
+unit_of_measurement: 'db'

@@ -1,0 +1,6 @@
+---
+platform: ping
+host: 192.168.100.118
+scan_interval: 60
+name: Meek Hallway
+

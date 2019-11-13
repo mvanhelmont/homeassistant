@@ -17,22 +17,22 @@ updater:
 logbook:
 zeroconf:
 
-frontend:
-  extra_html_url:
-    - /local/custom_ui/state-card-custom-fanspeed.html
-  extra_html_url_es5:
-    - /local/custom_ui/state-card-custom-fanspeed.html
+#frontend:
+#  extra_html_url:
+#    - /local/custom_ui/state-card-custom-fanspeed.html
+#  extra_html_url_es5:
+#    - /local/custom_ui/state-card-custom-fanspeed.html
 
 customizer:
   custom_ui: local
 
-homeassistant:
-  customize: !include_dir_merge_named package/customize/
-  customize_glob: 
-    fan.*:
-      custom_ui_state_card: state-card-custom-fanspeed
-  auth_providers:
-    - type: homeassistant
+#homeassistant:
+#  customize: !include_dir_merge_named package/customize/
+#  customize_glob: 
+#    fan.*:
+#      custom_ui_state_card: state-card-custom-fanspeed
+#  auth_providers:
+#    - type: homeassistant
 
 zone: !include_dir_list package/compontents/zones
 switch: !include_dir_list package/compontents/switches
@@ -48,6 +48,8 @@ automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
 notify: !include_dir_list package/compontents/configs/notify
 
+frontend: !include package/compontents/configs/frontend.yaml
+homeassistant: !include package/compontents/configs/homeassistant.yaml
 history: !include package/compontents/configs/history.yaml
 apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
 shell_command: !include package/compontents/devices/shell_commands.yaml

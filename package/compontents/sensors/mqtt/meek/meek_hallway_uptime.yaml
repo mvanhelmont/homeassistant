@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekHallway/systeminfo/uptime"
+name: "Meek Hallway Uptime"
+unit_of_measurement: 'Min'

@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekWC/load/state"
+name: "Meek WC CPU Load"
+unit_of_measurement: '%'

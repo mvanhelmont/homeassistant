@@ -5,12 +5,12 @@
       to: 'on'
 
   action:
-    service: light.turn_on
-    entity_id:
-      - light.dressoir_all
-    data:
-      kelvin: 5000
-      brightness_pct: 100
+  - service: shell_command.meek_dressoir_nightscene_on
+  - service: shell_command.meek_toilet_nightscene_on
+  - service: shell_command.meek_bedroom_nightscene_on
+  - service: shell_command.meek_bathroom_nightscene_on
+  - service: shell_command.meek_kitchen_nightscene_on
+  - service: shell_command.meek_hallway_nightscene_on
 
 - alias: 'TEST BUTTON OFF'
   trigger:
@@ -19,13 +19,12 @@
       to: 'off'
 
   action:
-    service: light.turn_on
-    entity_id:
-      - light.dressoir_all
-    data:
-      transition: 10
-      kelvin: 2700
-      brightness_pct: 100
+  - service: shell_command.meek_dressoir_nightscene_off
+  - service: shell_command.meek_toilet_nightscene_off
+  - service: shell_command.meek_bedroom_nightscene_off
+  - service: shell_command.meek_bathroom_nightscene_off
+  - service: shell_command.meek_kitchen_nightscene_off
+  - service: shell_command.meek_hallway_nightscene_off
 
 ######################################################
 # RANDOM DELAY FOR HOLIDAT SCENE

@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "MeekWC/uptime/state"
+name: "Meek WC Uptime"
+unit_of_measurement: 'Min'

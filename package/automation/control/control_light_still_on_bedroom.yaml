@@ -4,7 +4,7 @@
     platform: state
     to: 'off'
     for:
-      minutes: 2
+      minutes: 5
 
   condition:
     - condition: state
@@ -12,16 +12,16 @@
       state: 'off'
 
     - condition: state
-      entity_id: switch.newkaku_01074522_a
+      entity_id: switch.bedroom
       state: 'on' 
 
   action:
     - service: homeassistant.turn_off
-      entity_id: switch.newkaku_01074522_a
+      entity_id: switch.bedroom
 
     - service: script.pushover_engine
       data_template:
-        message: "Turned off bedroom switch and light" 
+        message: "Nobody in bedroom for 5 minutes. Turned off bedroom switch and light" 
         priority: 0
         sound: bike
         title: "HA System"
