@@ -2,7 +2,7 @@
   trigger:
     - platform: numeric_state
       entity_id: sensor.node_19_luminance
-      below: 150
+      below: 160
 
   condition:
     - condition: state

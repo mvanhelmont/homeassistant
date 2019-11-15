@@ -1,5 +1,5 @@
 ---
 platform: mqtt
 state_topic: "MeekHallway/systeminfo/rssi"
-name: "Meek Hallway CPU Load"
+name: "Meek Hallway RSSI"
 unit_of_measurement: 'db' 

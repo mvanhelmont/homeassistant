@@ -1,5 +1,5 @@
 ---
 platform: mqtt
 state_topic: "MeekWC/rssi/state"
-name: "Meek WC CPU Load"
+name: "Meek WC RSSI"
 unit_of_measurement: 'db' 
