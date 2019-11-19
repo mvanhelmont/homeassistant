@@ -17,22 +17,8 @@ updater:
 logbook:
 zeroconf:
 
-#frontend:
-#  extra_html_url:
-#    - /local/custom_ui/state-card-custom-fanspeed.html
-#  extra_html_url_es5:
-#    - /local/custom_ui/state-card-custom-fanspeed.html
-
 customizer:
   custom_ui: local
-
-#homeassistant:
-#  customize: !include_dir_merge_named package/customize/
-#  customize_glob: 
-#    fan.*:
-#      custom_ui_state_card: state-card-custom-fanspeed
-#  auth_providers:
-#    - type: homeassistant
 
 zone: !include_dir_list package/compontents/zones
 switch: !include_dir_list package/compontents/switches

@@ -1,5 +1,0 @@
----
-platform: mqtt
-state_topic: "MeekDressoir/systeminfo/load"
-name: "Meek Dressoir Load"
-unit_of_measurement: '%'

@@ -19,4 +19,4 @@
     entity_id: light.nanoleaf
     data:
       brightness_pct: 30
-      effect: 20MinSunset
+      effect: 20MinuteSunset

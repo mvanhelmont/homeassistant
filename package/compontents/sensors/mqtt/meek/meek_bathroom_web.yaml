@@ -1,5 +1,0 @@
----
-platform: mqtt
-state_topic: "MeekBathroom/web/state"
-name: "Meek Bathroom Web Act."
-unit_of_measurement: '%'

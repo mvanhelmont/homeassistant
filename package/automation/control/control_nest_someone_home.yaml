@@ -21,9 +21,9 @@
       entity_id: climate.entryway
       data_template:
         temperature: >-
-          {% set temp = states('sensor.dark_sky_temperature') | float %}
-          {% set tempnest = states('sensor.entryway_thermostat_target') | float %}
-          {% if temp > 16 and tempnest > 14 %} 9
-          {% elif temp < 10 and tempnest < 10 %} 18
+          {% set outside = states('sensor.dark_sky_temperature') | float %}
+          {% set inside = states('sensor.entryway_thermostat_target') | float %}
+          {% if outside >= 12 and inside >= 8 %} 10
+          {% elif outside <= 12 and inside <= 9 %} 18
           {% else %} 9
           {% endif %}

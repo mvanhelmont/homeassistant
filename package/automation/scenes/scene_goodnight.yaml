@@ -62,11 +62,6 @@
       kelvin: 4000
       brightness_pct: 100
 
-# TURN WALL SWITCH ON TO PREVENT MOTION SENSOR WILL LOWER THE LIGHT
-  - service: switch.turn_on
-    entity_id: switch.meek_bathroom
-# TURN WALL SWITCH ON TO PREVENT MOTION SENSOR WILL LOWER THE LIGHT
-
   - service: light.turn_on
     data:
       entity_id:
@@ -92,9 +87,4 @@
         - light.livingroom_all
         - light.balcony 
 
-  - service: shell_command.meek_dressoir_nightscene_on
   - service: shell_command.meek_toilet_nightscene_on
-  - service: shell_command.meek_bedroom_nightscene_on
-  - service: shell_command.meek_bathroom_nightscene_on
-  - service: shell_command.meek_kitchen_nightscene_on
-  - service: shell_command.meek_hallway_nightscene_on

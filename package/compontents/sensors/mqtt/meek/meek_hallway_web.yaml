@@ -1,5 +1,0 @@
----
-platform: mqtt
-state_topic: "MeekHallway/systeminfo/web"
-name: "Meek Hallway Web Act"
-unit_of_measurement: '%' 

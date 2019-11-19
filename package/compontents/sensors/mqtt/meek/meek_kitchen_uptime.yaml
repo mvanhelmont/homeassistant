@@ -1,5 +1,0 @@
----
-platform: mqtt
-state_topic: "MeekKitchen/uptime/state"
-name: "Meek Kitchen Uptime"
-unit_of_measurement: 'Min'

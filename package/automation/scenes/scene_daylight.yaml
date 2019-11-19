@@ -58,9 +58,4 @@
       entity_id:
         - light.bathroom_all
 
-  - service: shell_command.meek_dressoir_nightscene_off
-  - service: shell_command.meek_toilet_nightscene_off
-  - service: shell_command.meek_bedroom_nightscene_off
-  - service: shell_command.meek_bathroom_nightscene_off
-  - service: shell_command.meek_kitchen_nightscene_off
-  - service: shell_command.meek_hallway_nightscene_off
+  - service: shell_command.meek_toilet_nightscene_on

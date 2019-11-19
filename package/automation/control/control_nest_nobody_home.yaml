@@ -17,7 +17,7 @@
       entity_id: climate.entryway
       data_template:
         temperature: >-
-          {% set tempnest3 = states('sensor.entryway_thermostat_target') | float %}
-          {% if tempnest3 > 11 %} 9
+          {% set inside = states('sensor.entryway_thermostat_target') | float %}
+          {% if inside > 11 %} 9
           {% else %} 9
           {% endif %}

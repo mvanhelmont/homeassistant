@@ -1,5 +1,0 @@
----
-platform: mqtt
-state_topic: "MeekBathroom/uptime/state"
-name: "Meek Bathroom Uptime"
-unit_of_measurement: 'Min'

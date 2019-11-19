@@ -1,27 +1,7 @@
 [
     {
-        "complete": true,
-        "id": "eff879e7b7f24369bff9de6e1d8b1a48",
-        "name": "Brood"
-    },
-    {
-        "complete": true,
-        "id": "f88a5767419e42c6bcd1934f6a909816",
-        "name": "Vleeswaren"
-    },
-    {
         "complete": false,
-        "id": "364a3c8e1b9340e6b01816ee072cb5d7",
-        "name": "WC reiniging"
-    },
-    {
-        "complete": false,
-        "id": "320629418837458b9a4fb6ca19ee0bdc",
-        "name": "olijf olie"
-    },
-    {
-        "complete": false,
-        "id": "0e5a2f71626d4cf1a343b4660ef94974",
-        "name": "knoflook"
+        "id": "458f8fab3bda44dcbd7aeef8cb1d0261",
+        "name": "schuurspons"
     }
 ]

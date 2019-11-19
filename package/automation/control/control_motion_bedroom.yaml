@@ -13,7 +13,7 @@
       state: 'off'
 
     - condition: state
-      entity_id: switch.meek_bedroom
+      entity_id: switch.newkaku_01074522_a
       state: 'off' 
 
   action:
@@ -25,9 +25,4 @@
           {% if (states.binary_sensor.node_12.state) == "on" and (states.binary_sensor.node_14.state) == 'on' %} 20
           {% elif (states.binary_sensor.node_12.state) == "off" and (states.binary_sensor.node_14.state) == 'on' %} 100
           {% else %} 0
-          {% endif %}
-
-    - service_template: >-
-          {% if (states.binary_sensor.node_14.state) == 'on' %} shell_command.meek_bedroom_sensor_on
-          {% else %} shell_command.meek_bedroom_sensor_off
           {% endif %}

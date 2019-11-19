@@ -12,7 +12,7 @@
       state: 'off'
 
     - condition: state
-      entity_id: switch.bathroom
+      entity_id: switch.newkaku_01074522_a
       state: 'on'
 
   action:
