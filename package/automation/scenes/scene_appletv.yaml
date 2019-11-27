@@ -38,7 +38,6 @@
     entity_id: 
       - input_boolean.scene_evening
       - input_boolean.scene_tv
-      - input_boolean.scene_iptv
       - input_boolean.scene_daylight
       - input_boolean.scene_kodi
       - input_boolean.scene_sexy

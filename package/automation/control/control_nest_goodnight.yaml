@@ -23,7 +23,7 @@
         temperature: >-
           {% set outside = states('sensor.dark_sky_temperature') | float %}
           {% set inside = states('sensor.entryway_thermostat_target') | float %}
-          {% if outside >= 12 and inside >= 8 %} 10
-          {% elif outside <= 12 and inside <= 9 %} 18
+          {% if outside >= 12 and inside >= 8 %} 9
+          {% elif outside <= 12 and inside <= 9 %} 10
           {% else %} 9
           {% endif %}

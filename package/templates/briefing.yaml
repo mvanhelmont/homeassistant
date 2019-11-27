@@ -71,6 +71,10 @@
     "The scene evening is activated."
   {%- endmacro -%}
 
+  {%- macro scene_sunset() -%}
+    "The scene Sunset is activated."
+  {%- endmacro -%} 
+
   {%- macro scene_kodi() -%}
     {{ [
       "The scene kodi is activated.",
@@ -184,6 +188,10 @@
       {{ scene_evening() }}
     {%- endif -%}
 
+    {%- if say_scene_sunset == "true" -%}
+      {{ scene_sunset() }}
+    {%- endif -%}
+
     {%- if say_scene_kodi == "true" -%}
       {{ scene_kodi() }}
     {%- endif -%}
@@ -225,6 +233,10 @@
     {%- set say_scene_evening = "false" -%}
   {%- endif -%}
   
+  {%- if say_scene_sunset is undefined -%}
+    {%- set say_scene_sunset = "false" -%}
+  {%- endif -%}
+
   {%- if say_scene_kodi is undefined -%}
     {%- set say_scene_kodi = "false" -%}
   {%- endif -%}

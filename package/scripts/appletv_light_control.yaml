@@ -189,6 +189,11 @@ appletv_kingsday:
 appletv_christmas:
   alias: 'AppleTV Christmas Light Scene'
   sequence:
+    - service: switch.turn_on
+      entity_id:
+        - switch.node_8_switch
+        - switch.node_21_switch
+        - switch.node_22_switch
 
     - service: light.turn_on
       data_template:

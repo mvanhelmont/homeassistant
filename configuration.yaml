@@ -16,6 +16,7 @@ system_health:
 updater:
 logbook:
 zeroconf:
+mobile_app:
 
 customizer:
   custom_ui: local
@@ -56,4 +57,3 @@ recorder: !include package/compontents/configs/recorder.yaml
 # notify: !include package/compontents/configs/notify.yaml
 # google: !include package/compontents/configs/google.yaml
 # alexa: !include package/compontents/devices/alexa.yaml
-# mobile_app:

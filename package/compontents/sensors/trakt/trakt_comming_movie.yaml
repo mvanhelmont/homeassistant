@@ -1,0 +1,7 @@
+---
+platform: trakt
+id: 'de41eda4a8075bc0f347dd2d000df8c7f2dfd6e3e624cf06a80e30c2e89bb731'
+secret: 'b153593555610bd59476d8cd1ac4890a3ac2778af53e4b4c796ad3d0fcde891b'
+username: poudenes
+days: 30
+name: "Trakt Upcomming Calendar"

@@ -20,7 +20,6 @@
       entity_id: 
         - input_boolean.scene_kodi
         - input_boolean.scene_tv
-        - input_boolean.scene_iptv
         - input_boolean.scene_daylight
         - input_boolean.scene_appletv
         - input_boolean.scene_sexy
@@ -86,5 +85,11 @@
         - light.dressoir_all
         - light.livingroom_all
         - light.balcony 
+        
+  - service: switch.turn_off
+    entity_id:
+      - switch.node_8_switch
+      - switch.node_21_switch
+      - switch.node_22_switch
 
   - service: shell_command.meek_toilet_nightscene_on

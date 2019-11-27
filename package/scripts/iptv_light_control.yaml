@@ -136,6 +136,12 @@ iptv_kingsday:
 iptv_christmas:
   alias: 'IPTV Christmas Light Scene'
   sequence:
+    - service: switch.turn_on
+      entity_id:
+        - switch.node_8_switch
+        - switch.node_21_switch
+        - switch.node_22_switch
+        
     - service: light.turn_on
       data:
         entity_id: light.livingroom_1
