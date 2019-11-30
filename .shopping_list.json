@@ -5,23 +5,23 @@
         "name": "schuurspons"
     },
     {
-        "complete": true,
-        "id": "ce493312f8b848688cf683a32c7da295",
-        "name": "Beleg"
-    },
-    {
         "complete": false,
         "id": "c719b3d855dd403a9548619fcb96fbfd",
         "name": "Sushi Rijst"
     },
     {
-        "complete": true,
-        "id": "83e688c26aba46aa99fb57d83ec88ced",
-        "name": "vuilniszakken"
+        "complete": false,
+        "id": "3c67122c4c1a48f8891371193e6b7ef1",
+        "name": "Bruinbrood"
     },
     {
-        "complete": true,
-        "id": "35b393c3a0954a0886bcb6e1acbe7177",
-        "name": "koffiebonen"
+        "complete": false,
+        "id": "627d8619d0f5463a84e4fc3d673e7dea",
+        "name": "Witbrood"
+    },
+    {
+        "complete": false,
+        "id": "99e2a75cbdb04729b39ead2b9767b8c3",
+        "name": "Limonade"
     }
 ]
