@@ -12,20 +12,20 @@ My hardware:
 
 - RFLink Controller - For some old Click On Click Off switches
 
-- 38 Milight RGBCTT Bulbs
+- 38 Milight RGBCTT Bulbs - https://www.milight.com
 
-- 7 Neo Coolcam PIR Motions sensors
-- 6 Neo Coolcam Wall Switch
-- 2 Neo Coolcam Door Sensors
+- 7 Neo Coolcam PIR Motions sensors - https://www.szneo.com
+- 6 Neo Coolcam Wall Switch - https://www.szneo.com
+- 2 Neo Coolcam Door Sensors - https://www.szneo.com
 
-- 1 Aeon Zwave Gen5 Hub USB Stick
+- 1 Aeon Zwave Gen5 Hub USB Stick - https://aeotec.com/z-wave-usb-stick/
 
-- 2 Fibaro Door Sensors
+- 2 Fibaro Door Sensors - https://www.fibaro.com/
 
-- Nanoleaf
-- Amazon Alexa
-- AppleTV
-- ITHO Fan
+- Nanoleaf - https://nanoleaf.me/en/
+- Amazon Alexa - http://www.amazon.com
+- AppleTV - http://www.apple.com
+- ITHO Fan - https://www.ithodaalderop.nl/
 - Homekit
 
 - TP-Link Deco M5
