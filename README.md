@@ -10,7 +10,7 @@ My hardware:
 - Meek P1 Gas/Elec Meter - https://www.meek-ha.com
 - Meek ESP Wifi Wall Switches - https://www.meek-ha.com
 
-- RFLink Controller - For some old Clcik On Click Off switches
+- RFLink Controller - For some old Click On Click Off switches
 
 - 38 Milight RGBCTT Bulbs
 
@@ -28,5 +28,14 @@ My hardware:
 - ITHO Fan
 - Homekit
 
+- TP-Link Deco M5
+
 Everything is add in Home Assistant. I shared my configuration so you can learn from it.
 Also when you see improvements let me know... I still learning :D
+
+ToDo: (to add in HA)
+- Curtains
+- Coffee Machine :)
+- Fridge :)
+- My partner :) :)
+
