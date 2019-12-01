@@ -16,8 +16,8 @@
       state: 'on' 
 
   action:
-    - service: homeassistant.turn_off
-      entity_id: switch.bedroom
+    - service: switch.turn_off
+      entity_id: switch.newkaku_01074522_a 
 
     - service: script.pushover_engine
       data_template:

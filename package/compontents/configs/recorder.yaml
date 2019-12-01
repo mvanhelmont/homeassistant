@@ -1,7 +1,7 @@
 ---
 #db_url: !secret mariadb
 
-purge_keep_days: 2
+purge_keep_days: 5
 purge_interval: 1
 exclude:
   domains:
@@ -14,15 +14,6 @@ exclude:
   entities:
     - sun.sun
     - zone.home
-    - sensor.node_11_temperature
-    - sensor.node_13_temperature
-    - sensor.node_14_temperature
-    - sensor.node_15_temperature
-    - sensor.node_16_temperature
-    - sensor.node_17_temperature
-    - sensor.node_18_temperature
-    - sensor.node_19_temperature
-    - sensor.node_20_temperature
     - sensor.batt_diningroomdoor
     - sensor.batt_frontdoor
     - sensor.batt_bedroomdoor
@@ -51,9 +42,3 @@ exclude:
     - switch.node_7_switch
     - switch.node_8_switch
     - switch.node_9_switch
-    - sensor.node_2_power
-    - sensor.node_5_power
-    - sensor.node_6_power
-    - sensor.node_7_power
-    - sensor.node_8_power
-    - sensor.node_9_power

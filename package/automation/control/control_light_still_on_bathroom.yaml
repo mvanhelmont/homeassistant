@@ -12,12 +12,12 @@
       state: 'off'
 
     - condition: state
-      entity_id: switch.newkaku_01074522_a
+      entity_id: switch.newkaku_01616a32_a
       state: 'on'
 
   action:
-    - service: homeassistant.turn_off
-      entity_id: switch.bathroom
+    - service: switch.turn_off
+      entity_id: switch.newkaku_01616a32_a
       
     - service: script.pushover_engine
       data_template:
