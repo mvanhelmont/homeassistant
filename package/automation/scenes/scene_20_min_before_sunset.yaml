@@ -15,11 +15,6 @@
       state: 'on'
 
   action:
-  - service: script.engine_say
-    data_template:
-      media_player: media_player.this_device
-      say_scene_sunset: "true"
-      
   - service: light.turn_on
     entity_id: light.nanoleaf
     data_template:
@@ -29,8 +24,7 @@
         {% else %} 20MinSunset
         {% endif %}
         
-#  - service: light.turn_on
-#    entity_id: light.nanoleaf
-#    data:
-#      brightness_pct: 30
-#      effect: 20MinSunset
+  - service: script.engine_say
+    data_template:
+      media_player: media_player.this_device
+      say_scene_sunset: "true"

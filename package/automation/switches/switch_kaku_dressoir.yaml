@@ -7,7 +7,7 @@
     service: light.turn_on
     entity_id: light.dressoir_all
     data_template:
-      kelvin: 2700
+      kelvin: 4700
       brightness_pct: >-
         {% if (states.switch.newkaku_011fdd46_c.state) == 'on' %} 100
         {% else %} 0

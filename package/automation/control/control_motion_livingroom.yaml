@@ -20,7 +20,7 @@
     service: light.turn_on
     entity_id: light.livingroom_all
     data_template:
-      kelvin: 2700
+      kelvin: 4700
       brightness_pct: >-
         {% if (states.binary_sensor.node_19.state) == 'on' %} 20
         {% elif (states.binary_sensor.node_19.state) == 'off' %} 0

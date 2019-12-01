@@ -28,15 +28,9 @@
         - input_boolean.nest_disable_control
         - input_boolean.lux_level_low
 
-  - service: script.engine_say
-    data_template:
-      media_player: media_player.this_device
-      say_scene_goodnight: "true"
-
   - service: remote.turn_off
     entity_id: remote.logitech_harmony
 
-# DININGTABLE LIGHT KAY LEARNING ACTION
   - service: homeassistant.turn_on
     data_template:
       entity_id: light.newkaku_01401eb6_a
@@ -44,7 +38,6 @@
         {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
         {% else %} 0
         {% endif %}
-# END - DININGTABLE LIGHT KAY LEARNING ACTION
 
   - service: light.turn_off
     entity_id: light.nanoleaf
@@ -52,13 +45,13 @@
   - service: light.turn_on
     data_template:
       entity_id: light.bedroom_all
-      kelvin: 4000
+      kelvin: 4700
       brightness_pct: "{{ 50 if is_state('binary_sensor.node_12', 'on') else 100 }}"
 
   - service: light.turn_on
     entity_id: light.bathroom_all
     data:
-      kelvin: 4000
+      kelvin: 4700
       brightness_pct: 100
 
   - service: light.turn_on
@@ -70,7 +63,7 @@
         - light.toilet_all
         - light.dressoir_all
         - light.livingroom_all
-      kelvin: 4000
+      kelvin: 4700
       brightness_pct: 20
 
   - delay: 00:00:02
@@ -93,3 +86,8 @@
       - switch.node_22_switch
 
   - service: shell_command.meek_toilet_nightscene_on
+
+  - service: script.engine_say
+    data_template:
+      media_player: media_player.this_device
+      say_scene_goodnight: "true"

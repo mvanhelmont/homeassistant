@@ -43,11 +43,6 @@
       - input_boolean.scene_sexy
       - input_boolean.lux_level_low
 
-  - service: script.engine_say
-    data_template:
-      media_player: media_player.this_device
-      say_scene_appletv: "true"
-
   - service: light.turn_on
     entity_id: light.nanoleaf
     data_template:
@@ -85,3 +80,8 @@
       {% elif (states.media_player.woonkamer.state) == 'paused' %} script.appletv_control_paused
       {% else %} script.appletv_control_idle
       {% endif %}
+
+  - service: script.engine_say
+    data_template:
+      media_player: media_player.this_device
+      say_scene_appletv: "true" 

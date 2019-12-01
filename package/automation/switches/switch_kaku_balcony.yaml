@@ -11,4 +11,4 @@
         {% if (states.switch.newkaku_011fdd46_b.state) == 'on' %} 100
         {% else %} 0
         {% endif %} 
-      kelvin: 2700
+      kelvin: 4700
