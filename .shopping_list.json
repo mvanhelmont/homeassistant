@@ -10,16 +10,6 @@
         "name": "Sushi Rijst"
     },
     {
-        "complete": true,
-        "id": "3c67122c4c1a48f8891371193e6b7ef1",
-        "name": "Bruinbrood"
-    },
-    {
-        "complete": true,
-        "id": "627d8619d0f5463a84e4fc3d673e7dea",
-        "name": "Witbrood"
-    },
-    {
         "complete": false,
         "id": "99e2a75cbdb04729b39ead2b9767b8c3",
         "name": "Limonade"

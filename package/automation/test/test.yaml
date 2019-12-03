@@ -5,12 +5,10 @@
       to: 'on'
 
   action:
-  - service: shell_command.meek_dressoir_nightscene_on
-  - service: shell_command.meek_toilet_nightscene_on
-  - service: shell_command.meek_bedroom_nightscene_on
-  - service: shell_command.meek_bathroom_nightscene_on
-  - service: shell_command.meek_kitchen_nightscene_on
-  - service: shell_command.meek_hallway_nightscene_on
+  - service: script.engine_say
+    data_template:
+      media_player: media_player.this_device
+      say_scene_sunset: "true"
 
 - alias: 'TEST BUTTON OFF'
   trigger:
@@ -19,12 +17,10 @@
       to: 'off'
 
   action:
-  - service: shell_command.meek_dressoir_nightscene_off
-  - service: shell_command.meek_toilet_nightscene_off
-  - service: shell_command.meek_bedroom_nightscene_off
-  - service: shell_command.meek_bathroom_nightscene_off
-  - service: shell_command.meek_kitchen_nightscene_off
-  - service: shell_command.meek_hallway_nightscene_off
+  - service: script.engine_say
+    data_template:
+      media_player: media_player.this_device
+      say_scene_evening: "true"
 
 ######################################################
 # RANDOM DELAY FOR HOLIDAT SCENE
