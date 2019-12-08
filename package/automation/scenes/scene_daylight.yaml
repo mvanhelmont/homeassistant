@@ -21,21 +21,22 @@
       state: 'on' 
 
   action:
+  - service: shell_command.meek_toilet_nightscene_off
+  
   - service: input_boolean.turn_on
     data:
       entity_id: input_boolean.scene_daylight
 
   - service: input_boolean.turn_off
-    entity_id: 
-      - input_boolean.scene_goodnight
-      - input_boolean.scene_kodi
-      - input_boolean.scene_tv
-      - input_boolean.scene_evening
-      - input_boolean.scene_appletv
-      - input_boolean.scene_sexy
-      - input_boolean.lux_level_low
-
-  - service: shell_command.meek_toilet_nightscene_off
+    data:
+      entity_id: 
+        - input_boolean.scene_goodnight
+        - input_boolean.scene_kodi
+        - input_boolean.scene_tv
+        - input_boolean.scene_evening
+        - input_boolean.scene_appletv
+        - input_boolean.scene_sexy
+        - input_boolean.lux_level_low
 
   - service: light.turn_off
     data:

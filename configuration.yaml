@@ -38,7 +38,7 @@ notify: !include_dir_list package/compontents/configs/notify
 frontend: !include package/compontents/configs/frontend.yaml
 homeassistant: !include package/compontents/configs/homeassistant.yaml
 history: !include package/compontents/configs/history.yaml
-apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
+#apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
 shell_command: !include package/compontents/devices/shell_commands.yaml
 tts: !include package/compontents/devices/tts.yaml
 rflink: !include package/compontents/devices/rflink.yaml

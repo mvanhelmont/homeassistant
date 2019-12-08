@@ -35,13 +35,14 @@
       entity_id: input_boolean.scene_appletv
 
   - service: input_boolean.turn_off
-    entity_id: 
-      - input_boolean.scene_evening
-      - input_boolean.scene_tv
-      - input_boolean.scene_daylight
-      - input_boolean.scene_kodi
-      - input_boolean.scene_sexy
-      - input_boolean.lux_level_low
+    data:
+      entity_id: 
+        - input_boolean.scene_evening
+        - input_boolean.scene_tv
+        - input_boolean.scene_daylight
+        - input_boolean.scene_kodi
+        - input_boolean.scene_sexy
+        - input_boolean.lux_level_low
 
   - service: light.turn_on
     entity_id: light.nanoleaf
@@ -56,10 +57,10 @@
         {% endif %}
 
   - service_template: >-
-       {% if (states.sensor.holiday.state) == 'Christmas' %} script.evening_christmas
-       {% elif (states.sensor.holiday.state) == 'Halloween' %} script.evening_halloween
-       {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.evening_kingsday
-       {% elif (states.sensor.holiday.state) == 'Birthday' %} script.evening_birthday
+       {% if (states.sensor.holiday.state) == 'Christmas' %} script.appletv_christmas
+       {% elif (states.sensor.holiday.state) == 'Halloween' %} script.appletv_halloween
+       {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.appletv_kingsday
+       {% elif (states.sensor.holiday.state) == 'Birthday' %} script.appletv_birthday
        {% else %} script.evening_normal
        {% endif %}
 
@@ -73,14 +74,6 @@
         {% else %} 50
         {% endif %}
         
-  - delay: '00:00:05'
-
-  - service_template: >-
-      {% if (states.media_player.woonkamer.state) == 'playing' %} script.appletv_control_playing
-      {% elif (states.media_player.woonkamer.state) == 'paused' %} script.appletv_control_paused
-      {% else %} script.appletv_control_idle
-      {% endif %}
-
   - service: script.engine_say
     data_template:
       media_player: media_player.this_device

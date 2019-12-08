@@ -19,7 +19,8 @@
         {% if (states.input_boolean.scene_guests.state) == 'on' %} automation.turn_off
         {% else %} automation.turn_on
         {% endif %}
-      entity_id: 
-        - automation.motion_detection_livingroom_on_off
-        - automation.motion_detection_diningroom_on_off
-        - automation.motion_detection_hallway_on_off
+      data:
+        entity_id: 
+          - automation.motion_detection_livingroom_on_off
+          - automation.motion_detection_diningroom_on_off
+          - automation.motion_detection_hallway_on_off

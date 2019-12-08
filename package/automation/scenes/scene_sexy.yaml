@@ -13,11 +13,11 @@
       effect: Romantic
 
   - service: light.turn_on
-    entity_id: 
-      - light.dressoir_all
-      - light.livingroom_all
-      - light.hallway
-      - light.balcony
     data:
+      entity_id: 
+        - light.dressoir_all
+        - light.livingroom_all
+        - light.hallway
+        - light.balcony
       color_name: red
       brightness_pct: 50

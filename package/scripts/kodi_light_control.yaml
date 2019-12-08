@@ -4,12 +4,20 @@ kodi_normal:
     - service: light.turn_on
       data:
         entity_id: light.livingroom_wall
-        brightness_pct: 70
+        brightness_pct: >-
+          {% if (states.media_player.kodi.state) == 'playing' %} 70
+          {% elif (states.media_player.kodi.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
 
     - service: light.turn_on
       data:
         entity_id: light.livingroom_window
-        brightness_pct: 20
+        brightness_pct: >-
+          {% if (states.media_player.kodi.state) == 'playing' %} 60
+          {% elif (states.media_player.kodi.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
 
     - service: light.turn_on
       data_template:
@@ -30,7 +38,11 @@ kodi_birthday:
       data:
         entity_id: light.livingroom_all
         kelvin: 2700
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.kodi.state) == 'playing' %} 60
+          {% elif (states.media_player.kodi.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
 
     - service: light.turn_on
       data_template:
@@ -63,13 +75,21 @@ kodi_halloween:
       data:
         entity_id: light.livingroom_wall
         color_name: orange
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.kodi.state) == 'playing' %} 60
+          {% elif (states.media_player.kodi.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
 
     - service: light.turn_on
       data:
         entity_id: light.livingroom_window
         color_name: orange
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.kodi.state) == 'playing' %} 60
+          {% elif (states.media_player.kodi.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
 
     - service: light.turn_on
       data_template:
@@ -102,7 +122,11 @@ kodi_kingsday:
       data:
         entity_id: light.livingroom_all
         kelvin: 2700
-        brightness_pct: 100
+        brightness_pct: >-
+          {% if (states.media_player.kodi.state) == 'playing' %} 60
+          {% elif (states.media_player.kodi.state) == 'paused' %} 100
+          {% else %} 100
+          {% endif %}
 
     - service: light.turn_on
       data_template:

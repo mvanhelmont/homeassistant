@@ -15,13 +15,14 @@
       entity_id: input_boolean.scene_daylight
 
   - service: input_boolean.turn_off
-    entity_id: 
-      - input_boolean.scene_kodi
-      - input_boolean.scene_tv
-      - input_boolean.scene_evening
-      - input_boolean.scene_appletv
-      - input_boolean.scene_sexy
-      - input_boolean.lux_level_low
+    data:
+      entity_id: 
+        - input_boolean.scene_kodi
+        - input_boolean.scene_tv
+        - input_boolean.scene_evening
+        - input_boolean.scene_appletv
+        - input_boolean.scene_sexy
+        - input_boolean.lux_level_low
 
 # TURN OFF ALL LIGHT
   - service: light.turn_off
@@ -49,8 +50,9 @@
       entity_id: fan.afzuiging_badkamer
 
   - service: switch.turn_off
-    entity_id:
-      - switch.node_8_switch
-      - switch.node_21_switch
-      - switch.node_22_switch
-      - switch.node_2_switch 
+    data:
+      entity_id:
+        - switch.node_8_switch
+        - switch.node_21_switch
+        - switch.node_22_switch
+        - switch.node_2_switch 

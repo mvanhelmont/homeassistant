@@ -1,6 +1,6 @@
 - alias: 'Control - AppleTV is on pause'
   trigger:
-  - entity_id: media_player.woonkamer
+  - entity_id: media_player.woonkamer_2
     platform: state
     to: 'paused'
 

@@ -1,17 +1,7 @@
 [
     {
         "complete": false,
-        "id": "458f8fab3bda44dcbd7aeef8cb1d0261",
-        "name": "schuurspons"
-    },
-    {
-        "complete": false,
         "id": "c719b3d855dd403a9548619fcb96fbfd",
         "name": "Sushi Rijst"
-    },
-    {
-        "complete": false,
-        "id": "99e2a75cbdb04729b39ead2b9767b8c3",
-        "name": "Limonade"
     }
 ]
