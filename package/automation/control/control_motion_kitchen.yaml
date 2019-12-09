@@ -8,6 +8,10 @@
       entity_id: input_boolean.scene_daylight
       state: 'off'
 
+    - condition: state
+      entity_id: input_boolean.scene_cooking
+      state: 'off'
+
   action: 
     - service_template: >-
         {% if (states.sensor.holiday.state) == 'Christmas' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on

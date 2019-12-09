@@ -27,14 +27,14 @@
         brightness_pct: >-
           {% if (states.binary_sensor.node_10.state) == 'on' and
                 (states.switch.kay_learning.state) == 'off' and
-                ((states.sensor.seasons.state) == 'Spring' or
-                 (states.sensor.seasons.state) == 'Summer') %}
+                ((states.sensor.season.state) == 'spring' or
+                 (states.sensor.season.state) == 'summer') %}
                   0
 
           {% elif (states.binary_sensor.node_10.state) == 'off' and
                   (states.switch.kay_learning.state) == 'off' and
-                  ((states.sensor.seasons.state) == 'Spring' or
-                   (states.sensor.seasons.state) == 'Summer') %}
+                  ((states.sensor.season.state) == 'spring' or
+                   (states.sensor.season.state) == 'summer') %}
                     50
 
           {% elif (states.binary_sensor.node_10.state) == 'on' and

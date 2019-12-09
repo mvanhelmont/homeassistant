@@ -21,6 +21,9 @@ mobile_app:
 customizer:
   custom_ui: local
 
+auto_backup:
+  auto_purge: true
+
 zone: !include_dir_list package/compontents/zones
 switch: !include_dir_list package/compontents/switches
 sensor: !include_dir_list package/compontents/sensors
@@ -38,7 +41,6 @@ notify: !include_dir_list package/compontents/configs/notify
 frontend: !include package/compontents/configs/frontend.yaml
 homeassistant: !include package/compontents/configs/homeassistant.yaml
 history: !include package/compontents/configs/history.yaml
-#apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
 shell_command: !include package/compontents/devices/shell_commands.yaml
 tts: !include package/compontents/devices/tts.yaml
 rflink: !include package/compontents/devices/rflink.yaml
@@ -52,7 +54,8 @@ weather: !include package/compontents/configs/weather.yaml
 homekit: !include package/compontents/configs/homekit.yaml
 recorder: !include package/compontents/configs/recorder.yaml
 
-#alexa: !include package/compontents/devices/alexa.yaml
+# apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
+# alexa: !include package/compontents/devices/alexa.yaml
 # android_ip_webcam: !include package/compontents/configs/camera.yaml
 # panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 # notify: !include package/compontents/configs/notify.yaml

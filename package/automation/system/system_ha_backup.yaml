@@ -1,21 +1,45 @@
-- alias: 'System - Backup HA on Monday and Saterday'
+- alias: 'System - AutoBackup on Monday and Saterday at 4AM'
   initial_state: true
   trigger:
     - platform: time
       at: '04:00:00'
+
   condition:
-    - condition: time
-      weekday:
-        - mon
-        - sat
+    condition: time
+    weekday:
+      - mon
+      - tue
+      - sat
+
   action:
-    - service: hassio.snapshot_full
+    - service: auto_backup.snapshot_full
       data_template:
-        name: Full_Backup_{{ now().strftime('%Y%m%d') }} 
+        name: "AutoBackup - Full Backup: {{ now().strftime('%Y-%m-%d') }}" 
+        keep_days: 7
 
     - service: script.pushover_engine
       data_template:
-        message: "HASS backup has run. the snapshot name is ---->  Full_Backup_{{ now().strftime('%Y%m%d') }}"
+        message: "AutoBackup Full Backup is Running. The snapshot name is ->  Full Backup: {{ now().strftime('%Y-%m-%d') }}"
         priority: 0
         sound: bike
-        title: "HA System"
+        title: "HA AutoBackup"
+
+#- alias: 'System - AutoBackup Confguration Files every 3 hours'
+#  trigger:
+#    platform: time_pattern
+#    hours: "/3"
+
+#  action:
+#    - service: auto_backup.snapshot_partial
+#      data_template:
+#        name: "AutoBackup Configuration Files: {{ now().strftime('%-I:%M %p - %Y-%m-%d)') }}"
+#        folders:
+#          - ssl
+#        keep_days: 5
+
+#    - service: script.pushover_engine
+#      data_template:
+#        message: "AutoBackup Configuration Files is Running. the snapshot name is -> AutoBackup Partial: {{ now().strftime('%a, %-I:%M %p (%Y/%m/%d)') }}"
+#        priority: 0
+#        sound: bike
+#        title: "HA System"
