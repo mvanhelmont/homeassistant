@@ -8,7 +8,6 @@ appletv_control_paused:
           - light.livingroom_wall
           - light.livingroom_window
         brightness_pct: 100
-        transition: 3
 
     - service: light.turn_on
       data:
@@ -24,13 +23,11 @@ appletv_control_paused:
         entity_id:
           - light.nanoleaf
         brightness_pct: 50
-        transition: 5
 
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
-        transition: 5
 
 appletv_control_playing:
   alias: 'AppleTV Control Playing Scene'
@@ -41,21 +38,18 @@ appletv_control_playing:
         entity_id:
           - light.livingroom_wall
         brightness_pct: 60
-        transition: 5
 
     - service: light.turn_on
       data:
         entity_id:
           - light.livingroom_window
         brightness_pct: 20
-        transition: 5
 
     - service: light.turn_on
       data:
         entity_id:
           - light.nanoleaf
         brightness_pct: 30
-        transition: 5
 
     - service: light.turn_on
       data:
@@ -67,24 +61,19 @@ appletv_control_playing:
       data_template:
         entity_id: light.dressoir_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 25 }}"
-        transition: 5
 
-    - service_template: >-
-        {% if (states.binary_sensor.node_16.state) == "on" %} light.turn_on
-        {% else %} light.turn_off
-        {% endif %}
-      data:
-        entity_id:
-          - light.kitchen_all
-          - light.sink_all
+    - service: light.turn_on
+      entity_id:
+        - light.kitchen_all
+        - light.sink_all
+      data_template:    
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
-    - service_template: >-
-        {% if (states.binary_sensor.node_20.state) == "on" %} light.turn_on
-        {% else %} light.turn_off
-        {% endif %}
-      data:
-        entity_id:
-          - light.toilet_all
+    - service: light.turn_on
+      entity_id: light.toilet_all
+      data_template:    
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_20', 'on') else 100 }}"          
+          
 
 appletv_control_idle:
   alias: 'AppleTV Control Idle Scene'
@@ -97,34 +86,26 @@ appletv_control_idle:
           - light.livingroom_window
           - light.balcony
         brightness_pct: 100
-        transition: 5
 
     - service: light.turn_on
       data:
         entity_id:
           - light.nanoleaf
         brightness_pct: 50
-        transition: 5
 
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
-        transition: 5
+        
+    - service: light.turn_on
+      entity_id:
+        - light.kitchen_all
+        - light.sink_all
+      data_template:    
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
-    - service_template: >-
-        {% if (states.binary_sensor.node_16.state) == "on" %} light.turn_on
-        {% else %} light.turn_off
-        {% endif %}
-      data:
-        entity_id:
-          - light.kitchen_all
-          - light.sink_all
-
-    - service_template: >-
-        {% if (states.binary_sensor.node_20.state) == "on" %} light.turn_on
-        {% else %} light.turn_off
-        {% endif %}
-      data:
-        entity_id:
-          - light.toilet_all
+    - service: light.turn_on
+      entity_id: light.toilet_all
+      data_template:    
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_20', 'on') else 100 }}"

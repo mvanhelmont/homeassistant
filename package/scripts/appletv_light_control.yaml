@@ -60,19 +60,10 @@ appletv_birthday:
 
     - service: light.turn_on
       data_template:
-        entity_id: light.dressoir_1
-        effect: 0
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
-
-    - service: light.turn_on
-      data_template:
-        entity_id: light.dressoir_2
-        effect: 0
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
-
-    - service: light.turn_on
-      data_template:
-        entity_id: light.dressoir_3
+        entity_id: 
+          - light.dressoir_1
+          - light.dressoir_2
+          - light.dressoir_3
         effect: 0
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
@@ -108,20 +99,16 @@ appletv_halloween:
 
     - service: light.turn_on
       data_template:
-        entity_id: light.dressoir_1
+        entity_id: 
+          - light.dressoir_1
+          - light.dressoir_3
         color_name: blue
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_2
-        color_color: purple
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
-
-    - service: light.turn_on
-      data_template:
-        entity_id: light.dressoir_3
-        color_name: blue
+        color_name: purple
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
