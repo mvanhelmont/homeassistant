@@ -2,28 +2,24 @@
   initial_state: True
   trigger:
     platform: mqtt
-    topic: milight/states/0xAAAD/rgb_cct/0
+    topic: "milight/states/0xAAAD/rgb_cct/0"
   action:
     - service: mqtt.publish
       data_template:
         topic: "milight/states/0xAAAD/rgb_cct/1"
-        payload_template: >-
-          {{ trigger.payload }}
+        payload_template: "{{ trigger.payload }}"
 
     - service: mqtt.publish
       data_template:
         topic: "milight/states/0xAAAD/rgb_cct/2"
-        payload_template: >-
-          {{ trigger.payload }}
+        payload_template: "{{ trigger.payload }}"
 
     - service: mqtt.publish
       data_template:
         topic: "milight/states/0xAAAD/rgb_cct/3"
-        payload_template: >-
-          {{ trigger.payload }}
+        payload_template: "{{ trigger.payload }}"
 
     - service: mqtt.publish
       data_template:
         topic: "milight/states/0xAAAD/rgb_cct/4"
-        payload_template: >-
-          {{ trigger.payload }}
+        payload_template: "{{ trigger.payload }}"

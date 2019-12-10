@@ -13,5 +13,5 @@ retain: true
 effect: true
 effect_list: !include /config/package/templates/light_effects.yaml
 availability_topic: "milight/client_status"
-payload_available: 'connected'
-payload_not_available: 'disconnected'
+payload_available: "connected"
+payload_not_available: "disconnected"

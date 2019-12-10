@@ -12,3 +12,5 @@ rgb: true
 color_temp: true
 effect: true
 effect_list: !include /config/package/templates/light_effects.yaml
+payload_available: "connected"
+payload_not_available: "disconnected"

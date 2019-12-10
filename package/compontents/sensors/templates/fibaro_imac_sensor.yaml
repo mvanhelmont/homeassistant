@@ -3,15 +3,5 @@ platform: template
 sensors:
   fibaro_imac_custom_sensor:
     friendly_name: 'Fibaro iMac'
-    value_template: >-
-      {% if is_state('sensor.node_13_access_control', '23') %}
-        off
-      {% else %}
-        on
-      {% endif %}
-    icon_template: >-
-      {% if is_state('sensor.node_13_access_control', '23') %}
-        mdi:checkbox-blank-circle-outline
-      {% else %}
-        mdi:check-circle
-      {% endif %}
+    value_template: "{{ 'off' if is_state('sensor.node_31_access_control', '23') else 'on' }}"
+    icon_template: "{{ 'mdi:checkbox-blank-circle-outline' if is_state('sensor.node_13_access_control', '23') else 'mdi:check-circle' }}"

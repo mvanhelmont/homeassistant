@@ -13,9 +13,9 @@ sensors:
       {% else %}
         DayTime
       {% endif %}
-    icon_template: >-
-      {% if is_state('sun.sun', 'above_horizon') %}
-        mdi:weather-sunny
-      {% else %}
-        mdi:weather-night
-      {% endif %}
+    icon_template: "{{ 'mdi:weather-sunny' if is_state('sun.sun', 'above_horizon') else 'mdi:weather-night' }}"
+#      {% if is_state('sun.sun', 'above_horizon') %}
+#        mdi:weather-sunny
+#      {% else %}
+#        mdi:weather-night
+#      {% endif %}

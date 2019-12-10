@@ -3,5 +3,5 @@ platform: template
 sensors:
   hp_yellow_ink:
     friendly_name: 'HP Yellow Ink Level'
-    unit_of_measurement: '%'
+    unit_of_measurement: "%"
     value_template: "{{ ((states('sensor.hp_cur_yellow') | float) / (states('sensor.hp_max_yellow') | float) * 100) | round(0) }}"
