@@ -1,5 +1,5 @@
 ---
-name: Pushover
+name: 'Pushover'
 platform: pushover
 api_key: !secret notify_apikey
 user_key: !secret notify_userkey

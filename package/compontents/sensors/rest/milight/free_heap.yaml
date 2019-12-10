@@ -2,7 +2,7 @@
 platform: rest
 resource: http://192.168.100.70/about
 name: 'Milight Free Heap'
-value_template: '{{ value_json.free_heap }}'
+value_template: "{{ value_json.free_heap }}"
 json_attributes:
     - queue_stats
 unit_of_measurement: 'Bytes'

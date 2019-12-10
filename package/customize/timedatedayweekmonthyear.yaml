@@ -1,8 +1,8 @@
 ---
 sensor.dayofyear:
   icon: mdi:calendar-today
-  friendly_name: Day of Year
+  friendly_name: 'Day of Year'
 
 sensor.weekofyear:
   icon: mdi:calendar-week-begin
-  friendly_name: Week of Year
+  friendly_name: 'Week of Year'

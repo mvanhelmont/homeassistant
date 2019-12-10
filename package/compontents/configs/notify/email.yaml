@@ -1,5 +1,5 @@
 ---
-name: ha_email
+name: 'HA Email'
 platform: smtp
 server: vps.oudenes.photography
 port: 587

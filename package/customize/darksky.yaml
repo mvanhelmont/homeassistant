@@ -1,6 +1,6 @@
 ---
 sensor.dark_sky_temperature:
-  friendly_name: Current Temperature
+  friendly_name: 'Current Temperature'
   templates:  
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -18,77 +18,77 @@ sensor.dark_sky_temperature:
       return 'rgb(0,0,0)';
 
 sensor.dark_sky_hourly_summary:
-  friendly_name: Hourly Summary
+  friendly_name: 'Hourly Summary'
 sensor.dark_sky_daily_summary:
-  friendly_name: Daily Summary
+  friendly_name: 'Daily Summary'
 sensor.dark_sky_summary:
-  friendly_name: Current Summery
+  friendly_name: 'Current Summery'
 sensor.dark_sky_cloud_coverage:
-  friendly_name: Current Clouds
+  friendly_name: 'Current Clouds'
 sensor.dark_sky_humidity:
-  friendly_name: Current Humidity
+  friendly_name: 'Current Humidity'
 sensor.dark_sky_pressure:
-  friendly_name: Current Pressure
+  friendly_name: 'Current Pressure'
 sensor.dark_sky_uv_index:
-  friendly_name: Current UV
+  friendly_name: 'Current UV'
 sensor.dark_sky_visibility:
-  friendly_name: Current Visibility
+  friendly_name: 'Current Visibility'
 sensor.dark_sky_wind_bearing:
-  friendly_name: Current Wind Bearing
+  friendly_name: 'Current Wind Bearing'
 sensor.dark_sky_wind_speed:
-  friendly_name: Current Wind Speed
+  friendly_name: 'Current Wind Speed'
 
 sensor.dark_sky_summary_0h:
-  friendly_name: Summary Now
+  friendly_name: 'Summary Now'
 sensor.dark_sky_summary_1h:
-  friendly_name: Summary After 1 Hour
+  friendly_name: 'Summary After 1 Hour'
 sensor.dark_sky_summary_2h:
-  friendly_name: Summary After 2 Hours
+  friendly_name: 'Summary After 2 Hours'
 
 sensor.dark_sky_cloud_coverage_0d:
-  friendly_name: Cloud Coverage Now
+  friendly_name: 'Cloud Coverage Now'
 sensor.dark_sky_cloud_coverage_1d:
-  friendly_name: Cloud Coverage Tomorrow
+  friendly_name: 'Cloud Coverage Tomorrow'
 sensor.dark_sky_cloud_coverage_2d:
-  friendly_name: Cloud Coverage 2nd Day
+  friendly_name: 'Cloud Coverage 2nd Day'
 
 sensor.dark_sky_visibility_0d:
-  friendly_name: Visibility Now
+  friendly_name: 'Visibility Now'
 sensor.dark_sky_visibility_1d:
-  friendly_name: Visibility Tomorrow
+  friendly_name: 'Visibility Tomorrow'
 sensor.dark_sky_visibility_2d:
-  friendly_name: Visibility 2nd Day
+  friendly_name: 'Visibility 2nd Day'
 
 sensor.dark_sky_wind_speed_0h:
-  friendly_name: Wind Speed Now
+  friendly_name: 'Wind Speed Now'
 sensor.dark_sky_wind_speed_1h:
-  friendly_name: Wind Speed 1 hour
+  friendly_name: 'Wind Speed 1 hour'
 sensor.dark_sky_wind_speed_2h:
-  friendly_name: Wind Speed 2 hours
+  friendly_name: 'Wind Speed 2 hours'
 
 sensor.dark_sky_summary_0d:
-  friendly_name: Summery Now
+  friendly_name: 'Summery Now'
 sensor.dark_sky_summary_1d:
-  friendly_name: Summery Tomorrow
+  friendly_name: 'Summery Tomorrow'
 sensor.dark_sky_summary_2d:
-  friendly_name: Summery 2nd Day
+  friendly_name: 'Summery 2nd Day'
 
 sensor.dark_sky_moon_phase_0d:
-  friendly_name: Moon Phase Tonight
+  friendly_name: 'Moon Phase Tonight'
 sensor.dark_sky_moon_phase_1d:
-  friendly_name: Moon Phase Tomorrow
+  friendly_name: 'Moon Phase Tomorrow'
 sensor.dark_sky_moon_phase_2d:
-  friendly_name: Moon Phase 2nd Day
+  friendly_name: 'Moon Phase 2nd Day'
 
 sensor.dark_sky_wind_speed_0d:
-  friendly_name: Wind Speed Now
+  friendly_name: 'Wind Speed Now'
 sensor.dark_sky_wind_speed_1d:
-  friendly_name: Wind Speed Tomorrow
+  friendly_name: 'Wind Speed Tomorrow'
 sensor.dark_sky_wind_speed_2d:
-  friendly_name: Wind Speed 2nd Day
+  friendly_name: 'Wind Speed 2nd Day'
 
 sensor.dark_sky_temperature_0h:
-  friendly_name: Tempertrure Now
+  friendly_name: 'Tempertrure Now'
   templates:  
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -106,7 +106,7 @@ sensor.dark_sky_temperature_0h:
       return 'rgb(0,0,0)';
       
 sensor.dark_sky_temperature_1h:
-  friendly_name: Temperature after 1 hour
+  friendly_name: 'Temperature after 1 hour'
   templates:  
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -124,7 +124,7 @@ sensor.dark_sky_temperature_1h:
       return 'rgb(0,0,0)';
       
 sensor.dark_sky_temperature_2h:
-  friendly_name: Temperature after 2 hours
+  friendly_name: 'Temperature after 2 hours'
   templates:  
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -142,7 +142,7 @@ sensor.dark_sky_temperature_2h:
       return 'rgb(0,0,0)';
 
 sensor.dark_sky_daytime_high_temperature_0d:
-  friendly_name: Max Temperature Now
+  friendly_name: 'Max Temperature Now'
   templates:  
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -160,7 +160,7 @@ sensor.dark_sky_daytime_high_temperature_0d:
       return 'rgb(0,0,0)';
       
 sensor.dark_sky_daytime_high_temperature_1d:
-  friendly_name: Max Temprature Tomorrow
+  friendly_name: 'Max Temprature Tomorrow'
   templates:  
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -178,7 +178,7 @@ sensor.dark_sky_daytime_high_temperature_1d:
       return 'rgb(0,0,0)';
       
 sensor.dark_sky_daytime_high_temperature_2d:
-  friendly_name: Max Temprature 2nd Day
+  friendly_name: 'Max Temprature 2nd Day'
   templates:  
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';

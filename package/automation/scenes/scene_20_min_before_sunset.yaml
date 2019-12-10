@@ -19,11 +19,8 @@
     entity_id: light.nanoleaf
     data_template:
       brightness_pct: 30
-      effect: >-
-        {% if (states.sensor.holiday.state) == 'Christmas' %} Christmas
-        {% else %} 20MinSunset
-        {% endif %}
-        
+      effect: "{{ 'Christmas' if is_state('sensor.holiday', 'Christmas') else '20MinSunset' }}"
+
   - service: script.engine_say
     data_template:
       media_player: media_player.this_device

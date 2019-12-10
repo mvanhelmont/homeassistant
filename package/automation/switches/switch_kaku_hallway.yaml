@@ -7,8 +7,5 @@
     service: light.turn_on
     entity_id: light.hallway
     data_template:
-      brightness_pct: >-
-        {% if (states.switch.newkaku_016138ba_a.state) == 'on' %} 100
-        {% else %} 0
-        {% endif %}
+      brightness_pct: "{{ 100 if is_state('switch.newkaku_016138ba_a', 'on') else 0 }}"
       kelvin: 4700

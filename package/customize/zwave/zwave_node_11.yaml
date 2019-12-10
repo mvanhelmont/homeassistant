@@ -1,20 +1,20 @@
 ---
 zwave.node_11:
-  friendly_name: Frontdoor
+  friendly_name: 'Frontdoor'
 sensor.node_11_access_control:
-  friendly_name: Frontdoor Access Control
+  friendly_name: 'Frontdoor Access Control'
 sensor.node_11_alarm_level:
-  friendly_name: Frontdoor Alarm Level
+  friendly_name: 'Frontdoor Alarm Level'
 sensor.node_11_alarm_type:
-  friendly_name: Frontdoor Alarm Type
+  friendly_name: 'Frontdoor Alarm Type'
 sensor.node_11_burglar:
-  friendly_name: Frontdoor Burglar
+  friendly_name: 'Frontdoor Burglar'
 sensor.node_11_luminance:
-  friendly_name: Frontdoor Lux
+  friendly_name: 'Frontdoor Lux'
 sensor.node_11_sourcenodeid:
-  friendly_name: Frontdoor SourceID
+  friendly_name: 'Frontdoor SourceID'
 sensor.node_11_temperature:
-  friendly_name: Frontdoor Temp
+  friendly_name: 'Frontdoor Temp'
   templates:  
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -32,10 +32,10 @@ sensor.node_11_temperature:
       return 'rgb(0,0,0)';
       
 sensor.node_11_power_management:
-  friendly_name: Frontdoor Power Man
+  friendly_name: 'Frontdoor Power Man'
 sensor.node_11_heat:
-  friendly_name: Frontdoor Heat
+  friendly_name: 'Frontdoor Heat'
 binary_sensor.node_11:
-  friendly_name: Frontdoor
+  friendly_name: 'Frontdoor'
 sensor.node_11_battery_level:
-  friendly_name: Frontdoor Battery
+  friendly_name: 'Frontdoor Battery'

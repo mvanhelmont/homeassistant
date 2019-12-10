@@ -4,10 +4,7 @@
       platform: state
 
   action:
-    - service_template: >-
-        {% if (states.binary_sensor.sensor_manual_family_home.state) == 'on' %} switch.turn_on
-        {% else %} switch.turn_off
-        {% endif %}
+    - service_template: "{{ 'switch.turn_on' if is_state('binary_sensor.sensor_manual_family_home', 'on') else 'switch.turn_off' }}"
       data:
         entity_id:
           - switch.node_5_switch

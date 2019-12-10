@@ -2,6 +2,6 @@
 platform: rest
 resource: http://192.168.100.70/transitions
 name: 'Milight Transitions'
-value_template: '{{ value_json.transitions | length }}'
+value_template: "{{ value_json.transitions | length }}"
 json_attributes:
     - transitions

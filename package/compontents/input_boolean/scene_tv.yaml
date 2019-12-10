@@ -1,5 +1,5 @@
 ---
 scene_tv:
-  name: Scene TV
+  name: 'Scene TV'
   initial: off 
 

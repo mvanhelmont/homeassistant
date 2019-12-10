@@ -15,7 +15,4 @@
           - light.sink_all
           - light.kitchen_all
         kelvin: 4700
-        brightness_pct: >-
-          {% if (states.input_boolean.scene_cooking.state) == 'on' %} 100
-          {% else %} 0
-          {% endif %}
+        brightness_pct: "{{ 0 if is_state('input_boolean.scene_cooking', 'on') else 100 }}"

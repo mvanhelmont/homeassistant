@@ -7,8 +7,5 @@
     service: light.turn_on
     entity_id: light.livingroom_wall
     data_template:
-      brightness_pct: >-
-        {% if (states.switch.newkaku_0114ef92_b.state) == 'on' %} 100
-        {% else %} 0
-        {% endif %}
+      brightness_pct: "{{ 100 if is_state('switch.newkaku_0114ef92_b', 'on') else 0 }}"
       kelvin: 4700

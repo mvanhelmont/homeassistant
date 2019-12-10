@@ -13,7 +13,4 @@
       entity_id: light.dressoir_all
       data_template:
         kelvin: 4700
-        brightness_pct: >-
-          {% if (states.binary_sensor.node_18.state) == 'on' %} 20
-          {% else %} 0
-          {% endif %}
+        brightness_pct: "{{ 20 if is_state('binary_sensor.node_18', 'on') else 0 }}"

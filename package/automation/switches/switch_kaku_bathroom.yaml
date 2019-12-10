@@ -7,8 +7,5 @@
     service: light.turn_on
     entity_id: light.bathroom_all
     data_template:
-      brightness_pct: >-
-        {% if (states.switch.newkaku_01616a32_a.state) == 'on' %} 100
-        {% else %} 0
-        {% endif %}
+      brightness_pct: "{{ 100 if is_state('switch.newkaku_01616a32_a', 'on') else 0 }}"
       kelvin: 4700

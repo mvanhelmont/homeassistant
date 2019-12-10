@@ -1,7 +1,7 @@
 ---
 platform: command_line
 command: 'cat /config/package/json/calendar.json'
-name: Birthday 
+name: 'Birthday' 
 scan_interval: 21600
 value_template: >-
   {% set today = now().month  ~ '/' ~ now().day  %}

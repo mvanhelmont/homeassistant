@@ -1,19 +1,19 @@
 ---
 zwave.node_17:
-  friendly_name: PIR Hallway
+  friendly_name: 'PIR Hallway'
 sensor.node_17_alarm_level:
-  friendly_name: PIR Hallway Alarm Level
+  friendly_name: 'PIR Hallway Alarm Level'
 sensor.node_17_alarm_type:
-  friendly_name: PIR Hallway Alarm Type
+  friendly_name: 'PIR Hallway Alarm Type'
 sensor.node_17_burglar:
-  friendly_name: PIR Hallway Burglar
+  friendly_name: 'PIR Hallway Burglar'
 sensor.node_17_luminance:
-  friendly_name: PIR Hallway Lux
+  friendly_name: 'PIR Hallway Lux'
   icon: mdi:weather-partly-cloudy
 sensor.node_17_sourcenodeid:
-  friendly_name: PIR Hallway SourceID
+  friendly_name: 'PIR Hallway SourceID'
 sensor.node_17_temperature:
-  friendly_name: PIR Hallway Temp
+  friendly_name: 'PIR Hallway Temp'
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -31,7 +31,7 @@ sensor.node_17_temperature:
       return 'rgb(0,0,0)';
 
 binary_sensor.node_17:
-  friendly_name: PIR Hallway
+  friendly_name: 'PIR Hallway'
   icon: mdi:motion-sensor
 sensor.node_17_battery_level:
-  friendly_name: PIR Hallway Battery
+  friendly_name: 'PIR Hallway Battery'

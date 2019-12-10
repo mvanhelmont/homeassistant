@@ -2,4 +2,4 @@
 platform: rest
 resource: http://192.168.100.70/about
 name: 'Milight Variant'
-value_template: '{{ value_json.variant }}'
+value_template: "{{ value_json.variant }}"

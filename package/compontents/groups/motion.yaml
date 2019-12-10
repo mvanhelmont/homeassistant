@@ -1,6 +1,6 @@
 ---
 group_motion_sensors:
-  name: Group Motion Sensors
+  name: 'Group Motion Sensors'
   entities:
     - binary_sensor.node_15
     - binary_sensor.node_16

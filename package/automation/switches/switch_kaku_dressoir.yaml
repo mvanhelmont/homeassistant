@@ -8,7 +8,4 @@
     entity_id: light.dressoir_all
     data_template:
       kelvin: 4700
-      brightness_pct: >-
-        {% if (states.switch.newkaku_011fdd46_c.state) == 'on' %} 100
-        {% else %} 0
-        {% endif %}
+      brightness_pct: "{{ 100 if is_state('switch.newkaku_011fdd46_c', 'on') else 0 }}"

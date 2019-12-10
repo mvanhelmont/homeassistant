@@ -1,7 +1,7 @@
 ---
 input_boolean.lux_level_low:
-  friendly_name: Lux Low
-  homebridge_name: Lux Low
+  friendly_name: 'Lux Low'
+  homebridge_name: 'Lux Low'
   templates:
     icon: mdi:nintendo-switch
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';

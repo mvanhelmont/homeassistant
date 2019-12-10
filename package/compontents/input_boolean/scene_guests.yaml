@@ -1,4 +1,4 @@
 ---
 scene_guests:
-  name: Scene Guests
+  name: 'Scene Guests'
   initial: off

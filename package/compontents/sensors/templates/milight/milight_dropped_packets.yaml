@@ -2,6 +2,5 @@
 platform: template
 sensors:
   esp8266_milight_hub_dropped_packets:
-    friendly_name: "Milight Dropped Packets"
-    value_template: |
-      {{ states.sensor.milight_free_heap.attributes["queue_stats"]["dropped_packets"] }}
+    friendly_name: 'Milight Dropped Packets'
+    value_template: "{{ states.sensor.milight_free_heap.attributes['queue_stats']['dropped_packets'] }}"

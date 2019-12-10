@@ -16,10 +16,7 @@
     - service: light.turn_on
       entity_id: light.dressoir_all
       data_template:
-        brightness_pct: >-
-          {% if (states.binary_sensor.node_10.state) == 'on' %} 0
-          {% else %} 100
-          {% endif %}
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: homeassistant.turn_on
       entity_id: light.newkaku_01401eb6_a

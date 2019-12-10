@@ -28,5 +28,3 @@ meek_hallway_nightscene_on: 'curl http://192.168.100.118/control?cmd=event,night
 meek_hallway_nightscene_off: 'curl http://192.168.100.118/control?cmd=event,nightsceneoff'
 meek_hallway_sensor_on: 'curl http://192.168.100.118/control?cmd=event,sensoron'
 meek_hallway_sensor_off: 'curl http://192.168.100.118/control?cmd=event,sensoroff'
-
-

@@ -13,7 +13,4 @@
   - service: light.turn_on
     data_template:
       entity_id: light.newkaku_01401eb6_a
-      brightness_pct: >-
-       {% if (states.switch.kay_learning.state) == 'on' %} 100
-       {% else %} 50
-       {% endif %}
+      brightness_pct: "{{ 100 if is_state('switch.kay_learning', 'on') else 50 }}"

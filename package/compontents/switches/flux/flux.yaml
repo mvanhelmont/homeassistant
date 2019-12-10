@@ -1,7 +1,7 @@
 platform: flux
 lights:
   - light.dressoir_all
-name: Fluxer
+name: 'Fluxer'
 start_time: '10:00'
 stop_time: '12:00'
 start_colortemp: 4000

@@ -1,14 +1,14 @@
 appletv_control_paused:
   alias: 'AppleTV Control Paused Scene'
   sequence:
-
+  
     - service: light.turn_on
       data:
         entity_id:
           - light.livingroom_wall
           - light.livingroom_window
         brightness_pct: 100
-
+        
     - service: light.turn_on
       data:
         entity_id:

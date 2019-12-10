@@ -60,7 +60,6 @@ filter:
     - sensor.node_18_temperature
     - sensor.node_19_temperature
     - sensor.node_20_temperature
-
   exclude_entities:
     - binary_sensor.bedroom_nest_protect_online
     - binary_sensor.dining_room_nest_protect_online
@@ -74,4 +73,3 @@ filter:
     - binary_sensor.milight_hub
     - binary_sensor.toshiba_laptop
     - binary_sensor.asingaborg_away
-  

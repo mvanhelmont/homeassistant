@@ -58,10 +58,7 @@
       - switch.node_21_switch
       - switch.node_22_switch
 
-  - service_template: >-
-      {% if (states.binary_sensor.node_14.state) == "on" or (states.binary_sensor.node_15.state) == 'on' %} light.turn_on
-      {% else %} light.turn_off
-      {% endif %}
+  - service_template: "{{ 'light.turn_on' if is_state('binary_sensor.node_14', 'on') else 'light.turn_off' }}"
     data:
       entity_id:
         - light.bathroom_all

@@ -1,12 +1,12 @@
 ---
 sensor.resillio_last_update:
-  friendly_name: Last Sensors Update
+  friendly_name: 'Last Sensors Update'
   icon: mdi:update 
 sensor.resillio_boot_time:
-  friendly_name: Last Boot Time
+  friendly_name: 'Last Boot Time'
   icon: mdi:clock
 sensor.resillio_cpu_temp:
-  friendly_name: CPU Temp.
+  friendly_name: 'CPU Temp.'
   templates:
     icon: mdi:temperature-celsius
     icon_color: >-
@@ -24,16 +24,16 @@ sensor.resillio_cpu_temp:
       if (state > -23) return 'rgb(189,0,107)';
       return 'rgb(0,0,0)';
 sensor.resillio_cpu_usage:
-  friendly_name: CPU Usage
+  friendly_name: 'CPU Usage'
   icon: mdi:cpu-64-bit
 sensor.resillio_disk_size:
-  friendly_name: Disk Size
+  friendly_name: 'Disk Size'
   icon: mdi:harddisk
 sensor.resillio_disk_usage:
-  friendly_name: Disk Usage
+  friendly_name: 'Disk Usage'
   icon: mdi:harddisk
 sensor.resillio_memory_used:
-  friendly_name: Memory Usage
+  friendly_name: 'Memory Usage'
   icon: mdi:memory
 sensor.resillio_power_supply:
   icon: mdi:power-plug 

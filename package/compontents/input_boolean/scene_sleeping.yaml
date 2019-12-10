@@ -1,4 +1,4 @@
 ---
 scene_sleeping:
-  name: Scene Sleeping
+  name: 'Scene Sleeping'
   initial: off

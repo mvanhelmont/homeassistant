@@ -1,6 +1,6 @@
 ---
 platform: command_line
 command: 'cat /sys/class/thermal/thermal_zone0/temp'
-name: "HA CPU Temp."
+name: 'HA CPU Temp.'
 unit_of_measurement: "°C"
-value_template: '{{ value | multiply(0.001) | round(1) }}'
+value_template: "{{ value | multiply(0.001) | round(1) }}"

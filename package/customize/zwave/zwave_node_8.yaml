@@ -1,40 +1,40 @@
 ---
 zwave.node_8:
-  friendly_name: Neo Switch Bank
+  friendly_name: 'Neo Switch Bank'
 sensor.node_8_alarm_level:
-  friendly_name: Neo Switch Bank Alarm Level
+  friendly_name: 'Neo Switch Bank Alarm Level'
 sensor.node_8_alarm_type:
-  friendly_name: Neo Switch Bank Alarm Type
+  friendly_name: 'Neo Switch Bank Alarm Type'
 sensor.node_8_current:
-  friendly_name: Neo Switch Bank Current Amp
+  friendly_name: 'Neo Switch Bank Current Amp'
 sensor.node_8_energy:
-  friendly_name: Neo Switch Bank kWh
+  friendly_name: 'Neo Switch Bank kWh'
 sensor.node_8_exporting:
-  friendly_name: Neo Switch Bank Export
+  friendly_name: 'Neo Switch Bank Export'
 sensor.node_8_interval:
-  friendly_name: Neo Switch Bank Interval 1
+  friendly_name: 'Neo Switch Bank Interval 1'
 sensor.node_8_interval_2:
-  friendly_name: Neo Switch Bank Interval 2
+  friendly_name: 'Neo Switch Bank Interval 2'
 sensor.node_8_interval_3:
-  friendly_name: Neo Switch Bank Interval 3
+  friendly_name: 'Neo Switch Bank Interval 3'
 sensor.node_8_interval_4:
-  friendly_name: Neo Switch Bank Interval 4
+  friendly_name: 'Neo Switch Bank Interval 4'
 sensor.node_8_power:
-  friendly_name: Neo Switch Bank Current Watt
+  friendly_name: 'Neo Switch Bank Current Watt'
   icon: mdi:flash 
 sensor.node_8_power_management:
-  friendly_name: Neo Switch Bank Power Man
+  friendly_name: 'Neo Switch Bank Power Man'
 sensor.node_8_previous_reading:
-  friendly_name: Neo Switch Bank Watt 1
+  friendly_name: 'Neo Switch Bank Watt 1'
 sensor.node_8_previous_reading_2:
-  friendly_name: Neo Switch Bank Watt 2
+  friendly_name: 'Neo Switch Bank Watt 2'
 sensor.node_8_previous_reading_3:
-  friendly_name: Neo Switch Bank Voltage History
+  friendly_name: 'Neo Switch Bank Voltage History'
 sensor.node_8_previous_reading_4:
-  friendly_name: Neo Switch Bank Amp Histroy
+  friendly_name: 'Neo Switch Bank Amp Histroy'
 sensor.node_8_sourcenodeid:
-  friendly_name: Neo Switch Bank SourceID
+  friendly_name: 'Neo Switch Bank SourceID'
 sensor.node_8_voltage:
-  friendly_name: Neo Switch Bank Voltage
+  friendly_name: 'Neo Switch Bank Voltage'
 switch.node_8_switch:
-  friendly_name: Neo Switch Bank Switch
+  friendly_name: 'Neo Switch Bank Switch'
