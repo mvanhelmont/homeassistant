@@ -1,4 +1,4 @@
-- alias: 'Notification - Kay Left or Arrive Home'
+- alias: "Notification - Kay Left or Arrive Home"
   trigger:
   - entity_id: device_tracker.geofency_kay
     platform: state

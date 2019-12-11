@@ -1,19 +1,19 @@
-- alias: 'Control - Bedroom Lights Are On'
+- alias: "Control - Bedroom Lights Are On"
   trigger:
   - entity_id: binary_sensor.node_14
     platform: state
-    to: 'off'
+    to: "off"
     for:
       minutes: 5
 
   condition:
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: switch.newkaku_01074522_a
-      state: 'on' 
+      state: "on"
 
   action:
     - service: switch.turn_off

@@ -1,5 +1,5 @@
 engine_turn_on_light:
-  alias: 'Turn On Light Engine'
+  alias: "Turn On Light Engine"
   sequence:
     - service: light.turn_on
       data_template:
@@ -8,7 +8,7 @@ engine_turn_on_light:
         transition: "{{ transition }}"
 
 engine_turn_off_light:
-  alias: 'Turn Off Light Engine'
+  alias: "Turn Off Light Engine"
   sequence:
     - service: light.turn_off
       data_template:

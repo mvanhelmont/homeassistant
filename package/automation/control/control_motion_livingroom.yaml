@@ -1,4 +1,4 @@
-- alias: 'Motion Detection - Livingroom On Off'
+- alias: "Motion Detection - Livingroom On Off"
   trigger:
     platform: state
     entity_id: binary_sensor.node_19
@@ -6,15 +6,15 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'on'
+      state: "on"
 
     - condition: state
       entity_id: switch.newkaku_0114ef92_b
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: switch.newkaku_0114ef92_c
-      state: 'off' 
+      state: "off"
 
   action:
     service: light.turn_on

@@ -1,4 +1,4 @@
-- alias: 'Control - ITHO fan off when goes to standby'
+- alias: "Control - ITHO fan off when goes to standby"
   trigger:
     platform: state
     entity_id: sensor.itho_speed
@@ -6,7 +6,7 @@
   condition:
     - condition: state
       entity_id: sensor.itho_speed
-      state: 'Laag'
+      state: "Laag"
 
   action:
     - service: fan.turn_off

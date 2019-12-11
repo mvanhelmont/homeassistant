@@ -2,15 +2,15 @@
 platform: template
 switches:
   appletv:
-    friendly_name: 'AppleTV'
+    friendly_name: "AppleTV"
     value_template: "{{ is_state_attr('remote.logitech_harmony', 'current_activity', 'AppleTV') }}"
     turn_on:
       service: remote.turn_on
       data:
         entity_id: remote.logitech_harmony
-        activity: 'AppleTV'
+        activity: "AppleTV"
     turn_off:
       service: remote.turn_on
       data:
         entity_id: remote.logitech_harmony
-        activity: 'PowerOff'
+        activity: "PowerOff"

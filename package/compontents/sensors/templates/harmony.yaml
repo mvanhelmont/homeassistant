@@ -2,10 +2,10 @@
 platform: template
 sensors:
   harmony:
-    friendly_name: 'Harmony Status'
+    friendly_name: "Harmony Status"
     value_template: >-
       {% if states.remote.logitech_harmony.attributes.current_activity == "PowerOff" %}         
-        Off
+        off
       {% elif states.remote.logitech_harmony.attributes.current_activity == "AppleTV" %}
         Apple TV
       {% elif states.remote.logitech_harmony.attributes.current_activity == "Ziggo" %}

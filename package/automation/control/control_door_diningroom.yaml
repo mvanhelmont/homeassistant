@@ -1,4 +1,4 @@
-- alias: 'Door Sensor - Diningroom door open Diningroom light off'
+- alias: "Door Sensor - Diningroom door open Diningroom light off"
   trigger:
     platform: state
     entity_id: binary_sensor.node_10
@@ -6,11 +6,11 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_daylight
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'off' 
+      state: "off" 
 
   action:
     - service: light.turn_on

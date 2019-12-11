@@ -1,4 +1,4 @@
-- alias: 'Scene - Guests'
+- alias: "Scene - Guests"
   trigger:
 
   - entity_id: input_boolean.scene_guests

@@ -1,19 +1,19 @@
-- alias: 'Control - AppleTV is playing'
+- alias: "Control - AppleTV is playing"
   trigger:
   - entity_id: media_player.woonkamer_2
     platform: state
-    to: 'playing'
+    to: "playing"
     for:
       seconds: 10
 
   condition: 
     - condition: state
       entity_id: sun.sun
-      state: 'below_horizon'
+      state: "below_horizon"
 
     - condition: state
       entity_id: input_boolean.scene_appletv
-      state: 'on'   
+      state: "on"
 
   action:
     - service: light.turn_on

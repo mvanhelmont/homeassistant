@@ -1,4 +1,4 @@
-- alias: 'Control - Disable Nest Control'
+- alias: "Control - Disable Nest Control"
   trigger:
 
   - entity_id: input_boolean.nest_disable_control

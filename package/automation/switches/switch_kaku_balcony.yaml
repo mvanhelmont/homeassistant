@@ -1,4 +1,4 @@
-- alias: 'Switch - Balcony On Off'
+- alias: "Switch - Balcony On Off"
   trigger:
     - platform: state
       entity_id: switch.newkaku_011fdd46_b

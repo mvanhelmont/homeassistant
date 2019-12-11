@@ -2,6 +2,6 @@
 platform: template
 sensors:
   manual_kay_home:
-    friendly_name: 'Manual Kay Home Sensor'
+    friendly_name: "Manual Kay Home Sensor"
     value_template: "{{ states.input_boolean.kay_home_manual.state == 'on' }}"
     entity_id: input_boolean.kay_home_manual

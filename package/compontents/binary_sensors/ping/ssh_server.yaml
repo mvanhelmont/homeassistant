@@ -2,4 +2,4 @@
 platform: ping
 host: 192.168.100.25
 scan_interval: 60
-name: 'SSH Server'
+name: "SSH Server"

@@ -2,7 +2,7 @@
   trigger:
     - platform: state
       entity_id: switch.meek_cooking
-      to: 'on'
+      to: "on"
 
   action:
     service: switch.turn_on
@@ -13,7 +13,7 @@
   trigger:
     - platform: state
       entity_id: switch.meek_cooking
-      to: 'off'
+      to: "off"
 
   action:
     service: switch.turn_off

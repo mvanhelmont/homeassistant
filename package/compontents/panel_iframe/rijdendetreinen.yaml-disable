@@ -1,5 +1,5 @@
 ---
 rijdendetreinen:
-  title: 'NS'
+  title: "NS"
   icon: mdi:train
-  url: 'https://www.rijdendetreinen.nl/vertrektijden/station/amsterdam-zuid?style=tb&hide_train_numbers=1&hide_stock=1&time=both' 
+  url: "https://www.rijdendetreinen.nl/vertrektijden/station/amsterdam-zuid?style=tb&hide_train_numbers=1&hide_stock=1&time=both"

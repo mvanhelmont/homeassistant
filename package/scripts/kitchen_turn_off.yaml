@@ -1,5 +1,5 @@
 kitchen_turn_off:
-  alias: 'Kitchen Turn Off'
+  alias: "Kitchen Turn Off"
   sequence:
     service: light.turn_off
     entity_id: 

@@ -1,4 +1,4 @@
-- alias: 'Notification - Battery Low Alert'
+- alias: "Notification - Battery Low Alert"
   trigger:
     - platform: time_pattern
       minutes: "/60"

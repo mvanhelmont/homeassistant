@@ -1,11 +1,16 @@
 """Component to create and remove Hass.io snapshots."""
-
+import asyncio
 import logging
+import os
 from datetime import datetime, timedelta, timezone
-import voluptuous as vol
+from os.path import join, isfile
 
-from homeassistant.components.hassio.handler import HassioAPIError, HassIO
-from homeassistant.helpers.typing import ConfigType, HomeAssistantType, ServiceCallType
+import aiohttp
+import async_timeout
+import voluptuous as vol
+from slugify import slugify
+
+import homeassistant.helpers.config_validation as cv
 from homeassistant.components.hassio import (
     DOMAIN as HASSIO_DOMAIN,
     SERVICE_SNAPSHOT_FULL,
@@ -15,10 +20,12 @@ from homeassistant.components.hassio import (
     ATTR_FOLDERS,
     ATTR_ADDONS,
 )
+from homeassistant.components.hassio.const import X_HASSIO
+from homeassistant.components.hassio.handler import HassioAPIError, HassIO
+from homeassistant.const import ATTR_NAME
 from homeassistant.helpers.json import JSONEncoder
 from homeassistant.helpers.storage import Store
-import homeassistant.helpers.config_validation as cv
-from homeassistant.const import ATTR_NAME
+from homeassistant.helpers.typing import ConfigType, HomeAssistantType, ServiceCallType
 
 _LOGGER = logging.getLogger(__name__)
 
@@ -28,6 +35,7 @@ STORAGE_VERSION = 1
 
 ATTR_KEEP_DAYS = "keep_days"
 ATTR_EXCLUDE = "exclude"
+ATTR_BACKUP_PATH = "backup_path"
 
 DEFAULT_SNAPSHOT_FOLDERS = {
     "ssl": "ssl",
@@ -37,11 +45,21 @@ DEFAULT_SNAPSHOT_FOLDERS = {
 }
 
 CONF_AUTO_PURGE = "auto_purge"
+CONF_BACKUP_TIMEOUT = "backup_timeout"
+
+DEFAULT_BACKUP_TIMEOUT = 1200
 
 SERVICE_PURGE = "purge"
 
 CONFIG_SCHEMA = vol.Schema(
-    {DOMAIN: {vol.Optional(CONF_AUTO_PURGE, default=True): cv.boolean}},
+    {
+        DOMAIN: {
+            vol.Optional(CONF_AUTO_PURGE, default=True): cv.boolean,
+            vol.Optional(
+                CONF_BACKUP_TIMEOUT, default=DEFAULT_BACKUP_TIMEOUT
+            ): vol.Coerce(int),
+        }
+    },
     extra=vol.ALLOW_EXTRA,
 )
 
@@ -52,16 +70,21 @@ SCHEMA_SNAPSHOT_FULL = SCHEMA_SNAPSHOT_FULL.extend(
             vol.Optional(ATTR_FOLDERS): vol.All(cv.ensure_list, [cv.string]),
             vol.Optional(ATTR_ADDONS): vol.All(cv.ensure_list, [cv.string]),
         },
+        vol.Optional(ATTR_BACKUP_PATH): cv.isdir,
     }
 )
 
 SCHEMA_SNAPSHOT_PARTIAL = SCHEMA_SNAPSHOT_PARTIAL.extend(
-    {vol.Optional(ATTR_KEEP_DAYS): vol.Coerce(float)}
+    {
+        vol.Optional(ATTR_KEEP_DAYS): vol.Coerce(float),
+        vol.Optional(ATTR_BACKUP_PATH): cv.isdir,
+    }
 )
 
 COMMAND_SNAPSHOT_FULL = "/snapshots/new/full"
 COMMAND_SNAPSHOT_PARTIAL = "/snapshots/new/partial"
 COMMAND_SNAPSHOT_REMOVE = "/snapshots/{slug}/remove"
+COMMAND_SNAPSHOT_DOWNLOAD = "/snapshots/{slug}/download"
 COMMAND_GET_ADDONS = "/addons"
 
 
@@ -78,7 +101,9 @@ async def async_setup(hass: HomeAssistantType, config: ConfigType):
         return False
 
     # initialise AutoBackup class.
-    auto_backup = AutoBackup(hass, hassio, config[CONF_AUTO_PURGE])
+    auto_backup = AutoBackup(
+        hass, hassio, config[CONF_AUTO_PURGE], config[CONF_BACKUP_TIMEOUT]
+    )
     await auto_backup.load_snapshots_expiry()
 
     # register services.
@@ -112,7 +137,13 @@ async def async_setup(hass: HomeAssistantType, config: ConfigType):
 
 
 class AutoBackup:
-    def __init__(self, hass: HomeAssistantType, hassio: HassIO, auto_purge: bool):
+    def __init__(
+        self,
+        hass: HomeAssistantType,
+        hassio: HassIO,
+        auto_purge: bool,
+        backup_timeout: int,
+    ):
         self._hass = hass
         self._hassio = hassio
         self._snapshots_store = Store(
@@ -120,6 +151,7 @@ class AutoBackup:
         )
         self._snapshots_expiry = {}
         self._auto_purge = auto_purge
+        self._backup_timeout = backup_timeout
 
     async def load_snapshots_expiry(self):
         """Load snapshots expiry dates from home assistants storage."""
@@ -175,6 +207,7 @@ class AutoBackup:
 
         command = COMMAND_SNAPSHOT_FULL if full else COMMAND_SNAPSHOT_PARTIAL
         keep_days = data.pop(ATTR_KEEP_DAYS, None)
+        backup_path = data.pop(ATTR_BACKUP_PATH, None)
 
         if full:
             # performing full backup.
@@ -222,8 +255,11 @@ class AutoBackup:
             data,
         )
 
+        # make request to create new snapshot.
         try:
-            result = await self._hassio.send_command(command, payload=data, timeout=300)
+            result = await self._hassio.send_command(
+                command, payload=data, timeout=self._backup_timeout
+            )
 
             _LOGGER.debug("Snapshot create result: %s" % result)
 
@@ -243,6 +279,27 @@ class AutoBackup:
                 )
                 # write snapshot expiry to storage
                 await self._snapshots_store.async_save(self._snapshots_expiry)
+
+            # copy backup to location if specified
+            if backup_path:
+                # ensure the name is a valid filename.
+                name = data.get(ATTR_NAME)
+                if name:
+                    filename = slugify(name, lowercase=False, separator="_")
+                else:
+                    filename = slug
+
+                # ensure the filename is a tar file.
+                if not filename.endswith(".tar"):
+                    filename += ".tar"
+
+                destination = join(backup_path, filename)
+
+                # check if file already exists
+                if isfile(destination):
+                    destination = join(backup_path, f"{slug}.tar")
+
+                await self.download_snapshot(slug, destination)
 
             # purging old snapshots
             if self._auto_purge:
@@ -289,3 +346,36 @@ class AutoBackup:
             _LOGGER.error("Error on Hass.io API: %s", err)
             return False
         return True
+
+    async def download_snapshot(self, slug, output_path):
+        """Download and save a snapshot from Hass.io."""
+        command = COMMAND_SNAPSHOT_DOWNLOAD.format(slug=slug)
+
+        try:
+            with async_timeout.timeout(self._backup_timeout):
+                request = await self._hassio.websession.request(
+                    "get",
+                    f"http://{self._hassio._ip}{command}",
+                    headers={X_HASSIO: os.environ.get("HASSIO_TOKEN", "")},
+                )
+
+                if request.status not in (200, 400):
+                    _LOGGER.error("%s return code %d.", command, request.status)
+                    raise HassioAPIError()
+
+                with open(output_path, "wb") as file:
+                    file.write(await request.read())
+
+                _LOGGER.info("Downloaded snapshot '%s' to '%s'", slug, output_path)
+                return
+
+        except asyncio.TimeoutError:
+            _LOGGER.error("Timeout on %s request", command)
+
+        except aiohttp.ClientError as err:
+            _LOGGER.error("Client error on %s request %s", command, err)
+
+        except IOError:
+            _LOGGER.error("Failed to download snapshot '%s' to '%s'", slug, output_path)
+
+        raise HassioAPIError()

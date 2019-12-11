@@ -1,4 +1,4 @@
-- alias: 'Switch - Bathroom On Off'
+- alias: "Switch - Bathroom On Off"
   trigger:
     - platform: state
       entity_id: switch.newkaku_01616a32_a

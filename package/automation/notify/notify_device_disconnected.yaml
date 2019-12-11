@@ -1,4 +1,4 @@
-- alias: 'Notification - Device disconnected'
+- alias: "Notification - Device disconnected"
   trigger:
     - platform: state
       entity_id: 
@@ -12,7 +12,7 @@
         - binary_sensor.meek_kitchen
         - binary_sensor.meek_wc
         - binary_sensor.meek_bathroom
-      to: 'off'
+      to: "off"
 
   action:
     - service: script.pushover_engine
@@ -22,7 +22,7 @@
         sound: bike
         title: "HA Notify Engine"
 
-- alias: 'Notification - Device connected'
+- alias: "Notification - Device connected"
   trigger:
     - platform: state
       entity_id: 
@@ -36,7 +36,7 @@
         - binary_sensor.meek_kitchen
         - binary_sensor.meek_wc
         - binary_sensor.meek_bathroom  
-      to: 'on'
+      to: "on"
 
   action:
     - service: script.pushover_engine

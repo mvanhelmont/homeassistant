@@ -1,5 +1,5 @@
 evening_normal:
-  alias: 'Evening Normal Light Scene'
+  alias: "Evening Normal Light Scene"
   sequence:
     - service: light.turn_on
       data:
@@ -20,7 +20,7 @@ evening_normal:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
 evening_birthday:
-  alias: 'Evening Birthday Light Scene'
+  alias: "Evening Birthday Light Scene"
   sequence:
 
     - service: light.turn_on
@@ -45,7 +45,7 @@ evening_birthday:
         effect: 0
 
 evening_halloween:
-  alias: 'Evening Halloween Light Scene'
+  alias: "Evening Halloween Light Scene"
   sequence:
 
     - service: light.turn_on
@@ -75,7 +75,7 @@ evening_halloween:
         effect: 0
 
 evening_kingsday:
-  alias: 'Evening Kingsday Light Scene'
+  alias: "Evening Kingsday Light Scene"
   sequence:
 
     - service: light.turn_on
@@ -109,7 +109,7 @@ evening_kingsday:
         effect: 0
 
 evening_christmas:
-  alias: 'Evening Christmas Light Scene'
+  alias: "Evening Christmas Light Scene"
   sequence:
     - service: switch.turn_on
       entity_id:
@@ -130,13 +130,13 @@ evening_christmas:
           - light.dressoir_1
           - light.dressoir_3
         color_name: blue
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 75 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_2
         color_temp: 153
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 75 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
       data:

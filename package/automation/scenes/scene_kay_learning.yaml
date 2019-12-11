@@ -1,4 +1,4 @@
-- alias: 'Scene - Kay Learning'
+- alias: "Scene - Kay Learning"
   trigger:
 
   - entity_id: switch.kay_learning
@@ -7,7 +7,7 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_daylight
-      state: 'off'
+      state: "off"
 
   action:
   - service: light.turn_on

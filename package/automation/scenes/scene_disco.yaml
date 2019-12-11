@@ -1,9 +1,9 @@
-- alias: 'Scene - Disco'
+- alias: "Scene - Disco"
   trigger:
 
   - entity_id: input_boolean.scene_disco
     platform: state
-    to: 'on'
+    to: "on"
 
   action:
   - service: light.turn_on

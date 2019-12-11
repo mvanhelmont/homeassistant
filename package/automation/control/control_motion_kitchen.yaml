@@ -1,4 +1,4 @@
-- alias: 'Motion Detection - Kitchen On Off'
+- alias: "Motion Detection - Kitchen On Off"
   trigger:
     platform: state
     entity_id: binary_sensor.node_16
@@ -6,11 +6,11 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_daylight
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: input_boolean.scene_cooking
-      state: 'off'
+      state: "off"
 
   action: 
     - service_template: >-

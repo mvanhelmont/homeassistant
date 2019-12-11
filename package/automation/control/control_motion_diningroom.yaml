@@ -1,4 +1,4 @@
-- alias: 'Motion Detection - Diningroom On Off'
+- alias: "Motion Detection - Diningroom On Off"
   trigger:
     platform: state
     entity_id: binary_sensor.node_18
@@ -6,7 +6,7 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'on'
+      state: "on"
 
   action:
     - service: light.turn_on

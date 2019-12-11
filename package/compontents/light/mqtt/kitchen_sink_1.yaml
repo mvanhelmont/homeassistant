@@ -1,6 +1,6 @@
 ---
 platform: mqtt
-name: 'Sink 1'
+name: "Sink 1"
 schema: json
 command_topic: "milight/0xAAA1/rgb_cct/1"
 state_topic: "milight/states/0xAAA1/rgb_cct/1"

@@ -1,6 +1,6 @@
 ---
 group_family:
-  name: 'Group Family'
+  name: "Group Family"
   entities:
     - device_tracker.geofency_peter
     - device_tracker.geofency_kay

@@ -1,4 +1,4 @@
-- alias: 'Scene - AppleTV'
+- alias: "Scene - AppleTV"
   trigger:
 
   - platform: state
@@ -6,28 +6,28 @@
 
   - entity_id: sensor.harmony
     platform: state
-    to: 'Apple TV'
+    to: "Apple TV"
 
   condition:
     - condition: state
       entity_id: sun.sun
-      state: 'below_horizon'
+      state: "below_horizon"
 
     - condition: state
       entity_id: input_boolean.scene_appletv
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: sensor.harmony
-      state: 'Apple TV'
+      state: "Apple TV"
 
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
-      state: 'on' 
+      state: "on"
 
   action:
   - service: input_boolean.turn_on
@@ -77,4 +77,4 @@
   - service: script.engine_say
     data_template:
       media_player: media_player.this_device
-      say_scene_appletv: "true" 
+      say_scene_appletv: "true"

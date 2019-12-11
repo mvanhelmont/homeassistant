@@ -1,4 +1,4 @@
-- alias: 'Notification - Update Available Notification'
+- alias: "Notification - Update Available Notification"
   initial_state: on
   trigger:
     platform: state

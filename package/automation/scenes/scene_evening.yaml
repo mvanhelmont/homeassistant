@@ -1,4 +1,4 @@
-- alias: 'Scene - Evening'
+- alias: "Scene - Evening"
   trigger:
 
   - platform: time_pattern
@@ -12,28 +12,28 @@
 
   - entity_id: sensor.harmony
     platform: state
-    to: 'Off'
+    to: "Off"
 
   condition:
     - condition: state
       entity_id: sun.sun
-      state: 'below_horizon'
+      state: "below_horizon"
 
     - condition: state
       entity_id: input_boolean.scene_evening
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: sensor.harmony
-      state: 'Off'
+      state: "off"
 
     - condition: state 
       entity_id: binary_sensor.sensor_manual_family_home
-      state: 'on'
+      state: "on"
 
   action:
   - service: input_boolean.turn_on

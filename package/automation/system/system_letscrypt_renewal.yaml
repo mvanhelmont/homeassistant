@@ -1,7 +1,7 @@
-- alias: 'System - LetsEncrypt renewal'
+- alias: "System - LetsEncrypt renewal"
   trigger:
   - platform: time
-    at: '02:00:00'
+    at: "02:00:00"
 
   action:
   - service: hassio.addon_stop
@@ -12,7 +12,7 @@
     data:
       addon: core_letsencrypt
 
-  - delay: '00:01:30'
+  - delay: "00:01:30"
 
   - service: hassio.addon_start
     data:

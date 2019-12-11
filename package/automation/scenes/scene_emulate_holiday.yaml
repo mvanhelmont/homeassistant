@@ -1,4 +1,4 @@
-- alias: 'Scene - Emulate Holiday'
+- alias: "Scene - Emulate Holiday"
   trigger:
 
     platform: sun
@@ -7,11 +7,11 @@
   condition:
     - condition: state
       entity_id: sun.sun
-      state: 'below_horizon'
+      state: "below_horizon"
 
     - condition: state
       entity_id: input_boolean.emulate_holiday
-      state: 'on'
+      state: "on"
 
   action:
     - service: light.turn_on

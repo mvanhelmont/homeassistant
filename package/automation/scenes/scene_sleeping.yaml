@@ -1,9 +1,9 @@
-- alias: 'Scene - Sleeping'
+- alias: "Scene - Sleeping"
   trigger:
 
   - entity_id: input_boolean.scene_sleeping
     platform: state
-    to: 'on'
+    to: "on"
 
   action:
   - service: light.turn_off
@@ -29,7 +29,7 @@
     data:
       entity_id: input_boolean.scene_sleeping
 
-  - delay: '00:06:00'
+  - delay: "00:06:00"
 
   - service: light.turn_off
     data:

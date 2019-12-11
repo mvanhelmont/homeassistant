@@ -1,4 +1,4 @@
-- alias: 'System - Kay Left or Arrive Locative or GeoFency Manual'
+- alias: "System - Kay Left or Arrive Locative or GeoFency Manual"
   trigger:
   - platform: state
     entity_id:

@@ -1,8 +1,8 @@
-- alias: 'Notification - RDW - Verzekering'
+- alias: "Notification - RDW - Verzekering"
   trigger:
     - platform: state
       entity_id: sensor.toyota_aygo_insured
-      to: 'False'
+      to: "False"
   action:
     - service: notify.ha_email
       data_template:

@@ -1,4 +1,4 @@
-- alias: 'Motion Detection - Notification Nobody Home'
+- alias: "Motion Detection - Notification Nobody Home"
   trigger:
     - platform: state
       entity_id: 
@@ -11,18 +11,18 @@
         - binary_sensor.node_17
         - binary_sensor.node_18
         - binary_sensor.node_19
-      to: 'on'
+      to: "on"
 
     - platform: state
       entity_id: 
         - sensor.node_13_access_control
         - sensor.node_11_access_control
-      to: '22'
+      to: "22"
 
   condition:
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
-      state: 'off' 
+      state: "off" 
 
   action:
   - service: script.pushover_engine

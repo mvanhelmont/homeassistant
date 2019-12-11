@@ -1,4 +1,4 @@
-- alias: 'Motion Detection - Toilet On Off'
+- alias: "Motion Detection - Toilet On Off"
   trigger:
     platform: state
     entity_id: binary_sensor.node_20
@@ -6,7 +6,7 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'on'
+      state: "on"
 
   action:
     - service: light.turn_on

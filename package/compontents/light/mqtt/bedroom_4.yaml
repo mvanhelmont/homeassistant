@@ -1,6 +1,6 @@
 ---
 platform: mqtt
-name: 'Bedroom 4'
+name: "Bedroom 4"
 schema: json
 command_topic: "milight/0xAAAA/rgb_cct/4"
 state_topic: "milight/states/0xAAAA/rgb_cct/4"

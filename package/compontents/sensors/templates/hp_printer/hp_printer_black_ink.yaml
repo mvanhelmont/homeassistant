@@ -2,6 +2,6 @@
 platform: template
 sensors:
   hp_black_ink:
-    friendly_name: 'HP Black Ink Level'
+    friendly_name: "HP Black Ink Level"
     unit_of_measurement: "%"
     value_template: "{{ ((states('sensor.hp_cur_black') | float) / (states('sensor.hp_max_black') | float) * 100) | round(0) }}"

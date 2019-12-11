@@ -1,117 +1,117 @@
 ---
 input_boolean.emulate_holiday:
-  friendly_name: 'Vacation'
-  homebridge_name: 'Vacation'
+  friendly_name: "Vacation"
+  homebridge_name: "Vacation"
   templates:
     icon: mdi:nintendo-switch
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
   
 switch.meek_toilet:
   icon: mdi:nintendo-switch
-  friendly_name: 'Toilet'
-  homebridge_name: 'Toilet Switch'
+  friendly_name: "Toilet"
+  homebridge_name: "Toilet Switch"
 
 switch.meek_dressoir:
   icon: mdi:nintendo-switch
-  friendly_name: 'Dressoir'
-  homebridge_name: 'Dressoir Switch'
+  friendly_name: "Dressoir"
+  homebridge_name: "Dressoir Switch"
 
 switch.meek_balcony:
   icon: mdi:nintendo-switch
-  friendly_name: 'Balcony'
-  homebridge_name: 'Balcony Switch'
+  friendly_name: "Balcony"
+  homebridge_name: "Balcony Switch"
 
 switch.meek_hallway:
   icon: mdi:nintendo-switch
-  friendly_name: 'Hallway'
-  homebridge_name: 'Hallway Switch'
+  friendly_name: "Hallway"
+  homebridge_name: "Hallway Switch"
 
 switch.meek_bathroom:
   icon: mdi:nintendo-switch
-  friendly_name: 'Bathroom'
-  homebridge_name: 'Bathroom Switch'
+  friendly_name: "Bathroom"
+  homebridge_name: "Bathroom Switch"
 
 switch.meek_bedroom:
   icon: mdi:nintendo-switch
-  friendly_name: 'Bedroom'
-  homebridge_name: 'Bedroom Switch'
+  friendly_name: "Bedroom"
+  homebridge_name: "Bedroom Switch"
 
 switch.meek_kitchen_seeling:
   icon: mdi:nintendo-switch
-  friendly_name: 'Kitchen'
-  homebridge_name: 'Kitchen Switch'
+  friendly_name: "Kitchen"
+  homebridge_name: "Kitchen Switch"
 
 switch.meek_kitchen_sink:
   icon: mdi:nintendo-switch
-  friendly_name: 'Kitchen'
-  homebridge_name: 'Kitchen Switch'
+  friendly_name: "Kitchen"
+  homebridge_name: "Kitchen Switch"
 
 switch.meek_cooking:
   icon: mdi:nintendo-switch
-  friendly_name: 'Cooking'
-  homebridge_name: 'Cooking Switch'
+  friendly_name: "Cooking"
+  homebridge_name: "Cooking Switch"
   
 switch.newkaku_0114ef92_b:
   icon: mdi:nintendo-switch
-  friendly_name: 'Wall'
-  homebridge_name: 'Wall Switch'
+  friendly_name: "Wall"
+  homebridge_name: "Wall Switch"
   
 switch.newkaku_0114ef92_c:
-  friendly_name: 'Window'
-  homebridge_name: 'Window Switch'
+  friendly_name: "Window"
+  homebridge_name: "Window Switch"
   
   icon: mdi:nintendo-switch
 switch.newkaku_011fdd46_b:
   icon: mdi:nintendo-switch
-  friendly_name: 'Balcony'
-  homebridge_name: 'Balcony Switch'
+  friendly_name: "Balcony"
+  homebridge_name: "Balcony Switch"
   
 switch.newkaku_011fdd46_c:
   icon: mdi:nintendo-switch
-  friendly_name: 'Dressoir'
-  homebridge_name: 'Dressoir Switch'
+  friendly_name: "Dressoir"
+  homebridge_name: "Dressoir Switch"
   
 light.newkaku_01401eb6_a:
   icon: mdi:ceiling-light
-  friendly_name: 'Diningroom'
-  homebridge_name: 'Diningroom Switch'
+  friendly_name: "Diningroom"
+  homebridge_name: "Diningroom Switch"
   
 switch.newkaku_01074522_a:
   icon: mdi:nintendo-switch
-  friendly_name: 'Bedroom'
-  homebridge_name: 'Bedroom Switch'
+  friendly_name: "Bedroom"
+  homebridge_name: "Bedroom Switch"
   
 switch.newkaku_011fad02_b:
   icon: mdi:nintendo-switch
-  friendly_name: 'Kitchen'
-  homebridge_name: 'Kitchen Switch'
+  friendly_name: "Kitchen"
+  homebridge_name: "Kitchen Switch"
   
 switch.newkaku_011fad02_c:
   icon: mdi:nintendo-switch
-  friendly_name: 'Cooker'
-  homebridge_name: 'Cooker Switch'
+  friendly_name: "Cooker"
+  homebridge_name: "Cooker Switch"
   
 #switch.newkaku_014ad3ba_a:
 #  icon: mdi:nintendo-switch
-#  friendly_name: 'Kitchen
-#  homebridge_name: 'Kitchen Switch
+#  friendly_name: "Kitchen
+#  homebridge_name: "Kitchen Switch
   
 switch.newkaku_01616a32_a:
   icon: mdi:nintendo-switch
-  friendly_name: 'Bathroom'
-  homebridge_name: 'Bathroom Switch'
+  friendly_name: "Bathroom"
+  homebridge_name: "Bathroom Switch"
   
 switch.newkaku_014e5906_a:
   icon: mdi:nintendo-switch
-  friendly_name: 'Testing'
-  homebridge_name: 'Testing'
+  friendly_name: "Testing"
+  homebridge_name: "Testing"
   
 switch.newkaku_016138ba_a:
   icon: mdi:nintendo-switch
-  friendly_name: 'Hallway'
-  homebridge_name: 'Hallway Switch'
+  friendly_name: "Hallway"
+  homebridge_name: "Hallway Switch"
 
 switch.kay_learning:
   icon: mdi:nintendo-switch
-  friendly_name: 'Kay Learn'
-  homebridge_name: 'Kay Learn'
+  friendly_name: "Kay Learn"
+  homebridge_name: "Kay Learn"

@@ -1,7 +1,7 @@
 ---
 person.kay_acar:
-  friendly_name: 'Kay'
+  friendly_name: "Kay"
   entity_picture: /local/kay-home.jpg
 person.peter_oudenes:
-  friendly_name: 'Peter'
+  friendly_name: "Peter"
   entity_picture: /local/peter-home.jpg

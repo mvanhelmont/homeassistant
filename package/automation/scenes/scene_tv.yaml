@@ -1,4 +1,4 @@
-- alias: 'Scene - TV'
+- alias: "Scene - TV"
   trigger:
 
   - platform: state
@@ -6,28 +6,28 @@
 
   - entity_id: sensor.harmony
     platform: state
-    to: 'TV'
+    to: "TV"
 
   condition:
     - condition: state
       entity_id: sun.sun
-      state: 'below_horizon'
+      state: "below_horizon"
 
     - condition: state
       entity_id: input_boolean.scene_tv
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'off'
+      state: "off"
 
     - condition: state
       entity_id: sensor.harmony
-      state: 'TV'
+      state: "TV"
 
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
-      state: 'on' 
+      state: "on" 
 
   action:
   - service: input_boolean.turn_on

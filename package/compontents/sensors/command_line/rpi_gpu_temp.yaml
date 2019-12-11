@@ -1,7 +1,7 @@
 ---
 platform: command_line
 command: "/opt/vc/bin/vcgencmd measure_temp"
-name: 'HA GPU Temp.'
+name: "HA GPU Temp."
 unit_of_measurement: "°C"
+value_template: "{{ value | replace('temp=', '') | replace(''''C', '') }}"
 #value_template: '{{ value | replace("temp=", "") | replace("''C", "") }}'
-value_template: "{{ value | replace('temp=', '') | replace('''C', '') }}"

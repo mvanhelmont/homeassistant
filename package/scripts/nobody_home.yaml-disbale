@@ -1,5 +1,5 @@
 nobody_home:
-  alias: 'Nobody Home'
+  alias: "Nobody Home"
   sequence:
     - service: light.turn_off
       data:

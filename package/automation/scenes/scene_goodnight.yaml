@@ -1,18 +1,18 @@
-- alias: 'Scene - Goodnight'
+- alias: "Scene - Goodnight"
   trigger:
 
   - entity_id: input_boolean.scene_goodnight
     platform: state
-    to: 'on'
+    to: "on"
 
   condition:
     - condition: state
       entity_id: sun.sun
-      state: 'below_horizon'
+      state: "below_horizon"
 
     - condition: state
       entity_id: input_boolean.scene_goodnight
-      state: 'on'
+      state: "on"
 
   action:
   - service: input_boolean.turn_off

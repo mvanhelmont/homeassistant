@@ -1,5 +1,5 @@
 appletv_control_paused:
-  alias: 'AppleTV Control Paused Scene'
+  alias: "AppleTV Control Paused Scene"
   sequence:
   
     - service: light.turn_on
@@ -30,7 +30,7 @@ appletv_control_paused:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
 appletv_control_playing:
-  alias: 'AppleTV Control Playing Scene'
+  alias: "AppleTV Control Playing Scene"
   sequence:
 
     - service: light.turn_on
@@ -76,7 +76,7 @@ appletv_control_playing:
           
 
 appletv_control_idle:
-  alias: 'AppleTV Control Idle Scene'
+  alias: "AppleTV Control Idle Scene"
   sequence:
 
     - service: light.turn_on

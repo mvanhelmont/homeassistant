@@ -1,4 +1,4 @@
-- alias: 'Scene - Nobody Home'
+- alias: "Scene - Nobody Home"
   trigger:
 
   - platform: state
@@ -7,7 +7,7 @@
   condition:
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
-      state: 'off' 
+      state: "off"
 
   action:
   - service: input_boolean.turn_on
@@ -24,7 +24,6 @@
         - input_boolean.scene_sexy
         - input_boolean.lux_level_low
 
-# TURN OFF ALL LIGHT
   - service: light.turn_off
     data:
       entity_id:

@@ -2,15 +2,15 @@
 platform: template
 switches:
   kodi:
-    friendly_name: 'Kodi'
+    friendly_name: "Kodi"
     value_template: "{{ is_state_attr('remote.logitech_harmony', 'current_activity', 'Kodi') }}"
     turn_on:
       service: remote.turn_on
       data:
         entity_id: remote.logitech_harmony
-        activity: 'Kodi'
+        activity: "Kodi"
     turn_off:
       service: remote.turn_on
       data:
         entity_id: remote.logitech_harmony
-        activity: 'PowerOff'
+        activity: "PowerOff"

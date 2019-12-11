@@ -1,20 +1,20 @@
 ---
 zwave.node_12:
-  friendly_name: 'Bedroom Door'
+  friendly_name: "Bedroom Door"
 sensor.node_12_access_control:
-  friendly_name: 'Bedroom Door Access Control'
+  friendly_name: "Bedroom Door Access Control"
 sensor.node_12_alarm_level:
-  friendly_name: 'Bedroom Door Alarm Level'
+  friendly_name: "Bedroom Door Alarm Level"
 sensor.node_12_alarm_type:
-  friendly_name: 'Bedroom Door Alarm Type'
+  friendly_name: "Bedroom Door Alarm Type"
 sensor.node_12_burglar:
-  friendly_name: 'Bedroom Door Burglar'
+  friendly_name: "Bedroom Door Burglar"
 sensor.node_12_luminance:
-  friendly_name: 'Bedroom Door Lux'
+  friendly_name: "Bedroom Door Lux"
 sensor.node_12_sourcenodeid:
-  friendly_name: 'Bedroom Door SourceID'
+  friendly_name: "Bedroom Door SourceID"
 sensor.node_12_temperature:
-  friendly_name: 'Bedroom Door Temp'
+  friendly_name: "Bedroom Door Temp"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -32,11 +32,11 @@ sensor.node_12_temperature:
       return 'rgb(0,0,0)';
 
 sensor.node_12_power_management:
-  friendly_name: 'Bedroom Door Power Man'
+  friendly_name: "Bedroom Door Power Man"
 sensor.node_12_heat:
-  friendly_name: 'Bedroom Door Heat'
+  friendly_name: "Bedroom Door Heat"
 binary_sensor.node_12:
-  friendly_name: 'Bedroom Door'
+  friendly_name: "Bedroom Door"
   icon: mdi:leak
 sensor.node_12_battery_level:
-  friendly_name: 'Bedroom Door Battery'
+  friendly_name: "Bedroom Door Battery"

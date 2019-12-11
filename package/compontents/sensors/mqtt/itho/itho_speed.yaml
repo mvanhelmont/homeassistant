@@ -1,6 +1,6 @@
 ---
 platform: mqtt
-name: 'ITHO Speed'
+name: "ITHO Speed"
 state_topic: "ITHO/Fan/State"
 value_template: >-
   {% if value|float == 0 %}

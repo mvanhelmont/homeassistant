@@ -2,7 +2,7 @@
 platform: template
 sensors:
   period_of_day:
-    friendly_name: 'Period of the Day'
+    friendly_name: "Period of the Day"
     value_template: >-
       {% if (as_timestamp(states.sun.sun.attributes.next_dusk)) - (as_timestamp(states.sun.sun.attributes.next_setting)) < 0 %}
         Dusk
@@ -14,8 +14,3 @@ sensors:
         DayTime
       {% endif %}
     icon_template: "{{ 'mdi:weather-sunny' if is_state('sun.sun', 'above_horizon') else 'mdi:weather-night' }}"
-#      {% if is_state('sun.sun', 'above_horizon') %}
-#        mdi:weather-sunny
-#      {% else %}
-#        mdi:weather-night
-#      {% endif %}

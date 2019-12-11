@@ -1,4 +1,4 @@
-- alias: 'Switch - Dressoir On Off'
+- alias: "Switch - Dressoir On Off"
   trigger:
     - platform: state
       entity_id: switch.newkaku_011fdd46_c

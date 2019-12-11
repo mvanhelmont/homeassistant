@@ -1,97 +1,97 @@
 ---
 input_boolean.scene_disco:
-  friendly_name: 'Disco'
-  homebridge_name: 'Disco'
+  friendly_name: "Disco"
+  homebridge_name: "Disco"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_sleeping:
-  friendly_name: 'Sleeping'
-  homebridge_name: 'Sleeping'
+  friendly_name: "Sleeping"
+  homebridge_name: "Sleeping"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_sexy:
-  friendly_name: 'Sexy'
-  homebridge_name: 'Sexy'
+  friendly_name: "Sexy"
+  homebridge_name: "Sexy"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_kodi:
-  friendly_name: 'Kodi'
-  homebridge_name: 'Kodi'
+  friendly_name: "Kodi"
+  homebridge_name: "Kodi"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_iptv:
-  friendly_name: 'IPTV'
-  homebridge_name: 'IPTV'
+  friendly_name: "IPTV"
+  homebridge_name: "IPTV"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_goodnight:
-  friendly_name: 'Good night'
-  homebridge_name: 'Goodnight'
+  friendly_name: "Goodnight"
+  homebridge_name: "Goodnight"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_appletv:
-  friendly_name: 'Apple TV'
-  homebridge_name: 'Apple TV'
+  friendly_name: "Apple TV"
+  homebridge_name: "Apple TV"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_daylight:
-  friendly_name: 'Daylight'
-  homebridge_name: 'Daylight'
+  friendly_name: "Daylight"
+  homebridge_name: "Daylight"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_tv:
-  friendly_name: 'TV'
-  homebridge_name: 'TV'
+  friendly_name: "TV"
+  homebridge_name: "TV"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_evening:
-  friendly_name: 'Evening'
-  homebridge_name: 'Evening'
+  friendly_name: "Evening"
+  homebridge_name: "Evening"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.nest_disable_control:
-  friendly_name: 'DNC'
-  homebridge_name: 'Disable Nest Control'
+  friendly_name: "DNC"
+  homebridge_name: "Disable Nest Control"
   templates:
     icon: mdi:nintendo-switch
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 switch.kay_learning:
-  friendly_name: 'Kay Learning'
+  friendly_name: "Kay Learning"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_guests:
-  friendly_name: 'Guests'
-  homebridge_name: 'Guests'
+  friendly_name: "Guests"
+  homebridge_name: "Guests"
   templates:
     icon: mdi:nintendo-switch
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
 
 input_boolean.scene_cooking:
-  friendly_name: 'Cooking'
-  homebridge_name: 'Cooking'
+  friendly_name: "Cooking"
+  homebridge_name: "Cooking"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';

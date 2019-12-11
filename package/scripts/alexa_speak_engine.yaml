@@ -1,5 +1,5 @@
 alexa_speak_engine:
-  alias: 'Alexa Speak Engine'
+  alias: "Alexa Speak Engine"
   sequence:
     - service: media_player.volume_set
       data_template:
@@ -13,7 +13,7 @@ alexa_speak_engine:
             0.3
           {% endif %}
 
-    - delay: '00:00:03'
+    - delay: "00:00:03"
 
 # THIS IS WORKING
     - service: notify.alexa_media_peter_s_echo_dot

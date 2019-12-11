@@ -1,9 +1,9 @@
-- alias: 'Scene - Sexy'
+- alias: "Scene - Sexy"
   trigger:
 
   - entity_id: input_boolean.scene_sexy
     platform: state
-    to: 'on'
+    to: "on"
 
   action:
   - service: light.turn_on

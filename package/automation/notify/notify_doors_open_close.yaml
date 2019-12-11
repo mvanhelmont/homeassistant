@@ -1,5 +1,5 @@
-- alias: 'Notification - Random Door Open'
-  initial_state: 'false'
+- alias: "Notification - Random Door Open"
+  initial_state: "false"
   trigger:
     - platform: state
       entity_id: 
@@ -7,7 +7,7 @@
         - binary_sensor.node_12
         - sensor.fibaro_frontdoor_custom_sensor
         - sensor.fibaro_imac_custom_sensor
-      to: 'on'
+      to: "on"
 
   action:
     - service: script.pushover_engine
@@ -17,8 +17,8 @@
         sound: bike
         title: "HA Notify Engine"
 
-- alias: 'Notification - Random Door Close'
-  initial_state: 'false'
+- alias: "Notification - Random Door Close"
+  initial_state: "false"
   trigger:
     - platform: state
       entity_id: 
@@ -26,7 +26,7 @@
         - binary_sensor.node_12
         - sensor.fibaro_frontdoor_custom_sensor
         - sensor.fibaro_imac_custom_sensor 
-      to: 'off'
+      to: "off"
 
   action:
     - service: script.pushover_engine

@@ -1,6 +1,6 @@
 ---
 platform: mqtt
-name: 'Bathroom All'
+name: "Bathroom All"
 schema: json
 command_topic: "milight/0xAAAD/rgb_cct/0"
 state_topic: "milight/states/0xAAAD/rgb_cct/0"

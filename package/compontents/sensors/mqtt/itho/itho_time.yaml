@@ -1,6 +1,6 @@
 ---
 platform: mqtt
-name: 'ITHO Tijd'
+name: "ITHO Tijd"
 state_topic: "ITHO/Fan/Timer"
-value_template: "{{value}}"
-unit_of_measurement: 's'
+value_template: "{{ value }}"
+unit_of_measurement: "s"

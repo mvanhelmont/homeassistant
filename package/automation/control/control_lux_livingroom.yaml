@@ -1,4 +1,4 @@
-- alias: 'Control - Lux on Daytime Low'
+- alias: "Control - Lux on Daytime Low"
   trigger:
     - platform: numeric_state
       entity_id: sensor.node_19_luminance
@@ -7,15 +7,15 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_daylight
-      state: 'on'
+      state: "on"
   
     - condition: state
       entity_id: input_boolean.lux_level_low
-      state: 'off'
+      state: "off"
 
     - condition: state 
       entity_id: binary_sensor.sensor_manual_family_home
-      state: 'on'
+      state: "on"
 
   action:
     - service: light.turn_on
@@ -43,15 +43,15 @@
   condition:
     - condition: state
       entity_id: input_boolean.scene_daylight
-      state: 'on'
+      state: "on"
 
     - condition: state
       entity_id: input_boolean.lux_level_low
-      state: 'on'
+      state: "on"
 
     - condition: state 
       entity_id: binary_sensor.sensor_manual_family_home
-      state: 'on'
+      state: "on"
 
   action:
     - service: light.turn_on

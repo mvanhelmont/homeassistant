@@ -1,18 +1,17 @@
-- alias: 'Scene - 20Min before sunset'
+- alias: "Scene - 20Min before sunset"
   trigger:
 
     platform: sun
     event: sunset
-    offset: '-00:18:00'
-
+    offset: "-00:18:00"
   condition:
     - condition: state
       entity_id: input_boolean.scene_daylight
-      state: 'on'
+      state: "on"
 
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
-      state: 'on'
+      state: "on"
 
   action:
   - service: light.turn_on

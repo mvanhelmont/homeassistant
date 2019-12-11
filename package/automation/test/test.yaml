@@ -1,4 +1,4 @@
-- alias: 'TEST - trigger statement'
+- alias: "TEST - trigger statement"
   trigger:
   - platform: state
     entity_id:

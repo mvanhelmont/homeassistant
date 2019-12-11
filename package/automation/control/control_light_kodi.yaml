@@ -1,4 +1,4 @@
-- alias: 'Control - Kodi Status'
+- alias: "Control - Kodi Status"
   trigger:
   - entity_id: media_player.kodi
     platform: state
@@ -6,11 +6,11 @@
   condition: 
     - condition: state
       entity_id: sun.sun
-      state: 'below_horizon'  
+      state: "below_horizon"  
 
     - condition: state
       entity_id: input_boolean.scene_kodi
-      state: 'on' 
+      state: "on" 
 
   action:
     - service_template: >-
