@@ -1,0 +1,6 @@
+---
+platform: mqtt
+state_topic: "mvps/backup/asia_backup_file_size"
+name: "Asia Backup File Size"
+value_template: "cleared by reboot"
+unit_of_measurement: "MB"

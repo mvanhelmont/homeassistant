@@ -23,23 +23,3 @@
         priority: 0
         sound: bike
         title: "HA AutoBackup"
-
-#- alias: 'System - AutoBackup Confguration Files every 3 hours'
-#  trigger:
-#    platform: time_pattern
-#    hours: "/3"
-
-#  action:
-#    - service: auto_backup.snapshot_partial
-#      data_template:
-#        name: "AutoBackup Configuration Files: {{ now().strftime('%-I:%M %p - %Y-%m-%d)') }}"
-#        folders:
-#          - ssl
-#        keep_days: 5
-
-#    - service: script.pushover_engine
-#      data_template:
-#        message: "AutoBackup Configuration Files is Running. the snapshot name is -> AutoBackup Partial: {{ now().strftime('%a, %-I:%M %p (%Y/%m/%d)') }}"
-#        priority: 0
-#        sound: bike
-#        title: "HA System"

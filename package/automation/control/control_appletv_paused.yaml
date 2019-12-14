@@ -19,11 +19,6 @@
         entity_id:
           - light.livingroom_wall
           - light.livingroom_window
-        brightness_pct: 100
-
-    - service: light.turn_on
-      data:
-        entity_id:
           - light.kitchen_all
           - light.sink_all
           - light.toilet_all

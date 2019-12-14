@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "mvps/backup/vmail_backup"
+name: "VMail Last Backup"
+value_template: "{{ value_json.vmail_backup }}"

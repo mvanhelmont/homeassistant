@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "mvps/backup/www_backup"
+name: "WWW Last Backup"
+value_template: "{{ value_json.www_backup }}"

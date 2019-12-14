@@ -1,0 +1,5 @@
+---
+platform: mqtt
+state_topic: "homeassistant/mqtt_server/systemstatus"
+name: "MQTT Boot Time"
+value_template: "{{ value_json.boottime }}"

@@ -23,18 +23,11 @@
 
     - service: light.turn_on
       data:
-        entity_id: light.livingroom_window
-        brightness_pct: 20
-
-    - service: light.turn_on
-      data:
-        entity_id: light.nanoleaf
+        entity_id: 
+          - light.livingroom_window
+          - light.nanoleaf
+          - light.balcony
         brightness_pct: 30
-
-    - service: light.turn_on
-      data:
-        entity_id: light.balcony
-        brightness_pct: 25
 
     - service: light.turn_on
       data_template:

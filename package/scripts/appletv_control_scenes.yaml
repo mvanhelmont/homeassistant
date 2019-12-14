@@ -7,11 +7,6 @@ appletv_control_paused:
         entity_id:
           - light.livingroom_wall
           - light.livingroom_window
-        brightness_pct: 100
-        
-    - service: light.turn_on
-      data:
-        entity_id:
           - light.kitchen_all
           - light.sink_all
           - light.toilet_all
@@ -43,19 +38,9 @@ appletv_control_playing:
       data:
         entity_id:
           - light.livingroom_window
-        brightness_pct: 20
-
-    - service: light.turn_on
-      data:
-        entity_id:
           - light.nanoleaf
-        brightness_pct: 30
-
-    - service: light.turn_on
-      data:
-        entity_id:
           - light.balcony
-        brightness_pct: 25
+        brightness_pct: 30
 
     - service: light.turn_on
       data_template:
@@ -67,7 +52,7 @@ appletv_control_playing:
         - light.kitchen_all
         - light.sink_all
       data_template:    
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_16', 'on') else 100 }}"
 
     - service: light.turn_on
       entity_id: light.toilet_all
@@ -103,7 +88,7 @@ appletv_control_idle:
         - light.kitchen_all
         - light.sink_all
       data_template:    
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_16', 'on') else 100 }}"
 
     - service: light.turn_on
       entity_id: light.toilet_all

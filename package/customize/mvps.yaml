@@ -1,0 +1,18 @@
+---
+sensor.vmail_last_backup:
+  icon: mdi:backup-restore
+
+sensor.vmail_backup_file_size:
+  icon: mdi:backup-restore
+
+sensor.www_last_backup:
+  icon: mdi:backup-restore
+
+sensor.oudenes_backup_file_size:
+  icon: mdi:backup-restore
+
+sensor.asia_backup_file_size:
+  icon: mdi:backup-restore
+
+sensor.hairdeclious_backup_file_size:
+  icon: mdi:backup-restore

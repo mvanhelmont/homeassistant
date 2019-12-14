@@ -1,0 +1,6 @@
+---
+platform: mqtt
+state_topic: "homeassistant/mqtt_server/systemstatus"
+name: "MQTT CPU Temp"
+unit_of_measurement: "°C"
+value_template: "{{ value_json.cputemp | round(0) }}"
