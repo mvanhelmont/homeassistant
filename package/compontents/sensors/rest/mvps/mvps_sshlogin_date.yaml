@@ -1,0 +1,6 @@
+---
+platform: rest
+resource: !secret mvpsjsonssh
+method: GET
+name: "MVPS SSH Login Date"
+value_template: "{{ value_json['ssh']['date'] }}"

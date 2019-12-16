@@ -1,0 +1,7 @@
+---
+platform: rest
+resource: !secret mvpsjsonwww
+method: GET
+name: "Asia File Size"
+value_template: "{{ value_json['www']['asia'] }}"
+unit_of_measurement: "MB"

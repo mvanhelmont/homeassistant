@@ -2,5 +2,4 @@
 default: warn
 logs:
   homeassistant.components.websocket_api: info
-  homeassistant.components.nanoleaf: debug
-  homeassistant.components.hassio.discovery: debug
+  pyatv: debug

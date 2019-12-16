@@ -1,0 +1,6 @@
+---
+platform: rest
+resource: !secret mvpsjsonwww
+method: GET
+name: "WWW Last Backup Date"
+value_template: "{{ value_json['www']['date'] }}"

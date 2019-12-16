@@ -1,0 +1,7 @@
+---
+platform: rest
+resource: !secret mvpsjsonvmail
+method: GET
+name: "VMail Last Backup Size"
+value_template: "{{ value_json['vmailbackup']['size'] }}"
+unit_of_measurement: "MB"

@@ -4,13 +4,7 @@ tv_normal:
 
     - service: light.turn_on
       data:
-        entity_id: light.livingroom_wall
-        kelvin: 2700
-        brightness_pct: 100
-
-    - service: light.turn_on
-      data:
-        entity_id: light.livingroom_window
+        entity_id: light.livingroom_all
         kelvin: 2700
         brightness_pct: 100
 

@@ -1,0 +1,7 @@
+---
+platform: rest
+resource: !secret mvpsjsonwww
+method: GET
+name: "Oudenes File Size"
+value_template: "{{ value_json['www']['oudenes'] }}"
+unit_of_measurement: "MB"

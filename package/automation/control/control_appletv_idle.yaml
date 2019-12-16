@@ -3,8 +3,6 @@
   - entity_id: media_player.woonkamer_2
     platform: state
     to: "idle"
-    for:
-      seconds: 10 
 
   condition: 
     - condition: state

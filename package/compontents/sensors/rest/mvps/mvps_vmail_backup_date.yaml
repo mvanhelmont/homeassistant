@@ -1,0 +1,6 @@
+---
+platform: rest
+resource: !secret mvpsjsonvmail
+method: GET
+name: "VMail Last Backup Date"
+value_template: "{{ value_json['vmailbackup']['date'] }}"

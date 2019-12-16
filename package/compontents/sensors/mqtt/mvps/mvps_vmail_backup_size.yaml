@@ -1,6 +1,0 @@
----
-platform: mqtt
-state_topic: "mvps/backup/vmail_backup_file_size"
-name: "VMail Backup File Size"
-value_template: "cleared by reboot"
-unit_of_measurement: "MB"

@@ -1,0 +1,7 @@
+---
+platform: rest
+resource: !secret mvpsjsonssh
+method: GET
+name: "MVPS SSH Login Client IP"
+#value_template: "{{ value_json['ssh']['ip'] }}"
+value_template: "{{ value_json['ssh']['ip'].split(' ')[0] }}"
