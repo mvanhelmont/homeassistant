@@ -1,0 +1,5 @@
+---
+platform: mqtt
+name: "Alexa Last Message"
+state_topic: "homeassistant/speech/alexa_last_message/state"
+json_attributes_topic: "homeassistant/speech/alexa_last_message/attributes"

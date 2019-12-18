@@ -46,3 +46,21 @@ engine_speech_processing:
           {%- endif -%}
         message: "{{ briefing }}"
         target: "{{ media_player }}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "homeassistant/speech/alexa_last_message/state"
+        retain: true
+        # payload: >-
+        #   { "value": "{{ briefing|truncate(254) }}" }
+        payload: "{{ briefing }}"
+        
+    - service: mqtt.publish
+      data_template:
+        topic: "homeassistant/speech/alexa_last_message/attributes"
+        retain: true
+        payload: >- 
+          {
+            "day": "{{ as_timestamp(now())|timestamp_custom('%A %B %-d') }}",
+            "time": "{{ as_timestamp(now())|timestamp_custom('%-I:%M %P') }}"
+          }
