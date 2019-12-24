@@ -11,8 +11,7 @@
 
   action:
   - service: input_boolean.turn_on
-    data:
-      entity_id: input_boolean.scene_daylight
+    entity_id: input_boolean.scene_daylight
 
   - service: input_boolean.turn_off
     data:
@@ -41,12 +40,10 @@
         - light.newkaku_01401eb6_a
 
   - service: remote.turn_off
-    data:
-      entity_id: remote.logitech_harmony
+    entity_id: remote.logitech_harmony
 
   - service: fan.turn_off
-    data:
-      entity_id: fan.afzuiging_badkamer
+    entity_id: fan.afzuiging_badkamer
 
   - service: switch.turn_off
     data:

@@ -11,8 +11,8 @@
 
 
   - service: light.turn_on
+    entity_id: light.bedroom_5
     data:
-      entity_id: light.bedroom_5
       brightness_pct: 1
       effect: 0
 
@@ -20,14 +20,13 @@
       milliseconds: 200
 
   - service: light.turn_on
+    entity_id: light.bedroom_6
     data:
-      entity_id: light.bedroom_6
       brightness_pct: 1
       effect: 0 
 
   - service: input_boolean.turn_off
-    data:
-      entity_id: input_boolean.scene_sleeping
+    entity_id: input_boolean.scene_sleeping
 
   - delay: "00:06:00"
 

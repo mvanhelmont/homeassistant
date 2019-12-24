@@ -28,8 +28,7 @@
         - light.newkaku_01401eb6_a
 
   - service: input_boolean.turn_off
-    data:
-      entity_id: input_boolean.emulate_holiday
+    entity_id: input_boolean.emulate_holiday
 
   - delay: "00:{{ (range(2, 10)|random|int) }}:00"
   

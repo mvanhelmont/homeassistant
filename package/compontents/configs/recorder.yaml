@@ -1,5 +1,5 @@
 ---
-#db_url: !secret mariadb
+db_url: !secret mariadb
 purge_keep_days: 5
 purge_interval: 1
 exclude:
@@ -28,13 +28,6 @@ exclude:
     - sensor.node_7_energy
     - sensor.node_8_energy
     - sensor.node_9_energy
-    - sensor.node_14_luminance
-    - sensor.node_15_luminance
-    - sensor.node_16_luminance
-    - sensor.node_17_luminance
-    - sensor.node_18_luminance
-    - sensor.node_19_luminance
-    - sensor.node_20_luminance
     - switch.node_2_switch
     - switch.node_5_switch
     - switch.node_6_switch

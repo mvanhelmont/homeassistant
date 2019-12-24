@@ -153,52 +153,161 @@
   
     {%- if say_greeting == "true" -%}
       {{ greeting_line() ~ " ... " }}
+      {{ holiday() ~ " ... " }}
     {%- endif -%}
 
-    {%- if person_arriving is not undefined -%} {{ welcome_home(person_arriving) ~ " ... " }} {%- endif -%}
+    {%- if person_arriving is not undefined -%}
+      {{ welcome_home(person_arriving) ~ " ... " }}
+    {%- endif -%}
 
     {{ message }}
 
-    {%- if say_dark_outside == "true" -%} {{ dark_outside() ~ " ... " }} {%- endif -%}
-    {%- if say_inside_weather == "true" -%} {{ inside_weather() ~ " ... " }} {%- endif -%}
-    {%- if say_outside_weather == "true" -%} {{ outside_weather() ~ " ... " }}  {%- endif -%}
-    {%- if say_light_check == "true" -%} {{ light_check() ~ " ... " }} {%- endif -%}
-    {%- if say_goodbye == "true" -%} {{ " " ~ goodbye_line() ~ " ... " }} {%- endif -%}
-    {%- if say_goodnight == "true" -%} {{ " " ~ goodnight_line() ~ " ... " }} {%- endif -%}
-    {%- if say_scene_evening == "true" -%} {{ scene_evening() }} {%- endif -%}
-    {%- if say_scene_sunset == "true" -%} {{ scene_sunset() }} {%- endif -%}
-    {%- if say_scene_kodi == "true" -%} {{ scene_kodi() }} {%- endif -%}
-    {%- if say_scene_tv == "true" -%} {{ scene_tv() }} {%- endif -%}
-    {%- if say_scene_iptv == "true" -%} {{ scene_iptv() }} {%- endif -%}
-    {%- if say_scene_appletv == "true" -%} {{ scene_appletv() }} {%- endif -%}
-    {%- if say_scene_goodnight == "true" -%} {{ scene_goodnight() }} {%- endif -%}
-    {%- if say_lux_evening_on == "true" -%} {{ lux_evening_on() }} {%- endif -%}
-    {%- if say_lux_evening_off == "true" -%} {{ lux_evening_off() }} {%- endif -%}
-    {%- if say_testing == "true" -%} {{ testing() }} {%- endif -%}    
+    {%- if say_dark_outside == "true" -%}
+      {{ dark_outside() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_inside_weather == "true" -%}
+      {{ inside_weather() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_outside_weather == "true" -%}
+      {{ outside_weather() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_light_check == "true" -%}
+      {{ light_check() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_goodbye == "true" -%}
+      {{ " " ~ goodbye_line() ~ " ... " }}
+    {%- endif -%}
+
+    {%- if say_goodnight == "true" -%}
+      {{ " " ~ goodnight_line() ~ " ... " }}
+    {%- endif -%}
+    
+    {%- if say_scene_evening == "true" -%}
+      {{ scene_evening() }}
+    {%- endif -%}
+
+    {%- if say_scene_sunset == "true" -%}
+      {{ scene_sunset() }}
+    {%- endif -%}
+
+    {%- if say_scene_kodi == "true" -%}
+      {{ scene_kodi() }}
+    {%- endif -%}
+    
+    {%- if say_scene_tv == "true" -%}
+      {{ scene_tv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_iptv == "true" -%}
+      {{ scene_iptv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_appletv == "true" -%}
+      {{ scene_appletv() }}
+    {%- endif -%}
+    
+    {%- if say_scene_goodnight == "true" -%}
+      {{ scene_goodnight() }}
+    {%- endif -%}
+
+    {%- if say_lux_evening_on == "true" -%}
+      {{ lux_evening_on() }}
+    {%- endif -%}
+
+    {%- if say_lux_evening_off == "true" -%}
+      {{ lux_evening_off() }}
+    {%- endif -%}
+
+    {%- if say_testing == "true" -%}
+      {{ testing() }}
+    {%- endif -%}    
 
   {%- endmacro -%}
 
-    {# Initialize variables #}
-    {%- if say_scene_evening is undefined -%} {%- set say_scene_evening = "false" -%} {%- endif -%}
-    {%- if say_scene_sunset is undefined -%} {%- set say_scene_sunset = "false" -%} {%- endif -%}
-    {%- if say_scene_kodi is undefined -%} {%- set say_scene_kodi = "false" -%} {%- endif -%}
-    {%- if say_scene_tv is undefined -%} {%- set say_scene_tv = "false" -%} {%- endif -%}
-    {%- if say_scene_iptv is undefined -%} {%- set say_scene_iptv = "false" -%} {%- endif -%}
-    {%- if say_scene_appletv is undefined -%} {%- set say_scene_appletv = "false" -%} {%- endif -%}
-    {%- if say_scene_goodnight is undefined -%} {%- set say_scene_goodnight = "false" -%} {%- endif -%}
-    {%- if say_lux_evening_on is undefined -%} {%- set say_lux_evening_on = "false" -%} {%- endif -%}
-    {%- if say_lux_evening_off is undefined -%} {%- set say_lux_evening_off = "false" -%} {%- endif -%}
-    {%- if say_dark_outside is undefined -%} {%- set say_dark_outside = "false" -%} {%- endif -%}
-    {%- if say_goodbye is undefined -%} {%- set say_goodbye = "false" -%} {%- endif -%}
-    {%- if say_goodnight == "true" -%} {%- set say_greeting = "false" -%} {%- endif -%}
-    {%- if say_goodnight is undefined -%} {%- set say_goodnight = "false" -%} {%- endif -%}
-    {%- if say_greeting is undefined -%} {%- set say_greeting = "false" -%} {%- endif -%}
-    {%- if say_inside_weather is undefined -%} {%- set say_inside_weather = "false" -%} {%- endif -%}
-    {%- if say_garage_check is undefined -%} {%- set say_garage_check = "false" -%} {%- endif -%}
-    {%- if say_light_check is undefined -%} {%- set say_light_check = "false" -%} {%- endif -%}
-    {%- if say_outside_weather is undefined -%} {%- set say_outside_weather = "false" -%} {%- endif -%}
-    {%- if person_arriving is not undefined -%} {%- set say_greeting = "false" -%} {%- endif -%}
-    {%- if say_testing is not undefined -%} {%- set say_test = "false" -%} {%- endif -%}
+  {# Initialize variables #}
+  {%- if say_scene_evening is undefined -%}
+    {%- set say_scene_evening = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_sunset is undefined -%}
+    {%- set say_scene_sunset = "false" -%}
+  {%- endif -%}
+
+  {%- if say_scene_kodi is undefined -%}
+    {%- set say_scene_kodi = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_tv is undefined -%}
+    {%- set say_scene_tv = "false" -%}
+  {%- endif -%}
+
+  {%- if say_scene_iptv is undefined -%}
+    {%- set say_scene_iptv = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_appletv is undefined -%}
+    {%- set say_scene_appletv = "false" -%}
+  {%- endif -%}
+  
+  {%- if say_scene_goodnight is undefined -%}
+    {%- set say_scene_goodnight = "false" -%}
+  {%- endif -%}
+
+  {%- if say_lux_evening_on is undefined -%}
+    {%- set say_lux_evening_on = "false" -%}
+  {%- endif -%}
+
+  {%- if say_lux_evening_off is undefined -%}
+    {%- set say_lux_evening_off = "false" -%}
+  {%- endif -%}
+
+  {%- if say_dark_outside is undefined -%}
+    {%- set say_dark_outside = "false" -%}
+  {%- endif -%}
+
+  {%- if say_goodbye is undefined -%}
+    {%- set say_goodbye = "false" -%}
+  {%- endif -%}
+
+  {%- if say_goodnight is undefined -%}
+    {%- set say_goodnight = "false" -%}
+  {%- endif -%}
+
+  {%- if say_greeting is undefined -%}
+    {%- set say_greeting = "false" -%}
+  {%- endif -%}
+
+  {%- if say_inside_weather is undefined -%}
+    {%- set say_inside_weather = "false" -%}
+  {%- endif -%}
+
+  {%- if say_garage_check is undefined -%}
+    {%- set say_garage_check = "false" -%}
+  {%- endif -%}
+
+  {%- if say_light_check is undefined -%}
+    {%- set say_light_check = "false" -%}
+  {%- endif -%}
+
+  {%- if say_outside_weather is undefined -%}
+    {%- set say_outside_weather = "false" -%}
+  {%- endif -%}
+
+  {%- if say_goodnight == "true" -%}
+    {%- set say_greeting = "false" -%}
+  {%- endif -%}
+
+  {%- if person_arriving is not undefined -%}
+    {%- set say_greeting = "false" -%}
+  {%- endif -%}
+
+  {%- if say_testing is not undefined -%}
+    {%- set say_test = "false" -%}
+  {%- endif -%}
 
   {#- Get briefing, and strip unnecessary characters. -#}
   {% filter replace("\n", "")|replace("\t", " ")|replace("    ", " ")|replace("   ", " ")|replace("  ", " ")|replace("  ", " ")|replace("... ...", "...") %}

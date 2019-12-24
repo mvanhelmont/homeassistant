@@ -1,5 +1,6 @@
 ---
-default: warn
+default: error
 logs:
-  homeassistant.components.websocket_api: info
-  pyatv: debug
+  homeassistant.components.websocket_api: error
+  homeassistant.components.zwave: info
+#  pyatv: debug

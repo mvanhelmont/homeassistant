@@ -6,8 +6,7 @@
 
   action:
     service: switch.turn_on
-    data:
-      entity_id: switch.newkaku_011fad02_c
+    entity_id: switch.newkaku_011fad02_c
 
 - alias: 'Switch - Kaku Cooker Off'
   trigger:
@@ -17,5 +16,4 @@
 
   action:
     service: switch.turn_off
-    data:
-      entity_id: switch.newkaku_011fad02_c 
+    entity_id: switch.newkaku_011fad02_c 

@@ -21,11 +21,8 @@
       state: "on" 
 
   action:
-  - service: shell_command.meek_toilet_nightscene_off
-  
   - service: input_boolean.turn_on
-    data:
-      entity_id: input_boolean.scene_daylight
+    entity_id: input_boolean.scene_daylight
 
   - service: input_boolean.turn_off
     data:
@@ -57,10 +54,11 @@
       - switch.node_8_switch
       - switch.node_21_switch
       - switch.node_22_switch
+      
+#  - service: shell_command.meek_toilet_nightscene_off
 
   - service_template: "{{ 'light.turn_on' if is_state('binary_sensor.node_15', 'on') else 'light.turn_off' }}"
-    data:
-      entity_id: light.bathroom_all
+    entity_id: light.bathroom_all
       
   - service: script.pushover_engine
     data_template:

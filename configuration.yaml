@@ -1,7 +1,3 @@
-# Configure a default setup of Home Assistant (frontend, api, etc)
-#  
-# https://github.com/poudenes/homeassistant
-
 #default_config:
 
 api:
@@ -54,7 +50,7 @@ weather: !include package/compontents/configs/weather.yaml
 homekit: !include package/compontents/configs/homekit.yaml
 recorder: !include package/compontents/configs/recorder.yaml
 
-# apple_tv_mrp: !include package/compontents/devices/apple_tv_mrp.yaml
+# device_tracker: !include package/compontents/configs/device_tracker.yaml
 # alexa: !include package/compontents/devices/alexa.yaml
 # android_ip_webcam: !include package/compontents/configs/camera.yaml
 # panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
