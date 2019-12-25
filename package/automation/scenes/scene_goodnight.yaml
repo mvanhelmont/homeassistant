@@ -43,8 +43,8 @@
     entity_id: light.nanoleaf
 
   - service: light.turn_on
+    entity_id: light.bedroom_al
     data_template:
-      entity_id: light.bedroom_all
       kelvin: 4700
       brightness_pct: "{{ 50 if is_state('binary_sensor.node_12', 'on') else 100 }}"
 

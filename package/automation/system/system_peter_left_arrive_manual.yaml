@@ -9,5 +9,4 @@
       {% if trigger.to_state.state == 'home' %} input_boolean.turn_on
       {% else %} input_boolean.turn_off
       {% endif %}
-    data:
-      entity_id: input_boolean.peter_home_manual
+    entity_id: input_boolean.peter_home_manual

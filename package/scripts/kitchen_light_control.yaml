@@ -30,7 +30,6 @@ kitchen_halloween_turn_on:
 kitchen_christmas_turn_on:
   alias: "Kitchen Christmas Turn On"
   sequence:
-
     - service: light.turn_on
       entity_id: light.kitchen_all
       data_template:
@@ -61,7 +60,6 @@ kitchen_christmas_turn_on:
 kitchen_kingsday_turn_on:
   alias: "Kitchen Kingsday Turn On"
   sequence:
-
     - service: light.turn_on
       entity_id: light.kitchen_all
       data_template:

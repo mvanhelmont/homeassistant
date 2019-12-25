@@ -18,5 +18,4 @@ nobody_home:
           - light.newkaku_01401eb6_a
 
     - service: remote.turn_off
-      data:
-        entity_id: remote.logitech_harmony
+      entity_id: remote.logitech_harmony
