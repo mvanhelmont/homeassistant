@@ -13,6 +13,7 @@ updater:
 logbook:
 zeroconf:
 mobile_app:
+browser_mod:
 
 customizer:
   custom_ui: local

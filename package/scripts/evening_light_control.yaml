@@ -2,7 +2,7 @@ evening_normal:
   alias: "Evening Normal Light Scene"
   sequence:
     - service: light.turn_on
-      entity_id: light.livingroom_wall
+      entity_id: light.livingroom_all
       data_template:
         kelvin: 2700
         brightness_pct: 100
@@ -23,7 +23,7 @@ evening_birthday:
   alias: "Evening Birthday Light Scene"
   sequence:
     - service: light.turn_on
-      entity_id: light.livingroom_wall
+      entity_id: light.livingroom_all
       data_template:
         kelvin: 2700
         brightness_pct: 100
@@ -47,7 +47,7 @@ evening_halloween:
   alias: "Evening Halloween Light Scene"
   sequence:
     - service: light.turn_on
-      entity_id: light.livingroom_wall
+      entity_id: light.livingroom_all
       data_template:
         kelvin: 2700
         brightness_pct: 100
@@ -76,7 +76,7 @@ evening_kingsday:
   alias: "Evening Kingsday Light Scene"
   sequence:
     - service: light.turn_on
-      entity_id: light.livingroom_wall
+      entity_id: light.livingroom_all
       data_template:
         kelvin: 2700
         brightness_pct: 100
@@ -116,7 +116,7 @@ evening_christmas:
         - switch.node_2_switch
       
     - service: light.turn_on
-      entity_id: light.livingroom_wall
+      entity_id: light.livingroom_all
       data_template:
         kelvin: 2700
         brightness_pct: 100

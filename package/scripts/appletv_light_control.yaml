@@ -39,7 +39,7 @@ appletv_birthday:
   sequence:
 
     - service: light.turn_on
-      entity_id: light.livingroom_wal
+      entity_id: light.livingroom_wall
       data_template:
         kelvin: 2700
         brightness_pct: >-
@@ -78,7 +78,7 @@ appletv_halloween:
   sequence:
 
     - service: light.turn_on
-      entity_id: light.livingroom_wal
+      entity_id: light.livingroom_wall
       data_template:
         kelvin: 2700
         brightness_pct: >-
@@ -132,7 +132,7 @@ appletv_kingsday:
           {% endif %}
 
     - service: light.turn_on
-      entity_id: light.livingroom_wall
+      entity_id: light.livingroom_window
       data_template:
         kelvin: 2700
         brightness_pct: >-
