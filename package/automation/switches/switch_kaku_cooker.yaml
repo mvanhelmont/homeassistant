@@ -1,8 +1,8 @@
 - alias: 'Switch - Kaku Cooker On'
   trigger:
-    - platform: state
-      entity_id: switch.meek_cooking
-      to: "on"
+    platform: state
+    entity_id: switch.meek_cooking
+    to: "on"
 
   action:
     service: switch.turn_on
@@ -10,9 +10,9 @@
 
 - alias: 'Switch - Kaku Cooker Off'
   trigger:
-    - platform: state
-      entity_id: switch.meek_cooking
-      to: "off"
+    platform: state
+    entity_id: switch.meek_cooking
+    to: "off"
 
   action:
     service: switch.turn_off

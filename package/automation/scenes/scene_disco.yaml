@@ -7,14 +7,14 @@
 
   action:
   - service: light.turn_on
-    entity_id: light.nanoleaf
     data:
+      entity_id: light.nanoleaf
       brightness_pct: 30
       effect: NorthernLight
 
   - service: light.turn_on
-    entity_id: light.dressoir_1
     data:
+      entity_id: light.dressoir_1
       effect: 0 
       brightness_pct: 100
 
@@ -22,8 +22,8 @@
       milliseconds: 200
 
   - service: light.turn_on
-    entity_id: light.dressoir_2
     data:
+      entity_id: light.dressoir_2
       effect: 0
       brightness_pct: 100
 
@@ -31,8 +31,8 @@
       milliseconds: 200
 
   - service: light.turn_on
-    entity_id: light.dressoir_3
     data:
+      entity_id: light.dressoir_3
       effect: 0
       brightness_pct: 100
 
@@ -40,8 +40,8 @@
       milliseconds: 200
 
   - service: light.turn_on
-    entity_id: light.livingroom_1
     data:
+      entity_id: light.livingroom_1
       effect: 0
       brightness_pct: 100
 
@@ -49,8 +49,8 @@
       milliseconds: 200
 
   - service: light.turn_on
-    entity_id: light.livingroom_2
     data:
+      entity_id: light.livingroom_2
       effect: 0
       brightness_pct: 100
 
@@ -58,8 +58,8 @@
       milliseconds: 200
 
   - service: light.turn_on
-    entity_id: light.livingroom_3
     data:
+      entity_id: light.livingroom_3
       effect: 0
       brightness_pct: 100
 
@@ -67,8 +67,8 @@
       milliseconds: 200
 
   - service: light.turn_on
-    entity_id: light.livingroom_4
     data:
+      entity_id: light.livingroom_4
       effect: 0
       brightness_pct: 100
 
@@ -76,8 +76,8 @@
       milliseconds: 200
 
   - service: light.turn_on
-    entity_id: light.balcony
     data:
+      entity_id: light.balcony
       effect: 0
       brightness_pct: 100
 
@@ -85,7 +85,7 @@
       milliseconds: 200
 
   - service: light.turn_on
-    entity_id: light.hallway
     data:
+      entity_id: light.hallway
       effect: 0
       brightness_pct: 100

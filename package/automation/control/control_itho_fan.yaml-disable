@@ -4,10 +4,10 @@
     entity_id: sensor.itho_speed
 
   condition:
-    - condition: state
-      entity_id: sensor.itho_speed
-      state: "Laag"
+    condition: state
+    entity_id: sensor.itho_speed
+    state: "Laag"
 
   action:
-    - service: fan.turn_off
-      entity_id: fan.afzuiging_badkamer
+    service: fan.turn_off
+    entity_id: fan.afzuiging_badkamer

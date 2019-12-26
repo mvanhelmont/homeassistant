@@ -31,8 +31,8 @@ kitchen_christmas_turn_on:
   alias: "Kitchen Christmas Turn On"
   sequence:
     - service: light.turn_on
-      entity_id: light.kitchen_all
       data_template:
+        entity_id: light.kitchen_all
         kelvin: 2700
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 70
@@ -40,8 +40,8 @@ kitchen_christmas_turn_on:
           {% endif %} 
 
     - service: light.turn_on
-      entity_id: light.sink_all
       data_template:
+        entity_id: light.sink_all
         color_name: red
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
@@ -49,8 +49,8 @@ kitchen_christmas_turn_on:
           {% endif %} 
 
     - service: light.turn_on
-      entity_id: light.sink_2
       data_template:
+        entity_id: light.sink_2
         color_name: green
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
@@ -61,8 +61,8 @@ kitchen_kingsday_turn_on:
   alias: "Kitchen Kingsday Turn On"
   sequence:
     - service: light.turn_on
-      entity_id: light.kitchen_all
       data_template:
+        entity_id: light.kitchen_all
         kelvin: 2700
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 70
@@ -70,8 +70,8 @@ kitchen_kingsday_turn_on:
           {% endif %} 
 
     - service: light.turn_on
-      entity_id: light.sink_1
       data_template:
+        entity_id: light.sink_1
         color_name: red
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
@@ -79,8 +79,8 @@ kitchen_kingsday_turn_on:
           {% endif %} 
 
     - service: light.turn_on
-      entity_id: light.sink_2
       data_template:
+        entity_id: light.sink_2
         color_temp: 153 
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
@@ -88,8 +88,8 @@ kitchen_kingsday_turn_on:
           {% endif %} 
 
     - service: light.turn_on
-      entity_id: light.sink_3 
       data_template:
+        entity_id: light.sink_3 
         color_name: blue
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
@@ -100,8 +100,8 @@ kitchen_birthday_turn_on:
   alias: "Kitchen Birthday Turn On"
   sequence:
     - service: light.turn_on
-      entity_id: light.kitchen_all
       data_template:
+        entity_id: light.kitchen_all
         kelvin: 2700
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
@@ -109,8 +109,8 @@ kitchen_birthday_turn_on:
           {% endif %} 
 
     - service: light.turn_on
-      entity_id: light.sink_1
       data_template:
+        entity_id: light.sink_1
         effect: 0
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
@@ -120,8 +120,8 @@ kitchen_birthday_turn_on:
     - delay: 00:00:01
 
     - service: light.turn_on
-      entity_id: light.sink_2
       data_template:
+        entity_id: light.sink_2
         effect: 0
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
@@ -131,8 +131,8 @@ kitchen_birthday_turn_on:
     - delay: 00:00:01
 
     - service: light.turn_on
-      entity_id: light.sink_3
       data_template:
+        entity_id: light.sink_3
         effect: 0
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100

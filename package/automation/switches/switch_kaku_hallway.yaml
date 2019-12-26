@@ -1,11 +1,11 @@
 - alias: "Switch - Toilet On Off"
   trigger:
-    - platform: state
-      entity_id: switch.newkaku_016138ba_a
+    platform: state
+    entity_id: switch.newkaku_016138ba_a
 
   action:
     service: light.turn_on
-    entity_id: light.hallway
     data_template:
-      brightness_pct: "{{ 100 if is_state('switch.newkaku_016138ba_a', 'on') else 0 }}"
+      entity_id: light.hallway
       kelvin: 4700
+      brightness_pct: "{{ 100 if is_state('switch.newkaku_016138ba_a', 'on') else 0 }}"

@@ -1,8 +1,8 @@
 - alias: "Scene - Guests"
   trigger:
-
-  - entity_id: input_boolean.scene_guests
+    
     platform: state
+    entity_id: input_boolean.scene_guests
 
   action:
     - service: script.pushover_engine

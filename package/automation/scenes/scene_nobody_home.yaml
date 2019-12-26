@@ -1,7 +1,7 @@
 - alias: "Scene - Nobody Home"
   trigger:
 
-  - platform: state
+    platform: state
     entity_id: binary_sensor.sensor_manual_family_home
 
   condition:
@@ -10,45 +10,45 @@
       state: "off"
 
   action:
-  - service: input_boolean.turn_on
-    entity_id: input_boolean.scene_daylight
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.scene_daylight
 
-  - service: input_boolean.turn_off
-    data:
-      entity_id: 
-        - input_boolean.scene_kodi
-        - input_boolean.scene_tv
-        - input_boolean.scene_evening
-        - input_boolean.scene_appletv
-        - input_boolean.scene_sexy
-        - input_boolean.lux_level_low
+    - service: input_boolean.turn_off
+      data:
+        entity_id: 
+          - input_boolean.scene_kodi
+          - input_boolean.scene_tv
+          - input_boolean.scene_evening
+          - input_boolean.scene_appletv
+          - input_boolean.scene_sexy
+          - input_boolean.lux_level_low
 
-  - service: light.turn_off
-    data:
-      entity_id:
-        - light.livingroom_all
-        - light.dressoir_all
-        - light.kitchen_all
-        - light.sink_all
-        - light.livingroom_all
-        - light.bedroom_all
-        - light.bathroom_all
-        - light.hallway
-        - light.balcony
-        - light.toilet_all
-        - light.nanoleaf
-        - light.newkaku_01401eb6_a
+    - service: light.turn_off
+      data:
+        entity_id:
+          - light.livingroom_all
+          - light.dressoir_all
+          - light.kitchen_all
+          - light.sink_all
+          - light.livingroom_all
+          - light.bedroom_all
+          - light.bathroom_all
+          - light.hallway
+          - light.balcony
+          - light.toilet_all
+          - light.nanoleaf
+          - light.newkaku_01401eb6_a
 
-  - service: remote.turn_off
-    entity_id: remote.logitech_harmony
+    - service: remote.turn_off
+      entity_id: remote.logitech_harmony
 
-  - service: fan.turn_off
-    entity_id: fan.afzuiging_badkamer
+    - service: fan.turn_off
+      entity_id: fan.afzuiging_badkamer
 
-  - service: switch.turn_off
-    data:
-      entity_id:
-        - switch.node_8_switch
-        - switch.node_21_switch
-        - switch.node_22_switch
-        - switch.node_2_switch 
+    - service: switch.turn_off
+      data:
+        entity_id:
+          - switch.node_8_switch
+          - switch.node_21_switch
+          - switch.node_22_switch
+          - switch.node_2_switch 

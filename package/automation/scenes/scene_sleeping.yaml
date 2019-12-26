@@ -1,37 +1,37 @@
 - alias: "Scene - Sleeping"
   trigger:
 
-  - entity_id: input_boolean.scene_sleeping
     platform: state
+    entity_id: input_boolean.scene_sleeping
     to: "on"
 
   action:
-  - service: light.turn_off
-    entity_id: light.bedroom_all
+    - service: light.turn_off
+      entity_id: light.bedroom_all
 
 
-  - service: light.turn_on
-    entity_id: light.bedroom_5
-    data:
-      brightness_pct: 1
-      effect: 0
+    - service: light.turn_on
+      entity_id: light.bedroom_5
+      data:
+        brightness_pct: 1
+        effect: 0
 
-  - delay:
-      milliseconds: 200
+    - delay:
+        milliseconds: 300
 
-  - service: light.turn_on
-    entity_id: light.bedroom_6
-    data:
-      brightness_pct: 1
-      effect: 0 
+    - service: light.turn_on
+      entity_id: light.bedroom_6
+      data:
+        brightness_pct: 1
+        effect: 0 
 
-  - service: input_boolean.turn_off
-    entity_id: input_boolean.scene_sleeping
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.scene_sleeping
 
-  - delay: "00:06:00"
+    - delay: "00:06:00"
 
-  - service: light.turn_off
-    data:
-      entity_id:
-        - light.bedroom_5
-        - light.bedroom_6
+    - service: light.turn_off
+      data:
+        entity_id:
+          - light.bedroom_5
+          - light.bedroom_6

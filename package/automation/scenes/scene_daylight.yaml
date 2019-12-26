@@ -1,11 +1,11 @@
 - alias: "Scene - Daylight Someone Home"
   trigger:
 
-  - platform: time_pattern
-    minutes: "/1" 
+    - platform: time_pattern
+      minutes: "/1" 
 
-  - platform: state
-    entity_id: sun.sun
+    - platform: state
+      entity_id: sun.sun
 
   condition:
     - condition: state
@@ -21,48 +21,48 @@
       state: "on" 
 
   action:
-  - service: input_boolean.turn_on
-    entity_id: input_boolean.scene_daylight
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.scene_daylight
 
-  - service: input_boolean.turn_off
-    data:
-      entity_id: 
-        - input_boolean.scene_goodnight
-        - input_boolean.scene_kodi
-        - input_boolean.scene_tv
-        - input_boolean.scene_evening
-        - input_boolean.scene_appletv
-        - input_boolean.scene_sexy
-        - input_boolean.lux_level_low
+    - service: input_boolean.turn_off
+      data:
+        entity_id: 
+          - input_boolean.scene_goodnight
+          - input_boolean.scene_kodi
+          - input_boolean.scene_tv
+          - input_boolean.scene_evening
+          - input_boolean.scene_appletv
+          - input_boolean.scene_sexy
+          - input_boolean.lux_level_low
 
-  - service: light.turn_off
-    data:
-      entity_id:
-        - light.livingroom_all
-        - light.dressoir_all
-        - light.kitchen_all
-        - light.sink_all
-        - light.livingroom_all
-        - light.hallway
-        - light.balcony
-        - light.toilet_all
-        - light.nanoleaf
-        - light.newkaku_01401eb6_a
+    - service: light.turn_off
+      data:
+        entity_id:
+          - light.livingroom_all
+          - light.dressoir_all
+          - light.kitchen_all
+          - light.sink_all
+          - light.livingroom_all
+          - light.hallway
+          - light.balcony
+          - light.toilet_all
+          - light.nanoleaf
+          - light.newkaku_01401eb6_a
         
-  - service: switch.turn_off
-    entity_id:
-      - switch.node_8_switch
-      - switch.node_21_switch
-      - switch.node_22_switch
+    - service: switch.turn_off
+      entity_id:
+        - switch.node_8_switch
+        - switch.node_21_switch
+        - switch.node_22_switch
       
+    - service_template: "{{ 'light.turn_on' if is_state('binary_sensor.node_15', 'on') else 'light.turn_off' }}"
+      entity_id: light.bathroom_all
+        
+    - service: script.pushover_engine
+      data_template:
+        message: "HA - Scene DAytime activated"
+        priority: 0
+        sound: bike
+        title: "HA System"
+        
 #  - service: shell_command.meek_toilet_nightscene_off
-
-  - service_template: "{{ 'light.turn_on' if is_state('binary_sensor.node_15', 'on') else 'light.turn_off' }}"
-    entity_id: light.bathroom_all
-      
-  - service: script.pushover_engine
-    data_template:
-      message: "HA - Scene DAytime activated"
-      priority: 0
-      sound: bike
-      title: "HA System"

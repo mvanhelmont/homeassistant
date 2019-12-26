@@ -3,8 +3,8 @@ appletv_normal:
   sequence:
 
     - service: light.turn_on
-      entity_id: light.livingroom_wall
       data_template:
+        entity_id: light.livingroom_wall
         kelvin: 2700
         brightness_pct: >-
           {% if (states.media_player.woonkamer_2.state) == 'playing' %} 60
@@ -13,8 +13,8 @@ appletv_normal:
           {% endif %}
 
     - service: light.turn_on
-      entity_id: light.livingroom_window
       data_template:
+        entity_id: light.livingroom_window
         kelvin: 2700
         brightness_pct: >-
           {% if (states.media_player.woonkamer_2.state) == 'playing' %} 20
@@ -23,14 +23,14 @@ appletv_normal:
           {% endif %}
 
     - service: light.turn_on
-      entity_id: light.dressoir_al
       data_template:
+        entity_id: light.dressoir_all
         kelvin: 2700
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 50 }}"
 
     - service: light.turn_on
-      entity_id: light.balcony
       data:
+        entity_id: light.balcony
         brightness_pct: 100
         effect: 0
 
@@ -39,8 +39,8 @@ appletv_birthday:
   sequence:
 
     - service: light.turn_on
-      entity_id: light.livingroom_wall
       data_template:
+        entity_id: light.livingroom_wall
         kelvin: 2700
         brightness_pct: >-
           {% if (states.media_player.woonkamer_2.state) == 'playing' %} 60
@@ -49,8 +49,8 @@ appletv_birthday:
           {% endif %}
 
     - service: light.turn_on
-      entity_id: light.livingroom_window
       data_template:
+        entity_id: light.livingroom_window
         kelvin: 2700
         brightness_pct: >-
           {% if (states.media_player.woonkamer_2.state) == 'playing' %} 20
@@ -68,8 +68,8 @@ appletv_birthday:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
-      entity_id: light.balcony
       data:
+        entity_id: light.balcony
         brightness_pct: 100
         effect: 0
 
@@ -78,8 +78,8 @@ appletv_halloween:
   sequence:
 
     - service: light.turn_on
-      entity_id: light.livingroom_wall
       data_template:
+        entity_id: light.livingroom_wall
         kelvin: 2700
         brightness_pct: >-
           {% if (states.media_player.woonkamer_2.state) == 'playing' %} 60
@@ -88,8 +88,8 @@ appletv_halloween:
           {% endif %}
 
     - service: light.turn_on
-      entity_id: light.livingroom_window
       data_template:
+        entity_id: light.livingroom_window
         kelvin: 2700
         brightness_pct: >-
           {% if (states.media_player.woonkamer_2.state) == 'playing' %} 20
@@ -106,8 +106,8 @@ appletv_halloween:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
-      entity_id: light.dressoir_2
       data_template:
+        entity_id: light.dressoir_2
         color_name: purple
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
@@ -122,8 +122,8 @@ appletv_kingsday:
   sequence:
 
     - service: light.turn_on
-      entity_id: light.livingroom_wall
       data_template:
+        entity_id: light.livingroom_wall
         kelvin: 2700
         brightness_pct: >-
           {% if (states.media_player.woonkamer_2.state) == 'playing' %} 60
@@ -132,8 +132,8 @@ appletv_kingsday:
           {% endif %}
 
     - service: light.turn_on
-      entity_id: light.livingroom_window
       data_template:
+        entity_id: light.livingroom_window
         kelvin: 2700
         brightness_pct: >-
           {% if (states.media_player.woonkamer_2.state) == 'playing' %} 20
@@ -142,26 +142,26 @@ appletv_kingsday:
           {% endif %}
 
     - service: light.turn_on
-      entity_id: light.dressoir_1
       data_template:
+        entity_id: light.dressoir_1
         color_name: red
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
-      entity_id: light.dressoir_2
       data_template:
+        entity_id: light.dressoir_2
         color_temp: 153
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
-      entity_id: light.dressoir_3
       data_template:
+        entity_id: light.dressoir_3
         color_name: blue
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
     - service: light.turn_on
-      entity_id: light.balcony
       data:
+        entity_id: light.balcony
         brightness_pct: 100
         effect: 0
 
@@ -208,13 +208,13 @@ appletv_christmas:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 75 }}"
 
     - service: light.turn_on
-      entity_id: light.dressoir_2
       data_template:
+        entity_id: light.dressoir_2
         color_temp: 153
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 75 }}"
 
     - service: light.turn_on
-      entity_id: light.balcony
       data:
+        entity_id: light.balcony
         brightness_pct: 100
         effect: 0

@@ -1,16 +1,16 @@
 - alias: "Scene - Kay Learning"
   trigger:
 
-  - entity_id: switch.kay_learning
     platform: state
+    entity_id: switch.kay_learning
 
   condition:
     - condition: state
       entity_id: input_boolean.scene_daylight
-      state: "off"
+      state: "on"
 
   action:
-  - service: light.turn_on
-    entity_id: light.newkaku_01401eb6_a
-    data_template:
-      brightness_pct: "{{ 100 if is_state('switch.kay_learning', 'on') else 50 }}"
+    - service: light.turn_on
+      entity_id: light.newkaku_01401eb6_a
+      data_template:
+        brightness_pct: "{{ 100 if is_state('switch.kay_learning', 'on') else 50 }}"

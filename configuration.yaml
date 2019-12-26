@@ -13,12 +13,21 @@ updater:
 logbook:
 zeroconf:
 mobile_app:
-browser_mod:
+browser_mod: 
+#!include package/compontents/configs/browser_mod.yaml
+  prefix: "browser_"
+  devices:
+    c40defa2_5a400635:
+      name: "iMac Safari"
+    d9a509f4_a80fc995:
+      name: "Lenovo Full Kiosk"
 
-customizer:
+customizer: 
+#!include package/compontents/configs/customizer.yaml
   custom_ui: local
 
-auto_backup:
+auto_backup: 
+#!include package/compontents/configs/auto_backup.yaml
   auto_purge: true
 
 zone: !include_dir_list package/compontents/zones

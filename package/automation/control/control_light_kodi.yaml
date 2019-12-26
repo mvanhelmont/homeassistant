@@ -1,7 +1,7 @@
 - alias: "Control - Kodi Status"
   trigger:
-  - entity_id: media_player.kodi
     platform: state
+    entity_id: media_player.kodi
 
   condition: 
     - condition: state

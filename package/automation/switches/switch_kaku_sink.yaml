@@ -1,17 +1,17 @@
 - alias: "Switch - Kitchen On Off"
   trigger:
-    - platform: state
-      entity_id: switch.newkaku_011fad02_b
+    platform: state
+    entity_id: switch.newkaku_011fad02_b
 
   action:
     - service: light.turn_on
-      entity_id: light.sink_all
       data_template:
-        brightness_pct: "{{ 100 if is_state('switch.newkaku_011fad02_b', 'on') else 0 }}"
+        entity_id: light.sink_all
         kelvin: 4700
+        brightness_pct: "{{ 100 if is_state('switch.newkaku_011fad02_b', 'on') else 0 }}"
 
     - service: light.turn_on
-      entity_id: light.kitchen_all
       data_template:
-        brightness_pct: "{{ 100 if is_state('switch.newkaku_011fad02_b', 'on') else 0 }}"
+        entity_id: light.kitchen_all
         kelvin: 4700
+        brightness_pct: "{{ 100 if is_state('switch.newkaku_011fad02_b', 'on') else 0 }}"

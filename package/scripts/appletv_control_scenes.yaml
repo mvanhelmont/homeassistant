@@ -14,13 +14,13 @@ appletv_control_paused:
         brightness_pct: 100
 
     - service: light.turn_on
-      entity_id: light.nanoleaf
       data:
+        entity_id: light.nanoleaf
         brightness_pct: 50
 
     - service: light.turn_on
-      entity_id: light.dressoir_all
       data_template:
+        entity_id: light.dressoir_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
 appletv_control_playing:
@@ -28,8 +28,8 @@ appletv_control_playing:
   sequence:
 
     - service: light.turn_on
-      entity_id: light.livingroom_wall
       data:
+        entity_id: light.livingroom_wall
         brightness_pct: 60
 
     - service: light.turn_on
@@ -41,8 +41,8 @@ appletv_control_playing:
         brightness_pct: 30
 
     - service: light.turn_on
-      entity_id: light.dressoir_al
       data_template:
+        entity_id: light.dressoir_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 25 }}"
 
     - service: light.turn_on
@@ -53,8 +53,8 @@ appletv_control_playing:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_16', 'on') else 100 }}"
 
     - service: light.turn_on
-      entity_id: light.toilet_all
       data_template:    
+        entity_id: light.toilet_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_20', 'on') else 100 }}"          
           
 
@@ -71,13 +71,13 @@ appletv_control_idle:
         brightness_pct: 100
 
     - service: light.turn_on
-      entity_id: light.nanoleaf
       data:
+        entity_id: light.nanoleaf
         brightness_pct: 50
 
     - service: light.turn_on
-      entity_id: light.dressoir_al
       data_template:
+        entity_id: light.dressoir_al
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
         
     - service: light.turn_on
@@ -88,6 +88,6 @@ appletv_control_idle:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_16', 'on') else 100 }}"
 
     - service: light.turn_on
-      entity_id: light.toilet_all
       data_template:    
+        entity_id: light.toilet_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_20', 'on') else 100 }}"

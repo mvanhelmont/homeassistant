@@ -15,7 +15,6 @@ alexa_speak_engine:
 
     - delay: "00:00:03"
 
-# THIS IS WORKING
     - service: notify.alexa_media_peter_s_echo_dot
       data_template:
         target: media_player.this_device

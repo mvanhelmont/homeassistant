@@ -15,16 +15,16 @@
 
   action:
     - service: light.turn_on
-      entity_id: light.nanoleaf
       data:
+        entity_id: light.nanoleaf
         brightness_pct: 30
         effect: Fireplace
 
     - service: script.evening_normal
 
     - service: homeassistant.turn_on
-      entity_id: light.newkaku_01401eb6_a
       data:
+        entity_id: light.newkaku_01401eb6_a
         brightness_pct: 50
 
     - service: script.pushover_engine

@@ -1,7 +1,7 @@
 - alias: "Control - Bathroom Lights Are On"
   trigger:
-  - entity_id: binary_sensor.node_15
     platform: state
+    entity_id: binary_sensor.node_15
     to: "off"
     for:
       minutes: 2

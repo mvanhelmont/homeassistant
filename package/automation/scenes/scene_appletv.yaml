@@ -1,12 +1,11 @@
 - alias: "Scene - AppleTV"
   trigger:
+    - platform: state
+      entity_id: sun.sun 
 
-  - platform: state
-    entity_id: sun.sun 
-
-  - entity_id: sensor.harmony
-    platform: state
-    to: "Apple TV"
+    - platform: state
+      entity_id: sensor.harmony
+      to: "Apple TV"
 
   condition:
     - condition: state
@@ -30,50 +29,50 @@
       state: "on"
 
   action:
-  - service: input_boolean.turn_on
-    entity_id: input_boolean.scene_appletv
+    - service: input_boolean.turn_on
+      entity_id: input_boolean.scene_appletv
 
-  - service: input_boolean.turn_off
-    data:
-      entity_id: 
-        - input_boolean.scene_evening
-        - input_boolean.scene_tv
-        - input_boolean.scene_daylight
-        - input_boolean.scene_kodi
-        - input_boolean.scene_sexy
-        - input_boolean.lux_level_low
+    - service: input_boolean.turn_off
+      data:
+        entity_id: 
+          - input_boolean.scene_evening
+          - input_boolean.scene_tv
+          - input_boolean.scene_daylight
+          - input_boolean.scene_kodi
+          - input_boolean.scene_sexy
+          - input_boolean.lux_level_low
 
-  - service: light.turn_on
-    entity_id: light.nanoleaf
-    data_template:
-      brightness_pct: 20
-      effect: >-
-        {% if (states.sensor.holiday.state) == 'Christmas' %} Christmas
-        {% elif (states.sensor.holiday.state) == 'Halloween' %} Halloween
-        {% elif (states.sensor.holiday.state) == 'Kingsday' %} Kingsday
-        {% elif (states.sensor.holiday.state) == 'Birthday' %} Kingsday
-        {% else %} Kay
-        {% endif %}
+    - service: light.turn_on
+      data_template:
+        entity_id: light.nanoleaf
+        brightness_pct: 20
+        effect: >-
+          {% if (states.sensor.holiday.state) == 'Christmas' %} Christmas
+          {% elif (states.sensor.holiday.state) == 'Halloween' %} Halloween
+          {% elif (states.sensor.holiday.state) == 'Kingsday' %} Kingsday
+          {% elif (states.sensor.holiday.state) == 'Birthday' %} Kingsday
+          {% else %} Kay
+          {% endif %}
 
-  - service_template: >-
-       {% if (states.sensor.holiday.state) == 'Christmas' %} script.appletv_christmas
-       {% elif (states.sensor.holiday.state) == 'Halloween' %} script.appletv_halloween
-       {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.appletv_kingsday
-       {% elif (states.sensor.holiday.state) == 'Birthday' %} script.appletv_birthday
-       {% else %} script.evening_normal
-       {% endif %}
+    - service_template: >- 
+         {% if (states.sensor.holiday.state) == 'Christmas' %} script.appletv_christmas
+         {% elif (states.sensor.holiday.state) == 'Halloween' %} script.appletv_halloween
+         {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.appletv_kingsday
+         {% elif (states.sensor.holiday.state) == 'Birthday' %} script.appletv_birthday
+         {% else %} script.evening_normal
+         {% endif %}
 
-  - service: homeassistant.turn_on
-    entity_id: light.newkaku_01401eb6_a
-    data_template:
-      brightness_pct: >-
-        {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
-        {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
-        {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
-        {% else %} 50
-        {% endif %}
+    - service: homeassistant.turn_on
+      entity_id: light.newkaku_01401eb6_a
+      data_template:
+        brightness_pct: >-
+          {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
+          {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
+          {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
+          {% else %} 50
+          {% endif %}
         
-  - service: script.engine_say
-    data_template:
-      media_player: media_player.this_device
-      say_scene_appletv: "true"
+    - service: script.engine_say
+      data_template:
+        media_player: media_player.this_device
+        say_scene_appletv: "true"
