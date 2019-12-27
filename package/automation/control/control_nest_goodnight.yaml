@@ -18,8 +18,8 @@
 
   action:
     service: climate.set_temperature
-    entity_id: climate.entryway
     data_template:
+      entity_id: climate.entryway
       temperature: >-
         {% set outside = states('sensor.dark_sky_temperature') | float %}
         {% set inside = states('sensor.entryway_thermostat_target') | float %}

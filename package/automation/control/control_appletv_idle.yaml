@@ -1,4 +1,4 @@
-- alias: "Control - AppleTV is playing idle"
+- alias: "Control - AppleTV status is idle"
   trigger:
     platform: state
     entity_id: media_player.woonkamer_2

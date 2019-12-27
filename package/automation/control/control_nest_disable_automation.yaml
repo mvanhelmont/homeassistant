@@ -1,8 +1,8 @@
 - alias: "Control - Disable Nest Control"
   trigger:
 
-  - entity_id: input_boolean.nest_disable_control
     platform: state
+    entity_id: input_boolean.nest_disable_control
 
   action:
     - service: script.pushover_engine

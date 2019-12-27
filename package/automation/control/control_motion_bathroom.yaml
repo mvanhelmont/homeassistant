@@ -4,9 +4,9 @@
     entity_id: binary_sensor.node_15
 
   condition:
-    - condition: state
-      entity_id: switch.newkaku_01616a32_a
-      state: "off"
+    condition: state
+    entity_id: switch.newkaku_01616a32_a
+    state: "off"
 
   action:
     service: light.turn_on

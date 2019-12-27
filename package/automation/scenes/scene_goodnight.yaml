@@ -34,7 +34,7 @@
     - service: homeassistant.turn_on
       data_template:
         entity_id: light.newkaku_01401eb6_a
-        brightness_pct: >
+        brightness_pct: >-
           {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
           {% else %} 0
           {% endif %}

@@ -8,12 +8,12 @@
     entity_id: climate.entryway
 
   condition:
-    - condition: state
-      entity_id: binary_sensor.sensor_manual_family_home
-      state: "off" 
+    condition: state
+    entity_id: binary_sensor.sensor_manual_family_home
+    state: "off" 
 
   action:
     service: climate.set_temperature
-    entity_id: climate.entryway
     data:
+      entity_id: climate.entryway
       temperature: 9

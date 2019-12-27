@@ -1,5 +1,6 @@
 - alias: "System - LetsEncrypt renewal"
   trigger:
+  
     platform: time
     at: "02:00:00"
 

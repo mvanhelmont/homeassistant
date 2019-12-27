@@ -1,24 +1,14 @@
 - alias: "TEST - trigger statement"
   trigger:
-  - platform: state
+    platform: state
     entity_id: switch.newkaku_014e5906_a
+    to: "on"
 
   action:
-    - service: light.turn_on
-      entity_id: light.dressoir_all
-      data_template:
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
-  
-  
-#    - service: script.engine_say
-#      data_template:
-#        media_player: media_player.this_device
-#        say_testing: "true"
-#        say_greeting: "true"
-#        say_dark_outside: "true"
-#        say_inside_weathe: "true"
-#        say_outside_weather: "true"
-#        say_light_check: "true"
+    service: script.engine_say
+    data_template:
+      media_player: media_player.lenovo_full_kiosk
+      say_testing: "true"
 
 ######################################################
 # RANDOM DELAY FOR HOLIDAT SCENE

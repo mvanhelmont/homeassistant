@@ -7,8 +7,8 @@
 
   action:
     - service: light.turn_on
-      entity_id: light.nanoleaf
       data:
+        entity_id: light.nanoleaf
         brightness_pct: 30
         effect: Romantic
 

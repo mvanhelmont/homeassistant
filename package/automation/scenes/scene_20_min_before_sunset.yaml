@@ -1,5 +1,6 @@
 - alias: "Scene - 20Min before sunset"
   trigger:
+  
     platform: sun
     event: sunset
     offset: "-00:18:00"

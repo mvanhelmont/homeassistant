@@ -1,4 +1,4 @@
-- alias: "Control - AppleTV is on pause"
+- alias: "Control - AppleTV status is paused"
   trigger:
     platform: state
     entity_id: media_player.woonkamer_2
@@ -8,7 +8,7 @@
     - condition: state
       entity_id: sun.sun
       state: "below_horizon"
-
+      
     - condition: state
       entity_id: input_boolean.scene_appletv
       state: "on"

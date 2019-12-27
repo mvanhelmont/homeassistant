@@ -1,24 +1,24 @@
 pushover_engine:
   alias: "Notify Pushsover Engine"
   sequence:
-    - service: notify.pushover
-      data_template:
-        message: "{{ message }}"
-        title: "{{ title }}"
-        data:
-          priority: "{{ priority }}"
-          sound: >-
-            {% if priority == '2' %} {{ sound }}
-            {% else %} pushover
-            {% endif %}
-          retry: >-
-            {% if priority == '2' %} 60
-            {% else %} 0
-            {% endif %}
-          expire: >-
-            {% if priority == '2' %} 3600
-            {% else %} 0
-            {% endif %}
+    service: notify.pushover
+    data_template:
+      message: "{{ message }}"
+      title: "{{ title }}"
+      data:
+        priority: "{{ priority }}"
+        sound: >-
+          {% if priority == '2' %} {{ sound }}
+          {% else %} pushover
+          {% endif %}
+        retry: >-
+          {% if priority == '2' %} 60
+          {% else %} 0
+          {% endif %}
+        expire: >-
+          {% if priority == '2' %} 3600
+          {% else %} 0
+          {% endif %}
 
 # PRIORITY LEVEL
 #

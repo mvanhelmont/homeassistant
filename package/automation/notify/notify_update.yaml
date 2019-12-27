@@ -1,17 +1,18 @@
 - alias: "Notification - Update Available Notification"
   initial_state: on
   trigger:
+  
     platform: state
     entity_id: binary_sensor.update_available
 
   condition:
-    - condition: template
-      value_template: "{{ states('sensor.current_version') != states('sensor.latest_version') }}"
+    condition: template
+    value_template: "{{ states('sensor.current_version') != states('sensor.latest_version') }}"
 
   action: 
-    - service: script.pushover_engine
-      data_template:
-        message: "HA version {{ states('sensor.latest_version') }} is available!. {{now().strftime('%d-%m-%Y')}}"
-        priority: 0
-        sound: bike
-        title: "HA System"
+    service: script.pushover_engine
+    data_template:
+      message: "HA version {{ states('sensor.latest_version') }} is available!. {{now().strftime('%d-%m-%Y')}}"
+      priority: 0
+      sound: bike
+      title: "HA System"

@@ -1,10 +1,12 @@
 - alias: "Notification - RDW - Verzekering"
   trigger:
-    - platform: state
-      entity_id: sensor.toyota_aygo_insured
-      to: "False"
+  
+    platform: state
+    entity_id: sensor.toyota_aygo_insured
+    to: "False"
+ 
   action:
-    - service: notify.ha_email
-      data_template:
-        title: "HA - Auto verzekering verlopen"
-        message: "De auto is niet verzekerd! Sluit een autoverzekering af voordat je ermee de weg op gaat."
+    service: notify.ha_email
+    data_template:
+      title: "HA - Auto verzekering verlopen"
+      message: "De auto is niet verzekerd! Sluit een autoverzekering af voordat je ermee de weg op gaat."

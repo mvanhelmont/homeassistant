@@ -1,12 +1,13 @@
 - alias: "Notification - Kay Left or Arrive Home"
   trigger:
-  - entity_id: device_tracker.geofency_kay
+
     platform: state
+    entity_id: device_tracker.geofency_kay
 
   action:
-    - service: script.pushover_engine
-      data_template:
-        message: "{{ 'Kay arrived home' if is_state('device_tracker.geofency_kay', 'home') else 'Kay left home.' }}"
-        priority: 0
-        sound: bike
-        title: "HA Notify Engine"
+    service: script.pushover_engine
+    data_template:
+      message: "{{ 'Kay arrived home' if is_state('device_tracker.geofency_kay', 'home') else 'Kay left home.' }}"
+      priority: 0
+      sound: bike
+      title: "HA Notify Engine"

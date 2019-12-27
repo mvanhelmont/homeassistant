@@ -1,4 +1,4 @@
-- alias: "Control - AppleTV is playing"
+- alias: "Control - AppleTV status is playing"
   trigger:
     platform: state
     entity_id: media_player.woonkamer_2

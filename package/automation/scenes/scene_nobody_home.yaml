@@ -5,9 +5,9 @@
     entity_id: binary_sensor.sensor_manual_family_home
 
   condition:
-    - condition: state
-      entity_id: binary_sensor.sensor_manual_family_home
-      state: "off"
+    condition: state
+    entity_id: binary_sensor.sensor_manual_family_home
+    state: "off"
 
   action:
     - service: input_boolean.turn_on

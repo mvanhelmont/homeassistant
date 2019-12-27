@@ -1,11 +1,11 @@
 engine_notify_speech:
   alias: 'TTS Notify Engine'
   sequence:
-    - service: script.engine_say
-      data_template:
-        media_player: "{{ media_player }}"
-        message: "{{ message }}"
-        say_greeting: "false"
+    service: script.engine_say
+    data_template:
+      media_player: "{{ media_player }}"
+      message: "{{ message }}"
+      say_greeting: "false"
 
 engine_say:
   alias: 'TTS Say Briefing Engine'
@@ -51,8 +51,6 @@ engine_speech_processing:
       data_template:
         topic: "homeassistant/speech/alexa_last_message/state"
         retain: true
-        # payload: >-
-        #   { "value": "{{ briefing|truncate(254) }}" }
         payload: "{{ briefing }}"
         
     - service: mqtt.publish

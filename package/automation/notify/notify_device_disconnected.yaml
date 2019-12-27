@@ -1,47 +1,47 @@
 - alias: "Notification - Device disconnected"
   trigger:
-    - platform: state
-      entity_id: 
-        - binary_sensor.resillio
-        - binary_sensor.ssh_server
-        - binary_sensor.milight_hub
-        - binary_sensor.meek_p1_meter
-        - binary_sensor.meek_bedroom
-        - binary_sensor.meek_dressoir
-        - binary_sensor.meek_hallway
-        - binary_sensor.meek_kitchen
-        - binary_sensor.meek_wc
-        - binary_sensor.meek_bathroom
-      to: "off"
+    platform: state
+    entity_id: 
+      - binary_sensor.resillio
+      - binary_sensor.ssh_server
+      - binary_sensor.milight_hub
+      - binary_sensor.meek_p1_meter
+      - binary_sensor.meek_bedroom
+      - binary_sensor.meek_dressoir
+      - binary_sensor.meek_hallway
+      - binary_sensor.meek_kitchen
+      - binary_sensor.meek_wc
+      - binary_sensor.meek_bathroom
+    to: "off"
 
   action:
-    - service: script.pushover_engine
-      data_template:
-        message: "{{ trigger.from_state.attributes.friendly_name }} is disconnected"
-        priority: 0
-        sound: bike
-        title: "HA Notify Engine"
+    service: script.pushover_engine
+    data_template:
+      message: "{{ trigger.from_state.attributes.friendly_name }} is disconnected"
+      priority: 0
+      sound: bike
+      title: "HA Notify Engine"
 
 - alias: "Notification - Device connected"
   trigger:
-    - platform: state
-      entity_id: 
-        - binary_sensor.resillio
-        - binary_sensor.ssh_server
-        - binary_sensor.milight_hub
-        - binary_sensor.meek_p1_meter
-        - binary_sensor.meek_bedroom
-        - binary_sensor.meek_dressoir
-        - binary_sensor.meek_hallway
-        - binary_sensor.meek_kitchen
-        - binary_sensor.meek_wc
-        - binary_sensor.meek_bathroom  
-      to: "on"
+    platform: state
+    entity_id: 
+      - binary_sensor.resillio
+      - binary_sensor.ssh_server
+      - binary_sensor.milight_hub
+      - binary_sensor.meek_p1_meter
+      - binary_sensor.meek_bedroom
+      - binary_sensor.meek_dressoir
+      - binary_sensor.meek_hallway
+      - binary_sensor.meek_kitchen
+      - binary_sensor.meek_wc
+      - binary_sensor.meek_bathroom  
+    to: "on"
 
   action:
-    - service: script.pushover_engine
-      data_template:
-        message: "{{ trigger.from_state.attributes.friendly_name }} connected again"
-        priority: 0
-        sound: bike
-        title: "HA Notify Engine"
+    service: script.pushover_engine
+    data_template:
+      message: "{{ trigger.from_state.attributes.friendly_name }} connected again"
+      priority: 0
+      sound: bike
+      title: "HA Notify Engine"

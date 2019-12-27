@@ -4,9 +4,9 @@
     at: "23:30:00"
 
   condition:
-    - condition: state
-      entity_id: input_boolean.emulate_holiday
-      state: "on" 
+    condition: state
+    entity_id: input_boolean.emulate_holiday
+    state: "on" 
 
   action:
     - service: light.turn_on

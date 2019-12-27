@@ -4,9 +4,9 @@
     entity_id: binary_sensor.node_18
 
   condition:
-    - condition: state
-      entity_id: input_boolean.scene_goodnight
-      state: "on"
+    condition: state
+    entity_id: input_boolean.scene_goodnight
+    state: "on"
 
   action:
     service: light.turn_on

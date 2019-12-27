@@ -1,10 +1,13 @@
 - alias: "System - Automatic Theme Change Sunset"
   trigger:
+  
     - platform: homeassistant
       event: start
+  
     - platform: state
       entity_id: sun.sun
       to: above_horizon
+  
     - platform: state
       entity_id: sun.sun
       to: below_horizon

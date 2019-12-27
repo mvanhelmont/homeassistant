@@ -20,15 +20,14 @@
       to: "22"
 
   condition:
-    - condition: state
-      entity_id: binary_sensor.sensor_manual_family_home
-      state: "off" 
+    condition: state
+    entity_id: binary_sensor.sensor_manual_family_home
+    state: "off" 
 
   action:
-  - service: script.pushover_engine
+    service: script.pushover_engine
     data_template:
       message: "registered motion {{ trigger.from_state.attributes.friendly_name  }}"
       priority: 2
       sound: pushover
       title: "HA Security ALERT"
-

@@ -1,0 +1,8 @@
+---
+platform: p2000
+name: P2000 Amsterdam
+regios: 13
+disciplines: 1,2,3,4
+scan_interval: 60
+latitude: !secret latitude
+longitude: !secret longitude
