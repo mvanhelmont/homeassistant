@@ -13,7 +13,7 @@
       state: "off" 
 
   action:
-    - service: climate.set_temperature
-      entity_id: climate.entryway
-      data:
-        temperature: 9
+    service: climate.set_temperature
+    entity_id: climate.entryway
+    data:
+      temperature: 9

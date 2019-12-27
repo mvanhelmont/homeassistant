@@ -17,13 +17,13 @@
       state: "on"
 
   action:
-    - service: climate.set_temperature
-      entity_id: climate.entryway
-      data_template:
-        temperature: >-
-          {% set outside = states('sensor.dark_sky_temperature') | float %}
-          {% set inside = states('sensor.entryway_thermostat_target') | float %}
-          {% if outside > 12 and inside > 15 %} 10
-          {% elif outside < 12 and inside < 15 %} 10
-          {% else %} 9
-          {% endif %}
+    service: climate.set_temperature
+    entity_id: climate.entryway
+    data_template:
+      temperature: >-
+        {% set outside = states('sensor.dark_sky_temperature') | float %}
+        {% set inside = states('sensor.entryway_thermostat_target') | float %}
+        {% if outside > 12 and inside > 15 %} 10
+        {% elif outside < 12 and inside < 15 %} 10
+        {% else %} 9
+        {% endif %}

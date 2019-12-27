@@ -13,8 +13,8 @@
       state: "on" 
 
   action:
-    - service_template: >-
-        {% if (states.media_player.kodi.state) == 'playing' %} script.kodi_control_playing
-        {% elif (states.media_player.kodi.state) == 'paused' %} script.kodi_control_paused
-        {% else %} script.kodi_control_idle
-        {% endif %}
+    service_template: >-
+      {% if (states.media_player.kodi.state) == 'playing' %} script.kodi_control_playing
+      {% elif (states.media_player.kodi.state) == 'paused' %} script.kodi_control_paused
+      {% else %} script.kodi_control_idle
+      {% endif %}

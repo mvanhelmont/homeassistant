@@ -4,45 +4,45 @@
     at: "23:30:00"
 
   condition:
-  - condition: state
-    entity_id: input_boolean.emulate_holiday
-    state: "on" 
+    - condition: state
+      entity_id: input_boolean.emulate_holiday
+      state: "on" 
 
   action:
-  - service: light.turn_on
-    data:
-      entity_id:
-        - light.bedroom_all
-        - light.bathroom_all
+    - service: light.turn_on
+      data:
+        entity_id:
+          - light.bedroom_all
+          - light.bathroom_all
 
-  - service: light.turn_off
-    data:
-      entity_id:
-        - light.hallway
-        - light.kitchen_all
-        - light.sink_all
-        - light.toilet_all
-        - light.dressoir_all
-        - light.livingroom_all
-        - light.balcony
-        - light.newkaku_01401eb6_a
+    - service: light.turn_off
+      data:
+        entity_id:
+          - light.hallway
+          - light.kitchen_all
+          - light.sink_all
+          - light.toilet_all
+          - light.dressoir_all
+          - light.livingroom_all
+          - light.balcony
+          - light.newkaku_01401eb6_a
 
-  - service: input_boolean.turn_off
-    entity_id: input_boolean.emulate_holiday
+    - service: input_boolean.turn_off
+      entity_id: input_boolean.emulate_holiday
 
-  - delay: "00:{{ (range(2, 10)|random|int) }}:00"
+    - delay: "00:{{ (range(2, 10)|random|int) }}:00"
   
-  - service: light.turn_off
-    entity_id: light.bathroom_all
+    - service: light.turn_off
+      entity_id: light.bathroom_all
 
-  - delay: "00:{{ (range(30, 45)|random|int) }}:00"
+    - delay: "00:{{ (range(30, 45)|random|int) }}:00"
 
-  - service: light.turn_off
-    entity_id: light.bedroom_all 
+    - service: light.turn_off
+      entity_id: light.bedroom_all 
 
-  - service: script.pushover_engine
-    data_template:
-      message: "Enjoy holiday, the emulate scene is deactivated"
-      priority: 0
-      sound: pushover
-      title: "HA Notify Engine"
+    - service: script.pushover_engine
+      data_template:
+        message: "Enjoy holiday, the emulate scene is deactivated"
+        priority: 0
+        sound: pushover
+        title: "HA Notify Engine"

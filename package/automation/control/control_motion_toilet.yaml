@@ -4,13 +4,13 @@
     entity_id: binary_sensor.node_20
 
   condition:
-    - condition: state
-      entity_id: input_boolean.scene_goodnight
-      state: "on"
+    condition: state
+    entity_id: input_boolean.scene_goodnight
+    state: "on"
 
   action:
-    - service: light.turn_on
-      entity_id: light.toilet_all
-      data_template:
-        kelvin: 4700
-        brightness_pct: "{{ 20 if is_state('binary_sensor.node_20', 'on') else 0 }}"
+    service: light.turn_on
+    entity_id: light.toilet_all
+    data_template:
+      kelvin: 4700
+      brightness_pct: "{{ 20 if is_state('binary_sensor.node_20', 'on') else 0 }}"
