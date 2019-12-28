@@ -1,11 +1,12 @@
 - alias: "Control - Nest Control Nobody Home"
   trigger:
-  - platform: state
-    entity_id: binary_sensor.sensor_manual_family_home
-    to: "off"
+  
+    - platform: state
+      entity_id: binary_sensor.sensor_manual_family_home
+      to: "off"
 
-  - platform: state
-    entity_id: climate.entryway
+    - platform: state
+      entity_id: climate.entryway
 
   condition:
     condition: state

@@ -1,5 +1,6 @@
 - alias: "Control - Nest Control Someone Home"
   trigger:
+  
     - platform: state
       entity_id: binary_sensor.sensor_manual_family_home
       to: "on"

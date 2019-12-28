@@ -4,6 +4,7 @@
   
       platform: homeassistant
       event: start
+      
   action:
     - delay: "00:01:00"
 

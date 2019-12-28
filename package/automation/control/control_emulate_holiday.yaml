@@ -1,5 +1,6 @@
 - alias: "Control - Emulate Holiday"
   trigger:
+  
     platform: time
     at: "23:30:00"
 

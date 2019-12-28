@@ -1,5 +1,6 @@
-- alias: "Switch - Toilet On Off"
+- alias: "Switch - Hallway"
   trigger:
+  
     platform: state
     entity_id: switch.newkaku_016138ba_a
 

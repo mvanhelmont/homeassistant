@@ -1,5 +1,6 @@
 - alias: "Notification - Device disconnected"
   trigger:
+  
     platform: state
     entity_id: 
       - binary_sensor.resillio
@@ -24,6 +25,7 @@
 
 - alias: "Notification - Device connected"
   trigger:
+  
     platform: state
     entity_id: 
       - binary_sensor.resillio

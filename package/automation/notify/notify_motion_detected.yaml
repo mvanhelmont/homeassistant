@@ -1,5 +1,6 @@
 - alias: "Motion Detection - Notification Nobody Home"
   trigger:
+  
     - platform: state
       entity_id: 
         - binary_sensor.node_15

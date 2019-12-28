@@ -1,5 +1,6 @@
 - alias: "Control - Lux on Daytime Low"
   trigger:
+  
     platform: numeric_state
     entity_id: sensor.node_19_luminance
     below: 160

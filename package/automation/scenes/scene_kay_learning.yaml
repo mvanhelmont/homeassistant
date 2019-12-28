@@ -7,7 +7,7 @@
   condition:
     condition: state
     entity_id: input_boolean.scene_daylight
-    state: "on"
+    state: "off"
 
   action:
     service: light.turn_on

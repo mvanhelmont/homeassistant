@@ -1,5 +1,6 @@
 - alias: "Control - AppleTV status is playing"
   trigger:
+  
     platform: state
     entity_id: media_player.woonkamer_2
     to: "playing"

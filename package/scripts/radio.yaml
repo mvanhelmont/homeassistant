@@ -1,0 +1,23 @@
+stream_radio:
+  alias: "Play Radio"
+  sequence:
+    - service: media_player.play_media
+      data_template:
+        entity_id: >-
+          {% if is_state("input_select.radio_selector", "Kitchen") %} media_player.lenovo_full_kiosk
+          {% elif is_state("input_select.radio_selector", "iMac") %} media_player.imac_safari
+          {% endif %}
+        media_content_id: >-
+          {% if is_state("input_select.radio_station", "Radio 538") %} https://18973.live.streamtheworld.com/RADIO538.mp3
+          {% elif is_state("input_select.radio_station", "Q-Music") %} http://icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_96.mp3
+          {% elif is_state("input_select.radio_station", "3FM") %} http://icecast.omroep.nl/3fm-bb-mp3
+          {% elif is_state("input_select.radio_station", "100% NL") %} http://stream.100p.nl/100pctnl.mp3
+          {% elif is_state("input_select.radio_station", "Veronica") %} https://21633.live.streamtheworld.com/SRGSTR09.mp3
+          {% elif is_state("input_select.radio_station", "Sky Radio") %} https://21303.live.streamtheworld.com/SRGSTR08AAC.aac
+          {% elif is_state("input_select.radio_station", "Arrow Classic Rock") %} https://stream.gal.io/arrow           
+          {% elif is_state("input_select.radio_station", "Classic FM") %} http://21303.live.streamtheworld.com/CLASSICFM.mp3
+          {% elif is_state("input_select.radio_station", "BNR Nieuwsradio") %} http://icecast-bnr-cdp.triple-it.nl/bnr_mp3_96_04
+          {% elif is_state("input_select.radio_station", "SLAM! Hardstyle") %} http://streaming.slam.nl/web11_mp3
+          {% elif is_state("input_select.radio_station", "SLAM!") %} http://stream.radiocorp.nl/web14_mp3
+          {% endif %}
+        media_content_type: "audio/mp4"

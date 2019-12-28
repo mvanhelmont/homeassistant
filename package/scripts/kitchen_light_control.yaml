@@ -2,10 +2,10 @@ kitchen_normal_turn_on:
   alias: "Kitchen Normal Turn On"
   sequence:
     - service: light.turn_on
-      entity_id: 
-        - light.kitchen_all
-        - light.sink_all 
       data_template:
+        entity_id: 
+          - light.kitchen_all
+          - light.sink_all
         kelvin: 2700
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'on' %} 20
@@ -17,10 +17,10 @@ kitchen_halloween_turn_on:
   alias: "Kitchen Halloween Turn On"
   sequence:
     - service: light.turn_on
-      entity_id: 
-        - light.kitchen_all
-        - light.sink_all 
       data_template:
+        entity_id: 
+          - light.kitchen_all
+          - light.sink_all 
         kelvin: 2700
         brightness_pct: >-
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100

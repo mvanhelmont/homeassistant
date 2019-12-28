@@ -1,5 +1,6 @@
 - alias: "Motion Detection - Toilet On Off"
   trigger:
+  
     platform: state
     entity_id: binary_sensor.node_20
 

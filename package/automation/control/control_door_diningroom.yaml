@@ -1,5 +1,6 @@
 - alias: "Door Sensor - Diningroom door open Diningroom light off"
   trigger:
+  
     platform: state
     entity_id: binary_sensor.node_10
 

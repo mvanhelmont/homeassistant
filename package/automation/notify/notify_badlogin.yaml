@@ -1,5 +1,6 @@
 - alias: "Notification - Login Failure"
   trigger:
+  
     platform: template
     value_template: "{{ states('persistent_notification.http_login') != 'unknown' }}"
 

@@ -1,0 +1,8 @@
+---
+radio_selector:
+  name: 'Select Player:'
+  options:
+    - "Kitchen"
+    - "iMac"
+  initial: Kitchen
+  icon: mdi:speaker-wireless

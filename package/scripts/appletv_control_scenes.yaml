@@ -3,14 +3,14 @@ appletv_control_paused:
   sequence:
   
     - service: light.turn_on
-      entity_id:
-        - light.livingroom_wall
-        - light.livingroom_window
-        - light.kitchen_all
-        - light.sink_all
-        - light.toilet_all
-        - light.balcony
       data:
+        entity_id:
+          - light.livingroom_wall
+          - light.livingroom_window
+          - light.kitchen_all
+          - light.sink_all
+          - light.toilet_all
+          - light.balcony
         brightness_pct: 100
 
     - service: light.turn_on
@@ -33,11 +33,11 @@ appletv_control_playing:
         brightness_pct: 60
 
     - service: light.turn_on
-      entity_id:
-        - light.nanoleaf
-        - light.livingroom_window
-        - light.balcony
       data:
+        entity_id:
+          - light.nanoleaf
+          - light.livingroom_window
+          - light.balcony
         brightness_pct: 30
 
     - service: light.turn_on
@@ -46,10 +46,10 @@ appletv_control_playing:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 25 }}"
 
     - service: light.turn_on
-      entity_id:
-        - light.kitchen_all
-        - light.sink_all
       data_template:    
+        entity_id:
+          - light.kitchen_all
+          - light.sink_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_16', 'on') else 100 }}"
 
     - service: light.turn_on
@@ -63,11 +63,11 @@ appletv_control_idle:
   sequence:
 
     - service: light.turn_on
-      entity_id:
-        - light.livingroom_wall
-        - light.livingroom_window
-        - light.balcony
       data:
+        entity_id:
+          - light.livingroom_wall
+          - light.livingroom_window
+          - light.balcony
         brightness_pct: 100
 
     - service: light.turn_on
@@ -81,10 +81,10 @@ appletv_control_idle:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
         
     - service: light.turn_on
-      entity_id:
-        - light.kitchen_all
-        - light.sink_all
       data_template:    
+        entity_id:
+          - light.kitchen_all
+          - light.sink_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_16', 'on') else 100 }}"
 
     - service: light.turn_on

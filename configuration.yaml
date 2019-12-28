@@ -14,7 +14,6 @@ logbook:
 zeroconf:
 mobile_app:
 browser_mod: 
-#!include package/compontents/configs/browser_mod.yaml
   prefix: "browser_"
   devices:
     c40defa2_5a400635:
@@ -23,11 +22,9 @@ browser_mod:
       name: "Lenovo Full Kiosk"
 
 customizer: 
-#!include package/compontents/configs/customizer.yaml
   custom_ui: local
 
 auto_backup: 
-#!include package/compontents/configs/auto_backup.yaml
   auto_purge: true
 
 zone: !include_dir_list package/compontents/zones
@@ -40,6 +37,8 @@ binary_sensor: !include_dir_list package/compontents/binary_sensors
 calendar: !include_dir_list package/compontents/caldav
 group: !include_dir_merge_named package/compontents/groups
 input_boolean: !include_dir_merge_named package/compontents/input_boolean
+input_select: !include_dir_merge_named package/compontents/input_select
+input_number: !include_dir_merge_named package/compontents/input_number
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
 notify: !include_dir_list package/compontents/configs/notify

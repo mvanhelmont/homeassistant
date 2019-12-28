@@ -15,6 +15,7 @@ filter:
     - input_boolean.scene_kodi
     - input_boolean.nest_disable_control
     - input_boolean.scene_guests
+    - input_boolean.scene_cooking
     - switch.kay_learning
     - binary_sensor.node_14
     - binary_sensor.node_15
