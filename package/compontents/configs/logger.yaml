@@ -3,4 +3,6 @@ default: error
 logs:
   homeassistant.components.websocket_api: error
   homeassistant.components.zwave: info
+  homeassistant.helpers.service: debug
+  
 #  pyatv: debug

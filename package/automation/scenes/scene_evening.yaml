@@ -13,6 +13,9 @@
     - entity_id: sensor.harmony
       platform: state
       to: "off"
+      
+    - platform: state
+      entity_id: input_boolean.goodnight
 
   condition:
     - condition: state

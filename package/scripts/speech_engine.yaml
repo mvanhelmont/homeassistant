@@ -59,6 +59,6 @@ engine_speech_processing:
         retain: true
         payload: >- 
           {
-            "day": "{{ as_timestamp(now())|timestamp_custom('%A %B %-d') }}",
-            "time": "{{ as_timestamp(now())|timestamp_custom('%-I:%M %P') }}"
+            "day": "{{ as_timestamp(now())|timestamp_custom('%d-%m-%Y') }}",
+            "time": "{{ as_timestamp(now())|timestamp_custom('%H:%M:%S') }}"
           }

@@ -13,19 +13,6 @@ updater:
 logbook:
 zeroconf:
 mobile_app:
-browser_mod: 
-  prefix: "browser_"
-  devices:
-    c40defa2_5a400635:
-      name: "iMac Safari"
-    d9a509f4_a80fc995:
-      name: "Lenovo Full Kiosk"
-
-customizer: 
-  custom_ui: local
-
-auto_backup: 
-  auto_purge: true
 
 zone: !include_dir_list package/compontents/zones
 switch: !include_dir_list package/compontents/switches
@@ -58,6 +45,9 @@ speedtestdotnet: !include package/compontents/configs/speedtest.yaml
 weather: !include package/compontents/configs/weather.yaml
 homekit: !include package/compontents/configs/homekit.yaml
 recorder: !include package/compontents/configs/recorder.yaml
+customizer: !include package/compontents/configs/customizer.yaml
+auto_backup: !include package/compontents/configs/auto_backup.yaml
+browser_mod: !include package/compontents/configs/browser_mod.yaml
 
 # device_tracker: !include package/compontents/configs/device_tracker.yaml
 # alexa: !include package/compontents/devices/alexa.yaml
