@@ -1,0 +1,21 @@
+- alias: "Control - AppleTV Status"
+  trigger:
+  
+    platform: state
+    entity_id: media_player.woonkamer_2
+
+  condition: 
+    - condition: state
+      entity_id: sun.sun
+      state: "below_horizon"  
+
+    - condition: state
+      entity_id: input_boolean.scene_appletv
+      state: "on" 
+
+  action:
+    service_template: >-
+      {% if (states.media_player.woonkamer_2.state) == 'playing' %} script.appletv_control_playing
+      {% elif (states.media_player.woonkamer_2.state) == 'paused' %} script.appletv_control_paused
+      {% else %} script.appletv_control_idle
+      {% endif %}

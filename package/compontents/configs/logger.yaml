@@ -4,5 +4,6 @@ logs:
   homeassistant.components.websocket_api: error
   homeassistant.components.zwave: info
   homeassistant.helpers.service: debug
+  homeassistant.components.pushover.notify: debug
   
 #  pyatv: debug

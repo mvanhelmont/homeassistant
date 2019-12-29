@@ -1,5 +1,5 @@
 - alias: "Notification - Random Door Open Close"
-  initial_state: "true"
+  initial_state: "false"
   trigger:
   
     platform: state
