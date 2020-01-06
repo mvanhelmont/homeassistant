@@ -1,5 +1,5 @@
 - alias: "Patches - MiLight Sink Group 0"
-  initial_state: True
+  initial_state: "true"
   trigger:
  
     platform: mqtt

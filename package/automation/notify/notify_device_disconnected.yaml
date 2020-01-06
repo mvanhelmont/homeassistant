@@ -19,8 +19,8 @@
     service: script.pushover_engine
     data_template:
       message: "{{ trigger.from_state.attributes.friendly_name }} disconnected"
-      priority: 0
-      sound: bike
+      priority: "0"
+      sound: "bike"
       title: "HA Notify Engine"
 
 - alias: "Notification - Device connected"
@@ -44,6 +44,6 @@
     service: script.pushover_engine
     data_template:
       message: "{{ trigger.from_state.attributes.friendly_name }} connected again"
-      priority: 0
-      sound: bike
+      priority: "0"
+      sound: "bike"
       title: "HA Notify Engine"

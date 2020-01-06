@@ -3,7 +3,7 @@
   
     platform: state
     entity_id: sensor.toyota_aygo_recall
-    to: "True"
+    to: "true"
   
   action:
     service: notify.ha_email

@@ -1,4 +1,4 @@
 ---
 scene_appletv:
   name: "Scene AppleTV"
-  initial: off
+  initial: "off"

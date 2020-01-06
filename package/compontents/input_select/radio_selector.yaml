@@ -4,5 +4,5 @@ radio_selector:
   options:
     - "Kitchen"
     - "iMac"
-  initial: Kitchen
+  initial: "Kitchen"
   icon: mdi:speaker-wireless

@@ -20,4 +20,14 @@ stream_radio:
           {% elif is_state("input_select.radio_station", "SLAM! Hardstyle") %} http://streaming.slam.nl/web11_mp3
           {% elif is_state("input_select.radio_station", "SLAM!") %} http://stream.radiocorp.nl/web14_mp3
           {% endif %}
-        media_content_type: "audio/mp4"
+        media_content_type: "audio/mp3"
+
+stream_radio_stop:
+  alias: "Stop Radio"
+  sequence:
+    - service: media_player.media_stop
+      data_template:
+        entity_id: >-
+          {% if is_state("input_select.radio_selector", "Kitchen") %} media_player.lenovo_full_kiosk
+          {% elif is_state("input_select.radio_selector", "iMac") %} media_player.imac_safari
+          {% endif %}

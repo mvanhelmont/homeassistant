@@ -3,3 +3,4 @@ platform: template
 sensors:
   weekofyear:
     value_template: "{{ now().strftime('%U') }}"
+    entity_id: sensor.date

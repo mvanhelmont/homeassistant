@@ -6,7 +6,7 @@
 
     - entity_id: sensor.harmony
       platform: state
-      to: "Kodi"
+      to: "kodi"
 
   condition:
     - condition: state
@@ -23,7 +23,7 @@
 
     - condition: state
       entity_id: sensor.harmony
-      state: "Kodi"
+      state: "kodi"
 
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home

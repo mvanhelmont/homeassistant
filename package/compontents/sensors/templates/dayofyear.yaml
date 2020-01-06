@@ -3,3 +3,4 @@ platform: template
 sensors:
   dayofyear:
     value_template: "{{ now().strftime('%j') }}"
+    entity_id: sensor.date

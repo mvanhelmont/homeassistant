@@ -78,13 +78,14 @@
           - light.dressoir_all
           - light.livingroom_all
           - light.balcony 
-        
-    - service: switch.turn_off
-      entity_id:
-        - switch.node_8_switch
-        - switch.node_21_switch
-        - switch.node_22_switch
-        - switch.node_2_switch 
+
+# Christmass switches        
+#    - service: switch.turn_off
+#      entity_id:
+#        - switch.node_8_switch
+#        - switch.node_21_switch
+#        - switch.node_22_switch
+#        - switch.node_2_switch 
 
 #  - service: shell_command.meek_toilet_nightscene_on
 

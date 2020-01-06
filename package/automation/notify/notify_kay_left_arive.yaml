@@ -8,6 +8,6 @@
     service: script.pushover_engine
     data_template:
       message: "{{ 'Kay arrived home' if is_state('device_tracker.geofency_kay', 'home') else 'Kay left home.' }}"
-      priority: 0
-      sound: bike
+      priority: "0"
+      sound: "bike"
       title: "HA Notify Engine"

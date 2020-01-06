@@ -6,7 +6,7 @@
 
     - platform: state
       entity_id: sensor.harmony
-      to: "Apple TV"
+      to: "apple_tv"
 
   condition:
     - condition: state
@@ -23,7 +23,7 @@
 
     - condition: state
       entity_id: sensor.harmony
-      state: "Apple TV"
+      state: "apple_tv"
 
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home

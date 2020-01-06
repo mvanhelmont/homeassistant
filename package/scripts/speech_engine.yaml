@@ -50,13 +50,13 @@ engine_speech_processing:
     - service: mqtt.publish
       data_template:
         topic: "homeassistant/speech/alexa_last_message/state"
-        retain: true
+        retain: "true"
         payload: "{{ briefing }}"
         
     - service: mqtt.publish
       data_template:
         topic: "homeassistant/speech/alexa_last_message/attributes"
-        retain: true
+        retain: "true"
         payload: >- 
           {
             "day": "{{ as_timestamp(now())|timestamp_custom('%d-%m-%Y') }}",

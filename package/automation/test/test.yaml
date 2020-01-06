@@ -5,10 +5,15 @@
     to: "on"
 
   action:
-    service: script.engine_say
+    service: notify.pushover
     data_template:
-      media_player: media_player.lenovo_full_kiosk
-      say_testing: "true"
+      message: "TEST"
+      title: "TITLE TEST"
+      data:
+        priority: 2
+        sound: pushover
+        retry: 60
+        expire: 3600
 
 ######################################################
 # RANDOM DELAY FOR HOLIDAT SCENE

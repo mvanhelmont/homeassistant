@@ -28,8 +28,6 @@
       "1/1":"Christmas",
       "1/2":"Christmas",
       "1/3":"Christmas",
-      "1/4":"Christmas",
-      "1/5":"Christmas",
       "2/14":"Valentine",
       "4/24":"Kingsday",
       "5/11":"Birthday",
@@ -102,7 +100,7 @@
       "12/28":"Christmas",
       "12/29":"Christmas",
       "12/30":"Christmas",
-      "12/31":"Christmas"
+      "12/31":"New Year's Eve"
     }
   }
 }

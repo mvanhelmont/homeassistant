@@ -18,6 +18,6 @@
         {% else %}          
           {{ trigger.from_state.attributes.friendly_name}} is closed
         {% endif %}
-      priority: 0
-      sound: bike
+      priority: "0"
+      sound: "bike"
       title: "HA Notify Engine"

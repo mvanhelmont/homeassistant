@@ -14,22 +14,6 @@ logbook:
 zeroconf:
 mobile_app:
 
-zone: !include_dir_list package/compontents/zones
-switch: !include_dir_list package/compontents/switches
-sensor: !include_dir_list package/compontents/sensors
-fan: !include_dir_list package/compontents/fan
-media_player: !include_dir_list package/compontents/media_players
-light: !include_dir_list package/compontents/light
-binary_sensor: !include_dir_list package/compontents/binary_sensors
-calendar: !include_dir_list package/compontents/caldav
-group: !include_dir_merge_named package/compontents/groups
-input_boolean: !include_dir_merge_named package/compontents/input_boolean
-input_select: !include_dir_merge_named package/compontents/input_select
-input_number: !include_dir_merge_named package/compontents/input_number
-automation: !include_dir_merge_list package/automation
-script: !include_dir_merge_named package/scripts
-notify: !include_dir_list package/compontents/configs/notify
-
 frontend: !include package/compontents/configs/frontend.yaml
 homeassistant: !include package/compontents/configs/homeassistant.yaml
 history: !include package/compontents/configs/history.yaml
@@ -55,3 +39,19 @@ browser_mod: !include package/compontents/configs/browser_mod.yaml
 # panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 # notify: !include package/compontents/configs/notify.yaml
 # google: !include package/compontents/configs/google.yaml
+
+sensor: !include_dir_list package/compontents/sensors
+zone: !include_dir_list package/compontents/zones
+switch: !include_dir_list package/compontents/switches
+fan: !include_dir_list package/compontents/fan
+media_player: !include_dir_list package/compontents/media_players
+light: !include_dir_list package/compontents/light
+group: !include_dir_merge_named package/compontents/groups
+automation: !include_dir_merge_list package/automation
+script: !include_dir_merge_named package/scripts
+notify: !include_dir_list package/compontents/configs/notify
+binary_sensor: !include_dir_list package/compontents/binary_sensors
+input_boolean: !include_dir_merge_named package/compontents/input_boolean
+input_select: !include_dir_merge_named package/compontents/input_select
+input_number: !include_dir_merge_named package/compontents/input_number
+calendar: !include_dir_list package/compontents/caldav

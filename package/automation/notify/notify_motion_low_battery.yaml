@@ -24,8 +24,8 @@
   action:
     service: script.pushover_engine
     data_template:
-      priority: 1
-      sound: bike
+      priority: "1"
+      sound: "bike"
       title: "These devices have low battery levels"
       message: >-
         {% macro battery_level() %}

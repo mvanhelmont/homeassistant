@@ -1,5 +1,5 @@
 ---
-platform: ping
-host: 192.168.100.26
-scan_interval: 60
+platform: "ping"
+host: "192.168.100.26"
+scan_interval: "60"
 name: "MQTT Server"

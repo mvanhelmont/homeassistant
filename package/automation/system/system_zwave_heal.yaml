@@ -1,5 +1,5 @@
 - alias: "System - Z-Wave Nightly Heal"
-  hide_entity: True 
+  hide_entity: "true" 
   trigger:
   
     platform: time

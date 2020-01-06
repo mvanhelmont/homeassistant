@@ -7,13 +7,13 @@ sensors:
       {% if states.remote.logitech_harmony.attributes.current_activity == "PowerOff" %}         
         off
       {% elif states.remote.logitech_harmony.attributes.current_activity == "AppleTV" %}
-        Apple TV
+        apple_tv
       {% elif states.remote.logitech_harmony.attributes.current_activity == "Ziggo" %}
-        TV
+        tv
       {% elif states.remote.logitech_harmony.attributes.current_activity == "AirPlay" %}
-        Airplay
+        airplay
       {% elif states.remote.logitech_harmony.attributes.current_activity == "Kodi" %}
-        Kodi
+        kodi
       {% elif states.remote.logitech_harmony.attributes.current_activity == "Domoticz" %}
-        Domoticz
+        domoticz
       {% endif %}

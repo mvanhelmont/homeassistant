@@ -6,4 +6,4 @@ latitude: !secret latitude
 longitude: !secret longitude
 monitored_conditions:
   - "us"
-show_on_map: true
+show_on_map: "true"

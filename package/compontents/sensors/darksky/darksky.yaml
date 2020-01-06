@@ -15,18 +15,18 @@ language: en
 scan_interval: 
   minutes: 30
 monitored_conditions:
-  - summary
-  - wind_speed
-  - wind_bearing
-  - visibility
-  - temperature_high
-  - temperature_low
-  - temperature
-  - dew_point
-  - humidity
-  - pressure
-  - hourly_summary
-  - daily_summary
-  - uv_index
-  - moon_phase
-  - cloud_cover
+  - "summary"
+  - "wind_speed"
+  - "wind_bearing"
+  - "visibility"
+  - "temperature_high"
+  - "temperature_low"
+  - "temperature"
+  - "dew_point"
+  - "humidity"
+  - "pressure"
+  - "hourly_summary"
+  - "daily_summary"
+  - "uv_index"
+  - "moon_phase"
+  - "cloud_cover"

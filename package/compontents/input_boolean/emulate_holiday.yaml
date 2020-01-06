@@ -1,4 +1,4 @@
 ---
 emulate_holiday:
   name: "Vacation"
-  initial: off
+  initial: "off"

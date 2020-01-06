@@ -1,5 +1,5 @@
 ---
-platform: ping
-host: 192.168.100.28
-scan_interval: 60
+platform: "ping"
+host: "192.168.100.28"
+scan_interval: "60"
 name: "HP Printer"

@@ -29,6 +29,6 @@
     service: script.pushover_engine
     data_template:
       message: "registered motion {{ trigger.from_state.attributes.friendly_name  }}"
-      priority: 2
-      sound: pushover
+      priority: "2"
+      sound: "pushover"
       title: "HA Security ALERT"
