@@ -86,7 +86,6 @@
 #        - switch.node_21_switch
 #        - switch.node_22_switch
 #        - switch.node_2_switch 
-
 #  - service: shell_command.meek_toilet_nightscene_on
 
     - service: script.engine_say

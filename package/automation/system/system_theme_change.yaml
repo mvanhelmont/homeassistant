@@ -15,4 +15,4 @@
   action:
     service_template: frontend.set_theme
     data_template:
-      name: "{{ 'default' if is_state('sun.sun', 'above_horizon') else 'slate' }}"
+      name: "{{ 'summer_breeze' if is_state('sun.sun', 'above_horizon') else 'slate' }}"

@@ -8,6 +8,6 @@
     service: script.pushover_engine
     data_template:
       message: "There is a bad login registered on Home Assistant"
-      priority: "2"
+      priority: "0"
       sound: "bike"
       title: "HA Security ALERT"
