@@ -3,3 +3,7 @@ base_url: !secret base_url_link
 ssl_certificate: /ssl/fullchain.pem
 ssl_key: /ssl/privkey.pem
 ip_ban_enabled: "false"
+cors_allowed_origins:
+  - https://rpi.oudenes.photography
+  - https://www.amazon.com/ap/oa
+  - https://api.amazon.com/auth/o2/token

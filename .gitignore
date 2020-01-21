@@ -3,6 +3,7 @@ home-assistant_v2.db
 home-assistant.log
 alexa_media.info@oudenes.photography.pickle
 secrets.yaml
+http.yaml
 ip_bans.yaml
 google_calendars.yaml
 entity_registry.yaml
