@@ -60,7 +60,7 @@
         
     - service: script.pushover_engine
       data_template:
-        message: "HA - Scene DAytime activated"
+        message: "HA - Scene Daytime activated"
         priority: 0
         sound: bike
         title: "HA System"

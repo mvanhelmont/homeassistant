@@ -4,10 +4,12 @@ radio_station:
   options:
     - "Radio 538"
     - "Q-Music"
+    - "Q-Music Christmas"
     - "3FM"
     - "100% NL"
     - "Veronica"
     - "Sky Radio"
+    - "Sky Radio Christmas"
     - "Arrow Classic Rock"
     - "Classic FM"
     - "BNR Nieuwsradio"

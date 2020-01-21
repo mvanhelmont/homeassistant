@@ -1,0 +1,6 @@
+---
+platform: template
+sensors:
+  climate_temp_inside:
+    entity_id: climate.entryway
+    value_template: "{{ states.climate.entryway.attributes.current_temperature }}"

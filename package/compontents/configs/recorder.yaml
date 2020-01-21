@@ -2,35 +2,22 @@
 db_url: !secret mariadb
 purge_keep_days: 5
 purge_interval: 1
-exclude:
+include:
   domains:
+    - sensor
+    - binary_sensor
+    - switch
     - automation
-    - weblink
-    - updater
-    - script
-    - zone
+    - light
+    - media_player
     - updater
   entities:
-    - sun.sun
-    - zone.home
-    - sensor.batt_diningroomdoor
-    - sensor.batt_frontdoor
-    - sensor.batt_bedroomdoor
-    - sensor.batt_motion_bedroom
-    - sensor.batt_motion_bathroom
-    - sensor.batt_motion_diningroom
-    - sensor.batt_motion_hallway
-    - sensor.batt_motion_kitchen
-    - sensor.batt_motion_livingroom
-    - sensor.node_2_energy
-    - sensor.node_5_energy
-    - sensor.node_6_energy
-    - sensor.node_7_energy
-    - sensor.node_8_energy
-    - sensor.node_9_energy
-    - switch.node_2_switch
-    - switch.node_5_switch
-    - switch.node_6_switch
-    - switch.node_7_switch
-    - switch.node_8_switch
-    - switch.node_9_switch
+    - device_tracker.geofency_kay
+    - device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f
+    - device_tracker.geofency_peter
+    - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
+
+exclude:
+  entities:
+    - sensor.power_consumption
+    - sensor.voltage_phase_l1

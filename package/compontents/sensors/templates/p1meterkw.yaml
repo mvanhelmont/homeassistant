@@ -1,0 +1,6 @@
+---
+platform: template
+sensors:
+  kw_1min:
+    entity_id: sensor.date
+    value_template: "{{ states('sensor.power_consumption') }}"

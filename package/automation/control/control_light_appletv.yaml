@@ -26,6 +26,8 @@
         - script.appletv_control_paused
         - script.appletv_control_idle
         
+    - delay: "00:00:02"
+        
     - service_template: >-
         {% if (states.media_player.woonkamer_2.state) == 'playing' %} script.appletv_control_playing
         {% elif (states.media_player.woonkamer_2.state) == 'paused' %} script.appletv_control_paused

@@ -1,0 +1,6 @@
+---
+platform: co2signal
+token: !secret co2signal_api
+latitude: !secret latitude
+longitude: !secret longitude
+scan_interval: 900

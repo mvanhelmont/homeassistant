@@ -10,10 +10,12 @@ stream_radio:
         media_content_id: >-
           {% if is_state("input_select.radio_station", "Radio 538") %} https://18973.live.streamtheworld.com/RADIO538.mp3
           {% elif is_state("input_select.radio_station", "Q-Music") %} http://icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_96.mp3
+          {% elif is_state("input_select.radio_station", "Q-Music Christmas") %} http://icecast-qmusicnl-cdp.triple-it.nl/Qmusic_nl_classics_96.mp3
           {% elif is_state("input_select.radio_station", "3FM") %} http://icecast.omroep.nl/3fm-bb-mp3
           {% elif is_state("input_select.radio_station", "100% NL") %} http://stream.100p.nl/100pctnl.mp3
           {% elif is_state("input_select.radio_station", "Veronica") %} https://21633.live.streamtheworld.com/SRGSTR09.mp3
-          {% elif is_state("input_select.radio_station", "Sky Radio") %} https://21303.live.streamtheworld.com/SRGSTR08AAC.aac
+          {% elif is_state("input_select.radio_station", "Sky Radio") %} https://19993.live.streamtheworld.com/SKYRADIO.mp3
+          {% elif is_state("input_select.radio_station", "Sky Radio Christmas") %} https://21303.live.streamtheworld.com/SRGSTR08AAC.aac
           {% elif is_state("input_select.radio_station", "Arrow Classic Rock") %} https://stream.gal.io/arrow           
           {% elif is_state("input_select.radio_station", "Classic FM") %} http://21303.live.streamtheworld.com/CLASSICFM.mp3
           {% elif is_state("input_select.radio_station", "BNR Nieuwsradio") %} http://icecast-bnr-cdp.triple-it.nl/bnr_mp3_96_04

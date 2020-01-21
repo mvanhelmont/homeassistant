@@ -1,0 +1,7 @@
+- alias: "System - Update Kw Sensor Template"
+  trigger:
+    platform: time_pattern
+    minutes: "/1"
+  action:
+    service: homeassistant.update_entity
+    entity_id: sensor.kw_1min

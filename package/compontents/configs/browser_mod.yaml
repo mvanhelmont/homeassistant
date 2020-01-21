@@ -1,7 +1,7 @@
 ---
 prefix: "browser_"
 devices:
-  c40defa2_5a400635:
+  fa86fa95 a728c89b:
     name: "iMac Safari"
-  ff4f397d_2d91fcb9:
+  35efb15c_2d91fcb9:
     name: "Lenovo Full Kiosk"

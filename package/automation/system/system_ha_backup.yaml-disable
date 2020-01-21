@@ -1,5 +1,5 @@
 - alias: "System - AutoBackup on Monday and Saterday at 4AM"
-  initial_state: "true"
+  initial_state: "false"
   trigger:
   
     platform: time

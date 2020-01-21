@@ -19,6 +19,8 @@
         - script.kodi_control_playing
         - script.kodi_control_paused
         - script.kodi_control_idle
+    
+    - delay: "00:00:02"
         
     - service_template: >-
         {% if (states.media_player.kodi.state) == 'playing' %} script.kodi_control_playing

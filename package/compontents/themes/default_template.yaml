@@ -1,0 +1,287 @@
+demo_template:
+
+#  var(--disabled-text-color) # Use this when you want use a different variable for same line
+#  background: "center / cover no-repeat url("/local/background.jpg") fixed"
+
+#################################
+# TEXT
+#################################
+
+  lovelace-background: 'center / cover no-repeat url("/local/background.jpg") fixed' #Background-image
+  primary-text-color: '#212121'
+  secondary-text-color: '#727272'
+  text-primary-color: '#ffffff'
+  disabled-text-colour: '#bdbdbd'
+
+################################# 
+# MAIN INTERFACE COLORS
+#################################
+
+  primary-color: '#03a9f4'
+  dark-primary-color: '#0288d1'
+  light-primary-color: '#b3e5fC'
+  accent-color: '#ff9800'
+
+#################################
+# table lines around sidebar
+#################################
+
+  divider-color: 'rgba(0, 0, 0, .12)'
+  scrollbar-thumb-color: 'rgb(194, 194, 194)'
+  error-color: '#db4437'
+  error-state-color: 'var(--error-color)'
+
+################################# # CARDS #################################
+
+  ha-card-border-radius: "15px"
+  ha-card-box-shadow: "inset 1px 1px 1px 1px var(--border-color)"
+  ha-card-header-color: "rgba(255, 255, 255, 1)"
+
+################################# # STATES AND BADGES #################################
+
+  state-icon-color: '#44739e'
+  state-icon-active-color: '#FDD835'
+  state-icon-unavailable-color: 'var(--disabled-text-color)'
+
+################################# # BACKGROUND AND SIDEBAR
+#################################
+
+  card-background-color: '#ffffff'
+  primary-background-color: '#fafafa'
+  secondary-background-color: '#e5e5e5' #behind the cards on state
+
+################################# # SIDEBAR MENU #################################
+
+  sidebar-text-color: 'var(--primary-text-color)'
+  sidebar-background-color: 'var(--paper-listbox-background-color)' #backward compatible with existing themes
+  sidebar-icon-color: 'rgba(0, 0, 0, 0.5)'
+  sidebar-selected-text-color: 'var(--primary-color)'
+  sidebar-selected-icon-color: 'var(--primary-color)'
+  sidebar-selected-background-color: "rgba(0, 0, 0, 1)"
+
+################################# # CONTROLS  #################################
+
+  switch-checked-color: 'var(--primary-color)'
+  switch-unchecked-color: 'var(--accent-color)'
+  switch-checked-button-color: 'var(--switch-checked-color, var(--paper-grey-50))'
+  switch-checked-track-color: 'var(--switch-checked-color, #000000)'
+  switch-unchecked-button-color: 'var(--switch-unchecked-color, var(--paper-grey-50))'
+  switch-unchecked-track-color: 'var(--switch-unchecked-color, #000000)'
+  slider-color: 'var(--primary-color)'
+  slider-secondary-color: 'var(--light-primary-color)'
+  slider-bar-color: 'var(--disabled-text-color)'
+
+################################# # FOR LABEL BADGE #################################
+
+  label-badge-background-color: 'white'
+  label-badge-text-color: 'rgb(76, 76, 76)'
+  label-badge-red: '#DF4C1E'
+  label-badge-blue: '#039be5'
+  label-badge-green: '#0DA035'
+  label-badge-yellow: '#f4b400'
+  label-badge-grey: 'var(--paper-grey-500)'
+
+#################################
+# Paper-styles color.html dependency is stripped on build.
+# When a default paper-style color is used, it needs to be copied
+# from paper-styles/color.html to here.
+#################################
+
+  paper-grey-50: '#fafafa'  # default for: --mwc-switch-unchecked-button-color
+  paper-grey-200: '#eeeeee' # for ha-date-picker-style
+  paper-grey-500: '#9e9e9e' # --label-badge-grey
+
+#################################
+# for paper-spinner
+#################################
+
+  google-red-500: '#db4437'
+  google-blue-500: '#4285f4'
+  google-green-500: '#0f9d58'
+  google-yellow-500: '#f4b400'
+  paper-spinner-color: 'var(--primary-color)'
+
+#################################
+# for paper-slider
+#################################
+
+  paper-green-400: '#66bb6a'
+  paper-blue-400: '#42a5f5'
+  paper-orange-400: '#ffa726'
+
+#################################
+# opacity for dark text on a light background
+#################################
+
+  dark-divider-opacity: '0.12'
+  dark-disabled-opacity: '0.38' #or hint text or icon
+  dark-secondary-opacity: '0.54'
+  dark-primary-opacity: '0.87'
+
+#################################
+# opacity for light text on a dark background
+#################################
+
+  light-divider-opacity: '0.12'
+  light-disabled-opacity: '0.3' # or hint text or icon
+  light-secondary-opacity: '0.7'
+  light-primary-opacity: '1.0'
+
+#################################
+# derived colors, to keep existing themes mostly working
+#################################
+
+  paper-card-background-color: "rgba(0, 0, 0, 1)"
+  paper-listbox-background-color: "rgba(0, 0, 0, 1)"
+  paper-item-icon-active-color: "rgba(0, 0, 0, 1)"
+  paper-item-icon-color: "rgba(0, 0, 0, 1)"
+  table-row-alternative-background-color: "rgba(166, 0, 255, 1)"
+  table-row-background-color: "rgba(166, 0, 255, 1)"
+
+#################################
+# set our slider style
+#################################
+
+  paper-slider-knob-color: 'var(--slider-color)'
+  paper-slider-knob-start-color: 'var(--slider-color)'
+  paper-slider-pin-color: 'var(--slider-color)'
+  paper-slider-active-color: 'var(--slider-color)'
+  paper-slider-secondary-color: 'var(--slider-secondary-color)'
+  paper-slider-container-color: 'var(--slider-bar-color)'
+  ha-paper-slider-pin-font-size: '55px'
+
+#################################
+# set data table style
+#################################
+
+  data-table-background-color: 'var(--card-background-color)'
+
+#################################
+# Change some parts in developer tools
+#################################
+
+  paper-dialog-background-color: "rgba(0,255,0,1)"
+  paper-dialog-color: "rgba(0, 0, 0, 1)"
+
+#################################
+# rgb
+#################################
+
+  rgb-primary-color: 'rgb(3, 169, 244)'
+  rgb-accent-color: 'rgb(255, 152, 0)'
+  rgb-primary-text-color: 'rgb(33, 33, 33)'
+  rgb-secondary-text-color: 'rgb(114, 114, 114)'
+  rgb-text-primary-color: 'rgb(255, 255, 255)'
+
+#################################
+# mwc
+#################################
+
+  mdc-theme-primary: "rgba(0, 0, 0, 1)"
+  mdc-theme-secondary: 'var(--accent-color)'
+  mdc-theme-background: 'var(--primary-background-color)'
+  mdc-theme-surface: 'var(--paper-card-background-color, var(--card-background-color))'
+
+#################################
+# mwc text styles
+#################################
+
+  mdc-theme-on-primary: 'var(--text-primary-color)'
+  mdc-theme-on-secondary: 'var(--text-primary-color)'
+  mdc-theme-on-surface: 'var(--primary-text-color)'
+
+#################################
+# app header background color
+#################################
+
+  app-header-background-color: "rgba(0, 0, 255, 1)"
+  app-header-text-color: 'var(--text-primary-color)'
+
+#################################
+#
+# UNKNOWN LINES
+#
+#################################
+#  divider-color: "rgba(0, 190, 0, 1)"
+#  accent-medium-color: "rgba(0, 0, 0, 1)"
+
+#  background-card-color: "rgba(0, 0, 0, 1)"
+#  background-color-2: "rgba(0, 0, 0, 1)"
+#  background-image: "center / cover no-repeat url('/local/background.jpg') fixed"
+
+## Controls the base (and accent) color hue (0-360) | 0=Red 60=Yellow 120=Green 180=Cyan 240=Blue 300=Magenta 360=Red
+#  base-hue: "120"
+## Controls the saturation of the theme (0%-100%) | 0%=Grey 100%=Full Saturation
+#  base-sat: "80%"
+
+#  border-color: "rgba(0, 0, 0, 1)"
+
+# ch-active-tab-color: "var(--accent-color)"
+#  ch-all-tabs-color: "var(--sidebar-icon-color)"
+#  ch-background: "var(--background-color)"
+#  ch-notification-dot-color: "var(--accent-color)"
+#  ch-tab-indicator-color: "var(--accent-color)"
+
+#  ha-label-badge-color: "rgba(0, 0, 0, 1)"
+
+#  huesat: "var(--base-hue), var(--base-sat),"
+
+#  iron-overlay-backdrop-background-color: "rgba(0, 0, 0, 1)"
+
+#  label-badge-border-color: "rgba(0, 0, 0, 1)"
+
+#  make-disable: "rgba(0, 0, 0, 1)"
+#  make-carbon: "rgba(30,30,30,1)"
+#  make-light-carbon: "rgba(40,40,40,1)"
+#  make-grey: "rgba(150,150,150,1)"
+#  make-blue: "rgba(0,0,255,1)"
+#  make-green: "rgba(0,255,0,1)"
+#  make-orange: "rgba(255,127,0,1)"
+#  make-red: "rgba(255,0,0,1)"
+#  make-white: "rgba(255,255,255,1)"
+#  make-yellow: "rgba(255,255,0,1)"
+
+#  paper-button-color:  "rgba(0, 0, 0, 1)"
+#  paper-button-ink-color: "rgba(0, 0, 0, 1)"
+
+#  paper-card-header-color: "rgba(0, 0, 0, 1)"
+
+#  paper-dialog-button-color: "rgba(0, 0, 0, 1)"
+#  primary-font-family: "Gill Sans"
+#  paper-font-body_-_font-family: "var(--primary-font-family)"
+#  paper-font-body1_-_font-family: "var(--primary-font-family)"
+#  paper-font-body1_-_font-weight: "500"
+#  paper-font-caption_-_font-family: "var(--primary-font-family)"
+#  paper-font-common-base_-_font-family: "var(--primary-font-family)"
+#  paper-font-headline_-_font-family: "var(--primary-font-family)"
+#  paper-font-headline_-_font-weight: "500"
+#  paper-font-headline_-_letter-spacing: "-0.5px"
+#  paper-font-subhead_-_font-family: "var(--primary-font-family)"
+#  paper-font-title_-_font-family: "var(--primary-font-family)"
+#  paper-icon-button-active-color: "rgba(0, 0, 0, 1)"
+#  paper-icon-button-inactive-color: "rgba(0, 0, 0, 1)"
+#  paper-item-icon_-_color: "rgba(0, 0, 0, 1)"
+#  paper-item-selected_-_background-color: "rgba(0, 0, 0, 1)"
+#  paper-listbox-color: "rgba(0, 0, 0, 1)"
+#  paper-progress-secondary-color: "rgba(0, 0, 0, 1)"
+#  paper-slider-disabled-active-color: "rgba(0, 0, 0, 1)"
+#  paper-slider-disabled-secondary-color: "rgba(0, 0, 0, 1)"
+#  paper-tabs-selection-bar-color: "rgba(0, 0, 0, 1)"
+#  paper-toggle-button-checked-bar-color: "rgba(0, 0, 0, 1)"
+#  paper-toggle-button-checked-button-color: "rgba(0, 0, 0, 1)"
+#  paper-toggle-button-checked-ink-color: "rgba(0, 0, 0, 1)"
+#  paper-toggle-button-unchecked-bar-color: "rgba(0, 0, 0, 1)"
+#  paper-toggle-button-unchecked-button-color: "rgba(0, 0, 0, 1)"
+#  paper-toggle-button-unchecked-ink-color: "rgba(0, 0, 0, 1)"
+
+#  shadow-elevation-16dp_-_box-shadow: "inset 0px 0px 0px 4px hsl(var(--huesat) 28%)"
+#  shadow-elevation-2dp_-_box-shadow: "inset 0px 0px 0px 4px hsl(var(--huesat) 18%)"
+
+#  sidebar-text_-_background: "rgba(0, 0, 0, 1)"
+#  sidebar-text_-_color: "rgba(0, 0, 0, 1)"
+
+#  text-color: "rgba(0, 0, 0, 1)"
+#  text-dark-color: "rgba(255, 255, 255, 1)"
+#  text-medium-color: "rgba(255, 255, 255, 1)"
+#  text-medium-light-color: "rgba(255, 255, 255, 1)"
+
