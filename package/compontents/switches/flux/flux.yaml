@@ -1,9 +1,9 @@
 platform: flux
 lights:
   - light.dressoir_all
-name: "Fluxer"
-start_time: "10:00"
-stop_time: "12:00"
+name: "Flux Test"
+start_time: "8:30:00"
+stop_time: "9:00"
 start_colortemp: 4000
 #sunset_colortemp: 3000
 stop_colortemp: 1900

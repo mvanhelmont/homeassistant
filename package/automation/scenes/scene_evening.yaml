@@ -15,7 +15,7 @@
       to: "off"
       
     - platform: state
-      entity_id: input_boolean.goodnight
+      entity_id: input_boolean.scene_goodnight
 
   condition:
     - condition: state

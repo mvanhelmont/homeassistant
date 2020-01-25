@@ -1,14 +1,16 @@
 - alias: "Control - Lux on Daytime Low"
   trigger:
-  
-    platform: numeric_state
-    entity_id: sensor.node_19_luminance
-    below: 160
+
+    - platform: time_pattern 
+      minutes: "/1"
+    
+    - platform: state
+      entity_id: sensor.node_19_luminance
 
   condition:
     - condition: state
-      entity_id: input_boolean.scene_daylight
-      state: "on"
+      entity_id: sun.sun
+      state: "above_horizon"
   
     - condition: state
       entity_id: input_boolean.lux_level_low
@@ -17,6 +19,10 @@
     - condition: state 
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
+      
+    - condition: numeric_state
+      entity_id: sensor.node_19_luminance
+      below: 160
 
   action:
     - service: light.turn_on
@@ -37,14 +43,21 @@
 
 - alias: 'Control - Lux on Daytime Normal'
   trigger:
-    platform: numeric_state
-    entity_id: sensor.node_19_luminance
-    above: 150
+
+    - platform: time_pattern 
+      minutes: "/1"
+    
+    - platform: state
+      entity_id: sensor.node_19_luminance
 
   condition:
     - condition: state
-      entity_id: input_boolean.scene_daylight
-      state: "on"
+      entity_id: sun.sun
+      state: "above_horizon"
+      
+    - condition: numeric_state
+      entity_id: sensor.node_19_luminance
+      above: 161
 
     - condition: state
       entity_id: input_boolean.lux_level_low

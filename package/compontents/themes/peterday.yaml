@@ -7,7 +7,7 @@ peterday:
 # TEXT
 #################################
 
-  lovelace-background: 'center / cover no-repeat url("/local/day.jpg") fixed' #Background-image
+  lovelace-background: 'center / cover no-repeat url("/local/images/day.jpg") fixed' #Background-image
   primary-text-color: '#000000'
   secondary-text-color: '#9c9c9c'
   text-primary-color: '#000000'
