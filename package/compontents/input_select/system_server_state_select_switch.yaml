@@ -1,0 +1,11 @@
+---
+system_server_state_select_switch:
+  name: "Server Statistics"
+  options:
+    - "Home Assistant"
+    - "Milight Hub"
+    - "MQTT Server"
+    - "MVPS VMail and WWW"
+    - "MVPS SSH Login"
+    - "Resillio"
+    - "SSH Server"

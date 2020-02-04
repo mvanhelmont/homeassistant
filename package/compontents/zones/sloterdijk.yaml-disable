@@ -1,7 +1,0 @@
----
-name: "Station Sloterdijk"
-latitude: 52.388976
-longitude: 4.837424
-radius: 300
-icon: mdi:map-marker
-passive: false

@@ -19,10 +19,13 @@ sensor.dark_sky_temperature:
 
 sensor.dark_sky_hourly_summary:
   friendly_name: "Hourly Summary"
+  icon_color: rgba(71,116,157,1)
 sensor.dark_sky_daily_summary:
   friendly_name: "Daily Summary"
+  icon_color: rgba(71,116,157,1) 
 sensor.dark_sky_summary:
   friendly_name: "Current Summery"
+  icon_color: rgba(71,116,157,1) 
 sensor.dark_sky_cloud_coverage:
   friendly_name: "Current Clouds"
 sensor.dark_sky_humidity:

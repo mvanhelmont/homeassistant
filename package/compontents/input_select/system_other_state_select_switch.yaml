@@ -1,0 +1,15 @@
+---
+system_other_state_select_switch:
+  name: "System Other"
+  options:
+    - "Air Pollution Level" 
+    - "CO2 Production NLD"
+    - "Device Trackers"
+    - "External IP"
+    - "Google Drive Snapshots"
+    - "Home Assistant Update"
+    - "HP Printer"
+    - "ITHO"
+    - "Milight Hub"
+    - "RDW Toyota" 
+    - "TP Link Deco"
