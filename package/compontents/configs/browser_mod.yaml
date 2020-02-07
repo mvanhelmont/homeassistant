@@ -5,3 +5,4 @@ devices:
     name: "iMac Safari"
   35efb15c_2d91fcb9:
     name: "Lenovo Full Kiosk"
+    camera: true

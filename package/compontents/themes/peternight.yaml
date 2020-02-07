@@ -13,6 +13,8 @@ peternight:
   text-primary-color: "#ffffff"
   disabled-text-colour: "#8a0000"
   border-color: "rgba(255, 255, 255, 1)"
+  iron-overlay-backdrop-filter: 'blur(10px) grayscale(75%)'
+  iron-overlay-backdrop-background-color: 'rgba(255,255,255,0.25)'
 
 ################################# 
 # MAIN INTERFACE COLORS

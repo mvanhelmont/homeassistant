@@ -1,0 +1,14 @@
+- alias: "System - FKB Screen On Off"
+  trigger:
+    - platform: state
+      entity_id: binary_sensor.node_17
+
+    - platform: state
+      entity_id: binary_sensor.node_16
+
+  action:
+    service_template: >-
+      {% if (states.binary_sensor.node_17.state) == 'on' or (states.binary_sensor.node_16.state) == 'on' %} light.turn_on
+      {% else %} light.turn_off
+      {% endif %}
+    entity_id: light.lenovo_full_kiosk

@@ -4,7 +4,7 @@ evening_normal:
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_all
-        kelvin: 2700
+        kelvin: 3500
         brightness_pct: 100
 
     - service: light.turn_on
@@ -16,7 +16,7 @@ evening_normal:
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
-        kelvin: 2700
+        kelvin: 3500
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
 
 evening_birthday:
@@ -25,7 +25,7 @@ evening_birthday:
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_all
-        kelvin: 2700
+        kelvin: 3500
         brightness_pct: 100
 
     - service: light.turn_on
@@ -49,7 +49,7 @@ evening_halloween:
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_all
-        kelvin: 2700
+        kelvin: 3500
         brightness_pct: 100
 
     - service: light.turn_on
@@ -78,7 +78,7 @@ evening_kingsday:
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_all
-        kelvin: 2700
+        kelvin: 3500
         brightness_pct: 100
 
     - service: light.turn_on
@@ -118,7 +118,7 @@ evening_christmas:
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_all
-        kelvin: 2700
+        kelvin: 3500
         brightness_pct: 100
 
     - service: light.turn_on

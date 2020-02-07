@@ -15,5 +15,5 @@
       entity_id: 
         - light.sink_all
         - light.kitchen_all
-      kelvin: 4700
+      kelvin: 3500
       brightness_pct: "{{ 100 if is_state('input_boolean.scene_cooking', 'on') else 0 }}"

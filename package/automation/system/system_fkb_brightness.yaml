@@ -1,0 +1,7 @@
+- alias: "System - FKB Change Brightness"
+  trigger:
+    platform: state
+    entity_id: input_number.fullykiosk_brightness_slider
+
+  action:
+    service: shell_command.fullykiosk_brightness_slider

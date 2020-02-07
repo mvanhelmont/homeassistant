@@ -49,11 +49,18 @@
           - light.nanoleaf
           - light.newkaku_01401eb6_a
         
+# Christmass switches        
 #    - service: switch.turn_off
 #      entity_id:
 #        - switch.node_8_switch
 #        - switch.node_21_switch
 #        - switch.node_22_switch
+#        - switch.node_2_switch 
+
+    - service_template: input_number.set_value
+      data_template:
+        entity_id: input_number.fullykiosk_brightness_slider
+        value: 50
       
     - service_template: "{{ 'light.turn_on' if is_state('binary_sensor.node_15', 'on') else 'light.turn_off' }}"
       entity_id: light.bathroom_all

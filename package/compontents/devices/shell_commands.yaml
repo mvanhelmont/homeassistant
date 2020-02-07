@@ -28,3 +28,9 @@ meek_hallway_nightscene_on: "curl http://192.168.100.118/control?cmd=event,night
 meek_hallway_nightscene_off: "curl http://192.168.100.118/control?cmd=event,nightsceneoff"
 meek_hallway_sensor_on: "curl http://192.168.100.118/control?cmd=event,sensoron"
 meek_hallway_sensor_off: "curl http://192.168.100.118/control?cmd=event,sensoroff"
+
+fullykiosk_brightness_slider: !secret fullykiosk_brightness_slider
+fullykiosk_load_start_url: !secret fullykiosk_load_start_url
+fullykiosk_restart_app: !secret fullykiosk_restart_app
+fullykiosk_screensaver_on: !secret fullykiosk_screensaver_on
+fullykiosk_screensaver_off: !secret fullykiosk_screensaver_off

@@ -13,6 +13,6 @@
     service: light.turn_on
     data_template:
       entity_id: light.hallway
-      kelvin: 4700
+      kelvin: 3500
       brightness_pct: "{{ 20 if is_state('binary_sensor.node_17', 'on') else 0 }}"
 
