@@ -3,17 +3,25 @@
     platform: state
     entity_id: switch.newkaku_014e5906_a
     to: "on"
-
+    
   action:
-    service: notify.pushover
-    data_template:
-      message: "TEST"
-      title: "TITLE TEST"
-      data:
-        priority: 2
-        sound: pushover
-        retry: 60
-        expire: 3600
+    service: input_number.set_value
+    entity_id: input_number.fullykiosk_brightness_slider
+    data:
+      value: 1
+        
+#        value: "{{ (state_attr('sensor.fullykiosk', 'screenBrightness') | int / 2.55) | round(0) }}"
+
+#  action:
+#    service: notify.pushover
+#    data_template:
+#      message: "TEST"
+#      title: "TITLE TEST"
+#      data:
+#        priority: 2
+#        sound: pushover
+#        retry: 60
+#        expire: 3600
 
 ######################################################
 # RANDOM DELAY FOR HOLIDAT SCENE

@@ -1,0 +1,866 @@
+---
+zwave.aeon_labs_zw090_z_stick_gen5_eu:
+  friendly_name: "Aeon Zwave Gen5"
+  homebridge_name: "Aeon Zwave Gen5"
+
+####################################################
+#
+# NODE 2
+#
+#################################################### 
+
+zwave.node_2:
+  friendly_name: "Neo Switch iMac"
+sensor.node_2_alarm_level:
+  friendly_name: "Neo Switch iMac Alarm Level"
+sensor.node_2_alarm_type:
+  friendly_name: "Neo Switch iMac Alarm Type"
+sensor.node_2_current:
+  friendly_name: "Neo Switch iMac Current Amp"
+sensor.node_2_energy:
+  friendly_name: "Neo Switch iMac kWh"
+sensor.node_2_exporting:
+  friendly_name: "Neo Switch iMac Export"
+sensor.node_2_interval:
+  friendly_name: "Neo Switch iMac Interval 1"
+sensor.node_2_interval_2:
+  friendly_name: "Neo Switch iMac Interval 2"
+sensor.node_2_interval_3:
+  friendly_name: "Neo Switch iMac Interval 3"
+sensor.node_2_interval_4:
+  friendly_name: "Neo Switch iMac Interval 4"
+sensor.node_2_power:
+  friendly_name: "Neo Switch iMac Current Watt"
+  icon: mdi:flash
+sensor.node_2_power_management:
+  friendly_name: "Neo Switch iMac Power Man"
+sensor.node_2_previous_reading:
+  friendly_name: "Neo Switch iMac Watt 1"
+sensor.node_2_previous_reading_2:
+  friendly_name: "Neo Switch iMac Watt 2"
+sensor.node_2_previous_reading_3:
+  friendly_name: "Neo Switch iMac Voltage History"
+sensor.node_2_previous_reading_4:
+  friendly_name: "Neo Switch iMac Amp History"
+sensor.node_2_sourcenodeid:
+  friendly_name: "Neo Switch iMac SourceID"
+sensor.node_2_voltage:
+  friendly_name: "Neo Switch iMac Voltage"
+switch.node_2_switch:
+  friendly_name: "Neo Switch iMac Switch"
+
+####################################################
+#
+# NODE 5
+#
+#################################################### 
+
+zwave.node_5:
+  friendly_name: "Neo Switch Kay"
+sensor.node_5_alarm_level:
+  friendly_name: "Neo Switch Kay Alarm Level"
+sensor.node_5_alarm_type:
+  friendly_name: "Neo Switch Kay Alarm Type"
+sensor.node_5_current:
+  friendly_name: "Neo Switch Kay Current Amp"
+sensor.node_5_energy:
+  friendly_name: "Neo Switch Kay kWh"
+sensor.node_5_exporting:
+  friendly_name: "Neo Switch Kay Export"
+sensor.node_5_interval:
+  friendly_name: "Neo Switch Kay Interval 1"
+sensor.node_5_interval_2:
+  friendly_name: "Neo Switch Kay Interval 2"
+sensor.node_5_interval_3:
+  friendly_name: "Neo Switch Kay Interval 3"
+sensor.node_5_interval_4:
+  friendly_name: "Neo Switch Kay Interval 4"
+sensor.node_5_power:
+  friendly_name: "Neo Switch Kay Current Watt"
+  icon: mdi:flash
+sensor.node_5_power_management:
+  friendly_name: "Neo Switch Kay Power Man"
+sensor.node_5_previous_reading:
+  friendly_name: "Neo Switch Kay Watt 1"
+sensor.node_5_previous_reading_2:
+  friendly_name: "Neo Switch Kay Watt 2"
+sensor.node_5_previous_reading_3:
+  friendly_name: "Neo Switch Kay Voltage History"
+sensor.node_5_previous_reading_4:
+  friendly_name: "Neo Switch Kay Amp History"
+sensor.node_5_sourcenodeid:
+  friendly_name: "Neo Switch Kay SourceID"
+sensor.node_5_voltage:
+  friendly_name: "Neo Switch Kay Voltage"
+switch.node_5_switch:
+  friendly_name: "Neo Switch Kay Switch"
+
+####################################################
+#
+# NODE 6
+#
+#################################################### 
+
+zwave.node_6:
+  friendly_name: "Neo Switch Peter"
+sensor.node_6_alarm_level:
+  friendly_name: "Neo Switch Peter Alarm Level"
+sensor.node_6_alarm_type:
+  friendly_name: "Neo Switch Peter Alarm Type"
+sensor.node_6_current:
+  friendly_name: "Neo Switch Peter Current Amp"
+sensor.node_6_energy:
+  friendly_name: "Neo Switch Peter kWh"
+sensor.node_6_exporting:
+  friendly_name: "Neo Switch Peter Export"
+sensor.node_6_interval:
+  friendly_name: "Neo Switch Peter Interval 1"
+sensor.node_6_interval_2:
+  friendly_name: "Neo Switch Peter Interval 2"
+sensor.node_6_interval_3:
+  friendly_name: "Neo Switch Peter Interval 3"
+sensor.node_6_interval_4:
+  friendly_name: "Neo Switch Peter Interval 4"
+sensor.node_6_power:
+  friendly_name: "Neo Switch Peter Current Watt"
+  icon: mdi:flash
+sensor.node_6_power_management:
+  friendly_name: "Neo Switch Peter Power Man"
+sensor.node_6_previous_reading:
+  friendly_name: "Neo Switch Peter Watt 1"
+sensor.node_6_previous_reading_2:
+  friendly_name: "Neo Switch Peter Watt 2"
+sensor.node_6_previous_reading_3:
+  friendly_name: "Neo Switch Peter Voltage History"
+sensor.node_6_previous_reading_4:
+  friendly_name: "Neo Switch Peter Amp History"
+sensor.node_6_sourcenodeid:
+  friendly_name: "Neo Switch Peter SourceID"
+sensor.node_6_voltage:
+  friendly_name: "Neo Switch Peter Voltage"
+switch.node_6_switch:
+  friendly_name: "Neo Switch Peter Switch"
+
+####################################################
+#
+# NODE 7
+#
+#################################################### 
+
+zwave.node_7:
+  friendly_name: "Neo Switch Coffee"
+sensor.node_7_alarm_level:
+  friendly_name: "Neo Switch Coffee Alarm Level"
+sensor.node_7_alarm_type:
+  friendly_name: "Neo Switch Coffee Alarm Type"
+sensor.node_7_current:
+  friendly_name: "Neo Switch Coffee Current Amp"
+sensor.node_7_energy:
+  friendly_name: "Neo Switch Coffee kWh"
+sensor.node_7_exporting:
+  friendly_name: "Neo Switch Coffee Export"
+sensor.node_7_interval:
+  friendly_name: "Neo Switch Coffee Interval 1"
+sensor.node_7_interval_2:
+  friendly_name: "Neo Switch Coffee Interval 2"
+sensor.node_7_interval_3:
+  friendly_name: "Neo Switch Coffee Interval 3"
+sensor.node_7_interval_4:
+  friendly_name: "Neo Switch Coffee Interval 4"
+sensor.node_7_power:
+  friendly_name: "Neo Switch Coffee Current Watt"
+  icon: mdi:flash
+sensor.node_7_power_management:
+  friendly_name: "Neo Switch Coffee Power Man"
+sensor.node_7_previous_reading:
+  friendly_name: "Neo Switch Coffee Watt 1"
+sensor.node_7_previous_reading_2:
+  friendly_name: "Neo Switch Coffee Watt 2"
+sensor.node_7_previous_reading_3:
+  friendly_name: "Neo Switch Coffee Voltage History"
+sensor.node_7_previous_reading_4:
+  friendly_name: "Neo Switch Coffee Amp History"
+sensor.node_7_sourcenodeid:
+  friendly_name: "Neo Switch Coffee SourceID"
+sensor.node_7_voltage:
+  friendly_name: "Neo Switch Coffee Voltage"
+switch.node_7_switch:
+  friendly_name: "Neo Switch Coffee Switch"
+
+####################################################
+#
+# NODE 8
+#
+#################################################### 
+
+zwave.node_8:
+  friendly_name: "Neo Switch Bank"
+sensor.node_8_alarm_level:
+  friendly_name: "Neo Switch Bank Alarm Level"
+sensor.node_8_alarm_type:
+  friendly_name: "Neo Switch Bank Alarm Type"
+sensor.node_8_current:
+  friendly_name: "Neo Switch Bank Current Amp"
+sensor.node_8_energy:
+  friendly_name: "Neo Switch Bank kWh"
+sensor.node_8_exporting:
+  friendly_name: "Neo Switch Bank Export"
+sensor.node_8_interval:
+  friendly_name: "Neo Switch Bank Interval 1"
+sensor.node_8_interval_2:
+  friendly_name: "Neo Switch Bank Interval 2"
+sensor.node_8_interval_3:
+  friendly_name: "Neo Switch Bank Interval 3"
+sensor.node_8_interval_4:
+  friendly_name: "Neo Switch Bank Interval 4"
+sensor.node_8_power:
+  friendly_name: "Neo Switch Bank Current Watt"
+  icon: mdi:flash
+sensor.node_8_power_management:
+  friendly_name: "Neo Switch Bank Power Man"
+sensor.node_8_previous_reading:
+  friendly_name: "Neo Switch Bank Watt 1"
+sensor.node_8_previous_reading_2:
+  friendly_name: "Neo Switch Bank Watt 2"
+sensor.node_8_previous_reading_3:
+  friendly_name: "Neo Switch Bank Voltage History"
+sensor.node_8_previous_reading_4:
+  friendly_name: "Neo Switch Bank Amp History"
+sensor.node_8_sourcenodeid:
+  friendly_name: "Neo Switch Bank SourceID"
+sensor.node_8_voltage:
+  friendly_name: "Neo Switch Bank Voltage"
+switch.node_8_switch:
+  friendly_name: "Neo Switch Bank Switch"
+
+####################################################
+#
+# NODE 9
+#
+#################################################### 
+
+zwave.node_9:
+  friendly_name: "Neo Switch Hall"
+sensor.node_9_alarm_level:
+  friendly_name: "Neo Switch Hall Alarm Level"
+sensor.node_9_alarm_type:
+  friendly_name: "Neo Switch Hall Alarm Type"
+sensor.node_9_current:
+  friendly_name: "Neo Switch Hall Current Amp"
+sensor.node_9_energy:
+  friendly_name: "Neo Switch Hall kWh"
+sensor.node_9_exporting:
+  friendly_name: "Neo Switch Hall Export"
+sensor.node_9_interval:
+  friendly_name: "Neo Switch Hall Interval 1"
+sensor.node_9_interval_2:
+  friendly_name: "Neo Switch Hall Interval 2"
+sensor.node_9_interval_3:
+  friendly_name: "Neo Switch Hall Interval 3"
+sensor.node_9_interval_4:
+  friendly_name: "Neo Switch Hall Interval 4"
+sensor.node_9_power:
+  friendly_name: "Neo Switch Hall Current Watt"
+  icon: mdi:flash
+sensor.node_9_power_management:
+  friendly_name: "Neo Switch Hall Power Man"
+sensor.node_9_previous_reading:
+  friendly_name: "Neo Switch Hall Watt 1"
+sensor.node_9_previous_reading_2:
+  friendly_name: "Neo Switch Hall Watt 2"
+sensor.node_9_previous_reading_3:
+  friendly_name: "Neo Switch Hall Voltage History"
+sensor.node_9_previous_reading_4:
+  friendly_name: "Neo Switch Hall Amp History"
+sensor.node_9_sourcenodeid:
+  friendly_name: "Neo Switch Hall SourceID"
+sensor.node_9_voltage:
+  friendly_name: "Neo Switch Hall Voltage"
+switch.node_9_switch:
+  friendly_name: "Neo Switch Hall Switch"
+
+####################################################
+#
+# NODE 10
+#
+#################################################### 
+
+zwave.node_10:
+  friendly_name: "Diningroom Door"
+  homebridge_name: "Diningroom Door"
+sensor.node_10_access_control:
+  friendly_name: "Diningroom Door Access Control"
+sensor.node_10_alarm_level:
+  friendly_name: "Diningroom Door Alarm Level"
+sensor.node_10_alarm_type:
+  friendly_name: "Diningroom Door Alarm Type"
+sensor.node_10_burglar:
+  friendly_name: "Diningroom Door Burglar"
+sensor.node_10_luminance:
+  friendly_name: "Diningroom Door Lux"
+sensor.node_10_sourcenodeid:
+  friendly_name: "Diningroom Door SourceID"
+sensor.node_10_temperature:
+  friendly_name: "Diningroom Door Temp"
+  homebridge_name: "Diningroom Door Temp."
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+sensor.node_10_power_management:
+  friendly_name: "Diningroom Door Power Man"
+sensor.node_10_heat:
+  friendly_name: "Diningroom Door Heat"
+binary_sensor.node_10:
+  friendly_name: "Diningroom Door"
+  icon: mdi:leak
+sensor.node_10_battery_level:
+  friendly_name: "Diningroom Door Battery"
+
+####################################################
+#
+# NODE 11
+#
+#################################################### 
+
+zwave.node_11:
+  friendly_name: "Frontdoor"
+sensor.node_11_access_control:
+  friendly_name: "Frontdoor Access Control"
+sensor.node_11_alarm_level:
+  friendly_name: "Frontdoor Alarm Level"
+sensor.node_11_alarm_type:
+  friendly_name: "Frontdoor Alarm Type"
+sensor.node_11_burglar:
+  friendly_name: "Frontdoor Burglar"
+sensor.node_11_luminance:
+  friendly_name: "Frontdoor Lux"
+sensor.node_11_sourcenodeid:
+  friendly_name: "Frontdoor SourceID"
+sensor.node_11_temperature:
+  friendly_name: "Frontdoor Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+sensor.node_11_power_management:
+  friendly_name: "Frontdoor Power Man"
+sensor.node_11_heat:
+  friendly_name: "Frontdoor Heat"
+binary_sensor.node_11:
+  friendly_name: "Frontdoor"
+sensor.node_11_battery_level:
+  friendly_name: "Frontdoor Battery"
+
+####################################################
+#
+# NODE 12
+#
+#################################################### 
+
+zwave.node_12:
+  friendly_name: "Bedroom Door"
+sensor.node_12_access_control:
+  friendly_name: "Bedroom Door Access Control"
+sensor.node_12_alarm_level:
+  friendly_name: "Bedroom Door Alarm Level"
+sensor.node_12_alarm_type:
+  friendly_name: "Bedroom Door Alarm Type"
+sensor.node_12_burglar:
+  friendly_name: "Bedroom Door Burglar"
+sensor.node_12_luminance:
+  friendly_name: "Bedroom Door Lux"
+sensor.node_12_sourcenodeid:
+  friendly_name: "Bedroom Door SourceID"
+sensor.node_12_temperature:
+  friendly_name: "Bedroom Door Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+sensor.node_12_power_management:
+  friendly_name: "Bedroom Door Power Man"
+sensor.node_12_heat:
+  friendly_name: "Bedroom Door Heat"
+binary_sensor.node_12:
+  friendly_name: "Bedroom Door"
+  icon: mdi:leak
+sensor.node_12_battery_level:
+  friendly_name: "Bedroom Door Battery"
+
+####################################################
+#
+# NODE 13
+#
+#################################################### 
+
+zwave.node_13:
+  friendly_name: "Fibaro Door iMac"
+sensor.node_13_access_control:
+  friendly_name: "Fibaro Door iMac Access Control"
+sensor.node_13_alarm_level:
+  friendly_name: "Fibaro Door iMac Alarm Level"
+sensor.node_13_alarm_type:
+  friendly_name: "Fibaro Door iMac Alarm Type"
+sensor.node_13_burglar:
+  friendly_name: "Fibaro Door iMac Burglar"
+sensor.node_13_luminance:
+  friendly_name: "Fibaro Door iMac Lux"
+sensor.node_13_sourcenodeid:
+  friendly_name: "Fibaro Door iMac SourceID"
+sensor.node_13_temperature:
+  friendly_name: "Fibaro Door iMac Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+sensor.node_13_power_management:
+  friendly_name: "Fibaro Door iMac Power Man"
+sensor.node_13_heat:
+  friendly_name: "Fibaro Door iMac Heat"
+binary_sensor.node_13:
+  friendly_name: "Fibaro Door iMac"
+sensor.node_13_battery_level:
+  friendly_name: "Fibaro Battery Door iMac"
+
+####################################################
+#
+# NODE 14
+#
+#################################################### 
+
+zwave.node_14:
+  friendly_name: "PIR Bedroom"
+sensor.node_14_alarm_level:
+  friendly_name: "PIR Bedroom Alarm Level"
+sensor.node_14_alarm_type:
+  friendly_name: "PIR Bedroom Alarm Type"
+sensor.node_14_burglar:
+  friendly_name: "PIR Bedroom Burglar"
+sensor.node_14_luminance:
+  friendly_name: "PIR Bedroom Lux"
+  icon: mdi:weather-partly-cloudy
+sensor.node_14_sourcenodeid:
+  friendly_name: "PIR Bedroom SourceID"
+sensor.node_14_temperature:
+  friendly_name: "PIR Bedroom Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_14:
+  friendly_name: "PIR Bedroom"
+  icon: mdi:motion-sensor
+sensor.node_14_battery_level:
+  friendly_name: "PIR Battery Bedroom"
+
+####################################################
+#
+# NODE 15
+#
+#################################################### 
+
+zwave.node_15:
+  friendly_name: "PIR Bathroom"
+sensor.node_15_alarm_level:
+  friendly_name: "PIR Bathroom Alarm Level"
+sensor.node_15_alarm_type:
+  friendly_name: "PIR Bathroom Alarm Type"
+sensor.node_15_burglar:
+  friendly_name: "PIR Bathroom Burglar"
+sensor.node_15_luminance:
+  friendly_name: "PIR Bathroom Lux"
+  icon: mdi:weather-partly-cloudy
+sensor.node_15_sourcenodeid:
+  friendly_name: "PIR Bathroom SourceID"
+sensor.node_15_temperature:
+  friendly_name: "PIR Bathroom Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_15:
+  icon: mdi:motion-sensor
+  friendly_name: "PIR Bathroom"
+sensor.node_15_battery_level:
+  friendly_name: "PIR Bathroom Battery"
+
+####################################################
+#
+# NODE 16
+#
+#################################################### 
+
+zwave.node_16:
+  friendly_name: "PIR Kitchen"
+sensor.node_16_alarm_level:
+  friendly_name: "PIR Kitchen Alarm Level"
+sensor.node_16_alarm_type:
+  friendly_name: "PIR Kitchen Alarm Type"
+sensor.node_16_burglar:
+  friendly_name: "PIR Kitchen Burglar"
+sensor.node_16_luminance:
+  friendly_name: "PIR Kitchen Lux"
+  icon: mdi:weather-partly-cloudy
+sensor.node_16_sourcenodeid:
+  friendly_name: "PIR Kitchen SourceID"
+sensor.node_16_temperature:
+  friendly_name: "PIR Kitchen Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_16:
+  friendly_name: "PIR Kitchen"
+  icon: mdi:motion-sensor
+sensor.node_16_battery_level:
+  friendly_name: "PIR Kitchen Battery"
+
+####################################################
+#
+# NODE 17
+#
+#################################################### 
+
+zwave.node_17:
+  friendly_name: "PIR Hallway"
+sensor.node_17_alarm_level:
+  friendly_name: "PIR Hallway Alarm Level"
+sensor.node_17_alarm_type:
+  friendly_name: "PIR Hallway Alarm Type"
+sensor.node_17_burglar:
+  friendly_name: "PIR Hallway Burglar"
+sensor.node_17_luminance:
+  friendly_name: "PIR Hallway Lux"
+  icon: mdi:weather-partly-cloudy
+sensor.node_17_sourcenodeid:
+  friendly_name: "PIR Hallway SourceID"
+sensor.node_17_temperature:
+  friendly_name: "PIR Hallway Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_17:
+  friendly_name: "PIR Hallway"
+  icon: mdi:motion-sensor
+sensor.node_17_battery_level:
+  friendly_name: "PIR Hallway Battery"
+
+####################################################
+#
+# NODE 18
+#
+#################################################### 
+
+zwave.node_18:
+  friendly_name: "PIR Diningroom"
+sensor.node_18_alarm_level:
+  friendly_name: "PIR Diningroom Alarm Level"
+sensor.node_18_alarm_type:
+  friendly_name: "PIR Diningroom Alarm Type"
+sensor.node_18_burglar:
+  friendly_name: "PIR Diningroom Burglar"
+sensor.node_18_luminance:
+  friendly_name: "PIR Diningroom Lux"
+  icon: mdi:weather-partly-cloudy
+sensor.node_18_sourcenodeid:
+  friendly_name: "PIR Diningroom SourceID"
+sensor.node_18_temperature:
+  friendly_name: "PIR Diningroom Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_18:
+  friendly_name: "PIR Diningroom"
+  icon: mdi:motion-sensor
+sensor.node_18_battery_level:
+  friendly_name: "PIR Diningroom Battery"
+
+####################################################
+#
+# NODE 19
+#
+#################################################### 
+
+zwave.node_19:
+  friendly_name: "PIR Livingroom"
+sensor.node_19_alarm_level:
+  friendly_name: "PIR Livingroom Alarm Level"
+sensor.node_19_alarm_type:
+  friendly_name: "PIR Livingroom Alarm Type"
+sensor.node_19_burglar:
+  friendly_name: "PIR Livingroom Burglar"
+sensor.node_19_luminance:
+  friendly_name: "PIR Livingroom Lux"
+  icon: mdi:weather-partly-cloudy
+sensor.node_19_sourcenodeid:
+  friendly_name: "PIR Livingroom SourceID"
+sensor.node_19_temperature:
+  friendly_name: "PIR Livingroom Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_19:
+  friendly_name: "PIR Livingroom"
+  icon: mdi:motion-sensor
+sensor.node_19_battery_level:
+  friendly_name: "PIR Livingroom Battery"
+
+####################################################
+#
+# NODE 20
+#
+#################################################### 
+
+zwave.node_20:
+  friendly_name: "PIR Toilet"
+sensor.node_20_alarm_level:
+  friendly_name: "PIR Toilet Alarm Level"
+sensor.node_20_alarm_type:
+  friendly_name: "PIR Toilet Alarm Type"
+sensor.node_20_burglar:
+  friendly_name: "PIR Toilet Burglar"
+sensor.node_20_luminance:
+  friendly_name: "PIR Toilet Lux"
+  icon: mdi:weather-partly-cloudy
+sensor.node_20_sourcenodeid:
+  friendly_name: "PIR Toilet SourceID"
+sensor.node_20_temperature:
+  friendly_name: "PIR Toilet Temp"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_20:
+  friendly_name: "PIR Toilet"
+  icon: mdi:motion-sensor
+sensor.node_20_battery_level:
+  friendly_name: "PIR Toilet Battery"
+
+####################################################
+#
+# NODE 21
+#
+#################################################### 
+
+zwave.node_21:
+  friendly_name: "Neo Switch Xmas Diningroom"
+sensor.node_21_alarm_level:
+  friendly_name: "Neo Switch Xmas Diningroom Alarm Level"
+sensor.node_21_alarm_type:
+  friendly_name: "Neo Switch Xmas Diningroom Alarm Type"
+sensor.node_21_current:
+  friendly_name: "Neo Switch Xmas Diningroom Current Amp"
+sensor.node_21_energy:
+  friendly_name: "Neo Switch Xmas Diningroom kWh"
+sensor.node_21_exporting:
+  friendly_name: "Neo Switch Xmas Diningroom Export"
+sensor.node_21_interval:
+  friendly_name: "Neo Switch Xmas Diningroom Interval 1"
+sensor.node_21_interval_2:
+  friendly_name: "Neo Switch Xmas Diningroom Interval 2"
+sensor.node_21_interval_3:
+  friendly_name: "Neo Switch Xmas Diningroom Interval 3"
+sensor.node_21_interval_4:
+  friendly_name: "Neo Switch Xmas Diningroom Interval 4"
+sensor.node_21_power:
+  friendly_name: "Neo Switch Xmas Diningroom Current Watt"
+  icon: mdi:flash
+sensor.node_21_power_management:
+  friendly_name: "Neo Switch Xmas Diningroom Power Man"
+sensor.node_21_previous_reading:
+  friendly_name: "Neo Switch Xmas Diningroom Watt 1"
+sensor.node_21_previous_reading_2:
+  friendly_name: "Neo Switch Xmas Diningroom Watt 2"
+sensor.node_21_previous_reading_3:
+  friendly_name: "Neo Switch Xmas Diningroom Voltage History"
+sensor.node_21_previous_reading_4:
+  friendly_name: "Neo Switch Xmas Diningroom Amp History"
+sensor.node_21_sourcenodeid:
+  friendly_name: "Neo Switch Xmas Diningroom SourceID"
+sensor.node_21_voltage:
+  friendly_name: "Neo Switch Xmas Diningroom Voltage"
+switch.node_21_switch:
+  friendly_name: "Neo Switch Xmas Diningroom Switch"
+
+####################################################
+#
+# NODE 22
+#
+#################################################### 
+
+zwave.node_22:
+  friendly_name: "Neo Switch Xmas Window Light"
+sensor.node_22_alarm_level:
+  friendly_name: "Neo Switch Xmas Window Light Alarm Level"
+sensor.node_22_alarm_type:
+  friendly_name: "Neo Switch Xmas Window Light Alarm Type"
+sensor.node_22_current:
+  friendly_name: "Neo Switch Xmas Window Light Current Amp"
+sensor.node_22_energy:
+  friendly_name: "Neo Switch Xmas Window Light kWh"
+sensor.node_22_exporting:
+  friendly_name: "Neo Switch Xmas Window Light Export"
+sensor.node_22_interval:
+  friendly_name: "Neo Switch Xmas Window Light Interval 1"
+sensor.node_22_interval_2:
+  friendly_name: "Neo Switch Xmas Window Light Interval 2"
+sensor.node_22_interval_3:
+  friendly_name: "Neo Switch Xmas Window Light Interval 3"
+sensor.node_22_interval_4:
+  friendly_name: "Neo Switch Xmas Window Light Interval 4"
+sensor.node_22_power:
+  friendly_name: "Neo Switch Xmas Window Light Current Watt"
+  icon: mdi:flash
+sensor.node_22_power_management:
+  friendly_name: "Neo Switch Xmas Window Light Power Man"
+sensor.node_22_previous_reading:
+  friendly_name: "Neo Switch Xmas Window Light Watt 1"
+sensor.node_22_previous_reading_2:
+  friendly_name: "Neo Switch Xmas Window Light Watt 2"
+sensor.node_22_previous_reading_3:
+  friendly_name: "Neo Switch Xmas Window Light Voltage History"
+sensor.node_22_previous_reading_4:
+  friendly_name: "Neo Switch Xmas Window Light Amp History"
+sensor.node_22_sourcenodeid:
+  friendly_name: "Neo Switch Xmas Window Light SourceID"
+sensor.node_22_voltage:
+  friendly_name: "Neo Switch Xmas Window Light Voltage"
+switch.node_22_switch:
+  friendly_name: "Neo Switch Xmas Window Light Switch"
+

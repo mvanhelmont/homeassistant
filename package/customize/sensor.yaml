@@ -330,7 +330,9 @@ sensor.dark_sky_wind_speed_2d:
 sensor.dark_sky_wind_speed_2h:
   friendly_name: "Wind Speed second hour"
 
-#sensor.database_size:
+sensor.database_size:
+  icon: mdi:database
+
 #sensor.date:
 #sensor.date_time:
 #sensor.date_time_iso:
@@ -348,6 +350,7 @@ sensor.dayofyear:
 sensor.climate_temp_inside:
   friendly_name: "Temperature inside"
   templates:
+    icon: mdi:temperature-celsius
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
       if (state > 32) return 'rgb(214,18,4)';
@@ -411,7 +414,10 @@ sensor.living_room_nest_protect_smoke_status:
 #sensor.disk_use_percent:
 #sensor.esp8266_milight_hub_dropped_packets:
 #sensor.esp8266_milight_hub_queue_length:
-#sensor.external_ip:
+
+sensor.external_ip:
+  icon: mdi:wan
+
 #sensor.gas_consumption:
 
 sensor.fibaro_frontdoor_custom_sensor:
@@ -507,8 +513,12 @@ sensor.total_prints:
 
 #sensor.internet_time:
 #sensor.ipv4_address_wlan0:
-#sensor.itho_speed:
-#sensor.itho_tijd:
+
+sensor.itho_speed:
+  icon: mdi:fan
+sensor.itho_tijd:
+  icon: mdi:av-timer
+
 #sensor.kay_last_changed_tracker:
 #sensor.kw_1min:
 #sensor.last_alexa:
@@ -519,7 +529,9 @@ sensor.total_prints:
 sensor.lenovo_full_kiosk:
   friendly_name: Fully Kiosk Sensor
 
-#sensor.local_ip:
+sensor.local_ip:
+  icon: mdi:wan
+
 #sensor.long_power_failure_count:
 
 sensor.m5_bytes_received:
@@ -711,7 +723,9 @@ sensor.resillio_power_supply:
 
 #sensor.rpi_power_status
 #sensor.season:
-#sensor.snapshot_backup:
+sensor.snapshot_backup:
+  icon: mdi:cloud-upload
+
 #sensor.speedtest_download:
 #sensor.speedtest_ping:
 #sensor.speedtest_upload:
