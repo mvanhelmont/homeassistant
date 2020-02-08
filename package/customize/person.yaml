@@ -1,7 +1,14 @@
 ---
+####################################################
+#
+# PERSON
+#
+####################################################
+
 person.kay_acar:
   friendly_name: "Kay"
   entity_picture: /local/images/kay-home-grey.jpg
+
 person.peter_oudenes:
   friendly_name: "Peter"
   entity_picture: /local/images/peter-home-grey.jpg

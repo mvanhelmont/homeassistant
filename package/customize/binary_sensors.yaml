@@ -1,0 +1,93 @@
+---
+####################################################
+#
+# BINARY_SENSOR
+#
+####################################################
+
+binary_sensor.hp_printer:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.imac_peter:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.meek_p1_meter:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.milight_hub:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.mqtt_server:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.resillio:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.ssh_server:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.sensor_manual_family_home:
+  friendly_name: "Group Family Manual"
+
+binary_sensor.manual_peter_home:
+  device_class: presence
+
+binary_sensor.manual_kay_home:
+  device_class: presence
+
+binary_sensor.update_available:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+#binary_sensor.snapshots_stale:
+#binary_sensor.updater:
+#binary_sensor.lenovo_full_kiosk:
+
+####################################################
+#
+# BINARY_SENSOR CLIMATE
+#
+####################################################
+
+binary_sensor.bedroom_nest_protect_online:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.dining_room_nest_protect_online:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.living_room_nest_protect_online:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.entryway_thermostat_has_leaf:
+  icon: mdi:leaf
+
+binary_sensor.entryway_thermostat_online:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+#binary_sensor.entryway_thermostat_is_locked:
+#binary_sensor.entryway_thermostat_is_using_emergency_heat:
+#binary_sensor.entryway_thermostat_fan:
+#binary_sensor.asingaborg_away:

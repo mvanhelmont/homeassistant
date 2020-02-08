@@ -1,11 +1,38 @@
 ---
-input_boolean.emulate_holiday:
-  friendly_name: "Vacation"
-  homebridge_name: "Vacation"
+####################################################
+#
+# SWITCH
+#
+####################################################
+
+
+#switch.circadian_lighting_circadian_lighting:
+
+#switch.flux_test:
+
+switch.kay_learning:
+  friendly_name: "Kay Learning"
   templates:
-    icon: mdi:nintendo-switch
-    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)'; 
-  
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.airplay:
+  icon: mdi:airplay
+switch.appletv:
+  icon: mdi:airplay
+switch.domoticz:
+  icon: mdi:home-automation
+switch.kodi:
+  icon: mdi:kodi
+switch.tv:
+  icon: mdi:television-box
+
+####################################################
+#
+# SWITCH.MEEK
+#
+####################################################
+
 switch.meek_toilet:
   icon: mdi:nintendo-switch
   friendly_name: "Toilet"
@@ -50,68 +77,81 @@ switch.meek_cooking:
   icon: mdi:nintendo-switch
   friendly_name: "Cooking"
   homebridge_name: "Cooking Switch"
-  
+
+####################################################
+#
+# SWITCH.NEWKAKU
+#
+####################################################
+
 switch.newkaku_0114ef92_b:
   icon: mdi:nintendo-switch
   friendly_name: "Wall"
   homebridge_name: "Wall Switch"
-  
+
 switch.newkaku_0114ef92_c:
   friendly_name: "Window"
   homebridge_name: "Window Switch"
-  
   icon: mdi:nintendo-switch
+
 switch.newkaku_011fdd46_b:
   icon: mdi:nintendo-switch
   friendly_name: "Balcony"
   homebridge_name: "Balcony Switch"
-  
+
 switch.newkaku_011fdd46_c:
   icon: mdi:nintendo-switch
   friendly_name: "Dressoir"
   homebridge_name: "Dressoir Switch"
-  
-light.newkaku_01401eb6_a:
-  icon: mdi:ceiling-light
-  friendly_name: "Diningroom"
-  homebridge_name: "Diningroom Switch"
-  
+
 switch.newkaku_01074522_a:
   icon: mdi:nintendo-switch
   friendly_name: "Bedroom"
   homebridge_name: "Bedroom Switch"
-  
+
 switch.newkaku_011fad02_b:
   icon: mdi:nintendo-switch
   friendly_name: "Kitchen"
   homebridge_name: "Kitchen Switch"
-  
+
 switch.newkaku_011fad02_c:
   icon: mdi:nintendo-switch
   friendly_name: "Cooker"
   homebridge_name: "Cooker Switch"
-  
+
 #switch.newkaku_014ad3ba_a:
 #  icon: mdi:nintendo-switch
 #  friendly_name: "Kitchen
 #  homebridge_name: "Kitchen Switch
-  
+
 switch.newkaku_01616a32_a:
   icon: mdi:nintendo-switch
   friendly_name: "Bathroom"
   homebridge_name: "Bathroom Switch"
-  
+
 switch.newkaku_014e5906_a:
   icon: mdi:nintendo-switch
   friendly_name: "Testing"
   homebridge_name: "Testing"
-  
+
 switch.newkaku_016138ba_a:
   icon: mdi:nintendo-switch
   friendly_name: "Hallway"
   homebridge_name: "Hallway Switch"
 
-switch.kay_learning:
-  icon: mdi:nintendo-switch
-  friendly_name: "Kay Learn"
-  homebridge_name: "Kay Learn"
+####################################################
+#
+# SWITCH.PETER_S_ALEXA
+#
+####################################################
+
+#switch.peter_s_alexa_apps_do_not_disturb_switch:
+#switch.peter_s_alexa_apps_repeat_switch:
+#switch.peter_s_alexa_apps_shuffle_switch:
+#switch.peter_s_echo_dot_do_not_disturb_switch:
+#switch.peter_s_echo_dot_repeat_switch:
+#switch.peter_s_echo_dot_shuffle_switch:
+#switch.this_device_do_not_disturb_switch:
+#switch.this_device_repeat_switch:
+#switch.this_device_shuffle_switch:
+

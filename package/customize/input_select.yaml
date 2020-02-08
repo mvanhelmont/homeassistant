@@ -1,0 +1,12 @@
+---
+####################################################
+#
+# INPUT_SELECT
+#
+####################################################
+
+#input_select.radio_selector:
+#input_select.radio_station:
+#input_select.system_other_state_select_switch:
+#input_select.system_server_state_select_switch:
+#input_select.system_zwave_node_switch:

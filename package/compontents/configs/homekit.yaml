@@ -61,6 +61,8 @@ filter:
     - sensor.node_18_temperature
     - sensor.node_19_temperature
     - sensor.node_20_temperature
+    - light.lenovo_full_kiosk
+    - input_number.fullykiosk_brightness_slider
   exclude_entities:
     - binary_sensor.bedroom_nest_protect_online
     - binary_sensor.dining_room_nest_protect_online

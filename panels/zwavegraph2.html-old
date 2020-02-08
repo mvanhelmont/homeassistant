@@ -20,12 +20,7 @@
 
   Version 2.2: (04 October 2019)
     - ability to turn off node grouping. Having the nodes grouped requires editing locations defined in the zwcfg_*.cfg
-
-  Version 2.3: (03 February 2020)
-    - Graph background reflects theme background color after page reload
-    - Fixed problem where some removed nodes lingering in the device registry could cause wrong node info card to be displayed after clicking on nodes with higher ids
-
--->
+ -->
 
 <dom-module id='ha-panel-zwavegraph2'>
   <template>
@@ -52,11 +47,10 @@
       .content {
         overflow: hidden;
         position: absolute;
-        left: 0px;
-        top: 64px;
-        bottom: 0px;
-        right: 0px;
-        padding: 8px;
+        left: 4px;
+        top: 68px;
+        bottom: 4px;
+        right: 4px;
       }
 
       svg>.output {
@@ -213,7 +207,7 @@
         </app-toolbar>
       </app-header>
 
-      <div class="content" style="background: var(--primary-background-color);">
+      <div class="content">
         <svg id="svg" width="100%" height="100%"></svg>
         <svg id="scopeContainer" class="thumb">
           <g>
@@ -223,7 +217,7 @@
             <line id="line2" stroke="red" stroke-width="1px" x1="0" y1="0" x2="0" y2="0" />
           </g>
         </svg>
-        <svg id="miniSvg" class="thumb" style="background: var(--primary-background-color);"></svg>
+        <svg id="miniSvg" class="thumb"></svg>
       </div>
 
     </app-header-layout>
@@ -518,10 +512,7 @@
 
       var that = this;
       var handleClick = function (d, i, nodeList) { // Add interactivity
-        var nodeId = nodeList[i].id;
-        var node = nodes.find(function(element) {
-	        return element.id == nodeId;
-	      });
+        var node = nodes[i];
         that.fire('hass-more-info', {
           entityId: node.entity_id
         });

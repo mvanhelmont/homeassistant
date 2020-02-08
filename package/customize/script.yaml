@@ -1,0 +1,14 @@
+---
+####################################################
+#
+# SCRIPT
+#
+####################################################
+
+script.stream_radio:
+  friendly_name: Start Playing
+  icon: mdi:play
+
+script.stream_radio_stop:
+  friendly_name: Stop Playing
+  icon: mdi:stop
