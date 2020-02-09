@@ -40,7 +40,6 @@ alexa: !include package/compontents/devices/alexa.yaml
 # panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 # notify: !include package/compontents/configs/notify.yaml
 # google: !include package/compontents/configs/google.yaml
-# zone: !include_dir_list package/compontents/zones
 
 sensor: !include_dir_list package/compontents/sensors
 switch: !include_dir_list package/compontents/switches
