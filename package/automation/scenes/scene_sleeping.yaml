@@ -34,6 +34,9 @@
 
     - service: input_boolean.turn_off
       entity_id: input_boolean.scene_sleeping
+      
+    - service: switch.turn_off
+      entity_id: switch.newkaku_01616a32_a
 
     - delay: "00:06:00"
 

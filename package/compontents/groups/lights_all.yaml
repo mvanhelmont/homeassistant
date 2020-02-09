@@ -1,6 +1,5 @@
 ---
 group_lights_group0:
-  name: "Group All Lights Group 0"
   entities:
     - light.hallway
     - light.balcony

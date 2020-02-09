@@ -1,4 +1,3 @@
 ---
 nest_disable_control:
-  name: "Nest Disable Control"
   initial: "off"

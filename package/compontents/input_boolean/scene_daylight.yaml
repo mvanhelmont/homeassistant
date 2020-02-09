@@ -1,4 +1,4 @@
 ---
 scene_daylight:
-  name: "Scene Daylight"
+#  name: "Scene Daylight"
   initial: "on"

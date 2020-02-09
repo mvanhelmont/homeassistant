@@ -12,7 +12,8 @@ input_boolean.emulate_holiday:
     icon: mdi:nintendo-switch
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
-#input_boolean.kay_home_manual:
+input_boolean.kay_home_manual:
+  friendly_name: "Kay Home Manual"
 
 input_boolean.lux_level_low:
   friendly_name: "Lux Low"
@@ -28,8 +29,11 @@ input_boolean.nest_disable_control:
     icon: mdi:nintendo-switch
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
-#input_boolean.peter_home_manual:
-#input_boolean.radio_play:
+input_boolean.peter_home_manual:
+  friendly_name: "Peter Home Manual"
+
+input_boolean.radio_play:
+  friendly_name: "Play radio"
 
 ####################################################
 #

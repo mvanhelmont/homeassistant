@@ -1,5 +1,5 @@
 ---
 platform: mqtt
-state_topic: "homeassistant/mqtt_server/systemstatus"
 name: "MQTT Disk Size"
+state_topic: "homeassistant/mqtt_server/systemstatus"
 value_template: "{{ value_json.disktotal }}"

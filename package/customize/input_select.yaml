@@ -5,8 +5,18 @@
 #
 ####################################################
 
-#input_select.radio_selector:
-#input_select.radio_station:
-#input_select.system_other_state_select_switch:
-#input_select.system_server_state_select_switch:
-#input_select.system_zwave_node_switch:
+input_select.radio_selector:
+  friendly_name: "Select Player"
+  icon: mdi:speaker-wireless
+
+input_select.radio_station:
+  friendly_name: "Select Radio Station"
+
+input_select.system_other_state_select_switch:
+  friendly_name: "System Other"
+
+input_select.system_server_state_select_switch:
+  friendly_name: "Server Statistics"
+
+input_select.system_zwave_node_switch:
+  friendly_name: "Z-Wave Info"

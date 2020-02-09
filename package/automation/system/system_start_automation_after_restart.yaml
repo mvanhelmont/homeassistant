@@ -1,7 +1,5 @@
 - alias: "System - Start Automation after start HomeKit"
-  hide_entity: "true"
-  trigger:
-  
+  trigger:  
       platform: homeassistant
       event: start
       

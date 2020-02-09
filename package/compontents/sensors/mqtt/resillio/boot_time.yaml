@@ -1,5 +1,5 @@
 ---
 platform: mqtt
-state_topic: "homeassistant/resillio/systemstatus"
 name: "Resillio Boot Time"
+state_topic: "homeassistant/resillio/systemstatus"
 value_template: "{{ value_json.boottime }}"

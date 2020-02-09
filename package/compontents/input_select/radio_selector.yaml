@@ -1,7 +1,5 @@
 ---
 radio_selector:
-  name: 'Select Player:'
   options:
     - "Kitchen"
   initial: "Kitchen"
-  icon: mdi:speaker-wireless

@@ -5,4 +5,5 @@
 #
 ####################################################
 
-#fan.afzuiging_badkamer:
+fan.afzuiging_badkamer:
+  friendly_name: "Afzuiging badkamer"

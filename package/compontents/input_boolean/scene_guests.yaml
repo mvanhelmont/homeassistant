@@ -1,4 +1,3 @@
 ---
 scene_guests:
-  name: "Scene Guests"
   initial: "off"

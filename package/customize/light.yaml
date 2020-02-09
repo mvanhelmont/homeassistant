@@ -161,6 +161,7 @@ light.newkaku_01401eb6_a:
   friendly_name: "Dining room"
   homebridge_name: "Diningroom Switch"
 
-#light.nanoleaf:
-#light.newkaku_01401eb6_a:
+light.nanoleaf:
+  friendly_name: "NanoLeaf"
+
 #light.browser_39743d20_12b95c55:

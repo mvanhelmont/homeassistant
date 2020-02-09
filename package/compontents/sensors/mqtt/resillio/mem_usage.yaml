@@ -1,6 +1,6 @@
 ---
 platform: mqtt
-state_topic: "homeassistant/resillio/systemstatus"
 name: "Resillio Memory Used"
+state_topic: "homeassistant/resillio/systemstatus"
 value_template: "{{ value_json.virtualmem | round(0) }}"
 unit_of_measurement: "%"

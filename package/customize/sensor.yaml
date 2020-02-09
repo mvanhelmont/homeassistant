@@ -1,31 +1,515 @@
 ---
 ####################################################
 #
-# SENSOR
+# SENSOR NOT DONE YET
+#
+#sensor.ssl_certificate_expiry:
+#sensor.swap_use_percent:
+#sensor.this_device_next_reminder:
+#sensor.time:
+#sensor.time_date:
+#sensor.time_utc:
+#sensor.hourly_gas_consumption:
+#sensor.internet_time:
+#sensor.ipv4_address_wlan0:
+#sensor.last_alexa:
+#sensor.last_boot:
+#sensor.last_boot_2:
+#sensor.latest_version:
+#sensor.long_power_failure_count:
+#sensor.period_of_day
+#sensor.nextsunrise
+#sensor.nextsunset
+#sensor.browser_39743d20_12b95c55:
+#sensor.circadian_values:
+#sensor.date:
+#sensor.date_time:
+#sensor.date_time_iso:
+#sensor.co2_intensity_52_37_4_9:
 #
 ####################################################
 
-sensor.alexa_last_message:
-  icon: mdi:amazon-alexa
+sensor.lenovo_full_kiosk:
+  friendly_name: Fully Kiosk Sensor
 
-sensor.birthday:
-  icon: mdi:balloon
+sensor.fibaro_frontdoor_custom_sensor:
+  templates:
+    icon: mdi:leak
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
-#sensor.browser_39743d20_12b95c55:
-#sensor.circadian_values:
+sensor.fibaro_imac_custom_sensor:
+  templates:
+    icon: mdi:leak
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.harmony:
+  icon: mdi:remote-tv
+
+####################################################
+#
+# MEEK P1 METER
+#
+#sensor.power_consumption
+#sensor.power_consumption_low
+#sensor.power_consumption_normal
+#sensor.power_consumption_phase_l1
+#sensor.power_consumption_phase_l2
+#sensor.power_consumption_phase_l3
+#sensor.power_consumption_total
+#sensor.power_production
+#sensor.power_production_low
+#sensor.power_production_normal
+#sensor.power_production_phase_l1
+#sensor.power_production_phase_l2
+#sensor.power_production_phase_l3
+#sensor.power_tariff
+#sensor.gas_consumption:
+#
+####################################################
+
+sensor.volt_1min:
+  icon: mdi:flash
+
+sensor.kw_1min:
+  icon: mdi:flash
+
+sensor.voltage_phase_l1:
+  icon: mdi:flash
+
+sensor.voltage_phase_l2:
+  icon: mdi:flash
+
+sensor.voltage_phase_l3:
+  icon: mdi:flash
+
+sensor.voltage_sags_phase_l1:
+  icon: mdi:flash
+
+sensor.voltage_sags_phase_l2:
+  icon: mdi:flash
+
+sensor.voltage_sags_phase_l3:
+  icon: mdi:flash
+
+sensor.voltage_swells_phase_l1:
+  icon: mdi:flash
+
+sensor.voltage_swells_phase_l2:
+  icon: mdi:flash
+
+sensor.voltage_swells_phase_l3:
+  icon: mdi:flash
+
+####################################################
+#
+# SENSOR.M5 - TP-LINK
+#
+####################################################
+
+sensor.tp_link_total_send_mb:
+  icon: mdi:upload-network
+
+sensor.tp_link_total_recieved_mb:
+  icon: mdi:download-network
+
+sensor.m5_bytes_received:
+  friendly_name: "Total Kb Received"
+  icon: mdi:download-network
+
+sensor.m5_bytes_sent:
+  friendly_name: "Total Kb Sent"
+  icon: mdi:upload-network
+
+sensor.m5_kbyte_sec_received:
+  friendly_name: "Kb/Sec Recieved"
+  icon: mdi:download-network
+
+sensor.m5_kbyte_sec_sent:
+  friendly_name: "Kb/Sec Sent"
+  icon: mdi:upload-network
+
+sensor.m5_packets_received:
+  friendly_name: "Total Packets Recieved"
+  icon: mdi:download-network
+
+sensor.m5_packets_sec_received:
+  friendly_name: "Packets/sec Recieved"
+  icon: mdi:download-network
+
+sensor.m5_packets_sec_sent:
+  friendly_name: "Packets/Sec Sent"
+  icon: mdi:upload-network
+
+sensor.m5_packets_sent:
+  friendly_name: "Total Packets Sent"
+  icon: mdi:upload-network
+
+
+####################################################
+#
+# SENSOR.MILIGHT
+#
+#sensor.esp8266_milight_hub_dropped_packets:
+#sensor.esp8266_milight_hub_queue_length:
+#
+####################################################
+
+sensor.milight_arduino_version:
+  friendly_name: "Arduino Version"
+
+sensor.milight_free_heap:
+  friendly_name: "Free heap"
+
+sensor.milight_reset_reason:
+  friendly_name: "Reset reason"
+
+sensor.milight_transitions:
+  friendly_name: "Transitions"
+
+sensor.milight_variant:
+  friendly_name: "Board type"
+
+sensor.milight_version:
+  friendly_name: "Version"
+
+####################################################
+#
+# SENSOR.MQTT.*
+#
+####################################################
+
+sensor.mqtt_last_update:
+  friendly_name: "Last Sensors Update"
+  icon: mdi:update
+
+sensor.mqtt_boot_time:
+  friendly_name: "Last Boot Time"
+  icon: mdi:clock
+
+sensor.mqtt_cpu_temp:
+  friendly_name: "CPU Temp."
+  templates:
+    icon: mdi:temperature-celsius
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+sensor.mqtt_cpu_usage:
+  friendly_name: "CPU Usage"
+  icon: mdi:cpu-64-bit
+
+sensor.mqtt_disk_size:
+  friendly_name: "Disk Size"
+  icon: mdi:harddisk
+
+sensor.mqtt_disk_usage:
+  friendly_name: "Disk Usage"
+  icon: mdi:harddisk
+
+sensor.mqtt_memory_used:
+  friendly_name: "Memory Usage"
+  icon: mdi:memory
+
+sensor.mqtt_power_supply:
+  icon: mdi:power-plug
+
+####################################################
+#
+# SENSOR.MVPS
+#
+####################################################
+
+sensor.mvps_ssh_login_client_ip:
+  friendly_name: "Client login IP"
+
+sensor.mvps_ssh_login_date:
+  friendly_name: "Client login date"
+
+sensor.mvps_ssh_login_time:
+  friendly_name: "Client login time"
+
+sensor.mvps_ssh_login_user:
+  friendly_name: "Client username"
+
+sensor.oudenes_file_size:
+  icon: mdi:harddisk
 
 sensor.asia_file_size:
   icon: mdi:harddisk
 
-#sensor.co2_intensity_52_37_4_9:
-#sensor.current_version:
+sensor.hairdelicious_file_size:
+  icon: mdi:harddisk
+
+####################################################
+#
+# SENSOR - TRACKER
+#
+####################################################
+
+sensor.peter_last_changed_tracker:
+  friendly_name: "iPhone Peter Tracker changed"
+  icon: mdi:av-timer
+
+sensor.kay_last_changed_tracker:
+  friendly_name: "iPhone Kay Tracker changed"
+  icon: mdi:av-timer
+
+####################################################
+#
+# SENSOR.PETER_S_ECHO_DOT
+#
+####################################################
+
+sensor.peter_s_echo_dot_next_alarm:
+  friendly_name: "Alexa Echo Dot Alarm"
+
+sensor.peter_s_echo_dot_next_reminder:
+  friendly_name: "Aleca Echo Dot Reminder"
+
+sensor.peter_s_echo_dot_next_timer:
+  friendly_name: "Alexa Echo Dot Timer"
+
+sensor.alexa_last_message:
+  friendly_name: "Last message"
+  icon: mdi:amazon-alexa
+
+
+####################################################
+#
+# SENSOR.RESILLIO.*
+#
+####################################################
+
+sensor.resillio_last_update:
+  friendly_name: "Last Sensors Update"
+  icon: mdi:update
+
+sensor.resillio_boot_time:
+  friendly_name: "Last Boot Time"
+  icon: mdi:clock
+
+sensor.resillio_cpu_temp:
+  friendly_name: "CPU Temp."
+  templates:
+    icon: mdi:temperature-celsius
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+sensor.resillio_cpu_usage:
+  friendly_name: "CPU Usage"
+  icon: mdi:cpu-64-bit
+
+sensor.resillio_disk_size:
+  friendly_name: "Disk Size"
+
+  icon: mdi:harddisk
+sensor.resillio_disk_usage:
+  friendly_name: "Disk Usage"
+  icon: mdi:harddisk
+
+sensor.resillio_memory_used:
+  friendly_name: "Memory Usage"
+  icon: mdi:memory
+
+sensor.resillio_power_supply:
+  icon: mdi:power-plug
+
+
+####################################################
+#
+# SENSOR.SPEEDTEST
+#
+####################################################
+
+sensor.speedtest_download:
+  friendly_name: "Download"
+
+sensor.speedtest_ping:
+  friendly_name: "Ping"
+
+sensor.speedtest_upload:
+  friendly_name: "Upload"
+
+####################################################
+#
+# SENSOR.SSH
+#
+####################################################
+
+sensor.ssh_last_update:
+  friendly_name: "Last Sensors Update"
+  icon: mdi:update
+
+sensor.ssh_boot_time:
+  friendly_name: "Last Boot Time"
+  icon: mdi:clock
+
+sensor.ssh_cpu_temp:
+  friendly_name: "CPU Temp."
+  templates:
+    icon: mdi:temperature-celsius
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+sensor.ssh_cpu_usage:
+  friendly_name: "CPU Usage"
+  icon: mdi:cpu-64-bit
+
+sensor.ssh_disk_size:
+  friendly_name: "Disk Size"
+  icon: mdi:harddisk
+
+sensor.ssh_disk_usage:
+  friendly_name: "Disk Usage"
+  icon: mdi:harddisk
+
+sensor.ssh_memory_used:
+  friendly_name: "Memory Usage"
+  icon: mdi:memory
+
+sensor.ssh_power_supply:
+  icon: mdi:power-plug
+
+####################################################
+#
+# SENSOR.TOYOTA.*
+#
+####################################################
+
+sensor.toyota_aygo_expdate:
+  friendly_name: "APK Vervaldatum"
+
+sensor.toyota_aygo_insured:
+  friendly_name: "Verzekerd"
+
+sensor.toyota_aygo_recall:
+  friendly_name: "Terugroepstatus"
+
+####################################################
+#
+# AIR POLLUTION
+#
+####################################################
+
+sensor.u_s_air_pollution_level:
+  friendly_name: "Air Pollution Level"
+
+sensor.u_s_air_quality_index:
+  friendly_name: "Air Quality Index"
+
+sensor.u_s_main_pollutant:
+  friendly_name: "Main Pollutant"
+
+####################################################
+#
+# MVPS
+#
+####################################################
+
+sensor.vmail_last_backup_date:
+  icon: mdi:backup-restore
+
+sensor.vmail_last_backup_time:
+  icon: mdi:backup-restore
+
+sensor.vmail_last_backup_size:
+  icon: mdi:harddisk
+
+sensor.www_last_backup_date:
+  icon: mdi:backup-restore
+
+sensor.www_last_backup_time:
+  icon: mdi:backup-restore
+
+####################################################
+#
+# SENSOR.HP_*
+#
+####################################################
+
+sensor.hp_printer_ink_black:
+  icon: mdi:cup-water
+
+sensor.hp_printer_ink_cyan:
+  icon: mdi:cup-water
+
+sensor.hp_printer_ink_magenta:
+  icon: mdi:cup-water
+
+sensor.hp_printer_ink_yellow:
+  icon: mdi:cup-water
+
+sensor.hp_printer_printer:
+  icon: mdi:file-outline
+
+sensor.hp_printer_printhead_cmyk:
+  icon: mdi:file-outline
+
+sensor.hp_printer_scanner:
+  icon: mdi:scanner
 
 ####################################################
 #
 # SENSOR.DARK_SKY
 #
+#sensor.dark_sky_dew_point:
+#sensor.dark_sky_dew_point_0d:
+#sensor.dark_sky_dew_point_0h:
+#sensor.dark_sky_dew_point_1d:
+#sensor.dark_sky_dew_point_1h:
+#sensor.dark_sky_dew_point_2d:
+#sensor.dark_sky_dew_point_2h:
+#
+#sensor.dark_sky_humidity_0d:
+#sensor.dark_sky_humidity_0h:
+#sensor.dark_sky_humidity_1d:
+#sensor.dark_sky_humidity_1h:
+#sensor.dark_sky_humidity_2d:
+#sensor.dark_sky_humidity_2h:
+#
+#sensor.dark_sky_wind_bearing_0d:
+#sensor.dark_sky_wind_bearing_0h:
+#sensor.dark_sky_wind_bearing_1d:
+#sensor.dark_sky_wind_bearing_1h:
+#sensor.dark_sky_wind_bearing_2d:
+#sensor.dark_sky_wind_bearing_2h:
+#
 ####################################################
-
 
 sensor.dark_sky_daily_summary:
   friendly_name: "Daily Summary"
@@ -106,27 +590,12 @@ sensor.dark_sky_daytime_high_temperature_2d:
       if (state > -23) return 'rgb(189,0,107)';
       return 'rgb(0,0,0)';
 
-#sensor.dark_sky_dew_point:
-#sensor.dark_sky_dew_point_0d:
-#sensor.dark_sky_dew_point_0h:
-#sensor.dark_sky_dew_point_1d:
-#sensor.dark_sky_dew_point_1h:
-#sensor.dark_sky_dew_point_2d:
-#sensor.dark_sky_dew_point_2h:
-
 sensor.dark_sky_hourly_summary:
   friendly_name: "Hourly Summary"
   icon_color: rgba(71,116,157,1)
 
 sensor.dark_sky_humidity:
   friendly_name: "Current Humidity"
-
-#sensor.dark_sky_humidity_0d:
-#sensor.dark_sky_humidity_0h:
-#sensor.dark_sky_humidity_1d:
-#sensor.dark_sky_humidity_1h:
-#sensor.dark_sky_humidity_2d:
-#sensor.dark_sky_humidity_2h:
 
 sensor.dark_sky_moon_phase_0d:
   friendly_name: "Moon Phase today"
@@ -137,18 +606,35 @@ sensor.dark_sky_moon_phase_1d:
 sensor.dark_sky_moon_phase_2d:
   friendly_name: "Moon Phase 2nd Day"
 
-#sensor.dark_sky_overnight_low_temperature_0d:
-#sensor.dark_sky_overnight_low_temperature_1d:
-#sensor.dark_sky_overnight_low_temperature_2d:
+sensor.dark_sky_overnight_low_temperature_0d:
+  friendly_name: "Night Temp today"
+
+sensor.dark_sky_overnight_low_temperature_1d:
+  friendly_name: "Night Temp next day"
+
+sensor.dark_sky_overnight_low_temperature_2d:
+  friendly_name: "Night Temp second day"
 
 sensor.dark_sky_pressure:
   friendly_name: "Current Pressure"
-#sensor.dark_sky_pressure_0d:
-#sensor.dark_sky_pressure_0h:
-#sensor.dark_sky_pressure_1d
-#sensor.dark_sky_pressure_1h:
-#sensor.dark_sky_pressure_2d:
-#sensor.dark_sky_pressure_2h:
+
+sensor.dark_sky_pressure_0d:
+  friendly_name: "Current today"
+
+sensor.dark_sky_pressure_0h:
+  friendly_name: "Current this hour"
+
+sensor.dark_sky_pressure_1d:
+  friendly_name: "Current next day"
+
+sensor.dark_sky_pressure_1h:
+  friendly_name: "Current next hour"
+
+sensor.dark_sky_pressure_2d:
+  friendly_name: "Current second day"
+
+sensor.dark_sky_pressure_2h:
+  friendly_name: "Current second hour"
 
 sensor.dark_sky_summary:
   friendly_name: "Now"
@@ -302,13 +788,6 @@ sensor.dark_sky_visibility_2h:
 sensor.dark_sky_wind_bearing:
   friendly_name: "Current Wind Bearing"
 
-#sensor.dark_sky_wind_bearing_0d:
-#sensor.dark_sky_wind_bearing_0h:
-#sensor.dark_sky_wind_bearing_1d:
-#sensor.dark_sky_wind_bearing_1h:
-#sensor.dark_sky_wind_bearing_2d:
-#sensor.dark_sky_wind_bearing_2h:
-
 sensor.dark_sky_wind_speed:
   friendly_name: "Wind Speed Now"
 
@@ -330,20 +809,15 @@ sensor.dark_sky_wind_speed_2d:
 sensor.dark_sky_wind_speed_2h:
   friendly_name: "Wind Speed second hour"
 
-sensor.database_size:
-  icon: mdi:database
-
-#sensor.date:
-#sensor.date_time:
-#sensor.date_time_iso:
-
-sensor.dayofyear:
-  icon: mdi:calendar-today
-  friendly_name: "Day of Year"
-
 ####################################################
 #
-# SENSOR CLIMATE 
+# SENSOR CLIMATE
+#
+#sensor.entryway_thermostat_humidity:
+#sensor.entryway_thermostat_hvac_state:
+#sensor.entryway_thermostat_operation_mode:
+#sensor.entryway_thermostat_target:
+#sensor.entryway_thermostat_temperature:
 #
 ####################################################
 
@@ -375,6 +849,7 @@ sensor.bedroom_nest_protect_co_status:
   icon: mdi:smoke-detector
 
 sensor.bedroom_nest_protect_color_status:
+  friendly_name: "Bedroom"
   icon: mdi:palette
 
 sensor.bedroom_nest_protect_smoke_status:
@@ -387,6 +862,7 @@ sensor.dining_room_nest_protect_co_status:
   icon: mdi:smoke-detector
 
 sensor.dining_room_nest_protect_color_status:
+  friendly_name: "Diningroom"
   icon: mdi:palette
 
 sensor.dining_room_nest_protect_smoke_status:
@@ -399,38 +875,49 @@ sensor.living_room_nest_protect_co_status:
   icon: mdi:smoke-detector
 
 sensor.living_room_nest_protect_color_status:
+  friendly_name: "Livingroom"
   icon: mdi:palette
 
 sensor.living_room_nest_protect_smoke_status:
   icon: mdi:smoke-detector
 
-#sensor.entryway_thermostat_humidity:
-#sensor.entryway_thermostat_hvac_state:
-#sensor.entryway_thermostat_operation_mode:
-#sensor.entryway_thermostat_target:
-#sensor.entryway_thermostat_temperature:
+####################################################
+#
+# SENSOR - GOOGLE BACKUP
+#
+####################################################
 
+sensor.snapshot_backup:
+  icon: mdi:cloud-upload
+
+####################################################
+#
+# SENSOR - ITHO
+#
+####################################################
+
+sensor.itho_speed:
+  friendly_name: "Speed"
+  icon: mdi:fan
+
+sensor.itho_tijd:
+  friendly_name: "Time"
+  icon: mdi:av-timer
+
+####################################################
+#
+# HA SYSTEM
+#
+#sensor.memory_free:
+#sensor.memory_use_percent:
+#sensor.current_version:
 #sensor.disk_free:
 #sensor.disk_use_percent:
-#sensor.esp8266_milight_hub_dropped_packets:
-#sensor.esp8266_milight_hub_queue_length:
-
-sensor.external_ip:
-  icon: mdi:wan
-
-#sensor.gas_consumption:
-
-sensor.fibaro_frontdoor_custom_sensor:
-  templates:
-    icon: mdi:leak
-    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.fibaro_imac_custom_sensor:
-  templates:
-    icon: mdi:leak
-    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+#
+####################################################
 
 sensor.ha_cpu_temp:
+  friendly_name: "HA CPU Temperature"
   templates:
     icon: mdi:temperature-celsius
     icon_color: >-
@@ -449,6 +936,7 @@ sensor.ha_cpu_temp:
       return 'rgb(0,0,0)';
 
 sensor.ha_gpu_temp:
+  friendly_name: "HA GPU Temperature"
   templates:
     icon: mdi:temperature-celsius
     icon_color: >-
@@ -465,393 +953,42 @@ sensor.ha_gpu_temp:
       if (state > -18) return 'rgb(176,0,189)';
       if (state > -23) return 'rgb(189,0,107)';
       return 'rgb(0,0,0)';
+
+sensor.local_ip:
+  icon: mdi:wan
+
+sensor.external_ip:
+  icon: mdi:wan
+
+sensor.database_size:
+  icon: mdi:database
+
+sensor.processor_use:
+  friendly_name: "HA CPU Usage"
+
+sensor.rpi_power_status:
+  friendly_name: "HA Power State"
 
 sensor.hacs:
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
-sensor.hairdelicious_file_size:
-  icon: mdi:harddisk
-
-#sensor.harmony:
-
-sensor.holiday:
-  icon: mdi:palm-tree
-
-#sensor.hourly_gas_consumption:
-
-####################################################
-#
-# SENSOR.HP_*
-#
-####################################################
-
-sensor.hp_black_ink:
-  icon: mdi:cup-water
-
-sensor.hp_cyan_ink:
-  icon: mdi:cup-water
-
-sensor.hp_magenta_ink:
-  icon: mdi:cup-water
-
-sensor.hp_yellow_ink:
-  icon: mdi:cup-water
-
-sensor.total_prints:
-  icon: mdi:file-outline
-
-#sensor.hp_cur_black:
-#sensor.hp_cur_cyan:
-#sensor.hp_cur_magenta:
-#sensor.hp_cur_yellow:
-#sensor.hp_max_black:
-#sensor.hp_max_cyan:
-#sensor.hp_max_magenta:
-#sensor.hp_max_yellow:
-
-#sensor.internet_time:
-#sensor.ipv4_address_wlan0:
-
-sensor.itho_speed:
-  icon: mdi:fan
-sensor.itho_tijd:
-  icon: mdi:av-timer
-
-#sensor.kay_last_changed_tracker:
-#sensor.kw_1min:
-#sensor.last_alexa:
-#sensor.last_boot:
-#sensor.last_boot_2:
-#sensor.latest_version:
-
-sensor.lenovo_full_kiosk:
-  friendly_name: Fully Kiosk Sensor
-
-sensor.local_ip:
-  icon: mdi:wan
-
-#sensor.long_power_failure_count:
-
-sensor.m5_bytes_received:
-  friendly_name: "Total Kb Received"
-  icon: mdi:download-network
-
-####################################################
-#
-# SENSOR.M5_*
-#
-####################################################
-
-sensor.m5_bytes_sent:
-  friendly_name: "Total Kb Sent"
-  icon: mdi:upload-network
-
-sensor.m5_kbyte_sec_received:
-  friendly_name: "Kb/Sec Recieved"
-  icon: mdi:download-network
-
-sensor.m5_kbyte_sec_sent:
-  friendly_name: "Kb/Sec Sent"
-  icon: mdi:upload-network
-
-sensor.m5_packets_received:
-  friendly_name: "Total Packets Recieved"
-  icon: mdi:download-network
-
-sensor.m5_packets_sec_received:
-  friendly_name: "Packets/sec Recieved"
-  icon: mdi:download-network
-
-sensor.m5_packets_sec_sent:
-  friendly_name: "Packets/Sec Sent"
-  icon: mdi:upload-network
-
-sensor.m5_packets_sent:
-  friendly_name: "Total Packets Sent"
-  icon: mdi:upload-network
-
-#sensor.memory_free:
-#sensor.memory_use_percent:
-
-#sensor.milight_arduino_version:
-#sensor.milight_free_heap:
-#sensor.milight_reset_reason:
-#sensor.milight_transitions:
-#sensor.milight_variant:
-#sensor.milight_version:
-
-####################################################
-#
-# SENSOR.MQTT.*
-#
-####################################################
-
-sensor.mqtt_last_update:
-  friendly_name: "Last Sensors Update"
-  icon: mdi:update
-
-sensor.mqtt_boot_time:
-  friendly_name: "Last Boot Time"
-  icon: mdi:clock
-
-sensor.mqtt_cpu_temp:
-  friendly_name: "CPU Temp."
-  templates:
-    icon: mdi:temperature-celsius
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.mqtt_cpu_usage:
-  friendly_name: "CPU Usage"
-  icon: mdi:cpu-64-bit
-
-sensor.mqtt_disk_size:
-  friendly_name: "Disk Size"
-  icon: mdi:harddisk
-
-sensor.mqtt_disk_usage:
-  friendly_name: "Disk Usage"
-  icon: mdi:harddisk
-
-sensor.mqtt_memory_used:
-  friendly_name: "Memory Usage"
-  icon: mdi:memory
-
-sensor.mqtt_power_supply:
-  icon: mdi:power-plug
-
-#sensor.mvps_ssh_login_client_ip
-#sensor.mvps_ssh_login_date
-#sensor.mvps_ssh_login_time
-#sensor.mvps_ssh_login_user
-
-#sensor.nextsunrise
-#sensor.nextsunset
-
-sensor.oudenes_file_size:
-  icon: mdi:harddisk
-
-#sensor.period_of_day
-
-#sensor.peter_last_changed_tracker
-
-#sensor.peter_s_echo_dot_next_alarm
-#sensor.peter_s_echo_dot_next_reminder
-#sensor.peter_s_echo_dot_next_timer
-
-#sensor.power_consumption
-#sensor.power_consumption_low
-#sensor.power_consumption_normal
-#sensor.power_consumption_phase_l1
-#sensor.power_consumption_phase_l2
-#sensor.power_consumption_phase_l3
-#sensor.power_consumption_total
-#sensor.power_production
-#sensor.power_production_low
-#sensor.power_production_normal
-#sensor.power_production_phase_l1
-#sensor.power_production_phase_l2
-#sensor.power_production_phase_l3
-#sensor.power_tariff
-#sensor.processor_use
-
-####################################################
-#
-# SENSOR.RESILLIO.*
-#
-####################################################
-
-sensor.resillio_last_update:
-  friendly_name: "Last Sensors Update"
-  icon: mdi:update
-
-sensor.resillio_boot_time:
-  friendly_name: "Last Boot Time"
-  icon: mdi:clock
-
-sensor.resillio_cpu_temp:
-  friendly_name: "CPU Temp."
-  templates:
-    icon: mdi:temperature-celsius
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.resillio_cpu_usage:
-  friendly_name: "CPU Usage"
-  icon: mdi:cpu-64-bit
-
-sensor.resillio_disk_size:
-  friendly_name: "Disk Size"
-
-  icon: mdi:harddisk
-sensor.resillio_disk_usage:
-  friendly_name: "Disk Usage"
-  icon: mdi:harddisk
-
-sensor.resillio_memory_used:
-  friendly_name: "Memory Usage"
-  icon: mdi:memory
-
-sensor.resillio_power_supply:
-  icon: mdi:power-plug
-
-#sensor.rpi_power_status
-#sensor.season:
-sensor.snapshot_backup:
-  icon: mdi:cloud-upload
-
-#sensor.speedtest_download:
-#sensor.speedtest_ping:
-#sensor.speedtest_upload:
-
-####################################################
-#
-# SENSOR.SSH
-#
-####################################################
-
-sensor.ssh_last_update:
-  friendly_name: "Last Sensors Update"
-  icon: mdi:update
-
-sensor.ssh_boot_time:
-  friendly_name: "Last Boot Time"
-  icon: mdi:clock
-
-sensor.ssh_cpu_temp:
-  friendly_name: "CPU Temp."
-  templates:
-    icon: mdi:temperature-celsius
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.ssh_cpu_usage:
-  friendly_name: "CPU Usage"
-  icon: mdi:cpu-64-bit
-
-sensor.ssh_disk_size:
-  friendly_name: "Disk Size"
-  icon: mdi:harddisk
-
-sensor.ssh_disk_usage:
-  friendly_name: "Disk Usage"
-  icon: mdi:harddisk
-
-sensor.ssh_memory_used:
-  friendly_name: "Memory Usage"
-  icon: mdi:memory
-
-sensor.ssh_power_supply:
-  icon: mdi:power-plug
-
-####################################################
-#
-# SENSOR.*
-#
-####################################################
-
-#sensor.ssl_certificate_expiry:
-#sensor.swap_use_percent:
-#sensor.this_device_next_reminder:
-#sensor.time:
-#sensor.time_date:
-#sensor.time_utc:
-
-
-####################################################
-#
-# SENSOR.TOYOTA.*
-#
-####################################################
-
-sensor.toyota_aygo_expdate:
-  friendly_name: "APK Vervaldatum"
-
-sensor.toyota_aygo_insured:
-  friendly_name: "Verzekerd"
-
-sensor.toyota_aygo_recall:
-  friendly_name: "Terugroepstatus"
-
-sensor.tp_link_total_send_mb:
-  icon: mdi:upload-network
-
-sensor.tp_link_total_recieved_mb:
-  icon: mdi:download-network
-
-sensor.u_s_air_pollution_level:
-  friendly_name: "Air Pollution Level"
-
-sensor.u_s_air_quality_index:
-  friendly_name: "Air Quality Index"
-
-#sensor.u_s_main_pollutant:
-
-sensor.vmail_last_backup_date:
-  icon: mdi:backup-restore
-
-sensor.vmail_last_backup_time:
-  icon: mdi:backup-restore
-
-sensor.vmail_last_backup_size:
-  icon: mdi:harddisk
-
-#sensor.volt_1min:
-#sensor.voltage_phase_l1:
-#sensor.voltage_phase_l2:
-#sensor.voltage_phase_l3:
-#sensor.voltage_sags_phase_l1:
-#sensor.voltage_sags_phase_l2:
-#sensor.voltage_sags_phase_l3:
-#sensor.voltage_swells_phase_l1:
-#sensor.voltage_swells_phase_l2:
-#sensor.voltage_swells_phase_l3:
+sensor.birthday:
+  icon: mdi:balloon
+  friendly_name: "Birthday!"
+
+sensor.season:
+  friendly_name: "Season Period"
+
+sensor.dayofyear:
+  icon: mdi:calendar-today
+  friendly_name: "Day of Year"
 
 sensor.weekofyear:
   icon: mdi:calendar-week-begin
   friendly_name: "Week of Year"
 
-sensor.www_last_backup_date:
-  icon: mdi:backup-restore
-
-sensor.www_last_backup_time:
-  icon: mdi:backup-restore
-
+sensor.holiday:
+  friendly_name: "Holiday!"
+  icon: mdi:palm-tree

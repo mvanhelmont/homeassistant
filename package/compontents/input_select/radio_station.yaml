@@ -1,6 +1,5 @@
 ---
 radio_station:
-  name: "Select Radio Station:"
   options:
     - "Radio 538"
     - "Q-Music"

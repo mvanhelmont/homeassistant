@@ -5,5 +5,10 @@
 #
 ####################################################
 
-#input_number.fullykiosk_brightness_slider:
-#input_number.volume_radio:
+input_number.fullykiosk_brightness_slider:
+  friendly_name: "FKB Brightness"
+  icon: mdi:brightness-percent
+
+input_number.volume_radio:
+  friendly_name: "Volume Radio"
+  icon: mdi:volume-high

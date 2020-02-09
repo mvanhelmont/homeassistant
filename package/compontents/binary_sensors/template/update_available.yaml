@@ -2,6 +2,5 @@
 platform: template
 sensors:
   update_available:
-    friendly_name: "Home Assistant Update Available?"
     entity_id: sensor.latest_version
     value_template: "{{ states('sensor.current_version') < states('sensor.latest_version') }}"

@@ -1,6 +1,5 @@
 ---
 system_zwave_node_switch:
-  name: "Z-Wave Info"
   options:
     - "Battery Level"
     - "Current Watt"

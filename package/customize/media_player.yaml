@@ -8,9 +8,15 @@
 media_player.lenovo_full_kiosk:
   friendly_name: Fully Kiosk Media Player
 
+media_player.kodi:
+  friendly_name: "Kodi"
+
+media_player.peter_s_echo_dot:
+  friendly_name: "Alexa Echo Dot" 
+
+media_player.woonkamer_2:
+  friendly_name: "Apple TV"
+
 #media_player.browser_39743d20_12b95c55:
-#media_player.kodi:
 #media_player.peter_s_alexa_apps:
-#media_player.peter_s_echo_dot:
 #media_player.this_device:
-#media_player.woonkamer_2:

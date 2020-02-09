@@ -1,6 +1,5 @@
 ---
 group_residence_radio:
-  name: "Residentie Radio"
   entities:
   - input_select.radio_station
   - input_select.radio_selector

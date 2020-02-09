@@ -8,7 +8,8 @@
 
 #switch.circadian_lighting_circadian_lighting:
 
-#switch.flux_test:
+switch.flux_test:
+  icon: mdi:nintendo-switch
 
 switch.kay_learning:
   friendly_name: "Kay Learning"
@@ -148,9 +149,16 @@ switch.newkaku_016138ba_a:
 #switch.peter_s_alexa_apps_do_not_disturb_switch:
 #switch.peter_s_alexa_apps_repeat_switch:
 #switch.peter_s_alexa_apps_shuffle_switch:
-#switch.peter_s_echo_dot_do_not_disturb_switch:
-#switch.peter_s_echo_dot_repeat_switch:
-#switch.peter_s_echo_dot_shuffle_switch:
+
+switch.peter_s_echo_dot_do_not_disturb_switch:
+  friendly_name: "Alexa Echo Dot do not disturb"
+
+switch.peter_s_echo_dot_repeat_switch:
+  friendly_name: "Alexa Echo Dot repeat"
+
+switch.peter_s_echo_dot_shuffle_switch:
+  friendly_name: "Alexa Echo Dot suffle"
+
 #switch.this_device_do_not_disturb_switch:
 #switch.this_device_repeat_switch:
 #switch.this_device_shuffle_switch:

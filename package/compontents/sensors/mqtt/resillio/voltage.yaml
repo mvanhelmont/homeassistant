@@ -1,6 +1,6 @@
 ---
 platform: mqtt
-state_topic: "homeassistant/resillio/systemstatus"
 name: "Resillio Power Supply"
+state_topic: "homeassistant/resillio/systemstatus"
 unit_of_measurement: "V"
 value_template: "{{ value_json.volt | round(3) }}"

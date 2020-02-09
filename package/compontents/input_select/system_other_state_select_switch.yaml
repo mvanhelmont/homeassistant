@@ -1,6 +1,5 @@
 ---
 system_other_state_select_switch:
-  name: "System Other"
   options:
     - "Air Pollution Level" 
     - "CO2 Production NLD"

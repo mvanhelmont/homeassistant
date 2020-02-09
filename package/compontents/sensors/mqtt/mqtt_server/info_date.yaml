@@ -1,5 +1,5 @@
 ---
 platform: mqtt
-state_topic: "homeassistant/mqtt_server/systemstatus"
 name: "MQTT Last Update"
+state_topic: "homeassistant/mqtt_server/systemstatus"
 value_template: "{{ value_json.datetimedatacollected }}"

@@ -1,6 +1,6 @@
 ---
 platform: mqtt
-state_topic: "homeassistant/resillio/systemstatus"
 name: "Resillio Disk Usage"
+state_topic: "homeassistant/resillio/systemstatus"
 unit_of_measurement: "%"
 value_template: "{{ value_json.diskusage | round(0) }}"

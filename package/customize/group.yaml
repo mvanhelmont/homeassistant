@@ -5,8 +5,17 @@
 #
 ####################################################
 
-#group.group_door_sensors:
-#group.group_family:
-#group.group_lights_group0:
-#group.group_motion_sensors:
-#group.group_residence_radio:
+group.group_door_sensors:
+  friendly_name: "Group Door Sensors"
+
+group.group_family:
+  friendly_name: "Group Family"
+
+group.group_lights_group0:
+  friendly_name: "Group All Lights Group 0"
+
+group.group_motion_sensors:
+  friendly_name: "Group Motion Sensors"
+
+group.group_residence_radio:
+  friendly_name: "Residentie Radio"
