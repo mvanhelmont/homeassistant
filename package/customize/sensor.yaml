@@ -144,7 +144,6 @@ sensor.m5_packets_sent:
   friendly_name: "Total Packets Sent"
   icon: mdi:upload-network
 
-
 ####################################################
 #
 # SENSOR.MILIGHT
@@ -284,7 +283,6 @@ sensor.alexa_last_message:
   friendly_name: "Last message"
   icon: mdi:amazon-alexa
 
-
 ####################################################
 #
 # SENSOR.RESILLIO.*
@@ -336,7 +334,6 @@ sensor.resillio_memory_used:
 
 sensor.resillio_power_supply:
   icon: mdi:power-plug
-
 
 ####################################################
 #
@@ -818,6 +815,7 @@ sensor.dark_sky_wind_speed_2h:
 #sensor.entryway_thermostat_operation_mode:
 #sensor.entryway_thermostat_target:
 #sensor.entryway_thermostat_temperature:
+#sensor.asingaborg_eta:
 #
 ####################################################
 
@@ -839,8 +837,6 @@ sensor.climate_temp_inside:
       if (state > -18) return 'rgb(176,0,189)';
       if (state > -23) return 'rgb(189,0,107)';
       return 'rgb(0,0,0)';
-
-#sensor.asingaborg_eta:
 
 sensor.bedroom_nest_protect_battery_health:
   icon: mdi:battery
