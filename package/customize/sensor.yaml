@@ -5,29 +5,8 @@
 #
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
 # 
-#sensor.ssl_certificate_expiry:
-#sensor.swap_use_percent:
-#sensor.this_device_next_reminder:
-#sensor.time:
-#sensor.time_date:
-#sensor.time_utc:
-#sensor.hourly_gas_consumption:
-#sensor.internet_time:
-#sensor.ipv4_address_wlan0:
-#sensor.last_alexa:
-#sensor.last_boot:
-#sensor.last_boot_2:
-#sensor.latest_version:
 #sensor.long_power_failure_count:
-#sensor.period_of_day
-#sensor.nextsunrise
-#sensor.nextsunset
 #sensor.browser_39743d20_12b95c55:
-#sensor.circadian_values:
-#sensor.date:
-#sensor.date_time:
-#sensor.date_time_iso:
-#sensor.co2_intensity_52_37_4_9:
 #
 ####################################################
 
@@ -49,6 +28,24 @@ sensor.harmony:
 
 ####################################################
 #
+# Circadian Add-On
+#
+####################################################
+
+sensor.circadian_values:
+  friendly_name: "Circadian Value"
+
+####################################################
+#
+# CO2 Signal
+#
+####################################################
+
+sensor.co2_intensity_52_37_4_9: 
+  friendly_name: "CO2 Intensity"
+
+####################################################
+#
 # MEEK P1 METER
 #
 #sensor.power_consumption
@@ -66,6 +63,7 @@ sensor.harmony:
 #sensor.power_production_phase_l3
 #sensor.power_tariff
 #sensor.gas_consumption:
+#sensor.hourly_gas_consumption:
 #
 ####################################################
 
@@ -150,10 +148,13 @@ sensor.m5_packets_sent:
 #
 # SENSOR.MILIGHT
 #
-#sensor.esp8266_milight_hub_dropped_packets:
-#sensor.esp8266_milight_hub_queue_length:
-#
 ####################################################
+
+sensor.esp8266_milight_hub_dropped_packets:
+    friendly_name: "Dropped Packets"
+
+sensor.esp8266_milight_hub_queue_length:
+  friendly_name: "Packet Queue Length"
 
 sensor.milight_arduino_version:
   friendly_name: "Arduino Version"
@@ -269,8 +270,14 @@ sensor.kay_last_changed_tracker:
 ####################################################
 #
 # SENSOR.PETER_S_ECHO_DOT
-#
+##
 ####################################################
+
+sensor.this_device_next_reminder:
+  friendly_name: "This Deivce Next Reminder"
+
+sensor.last_alexa:
+  friendly_name: "Last Alexa Device"
 
 sensor.peter_s_echo_dot_next_alarm:
   friendly_name: "Alexa Echo Dot Alarm"
@@ -486,29 +493,64 @@ sensor.hp_printer_scanner:
 #
 # SENSOR.DARK_SKY
 #
-#sensor.dark_sky_dew_point:
-#sensor.dark_sky_dew_point_0d:
-#sensor.dark_sky_dew_point_0h:
-#sensor.dark_sky_dew_point_1d:
-#sensor.dark_sky_dew_point_1h:
-#sensor.dark_sky_dew_point_2d:
-#sensor.dark_sky_dew_point_2h:
-#
-#sensor.dark_sky_humidity_0d:
-#sensor.dark_sky_humidity_0h:
-#sensor.dark_sky_humidity_1d:
-#sensor.dark_sky_humidity_1h:
-#sensor.dark_sky_humidity_2d:
-#sensor.dark_sky_humidity_2h:
-#
-#sensor.dark_sky_wind_bearing_0d:
-#sensor.dark_sky_wind_bearing_0h:
-#sensor.dark_sky_wind_bearing_1d:
-#sensor.dark_sky_wind_bearing_1h:
-#sensor.dark_sky_wind_bearing_2d:
-#sensor.dark_sky_wind_bearing_2h:
-#
 ####################################################
+
+sensor.dark_sky_dew_point:
+  friendly_name: "Dew Point Now"
+
+sensor.dark_sky_dew_point_0d:
+  friendly_name: "Dew Point Today"
+
+sensor.dark_sky_dew_point_0h:
+  friendly_name: "Dew Point This Hour"
+
+sensor.dark_sky_dew_point_1d:
+  friendly_name: "Dw Point Next Day"
+
+sensor.dark_sky_dew_point_1h:
+  friendly_name: "Dew Point Next Hour"
+
+sensor.dark_sky_dew_point_2d:
+  friendly_name: "Dew Point Second Day"
+
+sensor.dark_sky_dew_point_2h:
+  friendly_name: "Dew Piont Second Hour"
+
+sensor.dark_sky_humidity_0d:
+  friendly_name: "Humidity Today"
+
+sensor.dark_sky_humidity_0h:
+  friendly_name: "Humidity This Hour"
+
+sensor.dark_sky_humidity_1d:
+  friendly_name: "Humidity Next Day"
+
+sensor.dark_sky_humidity_1h:
+  friendly_name: "Humidity Next Hour"
+
+sensor.dark_sky_humidity_2d:
+  friendly_name: "Humidity Second Day"
+
+sensor.dark_sky_humidity_2h:
+  friendly_name: "Humidity Second Hour"
+
+sensor.dark_sky_wind_bearing_0d:
+  friendly_name: "Wind Bearing Today"
+
+sensor.dark_sky_wind_bearing_0h:
+  friendly_name: "Wind Bearing This Hour"
+
+sensor.dark_sky_wind_bearing_1d:
+  friendly_name: "Wind Bearing Next Day"
+
+sensor.dark_sky_wind_bearing_1h:
+  friendly_name: "Wind Bearing Next Hour"
+
+sensor.dark_sky_wind_bearing_2d:
+  friendly_name: "Wind Bearing Second Day"
+
+sensor.dark_sky_wind_bearing_2h:
+  friendly_name: "Wind Bearing Second Hour"
 
 sensor.dark_sky_daily_summary:
   friendly_name: "Daily Summary"
@@ -812,14 +854,25 @@ sensor.dark_sky_wind_speed_2h:
 #
 # SENSOR CLIMATE
 #
-#sensor.entryway_thermostat_humidity:
-#sensor.entryway_thermostat_hvac_state:
-#sensor.entryway_thermostat_operation_mode:
-#sensor.entryway_thermostat_target:
-#sensor.entryway_thermostat_temperature:
-#sensor.asingaborg_eta:
-#
 ####################################################
+
+sensor.entryway_thermostat_humidity:
+  friendly_name: "Nest Humidity"
+
+sensor.entryway_thermostat_hvac_state:
+  friendly_name: "Nest HVAC State"
+
+sensor.entryway_thermostat_operation_mode:
+  friendly_name: "Nest Operation Mode"
+
+sensor.entryway_thermostat_target:
+  friendly_name: "Nest Temp. Target"
+
+sensor.entryway_thermostat_temperature:
+  friendly_name: "Nest Temperature Now"
+
+sensor.asingaborg_eta:
+  friendly_name: "Nest ETA"
 
 sensor.climate_temp_inside:
   friendly_name: "Temperature inside"
@@ -906,13 +959,64 @@ sensor.itho_tijd:
 #
 # HA SYSTEM
 #
-#sensor.memory_free:
-#sensor.memory_use_percent:
-#sensor.current_version:
-#sensor.disk_free:
-#sensor.disk_use_percent:
+#sensor.date:
+#sensor.time: 
 #
 ####################################################
+
+sensor.date_time:
+  friendly_name: "Date and Time"
+
+sensor.date_time_iso:
+  friendly_name: "Date and Time ISO"
+
+sensor.nextsunrise:
+  friendly_name: "Next Sunrise"
+
+sensor.nextsunset:
+  friendly_name: "Next Sunset"
+
+sensor.period_of_day:
+  friendly_name: "Period of Day"
+
+sensor.time_date:
+  friendly_name: "Time and Date"
+
+sensor.time_utc:
+  friendly_name: "Time UTC"
+
+sensor.internet_time:
+  friendly_name: "Swatch Internet Time"
+
+sensor.ipv4_address_wlan0:
+  friendly_name: "wlan0 IPv4 Address"
+
+sensor.ssl_certificate_expiry:
+  friendly_name: "Letscrypt SSL Cert. Expiry" 
+
+sensor.memory_free:
+  friendly_name: "HA Free Memory"
+
+sensor.memory_use_percent:
+  friendly_name: "HA Memory Usage"
+
+sensor.current_version:
+  friendly_name: "HA Current Version"
+
+sensor.disk_free:
+  friendly_name: "HA Free Diskspace"
+
+sensor.disk_use_percent:
+  friendly_name: "HA Diskpace Usage"
+
+sensor.last_boot:
+  friendly_name: "HA Last Boot"
+
+sensor.last_boot_2:
+  friendly_name: "HA Last Boot"
+
+sensor.latest_version:
+  friendly_name: "HA Latest Version"
 
 sensor.ha_cpu_temp:
   friendly_name: "HA CPU Temperature"
@@ -951,6 +1055,9 @@ sensor.ha_gpu_temp:
       if (state > -18) return 'rgb(176,0,189)';
       if (state > -23) return 'rgb(189,0,107)';
       return 'rgb(0,0,0)';
+
+sensor.swap_use_percent:
+  friendly_name: "Swap Usage"
 
 sensor.local_ip:
   icon: mdi:wan

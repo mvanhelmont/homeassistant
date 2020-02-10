@@ -10,7 +10,6 @@ name: "HA IMAP Email"
 platform: imap_email_content
 server: !secret mail_server
 port: 587
-encryption: starttls
 username: !secret root_email_username
 password: !secret root_email_password
 senders:
