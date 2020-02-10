@@ -8,17 +8,11 @@
 ---
 name: "HA IMAP Email"
 platform: imap_email_content
-server: vps.oudenes.photography
+server: !secret mail_server
 port: 587
-#timeout: 15
-#sender: !secret root_email_username
-#encryption: starttls
+encryption: starttls
 username: !secret root_email_username
 password: !secret root_email_password
-#recipient:
-#  - info@oudenes.photography
-#  - root@oudenes.photography
-#sender_name: HA Notify
 senders:
-  - info@oudenes.photography
-  - info@peteroudenes.com
+  - !secret senders1
+  - !secret senders2

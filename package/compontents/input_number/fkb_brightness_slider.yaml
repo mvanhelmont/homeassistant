@@ -7,8 +7,6 @@
 ####################################################
 ---
 fullykiosk_brightness_slider:
-
-#  icon: "mdi:brightness-percent"
   initial: 20
   min: 0
   max: 100
