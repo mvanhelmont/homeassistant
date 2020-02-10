@@ -1,12 +1,10 @@
-- alias: "System - Start Automation after start HomeKit"
+- alias: "System - Start random door open close automation"
   trigger:  
       platform: homeassistant
       event: start
       
   action:
     - delay: "00:01:00"
-
-    - service: homekit.start
 
     - service: automation.turn_on
       entity_id:

@@ -1,3 +1,10 @@
+####################################################
+#
+# SENSOR AIRVISUAL
+#
+# https://www.home-assistant.io/integrations/version/
+#
+####################################################
 ---
 platform: version
 source: local

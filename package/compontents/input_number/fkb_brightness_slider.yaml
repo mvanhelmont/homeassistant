@@ -1,3 +1,10 @@
+####################################################
+#
+# INPUT_NUMBERS
+#
+# https://www.home-assistant.io/integrations/input_number/
+#
+####################################################
 ---
 fullykiosk_brightness_slider:
 

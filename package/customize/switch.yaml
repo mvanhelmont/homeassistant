@@ -19,12 +19,16 @@ switch.kay_learning:
 
 switch.airplay:
   icon: mdi:airplay
+
 switch.appletv:
   icon: mdi:airplay
+
 switch.domoticz:
   icon: mdi:home-automation
+
 switch.kodi:
   icon: mdi:kodi
+
 switch.tv:
   icon: mdi:television-box
 

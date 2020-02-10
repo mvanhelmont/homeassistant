@@ -1,3 +1,10 @@
+####################################################
+#
+# SENSOR SEASON
+#
+# https://www.home-assistant.io/integrations/season/
+#
+#################################################### 
 ---
 platform: season
 type: meteorological

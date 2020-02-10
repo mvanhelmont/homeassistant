@@ -40,8 +40,11 @@ device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f:
 
 device_tracker.geofency_peter:
   entity_picture: /local/images/peter-home-grey.jpg
+  friendly_name: "iPhone Peter Geofency"
 
 device_tracker.geofency_kay:
   entity_picture: /local/images/kay-home-grey.jpg
+  friendly_name: "iPhone Kay GeoFency"
 
-#device_tracker.rockbox_brick:
+device_tracker.rockbox_brick:
+    friendly_name: "Rockbox Brick"

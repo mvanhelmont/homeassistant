@@ -1,3 +1,10 @@
+####################################################
+#
+# SENSOR REST
+#
+# https://www.home-assistant.io/integrations/rest/
+#
+#################################################### 
 ---
 platform: rest
 resource: !secret mvpsjsonwww

@@ -1,3 +1,10 @@
+####################################################
+#
+# CALDAV
+#
+# https://www.home-assistant.io/integrations/caldav/
+#
+#################################################### 
 ---
 platform: caldav
 username: !secret icloud_username

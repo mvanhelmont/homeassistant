@@ -1,3 +1,10 @@
+####################################################
+#
+# INPUT_SELECT
+#
+# https://www.home-assistant.io/integrations/input_select/
+#
+####################################################
 ---
 system_other_state_select_switch:
   options:

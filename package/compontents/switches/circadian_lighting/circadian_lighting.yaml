@@ -1,3 +1,10 @@
+####################################################
+#
+# CIRCADIAN LIGHTNIGH
+#
+# https://github.com/claytonjn/hass-circadian_lighting
+#
+####################################################
 ---
 platform: circadian_lighting
 lights_ct:

@@ -1,3 +1,10 @@
+####################################################
+#
+# DARK SKY
+#
+# https://www.home-assistant.io/integrations/darksky/
+#
+####################################################
 ---
 platform: darksky
 api_key: !secret darsky_apikey

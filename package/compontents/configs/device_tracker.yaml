@@ -1,3 +1,10 @@
+####################################################
+#
+# NMAP_TRACKER
+#
+# https://www.home-assistant.io/integrations/nmap_tracker/
+#
+####################################################
 ---
 platform: nmap_tracker
 hosts: 192.168.100.0/24

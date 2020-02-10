@@ -5,5 +5,8 @@
 #
 ####################################################
 
-#calendar.vangrail:
-#calendar.werk:
+calendar.vangrail:
+  friendly_name: "iOS Vangrail"
+
+calendar.werk:
+  friendly_name: "iOS NS Werk"

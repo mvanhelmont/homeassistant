@@ -5,5 +5,8 @@
 #
 ####################################################
 
-#weather.asingaborg:
-#weather.dark_sky:
+weather.asingaborg:
+  friendly_name: "Weather Asingaborg"
+
+weather.dark_sky:
+  friendly_name: "Weather DarkSky"

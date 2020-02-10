@@ -18,5 +18,8 @@ media_player.woonkamer_2:
   friendly_name: "Apple TV"
 
 #media_player.browser_39743d20_12b95c55:
-#media_player.peter_s_alexa_apps:
+
+media_player.peter_s_alexa_apps:
+  friendly_name: "Alexa App on iPhone"
+
 #media_player.this_device:

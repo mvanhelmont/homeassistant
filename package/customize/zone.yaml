@@ -5,9 +5,17 @@
 #
 ####################################################
 
-#zone.asa:
-#zone.dvd:
-#zone.home:
-#zone.station_amsterdam_sloterdijk:
-#zone.station_amsterdam_zuid:
+zone.asa:
+  friendly_name: "Station Amstel"
 
+zone.dvd:
+  friendly_name: "Station Duivendrecht"
+
+zone.home:
+  friendly_name: "Huize Asingaborg"
+
+zone.station_amsterdam_sloterdijk:
+  friendly_name: "Station Sloterdijk"
+
+zone.station_amsterdam_zuid:
+  friendly_name: "Station Zuid"

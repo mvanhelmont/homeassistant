@@ -60,8 +60,11 @@ binary_sensor.update_available:
 binary_sensor.snapshots_stale:
   icon: mdi:cloud-upload
 
-#binary_sensor.updater:
-#binary_sensor.lenovo_full_kiosk:
+binary_sensor.updater:
+  friendly_name: "HA Updater"
+
+binary_sensor.lenovo_full_kiosk:
+  friendly_name: "FKB Motion"
 
 ####################################################
 #
@@ -92,7 +95,14 @@ binary_sensor.entryway_thermostat_online:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
-#binary_sensor.entryway_thermostat_is_locked:
-#binary_sensor.entryway_thermostat_is_using_emergency_heat:
-#binary_sensor.entryway_thermostat_fan:
-#binary_sensor.asingaborg_away:
+binary_sensor.entryway_thermostat_is_locked:
+  friendly_name: "Nest Thermostat locked"
+
+binary_sensor.entryway_thermostat_is_using_emergency_heat:
+  friendly_name: "Nest Thermostat emergency heat"
+
+binary_sensor.entryway_thermostat_fan:
+  friendly_name: "Nest Thermostat Fan"
+
+binary_sensor.asingaborg_away:
+  friendly_name: "Nest Thermostat away"

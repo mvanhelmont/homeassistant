@@ -5,4 +5,5 @@
 #
 ####################################################
 
-#climate.entryway:
+climate.entryway:
+  friendly_name: "Nest Thermostat"

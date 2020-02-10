@@ -1,3 +1,10 @@
+####################################################
+#
+# SENSOR AIRVISUAL
+#
+# https://www.home-assistant.io/integrations/airvisual/
+#
+####################################################
 ---
 platform: airvisual
 api_key: !secret airvisual_api

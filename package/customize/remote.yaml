@@ -5,5 +5,7 @@
 #
 ####################################################
 
-#remote.logitech_harmony:
+remote.logitech_harmony:
+  friendly_name: "Logitech Harmony Hub"
+
 #remote.woonkamer_2:

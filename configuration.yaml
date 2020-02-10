@@ -1,4 +1,16 @@
+###################################################
+#                                                 #
+#     Home Assistant Main Configuration File      #
+#                                                 #
+###################################################
+
 #default_config:
+
+###################################################
+#                                                 #
+#     Components that not needed more info        #
+#                                                 #
+###################################################
 
 api:
 config:
@@ -14,6 +26,12 @@ logbook:
 zeroconf:
 mobile_app:
 circadian_lighting:
+
+###################################################
+#                                                 #
+#     Components that needs a file with info      #
+#                                                 #
+###################################################
 
 frontend: !include package/compontents/configs/frontend.yaml
 homeassistant: !include package/compontents/configs/homeassistant.yaml
@@ -40,6 +58,12 @@ alexa: !include package/compontents/devices/alexa.yaml
 # panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 # notify: !include package/compontents/configs/notify.yaml
 # google: !include package/compontents/configs/google.yaml
+
+###################################################
+#                                                 #
+#   Components use merge to build configuration   #
+#                                                 #
+###################################################
 
 sensor: !include_dir_list package/compontents/sensors
 switch: !include_dir_list package/compontents/switches

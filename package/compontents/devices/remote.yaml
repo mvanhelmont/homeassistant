@@ -1,3 +1,10 @@
+####################################################
+#
+# HARMONY REMOTE
+#
+# https://www.home-assistant.io/integrations/harmony/
+#
+####################################################
 ---
 platform: harmony
 name: "Logitech Harmony"
