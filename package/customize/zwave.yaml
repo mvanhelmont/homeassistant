@@ -1,3 +1,10 @@
+####################################################
+#
+# ZWAVE
+#
+# https://www.home-assistant.io/docs/configuration/customizing-devices/
+#
+#################################################### 
 ---
 zwave.aeon_labs_zw090_z_stick_gen5_eu:
   friendly_name: "Aeon Zwave Gen5"

@@ -3,6 +3,8 @@
 #
 # SENSOR NOT DONE YET
 #
+# https://www.home-assistant.io/docs/configuration/customizing-devices/
+# 
 #sensor.ssl_certificate_expiry:
 #sensor.swap_use_percent:
 #sensor.this_device_next_reminder:

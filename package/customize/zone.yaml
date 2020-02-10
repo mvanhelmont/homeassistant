@@ -3,6 +3,8 @@
 #
 # ZONE
 #
+# https://www.home-assistant.io/docs/configuration/customizing-devices/
+#
 ####################################################
 
 zone.asa:

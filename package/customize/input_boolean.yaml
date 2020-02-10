@@ -3,6 +3,8 @@
 #
 # INPUT_BOOLEAN
 #
+# https://www.home-assistant.io/docs/configuration/customizing-devices/
+# 
 ####################################################
 
 input_boolean.emulate_holiday:

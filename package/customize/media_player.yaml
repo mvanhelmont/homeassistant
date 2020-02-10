@@ -3,6 +3,8 @@
 #
 # MEDIAPLAYER
 #
+# https://www.home-assistant.io/docs/configuration/customizing-devices/
+# 
 ####################################################
 
 media_player.lenovo_full_kiosk:

@@ -3,6 +3,8 @@
 #
 # DEVICE_TRACKER
 #
+# https://www.home-assistant.io/docs/configuration/customizing-devices/
+#
 ####################################################
 
 #device_tracker.00_04_20_f5_08_0a

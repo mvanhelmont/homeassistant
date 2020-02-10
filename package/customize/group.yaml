@@ -3,6 +3,8 @@
 #
 # GROUP
 #
+# https://www.home-assistant.io/docs/configuration/customizing-devices/
+# 
 ####################################################
 
 group.group_door_sensors:
