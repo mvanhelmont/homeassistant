@@ -1,7 +1,9 @@
 - alias: "System - Update Volt Sensor Template"
   trigger:
+
     platform: time_pattern
     minutes: "/1"
+
   action:
     service: homeassistant.update_entity
     entity_id: sensor.volt_1min
