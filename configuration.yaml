@@ -1,81 +1,81 @@
 ###################################################
-#                                                 #
-#     Home Assistant Main Configuration File      #
-#                                                 #
-###################################################
-
+#
+#  Home Assistant Main Configuration File
+#
 #default_config:
+#
+###################################################
 
 ###################################################
-#                                                 #
-#     Components that not needed more info        #
-#                                                 #
+#
+# Components that not needed more info
+#
 ###################################################
 
 api:
+circadian_lighting:
 config:
 discovery:
-shopping_list:
-person:
+logbook:
 map:
+mobile_app:
+person:
+shopping_list:
 ssdp:
 sun:
 system_health:
 updater:
-logbook:
 zeroconf:
-mobile_app:
-circadian_lighting:
 
 ###################################################
-#                                                 #
-#     Components that needs a file with info      #
-#                                                 #
-###################################################
-
-frontend: !include package/compontents/configs/frontend.yaml
-homeassistant: !include package/compontents/configs/homeassistant.yaml
-history: !include package/compontents/configs/history.yaml
-shell_command: !include package/compontents/devices/shell_commands.yaml
-tts: !include package/compontents/devices/tts.yaml
-rflink: !include package/compontents/devices/rflink.yaml
-zwave: !include package/compontents/devices/zwave.yaml
-remote: !include package/compontents/devices/remote.yaml
-nest: !include package/compontents/devices/nest.yaml
-logger: !include package/compontents/configs/logger.yaml
-http: !include package/compontents/configs/http.yaml
-speedtestdotnet: !include package/compontents/configs/speedtest.yaml 
-weather: !include package/compontents/configs/weather.yaml
-homekit: !include package/compontents/configs/homekit.yaml
-recorder: !include package/compontents/configs/recorder.yaml
-customizer: !include package/compontents/configs/customizer.yaml
-browser_mod: !include package/compontents/configs/browser_mod.yaml
-panel_custom: !include package/compontents/configs/panel_custom.yaml
-alexa: !include package/compontents/devices/alexa.yaml
-
+#
+# Components that needs a file with info
+#
 # device_tracker: !include package/compontents/configs/device_tracker.yaml
 # android_ip_webcam: !include package/compontents/configs/camera.yaml
 # panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 # notify: !include package/compontents/configs/notify.yaml
 # google: !include package/compontents/configs/google.yaml
-
-###################################################
-#                                                 #
-#   Components use merge to build configuration   #
-#                                                 #
+#
 ###################################################
 
+alexa: !include package/compontents/devices/alexa.yaml
+browser_mod: !include package/compontents/configs/browser_mod.yaml
+customizer: !include package/compontents/configs/customizer.yaml
+frontend: !include package/compontents/configs/frontend.yaml
+homeassistant: !include package/compontents/configs/homeassistant.yaml
+homekit: !include package/compontents/configs/homekit.yaml
+history: !include package/compontents/configs/history.yaml
+http: !include package/compontents/configs/http.yaml
+logger: !include package/compontents/configs/logger.yaml
+nest: !include package/compontents/devices/nest.yaml
+panel_custom: !include package/compontents/configs/panel_custom.yaml
+recorder: !include package/compontents/configs/recorder.yaml
+remote: !include package/compontents/devices/remote.yaml
+rflink: !include package/compontents/devices/rflink.yaml
+shell_command: !include package/compontents/devices/shell_commands.yaml
+speedtestdotnet: !include package/compontents/configs/speedtest.yaml
+tts: !include package/compontents/devices/tts.yaml
+weather: !include package/compontents/configs/weather.yaml
+zwave: !include package/compontents/devices/zwave.yaml
+
+###################################################
+#
+# Components use merge to build configuration
+#
+###################################################
+
+automation: !include_dir_merge_list package/automation
+binary_sensor: !include_dir_list package/compontents/binary_sensors
+calendar: !include_dir_list package/compontents/caldav
+fan: !include_dir_list package/compontents/fan
+group: !include_dir_merge_named package/compontents/groups
+input_boolean: !include_dir_merge_named package/compontents/input_boolean
+input_number: !include_dir_merge_named package/compontents/input_number
+input_select: !include_dir_merge_named package/compontents/input_select
+light: !include_dir_list package/compontents/light
+media_player: !include_dir_list package/compontents/media_players
+notify: !include_dir_list package/compontents/configs/notify
+script: !include_dir_merge_named package/scripts
 sensor: !include_dir_list package/compontents/sensors
 switch: !include_dir_list package/compontents/switches
-fan: !include_dir_list package/compontents/fan
-media_player: !include_dir_list package/compontents/media_players
-light: !include_dir_list package/compontents/light
-group: !include_dir_merge_named package/compontents/groups
-automation: !include_dir_merge_list package/automation
-script: !include_dir_merge_named package/scripts
-notify: !include_dir_list package/compontents/configs/notify
-binary_sensor: !include_dir_list package/compontents/binary_sensors
-input_boolean: !include_dir_merge_named package/compontents/input_boolean
-input_select: !include_dir_merge_named package/compontents/input_select
-input_number: !include_dir_merge_named package/compontents/input_number
-calendar: !include_dir_list package/compontents/caldav
