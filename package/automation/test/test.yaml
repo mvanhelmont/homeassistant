@@ -1,4 +1,4 @@
-- alias: "TEST - trigger statement"
+- alias: "TEST - trigger statement ATOM"
   trigger:
     platform: state
     entity_id: switch.newkaku_014e5906_a
@@ -9,7 +9,7 @@
     entity_id: input_number.fullykiosk_brightness_slider
     data:
       value: 1
-        
+
 #        value: "{{ (state_attr('sensor.fullykiosk', 'screenBrightness') | int / 2.55) | round(0) }}"
 
 #  action:
