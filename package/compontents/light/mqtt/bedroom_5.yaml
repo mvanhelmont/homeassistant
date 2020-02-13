@@ -4,7 +4,7 @@
 #
 # https://www.home-assistant.io/integrations/light.mqtt/
 #
-#################################################### 
+####################################################
 ---
 platform: mqtt
 name: "Bedroom 5"
@@ -19,3 +19,6 @@ rgb: "true"
 color_temp: "true"
 effect: "true"
 effect_list: !include /config/package/templates/light_effects.yaml
+availability_topic: "milight/client_status"
+payload_available: "connected"
+payload_not_available: "disconnected"
