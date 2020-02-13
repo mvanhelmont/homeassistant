@@ -6,6 +6,18 @@
 #
 ####################################################
 ---
-platform: nmap_tracker
-hosts: 192.168.100.0/24
-home_interval: 1
+#platform: nmap_tracker
+#hosts: 192.168.100.0/24
+#home_interval: 1
+
+####################################################
+#
+# GOOGLE MAPS
+#
+# https://www.home-assistant.io/integrations/google_maps/
+#
+####################################################
+
+platform: google_maps
+username: hassio.oudenes@gmail.com
+max_gps_accuracy: 50

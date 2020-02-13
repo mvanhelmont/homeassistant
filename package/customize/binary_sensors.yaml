@@ -75,21 +75,25 @@ binary_sensor.lenovo_full_kiosk:
 ####################################################
 
 binary_sensor.bedroom_nest_protect_online:
+  friendly_name: "Nest Proect Bedroom"
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 binary_sensor.dining_room_nest_protect_online:
+  friendly_name: "Nest Proect Diningroom"
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 binary_sensor.living_room_nest_protect_online:
+  friendly_name: "Nest Protect Livingroom"
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 binary_sensor.entryway_thermostat_has_leaf:
+  friendly_name: "Nest Thermostat Leaf"
   icon: mdi:leaf
 
 binary_sensor.entryway_thermostat_online:

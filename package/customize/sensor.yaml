@@ -69,9 +69,11 @@ sensor.co2_intensity_52_37_4_9:
 
 sensor.volt_1min:
   icon: mdi:flash
+  friendly_name: "Volt Usage Every mintue"
 
 sensor.kw_1min:
   icon: mdi:flash
+  friendly_name: "kW Usage Every mintue"
 
 sensor.voltage_phase_l1:
   icon: mdi:flash

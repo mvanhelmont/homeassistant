@@ -26,7 +26,7 @@ sensors:
        {{ hours }}h
       {% elif time <= 86400 %}
       {# mindre eller = 23h och 59 minuter #}
-       {{ hours }}h ook {{ minutes }}m
+       {{ hours }}h and {{ minutes }}m
       {% elif time > 86400 %}
       {# mer eller = 1 dag #}
        {{ days }}d

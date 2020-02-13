@@ -31,7 +31,7 @@ zeroconf:
 #
 # Components that needs a file with info
 #
-# device_tracker: !include package/compontents/configs/device_tracker.yaml
+device_tracker: !include package/compontents/configs/device_tracker.yaml
 # android_ip_webcam: !include package/compontents/configs/camera.yaml
 # panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 # notify: !include package/compontents/configs/notify.yaml
