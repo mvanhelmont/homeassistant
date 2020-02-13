@@ -4,7 +4,6 @@
 #
 # https://www.home-assistant.io/integrations/template/
 #
-# test timestamp_custom
 ####################################################
 ---
 platform: template
@@ -19,4 +18,4 @@ sensors:
       {{ state_attr('sensor.asdz_utr', 'next') }}
     {% else %}
       {{ states('sensor.asdz_utr') }}
-    {% endif %} 
+    {% endif %}
