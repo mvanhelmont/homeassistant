@@ -14,7 +14,7 @@ sensors:
   value_template: >-
     {% set cur = strptime((as_timestamp(now()) | timestamp_custom('%H:%M')), "%H:%M")  %}
     {% set nt = strptime(states('sensor.asdz_utr'), "%H:%M") %}
-    {% if (nt.hour - cur.hour)*60 + (nt.minute - cur.minute) < 30 %}
+    {% if (nt.hour - cur.hour)*60 + (nt.minute - cur.minute) < 10 %}
       {{ state_attr('sensor.asdz_utr', 'next') }}
     {% else %}
       {{ states('sensor.asdz_utr') }}
