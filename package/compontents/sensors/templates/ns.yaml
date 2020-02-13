@@ -1,0 +1,21 @@
+####################################################
+#
+# SENSOR TEMPLATE
+#
+# https://www.home-assistant.io/integrations/template/
+# test timestamp_custom
+####################################################
+---
+platform: template
+sensors:
+  future_departure_asdz_utr:
+  entity_id: sensor.asdz_utr
+  friendly_name: "Train from Asdz to Utr"
+  value_template: >-
+    {% set cur = strptime((as_timestamp(now()) | timestamp_custom('%H:%M')), "%H:%M")  %}
+    {% set nt = strptime(states('sensor.asdz_utr'), "%H:%M") %}
+    {% if (nt.hour - cur.hour)*60 + (nt.minute - cur.minute) < 30 %}
+      {{ state_attr('sensor.asdz_utr', 'next') }}
+    {% else %}
+      {{ states('sensor.asdz_utr') }}
+    {% endif %} 
