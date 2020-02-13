@@ -5,6 +5,7 @@
 # https://www.home-assistant.io/integrations/flux/
 #
 ####################################################
+---
 platform: flux
 lights:
   - light.dressoir_all
