@@ -31,7 +31,6 @@ zeroconf:
 #
 # Components that needs a file with info
 #
-device_tracker: !include package/compontents/configs/device_tracker.yaml
 # android_ip_webcam: !include package/compontents/configs/camera.yaml
 # panel_iframe: !include_dir_merge_named package/compontents/panel_iframe
 # notify: !include package/compontents/configs/notify.yaml
@@ -42,6 +41,7 @@ device_tracker: !include package/compontents/configs/device_tracker.yaml
 alexa: !include package/compontents/devices/alexa.yaml
 browser_mod: !include package/compontents/configs/browser_mod.yaml
 customizer: !include package/compontents/configs/customizer.yaml
+device_tracker: !include package/compontents/configs/device_tracker.yaml
 frontend: !include package/compontents/configs/frontend.yaml
 homeassistant: !include package/compontents/configs/homeassistant.yaml
 homekit: !include package/compontents/configs/homekit.yaml
