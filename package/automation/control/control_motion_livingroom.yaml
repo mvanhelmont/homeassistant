@@ -21,5 +21,5 @@
     service: light.turn_on
     data_template:
       entity_id: light.livingroom_all
-      kelvin: 3500
+      kelvin: 2800
       brightness_pct: "{{ 20 if is_state('binary_sensor.node_19', 'on') else 0 }}"

@@ -9,15 +9,36 @@
 
 group.group_door_sensors:
   friendly_name: "Group Door Sensors"
+  templates:
+    icon: mdi:group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 group.group_family:
   friendly_name: "Group Family"
+  templates:
+    icon: mdi:group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 group.group_lights_group0:
   friendly_name: "Group All Lights Group 0"
+  templates:
+    icon: mdi:group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 group.group_motion_sensors:
   friendly_name: "Group Motion Sensors"
+  templates:
+    icon: mdi:group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 group.group_residence_radio:
   friendly_name: "Residentie Radio"
+  templates:
+    icon: mdi:group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+group.group_circadian_sensors:
+  friendly_name: "Circardian Group"
+  templates:
+    icon: mdi:group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';

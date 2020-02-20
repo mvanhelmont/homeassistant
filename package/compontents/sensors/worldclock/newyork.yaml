@@ -1,0 +1,11 @@
+####################################################
+#
+# SENSOR WORlDCLOCK
+#
+# https://www.home-assistant.io/integrations/worldclock/
+#
+#################################################### 
+---
+platform: worldclock
+time_zone: America/New_York
+name: "Time New York"

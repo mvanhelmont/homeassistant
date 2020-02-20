@@ -7,5 +7,6 @@
 ####################################################
 ---
 platform: circadian_lighting
-lights_ct:
-  - light.dressoir_all
+name: "Circadian Livingroom"
+lights_rgb:
+  - light.livingroom_all

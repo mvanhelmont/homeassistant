@@ -169,3 +169,43 @@ switch.peter_s_echo_dot_shuffle_switch:
 #switch.this_device_repeat_switch:
 #switch.this_device_shuffle_switch:
 
+####################################################
+#
+# SWITCH.CIRCADIAN_LIGHTNIGH
+#
+####################################################
+
+switch.circadian_lighting_circadian_bathroonm:
+  templates:
+    icon: mdi:lightbulb-group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.circadian_lighting_circadian_bedroom:
+  templates:
+    icon: mdi:lightbulb-group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.circadian_lighting_circadian_dressoir:
+  templates:
+    icon: mdi:lightbulb-group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.circadian_lighting_circadian_hallway:
+  templates:
+    icon: mdi:lightbulb-group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.circadian_lighting_circadian_kitchen:
+  templates:
+    icon: mdi:lightbulb-group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.circadian_lighting_circadian_livingroom:
+  templates:
+    icon: mdi:lightbulb-group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.circadian_lighting_circadian_toilet:
+  templates:
+    icon: mdi:lightbulb-group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';

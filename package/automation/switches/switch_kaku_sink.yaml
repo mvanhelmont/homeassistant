@@ -8,11 +8,11 @@
     - service: light.turn_on
       data_template:
         entity_id: light.sink_all
-        kelvin: 3500
+        kelvin: 2800
         brightness_pct: "{{ 100 if is_state('switch.newkaku_011fad02_b', 'on') else 0 }}"
 
     - service: light.turn_on
       data_template:
         entity_id: light.kitchen_all
-        kelvin: 3500
+        kelvin: 2800
         brightness_pct: "{{ 100 if is_state('switch.newkaku_011fad02_b', 'on') else 0 }}"

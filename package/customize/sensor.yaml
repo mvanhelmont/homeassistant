@@ -285,7 +285,7 @@ sensor.peter_s_echo_dot_next_alarm:
   friendly_name: "Alexa Echo Dot Alarm"
 
 sensor.peter_s_echo_dot_next_reminder:
-  friendly_name: "Aleca Echo Dot Reminder"
+  friendly_name: "Alexa Echo Dot Reminder"
 
 sensor.peter_s_echo_dot_next_timer:
   friendly_name: "Alexa Echo Dot Timer"

@@ -8,7 +8,7 @@
 ---
 default: error
 logs:
-  homeassistant.components.websocket_api: warn
+  homeassistant.components.websocket_api: info
   homeassistant.components.zwave: info
   homeassistant.helpers.service: debug
   homeassistant.components.pushover.notify: debug

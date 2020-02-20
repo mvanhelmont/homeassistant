@@ -20,7 +20,7 @@ light.balcony:
 light.bathroom_all:
   friendly_name: "Bathroom"
   homebridge_name: "Bathroom"
-  icon: mdi:ceiling-light
+  icon: mdi:lightbulb-group
 
 light.bathroom_1:
   friendly_name: "Bathroom 1"
@@ -45,7 +45,7 @@ light.bathroom_4:
 light.bedroom_all:
   friendly_name: "Bedroom"
   homebridge_name: "Master Bedroom"
-  icon: mdi:ceiling-light
+  icon: mdi:lightbulb-group
 
 light.bedroom_1:
   friendly_name: "Bedroom 1"
@@ -80,7 +80,7 @@ light.bedroom_6:
 light.dressoir_all:
   friendly_name: "Dressoir"
   homebridge_name: "Dressoir"
-  icon: mdi:ceiling-light
+  icon: mdi:lightbulb-group
 
 light.dressoir_1:
   friendly_name: "Dressoir 1"
@@ -100,7 +100,7 @@ light.dressoir_3:
 light.kitchen_all:
   friendly_name: "Kitchen"
   homebridge_name: "Kitchen"
-  icon: mdi:ceiling-light
+  icon: mdi:lightbulb-group
 
 light.kitchen_1:
   friendly_name: "Kitchen 1"
@@ -120,7 +120,7 @@ light.kitchen_3:
 light.livingroom_all:
   friendly_name: "Livingroom"
   homebridge_name: "Livingroom"
-  icon: mdi:floor-lamp
+  icon: mdi:lightbulb-group
 
 light.livingroom_1:
   friendly_name: "Livingroom 1"
@@ -155,7 +155,7 @@ light.livingroom_window:
 light.sink_all:
   friendly_name: "Sink"
   homebridge_name: "Sink"
-  icon: mdi:ceiling-light
+  icon: mdi:lightbulb-group
 
 light.sink_1:
   friendly_name: "Sink 1"
@@ -175,7 +175,7 @@ light.sink_3:
 light.toilet_all:
   friendly_name: "Toilet"
   homebridge_name: "Toilet"
-  icon: mdi:ceiling-light
+  icon: mdi:lightbulb-group
 
 light.toilet_1:
   friendly_name: "Toilet 1"

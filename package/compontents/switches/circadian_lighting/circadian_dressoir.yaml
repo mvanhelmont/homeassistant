@@ -1,0 +1,12 @@
+####################################################
+#
+# CIRCADIAN LIGHTNIGH
+#
+# https://github.com/claytonjn/hass-circadian_lighting
+#
+####################################################
+---
+platform: circadian_lighting
+name: "Circadian Dressoir"
+lights_ct:
+  - light.dressoir_all
