@@ -1,3 +1,9 @@
+####################################################
+#
+# APPLETV CONTROL BASED ON EVENT
+#
+####################################################
+
 appletv_normal:
   alias: "AppleTV Normal Light Scene"
   sequence:

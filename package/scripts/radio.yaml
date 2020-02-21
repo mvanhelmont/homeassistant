@@ -1,3 +1,9 @@
+####################################################
+#
+# RADIO STREAM SEQUENCE
+#
+####################################################
+
 stream_radio:
   alias: "Play Radio"
   sequence:
@@ -16,7 +22,7 @@ stream_radio:
           {% elif is_state("input_select.radio_station", "Veronica") %} https://21633.live.streamtheworld.com/SRGSTR09.mp3
           {% elif is_state("input_select.radio_station", "Sky Radio") %} https://19993.live.streamtheworld.com/SKYRADIO.mp3
           {% elif is_state("input_select.radio_station", "Sky Radio Christmas") %} https://21303.live.streamtheworld.com/SRGSTR08AAC.aac
-          {% elif is_state("input_select.radio_station", "Arrow Classic Rock") %} https://stream.gal.io/arrow           
+          {% elif is_state("input_select.radio_station", "Arrow Classic Rock") %} https://stream.gal.io/arrow
           {% elif is_state("input_select.radio_station", "Classic FM") %} http://21303.live.streamtheworld.com/CLASSICFM.mp3
           {% elif is_state("input_select.radio_station", "BNR Nieuwsradio") %} http://icecast-bnr-cdp.triple-it.nl/bnr_mp3_96_04
           {% elif is_state("input_select.radio_station", "SLAM! Hardstyle") %} http://streaming.slam.nl/web11_mp3

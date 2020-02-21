@@ -4,7 +4,7 @@
 # LIGHT
 #
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-# 
+#
 ####################################################
 
 light.hallway:

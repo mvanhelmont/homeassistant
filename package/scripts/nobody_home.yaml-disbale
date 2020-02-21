@@ -1,9 +1,15 @@
+####################################################
+#
+# NOBODY HOME
+#
+####################################################
+
 nobody_home:
   alias: "Nobody Home"
   sequence:
     - service: light.turn_off
       data:
-        entity_id: 
+        entity_id:
           - light.livingroom_all
           - light.dressoir_all
           - light.kitchen_all
@@ -14,7 +20,7 @@ nobody_home:
           - light.hallway
           - light.balcony
           - light.toilet_all
-          - light.nanoleaf 
+          - light.nanoleaf
           - light.newkaku_01401eb6_a
 
     - service: remote.turn_off

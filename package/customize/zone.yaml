@@ -6,7 +6,6 @@
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
 #
 ####################################################
-
 zone.asa:
   friendly_name: "Station Amstel"
 

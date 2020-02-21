@@ -4,7 +4,7 @@
 #
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
 #
-#################################################### 
+####################################################
 ---
 zwave.aeon_labs_zw090_z_stick_gen5_eu:
   friendly_name: "Aeon Zwave Gen5"
@@ -14,7 +14,7 @@ zwave.aeon_labs_zw090_z_stick_gen5_eu:
 #
 # NODE 2 - SWITCH
 #
-#################################################### 
+####################################################
 
 zwave.node_2:
   friendly_name: "Neo Switch iMac"
@@ -82,7 +82,7 @@ switch.node_2_switch:
 #
 # NODE 5 - SWITCH
 #
-#################################################### 
+####################################################
 
 zwave.node_5:
   friendly_name: "Neo Switch Kay"
@@ -98,7 +98,7 @@ sensor.node_5_current:
 
 sensor.node_5_energy:
   friendly_name: "Neo Switch Kay kWh"
-  icon: mdi:power-socket-eu 
+  icon: mdi:power-socket-eu
 
 sensor.node_5_exporting:
   friendly_name: "Neo Switch Kay Export"
@@ -144,13 +144,13 @@ switch.node_5_switch:
   friendly_name: "Neo Switch Kay Switch"
   templates:
     icon: mdi:power-socket-eu
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)'; 
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 ####################################################
 #
 # NODE 6 - SWITCH
 #
-#################################################### 
+####################################################
 
 zwave.node_6:
   friendly_name: "Neo Switch Peter"
@@ -166,7 +166,7 @@ sensor.node_6_current:
 
 sensor.node_6_energy:
   friendly_name: "Neo Switch Peter kWh"
-  icon: mdi:power-socket-eu 
+  icon: mdi:power-socket-eu
 
 sensor.node_6_exporting:
   friendly_name: "Neo Switch Peter Export"
@@ -212,13 +212,13 @@ switch.node_6_switch:
   friendly_name: "Neo Switch Peter Switch"
   templates:
     icon: mdi:power-socket-eu
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)'; 
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 ####################################################
 #
 # NODE 7 - SWITCH
 #
-#################################################### 
+####################################################
 
 zwave.node_7:
   friendly_name: "Neo Switch Coffee"
@@ -234,7 +234,7 @@ sensor.node_7_current:
 
 sensor.node_7_energy:
   friendly_name: "Neo Switch Coffee kWh"
-  icon: mdi:power-socket-eu 
+  icon: mdi:power-socket-eu
 
 sensor.node_7_exporting:
   friendly_name: "Neo Switch Coffee Export"
@@ -280,13 +280,13 @@ switch.node_7_switch:
   friendly_name: "Neo Switch Coffee Switch"
   templates:
     icon: mdi:power-socket-eu
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)'; 
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 ####################################################
 #
 # NODE 8 - SWITCH
 #
-#################################################### 
+####################################################
 
 zwave.node_8:
   friendly_name: "Neo Switch Bank"
@@ -302,7 +302,7 @@ sensor.node_8_current:
 
 sensor.node_8_energy:
   friendly_name: "Neo Switch Bank kWh"
-  icon: mdi:power-socket-eu 
+  icon: mdi:power-socket-eu
 
 sensor.node_8_exporting:
   friendly_name: "Neo Switch Bank Export"
@@ -348,13 +348,13 @@ switch.node_8_switch:
   friendly_name: "Neo Switch Bank Switch"
   templates:
     icon: mdi:power-socket-eu
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)'; 
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 ####################################################
 #
 # NODE 9 - SWITCH
 #
-#################################################### 
+####################################################
 
 zwave.node_9:
   friendly_name: "Neo Switch Hall"
@@ -370,7 +370,7 @@ sensor.node_9_current:
 
 sensor.node_9_energy:
   friendly_name: "Neo Switch Hall kWh"
-  icon: mdi:power-socket-eu 
+  icon: mdi:power-socket-eu
 
 sensor.node_9_exporting:
   friendly_name: "Neo Switch Hall Export"
@@ -416,13 +416,13 @@ switch.node_9_switch:
   friendly_name: "Neo Switch Hall Switch"
   templates:
     icon: mdi:power-socket-eu
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)'; 
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 ####################################################
 #
 # NODE 10 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_10:
   friendly_name: "Diningroom Door"
@@ -482,7 +482,7 @@ sensor.node_10_battery_level:
 #
 # NODE 11 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_11:
   friendly_name: "Frontdoor"
@@ -539,7 +539,7 @@ sensor.node_11_battery_level:
 #
 # NODE 12 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_12:
   friendly_name: "Bedroom Door"
@@ -597,7 +597,7 @@ sensor.node_12_battery_level:
 #
 # NODE 13 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_13:
   friendly_name: "Fibaro Door iMac"
@@ -653,7 +653,7 @@ sensor.node_13_battery_level:
 #
 # NODE 14 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_14:
   friendly_name: "PIR Bedroom"
@@ -703,7 +703,7 @@ sensor.node_14_battery_level:
 #
 # NODE 15 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_15:
   friendly_name: "PIR Bathroom"
@@ -753,7 +753,7 @@ sensor.node_15_battery_level:
 #
 # NODE 16 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_16:
   friendly_name: "PIR Kitchen"
@@ -803,7 +803,7 @@ sensor.node_16_battery_level:
 #
 # NODE 17 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_17:
   friendly_name: "PIR Hallway"
@@ -853,7 +853,7 @@ sensor.node_17_battery_level:
 #
 # NODE 18 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_18:
   friendly_name: "PIR Diningroom"
@@ -903,7 +903,7 @@ sensor.node_18_battery_level:
 #
 # NODE 19 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_19:
   friendly_name: "PIR Livingroom"
@@ -953,7 +953,7 @@ sensor.node_19_battery_level:
 #
 # NODE 20 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_20:
   friendly_name: "PIR Toilet"
@@ -1003,7 +1003,7 @@ sensor.node_20_battery_level:
 #
 # NODE 21 - SWITCH
 #
-#################################################### 
+####################################################
 
 zwave.node_21:
   friendly_name: "Neo Switch Xmas Diningroom"
@@ -1019,7 +1019,7 @@ sensor.node_21_current:
 
 sensor.node_21_energy:
   friendly_name: "Neo Switch Xmas Diningroom kWh"
-  icon: mdi:power-socket-eu 
+  icon: mdi:power-socket-eu
 
 sensor.node_21_exporting:
   friendly_name: "Neo Switch Xmas Diningroom Export"
@@ -1065,13 +1065,13 @@ switch.node_21_switch:
   friendly_name: "Neo Switch Xmas Diningroom Switch"
   templates:
     icon: mdi:power-socket-eu
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)'; 
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 ####################################################
 #
 # NODE 22 - MOTION
 #
-#################################################### 
+####################################################
 
 zwave.node_22:
   friendly_name: "Neo Switch Xmas Window Light"
@@ -1087,7 +1087,7 @@ sensor.node_22_current:
 
 sensor.node_22_energy:
   friendly_name: "Neo Switch Xmas Window Light kWh"
-  icon: mdi:power-socket-eu 
+  icon: mdi:power-socket-eu
 
 sensor.node_22_exporting:
   friendly_name: "Neo Switch Xmas Window Light Export"

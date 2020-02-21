@@ -1,6 +1,12 @@
+####################################################
+#
+# FULL BRIEVING CODE
+#
+####################################################
+
   >
   {# UTILITY FUNCTIONS #}
-  
+
   {%- macro get_friendly_list(list) -%}
       {%- set comma = joiner(', ') -%}
       {%- for item in list|sort if list|length > 0 -%}
@@ -52,7 +58,7 @@
       {%- endif %}
     {%- endif -%}
   {%- endmacro -%}
-  
+
   {%- macro dark_outside() -%}
     {{ [
       'It is pretty dark outside.  ...  I will turn on the lights now.',
@@ -73,7 +79,7 @@
 
   {%- macro scene_sunset() -%}
     "The scene Sunset is activated."
-  {%- endmacro -%} 
+  {%- endmacro -%}
 
   {%- macro scene_kodi() -%}
     {{ [
@@ -81,7 +87,7 @@
       "You watching a serie or a movie, i activated the scene movie."
     ]|random }}
   {%- endmacro -%}
-  
+
   {%- macro scene_goodnight() -%}
     {{ [
       "The scene goodnight is activated.",
@@ -90,21 +96,21 @@
       "The scene goodnight is activated."
     ]|random }}
   {%- endmacro -%}
-  
+
   {%- macro scene_appletv() -%}
     {{ [
       "The scene apple tv is activated.",
       "Enjoy the movie or serie, activated the scene apple tv."
     ]|random }}
   {%- endmacro -%}
-  
+
   {%- macro scene_tv() -%}
     {{ [
       "The scene tv is activated.",
       "You watching tv so i activated the scene tv."
     ]|random }}
   {%- endmacro -%}
-  
+
   {%- macro scene_iptv() -%}
     {{ [
       "The scene iptv is activated.",
@@ -128,7 +134,7 @@
       "What about good night kisses?."
     ]|random }}
   {%- endmacro -%}
-  
+
   {%- macro goodbye_line() -%}
     {{ [
       "Bye Bye Bye dear Laila.",
@@ -150,7 +156,7 @@
 
   {# BRIEFING TEMPLATE #}
   {%- macro get_briefing() -%}
-  
+
     {%- if say_greeting == "true" -%}
       {{ greeting_line() ~ " ... " }}
     {%- endif -%}
@@ -174,7 +180,7 @@
     {%- if say_scene_goodnight == "true" -%} {{ scene_goodnight() }} {%- endif -%}
     {%- if say_lux_evening_on == "true" -%} {{ lux_evening_on() }} {%- endif -%}
     {%- if say_lux_evening_off == "true" -%} {{ lux_evening_off() }} {%- endif -%}
-    {%- if say_testing == "true" -%} {{ testing() }} {%- endif -%}    
+    {%- if say_testing == "true" -%} {{ testing() }} {%- endif -%}
 
   {%- endmacro -%}
 

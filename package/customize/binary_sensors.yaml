@@ -4,7 +4,7 @@
 # BINARY_SENSOR
 #
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-# 
+#
 ####################################################
 
 binary_sensor.hp_printer:

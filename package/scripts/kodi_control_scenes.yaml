@@ -1,9 +1,15 @@
+####################################################
+#
+# KODI LIGHT CONTROL BASED ON STATUS
+#
+####################################################
+
 kodi_control_paused:
   alias: "Kodi Control Paused Scene"
   sequence:
     - service: light.turn_on
       data:
-        entity_id: 
+        entity_id:
           - light.livingroom_wall
           - light.livingroom_window
           - light.kitchen_all
@@ -38,7 +44,7 @@ kodi_control_playing:
           - light.livingroom_window
           - light.nanoleaf
           - light.balcony
-        brightness_pct: 30 
+        brightness_pct: 30
 
     - service: light.turn_on
       data_template:
@@ -53,7 +59,7 @@ kodi_control_playing:
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_16', 'on') else 0 }}"
 
     - service: light.turn_on
-      data_template:    
+      data_template:
         entity_id: light.toilet_all
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_20', 'on') else 0 }}"
 
@@ -69,7 +75,7 @@ kodi_control_idle:
           - light.livingroom_window
           - light.balcony
         brightness_pct: 100
- 
+
     - service: light.turn_on
       data:
         entity_id: light.nanoleaf
@@ -88,6 +94,6 @@ kodi_control_idle:
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_16', 'on') else 0 }}"
 
     - service: light.turn_on
-      data_template:    
+      data_template:
         entity_id: light.toilet_all
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_20', 'on') else 0 }}"

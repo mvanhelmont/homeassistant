@@ -1,3 +1,9 @@
+####################################################
+#
+# KODI LIGHT CONTROL BASED ON EVENT
+#
+####################################################
+
 kodi_normal:
   alias: "Kodi Normal Light Scene"
   sequence:

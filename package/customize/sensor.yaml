@@ -4,7 +4,7 @@
 # SENSOR NOT DONE YET
 #
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-# 
+#
 #sensor.long_power_failure_count:
 #sensor.browser_39743d20_12b95c55:
 #
@@ -41,7 +41,7 @@ sensor.circadian_values:
 #
 ####################################################
 
-sensor.co2_intensity_52_37_4_9: 
+sensor.co2_intensity_52_37_4_9:
   friendly_name: "CO2 Intensity"
 
 ####################################################
@@ -962,7 +962,7 @@ sensor.itho_tijd:
 # HA SYSTEM
 #
 #sensor.date:
-#sensor.time: 
+#sensor.time:
 #
 ####################################################
 
@@ -994,7 +994,7 @@ sensor.ipv4_address_wlan0:
   friendly_name: "wlan0 IPv4 Address"
 
 sensor.ssl_certificate_expiry:
-  friendly_name: "Letscrypt SSL Cert. Expiry" 
+  friendly_name: "Letscrypt SSL Cert. Expiry"
 
 sensor.memory_free:
   friendly_name: "HA Free Memory"

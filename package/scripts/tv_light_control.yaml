@@ -1,3 +1,9 @@
+####################################################
+#
+# TV LIGHT CONTROL BASED ON EVENT
+#
+####################################################
+
 tv_normal:
   alias: "TV Normal Light Scene"
   sequence:
@@ -117,8 +123,8 @@ tv_christmas:
         - switch.node_8_switch
         - switch.node_21_switch
         - switch.node_22_switch
-        - switch.node_2_switch 
-        
+        - switch.node_2_switch
+
     - service: light.turn_on
       data:
         entity_id:

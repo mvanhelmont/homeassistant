@@ -4,7 +4,7 @@
 # INPUT_NUMBER
 #
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-# 
+#
 ####################################################
 
 input_number.fullykiosk_brightness_slider:

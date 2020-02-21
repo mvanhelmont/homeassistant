@@ -4,7 +4,7 @@
 # MEDIAPLAYER
 #
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-# 
+#
 ####################################################
 
 media_player.lenovo_full_kiosk:
@@ -14,7 +14,7 @@ media_player.kodi:
   friendly_name: "Kodi"
 
 media_player.peter_s_echo_dot:
-  friendly_name: "Alexa Echo Dot" 
+  friendly_name: "Alexa Echo Dot"
 
 media_player.woonkamer_2:
   friendly_name: "Apple TV"

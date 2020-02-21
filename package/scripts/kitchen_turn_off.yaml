@@ -1,8 +1,14 @@
+####################################################
+#
+# KITCHEN TURN OFF ALL LIGHTS
+#
+####################################################
+
 kitchen_turn_off:
   alias: "Kitchen Turn Off"
   sequence:
     service: light.turn_off
-    entity_id: 
+    entity_id:
       - light.kitchen_1
       - light.kitchen_2
       - light.kitchen_3

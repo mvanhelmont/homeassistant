@@ -4,7 +4,7 @@
 # REMOTE
 #
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-# 
+#
 ####################################################
 
 remote.logitech_harmony:

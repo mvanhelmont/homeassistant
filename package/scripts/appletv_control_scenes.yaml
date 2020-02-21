@@ -1,7 +1,13 @@
+####################################################
+#
+# APPLE TV CONTROLING LIGHTS BASED ON STATUS
+#
+####################################################
+
 appletv_control_paused:
   alias: "AppleTV Control Paused Scene"
   sequence:
-  
+
     - service: light.turn_on
       data:
         entity_id:
@@ -30,11 +36,11 @@ appletv_control_playing:
     - wait_template: "{{ not is_state('media_player.woonkamer_2', 'playing') }}"
       timeout: "00:00:10"
       continue_on_timeout: "true"
-      
+
     - condition: state
       entity_id: media_player.woonkamer_2
       state: playing
- 
+
     - service: light.turn_on
       data:
         entity_id: light.livingroom_wall
@@ -54,14 +60,14 @@ appletv_control_playing:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 25 }}"
 
     - service: light.turn_on
-      data_template:    
+      data_template:
         entity_id:
           - light.kitchen_all
           - light.sink_all
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_16', 'on') else 0 }}"
 
     - service: light.turn_on
-      data_template:    
+      data_template:
         entity_id: light.toilet_all
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_20', 'on') else 0 }}"
 
@@ -87,15 +93,15 @@ appletv_control_idle:
       data_template:
         entity_id: light.dressoir_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
-        
+
     - service: light.turn_on
-      data_template:    
+      data_template:
         entity_id:
           - light.kitchen_all
           - light.sink_all
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_16', 'on') else 0 }}"
 
     - service: light.turn_on
-      data_template:    
+      data_template:
         entity_id: light.toilet_all
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_20', 'on') else 0 }}"
