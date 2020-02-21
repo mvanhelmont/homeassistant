@@ -10,7 +10,7 @@ entity_registry.yaml
 known_devices.yaml
 .homekit.state
 .google.token
-.storage
+.storage/*
 !storage/lovelace
 .DS_Store
 ._.DS_Store
