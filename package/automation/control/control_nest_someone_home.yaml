@@ -1,9 +1,13 @@
 - alias: "Control - Nest Control Someone Home"
   trigger:
-  
+
     - platform: state
       entity_id: binary_sensor.sensor_manual_family_home
       to: "on"
+
+    - platform: state
+      entity_id: input_boolean.scene_goodnight
+      to: "off"
 
     - platform: state
       entity_id: climate.entryway
@@ -11,7 +15,7 @@
   condition:
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
-      state: "on" 
+      state: "on"
 
     - condition: state
       entity_id: input_boolean.scene_goodnight
@@ -23,8 +27,9 @@
       entity_id: climate.entryway
       temperature: >-
         {% set outside = states('sensor.dark_sky_temperature') | float %}
-        {% set inside = states('sensor.entryway_thermostat_target') | float %}
+        {% set inside = states('sensor.climate_temp_inside') | float %}
         {% if outside > 12 and inside > 15 %} 10
+        {% elif outside < 12 and inside > 15 %} 10
         {% elif outside < 12 and inside < 15 %} 21
         {% else %} 9
         {% endif %}

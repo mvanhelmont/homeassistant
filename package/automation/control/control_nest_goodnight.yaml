@@ -1,6 +1,6 @@
 - alias: "Control - Nest Control Goodnight Scene"
   trigger:
-  
+
   - platform: state
     entity_id: input_boolean.scene_goodnight
     to: "on"
@@ -11,7 +11,7 @@
   condition:
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
-      state: "on" 
+      state: "on"
 
     - condition: state
       entity_id: input_boolean.scene_goodnight
@@ -19,12 +19,6 @@
 
   action:
     service: climate.set_temperature
-    data_template:
+    data:
       entity_id: climate.entryway
-      temperature: >-
-        {% set outside = states('sensor.dark_sky_temperature') | float %}
-        {% set inside = states('sensor.entryway_thermostat_target') | float %}
-        {% if outside > 12 and inside > 15 %} 10
-        {% elif outside < 12 and inside < 15 %} 10
-        {% else %} 9
-        {% endif %}
+      temperature: 9
