@@ -1,6 +1,12 @@
+####################################################
+#
+# SWITCH CONTROL FOR LIVINGROOM WINDOW LIGHTS
+#
+####################################################
+
 - alias: "Switch - Window"
   trigger:
-  
+
     platform: state
     entity_id: switch.newkaku_0114ef92_c
 

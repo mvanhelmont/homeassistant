@@ -1,6 +1,12 @@
+####################################################
+#
+# SWITCH CONTROL FOR LIVINGROOM WALL LIGHTS
+#
+####################################################
+
 - alias: "Switch - Wall"
   trigger:
-  
+
     platform: state
     entity_id: switch.newkaku_0114ef92_b
 

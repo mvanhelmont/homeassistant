@@ -1,6 +1,12 @@
+####################################################
+#
+# SWITCH CONTROL FOR DININGROOM DRESSOIR
+#
+####################################################
+
 - alias: "Switch - Dressoir"
   trigger:
-  
+
     platform: state
     entity_id: switch.newkaku_011fdd46_c
 

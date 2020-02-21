@@ -1,6 +1,12 @@
+####################################################
+#
+# SWITCH CONTROL FOR KITCHEN SINK
+#
+####################################################
+
 - alias: "Switch - Kitchen"
   trigger:
-  
+
     platform: state
     entity_id: switch.newkaku_011fad02_b
 

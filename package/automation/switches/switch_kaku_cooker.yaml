@@ -1,6 +1,12 @@
+####################################################
+#
+# SWITCH CONTROL FOR COOKING LIGHT
+#
+####################################################
+
 - alias: 'Switch - Cooker'
   trigger:
-  
+
     platform: state
     entity_id: switch.meek_cooking
     to: "on"
@@ -11,11 +17,11 @@
 
 - alias: 'Switch - Kaku Cooker Off'
   trigger:
-  
+
     platform: state
     entity_id: switch.meek_cooking
     to: "off"
 
   action:
     service: switch.turn_off
-    entity_id: switch.newkaku_011fad02_c 
+    entity_id: switch.newkaku_011fad02_c

@@ -1,6 +1,12 @@
+####################################################
+#
+# SWITCH CONTROL FOR BATHROOM
+#
+####################################################
+
 - alias: "Switch - Bathroom"
   trigger:
-  
+
     platform: state
     entity_id: switch.newkaku_01616a32_a
 

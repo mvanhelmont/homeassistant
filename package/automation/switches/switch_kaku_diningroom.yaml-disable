@@ -1,6 +1,12 @@
+####################################################
+#
+# SWITCH CONTROL FOR DININGROOM
+#
+####################################################
+
 - alias: "Switch - Dining Table On Off"
   trigger:
-  
+
     platform: state
     entity_id: light.newkaku_01401eb6_a
 
