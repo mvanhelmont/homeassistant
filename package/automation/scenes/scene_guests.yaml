@@ -1,6 +1,11 @@
+####################################################
+#
+# SCENE GUESTS TURN OFF SOME AUTOMATIONS
+#
+####################################################
 - alias: "Scene - Guests"
   trigger:
-    
+
     platform: state
     entity_id: input_boolean.scene_guests
 
@@ -14,7 +19,7 @@
 
     - service_template: "{{ 'automation.turn_off' if is_state('input_boolean.scene_guests', 'on') else 'automation.turn_on' }}"
       data:
-        entity_id: 
+        entity_id:
           - automation.motion_detection_livingroom_on_off
           - automation.motion_detection_diningroom_on_off
           - automation.motion_detection_hallway_on_off

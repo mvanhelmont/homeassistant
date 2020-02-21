@@ -1,7 +1,12 @@
+####################################################
+#
+# SCENE EVENING WHEN SUN IS BELOW HORIZON AND NO TV OF MOVIE IS PLAYING
+#
+####################################################
 - alias: "Scene - Evening"
   trigger:
 
-    - platform: time_pattern 
+    - platform: time_pattern
       minutes: "/1"
 
     - platform: state
@@ -13,7 +18,7 @@
     - entity_id: sensor.harmony
       platform: state
       to: "off"
-      
+
     - platform: state
       entity_id: input_boolean.scene_goodnight
 
@@ -34,7 +39,7 @@
       entity_id: sensor.harmony
       state: "off"
 
-    - condition: state 
+    - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
 
@@ -64,7 +69,7 @@
           {% else %} Kay
           {% endif %}
 
-    - service_template: >- 
+    - service_template: >-
          {% if (states.sensor.holiday.state) == 'Christmas' %} script.evening_christmas
          {% elif (states.sensor.holiday.state) == 'Halloween' %} script.evening_halloween
          {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.evening_kingsday
@@ -78,7 +83,7 @@
         brightness_pct: >-
           {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
           {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
-          {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
+          {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100
           {% else %} 50
           {% endif %}
 

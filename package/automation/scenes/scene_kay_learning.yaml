@@ -1,3 +1,9 @@
+####################################################
+#
+# SCENE KAY WHEN HE IS STUDY THE DININGTABLE LIGHT STAY AT 100%
+#
+####################################################
+
 - alias: "Scene - Kay Learning"
   trigger:
 

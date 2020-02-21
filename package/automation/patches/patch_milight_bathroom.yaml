@@ -1,10 +1,16 @@
+####################################################
+#
+# PATCH WHEN GROUP 0 IS ON OR OFF THE CORRECT STATUS WILL SEND TO MILIGHT HUB FOR ALL LIGHTS INSIDE GROUP
+#
+####################################################
+
 - alias: "Patches - MiLight Bathroom Group 0"
   initial_state: "true"
   trigger:
-  
+
     platform: mqtt
     topic: "milight/states/0xAAAD/rgb_cct/0"
-  
+
   action:
     - service: mqtt.publish
       data_template:

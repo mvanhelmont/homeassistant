@@ -1,9 +1,15 @@
+####################################################
+#
+# PLAY TEST AND SEE IF THINGS WORK OR NOT
+#
+####################################################
+
 - alias: "TEST - trigger statement ATOM"
   trigger:
     platform: state
     entity_id: switch.newkaku_014e5906_a
     to: "on"
-    
+
   action:
     service: input_number.set_value
     entity_id: input_number.fullykiosk_brightness_slider

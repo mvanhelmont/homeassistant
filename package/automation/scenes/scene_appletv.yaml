@@ -1,8 +1,14 @@
+####################################################
+#
+# SCENE FOR APPLE TV WHEN SUN IS BELOW HORIZON
+#
+####################################################
+
 - alias: "Scene - AppleTV"
   trigger:
-  
+
     - platform: state
-      entity_id: sun.sun 
+      entity_id: sun.sun
 
     - platform: state
       entity_id: sensor.harmony
@@ -35,7 +41,7 @@
 
     - service: input_boolean.turn_off
       data:
-        entity_id: 
+        entity_id:
           - input_boolean.scene_evening
           - input_boolean.scene_tv
           - input_boolean.scene_daylight
@@ -55,7 +61,7 @@
           {% else %} Kay
           {% endif %}
 
-    - service_template: >- 
+    - service_template: >-
          {% if (states.sensor.holiday.state) == 'Christmas' %} script.appletv_christmas
          {% elif (states.sensor.holiday.state) == 'Halloween' %} script.appletv_halloween
          {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.appletv_kingsday
@@ -69,10 +75,10 @@
         brightness_pct: >-
           {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
           {% elif (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'off' %} 0
-          {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
+          {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100
           {% else %} 50
           {% endif %}
-        
+
     - service: script.engine_say
       data_template:
         media_player: media_player.this_device

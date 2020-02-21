@@ -1,8 +1,14 @@
+####################################################
+#
+# NOTIFY WHEN THERE IS MOTION AND NOBODY IS HOME
+#
+####################################################
+
 - alias: "Motion Detection - Notification Nobody Home"
   trigger:
-  
+
     - platform: state
-      entity_id: 
+      entity_id:
         - binary_sensor.node_15
         - binary_sensor.node_20
         - binary_sensor.node_10
@@ -15,7 +21,7 @@
       to: "on"
 
     - platform: state
-      entity_id: 
+      entity_id:
         - sensor.node_13_access_control
         - sensor.node_11_access_control
       to: "22"
@@ -23,7 +29,7 @@
   condition:
     condition: state
     entity_id: binary_sensor.sensor_manual_family_home
-    state: "off" 
+    state: "off"
 
   action:
     service: script.pushover_engine

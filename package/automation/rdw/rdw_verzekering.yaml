@@ -1,10 +1,16 @@
+####################################################
+#
+# NOTIFY WHEN INSURANCE HAS BEEN EXPIRED FOR THE CAR OF MY SISTER
+#
+####################################################
+
 - alias: "Notification - RDW - Verzekering"
   trigger:
-  
+
     platform: state
     entity_id: sensor.toyota_aygo_insured
     to: "false"
- 
+
   action:
     service: notify.ha_email
     data_template:

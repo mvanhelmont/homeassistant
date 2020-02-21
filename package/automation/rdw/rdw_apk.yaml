@@ -1,6 +1,12 @@
+####################################################
+#
+# NOTIFY WHEN APK DATE IS EXPIRED SOON FOR THE CAR OF MY SISTER
+#
+####################################################
+
 - alias: "Notification - RDW - APK vervaldatum"
   trigger:
-  
+
     platform: template
     value_template: "{{ ((as_timestamp(strptime(states('sensor.toyota_aygo_expdate'), '%d %b %Y')) / 86400) | int) == ((as_timestamp(strptime(states('sensor.date'), '%Y-%m-%d')) / 86400) | int) + 21 }} }}"
 

@@ -1,3 +1,9 @@
+####################################################
+#
+# SYSTEM START HOMEKIT AND SSL CERT SENSOR AFTER HA IS RUNNING OTHERWOSE INCORRECT VALUES
+#
+####################################################
+
 - alias: "System - Start homekit after Z-Wave is ready"
   trigger:
     - platform: event
@@ -6,7 +12,7 @@
       event_type: zwave.network_complete
     - platform: event
       event_type: zwave.network_complete_some_dead
-  
+
   action:
     - service: homekit.start
 

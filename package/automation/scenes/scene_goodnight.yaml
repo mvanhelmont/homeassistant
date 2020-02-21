@@ -1,6 +1,12 @@
+####################################################
+#
+# SCENE GOODNIGHT WHEN WE GONNA SLEEP !
+#
+####################################################
+
 - alias: "Scene - Goodnight"
   trigger:
-    
+
     platform: state
     entity_id: input_boolean.scene_goodnight
     to: "on"
@@ -17,7 +23,7 @@
   action:
     - service: input_boolean.turn_off
       data:
-        entity_id: 
+        entity_id:
           - input_boolean.scene_kodi
           - input_boolean.scene_tv
           - input_boolean.scene_daylight
@@ -77,23 +83,23 @@
           - light.toilet_all
           - light.dressoir_all
           - light.livingroom_all
-          - light.balcony 
+          - light.balcony
 
     - service_template: input_number.set_value
       data_template:
         entity_id: input_number.fullykiosk_brightness_slider
         value: 1
-    
+
     - service: light.turn_off
       entity_id: light.lenovo_full_kiosk
 
-# Christmass switches        
+# Christmass switches
 #    - service: switch.turn_off
 #      entity_id:
 #        - switch.node_8_switch
 #        - switch.node_21_switch
 #        - switch.node_22_switch
-#        - switch.node_2_switch 
+#        - switch.node_2_switch
 #  - service: shell_command.meek_toilet_nightscene_on
 
     - service: script.engine_say

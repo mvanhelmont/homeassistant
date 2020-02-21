@@ -1,6 +1,12 @@
+####################################################
+#
+# BATHROOM CONTROL LIGHTS BASED ON SCENE GOODNIGHT 
+#
+####################################################
+
 - alias: "Motion Detection - Bathroom On Off"
   trigger:
-  
+
     platform: state
     entity_id: binary_sensor.node_15
 
@@ -20,7 +26,7 @@
           {% else %} 0
           {% endif %}
 
-    - service_template: >- 
+    - service_template: >-
         {% if (states.binary_sensor.node_15.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} switch.turn_on
         {% elif (states.binary_sensor.node_15.state) == 'off' and (states.input_boolean.scene_goodnight.state) == 'off' %}  switch.turn_off
         {% endif %}

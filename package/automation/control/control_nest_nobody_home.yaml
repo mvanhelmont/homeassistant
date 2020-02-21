@@ -1,6 +1,12 @@
+####################################################
+#
+# NEST CONTROL TEMP BASED ON NOBODY HOME
+#
+####################################################
+
 - alias: "Control - Nest Control Nobody Home"
   trigger:
-  
+
     - platform: state
       entity_id: binary_sensor.sensor_manual_family_home
       to: "off"
@@ -11,7 +17,7 @@
   condition:
     condition: state
     entity_id: binary_sensor.sensor_manual_family_home
-    state: "off" 
+    state: "off"
 
   action:
     service: climate.set_temperature

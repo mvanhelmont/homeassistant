@@ -1,3 +1,9 @@
+####################################################
+#
+# SCENE FOR EMULATE SOMEONE IS HOME BUT WE ARE ON HOLIDAY
+#
+####################################################
+
 - alias: "Scene - Emulate Holiday"
   trigger:
 

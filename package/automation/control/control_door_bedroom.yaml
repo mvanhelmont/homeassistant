@@ -1,6 +1,11 @@
+####################################################
+#
+# CONTROL BEDROOM LIGHTS WHEN DOOR SENSOR IS ON OR OFF
+#
+####################################################
 - alias: "Door Sensor - Bedroom Door Open Close"
   trigger:
-  
+
     platform: state
     entity_id: binary_sensor.node_12
 

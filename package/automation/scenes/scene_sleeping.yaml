@@ -1,3 +1,9 @@
+####################################################
+#
+# SCENE SLEEPING TRANSITION BEDROOM LIGHTS TO 0% AND THEN 6 MIN 2 LIGHTS COLOR WAVE
+#
+####################################################
+
 - alias: "Scene - Sleeping"
   trigger:
 
@@ -11,9 +17,9 @@
         entity_id: light.bedroom_all
         brightness_pct: 1
         transition: "10"
-        
+
     - delay: "00:00:10"
-        
+
     - service: light.turn_off
       entity_id: light.bedroom_all
 
@@ -30,11 +36,11 @@
       data:
         entity_id: light.bedroom_6
         brightness_pct: 1
-        effect: 0 
+        effect: 0
 
     - service: input_boolean.turn_off
       entity_id: input_boolean.scene_sleeping
-      
+
     - service: switch.turn_off
       entity_id: switch.newkaku_01616a32_a
 

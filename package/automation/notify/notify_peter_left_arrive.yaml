@@ -1,6 +1,12 @@
+####################################################
+#
+# NOTIFY WHEN PETER IS LEFT OR ARRIVE HOME
+#
+####################################################
+
 - alias: "Notification - Peter Left or Arrive Home"
   trigger:
-  
+
     platform: state
     entity_id: device_tracker.geofency_peter
 

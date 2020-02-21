@@ -1,6 +1,12 @@
+####################################################
+#
+# LIVINGROOM CONTROL LIGHT BASED ON SENSOR AND SCENE GOODNIGHT
+#
+####################################################
+
 - alias: "Motion Detection - Livingroom On Off"
   trigger:
-  
+
     platform: state
     entity_id: binary_sensor.node_19
 

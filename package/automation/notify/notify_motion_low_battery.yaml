@@ -1,3 +1,8 @@
+####################################################
+#
+# NOTIFY WHEN BATTERIES ARE BECOME LOW
+#
+####################################################
 - alias: "Notification - Battery Low Alert"
   trigger:
 

@@ -1,6 +1,12 @@
+####################################################
+#
+# SCENE FOR COOKING TURN ON LIGHTS KITCHEN BRIGHTNESS 100%
+#
+####################################################
+
 - alias: "Scene - Cooking"
   trigger:
-  
+
     platform: state
     entity_id: input_boolean.scene_cooking
 
@@ -12,7 +18,7 @@
   action:
     service: light.turn_on
     data_template:
-      entity_id: 
+      entity_id:
         - light.sink_all
         - light.kitchen_all
       kelvin: 2800

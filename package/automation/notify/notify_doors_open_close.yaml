@@ -1,9 +1,15 @@
+####################################################
+#
+# NOTIFY WHEN DOORS OPEN OR CLOSE
+#
+####################################################
+
 - alias: "Notification - Random Door Open Close"
   initial_state: "false"
   trigger:
-  
+
     platform: state
-    entity_id: 
+    entity_id:
       - binary_sensor.node_10
       - binary_sensor.node_12
       - sensor.fibaro_frontdoor_custom_sensor
@@ -15,7 +21,7 @@
       message: >-
         {% if trigger.to_state.state == 'on' %}
           {{ trigger.from_state.attributes.friendly_name}} is open
-        {% else %}          
+        {% else %}
           {{ trigger.from_state.attributes.friendly_name}} is closed
         {% endif %}
       priority: "0"

@@ -1,6 +1,12 @@
+####################################################
+#
+# BEDROOM CONTROL LIGHTS BASED ON SENSOR AND DOOR SENSOR
+#
+####################################################
+
 - alias: "Motion Detection - Bedroom On Off"
   trigger:
-  
+
     platform: state
     entity_id: binary_sensor.node_14
 
@@ -15,7 +21,7 @@
 
     - condition: state
       entity_id: switch.newkaku_01074522_a
-      state: "off" 
+      state: "off"
 
   action:
     service: light.turn_on

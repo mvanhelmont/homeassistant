@@ -1,3 +1,9 @@
+####################################################
+#
+# SYSTEM VOLT SENSOR UPDATE EVERY MINUTE
+#
+####################################################
+
 - alias: "System - Update Volt Sensor Template"
   trigger:
 

@@ -1,3 +1,9 @@
+####################################################
+#
+# SYSTEM FKB TURN OFF AND ON SCREEN BASED ON 2 SENSORS
+#
+####################################################
+
 - alias: "System - FKB Screen On Off"
   trigger:
     - platform: state

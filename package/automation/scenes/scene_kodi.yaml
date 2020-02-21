@@ -1,8 +1,14 @@
+####################################################
+#
+# SCENE FOR KODI WHEN SUN BELOW HORIZON TURN LIGHTS ON BASED ON STATUS KODI
+#
+####################################################
+
 - alias: "Scene - Kodi"
   trigger:
 
     - platform: state
-      entity_id: sun.sun 
+      entity_id: sun.sun
 
     - entity_id: sensor.harmony
       platform: state
@@ -28,14 +34,14 @@
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
-      
+
   action:
     - service: input_boolean.turn_on
       entity_id: input_boolean.scene_kodi
 
     - service: input_boolean.turn_off
       data:
-        entity_id: 
+        entity_id:
           - input_boolean.scene_evening
           - input_boolean.scene_tv
           - input_boolean.scene_daylight
@@ -68,11 +74,11 @@
         entity_id: light.newkaku_01401eb6_a
         brightness_pct: >-
           {% if (states.binary_sensor.node_10.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
-          {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100 
+          {% elif (states.binary_sensor.node_10.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100
           {% else %} 0
           {% endif %}
-        
+
     - service: script.engine_say
       data_template:
         media_player: media_player.this_device
-        say_scene_kodi: "true" 
+        say_scene_kodi: "true"

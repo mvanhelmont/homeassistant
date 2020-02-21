@@ -1,9 +1,15 @@
+####################################################
+#
+# LIVINGROOM AND DINGROOM CONTROL LIGHTS BASED ON LUX LEVEL
+#
+####################################################
+
 - alias: "Control - Lux on Daytime Low"
   trigger:
 
-    - platform: time_pattern 
+    - platform: time_pattern
       minutes: "/1"
-    
+
     - platform: state
       entity_id: sensor.node_19_luminance
 
@@ -11,15 +17,15 @@
     - condition: state
       entity_id: sun.sun
       state: "above_horizon"
-  
+
     - condition: state
       entity_id: input_boolean.lux_level_low
       state: "off"
 
-    - condition: state 
+    - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
-      
+
     - condition: numeric_state
       entity_id: sensor.node_19_luminance
       below: 160
@@ -30,7 +36,7 @@
         - light.livingroom_all
         - light.dressoir_all
       data:
-        transition: 10 
+        transition: 10
         brightness_pct: 75
 
     - service: input_boolean.turn_on
@@ -44,9 +50,9 @@
 - alias: 'Control - Lux on Daytime Normal'
   trigger:
 
-    - platform: time_pattern 
+    - platform: time_pattern
       minutes: "/1"
-    
+
     - platform: state
       entity_id: sensor.node_19_luminance
 
@@ -54,7 +60,7 @@
     - condition: state
       entity_id: sun.sun
       state: "above_horizon"
-      
+
     - condition: numeric_state
       entity_id: sensor.node_19_luminance
       above: 161
@@ -63,7 +69,7 @@
       entity_id: input_boolean.lux_level_low
       state: "on"
 
-    - condition: state 
+    - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
 

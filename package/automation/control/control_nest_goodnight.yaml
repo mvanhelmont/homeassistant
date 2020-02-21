@@ -1,3 +1,9 @@
+####################################################
+#
+# NEST CONTROL TEMP BASED ON SCENE GOODNIGHT
+#
+####################################################
+
 - alias: "Control - Nest Control Goodnight Scene"
   trigger:
 

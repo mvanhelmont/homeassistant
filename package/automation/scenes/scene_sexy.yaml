@@ -1,6 +1,12 @@
+####################################################
+#
+# SCENE SEXY WHEN WE IN THE MOOD FOR SOME ROMANCE
+#
+####################################################
+
 - alias: "Scene - Sexy"
   trigger:
-    
+
     platform: state
     entity_id: input_boolean.scene_sexy
     to: "on"
@@ -14,7 +20,7 @@
 
     - service: light.turn_on
       data:
-        entity_id: 
+        entity_id:
           - light.dressoir_all
           - light.livingroom_all
           - light.hallway

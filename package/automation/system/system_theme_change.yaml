@@ -1,17 +1,23 @@
+####################################################
+#
+# SYSTEM CHANGE THEME BASED ON SUN IS BELOW OR ABOVE HORIZON
+#
+####################################################
+
 - alias: "System - Automatic Theme Change Sunset"
   trigger:
-  
+
     - platform: homeassistant
       event: start
-  
+
     - platform: state
       entity_id: sun.sun
       to: "above_horizon"
-  
+
     - platform: state
       entity_id: sun.sun
       to: "below_horizon"
-   
+
   action:
     service_template: frontend.set_theme
     data_template:

@@ -1,3 +1,9 @@
+####################################################
+#
+# SYSTEM FKB CHANGE BRIGHTNESS
+#
+####################################################
+
 - alias: "System - FKB Change Brightness"
   trigger:
     platform: state

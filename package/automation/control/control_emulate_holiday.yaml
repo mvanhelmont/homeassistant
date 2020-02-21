@@ -1,13 +1,19 @@
+####################################################
+#
+# CONTROL LIGHTS WHEN ON HOLIDAY
+#
+####################################################
+
 - alias: "Control - Emulate Holiday"
   trigger:
-  
+
     platform: time
     at: "23:30:00"
 
   condition:
     condition: state
     entity_id: input_boolean.emulate_holiday
-    state: "on" 
+    state: "on"
 
   action:
     - service: light.turn_on
@@ -32,14 +38,14 @@
       entity_id: input_boolean.emulate_holiday
 
     - delay: "00:{{ (range(2, 10)|random|int) }}:00"
-  
+
     - service: light.turn_off
       entity_id: light.bathroom_all
 
     - delay: "00:{{ (range(30, 45)|random|int) }}:00"
 
     - service: light.turn_off
-      entity_id: light.bedroom_all 
+      entity_id: light.bedroom_all
 
     - service: script.pushover_engine
       data_template:

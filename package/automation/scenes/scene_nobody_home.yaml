@@ -1,3 +1,9 @@
+####################################################
+#
+# SCENE NOBODY HOME TURN OFF EVERYTHING THATS NOT NEEDED WHEN WE NOT THERE
+#
+####################################################
+
 - alias: "Scene - Nobody Home"
   trigger:
 
@@ -15,7 +21,7 @@
 
     - service: input_boolean.turn_off
       data:
-        entity_id: 
+        entity_id:
           - input_boolean.scene_kodi
           - input_boolean.scene_goodnight
           - input_boolean.scene_tv
@@ -52,4 +58,4 @@
 #          - switch.node_8_switch
 #          - switch.node_21_switch
 #          - switch.node_22_switch
-#          - switch.node_2_switch 
+#          - switch.node_2_switch

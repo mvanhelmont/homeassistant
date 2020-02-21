@@ -1,8 +1,14 @@
+####################################################
+#
+# NOTIFY WHEN A DEVICE IS (DIS)CONNECTED
+#
+####################################################
+
 - alias: "Notification - Device (dis)connected"
   trigger:
-  
+
     platform: state
-    entity_id: 
+    entity_id:
       - binary_sensor.resillio
       - binary_sensor.ssh_server
       - binary_sensor.milight_hub
@@ -25,9 +31,9 @@
 
 - alias: "Notification - Device connected"
   trigger:
-  
+
     platform: state
-    entity_id: 
+    entity_id:
       - binary_sensor.resillio
       - binary_sensor.ssh_server
       - binary_sensor.milight_hub
@@ -37,7 +43,7 @@
       - binary_sensor.meek_hallway
       - binary_sensor.meek_kitchen
       - binary_sensor.meek_wc
-      - binary_sensor.meek_bathroom  
+      - binary_sensor.meek_bathroom
     to: "on"
 
   action:

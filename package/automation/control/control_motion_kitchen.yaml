@@ -1,6 +1,12 @@
+####################################################
+#
+# KITCHEN CONTROL LIGHTS BASED ON SENSOR STATUS AND EVENT
+#
+####################################################
+
 - alias: "Motion Detection - Kitchen On Off"
   trigger:
-  
+
     platform: state
     entity_id: binary_sensor.node_16
 
@@ -13,7 +19,7 @@
       entity_id: input_boolean.scene_cooking
       state: "off"
 
-  action: 
+  action:
     service_template: >-
       {% if (states.sensor.holiday.state) == 'Christmas' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
       {% elif (states.sensor.holiday.state) == 'Halloween' and (states.input_boolean.scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on

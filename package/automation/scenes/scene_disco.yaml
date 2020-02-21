@@ -1,6 +1,12 @@
+####################################################
+#
+# SCENE DISCO WHEN THERE IS A PARTY OUR HOUSE IS A DISCOBALL
+#
+####################################################
+
 - alias: "Scene - Disco"
   trigger:
-  
+
     platform: state
     entity_id: input_boolean.scene_disco
     to: "on"
@@ -15,7 +21,7 @@
     - service: light.turn_on
       data:
         entity_id: light.dressoir_1
-        effect: 0 
+        effect: 0
         brightness_pct: 100
 
     - delay:

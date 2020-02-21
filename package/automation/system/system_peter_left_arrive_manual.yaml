@@ -1,6 +1,12 @@
+####################################################
+#
+# SYSTEM WHEN AUTOMATION TRACKER NOT WORK WE CAN MANUAL TURN ON OFF OF PETER IS AT HOME OR NOT
+#
+####################################################
+
 - alias: "System - Peter Left or Arrive Locative or GeoFency Manual"
   trigger:
-  
+
     platform: state
     entity_id:
       - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba

@@ -1,8 +1,14 @@
+####################################################
+#
+# SYSTEM ENABLE RANDOM DOORS OPEN AUTOMATION AFTER HA START OTHERWISE VALUES ARE INCORRECT
+#
+####################################################
+
 - alias: "System - Start random door open close automation"
-  trigger:  
+  trigger:
       platform: homeassistant
       event: start
-      
+
   action:
     - delay: "00:01:00"
 

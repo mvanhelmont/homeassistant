@@ -1,3 +1,9 @@
+####################################################
+#
+# SYSTEM UPDATE KW SENSOR EVERY MINUTE
+#
+####################################################
+
 - alias: "System - Update Kw Sensor Template"
   trigger:
     platform: time_pattern

@@ -1,6 +1,12 @@
+####################################################
+#
+# DININGROOM LIGHTS CONTROL WHEN DININGROOM SENSOR IS ON OR OFF
+#
+####################################################
+
 - alias: "Motion Detection - Diningroom On Off"
   trigger:
-  
+
     platform: state
     entity_id: binary_sensor.node_18
 
