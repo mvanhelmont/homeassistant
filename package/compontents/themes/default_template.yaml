@@ -1,3 +1,8 @@
+###########################################################################################
+#
+# THEMES
+#
+###########################################################################################
 demo_template:
 
 #  var(--disabled-text-color) # Use this when you want use a different variable for same line
@@ -59,7 +64,7 @@ demo_template:
   sidebar-selected-icon-color: 'var(--primary-color)'
   sidebar-selected-background-color: "rgba(0, 0, 0, 1)"
 
-################################# # CONTROLS  #################################
+################################# # CONTROLS #################################
 
   switch-checked-color: 'var(--primary-color)'
   switch-unchecked-color: 'var(--accent-color)'
@@ -284,4 +289,3 @@ demo_template:
 #  text-dark-color: "rgba(255, 255, 255, 1)"
 #  text-medium-color: "rgba(255, 255, 255, 1)"
 #  text-medium-light-color: "rgba(255, 255, 255, 1)"
-

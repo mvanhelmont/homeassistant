@@ -1,3 +1,8 @@
+###########################################################################################
+#
+# THEMES
+#
+###########################################################################################
 summer_breeze:
   lovelace-background: 'center / cover no-repeat url("/local/background.jpg") fixed' #Background-image
   # Define basic colors
@@ -6,17 +11,17 @@ summer_breeze:
 
   element-medium-color: "rgba(44,29,5,0.7)"                                                                 # Light grey
   accent-color: 'rgba(218,165,32,0.8)'                                                                      # dark-yellow
-  accent-color-darker: 'rgba(184,134,11,1)' 
- 
-  background-color: '#f7F8F9'                                                                               # Light grey 
-  background-color-2: '#fedfe0'                                                                             # Light grey 
+  accent-color-darker: 'rgba(184,134,11,1)'
+
+  background-color: '#f7F8F9'                                                                               # Light grey
+  background-color-2: '#fedfe0'                                                                             # Light grey
   transparent-background-color: 'rgba(255,255,255,0.4)'                                                     # white transparent
- 
+
  #transparent-background-color-darker: 'rgba(89,87,86,0.15)'                                               # grey transparent
   less-transparent-background-color: 'rgba(89,87,86,0.5)'                                                   # grey less transparent
   non-transparent-background-color: '#A28E66'                                                               # non transparent yelowish grey
   border-color: '#000000'                                                                                   # Light grey border
-  
+
   # Header
   primary-color: 'var(--non-transparent-background-color)'                                                  # color of the headers background, the highlighted element in the Sidebar, buttons in lovelace
   text-primary-color: 'var(--element-medium-color)'
@@ -50,18 +55,18 @@ summer_breeze:
   more-info-header-color: 'var(--element-dark-color)'
   more-info-header-background: white #'var(--less-transparent-background-color)'
 
-  
+
   # Icons
   paper-item-icon-color: 'var(--element-light-color)'                                                       # Off
   paper-item-icon-active-color: 'var(--accent-color-darker)'                                                # On (gets overriden by light color if its sent)
-  
+
   # Switches
   paper-toggle-button-checked-button-color: '#FFF'                                                          # Knob On
   paper-toggle-button-checked-bar-color:  'var(--accent-color-darker)'                                      # Background On
   paper-toggle-button-unchecked-button-color: '#FFF'                                                        # Knob Off
   paper-toggle-button-unchecked-bar-color: 'var(--element-light-color)'                                     # Background Off
-                                                                              
-  
+
+
   #slider
 #  paper-slider-knob-color: 'white'                                                                          # color of the handle
 #  paper-slider-container-color: 'rgba(44,29,5,0.2)'                                                         # color of the sliders line

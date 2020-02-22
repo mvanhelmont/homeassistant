@@ -1,10 +1,10 @@
-####################################################
+###########################################################################################
 #
 # SHELL_COMMAND
 #
 # https://www.home-assistant.io/integrations/shell_command/
 #
-####################################################
+###########################################################################################
 ---
 meek_dressoir_nightscene_on: "curl http://192.168.100.112/control?cmd=event,nightsceneon"
 meek_dressoir_nightscene_off: "curl http://192.168.100.112/control?cmd=event,nightsceneoff"

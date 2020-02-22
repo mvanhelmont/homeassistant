@@ -1,3 +1,8 @@
+###########################################################################################
+#
+# THEMES
+#
+###########################################################################################
 peternight:
 
 #  var(--disabled-text-color) # Use this when you want use a different variable for same line
@@ -23,7 +28,7 @@ peternight:
 # Main top header, switch buttons
   primary-color: "#fbd643"
 # Blue Color when inactive, switch buttons
-  accent-color: "#0288d1" 
+  accent-color: "#0288d1"
 # Some text in developer tools
   dark-primary-color: "#47749d"
 # CIRCLE Left down corner next to username
