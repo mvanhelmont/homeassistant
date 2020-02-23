@@ -7,8 +7,8 @@
 ###########################################################################################
 ---
 platform: mqtt
-command_topic: "home-assistant/toilet/switch"
-state_topic: "home-assistant/toilet/switch"
+command_topic: "homeassistant/MeekWC/switch"
+state_topic: "homeassistant/MeekWC/switch"
 payload_on: "ON"
 payload_off: "OFF"
 state_on: "ON"

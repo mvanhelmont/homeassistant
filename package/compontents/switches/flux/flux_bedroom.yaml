@@ -8,15 +8,15 @@
 ---
 platform: flux
 lights:
-  - light.dressoir_all
-name: "Flux Test"
-start_time: "8:30:00"
-stop_time: "9:00"
-start_colortemp: 4000
+  - light.bedroom_all
+name: "Flux Bedroom"
+start_time: "13:30:00"
+stop_time: "14:00"
+start_colortemp: 6500
 #sunset_colortemp: 3000
-stop_colortemp: 1900
+stop_colortemp: 2700
 brightness: 255
 disable_brightness_adjust: "true"
 mode: xy
 transition: 30
-interval: 60
+interval: 30

@@ -13,7 +13,6 @@
 ###################################################
 
 api:
-circadian_lighting:
 config:
 discovery:
 logbook:

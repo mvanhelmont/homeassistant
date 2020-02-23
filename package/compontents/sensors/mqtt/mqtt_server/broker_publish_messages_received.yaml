@@ -7,7 +7,6 @@
 ########################################################################################### 
 ---
 platform: mqtt
-name: "ITHO Tijd"
-state_topic: "homeassistant/ITHO/Fan/Timer"
+name: "Broker Message Received counter"
+state_topic: "$SYS/broker/publish/messages/received"
 value_template: "{{ value }}"
-unit_of_measurement: "s"
