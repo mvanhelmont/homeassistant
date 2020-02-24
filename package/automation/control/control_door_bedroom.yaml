@@ -26,9 +26,9 @@
       kelvin: 2800
       brightness_pct: >- #"{{ 20 if is_state('binary_sensor.node_12', 'on') else 100 }}"
 
-        {% if (states.binary_sensor.node_12.state) == 'on' and ((states.season.season.state) == 'Spring' or (states.season.season.state) == 'Summer') %} 20
+        {% if (states.binary_sensor.node_12.state) == 'on' and ((states.season.season.state) == 'spring' or (states.season.season.state) == 'summer') %} 20
 
-        {% elif (states.binary_sensor.node_12.state) == 'on' and ((states.season.season.state) == 'Autumn' or (states.season.season.state) == 'Winter') %} 100
+        {% elif (states.binary_sensor.node_12.state) == 'on' and ((states.season.season.state) == 'autumn' or (states.season.season.state) == 'winter') %} 100
 
         {% else %} 0
         {% endif %}
