@@ -11,18 +11,10 @@
     to: "on"
 
   action:
-    - service_template: >-light.turn_on
-        {% if (states.input_boolean.circadian_ligting_enabler.state) == 'on' %}
-          data_template:
-            entity_id: light.bathroom_all
-            brightness_pct: 50
-        {% elif (states.input_boolean.circadian_ligting_enabler.state) == 'off' %}
-          data_template:
-            entity_id: light.bathroom_all
-            kelvin: 2800
-            brightness_pct: 100
-        {% else %} 0
-        {% endif %}
+    service: light.turn_on
+    data:
+      entity_id: light.bathroom_all
+      brightness_pct: 100
 
 
 #        value: "{{ (state_attr('sensor.fullykiosk', 'screenBrightness') | int / 2.55) | round(0) }}"
