@@ -11,18 +11,16 @@ filter:
   include_domains:
     - climate
   include_entities:
-    - input_boolean.scene_daylight
-    - input_boolean.scene_evening
-    - input_boolean.scene_goodnight
     - input_boolean.scene_sleeping
     - input_boolean.scene_sexy
-    - input_boolean.scene_appletv
     - input_boolean.scene_disco
-    - input_boolean.scene_tv
-    - input_boolean.scene_kodi
     - input_boolean.nest_disable_control
     - input_boolean.scene_guests
     - input_boolean.scene_cooking
+    - switch.airplay
+    - switch.appletv
+    - switch.kodi
+    - switch.tv
     - switch.kay_learning
     - binary_sensor.node_14
     - binary_sensor.node_15
@@ -51,8 +49,6 @@ filter:
     - light.sink_all
     - binary_sensor.manual_kay_home
     - binary_sensor.manual_peter_home
-    - device_tracker.geofency_peter
-    - device_tracker.geofency_kay
     - input_boolean.scene_sleeping
     - input_boolean.scene_goodnight 
     - sensor.bedroom_nest_protect_co_status
