@@ -14,7 +14,7 @@
     service: light.turn_on
     data:
       entity_id: light.bathroom_all
-      brightness_pct: 100
+      brightness_pct: 50
 
 
 #        value: "{{ (state_attr('sensor.fullykiosk', 'screenBrightness') | int / 2.55) | round(0) }}"

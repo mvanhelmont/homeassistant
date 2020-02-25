@@ -49,6 +49,8 @@ filter:
     - light.bathroom_all
     - light.kitchen_all
     - light.sink_all
+    - binary_sensor.manual_kay_home
+    - binary_sensor.manual_peter_home
     - device_tracker.geofency_peter
     - device_tracker.geofency_kay
     - input_boolean.scene_sleeping

@@ -16,3 +16,4 @@ system_zwave_node_switch:
     - "Power Usage"
     - "Switches"
     - "Door Sensors"
+    - "Motion Sensors"
