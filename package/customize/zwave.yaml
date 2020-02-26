@@ -19,6 +19,9 @@ zwave.aeon_labs_zw090_z_stick_gen5_eu:
 zwave.node_2:
   friendly_name: "Neo Switch iMac"
 
+sensor.node_2_type:
+  friendly_name: "Neo Switch iMac Type"
+
 sensor.node_2_alarm_level:
   friendly_name: "Neo Switch iMac Alarm Level"
 
