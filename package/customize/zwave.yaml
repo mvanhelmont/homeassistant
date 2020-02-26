@@ -80,6 +80,142 @@ switch.node_2_switch:
 
 ###########################################################################################
 #
+# NODE 3 - SWITCH
+#
+###########################################################################################
+
+zwave.node_3:
+  friendly_name: "Neo Switch Diningroom"
+
+sensor.node_3_alarm_level:
+  friendly_name: "Neo Switch Diningroom Alarm Level"
+
+sensor.node_3_alarm_type:
+  friendly_name: "Neo Switch Diningroom Alarm Type"
+
+sensor.node_3_current:
+  friendly_name: "Neo Switch Diningroom Current Amp"
+
+sensor.node_3_energy:
+  friendly_name: "Neo Switch Diningroom kWh"
+  icon: mdi:power-socket-eu
+
+sensor.node_3_exporting:
+  friendly_name: "Neo Switch Diningroom Export"
+
+sensor.node_3_interval:
+  friendly_name: "Neo Switch Diningroom Interval 1"
+
+sensor.node_3_interval_2:
+  friendly_name: "Neo Switch Diningroom Interval 2"
+
+sensor.node_3_interval_3:
+  friendly_name: "Neo Switch Diningroom Interval 3"
+
+sensor.node_3_interval_4:
+  friendly_name: "Neo Switch Diningroom Interval 4"
+
+sensor.node_3_power:
+  friendly_name: "Neo Switch Diningroom Current Watt"
+  icon: mdi:flash
+
+sensor.node_3_power_management:
+  friendly_name: "Neo Switch Diningroom Power Man"
+
+sensor.node_3_previous_reading:
+  friendly_name: "Neo Switch Diningroom Watt 1"
+
+sensor.node_3_previous_reading_2:
+  friendly_name: "Neo Switch Diningroom Watt 2"
+
+sensor.node_3_previous_reading_3:
+  friendly_name: "Neo Switch Diningroom Voltage History"
+
+sensor.node_3_previous_reading_4:
+  friendly_name: "Neo Switch Diningroom Amp History"
+
+sensor.node_3_sourcenodeid:
+  friendly_name: "Neo Switch Diningroom SourceID"
+
+sensor.node_3_voltage:
+  friendly_name: "Neo Switch Diningroom Voltage"
+
+switch.node_3_switch:
+  friendly_name: "Neo Switch Diningroom Switch"
+  templates:
+    icon: mdi:power-socket-eu
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+###########################################################################################
+#
+# NODE 4 - SWITCH
+#
+###########################################################################################
+
+zwave.node_4:
+  friendly_name: "Neo Switch Toog"
+
+sensor.node_4_alarm_level:
+  friendly_name: "Neo Switch Toog Alarm Level"
+
+sensor.node_4_alarm_type:
+  friendly_name: "Neo Switch Toog Alarm Type"
+
+sensor.node_4_current:
+  friendly_name: "Neo Switch Toog Current Amp"
+
+sensor.node_4_energy:
+  friendly_name: "Neo Switch Toog kWh"
+  icon: mdi:power-socket-eu
+
+sensor.node_4_exporting:
+  friendly_name: "Neo Switch Toog Export"
+
+sensor.node_4_interval:
+  friendly_name: "Neo Switch Toog Interval 1"
+
+sensor.node_4_interval_2:
+  friendly_name: "Neo Switch Toog Interval 2"
+
+sensor.node_4_interval_3:
+  friendly_name: "Neo Switch Toog Interval 3"
+
+sensor.node_4_interval_4:
+  friendly_name: "Neo Switch Toog Interval 4"
+
+sensor.node_4_power:
+  friendly_name: "Neo Switch Toog Current Watt"
+  icon: mdi:flash
+
+sensor.node_4_power_management:
+  friendly_name: "Neo Switch Toog Power Man"
+
+sensor.node_4_previous_reading:
+  friendly_name: "Neo Switch Toog Watt 1"
+
+sensor.node_4_previous_reading_2:
+  friendly_name: "Neo Switch Toog Watt 2"
+
+sensor.node_4_previous_reading_3:
+  friendly_name: "Neo Switch Toog Voltage History"
+
+sensor.node_4_previous_reading_4:
+  friendly_name: "Neo Switch Toog Amp History"
+
+sensor.node_4_sourcenodeid:
+  friendly_name: "Neo Switch Toog SourceID"
+
+sensor.node_4_voltage:
+  friendly_name: "Neo Switch Toog Voltage"
+
+switch.node_4_switch:
+  friendly_name: "Neo Switch Toog Switch"
+  templates:
+    icon: mdi:power-socket-eu
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+###########################################################################################
+#
 # NODE 5 - SWITCH
 #
 ###########################################################################################
