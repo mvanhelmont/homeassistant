@@ -1,0 +1,12 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+name: "P1 Usage Watt Now"
+state_topic: "p1monitor/smartmeter/consumption_kw"
+value_template: "{{ value }}"

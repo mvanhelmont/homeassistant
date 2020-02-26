@@ -1,0 +1,12 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+name: "P1 Tarifcode"
+state_topic: "p1monitor/smartmeter/tarifcode"
+value_template: "{{ value }}"
