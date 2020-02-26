@@ -11,7 +11,7 @@
       entity_id:
         - binary_sensor.node_15
         - binary_sensor.node_20
-        - binary_sensor.node_10
+        - binary_sensor.node_21
         - binary_sensor.node_12
         - binary_sensor.node_14
         - binary_sensor.node_16
