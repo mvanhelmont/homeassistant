@@ -4,10 +4,10 @@
 #
 # https://www.home-assistant.io/integrations/group/
 #
-########################################################################################### 
+###########################################################################################
 ---
 group_door_sensors:
   entities:
-    - binary_sensor.node_10
+    - binary_sensor.node_21
     - binary_sensor.node_12
     - sensor.fibaro_frontdoor_custom_sensor

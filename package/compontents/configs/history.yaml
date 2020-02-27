@@ -27,6 +27,6 @@ include:
     - binary_sensor.node_18
     - binary_sensor.node_19
     - binary_sensor.node_20
-    - binary_sensor.node_10
+    - binary_sensor.node_21
     - binary_sensor.node_12
     - sensor.fibaro_frontdoor_custom_sensor

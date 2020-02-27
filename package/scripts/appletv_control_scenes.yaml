@@ -27,7 +27,7 @@ appletv_control_paused:
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
 appletv_control_playing:
   alias: "AppleTV Control Playing Scene"
@@ -57,7 +57,7 @@ appletv_control_playing:
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 25 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 25 }}"
 
     - service: light.turn_on
       data_template:
@@ -92,7 +92,7 @@ appletv_control_idle:
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_10', 'on') else 100 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
     - service: light.turn_on
       data_template:
