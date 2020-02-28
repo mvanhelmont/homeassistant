@@ -2,15 +2,15 @@
 
 Home Assistant Backup
 
-I have a nice appartment in Amsterdam and love automation. So i started first with Domoticz. A great open source platform to learn how to auotmate my house. Later i switched to Home Assistant. 
+I have a nice appartment in Amsterdam and love automation. So i started first with Domoticz. A great open source platform to learn how to auotmate my house. Later i switched to Home Assistant.
 
 My hardware:
 - Milight Hub self build - https://github.com/sidoh/esp8266_milight_hub
 
-- Meek P1 Gas/Elec Meter - https://www.meek-ha.com
+- P1 Monitor running on RPi3 - https://www.ztatz.nl
 - Meek ESP Wifi Wall Switches - https://www.meek-ha.com
 
-- RFLink Controller - For some old Click On Click Off switches
+- RFLink Controller - http://www.rflink.nl/blog2/
 
 - 38 Milight RGBCTT Bulbs - https://www.milight.com
 
@@ -26,9 +26,9 @@ My hardware:
 - Amazon Alexa - http://www.amazon.com
 - AppleTV - http://www.apple.com
 - ITHO Fan - https://www.ithodaalderop.nl/
-- Homekit
+- Homekit - http://www.apple.com
 
-- TP-Link Deco M5
+- TP-Link Deco M5 - https://www.tp-link.com/en/home-networking/deco/deco-m5/
 
 Everything is add in Home Assistant. I shared my configuration so you can learn from it.
 Also when you see improvements let me know... I still learning :D
@@ -38,4 +38,3 @@ ToDo: (to add in HA)
 - Coffee Machine :)
 - Fridge :)
 - My partner :) :)
-
