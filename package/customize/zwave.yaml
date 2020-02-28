@@ -75,7 +75,7 @@ sensor.node_2_sourcenodeid:
 sensor.node_2_voltage:
   friendly_name: "Neo Switch iMac Voltage"
 
-switch.node_2_switch:
+switch.node_2_switch # iMac:
   friendly_name: "Neo Switch iMac Switch"
   templates:
     icon: mdi:power-socket-eu
@@ -143,7 +143,7 @@ sensor.node_3_sourcenodeid:
 sensor.node_3_voltage:
   friendly_name: "Neo Switch Diningroom Voltage"
 
-switch.node_3_switch:
+switch.node_3_switch # Diningroom:
   friendly_name: "Neo Switch Diningroom Switch"
   templates:
     icon: mdi:power-socket-eu
@@ -211,7 +211,7 @@ sensor.node_4_sourcenodeid:
 sensor.node_4_voltage:
   friendly_name: "Neo Switch Toog Voltage"
 
-switch.node_4_switch:
+switch.node_4_switch # Toog:
   friendly_name: "Neo Switch Toog Switch"
   templates:
     icon: mdi:power-socket-eu
@@ -279,7 +279,7 @@ sensor.node_5_sourcenodeid:
 sensor.node_5_voltage:
   friendly_name: "Neo Switch Kay Voltage"
 
-switch.node_5_switch:
+switch.node_5_switch # Kay:
   friendly_name: "Neo Switch Kay Switch"
   templates:
     icon: mdi:power-socket-eu
@@ -347,7 +347,7 @@ sensor.node_6_sourcenodeid:
 sensor.node_6_voltage:
   friendly_name: "Neo Switch Peter Voltage"
 
-switch.node_6_switch:
+switch.node_6_switch # Peter:
   friendly_name: "Neo Switch Peter Switch"
   templates:
     icon: mdi:power-socket-eu
@@ -415,7 +415,7 @@ sensor.node_7_sourcenodeid:
 sensor.node_7_voltage:
   friendly_name: "Neo Switch Coffee Voltage"
 
-switch.node_7_switch:
+switch.node_7_switch # Coffee:
   friendly_name: "Neo Switch Coffee Switch"
   templates:
     icon: mdi:power-socket-eu
@@ -483,7 +483,7 @@ sensor.node_8_sourcenodeid:
 sensor.node_8_voltage:
   friendly_name: "Neo Switch Bank Voltage"
 
-switch.node_8_switch:
+switch.node_8_switch # Bank:
   friendly_name: "Neo Switch Bank Switch"
   templates:
     icon: mdi:power-socket-eu
@@ -551,7 +551,7 @@ sensor.node_9_sourcenodeid:
 sensor.node_9_voltage:
   friendly_name: "Neo Switch Hall Voltage"
 
-switch.node_9_switch:
+switch.node_8_switch # Hallway:
   friendly_name: "Neo Switch Hall Switch"
   templates:
     icon: mdi:power-socket-eu
@@ -619,7 +619,7 @@ sensor.node_10_sourcenodeid:
 sensor.node_10_voltage:
   friendly_name: "Neo Switch Bedroom Voltage"
 
-switch.node_10_switch:
+switch.node_10_switch # Bedroom:
   friendly_name: "Neo Switch Bedroom Switch"
   templates:
     icon: mdi:power-socket-eu

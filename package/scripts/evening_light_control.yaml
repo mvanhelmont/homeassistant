@@ -115,10 +115,10 @@ evening_christmas:
   sequence:
     - service: switch.turn_on
       entity_id:
-        - switch.node_8_switch
+        - switch.node_8_switch # Bank
         - switch.node_21_switch
         - switch.node_22_switch
-        - switch.node_2_switch
+        - switch.node_2_switch # iMac
 
     - service: light.turn_on
       data_template:
