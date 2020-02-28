@@ -55,14 +55,6 @@
           - light.nanoleaf
           - light.newkaku_01401eb6_a
 
-# Christmass switches
-#    - service: switch.turn_off
-#      entity_id:
-#        - switch.node_8_switch
-#        - switch.node_21_switch
-#        - switch.node_22_switch
-#        - switch.node_2_switch
-
     - service_template: input_number.set_value
       data_template:
         entity_id: input_number.fullykiosk_brightness_slider
@@ -70,6 +62,11 @@
 
     - service_template: "{{ 'light.turn_on' if is_state('binary_sensor.node_15', 'on') else 'light.turn_off' }}"
       entity_id: light.bathroom_all
+    
+    - service: homeassistant.turn_on
+      data:
+        entity_id:
+          - group.group_circadian_lights
 
     - service: script.pushover_engine
       data_template:
@@ -77,5 +74,3 @@
         priority: 0
         sound: bike
         title: "HA System"
-
-#  - service: shell_command.meek_toilet_nightscene_off

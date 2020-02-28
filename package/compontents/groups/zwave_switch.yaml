@@ -1,0 +1,19 @@
+###########################################################################################
+#
+# GROUP
+#
+# https://www.home-assistant.io/integrations/group/
+#
+###########################################################################################
+---
+group_zwave_switches:
+  entities:
+    - switch.node_2_switch
+    - switch.node_5_switch
+    - switch.node_6_switch
+    - switch.node_7_switch
+    - switch.node_8_switch
+    - switch.node_9_switch
+    - switch.node_3_switch
+    - switch.node_4_switch
+    - switch.node_10_switch

@@ -42,3 +42,9 @@ group.group_circadian_lights:
   templates:
     icon: mdi:group
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+    
+group.group_zwave_switches:
+  friendly_name: "Group Zwave switches"
+  templates:
+    icon: mdi:group
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';

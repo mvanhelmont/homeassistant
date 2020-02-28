@@ -11,9 +11,7 @@
     entity_id: binary_sensor.sensor_manual_family_home
 
   action:
-    service_template: "{{ 'switch.turn_on' if is_state('binary_sensor.sensor_manual_family_home', 'on') else 'switch.turn_off' }}"
+    service_template: "{{ 'homeassistant.turn_on' if is_state('binary_sensor.sensor_manual_family_home', 'on') else 'homeassistant.turn_off' }}"
     data:
       entity_id:
-        - switch.node_5_switch
-        - switch.node_6_switch
-        - switch.node_7_switch
+        - group.group_zwave_switches
