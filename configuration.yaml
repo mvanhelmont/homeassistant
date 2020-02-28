@@ -79,3 +79,4 @@ notify: !include_dir_list package/compontents/configs/notify
 script: !include_dir_merge_named package/scripts
 sensor: !include_dir_list package/compontents/sensors
 switch: !include_dir_list package/compontents/switches
+timer: !include_dir_merge_named package/compontents/timer
