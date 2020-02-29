@@ -195,7 +195,6 @@ appletv_kingsday:
 #
 ###########################################################################################
 
-
 appletv_christmas:
   alias: "AppleTV Christmas Light Scene"
   sequence:
