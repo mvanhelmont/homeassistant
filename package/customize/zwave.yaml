@@ -551,7 +551,7 @@ sensor.node_9_sourcenodeid:
 sensor.node_9_voltage:
   friendly_name: "Neo Switch Hall Voltage"
 
-switch.node_8_switch:
+switch.node_9_switch:
   friendly_name: "Neo Switch Hall Switch"
   templates:
     icon: mdi:power-socket-eu

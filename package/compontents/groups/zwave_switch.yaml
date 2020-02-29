@@ -8,12 +8,12 @@
 ---
 group_zwave_switches:
   entities:
-    - switch.node_2_switch # iMac # iMac
-    - switch.node_3_switch # Diningroom # Diningroom
-    - switch.node_4_switch # Toog # Toog
-    - switch.node_5_switch # Kay # Kay
-    - switch.node_6_switch # Peter # Peter
-    - switch.node_7_switch # Coffee # Coffee
-#    - switch.node_8_switch # Bank # Bank
-    - switch.node_8_switch # Hallway # Hallway
-    - switch.node_10_switch # Bedroom # Bedroom
+    - switch.node_2_switch # iMac
+    - switch.node_3_switch # Diningroom
+    - switch.node_4_switch # Toog
+    - switch.node_5_switch # Kay
+    - switch.node_6_switch # Peter
+    - switch.node_7_switch # Coffee
+#    - switch.node_8_switch # Bank
+    - switch.node_8_switch # Hallway
+    - switch.node_10_switch # Bedroom
