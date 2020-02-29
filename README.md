@@ -1,6 +1,6 @@
 # homeassistant
 
-Home Assistant Backup
+This is my Home Assistant Github. Here i store my whole configuration files in case my system crash...
 
 I have a nice apartment in Amsterdam and love automation. So i started first with Domoticz. A great open source platform to learn how to automate my house. Now i'm using Home Assistant. More powerful.
 
@@ -33,7 +33,7 @@ Working on all YAML scripts to add tags to it, so i can search in ATOM on tags. 
 
 - TP-Link Deco M5 - https://www.tp-link.com/en/home-networking/deco/deco-m5/
 
-Everything is add in Home Assistant. I shared my configuration so you can learn from it.
+Everything is added in Home Assistant. I shared my configuration so you can learn from it.
 Also when you see improvements let me know... I still learning :D
 
 ToDo: (to add in HA)
