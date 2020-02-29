@@ -6,6 +6,7 @@
 
 - alias: "System - FKB Screen On Off"
   trigger:
+    
     - platform: state
       entity_id: binary_sensor.node_17
 
