@@ -2,9 +2,12 @@
 
 Home Assistant Backup
 
-I have a nice appartment in Amsterdam and love automation. So i started first with Domoticz. A great open source platform to learn how to auotmate my house. Later i switched to Home Assistant.
+I have a nice apartment in Amsterdam and love automation. So i started first with Domoticz. A great open source platform to learn how to automate my house. Now i'm using Home Assistant. More powerful.
 
-My hardware:
+To edit my configuration i use ATOM https://atom.io. Can fetch, pull, push all my changes to Github. on HA Server i pull the new data back.
+Working on all YAML scripts to add tags to it, so i can search in ATOM on tags. Must faster way to edit more YAML files.
+
+**My hardware:**
 - Milight Hub self build - https://github.com/sidoh/esp8266_milight_hub
 
 - P1 Monitor running on RPi3 - https://www.ztatz.nl
