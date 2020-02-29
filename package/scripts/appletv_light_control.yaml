@@ -40,6 +40,12 @@ appletv_normal:
         brightness_pct: 100
         effect: 0
 
+###########################################################################################
+#
+# BIRTHDAY
+#
+###########################################################################################
+
 appletv_birthday:
   alias: "AppleTV Birthday Light Scene"
   sequence:
@@ -78,6 +84,12 @@ appletv_birthday:
         entity_id: light.balcony
         brightness_pct: 100
         effect: 0
+
+###########################################################################################
+#
+# HALLOWEEN
+#
+###########################################################################################
 
 appletv_halloween:
   alias: "AppleTV Halloween Light Scene"
@@ -122,6 +134,12 @@ appletv_halloween:
       data:
         brightness_pct: 100
         effect: 0
+
+###########################################################################################
+#
+# KINGSDAY
+#
+###########################################################################################
 
 appletv_kingsday:
   alias: "AppleTV Kingsday Light Scene"
@@ -170,6 +188,13 @@ appletv_kingsday:
         entity_id: light.balcony
         brightness_pct: 100
         effect: 0
+
+###########################################################################################
+#
+# CHRISTMAS
+#
+###########################################################################################
+
 
 appletv_christmas:
   alias: "AppleTV Christmas Light Scene"

@@ -24,6 +24,12 @@ evening_normal:
         kelvin: 2800
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
+###########################################################################################
+#
+# BIRTHDAY
+#
+###########################################################################################
+
 evening_birthday:
   alias: "Evening Birthday Light Scene"
   sequence:
@@ -47,6 +53,12 @@ evening_birthday:
         entity_id: light.balcony
         brightness_pct: 100
         effect: 0
+
+###########################################################################################
+#
+# HALLOWEEN
+#
+###########################################################################################
 
 evening_halloween:
   alias: "Evening Halloween Light Scene"
@@ -76,6 +88,12 @@ evening_halloween:
         entity_id: light.balcony
         brightness_pct: 100
         effect: 0
+
+###########################################################################################
+#
+# KINGSDAY
+#
+###########################################################################################
 
 evening_kingsday:
   alias: "Evening Kingsday Light Scene"
@@ -109,6 +127,12 @@ evening_kingsday:
         entity_id: light.balcony
         brightness_pct: 100
         effect: 0
+
+###########################################################################################
+#
+# CHRISTMAS
+#
+###########################################################################################
 
 evening_christmas:
   alias: "Evening Christmas Light Scene"

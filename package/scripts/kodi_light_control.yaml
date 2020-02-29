@@ -37,6 +37,12 @@ kodi_normal:
         color_name: blue
         brightness_pct: 100
 
+###########################################################################################
+#
+# BIRTHDAY
+#
+###########################################################################################
+
 kodi_birthday:
   alias: "Kodi Birthday Light Scene"
   sequence:
@@ -72,6 +78,12 @@ kodi_birthday:
         entity_id: light.balcony
         brightness_pct: 100
         effect: 0
+
+###########################################################################################
+#
+# HALLOWEEN
+#
+###########################################################################################
 
 kodi_halloween:
   alias: "Kodi Halloween Light Scene"
@@ -115,6 +127,12 @@ kodi_halloween:
         entity_id: light.balcony
         color_name: blue
         brightness_pct: 100
+
+###########################################################################################
+#
+# KINGSDAY
+#
+###########################################################################################
 
 kodi_kingsday:
   alias: "Kodi Kingsday Light Scene"
@@ -160,6 +178,12 @@ kodi_kingsday:
         entity_id: light.balcony
         brightness_pct: 100
         effect: 0
+
+###########################################################################################
+#
+# CHRISTMAS
+#
+###########################################################################################
 
 kodi_christmas:
   alias: "Kodi Christmas Light Scene"

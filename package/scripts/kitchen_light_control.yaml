@@ -19,6 +19,12 @@ kitchen_normal_turn_on:
           {% else %}0
           {% endif %}
 
+###########################################################################################
+#
+# HALLOWEEN
+#
+###########################################################################################
+
 kitchen_halloween_turn_on:
   alias: "Kitchen Halloween Turn On"
   sequence:
@@ -32,6 +38,12 @@ kitchen_halloween_turn_on:
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
+
+###########################################################################################
+#
+# CHRISTMAS
+#
+###########################################################################################
 
 kitchen_christmas_turn_on:
   alias: "Kitchen Christmas Turn On"
@@ -62,6 +74,12 @@ kitchen_christmas_turn_on:
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
+
+###########################################################################################
+#
+# KINGSDAY
+#
+###########################################################################################
 
 kitchen_kingsday_turn_on:
   alias: "Kitchen Kingsday Turn On"
@@ -101,6 +119,12 @@ kitchen_kingsday_turn_on:
           {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
+
+###########################################################################################
+#
+# BIRTHDAY
+#
+###########################################################################################
 
 kitchen_birthday_turn_on:
   alias: "Kitchen Birthday Turn On"

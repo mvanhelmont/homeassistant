@@ -4,6 +4,12 @@
 #
 ###########################################################################################
 
+###########################################################################################
+#
+# PAUSED
+#
+###########################################################################################
+
 appletv_control_paused:
   alias: "AppleTV Control Paused Scene"
   sequence:
@@ -28,6 +34,12 @@ appletv_control_paused:
       data_template:
         entity_id: light.dressoir_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
+
+###########################################################################################
+#
+# PLAYING
+#
+###########################################################################################
 
 appletv_control_playing:
   alias: "AppleTV Control Playing Scene"
@@ -71,6 +83,11 @@ appletv_control_playing:
         entity_id: light.toilet_all
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_20', 'on') else 0 }}"
 
+###########################################################################################
+#
+# IDLE
+#
+###########################################################################################
 
 appletv_control_idle:
   alias: "AppleTV Control Idle Scene"

@@ -4,6 +4,12 @@
 #
 ###########################################################################################
 
+###########################################################################################
+#
+# PAUSED
+#
+###########################################################################################
+
 kodi_control_paused:
   alias: "Kodi Control Paused Scene"
   sequence:
@@ -28,7 +34,12 @@ kodi_control_paused:
         entity_id: light.dressoir_all
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
-# KODI IS PLAYING
+###########################################################################################
+#
+# PLAYING
+#
+###########################################################################################
+
 kodi_control_playing:
   alias: "Kodi Control Playing Scene"
   sequence:
@@ -63,7 +74,12 @@ kodi_control_playing:
         entity_id: light.toilet_all
         brightness_pct: "{{ 100 if is_state('binary_sensor.node_20', 'on') else 0 }}"
 
-# KODI IS IDLE
+###########################################################################################
+#
+# IDLE
+#
+###########################################################################################
+
 kodi_control_idle:
   alias: "Kodi Control Idle Scene"
   sequence:
