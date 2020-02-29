@@ -9,19 +9,7 @@
 
     platform: state
     entity_id: switch.meek_cooking
-#    to: "on"
 
   action:
     service_template: "{{ 'switch.turn_on' if is_state('switch.meek_cooking', 'on') else 'switch.turn_off' }}"
     entity_id: switch.newkaku_011fad02_c
-
-#- alias: 'Switch - Kaku Cooker Off'
-#  trigger:
-
-#    platform: state
-#    entity_id: switch.meek_cooking
-#    to: "off"
-
-#  action:
-#    service: switch.turn_off
-#    entity_id: switch.newkaku_011fad02_c
