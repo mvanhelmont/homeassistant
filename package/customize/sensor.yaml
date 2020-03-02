@@ -33,13 +33,13 @@ sensor.harmony:
 ###########################################################################################
 
 sensor.corona_virus_confirmed:
-    icon:bacteria-outline
+  icon: mdi:bacteria-outline
 
 sensor.corona_virus_death:
-    icon:bacteria-outline
+  icon: mdi:bacteria-outline
 
 sensor.corona_virus_recovered:
-    icon:bacteria-outline
+  icon: mdi:bacteria-outline
 
 ###########################################################################################
 #
