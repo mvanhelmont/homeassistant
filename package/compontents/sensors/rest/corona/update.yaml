@@ -1,0 +1,12 @@
+###########################################################################################
+#
+# SENSOR REST
+#
+# https://www.home-assistant.io/integrations/rest/
+#
+########################################################################################### 
+---
+platform: rest
+resource: "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/arcgis/rest/services/ncov_cases/FeatureServer/1/query?f=json&where=(Confirmed%20%3E%200)%20AND%20(Country_Region%3D%27Netherlands%27)&returnGeometry=false&spatialRel=esriSpatialRelIntersects&outFields=*&orderByFields=Confirmed%20desc%2CCountry_Region%20asc%2CProvince_State%20asc&outSR=102100&resultOffset=0&resultRecordCount=250&cacheHint=true"
+name: Corona Virus Update
+value_template: "{{ value_json.features[0].attributes.Last_Update |replace ('000', '') | int | timestamp_custom('%H:%M %d.%m.%Y')}}"
