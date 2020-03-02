@@ -1,0 +1,21 @@
+###########################################################################################
+#
+# SENSOR REST
+#
+# https://www.home-assistant.io/integrations/rest/
+#
+###########################################################################################
+---
+platform: rest
+resource: http://192.168.100.70/about
+name: "Milight About"
+value_template: "{{ value_json.version }}"
+json_attributes_path: "$.[0]"
+json_attributes:
+  - "firmware"
+  - "version"
+  - "ip_address"
+  - "reset_reason"
+  - "variant"
+  - "free_heap"
+  - "arduino_version"
