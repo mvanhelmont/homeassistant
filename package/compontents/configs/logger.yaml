@@ -12,5 +12,6 @@ logs:
   homeassistant.components.zwave: info
   homeassistant.helpers.service: debug
   homeassistant.components.pushover.notify: debug
+  homeassistant.loader]: info
 
 #  pyatv: debug
