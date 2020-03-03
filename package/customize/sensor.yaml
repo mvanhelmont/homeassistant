@@ -32,14 +32,23 @@ sensor.harmony:
 #
 ###########################################################################################
 
-sensor.corona_virus_confirmed:
-  icon: mdi:bacteria-outline
+sensor.netherlands_coronavirus_confirmed:
+  unit_of_measurement:
+  
+sensor.netherlands_coronavirus_deaths:
+  unit_of_measurement:
 
-sensor.corona_virus_death:
-  icon: mdi:bacteria-outline
+sensor.netherlands_coronavirus_recovered:
+  unit_of_measurement:
 
-sensor.corona_virus_recovered:
-  icon: mdi:bacteria-outline
+sensor.worldwide_coronavirus_confirmed:
+  unit_of_measurement:
+
+sensor.worldwide_coronavirus_deaths:
+  unit_of_measurement:
+
+sensor.worldwide_coronavirus_recovered:
+  unit_of_measurement:
 
 ###########################################################################################
 #
