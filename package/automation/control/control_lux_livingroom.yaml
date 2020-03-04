@@ -30,6 +30,12 @@
       entity_id: sensor.node_19_luminance
       below: 160
 
+    - condition: state
+      entity_id: binary_sensor.node_18
+      state: 'off'
+      for:
+        minutes: 10
+
   action:
     - service: light.turn_on
       entity_id:
