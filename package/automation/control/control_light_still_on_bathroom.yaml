@@ -26,6 +26,9 @@
     - service: switch.turn_off
       entity_id: switch.newkaku_01616a32_a
 
+    - service: fan.turn_off
+      entity_id: fan.afzuiging_badkamer
+
     - service: script.pushover_engine
       data_template:
         message: "Nobody in bathroom for 5 minutes. Turned off bathroom switch and light"
