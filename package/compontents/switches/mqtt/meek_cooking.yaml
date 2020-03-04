@@ -7,10 +7,13 @@
 ###########################################################################################
 ---
 platform: mqtt
-command_topic: "home-assistant/cooking/switch"
-state_topic: "home-assistant/cooking/switch"
-payload_on: "ON"
-payload_off: "OFF"
-state_on: "ON"
-state_off: "OFF"
+command_topic: "homeassistant/cooking/switch"
+state_topic: "homeassistant/cooking/switch"
+payload_on: "1"
+payload_off: "0"
+state_on: "1"
+state_off: "0"
 name: "Meek Cooking"
+optimistic: false
+qos: 0
+retain: true

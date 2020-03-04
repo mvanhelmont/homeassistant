@@ -72,17 +72,17 @@ switch.meek_bedroom:
 
 switch.meek_kitchen_seeling:
   icon: mdi:nintendo-switch
-  friendly_name: "Kitchen"
+  friendly_name: "MT Kitchen"
   homebridge_name: "Kitchen Switch"
 
 switch.meek_kitchen_sink:
   icon: mdi:nintendo-switch
-  friendly_name: "Kitchen"
-  homebridge_name: "Kitchen Switch"
+  friendly_name: "MT Sink"
+  homebridge_name: "Sink Switch"
 
 switch.meek_cooking:
   icon: mdi:nintendo-switch
-  friendly_name: "Cooking"
+  friendly_name: "MT Cooking"
   homebridge_name: "Cooking Switch"
 
 ###########################################################################################
