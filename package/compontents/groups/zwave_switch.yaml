@@ -14,6 +14,6 @@ group_zwave_switches:
     - switch.node_5_switch # Kay
     - switch.node_6_switch # Peter
     - switch.node_7_switch # Coffee
-#    - switch.node_8_switch # Bank
-    - switch.node_8_switch # Hallway
+    - switch.node_8_switch # Bank
+    - switch.node_9_switch # Hallway
     - switch.node_10_switch # Bedroom

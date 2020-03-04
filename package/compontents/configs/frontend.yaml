@@ -6,10 +6,10 @@
 #
 ###########################################################################################
 ---
-extra_html_url:
-  - /local/custom_ui/state-card-custom-fanspeed.html
-extra_html_url_es5:
-  - /local/custom_ui/state-card-custom-fanspeed.html
+#extra_html_url:
+#  - /local/custom_ui/state-card-custom-fanspeed.html
+#extra_html_url_es5:
+#  - /local/custom_ui/state-card-custom-fanspeed.html
 themes: !include_dir_merge_named /config/package/compontents/themes
 
 #themes: !include_dir_merge_named /config/themes
