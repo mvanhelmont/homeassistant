@@ -38,7 +38,7 @@
         brightness_pct: 1
         effect: 0
 
-    - service: input_boolean.turn_off
+    - service: switch.turn_off
       entity_id: switch.mqtt_scene_sleeping
 
     - service: switch.turn_off
