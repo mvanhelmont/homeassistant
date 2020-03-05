@@ -36,6 +36,89 @@ switch.tv:
 
 ###########################################################################################
 #
+# SWITCH.MQTT SCENES
+#
+###########################################################################################
+
+switch.mqtt_scene_appletv:
+  friendly_name: "AppleTV"
+  homebridge_name: "AppleTV"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_cooking:
+  friendly_name: "Cooking"
+  homebridge_name: "Cooking"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_disco:
+  friendly_name: "Disco"
+  homebridge_name: "Disco"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_evening:
+  friendly_name: "Evening"
+  homebridge_name: "Evening"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_goodnight:
+  friendly_name: "Goodnight"
+  homebridge_name: "Goodnight"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_guests:
+  friendly_name: "Guest"
+  homebridge_name: "Guests"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_kodi:
+  friendly_name: "Kodi"
+  homebridge_name: "Kodi"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_tv:
+  friendly_name: "TV"
+  homebridge_name: "TV"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_daytime:
+  friendly_name: "Daytime"
+  homebridge_name: "Daytime"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_sexy:
+  friendly_name: "Disco"
+  homebridge_name: "Disco"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_scene_sleeping:
+  friendly_name: "Sleeping"
+  homebridge_name: "Sleeping"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+###########################################################################################
+#
 # SWITCH.MEEK
 #
 ###########################################################################################
