@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: input_boolean.scene_sleeping
+    entity_id: switch.mqtt_scene_sleeping
     to: "on"
 
   action:
@@ -39,7 +39,7 @@
         effect: 0
 
     - service: input_boolean.turn_off
-      entity_id: input_boolean.scene_sleeping
+      entity_id: switch.mqtt_scene_sleeping
 
     - service: switch.turn_off
       entity_id: switch.newkaku_01616a32_a
