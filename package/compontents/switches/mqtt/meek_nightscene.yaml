@@ -1,0 +1,18 @@
+###########################################################################################
+#
+# MQTT SWITCH
+#
+# https://www.home-assistant.io/integrations/switch.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+command_topic: "homeassistant/meeknightscene/switch"
+state_topic: "homeassistant/meeknightscene/switch"
+payload_on: "1"
+payload_off: "0"
+state_on: "1"
+state_off: "0"
+name: "Meek Night Scene"
+optimistic: false
+qos: 0
