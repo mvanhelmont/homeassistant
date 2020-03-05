@@ -1,0 +1,19 @@
+###########################################################################################
+#
+# MQTT SWITCH
+#
+# https://www.home-assistant.io/integrations/switch.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+command_topic: "homeassistant/scenesexy/switch"
+state_topic: "homeassistant/scenesexy/switch"
+payload_on: "1"
+payload_off: "0"
+state_on: "1"
+state_off: "0"
+name: "MQTT Scene Evening"
+optimistic: false
+qos: 0
+retain: false
