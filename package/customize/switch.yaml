@@ -42,32 +42,32 @@ switch.tv:
 
 switch.meek_toilet:
   icon: mdi:nintendo-switch
-  friendly_name: "Toilet"
+  friendly_name: "MT Toilet"
   homebridge_name: "Toilet Switch"
 
 switch.meek_dressoir:
   icon: mdi:nintendo-switch
-  friendly_name: "Dressoir"
+  friendly_name: "MT Dressoir"
   homebridge_name: "Dressoir Switch"
 
 switch.meek_balcony:
   icon: mdi:nintendo-switch
-  friendly_name: "Balcony"
+  friendly_name: "MT Balcony"
   homebridge_name: "Balcony Switch"
 
 switch.meek_hallway:
   icon: mdi:nintendo-switch
-  friendly_name: "Hallway"
+  friendly_name: "MT Hallway"
   homebridge_name: "Hallway Switch"
 
 switch.meek_bathroom:
   icon: mdi:nintendo-switch
-  friendly_name: "Bathroom"
+  friendly_name: "MT Bathroom"
   homebridge_name: "Bathroom Switch"
 
 switch.meek_bedroom:
   icon: mdi:nintendo-switch
-  friendly_name: "Bedroom"
+  friendly_name: "MT Bedroom"
   homebridge_name: "Bedroom Switch"
 
 switch.meek_kitchen_seeling:
