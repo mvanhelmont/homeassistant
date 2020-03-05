@@ -33,9 +33,9 @@
           - input_boolean.lux_level_low
           - input_boolean.nest_disable_control
 
-        - service: switch.turn_off
-          data:
-            entity_id:
+    - service: switch.turn_off
+      data:
+        entity_id:
           - switch.mqtt_scene_appletv
           - switch.mqtt_scene_cooking
           - switch.mqtt_scene_daytime
