@@ -39,6 +39,9 @@
     - service: input_boolean.turn_on
       entity_id: input_boolean.scene_appletv
 
+    - service: switch.turn_on
+      entity_id: switch.mqtt_scene_appletv
+
     - service: input_boolean.turn_off
       data:
         entity_id:
@@ -48,6 +51,20 @@
           - input_boolean.scene_kodi
           - input_boolean.scene_sexy
           - input_boolean.lux_level_low
+
+    - service: switch.turn_off
+      data:
+        entity_id:
+          - switch.mqtt_scene_cooking
+          - switch.mqtt_scene_daytime
+          - switch.mqtt_scene_disco
+          - switch.mqtt_scene_evening
+          - switch.mqtt_scene_goodnight
+          - switch.mqtt_scene_guests
+          - switch.mqtt_scene_kodi
+          - switch.mqtt_scene_sexy
+          - switch.mqtt_scene_sleeping
+          - switch.mqtt_scene_tv
 
     - service: light.turn_on
       data_template:
