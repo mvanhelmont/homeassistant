@@ -33,6 +33,19 @@
           - input_boolean.lux_level_low
           - input_boolean.nest_disable_control
 
+    - service: switch.turn_off
+      data:
+        entity_id:
+          - switch.mqtt_scene_appletv
+          - switch.mqtt_scene_cooking
+          - switch.mqtt_scene_daytime
+          - switch.mqtt_scene_disco
+          - switch.mqtt_scene_evening
+          - switch.mqtt_scene_guests
+          - switch.mqtt_scene_sexy
+          - switch.mqtt_scene_sleeping
+          - switch.mqtt_scene_tv
+
     - service: remote.turn_off
       entity_id: remote.logitech_harmony
 

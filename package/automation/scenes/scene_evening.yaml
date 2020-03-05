@@ -49,7 +49,7 @@
       entity_id: input_boolean.scene_evening
 
     - service: switch.turn_on
-      data: switch.mqtt_scene_evening
+      entity_id: switch.mqtt_scene_evening
 
     - service: input_boolean.turn_off
       data:
