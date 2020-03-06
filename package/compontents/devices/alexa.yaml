@@ -83,12 +83,12 @@ smart_home:
       - sensor.node_19_temperature
       - sensor.node_20_temperature
 # KaKu SWITCHES
-      - switch.newkaku_0114ef92_b
-      - switch.newkaku_0114ef92_c
-      - switch.newkaku_011fad02_b
-      - switch.newkaku_011fad02_c
-      - switch.newkaku_011fdd46_b
-      - switch.newkaku_011fdd46_c
-      - switch.newkaku_01074522_a
-      - switch.newkaku_01616a32_a
-      - switch.newkaku_014e5906_a
+#      - switch.newkaku_0114ef92_b
+#      - switch.newkaku_0114ef92_c
+#      - switch.newkaku_011fad02_b
+#      - switch.newkaku_011fad02_c
+#      - switch.newkaku_011fdd46_b
+#      - switch.newkaku_011fdd46_c
+#      - switch.newkaku_01074522_a
+#      - switch.newkaku_01616a32_a
+#      - switch.newkaku_014e5906_a
