@@ -12,6 +12,7 @@ smart_home:
 #  client_secret: !secret alexa_client_secret_smart_home
   filter:
     include_entities:
+# Lights
       - light.livingroom_all
       - light.dressoir_all
       - light.hallway
@@ -22,12 +23,31 @@ smart_home:
       - light.bathroom_all
       - light.toilet_all
       - light.nanoleaf
+# Scenes
+      - switch.mqtt_scene_sleeping
+      - switch.mqtt_scene_sexy
+      - switch.mqtt_scene_kodi
+      - switch.mqtt_scene_goodnight
+      - switch.mqtt_scene_appletv
+      - switch.mqtt_scene_daytime
+      - switch.mqtt_scene_tv
+      - switch.mqtt_scene_evening
+      - input_boolean.switch_kay_leren
+# Logitech Activities
       - switch.airplay
       - switch.iptv
       - switch.kodi
       - switch.tv
       - switch.appletv
+# NEST
       - climate.entryway
+# MEEK Switches
+      - switch.toilet
+      - switch.hallway
+# Device trackers
+      - device_tracker.geofency_peter
+      - device_tracker.geofency_kay
+# Temperature sensors
       - sensor.node_11_temperature
       - sensor.node_13_temperature
       - sensor.node_14_temperature
@@ -37,26 +57,14 @@ smart_home:
       - sensor.node_18_temperature
       - sensor.node_19_temperature
       - sensor.node_20_temperature
-      - switch.newkaku_01074522_a
+# KaKu SWITCHES
       - switch.newkaku_0114ef92_b
       - switch.newkaku_0114ef92_c
       - switch.newkaku_011fad02_b
       - switch.newkaku_011fad02_c
       - switch.newkaku_011fdd46_b
       - switch.newkaku_011fdd46_c
+      - switch.newkaku_01074522_a
       - switch.newkaku_014ad3ba_a
       - switch.newkaku_01616a32_a
-      - switch.toilet
-      - switch.hallway
-      - input_boolean.switch_kay_leren
       - switch.newkaku_014e5906_a
-      - device_tracker.geofency_peter
-      - device_tracker.geofency_kay
-      - switch.mqtt_scene_sleeping
-      - switch.mqtt_scene_sexy
-      - switch.mqtt_scene_kodi
-      - switch.mqtt_scene_goodnight
-      - switch.mqtt_scene_appletv
-      - switch.mqtt_scene_daytime
-      - switch.mqtt_scene_tv
-      - switch.mqtt_scene_evening
