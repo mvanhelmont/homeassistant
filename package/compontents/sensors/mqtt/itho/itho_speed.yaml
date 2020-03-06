@@ -4,11 +4,11 @@
 #
 # https://www.home-assistant.io/integrations/sensor.mqtt/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: mqtt
 name: "ITHO Speed"
-state_topic: "homeassistant/ITHO/Fan/State"
+state_topic: "ITHO/Fan/State"
 value_template: >-
   {% if value|float == 0 %}
     Standby

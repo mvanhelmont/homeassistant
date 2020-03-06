@@ -4,10 +4,10 @@
 #
 # https://www.home-assistant.io/integrations/sensor.mqtt/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: mqtt
 name: "ITHO Tijd"
-state_topic: "homeassistant/ITHO/Fan/Timer"
+state_topic: "ITHO/Fan/Timer"
 value_template: "{{ value }}"
 unit_of_measurement: "s"
