@@ -32,6 +32,8 @@ smart_home:
       - switch.mqtt_scene_daytime
       - switch.mqtt_scene_tv
       - switch.mqtt_scene_evening
+      - switch.mqtt_scene_disco
+      - switch.mqtt_scene_cooking
       - input_boolean.switch_kay_leren
 # Logitech Activities
       - switch.airplay
