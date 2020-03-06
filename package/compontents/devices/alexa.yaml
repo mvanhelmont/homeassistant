@@ -26,25 +26,25 @@ smart_home:
       - light.toilet_all
       - light.nanoleaf
       - light.lenovo_full_kiosk
-# Motion Sensors
-      - binary_sensor.node_14
-      - binary_sensor.node_15
-      - binary_sensor.node_16
-      - binary_sensor.node_17
-      - binary_sensor.node_18
-      - binary_sensor.node_19
-      - binary_sensor.node_20
+# Motion Sensors - Not seen as motion sensors
+#      - binary_sensor.node_14
+#      - binary_sensor.node_15
+#      - binary_sensor.node_16
+#      - binary_sensor.node_17
+#      - binary_sensor.node_18
+#      - binary_sensor.node_19
+#      - binary_sensor.node_20
 
-# Nest Protect
-      - sensor.bedroom_nest_protect_co_status
-      - sensor.bedroom_nest_protect_smoke_status
-      - sensor.dining_room_nest_protect_co_status
-      - sensor.dining_room_nest_protect_smoke_status
-      - sensor.living_room_nest_protect_co_status
-      - sensor.living_room_nest_protect_smoke_status
-      - sensor.nest_protect_bedroom_status_homekit
-      - sensor.nest_protect_diningroom_status_homekit
-      - sensor.nest_protect_livingroom_status_homekit
+# Nest Protect - Not seen as smoke sensors
+#      - sensor.bedroom_nest_protect_co_status
+#      - sensor.bedroom_nest_protect_smoke_status
+#      - sensor.dining_room_nest_protect_co_status
+#      - sensor.dining_room_nest_protect_smoke_status
+#      - sensor.living_room_nest_protect_co_status
+#      - sensor.living_room_nest_protect_smoke_status
+#      - sensor.nest_protect_bedroom_status_homekit
+#      - sensor.nest_protect_diningroom_status_homekit
+#      - sensor.nest_protect_livingroom_status_homekit
 
 # Scenes
       - switch.mqtt_scene_sleeping
@@ -69,9 +69,9 @@ smart_home:
 # MEEK Switches
       - switch.toilet
       - switch.hallway
-# Device trackers
-      - binary_sensor.manual_kay_home
-      - binary_sensor.manual_peter_home
+# Device trackers - IS NOT SEEN AS TRACKER BUT AS CAMERA
+#      - binary_sensor.manual_kay_home
+#      - binary_sensor.manual_peter_home
 # Temperature sensors
       - sensor.node_11_temperature
       - sensor.node_13_temperature
