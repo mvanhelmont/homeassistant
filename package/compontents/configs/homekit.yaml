@@ -1,9 +1,9 @@
 ###########################################################################################
-#                                                  
+#
 # HOMEKIT
 #
-# https://www.home-assistant.io/integrations/homekit/                      
-#                                                  
+# https://www.home-assistant.io/integrations/homekit/
+#
 ###########################################################################################
 ---
 auto_start: "false"
@@ -11,17 +11,10 @@ filter:
   include_domains:
     - climate
   include_entities:
-    - switch.mqtt_scene_sleeping
-    - switch.mqtt_scene_sexy
-    - switch.mqtt_scene_disco
     - input_boolean.nest_disable_control
-    - switch.mqtt_scene_guests
-    - switch.mqtt_scene_cooking
-    - switch.airplay
-    - switch.appletv
-    - switch.kodi
-    - switch.tv
-    - switch.kay_learning
+    - input_number.fullykiosk_brightness_slider
+
+# Motion Sensors
     - binary_sensor.node_14
     - binary_sensor.node_15
     - binary_sensor.node_16
@@ -29,6 +22,56 @@ filter:
     - binary_sensor.node_18
     - binary_sensor.node_19
     - binary_sensor.node_20
+
+# Nest Protect
+    - sensor.bedroom_nest_protect_co_status
+    - sensor.bedroom_nest_protect_smoke_status
+    - sensor.dining_room_nest_protect_co_status
+    - sensor.dining_room_nest_protect_smoke_status
+    - sensor.living_room_nest_protect_co_status
+    - sensor.living_room_nest_protect_smoke_status
+    - sensor.nest_protect_bedroom_status_homekit
+    - sensor.nest_protect_diningroom_status_homekit
+    - sensor.nest_protect_livingroom_status_homekit
+
+# Lights
+    - light.livingroom_all
+    - light.dressoir_all
+    - light.hallway
+    - light.balcony
+    - light.kitchen_all
+    - light.sink_all
+    - light.bedroom_all
+    - light.bathroom_all
+    - light.toilet_all
+    - light.nanoleaf
+    - light.lenovo_full_kiosk
+# Scenes
+    - switch.mqtt_scene_sleeping
+    - switch.mqtt_scene_sexy
+    - switch.mqtt_scene_kodi
+    - switch.mqtt_scene_goodnight
+    - switch.mqtt_scene_appletv
+    - switch.mqtt_scene_daytime
+    - switch.mqtt_scene_tv
+    - switch.mqtt_scene_evening
+    - switch.mqtt_scene_disco
+    - switch.mqtt_scene_cooking
+    - switch.kay_learning
+# Logitech Activities
+    - switch.airplay
+    - switch.kodi
+    - switch.tv
+    - switch.appletv
+# NEST
+    - climate.entryway
+# MEEK Switches
+    - switch.toilet
+    - switch.hallway
+# Device trackers
+    - binary_sensor.manual_kay_home
+    - binary_sensor.manual_peter_home
+# Temperature sensors
     - sensor.node_11_temperature
     - sensor.node_13_temperature
     - sensor.node_14_temperature
@@ -38,30 +81,18 @@ filter:
     - sensor.node_18_temperature
     - sensor.node_19_temperature
     - sensor.node_20_temperature
-    - light.livingroom_all
-    - light.dressoir_all
-    - light.hallway
-    - light.balcony
-    - light.toilet_all
-    - light.bedroom_all
-    - light.bathroom_all
-    - light.kitchen_all
-    - light.sink_all
-    - binary_sensor.manual_kay_home
-    - binary_sensor.manual_peter_home
-    - switch.mqtt_scene_sleeping
-    - switch.mqtt_scene_goodnight 
-    - sensor.bedroom_nest_protect_co_status
-    - sensor.bedroom_nest_protect_smoke_status
-    - sensor.dining_room_nest_protect_co_status
-    - sensor.dining_room_nest_protect_smoke_status
-    - sensor.living_room_nest_protect_co_status
-    - sensor.living_room_nest_protect_smoke_status
-    - light.lenovo_full_kiosk
-    - input_number.fullykiosk_brightness_slider
-    - sensor.nest_protect_bedroom_status_homekit
-    - sensor.nest_protect_diningroom_status_homekit
-    - sensor.nest_protect_livingroom_status_homekit
+# KaKu SWITCHES
+    - switch.newkaku_0114ef92_b
+    - switch.newkaku_0114ef92_c
+    - switch.newkaku_011fad02_b
+    - switch.newkaku_011fad02_c
+    - switch.newkaku_011fdd46_b
+    - switch.newkaku_011fdd46_c
+    - switch.newkaku_01074522_a
+    - switch.newkaku_014ad3ba_a
+    - switch.newkaku_01616a32_a
+    - switch.newkaku_014e5906_a
+
   exclude_entities:
     - binary_sensor.bedroom_nest_protect_online
     - binary_sensor.dining_room_nest_protect_online

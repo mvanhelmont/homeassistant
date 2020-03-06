@@ -12,6 +12,8 @@ smart_home:
 #  client_secret: !secret alexa_client_secret_smart_home
   filter:
     include_entities:
+      - input_boolean.nest_disable_control
+      - input_number.fullykiosk_brightness_slider
 # Lights
       - light.livingroom_all
       - light.dressoir_all
@@ -23,6 +25,27 @@ smart_home:
       - light.bathroom_all
       - light.toilet_all
       - light.nanoleaf
+      - light.lenovo_full_kiosk
+# Motion Sensors
+      - binary_sensor.node_14
+      - binary_sensor.node_15
+      - binary_sensor.node_16
+      - binary_sensor.node_17
+      - binary_sensor.node_18
+      - binary_sensor.node_19
+      - binary_sensor.node_20
+
+# Nest Protect
+      - sensor.bedroom_nest_protect_co_status
+      - sensor.bedroom_nest_protect_smoke_status
+      - sensor.dining_room_nest_protect_co_status
+      - sensor.dining_room_nest_protect_smoke_status
+      - sensor.living_room_nest_protect_co_status
+      - sensor.living_room_nest_protect_smoke_status
+      - sensor.nest_protect_bedroom_status_homekit
+      - sensor.nest_protect_diningroom_status_homekit
+      - sensor.nest_protect_livingroom_status_homekit
+
 # Scenes
       - switch.mqtt_scene_sleeping
       - switch.mqtt_scene_sexy
@@ -34,7 +57,7 @@ smart_home:
       - switch.mqtt_scene_evening
       - switch.mqtt_scene_disco
       - switch.mqtt_scene_cooking
-      - input_boolean.switch_kay_leren
+      - switch.kay_learning
 # Logitech Activities
       - switch.airplay
       - switch.iptv
@@ -47,8 +70,8 @@ smart_home:
       - switch.toilet
       - switch.hallway
 # Device trackers
-      - device_tracker.geofency_peter
-      - device_tracker.geofency_kay
+      - binary_sensor.manual_kay_home
+      - binary_sensor.manual_peter_home
 # Temperature sensors
       - sensor.node_11_temperature
       - sensor.node_13_temperature
