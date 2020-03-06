@@ -39,11 +39,6 @@
     - service: switch.turn_on
       entity_id: switch.mqtt_scene_appletv
 
-    - service: input_boolean.turn_off
-      data:
-        entity_id:
-          - input_boolean.lux_level_low
-
     - service: switch.turn_off
       data:
         entity_id:
@@ -57,6 +52,7 @@
           - switch.mqtt_scene_sexy
           - switch.mqtt_scene_sleeping
           - switch.mqtt_scene_tv
+          - switch.mqtt_lux_level_low
 
     - service: light.turn_on
       data_template:

@@ -24,8 +24,8 @@
     - service: input_boolean.turn_off
       data:
         entity_id:
-          - input_boolean.lux_level_low
-          - input_boolean.nest_disable_control
+          - switch.mqtt_lux_level_low
+          - switch.mqtt_disable_nest_control
 
     - service: switch.turn_off
       data:

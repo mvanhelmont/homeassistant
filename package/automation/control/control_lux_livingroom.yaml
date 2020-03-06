@@ -19,7 +19,7 @@
       state: "above_horizon"
 
     - condition: state
-      entity_id: input_boolean.lux_level_low
+      entity_id: switch.mqtt_lux_level_low
       state: "off"
 
     - condition: state
@@ -37,7 +37,7 @@
           state: 'on'
           for:
             seconds: 25
-            
+
         - condition: state
           entity_id: binary_sensor.node_19
           state: 'on'
@@ -53,8 +53,8 @@
         transition: 10
         brightness_pct: 75
 
-    - service: input_boolean.turn_on
-      entity_id: input_boolean.lux_level_low
+    - service: switch.turn_on
+      entity_id: switch.mqtt_lux_level_low
 
     - service: script.engine_say
       data_template:
@@ -80,7 +80,7 @@
       above: 161
 
     - condition: state
-      entity_id: input_boolean.lux_level_low
+      entity_id: switch.mqtt_lux_level_low
       state: "on"
 
     - condition: state
@@ -96,8 +96,8 @@
         transition: 10
         brightness_pct: 0
 
-    - service: input_boolean.turn_off
-      entity_id: input_boolean.lux_level_low
+    - service: switch.turn_off
+      entity_id: switch.mqtt_lux_level_low
 
     - service: script.engine_say
       data_template:

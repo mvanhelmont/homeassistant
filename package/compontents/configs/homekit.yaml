@@ -11,7 +11,6 @@ filter:
   include_domains:
     - climate
   include_entities:
-    - input_boolean.nest_disable_control
     - input_number.fullykiosk_brightness_slider
 
 # Motion Sensors
@@ -58,6 +57,7 @@ filter:
     - switch.mqtt_scene_disco
     - switch.mqtt_scene_cooking
     - switch.mqtt_kay_learning
+    - switch.mqtt_disable_nest_control
 # Logitech Activities
     - switch.airplay
     - switch.kodi

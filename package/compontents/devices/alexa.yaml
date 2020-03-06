@@ -12,7 +12,6 @@ smart_home:
 #  client_secret: !secret alexa_client_secret_smart_home
   filter:
     include_entities:
-      - input_boolean.nest_disable_control
       - input_number.fullykiosk_brightness_slider
 # Lights
       - light.livingroom_all
@@ -58,6 +57,7 @@ smart_home:
       - switch.mqtt_scene_disco
       - switch.mqtt_scene_cooking
       - switch.mqtt_kay_learning
+      - switch.mqtt_disable_nest_control
 # Logitech Activities
       - switch.airplay
       - switch.iptv
