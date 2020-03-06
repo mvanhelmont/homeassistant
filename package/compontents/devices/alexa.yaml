@@ -36,7 +36,7 @@ smart_home:
       - sensor.node_17_temperature
       - sensor.node_18_temperature
       - sensor.node_19_temperature
-      - sensor.node_20_temperature 
+      - sensor.node_20_temperature
       - switch.newkaku_01074522_a
       - switch.newkaku_0114ef92_b
       - switch.newkaku_0114ef92_c
@@ -52,12 +52,11 @@ smart_home:
       - switch.newkaku_014e5906_a
       - device_tracker.geofency_peter
       - device_tracker.geofency_kay
-      - input_boolean.scene_sleeping
-      - input_boolean.scene_sexy
-      - input_boolean.scene_kodi
-      - input_boolean.scene_iptv
-      - input_boolean.scene_goodnight
-      - input_boolean.scene_appletv
-      - input_boolean.scene_daylight
-      - input_boolean.scene_tv
-      - input_boolean.scene_evening
+      - switch.mqtt_scene_sleeping
+      - switch.mqtt_scene_sexy
+      - switch.mqtt_scene_kodi
+      - switch.mqtt_scene_goodnight
+      - switch.mqtt_scene_appletv
+      - switch.mqtt_scene_daytime
+      - switch.mqtt_scene_tv
+      - switch.mqtt_scene_evening

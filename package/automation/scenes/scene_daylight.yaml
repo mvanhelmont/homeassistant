@@ -19,7 +19,7 @@
       state: "above_horizon"
 
     - condition: state
-      entity_id: input_boolean.scene_daylight
+      entity_id: switch.mqtt_scene_daytime
       state: "off"
 
     - condition: state
@@ -27,21 +27,12 @@
       state: "on"
 
   action:
-    - service: input_boolean.turn_on
-      entity_id: input_boolean.scene_daylight
-
     - service: switch.turn_on
       entity_id: switch.mqtt_scene_daytime
 
     - service: input_boolean.turn_off
       data:
         entity_id:
-          - input_boolean.scene_goodnight
-          - input_boolean.scene_kodi
-          - input_boolean.scene_tv
-          - input_boolean.scene_evening
-          - input_boolean.scene_appletv
-          - input_boolean.scene_sexy
           - input_boolean.lux_level_low
 
     - service: switch.turn_off

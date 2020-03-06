@@ -12,7 +12,7 @@
 
   condition:
     condition: state
-    entity_id: input_boolean.scene_daylight
+    entity_id: switch.mqtt_scene_daytime
     state: "off"
 
   action:

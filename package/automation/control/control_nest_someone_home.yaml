@@ -12,7 +12,7 @@
       to: "on"
 
     - platform: state
-      entity_id: input_boolean.scene_goodnight
+      entity_id: switch.mqtt_scene_goodnight
       to: "off"
 
     - platform: state
@@ -24,7 +24,7 @@
       state: "on"
 
     - condition: state
-      entity_id: input_boolean.scene_goodnight
+      entity_id: switch.mqtt_scene_goodnight
       state: "off"
 
   action:

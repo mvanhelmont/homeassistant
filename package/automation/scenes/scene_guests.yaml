@@ -8,17 +8,17 @@
   trigger:
 
     platform: state
-    entity_id: input_boolean.scene_guests
+    entity_id: switch.mqtt_scene_guests
 
   action:
     - service: script.pushover_engine
       data_template:
-        message: "{{ 'Scene Guests is activated' if is_state('input_boolean.scene_guests', 'on') else 'Scene Guests is deactivated' }}"
+        message: "{{ 'Scene Guests is activated' if is_state('switch.mqtt_scene_guests', 'on') else 'Scene Guests is deactivated' }}"
         priority: 0
         sound: bike
         title: "HA Scene System"
 
-    - service_template: "{{ 'automation.turn_off' if is_state('input_boolean.scene_guests', 'on') else 'automation.turn_on' }}"
+    - service_template: "{{ 'automation.turn_off' if is_state('switch.mqtt_scene_guests', 'on') else 'automation.turn_on' }}"
       data:
         entity_id:
           - automation.motion_detection_livingroom_on_off

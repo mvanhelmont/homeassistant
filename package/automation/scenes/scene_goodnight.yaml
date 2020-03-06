@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: input_boolean.scene_goodnight
+    entity_id: switch.mqtt_scene_goodnight
     to: "on"
 
   condition:
@@ -17,19 +17,13 @@
       state: "below_horizon"
 
     - condition: state
-      entity_id: input_boolean.scene_goodnight
+      entity_id: switch.mqtt_scene_goodnight
       state: "on"
 
   action:
     - service: input_boolean.turn_off
       data:
         entity_id:
-          - input_boolean.scene_kodi
-          - input_boolean.scene_tv
-          - input_boolean.scene_daylight
-          - input_boolean.scene_appletv
-          - input_boolean.scene_sexy
-          - input_boolean.scene_evening
           - input_boolean.lux_level_low
           - input_boolean.nest_disable_control
 

@@ -14,8 +14,8 @@ kitchen_normal_turn_on:
           - light.sink_all
         kelvin: 2800
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'on' %} 20
-          {% elif (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 20
+          {% elif (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -35,7 +35,7 @@ kitchen_halloween_turn_on:
           - light.sink_all
         kelvin: 2800
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -53,7 +53,7 @@ kitchen_christmas_turn_on:
         entity_id: light.kitchen_all
         kelvin: 2800
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 70
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 70
           {% else %}0
           {% endif %}
 
@@ -62,7 +62,7 @@ kitchen_christmas_turn_on:
         entity_id: light.sink_all
         color_name: red
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -71,7 +71,7 @@ kitchen_christmas_turn_on:
         entity_id: light.sink_2
         color_name: green
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -89,7 +89,7 @@ kitchen_kingsday_turn_on:
         entity_id: light.kitchen_all
         kelvin: 2800
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 70
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 70
           {% else %}0
           {% endif %}
 
@@ -98,7 +98,7 @@ kitchen_kingsday_turn_on:
         entity_id: light.sink_1
         color_name: red
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -107,7 +107,7 @@ kitchen_kingsday_turn_on:
         entity_id: light.sink_2
         color_temp: 153
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -116,7 +116,7 @@ kitchen_kingsday_turn_on:
         entity_id: light.sink_3
         color_name: blue
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -134,7 +134,7 @@ kitchen_birthday_turn_on:
         entity_id: light.kitchen_all
         kelvin: 2800
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -143,7 +143,7 @@ kitchen_birthday_turn_on:
         entity_id: light.sink_1
         effect: 0
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -154,7 +154,7 @@ kitchen_birthday_turn_on:
         entity_id: light.sink_2
         effect: 0
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}
 
@@ -165,6 +165,6 @@ kitchen_birthday_turn_on:
         entity_id: light.sink_3
         effect: 0
         brightness_pct: >-
-          {% if (states.binary_sensor.node_16.state) == 'on' and (states.input_boolean.scene_goodnight.state) == 'off' %} 100
+          {% if (states.binary_sensor.node_16.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %}0
           {% endif %}

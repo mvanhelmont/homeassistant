@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: input_boolean.scene_sexy
+    entity_id: switch.mqtt_scene_sexy
     to: "on"
 
   action:

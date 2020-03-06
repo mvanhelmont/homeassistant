@@ -16,7 +16,7 @@
       state: "below_horizon"
 
     - condition: state
-      entity_id: input_boolean.scene_kodi
+      entity_id: switch.mqtt_scene_kodi
       state: "on"
 
   action:

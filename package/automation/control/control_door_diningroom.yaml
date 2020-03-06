@@ -12,11 +12,11 @@
 
   condition:
     - condition: state
-      entity_id: input_boolean.scene_daylight
+      entity_id: switch.mqtt_scene_daytime
       state: "off"
 
     - condition: state
-      entity_id: input_boolean.scene_goodnight
+      entity_id: switch.mqtt_scene_goodnight
       state: "off"
 
   action:
@@ -34,18 +34,14 @@
         entity_id: light.newkaku_01401eb6_a
         brightness_pct: >-
           {% if (states.binary_sensor.node_21.state) == 'on' and (states.switch.kay_learning.state) == 'off' and
-                ((states.sensor.season.state) == 'spring' or (states.sensor.season.state) == 'summer') %}
-                  0
+                ((states.sensor.season.state) == 'spring' or (states.sensor.season.state) == 'summer') %} 0
 
           {% elif (states.binary_sensor.node_21.state) == 'off' and (states.switch.kay_learning.state) == 'off' and
-                  ((states.sensor.season.state) == 'spring' or (states.sensor.season.state) == 'summer') %}
-                  50
+                  ((states.sensor.season.state) == 'spring' or (states.sensor.season.state) == 'summer') %} 50
 
-          {% elif (states.binary_sensor.node_21.state) == 'on' and (states.switch.kay_learning.state) == 'on' %}
-                  100
+          {% elif (states.binary_sensor.node_21.state) == 'on' and (states.switch.kay_learning.state) == 'on' %} 100
 
-          {% elif (states.binary_sensor.node_21.state) == 'off' and (states.switch.kay_learning.state) == 'on' %}
-                  100
+          {% elif (states.binary_sensor.node_21.state) == 'off' and (states.switch.kay_learning.state) == 'on' %} 100
 
           {% else %} 50
           {% endif %}

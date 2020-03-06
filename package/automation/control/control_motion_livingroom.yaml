@@ -12,7 +12,7 @@
 
   condition:
     - condition: state
-      entity_id: input_boolean.scene_goodnight
+      entity_id: switch.mqtt_scene_goodnight
       state: "on"
 
     - condition: state

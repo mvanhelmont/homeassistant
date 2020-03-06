@@ -20,11 +20,11 @@
       state: "below_horizon"
 
     - condition: state
-      entity_id: input_boolean.scene_kodi
+      entity_id: switch.mqtt_scene_kodi
       state: "off"
 
     - condition: state
-      entity_id: input_boolean.scene_goodnight
+      entity_id: switch.mqtt_scene_goodnight
       state: "off"
 
     - condition: state
@@ -37,16 +37,11 @@
 
   action:
     - service: input_boolean.turn_on
-      entity_id: input_boolean.scene_kodi
+      entity_id: switch.mqtt_scene_kodi
 
     - service: input_boolean.turn_off
       data:
         entity_id:
-          - input_boolean.scene_evening
-          - input_boolean.scene_tv
-          - input_boolean.scene_daylight
-          - input_boolean.scene_appletv
-          - input_boolean.scene_sexy
           - input_boolean.lux_level_low
 
     - service: switch.turn_off

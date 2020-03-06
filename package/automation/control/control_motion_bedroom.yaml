@@ -12,11 +12,11 @@
 
   condition:
     - condition: state
-      entity_id: input_boolean.scene_goodnight
+      entity_id: switch.mqtt_scene_goodnight
       state: "off"
 
     - condition: state
-      entity_id: input_boolean.scene_daylight
+      entity_id: switch.mqtt_scene_daytime
       state: "off"
 
     - condition: state

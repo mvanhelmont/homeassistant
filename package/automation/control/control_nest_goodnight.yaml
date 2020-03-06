@@ -8,7 +8,7 @@
   trigger:
 
   - platform: state
-    entity_id: input_boolean.scene_goodnight
+    entity_id: switch.mqtt_scene_goodnight
     to: "on"
 
   - platform: state
@@ -20,7 +20,7 @@
       state: "on"
 
     - condition: state
-      entity_id: input_boolean.scene_goodnight
+      entity_id: switch.mqtt_scene_goodnight
       state: "on"
 
   action:

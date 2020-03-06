@@ -16,14 +16,12 @@
       state: "below_horizon"
 
     - condition: state
-      entity_id: input_boolean.scene_appletv
+      entity_id: switch.mqtt_scene_appletv
       state: "on"
 
     - condition: template
       value_template: >
-        {{ trigger.from_state is none or
-           trigger.to_state is not none and
-           trigger.to_state.state != trigger.from_state.state }}
+        {{ trigger.from_state is none or trigger.to_state is not none and trigger.to_state.state != trigger.from_state.state }}
 
   action:
     - service: script.turn_off
