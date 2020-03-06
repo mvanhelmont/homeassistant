@@ -14,4 +14,3 @@ system_server_state_select_switch:
     - "MVPS VMail and WWW"
     - "MVPS SSH Login"
     - "Resillio"
-    - "SSH Server"
