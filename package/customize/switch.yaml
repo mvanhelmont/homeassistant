@@ -13,12 +13,6 @@
 switch.flux_test:
   icon: mdi:nintendo-switch
 
-switch.kay_learning:
-  friendly_name: "Kay Learning"
-  templates:
-    icon: mdi:arrow-decision-auto
-    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
-
 switch.airplay:
   icon: mdi:airplay
 
@@ -113,6 +107,12 @@ switch.mqtt_scene_sexy:
 switch.mqtt_scene_sleeping:
   friendly_name: "Sleeping"
   homebridge_name: "Sleeping"
+  templates:
+    icon: mdi:arrow-decision-auto
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+switch.mqtt_kay_learning:
+  friendly_name: "Kay Learning"
   templates:
     icon: mdi:arrow-decision-auto
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';

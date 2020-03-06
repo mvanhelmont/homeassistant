@@ -15,7 +15,7 @@
     data_template:
       entity_id: light.newkaku_01401eb6_a
       brightness_pct: >-
-        {% if (states.switch.kay_learning.state) == 'on' and (states.light.newkaku_01401eb6_a.state) == 'on' %} 100
-        {% elif (states.switch.kay_learning.state) == 'off' and (states.light.newkaku_01401eb6_a.state) == 'on' %} 20
+        {% if (states.switch.mqtt_kay_learning.state) == 'on' and (states.light.newkaku_01401eb6_a.state) == 'on' %} 100
+        {% elif (states.switch.mqtt_kay_learning.state) == 'off' and (states.light.newkaku_01401eb6_a.state) == 'on' %} 20
         {% else %} 0
         {% endif %}

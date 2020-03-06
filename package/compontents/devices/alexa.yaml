@@ -57,7 +57,7 @@ smart_home:
       - switch.mqtt_scene_evening
       - switch.mqtt_scene_disco
       - switch.mqtt_scene_cooking
-      - switch.kay_learning
+      - switch.mqtt_kay_learning
 # Logitech Activities
       - switch.airplay
       - switch.iptv
