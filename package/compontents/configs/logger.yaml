@@ -4,15 +4,15 @@
 #
 # https://www.home-assistant.io/integrations/logger/
 #
+# critical < fatal < error < warning < warn < info < debug < notset
+#
 ###########################################################################################
 ---
 default: error
 logs:
-  homeassistant.components.websocket_api: warning
+  homeassistant.components.websocket_api: fatal
   homeassistant.components.zwave: warning
   homeassistant.helpers.service: warning
   homeassistant.components.pushover.notify: warning
   homeassistant.loader: warning
   homeassistant.components.alexa.state_report: fatal
-
-#  pyatv: debug
