@@ -84,6 +84,10 @@ smart_home:
       - sensor.node_20_temperature
 
   entity_config:
+    switch.mqtt_disable_nest_control:
+      name: "Disable Nest Control"
+      display_categories: SWITCH
+      
     sensor.node_11_temperature:
       name: "Temp. Frontdoor"
       description: "Temp. at the frontdoor"
