@@ -7,9 +7,9 @@
 ###########################################################################################
 ---
 smart_home:
-#  endpoint: https://api.eu.amazonalexa.com/v3/events
-#  client_id: !secret alexa_client_id_smart_home
-#  client_secret: !secret alexa_client_secret_smart_home
+  endpoint: https://api.eu.amazonalexa.com/v3/events
+  client_id: !secret alexa_client_id_smart_home_messaging
+  client_secret: !secret alexa_client_secret_smart_home_messaging
   filter:
     include_entities:
       - input_number.fullykiosk_brightness_slider
