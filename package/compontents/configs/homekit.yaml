@@ -99,9 +99,6 @@ filter:
     - binary_sensor.entryway_thermostat_has_leaf
     - binary_sensor.entryway_thermostat_online
     - binary_sensor.imac_peter
-    - binary_sensor.meek_hallway
-    - binary_sensor.meek_p1_meter
-    - binary_sensor.meek_wc
     - binary_sensor.milight_hub
     - binary_sensor.toshiba_laptop
     - binary_sensor.asingaborg_away
