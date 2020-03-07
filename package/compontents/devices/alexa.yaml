@@ -70,8 +70,8 @@ smart_home:
       - switch.toilet
       - switch.hallway
 # Device trackers - IS NOT SEEN AS TRACKER BUT AS CAMERA
-#      - binary_sensor.manual_kay_home
-#      - binary_sensor.manual_peter_home
+      - binary_sensor.manual_kay_home
+      - binary_sensor.manual_peter_home
 # Temperature sensors
       - sensor.node_11_temperature
       - sensor.node_13_temperature
@@ -82,18 +82,80 @@ smart_home:
       - sensor.node_18_temperature
       - sensor.node_19_temperature
       - sensor.node_20_temperature
-# KaKu SWITCHES
-#      - switch.newkaku_0114ef92_b
-#      - switch.newkaku_0114ef92_c
-#      - switch.newkaku_011fad02_b
-#      - switch.newkaku_011fad02_c
-#      - switch.newkaku_011fdd46_b
-#      - switch.newkaku_011fdd46_c
-#      - switch.newkaku_01074522_a
-#      - switch.newkaku_01616a32_a
-#      - switch.newkaku_014e5906_a
+
   entity_config:
+    sensor.node_11_temperature:
+      name: "Temp. Frontdoor"
+      description: "Temp. at the frontdoor"
+      display_categories: TEMPERATURE_SENSOR
+    sensor.node_13_temperature:
+      name: "Temp. iMac"
+      description: "Temp. iMac"
+      display_categories: TEMPERATURE_SENSOR
+    sensor.node_14_temperature:
+      name: "Temp. Bedroom"
+      description: "Temp. inside the dedroom"
+      display_categories: TEMPERATURE_SENSOR
+    sensor.node_15_temperature:
+      name: "Temp. Bathroom"
+      description: "Temp. insode the bathroom"
+      display_categories: TEMPERATURE_SENSOR
+    sensor.node_16_temperature:
+      name: "Temp. Kitchen"
+      description: "Temp. inside the kitchen"
+      display_categories: TEMPERATURE_SENSOR
+    sensor.node_17_temperature:
+      name: "Temp. Hallway"
+      description: "Temp. inside the hallway"
+      display_categories: TEMPERATURE_SENSOR
+    sensor.node_18_temperature:
+      name: "Temp. Diningroom"
+      description: "Temp. inside the diningroom"
+      display_categories: TEMPERATURE_SENSOR
+    sensor.node_19_temperature:
+      name: "Temp Livingroom"
+      description: "Temp. inside the livingroom"
+      display_categories: TEMPERATURE_SENSOR
+    sensor.node_20_temperature:
+      name: "Temp. Toilet"
+      description: "Temp. inside the toilet"
+      display_categories: TEMPERATURE_SENSOR
+
+
     binary_sensor.node_14:
       name: "Motion Bedroom"
-      description: "Motion Sensor in Master Bedroom"
+      description: "Motion sensor inside the bedroom"
+      display_categories: MOTION_SENSOR
+    binary_sensor.node_15:
+      name: "Motion Bathroom"
+      description: "Motion sensor inside the bathroom"
+      display_categories: MOTION_SENSOR
+    binary_sensor.node_16:
+      name: "Motion Kitchen"
+      description: "Motion sensor inside the kitchen"
+      display_categories: MOTION_SENSOR
+    binary_sensor.node_17:
+      name: "Motion Hallway"
+      description: "Motion sensor inside the hallway"
+      display_categories: MOTION_SENSOR
+    binary_sensor.node_18:
+      name: "Motion Diningroom"
+      description: "Motion sensor inside the diningroom"
+      display_categories: MOTION_SENSOR
+    binary_sensor.node_19:
+      name: "Motion Livingroom"
+      description: "Motion sensor inside the livingroom"
+      display_categories: MOTION_SENSOR
+    binary_sensor.node_20:
+      name: "Motion Toilet"
+      description: "Motion sensor inside the toilet"
+      display_categories: MOTION_SENSOR
+
+    binary_sensor.manual_kay_home:
+      name: "Presence Kay"
+      description: "Indication that Kay is home"
+      display_categories: MOTION_SENSOR
+    binary_sensor.manual_peter_home:
+      name: "Presence Peter"
+      description: "Indication that Peter is home"
       display_categories: MOTION_SENSOR
