@@ -39,6 +39,10 @@ device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f:
   friendly_name: "iPhone Kay Locative"
   entity_picture: /local/images/kay-home-grey.jpg
 
+device_tracker.poudenes_owntracker_peter:
+  friendly_name: "iPhone Peter Owntracker"
+  entity_picture: /local/images/peter-home-grey.jpg
+
 device_tracker.geofency_peter:
   entity_picture: /local/images/peter-home-grey.jpg
   friendly_name: "iPhone Peter Geofency"
