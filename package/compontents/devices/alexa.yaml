@@ -92,8 +92,8 @@ smart_home:
 #      - switch.newkaku_01074522_a
 #      - switch.newkaku_01616a32_a
 #      - switch.newkaku_014e5906_a
-    entity_config:
-      binary_sensor.node_14:
-        name: "Motion Bedroom"
-        description: "Motion Sensor in Master Bedroom"
-        display_categories: MOTION_SENSOR
+  entity_config:
+    binary_sensor.node_14:
+      name: "Motion Bedroom"
+      description: "Motion Sensor in Master Bedroom"
+      display_categories: MOTION_SENSOR
