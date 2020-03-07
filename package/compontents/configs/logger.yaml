@@ -8,11 +8,11 @@
 ---
 default: error
 logs:
-  homeassistant.components.websocket_api: info
-  homeassistant.components.zwave: info
-  homeassistant.helpers.service: debug
-  homeassistant.components.pushover.notify: debug
-  homeassistant.loader: info
-  homeassistant.components.alexa.state_report: info
+  homeassistant.components.websocket_api: warning
+  homeassistant.components.zwave: warning
+  homeassistant.helpers.service: warning
+  homeassistant.components.pushover.notify: warning
+  homeassistant.loader: warning
+  homeassistant.components.alexa.state_report: fatal
 
 #  pyatv: debug
