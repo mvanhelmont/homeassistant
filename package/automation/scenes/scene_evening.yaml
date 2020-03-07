@@ -27,6 +27,7 @@
     - condition: state
       entity_id: sun.sun
       state: "below_horizon"
+#      before_offset: "-00:03:00"
 
     - condition: state
       entity_id: switch.mqtt_scene_evening
