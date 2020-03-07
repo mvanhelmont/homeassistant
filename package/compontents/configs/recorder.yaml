@@ -23,8 +23,7 @@ include:
     - device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f
     - device_tracker.geofency_peter
     - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
-    - device_tracker.google_maps_108275535398702967599
-    - device_tracker.google_maps_hassio_oudenes_gmail_com
+    - device_tracker.poudenes_owntracker_peter
     - switch.circadian_lighting_circadian_bedroom
     - switch.circadian_lighting_circadian_dressoir
     - switch.circadian_lighting_circadian_hallway
