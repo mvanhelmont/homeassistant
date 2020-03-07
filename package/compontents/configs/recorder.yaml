@@ -24,13 +24,6 @@ include:
     - device_tracker.geofency_peter
     - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
     - device_tracker.poudenes_owntracker_peter
-    - switch.circadian_lighting_circadian_bedroom
-    - switch.circadian_lighting_circadian_dressoir
-    - switch.circadian_lighting_circadian_hallway
-    - switch.circadian_lighting_circadian_kitchen
-    - switch.circadian_lighting_circadian_livingroom
-    - switch.circadian_lighting_circadian_toilet
-    - switch.circadian_lighting_circadian_bathroom
     - switch.mqtt_scene_appletv
     - switch.mqtt_scene_cooking
     - switch.mqtt_scene_disco
@@ -45,5 +38,8 @@ include:
 
 exclude:
   entities:
-    - sensor.power_consumption
-    - sensor.voltage_phase_l1
+    - sensor.p1_usage_watt_now
+    - sensor.p1_total_gas_m3
+    - sensor.p1_tarifcode
+    - sensor.p1_total_kwh_high
+    - sensor.p1_total_kwh_low
