@@ -12,6 +12,7 @@ logs:
   homeassistant.components.zwave: info
   homeassistant.helpers.service: debug
   homeassistant.components.pushover.notify: debug
-  homeassistant.loader]: info
+  homeassistant.loader: info
+  homeassistant.components.alexa.state_report: notset
 
 #  pyatv: debug
