@@ -53,9 +53,3 @@ device_tracker.geofency_kay:
 
 device_tracker.rockbox_brick:
   friendly_name: "Rockbox Brick"
-
-device_tracker.google_maps_108275535398702967599:
-  friendly_name: "Hassio 1 Google Tracker"
-
-device_tracker.google_maps_hassio_oudenes_gmail_com:
-  friendly_name: "Hassio 2 Google Tracker"
