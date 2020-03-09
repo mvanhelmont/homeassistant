@@ -21,7 +21,7 @@
       state: "on"
 
   action:
-    - service: input_boolean.turn_off
+    - service: switch.turn_off
       data:
         entity_id:
           - switch.mqtt_lux_level_low
@@ -70,7 +70,7 @@
     - service: light.turn_on
       data:
         entity_id: light.bathroom_all
-        kelvin: 2800
+        #kelvin: 2800
         brightness_pct: 100
 
     - service: light.turn_on
@@ -82,7 +82,7 @@
           - light.toilet_all
           - light.dressoir_all
           - light.livingroom_all
-        kelvin: 2800
+        #kelvin: 2800
         brightness_pct: 20
 
     - delay: 00:00:02
