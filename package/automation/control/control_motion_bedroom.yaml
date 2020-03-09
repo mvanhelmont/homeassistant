@@ -11,15 +11,15 @@
     entity_id: binary_sensor.node_14
 
   condition:
-    - condition: state
-      entity_id: switch.mqtt_scene_goodnight
-      state: "off"
+#    - condition: state
+#      entity_id: switch.mqtt_scene_goodnight
+#      state: "off"
 
-    - condition: state
-      entity_id: switch.mqtt_scene_daytime
-      state: "off"
+#    - condition: state
+#      entity_id: switch.mqtt_scene_daytime
+#      state: "off"
 
-    - condition: state
+      condition: state
       entity_id: switch.newkaku_01074522_a
       state: "off"
 
