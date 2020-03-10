@@ -22,3 +22,15 @@ input_boolean.peter_home_manual:
 
 input_boolean.radio_play:
   friendly_name: "Play radio"
+
+input_boolean.scenes_pulldown:
+  friendly_name: "Scene Switches"
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+input_boolean.switches_pulldown:
+  friendly_name: "Light Switches"
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
