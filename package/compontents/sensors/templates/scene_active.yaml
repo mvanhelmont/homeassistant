@@ -18,10 +18,9 @@ sensors:
       {% elif states.switch.mqtt_scene_tv.state == "on" %} TV
       {% elif states.switch.mqtt_scene_kodi.state == "on" %} Kodi
       {% endif %}
-      {% if states.switch.mqtt_scene_sleeping.state == "on" %} and Sleeping
-      {% elif states.switch.mqtt_scene_sexy.state == "on" %} and Sexy
-      {% elif states.switch.mqtt_scene_disco.state == "on" %} and Disco
-      {% elif states.switch.mqtt_scene_cooking.state == "on" %} anbd Cooking
-      {% elif states.switch.mqtt_kay_learning.state == "on" %} and Kay Learning
-      {% elif states.switch.mqtt_scene_guests.state == "on" %} and Guests
-      {% endif %}
+      {% if states.switch.mqtt_scene_sleeping.state == "on" %} and Sleeping {% endif %}
+      {% if states.switch.mqtt_scene_sexy.state == "on" %} and Sexy {% endif %}
+      {% if states.switch.mqtt_scene_disco.state == "on" %} and Disco {% endif %}
+      {% if states.switch.mqtt_scene_cooking.state == "on" %} anbd Cooking {% endif %}
+      {% if states.switch.mqtt_kay_learning.state == "on" %} and Kay Learning {% endif %}
+      {% if states.switch.mqtt_scene_guests.state == "on" %} and Guests {% endif %}
