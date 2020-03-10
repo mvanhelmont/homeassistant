@@ -26,6 +26,9 @@ sensor.fibaro_imac_custom_sensor:
 sensor.harmony:
   icon: mdi:remote-tv
 
+sensor.scene_active:
+  icon: mdi:arrow-decision-auto
+
 ###########################################################################################
 #
 # CORONA
