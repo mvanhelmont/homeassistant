@@ -8,7 +8,7 @@
 ---
 platform: template
 sensors:
-  harmony:
+  scene_active:
     friendly_name: "Scene "
     value_template: >-
       {% if states.switch.mqtt_scene_daytime.state == "on" %} Daytime
