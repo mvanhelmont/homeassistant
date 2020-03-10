@@ -29,6 +29,9 @@ sensor.harmony:
 sensor.scene_active:
   icon: mdi:arrow-decision-auto
 
+sensor.switch_active:
+  icon: mdi:ceiling-light
+
 ###########################################################################################
 #
 # CORONA

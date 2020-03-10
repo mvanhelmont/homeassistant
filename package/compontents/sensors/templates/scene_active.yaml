@@ -21,6 +21,6 @@ sensors:
       {% if states.switch.mqtt_scene_sleeping.state == "on" %} and Sleeping {% endif %}
       {% if states.switch.mqtt_scene_sexy.state == "on" %} and Sexy {% endif %}
       {% if states.switch.mqtt_scene_disco.state == "on" %} and Disco {% endif %}
-      {% if states.switch.mqtt_scene_cooking.state == "on" %} anbd Cooking {% endif %}
+      {% if states.switch.mqtt_scene_cooking.state == "on" %} and Cooking {% endif %}
       {% if states.switch.mqtt_kay_learning.state == "on" %} and Kay Learning {% endif %}
       {% if states.switch.mqtt_scene_guests.state == "on" %} and Guests {% endif %}
