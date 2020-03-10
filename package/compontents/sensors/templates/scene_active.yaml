@@ -1,0 +1,27 @@
+###########################################################################################
+#
+# SENSOR TEMPLATE
+#
+# https://www.home-assistant.io/integrations/template/
+#
+###########################################################################################
+---
+platform: template
+sensors:
+  harmony:
+    friendly_name: "Scene "
+    value_template: >-
+      {% if states.switch.mqtt_scene_daytime.state == "on" %} Daytime
+      {% elif states.switch.mqtt_scene_evening.state == "on" %} Evening
+      {% elif states.switch.mqtt_scene_goodnight.state == "on" %} Goodnight
+      {% elif states.switch.mqtt_scene_appletv.state == "on" %} AppleTV
+      {% elif states.switch.mqtt_scene_tv.state == "on" %} TV
+      {% elif states.switch.mqtt_scene_kodi.state == "on" %} Kodi
+      {% endif %}
+      {% if states.switch.mqtt_scene_sleeping.state == "on" %} and Sleeping
+      {% elif states.switch.mqtt_scene_sexy.state == "on" %} and Sexy
+      {% elif states.switch.mqtt_scene_disco.state == "on" %} and Disco
+      {% elif states.switch.mqtt_scene_cooking.state == "on" %} anbd Cooking
+      {% elif states.switch.mqtt_kay_learning.state == "on" %} and Kay Learning
+      {% elif states.switch.mqtt_scene_guests.state == "on" %} and Guests
+      {% endif %}
