@@ -31,7 +31,7 @@
 
     - service: script.pushover_engine
       data_template:
-        message: "Nobody in bathroom for 5 minutes. Turned off bathroom switch and light"
+        message: "Nobody in bathroom for 2 minutes. Turned off bathroom switch and light"
         priority: 0
         sound: bike
         title: "HA System"
