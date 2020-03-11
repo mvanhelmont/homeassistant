@@ -26,6 +26,7 @@
         entity_id:
           - switch.mqtt_lux_level_low
           - switch.mqtt_disable_nest_control
+          - switch.circadian_lighting_circadian_bedroom
 
     - service: switch.turn_off
       data:
@@ -42,11 +43,6 @@
 
     - service: remote.turn_off
       entity_id: remote.logitech_harmony
-
-    - service: homeassistant.turn_off
-      data:
-        entity_id:
-          - group.group_circadian_lights
 
     - delay: 00:00:01
 

@@ -67,10 +67,10 @@
     - service_template: "{{ 'light.turn_on' if is_state('binary_sensor.node_15', 'on') else 'light.turn_off' }}"
       entity_id: light.bathroom_all
 
-    - service: homeassistant.turn_on
+    - service: switch.turn_on
       data:
         entity_id:
-          - group.group_circadian_lights
+          - switch.circadian_lighting_circadian_bedroom
 
     - service: script.pushover_engine
       data_template:
