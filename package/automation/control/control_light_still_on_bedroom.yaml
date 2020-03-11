@@ -11,7 +11,7 @@
     entity_id: binary_sensor.node_14
     to: "off"
     for:
-      minutes: 5
+      minutes: 1
 
   condition:
       condition: state
@@ -26,7 +26,7 @@
     - service: switch.turn_off
       entity_id: switch.meek_bedroom
 
-      service: script.pushover_engine
+    - service: script.pushover_engine
       data_template:
         message: "Nobody in bedroom for 5 minutes. Turned off bedroom switch and light"
         priority: 0
