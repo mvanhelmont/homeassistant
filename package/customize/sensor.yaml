@@ -28,9 +28,11 @@ sensor.harmony:
 
 sensor.scene_active:
   icon: mdi:arrow-decision-auto
+  icon_color: rgba(251,214,67,1)
 
 sensor.switch_active:
   icon: mdi:ceiling-light
+  icon_color: rgba(251,214,67,1)
 
 ###########################################################################################
 #
