@@ -1,0 +1,18 @@
+###########################################################################################
+#
+# SWITCH CONTROL FOR BALCONY
+#
+###########################################################################################
+
+- alias: "Switch - Meek Dressoir"
+  trigger:
+
+    platform: state
+    entity_id: switch.meek_dressoir
+
+  action:
+    service: light.turn_on
+    data_template:
+      entity_id: light.dressoir_all
+      #kelvin: 2800
+      brightness_pct: "{{ 100 if is_state('switch.meek_dressoir', 'on') else 0 }}"
