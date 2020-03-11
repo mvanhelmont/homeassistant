@@ -14,13 +14,13 @@
       minutes: 1
 
   condition:
-      condition: state
+  -  condition: state
       entity_id: switch.mqtt_scene_goodnight
       state: "off"
 
-#    - condition: state
-#      entity_id: switch.newkaku_01074522_a
-#      state: "on"
+    - condition: state
+      entity_id: switch.meek_bedroom
+      state: "on"
 
   action:
     - service: switch.turn_off
