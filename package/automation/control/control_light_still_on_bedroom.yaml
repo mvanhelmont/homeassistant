@@ -14,19 +14,19 @@
       minutes: 5
 
   condition:
-    - condition: state
+      condition: state
       entity_id: switch.mqtt_scene_goodnight
       state: "off"
 
-    - condition: state
-      entity_id: switch.newkaku_01074522_a
-      state: "on"
+#    - condition: state
+#      entity_id: switch.newkaku_01074522_a
+#      state: "on"
 
   action:
     - service: switch.turn_off
-      entity_id: switch.newkaku_01074522_a
+      entity_id: switch.meek_bedroom
 
-    - service: script.pushover_engine
+      service: script.pushover_engine
       data_template:
         message: "Nobody in bedroom for 5 minutes. Turned off bedroom switch and light"
         priority: 0
