@@ -8,6 +8,12 @@
 ---
 platform: circadian_lighting
 name: "Circadian Livingroom"
-lights_rgb:
+lights_ct:
   - light.livingroom_all
+  - light.livingroom_1
+  - light.livingroom_2
+  - light.livingroom_3
+  - light.livingroom_4
+  - light.livingroom_wall
+  - light.livingroom_window
 disable_brightness_adjust: true

@@ -8,6 +8,6 @@
 ---
 platform: circadian_lighting
 name: "Circadian Hallway"
-lights_rgb:
+lights_ct:
   - light.hallway
 disable_brightness_adjust: true
