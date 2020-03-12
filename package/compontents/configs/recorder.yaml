@@ -43,3 +43,372 @@ exclude:
     - sensor.p1_tarifcode
     - sensor.p1_total_kwh_high
     - sensor.p1_total_kwh_low
+    - sensor.tp_link_total_recieved_mb
+    - sensor.tp_link_total_send_mb
+    - sensor.m5_packets_received
+    - sensor.m5_packets_sent
+    - sensor.m5_packets_sec_received
+    - sensor.m5_packets_sec_sent
+    - sensor.broker_message_send_counter
+    - sensor.broker_message_received_counter
+    - sensor.broker_message_dropped_counter
+###########################################################################################
+#
+# ZWAVE
+#
+###########################################################################################
+#
+# NODE 2 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_2_alarm_level
+    - sensor.node_2_alarm_type
+    - sensor.node_2_current
+    - sensor.node_2_exporting
+    - sensor.node_2_interval
+    - sensor.node_2_interval_2
+    - sensor.node_2_interval_3
+    - sensor.node_2_interval_4
+    - sensor.node_2_power_management
+    - sensor.node_2_previous_reading
+    - sensor.node_2_previous_reading_2
+    - sensor.node_2_previous_reading_3
+    - sensor.node_2_previous_reading_4
+    - sensor.node_2_sourcenodeid
+    - sensor.node_2_voltage
+
+###########################################################################################
+#
+# NODE 3 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_3_alarm_level
+    - sensor.node_3_alarm_type
+    - sensor.node_3_current
+    - sensor.node_3_exporting
+    - sensor.node_3_interval
+    - sensor.node_3_interval_2
+    - sensor.node_3_interval_3
+    - sensor.node_3_interval_4
+    - sensor.node_3_power_management
+    - sensor.node_3_previous_reading
+    - sensor.node_3_previous_reading_2
+    - sensor.node_3_previous_reading_3
+    - sensor.node_3_previous_reading_4
+    - sensor.node_3_sourcenodeid
+    - sensor.node_3_voltage
+
+###########################################################################################
+#
+# NODE 4 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_4_alarm_level
+    - sensor.node_4_alarm_type
+    - sensor.node_4_energy
+    - sensor.node_4_exporting
+    - sensor.node_4_interval
+    - sensor.node_4_interval_2
+    - sensor.node_4_interval_3
+    - sensor.node_4_interval_4
+    - sensor.node_4_power_management
+    - sensor.node_4_previous_reading
+    - sensor.node_4_previous_reading_2
+    - sensor.node_4_previous_reading_3
+    - sensor.node_4_previous_reading_4
+    - sensor.node_4_sourcenodeid
+    - sensor.node_4_voltage
+
+###########################################################################################
+#
+# NODE 5 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_5_alarm_level
+    - sensor.node_5_alarm_type
+    - sensor.node_5_current
+    - sensor.node_5_exporting
+    - sensor.node_5_interval
+    - sensor.node_5_interval_2
+    - sensor.node_5_interval_3
+    - sensor.node_5_interval_4
+    - sensor.node_5_power_management
+    - sensor.node_5_previous_reading
+    - sensor.node_5_previous_reading_2
+    - sensor.node_5_previous_reading_3
+    - sensor.node_5_previous_reading_4
+    - sensor.node_5_sourcenodeid
+    - sensor.node_5_voltage
+
+###########################################################################################
+#
+# NODE 6 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_6_alarm_level
+    - sensor.node_6_alarm_type
+    - sensor.node_6_current
+    - sensor.node_6_exporting
+    - sensor.node_6_interval
+    - sensor.node_6_interval_2
+    - sensor.node_6_interval_3
+    - sensor.node_6_interval_4
+    - sensor.node_6_power_management
+    - sensor.node_6_previous_reading
+    - sensor.node_6_previous_reading_2
+    - sensor.node_6_previous_reading_3
+    - sensor.node_6_previous_reading_4
+    - sensor.node_6_sourcenodeid
+    - sensor.node_6_voltage
+
+###########################################################################################
+#
+# NODE 7 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_7_alarm_level
+    - sensor.node_7_alarm_type
+    - sensor.node_7_current
+    - sensor.node_7_exporting
+    - sensor.node_7_interval
+    - sensor.node_7_interval_2
+    - sensor.node_7_interval_3
+    - sensor.node_7_interval_4
+    - sensor.node_7_power_management
+    - sensor.node_7_previous_reading
+    - sensor.node_7_previous_reading_2
+    - sensor.node_7_previous_reading_3
+    - sensor.node_7_previous_reading_4
+    - sensor.node_7_sourcenodeid
+    - sensor.node_7_voltage
+
+###########################################################################################
+#
+# NODE 8 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_8_alarm_level
+    - sensor.node_8_alarm_type
+    - sensor.node_8_current
+    - sensor.node_8_exporting
+    - sensor.node_8_interval
+    - sensor.node_8_interval_2
+    - sensor.node_8_interval_3
+    - sensor.node_8_interval_4
+    - sensor.node_8_power_management
+    - sensor.node_8_previous_reading
+    - sensor.node_8_previous_reading_2
+    - sensor.node_8_previous_reading_3
+    - sensor.node_8_previous_reading_4
+    - sensor.node_8_sourcenodeid
+    - sensor.node_8_voltage
+
+###########################################################################################
+#
+# NODE 9 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_9_alarm_level
+    - sensor.node_9_alarm_type
+    - sensor.node_9_current
+    - sensor.node_9_exporting
+    - sensor.node_9_interval
+    - sensor.node_9_interval_2
+    - sensor.node_9_interval_3
+    - sensor.node_9_interval_4
+    - sensor.node_9_power_management
+    - sensor.node_9_previous_reading
+    - sensor.node_9_previous_reading_2
+    - sensor.node_9_previous_reading_3
+    - sensor.node_9_previous_reading_4
+    - sensor.node_9_sourcenodeid
+    - sensor.node_9_voltage
+
+###########################################################################################
+#
+# NODE 10 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_10_alarm_level
+    - sensor.node_10_alarm_type
+    - sensor.node_10_current
+    - sensor.node_10_energy
+    - sensor.node_10_exporting
+    - sensor.node_10_interval
+    - sensor.node_10_interval_2
+    - sensor.node_10_interval_3
+    - sensor.node_10_interval_4
+    - sensor.node_10_power_management
+    - sensor.node_10_previous_reading
+    - sensor.node_10_previous_reading_2
+    - sensor.node_10_previous_reading_3
+    - sensor.node_10_previous_reading_4
+    - sensor.node_10_sourcenodeid
+    - sensor.node_10_voltage
+    - switch.node_10_switch
+
+###########################################################################################
+#
+# NODE 11 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_11_access_control
+    - sensor.node_11_alarm_level
+    - sensor.node_11_alarm_type
+    - sensor.node_11_burglar
+    - sensor.node_11_sourcenodeid
+    - sensor.node_11_power_management
+    - sensor.node_11_heat
+
+###########################################################################################
+#
+# NODE 12 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_12_access_control
+    - sensor.node_12_alarm_level
+    - sensor.node_12_alarm_type
+    - sensor.node_12_burglar
+    - sensor.node_12_sourcenodeid
+    - sensor.node_12_power_management
+    - sensor.node_12_heat
+
+###########################################################################################
+#
+# NODE 13 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_13_access_control
+    - sensor.node_13_alarm_level
+    - sensor.node_13_alarm_type
+    - sensor.node_13_burglar
+    - sensor.node_13_sourcenodeid
+    - sensor.node_13_power_management
+    - sensor.node_13_heat
+
+###########################################################################################
+#
+# NODE 14 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_14_alarm_level
+    - sensor.node_14_alarm_type
+    - sensor.node_14_burglar
+    - sensor.node_14_sourcenodeid
+
+###########################################################################################
+#
+# NODE 15 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_15_alarm_level
+    - sensor.node_15_alarm_type
+    - sensor.node_15_burglar
+    - sensor.node_15_sourcenodeid
+
+###########################################################################################
+#
+# NODE 16 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_16_alarm_level
+    - sensor.node_16_alarm_type
+    - sensor.node_16_burglar
+    - sensor.node_16_sourcenodeid
+
+###########################################################################################
+#
+# NODE 17 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_17_alarm_level
+    - sensor.node_17_alarm_type
+    - sensor.node_17_burglar
+    - sensor.node_17_sourcenodeid
+
+###########################################################################################
+#
+# NODE 18 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_18_alarm_level
+    - sensor.node_18_alarm_type
+    - sensor.node_18_burglar
+    - sensor.node_18_sourcenodeid
+
+###########################################################################################
+#
+# NODE 19 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_19_alarm_level
+    - sensor.node_19_alarm_type
+    - sensor.node_19_burglar
+    - sensor.node_19_sourcenodeid
+
+###########################################################################################
+#
+# NODE 20 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_20_alarm_level
+    - sensor.node_20_alarm_type
+    - sensor.node_20_burglar
+    - sensor.node_20_sourcenodeid
+
+###########################################################################################
+#
+# NODE 21 - SWITCH
+#
+###########################################################################################
+
+    - sensor.node_21_access_control
+    - sensor.node_21_alarm_level
+    - sensor.node_21_alarm_type
+    - sensor.node_21_burglar
+    - sensor.node_21_sourcenodeid
+    - sensor.node_21_power_management
+    - sensor.node_21_heat
+
+###########################################################################################
+#
+# NODE 22 - MOTION
+#
+###########################################################################################
+
+    - sensor.node_22_alarm_level
+    - sensor.node_22_alarm_type
+    - sensor.node_22_current
+    - sensor.node_22_energy
+    - sensor.node_22_exporting
+    - sensor.node_22_interval
+    - sensor.node_22_interval_2
+    - sensor.node_22_interval_3
+    - sensor.node_22_interval_4
+    - sensor.node_22_power
+    - sensor.node_22_power_management
+    - sensor.node_22_previous_reading
+    - sensor.node_22_previous_reading_2
+    - sensor.node_22_previous_reading_3
+    - sensor.node_22_previous_reading_4
+    - sensor.node_22_sourcenodeid
+    - sensor.no
