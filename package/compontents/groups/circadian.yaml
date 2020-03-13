@@ -4,7 +4,7 @@
 #
 # https://www.home-assistant.io/integrations/group/
 #
-########################################################################################### 
+###########################################################################################
 ---
 group_circadian_lights:
   entities:
@@ -14,3 +14,4 @@ group_circadian_lights:
     - switch.circadian_lighting_circadian_livingroom
     - switch.circadian_lighting_circadian_toilet
     - switch.circadian_lighting_circadian_bathroom
+    - switch.circadian_lighting_circadian_bedroom
