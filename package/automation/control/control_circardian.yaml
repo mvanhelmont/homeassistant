@@ -21,4 +21,4 @@
 
   action:
     service_template: "{{ 'homeassistant.turn_on' if is_state('sensor.holiday', 'No holiday today') else 'homeassistant.turn_off' }}"
-    ntity_id: group.group_circadian_lights
+    entity_id: group.group_circadian_lights
