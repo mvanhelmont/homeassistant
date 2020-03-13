@@ -4,7 +4,7 @@
 #
 ###########################################################################################
 
-- alias: "Scene - Circardian"
+- alias: "Control - Circardian"
   trigger:
 
     - platform: state
