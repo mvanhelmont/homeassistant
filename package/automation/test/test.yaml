@@ -11,11 +11,22 @@
     to: "on"
 
   action:
-    service: light.turn_on
+    service: mqtt.publish
     data_template:
-      entity_id: light.dressoir_all
-      brightness_pct: 100
+      topic: 'homeassistant/bedroom/switch'
+      payload: '1'
 
+- alias: "TEST - trigger statement ATOM"
+  trigger:
+    platform: state
+    entity_id: switch.newkaku_014e5906_a
+    to: "off"
+
+  action:
+    service: mqtt.publish
+    data_template:
+      topic: 'homeassistant/bedroom/switch'
+      payload: '0'
 
 #        value: "{{ (state_attr('sensor.fullykiosk', 'screenBrightness') | int / 2.55) | round(0) }}"
 ###########################################################################################
