@@ -4,7 +4,7 @@
 #
 ###########################################################################################
 
-- alias: "Control - Lux on Daytime Low"
+- alias: "Control - Lux Control Livingroom On"
   trigger:
 
     - platform: time_pattern
@@ -61,7 +61,7 @@
         media_player: media_player.this_device
         say_lux_evening_on: "true"
 
-- alias: 'Control - Lux on Daytime Normal'
+- alias: "Control - Lux Control Livingroom Off"
   trigger:
 
     - platform: time_pattern
