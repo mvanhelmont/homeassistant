@@ -6,7 +6,7 @@
 
 - alias: "Motion Detection - Bathroom On Off"
   trigger:
-
+  
     platform: state
     entity_id: binary_sensor.node_15
 
@@ -25,11 +25,6 @@
           {% elif (states.binary_sensor.node_15.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
           {% else %} 0
           {% endif %}
-
-    - service: mqtt.publish
-      data:
-        topic: 'homeassistant/bedroom/controlha'
-        payload: 1
 
     - service_template: >-
         {% if (states.binary_sensor.node_15.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} switch.turn_on
