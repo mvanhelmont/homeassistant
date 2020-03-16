@@ -25,7 +25,6 @@
       entity_id:
         - light.kitchen_all
         - light.sink_all
-      #kelvin: 2800
       brightness_pct: >-
         {% if (states.switch.mqtt_lux_level_low.state) == 'on' and (states.binary_sensor.node_16.state) == 'on' %} 100
         {% elif (states.switch.mqtt_lux_level_low.state) == 'on' and (states.binary_sensor.node_16.state) == 'off' %} 0
