@@ -1,33 +1,36 @@
 ###########################################################################################
 #
-# KODI LIGHT CONTROL BASED ON EVENT
+# APPLETV CONTROL BASED ON EVENT
 #
 ###########################################################################################
 
-kodi_normal:
-  alias: "Kodi Normal Light Scene"
+appletv_normal:
+  alias: "AppleTV Normal Light Scene"
   sequence:
+
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_wall
-        brightness_pct: "{{ 50 if is_state('media_player.kodi', 'playing') else 100 }}"
+        kelvin: 2800
+        brightness_pct: "{{ 50 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_window
-        brightness_pct: "{{ 20 if is_state('media_player.kodi', 'playing') else 100 }}"
+        kelvin: 2800
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
         kelvin: 2800
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 50 }}"
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.balcony
         color_name: blue
-        brightness_pct: 100
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
 ###########################################################################################
 #
@@ -35,18 +38,21 @@ kodi_normal:
 #
 ###########################################################################################
 
-kodi_birthday:
-  alias: "Kodi Birthday Light Scene"
+appletv_birthday:
+  alias: "AppleTV Birthday Light Scene"
   sequence:
+
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_wall
-        brightness_pct: "{{ 50 if is_state('media_player.kodi', 'playing') else 100 }}"
+        kelvin: 2800
+        brightness_pct: "{{ 50 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_window
-        brightness_pct: "{{ 20 if is_state('media_player.kodi', 'playing') else 100 }}"
+        kelvin: 2800
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
@@ -58,10 +64,10 @@ kodi_birthday:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.balcony
-        brightness_pct: 100
-        effect: 0
+        color_name: blue
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
 ###########################################################################################
 #
@@ -69,20 +75,21 @@ kodi_birthday:
 #
 ###########################################################################################
 
-kodi_halloween:
-  alias: "Kodi Halloween Light Scene"
+appletv_halloween:
+  alias: "AppleTV Halloween Light Scene"
   sequence:
+
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_wall
-        color_name: orange
-        brightness_pct: "{{ 50 if is_state('media_player.kodi', 'playing') else 100 }}"
+        kelvin: 2800
+        brightness_pct: "{{ 50 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_window
-        color_name: orange
-        brightness_pct: "{{ 20 if is_state('media_player.kodi', 'playing') else 100 }}"
+        kelvin: 2800
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
@@ -99,10 +106,10 @@ kodi_halloween:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.balcony
         color_name: blue
-        brightness_pct: 100
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
 ###########################################################################################
 #
@@ -110,18 +117,21 @@ kodi_halloween:
 #
 ###########################################################################################
 
-kodi_kingsday:
-  alias: "Kodi Kingsday Light Scene"
+appletv_kingsday:
+  alias: "AppleTV Kingsday Light Scene"
   sequence:
+
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_wall
-        brightness_pct: "{{ 50 if is_state('media_player.kodi', 'playing') else 100 }}"
+        kelvin: 2800
+        brightness_pct: "{{ 50 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
         entity_id: light.livingroom_window
-        brightness_pct: "{{ 20 if is_state('media_player.kodi', 'playing') else 100 }}"
+        kelvin: 2800
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
@@ -142,10 +152,10 @@ kodi_kingsday:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.balcony
-        brightness_pct: 100
-        effect: 0
+        color_name: blue
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
 ###########################################################################################
 #
@@ -153,8 +163,8 @@ kodi_kingsday:
 #
 ###########################################################################################
 
-kodi_christmas:
-  alias: "Kodi Christmas Light Scene"
+appletv_christmas:
+  alias: "AppleTV Christmas Light Scene"
   sequence:
     - service: switch.turn_on
       entity_id:
@@ -162,20 +172,20 @@ kodi_christmas:
         - switch.node_2_switch # iMac
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id:
           - light.livingroom_1
           - light.livingroom_4
         color_name: red
-        brightness_pct: 100
+        brightness_pct: "{{ 50 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id:
           - light.livingroom_2
           - light.livingroom_3
         color_name: green
-        brightness_pct: 100
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
 
     - service: light.turn_on
       data_template:
@@ -192,7 +202,7 @@ kodi_christmas:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 75 }}"
 
     - service: light.turn_on
-      data:
+      data_template:
         entity_id: light.balcony
-        brightness_pct: 100
-        effect: 0
+        color_name: blue
+        brightness_pct: "{{ 20 if is_state('media_player.woonkamer_2', 'playing') else 100 }}"
