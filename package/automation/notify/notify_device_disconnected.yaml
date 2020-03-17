@@ -11,35 +11,29 @@
     entity_id:
       - binary_sensor.resillio
       - binary_sensor.milight_hub
-#    to: "off"
+    to: "off"
 
   action:
     service: script.pushover_engine
     data_template:
-      message: >-
-        {% if trigger.to_state.state == 'off' %}
-          {{ trigger.from_state.attributes.friendly_name}} disconnected
-        {% else %}
-          {{ trigger.from_state.attributes.friendly_name}} connected again
-        {% endif %}
-#      message: "{{ trigger.from_state.attributes.friendly_name }} disconnected"
+      message: "{{ trigger.from_state.attributes.friendly_name }} disconnected"
       priority: "0"
       sound: "bike"
       title: "HA Notify Engine"
 
-#- alias: "Notification - Device connected"
-#  trigger:
-#
-#    platform: state
-#    entity_id:
-#      - binary_sensor.resillio
-#      - binary_sensor.milight_hub
-#    to: "on"
+- alias: "Notification - Device connected"
+  trigger:
 
-#  action:
-#    service: script.pushover_engine
-#    data_template:
-#      message: "{{ trigger.from_state.attributes.friendly_name }} connected again"
-#      priority: "0"
-#      sound: "bike"
-#      title: "HA Notify Engine"
+    platform: state
+    entity_id:
+      - binary_sensor.resillio
+      - binary_sensor.milight_hub
+    to: "on"
+
+  action:
+    service: script.pushover_engine
+    data_template:
+      message: "{{ trigger.from_state.attributes.friendly_name }} connected again"
+      priority: "0"
+      sound: "bike"
+      title: "HA Notify Engine"
