@@ -29,6 +29,11 @@
           {% else %} 0
           {% endif %}
 
-    - service: switch.turn_on
-      data:
-        entity_id: switch.meek_bedroom
+#    - service: switch.turn_on
+#      data:
+#        entity_id: switch.meek_bedroom
+
+    - service: mqtt.publish
+      data_template:
+        topic: 'homeassistant/motion/bedroom'
+        payload: '1'
