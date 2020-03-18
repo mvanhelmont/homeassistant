@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: binary_sensor.node_16
+    entity_id: binary_sensor.node_16 # Motion Kitchen
 
   condition:
     - condition: state

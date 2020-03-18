@@ -6,12 +6,12 @@
 
 - alias: "System - FKB Screen On Off"
   trigger:
-    
-    - platform: state
-      entity_id: binary_sensor.node_17
 
     - platform: state
-      entity_id: binary_sensor.node_16
+      entity_id: binary_sensor.node_17 # Motion Hallway
+
+    - platform: state
+      entity_id: binary_sensor.node_16 # Motion Kitchen
 
   action:
     service_template: >-

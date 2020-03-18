@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: binary_sensor.node_21
+    entity_id: binary_sensor.node_21 # Sensor Diningroom Door
 
   condition:
     - condition: state

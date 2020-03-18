@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: binary_sensor.node_19
+    entity_id: binary_sensor.node_19 # Motion Livingroom
 
   condition:
     - condition: state

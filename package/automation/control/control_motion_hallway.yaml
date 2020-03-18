@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: binary_sensor.node_17
+    entity_id: binary_sensor.node_17 # Motion Hallway
 
   condition:
     - condition: state

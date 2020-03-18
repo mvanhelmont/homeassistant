@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: binary_sensor.node_15
+    entity_id: binary_sensor.node_15 # Motion Bathroom
 
   condition:
     condition: state

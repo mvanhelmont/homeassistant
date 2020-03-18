@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: binary_sensor.node_18
+    entity_id: binary_sensor.node_18 # Motion Diningroom
 
   condition:
     - condition: state
@@ -18,7 +18,7 @@
     - condition: state
       entity_id: switch.mqtt_scene_guests
       state: "off"
-      
+
   action:
     service: light.turn_on
     data_template:
