@@ -33,6 +33,12 @@
       data:
         entity_id: switch.meek_bedroom
 
+    - service_template: >-
+        {% if (states.binary_sensor.node_12.state) == "on" and (states.binary_sensor.node_14.state) == 'on' %} switch.turn_on
+        {% else %} switch.turn_off
+        {% endif %}
+      entity_id: switch.meek_bedroom
+
     - service: mqtt.publish
       data_template:
         topic: 'homeassistant/motion/bedroom'
