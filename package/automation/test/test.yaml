@@ -13,7 +13,7 @@
   action:
     service: mqtt.publish
     data_template:
-      topic: 'homeassistant/bedroom/switch'
+      topic: 'homeassistant/test123/switch'
       payload: '1'
 
 - alias: "TEST - trigger statement ATOM"
@@ -25,66 +25,5 @@
   action:
     service: mqtt.publish
     data_template:
-      topic: 'homeassistant/bedroom/switch'
+      topic: 'homeassistant/test123/switch'
       payload: '0'
-
-#        value: "{{ (state_attr('sensor.fullykiosk', 'screenBrightness') | int / 2.55) | round(0) }}"
-###########################################################################################
-# SEND PUSHOVER WITH A EXPIRE AND RETRY
-###########################################################################################
-#  action:
-#    service: notify.pushover
-#    data_template:
-#      message: "TEST"
-#      title: "TITLE TEST"
-#      data:
-#        priority: 2
-#        sound: pushover
-#        retry: 60
-#        expire: 3600
-#############################################################################################
-# RANDOM DELAY FOR HOLIDAT SCENE
-#############################################################################################
-#    - delay: '00:00:{{ (range(2, 5)|random|int) }}'
-#    - service: light.turn_off
-#      entity_id: light.dressoir_all
-#############################################################################################
-# NOTIFY VIA PUSHOVER ENGINE
-#############################################################################################
-#    - service: script.pushover_engine
-#      data_template:
-#        message: "test"
-#        priority: 0
-#        sound: bike
-#        title: "PUSHOVER ENGINE"
-#############################################################################################
-# NOTIFY VIA EMAIL
-#############################################################################################
-#    - service: notify.ha_email
-#      data:
-#        title: 'Intruder alert'
-#        message: 'Intruder alert at apartment!!'
-#############################################################################################
-# NOTIFY VIA PUSHOVER DIRECT
-#############################################################################################
-#    - service: notify.pushover
-#      data:
-#        title: 'Intruder alert'
-#        message: 'Intruder alert at apartment!!'
-#############################################################################################
-# SPEECH VIA SPEECH ENGINE
-#############################################################################################
-#    - service: script.engine_say
-#      data_template:
-#        media_player: media_player.this_device
-#        say_testing: "true"
-#############################################################################################
-# TURN LIGHT ON WITH TRANSITION
-#############################################################################################
-#    service: light.turn_on
-#    entity_id:
-#      - light.dressoir_all
-#    data:
-#      transition: 5
-#      brightness_pct: 10
-#############################################################################################
