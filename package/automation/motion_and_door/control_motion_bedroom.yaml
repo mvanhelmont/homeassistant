@@ -17,7 +17,7 @@
 
     - condition: state
       entity_id: switch.mqtt_scene_daytime
-      state: "off"
+      state: "on"
 
   action:
     - service: light.turn_on
