@@ -11,10 +11,14 @@
     entity_id: binary_sensor.node_18
 
   condition:
-    condition: state
-    entity_id: switch.mqtt_scene_goodnight
-    state: "on"
+    - condition: state
+      entity_id: switch.mqtt_scene_goodnight
+      state: "on"
 
+    - condition: state
+      entity_id: switch.mqtt_scene_guests
+      state: "off"
+      
   action:
     service: light.turn_on
     data_template:

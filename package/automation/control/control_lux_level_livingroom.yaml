@@ -30,6 +30,10 @@
       entity_id: sensor.node_19_luminance
       below: 160
 
+    - condition: state
+      entity_id: switch.mqtt_scene_guests
+      state: "off"
+
     - condition: or
       conditions:
         - condition: state
@@ -87,6 +91,10 @@
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
 
+    - condition: state
+      entity_id: switch.mqtt_scene_guests
+      state: "off"
+      
   action:
     - service: light.turn_on
       entity_id:

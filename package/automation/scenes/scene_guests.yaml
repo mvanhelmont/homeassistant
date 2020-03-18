@@ -17,10 +17,3 @@
         priority: 0
         sound: bike
         title: "HA Scene System"
-
-    - service_template: "{{ 'automation.turn_off' if is_state('switch.mqtt_scene_guests', 'on') else 'automation.turn_on' }}"
-      data:
-        entity_id:
-          - automation.motion_detection_livingroom_on_off
-          - automation.motion_detection_diningroom_on_off
-          - automation.motion_detection_hallway_on_off

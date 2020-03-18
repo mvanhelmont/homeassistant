@@ -23,6 +23,10 @@
       entity_id: switch.newkaku_0114ef92_c
       state: "off"
 
+    - condition: state
+      entity_id: switch.mqtt_scene_guests
+      state: "off"
+
   action:
     service: light.turn_on
     data_template:
