@@ -7,8 +7,8 @@
 ###########################################################################################
 ---
 platform: mqtt
-command_topic: "homeassistant/kitchenseeling/switch"
-state_topic: "homeassistant/kitchenseeling/switch"
+command_topic: "homeassistant/meek/kitchenseeling"
+state_topic: "homeassistant/meek/kitchenseeling"
 payload_on: "1"
 payload_off: "0"
 state_on: "1"
