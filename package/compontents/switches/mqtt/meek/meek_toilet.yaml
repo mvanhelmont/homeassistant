@@ -16,4 +16,4 @@ state_off: "0"
 name: "Meek Toilet"
 optimistic: false
 qos: 0
-retain: true
+retain: false
