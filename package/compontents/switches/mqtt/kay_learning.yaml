@@ -7,8 +7,8 @@
 ###########################################################################################
 ---
 platform: mqtt
-command_topic: "homeassistant/kaylearning/switch"
-state_topic: "homeassistant/kaylearning/switch"
+command_topic: "homeassistant/switch/kaylearning"
+state_topic: "homeassistant/switch/kaylearning"
 payload_on: "1"
 payload_off: "0"
 state_on: "1"
