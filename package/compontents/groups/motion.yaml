@@ -8,9 +8,9 @@
 ---
 group_motion_sensors:
   entities:
-    - binary_sensor.node_15
-    - binary_sensor.node_16
-    - binary_sensor.node_17
-    - binary_sensor.node_18
-    - binary_sensor.node_19
-    - binary_sensor.node_20
+    - binary_sensor.node_15 # Motion Bathroom
+    - binary_sensor.node_16 # Motion Kitchen
+    - binary_sensor.node_17 # Motion Hallway
+    - binary_sensor.node_18 # Motion Diningroom
+    - binary_sensor.node_19 # Motion Livingroom
+    - binary_sensor.node_20 # Motion Toilet

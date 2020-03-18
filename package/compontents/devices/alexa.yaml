@@ -26,13 +26,13 @@ smart_home:
       - light.nanoleaf
       - light.lenovo_full_kiosk
 # Motion Sensors - Not seen as motion sensors
-      - binary_sensor.node_14
-      - binary_sensor.node_15
-      - binary_sensor.node_16
-      - binary_sensor.node_17
-      - binary_sensor.node_18
-      - binary_sensor.node_19
-      - binary_sensor.node_20
+      - binary_sensor.node_14 # Motion Bedroom
+      - binary_sensor.node_15 # Motion Bathroom
+      - binary_sensor.node_16 # Motion Kitchen
+      - binary_sensor.node_17 # Motion Hallway
+      - binary_sensor.node_18 # Motion Diningroom
+      - binary_sensor.node_19 # Motion Livingroom
+      - binary_sensor.node_20 # Motion Toilet
 
 # Nest Protect - Not seen as smoke sensors
 #      - sensor.bedroom_nest_protect_co_status
