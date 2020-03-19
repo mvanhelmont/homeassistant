@@ -13,7 +13,7 @@
   condition:
     - condition: state
       entity_id: switch.mqtt_scene_daytime
-      state: "on"
+      state: "off"
 
     - condition: state
       entity_id: switch.mqtt_scene_cooking
