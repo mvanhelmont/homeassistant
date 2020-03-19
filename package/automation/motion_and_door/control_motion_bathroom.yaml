@@ -30,3 +30,8 @@
         {% elif (states.binary_sensor.node_15.state) == 'off' and (states.switch.mqtt_scene_goodnight.state) == 'off' %}  switch.turn_off
         {% endif %}
       entity_id: switch.meek_bathroom
+
+    - service: mqtt.publish
+      data_template:
+        topic: 'homeassistant/motion/bathroom'
+        payload: "{{ 1 if is_state('binary_sensor.node_15', 'on') else 0 }}"

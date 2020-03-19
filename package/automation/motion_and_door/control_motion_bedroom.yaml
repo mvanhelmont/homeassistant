@@ -41,5 +41,5 @@
 
     - service: mqtt.publish
       data_template:
-        topic: 'homeassistant/motion/bedroom'
-        payload: '1'
+        topic: 'homeassistant/motion/bathroom'
+        payload: "{{ 1 if is_state('binary_sensor.node_14', 'on') else 0 }}"
