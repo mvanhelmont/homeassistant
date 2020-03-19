@@ -27,7 +27,7 @@
 
     - service_template: >-
         {% if (states.binary_sensor.node_17.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} switch.turn_on
-        {% elif (states.binary_sensor.node_75.state) == 'off' and (states.switch.mqtt_scene_goodnight.state) == 'off' %}  switch.turn_off
+        {% elif (states.binary_sensor.node_17.state) == 'off' and (states.switch.mqtt_scene_goodnight.state) == 'off' %}  switch.turn_off
         {% endif %}
       entity_id: switch.meek_hallway
 
