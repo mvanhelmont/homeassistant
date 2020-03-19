@@ -10,8 +10,8 @@ stream_radio:
     - service: media_player.play_media
       data_template:
         entity_id: >-
-          {% if is_state("input_select.radio_selector", "Kitchen") %} media_player.lenovo_full_kiosk
-          {% elif is_state("input_select.radio_selector", "iMac") %} media_player.imac_safari
+          {% if is_state("input_select.radio_selector", "Kitchen") %} media_player.browser_da44cbb8_3c8227c9
+          {% elif is_state("input_select.radio_selector", "iMac") %} media_player.browser_d519dbc2_9d8ae50c
           {% endif %}
         media_content_id: >-
           {% if is_state("input_select.radio_station", "Radio 538") %} https://18973.live.streamtheworld.com/RADIO538.mp3
@@ -36,6 +36,6 @@ stream_radio_stop:
     - service: media_player.media_stop
       data_template:
         entity_id: >-
-          {% if is_state("input_select.radio_selector", "Kitchen") %} media_player.lenovo_full_kiosk
-          {% elif is_state("input_select.radio_selector", "iMac") %} media_player.imac_safari
+          {% if is_state("input_select.radio_selector", "Kitchen") %} media_player.browser_da44cbb8_3c8227c9
+          {% elif is_state("input_select.radio_selector", "iMac") %} media_player.browser_d519dbc2_9d8ae50c
           {% endif %}

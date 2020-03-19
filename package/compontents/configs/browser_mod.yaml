@@ -8,8 +8,8 @@
 ---
 prefix: "browser_"
 devices:
-  fa86fa95 a728c89b:
+  d519dbc2 9d8ae50c:
     name: "iMac Safari"
-  35efb15c_2d91fcb9:
+  da44cbb8 3c8227c9:
     name: "Lenovo Full Kiosk"
     camera: true

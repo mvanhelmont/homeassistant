@@ -10,7 +10,7 @@
 #
 ###########################################################################################
 
-sensor.lenovo_full_kiosk:
+sensor.browser_da44cbb8_3c8227c9:
   friendly_name: Fully Kiosk Sensor
 
 sensor.fibaro_frontdoor_custom_sensor:
