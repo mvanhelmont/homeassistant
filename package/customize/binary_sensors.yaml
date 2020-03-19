@@ -60,9 +60,6 @@ binary_sensor.snapshots_stale:
 binary_sensor.updater:
   friendly_name: "HA Updater"
 
-#binary_sensor.lenovo_full_kiosk:
-#  friendly_name: "FKB Motion"
-
 ###########################################################################################
 #
 # BINARY_SENSOR CLIMATE
