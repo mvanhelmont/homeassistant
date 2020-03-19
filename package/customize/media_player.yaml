@@ -8,7 +8,7 @@
 ###########################################################################################
 
 media_player.browser_da44cbb8_3c8227c9:
-  friendly_name: Fully Kiosk Media Player
+  friendly_name: "Fully Kiosk Media Player"
 
 media_player.kodi:
   friendly_name: "Kodi"
@@ -19,7 +19,8 @@ media_player.peter_s_echo_dot:
 media_player.woonkamer_2:
   friendly_name: "Apple TV"
 
-#media_player.browser_39743d20_12b95c55:
+media_player.browser_d519dbc2_9d8ae50c:
+  friendly_name: "iMac Browser"
 
 media_player.peter_s_alexa_apps:
   friendly_name: "Alexa App on iPhone"
