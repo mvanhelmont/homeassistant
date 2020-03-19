@@ -34,3 +34,9 @@ input_boolean.switches_pulldown:
   templates:
     icon: mdi:nintendo-switch
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+input_boolean.other_pulldown:
+  friendly_name: "Other Switches"
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
