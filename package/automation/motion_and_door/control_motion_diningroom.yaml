@@ -25,6 +25,12 @@
         entity_id: light.dressoir_all
         brightness_pct: "{{ 20 if is_state('binary_sensor.node_18', 'on') else 0 }}"
 
+    - service_template: >-
+        {% if (states.binary_sensor.node_18.state) == 'on' %} switch.turn_on
+        {% elif (states.binary_sensor.node_18.state) == 'off' %} switch.turn_off
+        {% endif %}
+      entity_id: switch.meek_diningroom
+
     - service: mqtt.publish
       data_template:
         topic: 'homeassistant/motion/diningroom'
