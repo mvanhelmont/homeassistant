@@ -29,7 +29,7 @@
         {% if (states.binary_sensor.node_18.state) == 'on' %} switch.turn_on
         {% elif (states.binary_sensor.node_18.state) == 'off' %} switch.turn_off
         {% endif %}
-      entity_id: switch.meek_diningroom
+      entity_id: switch.meek_dressoir
 
     - service: mqtt.publish
       data_template:
