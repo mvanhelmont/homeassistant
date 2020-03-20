@@ -11,10 +11,11 @@
     to: "on"
 
   action:
-    service: mqtt.publish
+    service: light.turn_on
     data_template:
-      topic: 'homeassistant/test123/switch'
-      payload: '1'
+      entity_id: light.dressoir_3
+      color_name: blue
+      brightness_pct: 100
 
 - alias: "TEST - trigger statement ATOM"
   trigger:
@@ -23,7 +24,6 @@
     to: "off"
 
   action:
-    service: mqtt.publish
+    service: light.turn_off
     data_template:
-      topic: 'homeassistant/test123/switch'
-      payload: '0'
+      entity_id: light.dressoir_3
