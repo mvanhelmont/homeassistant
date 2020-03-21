@@ -4,7 +4,7 @@
 #
 ###########################################################################################
 
-- alias: "Motion Detection - Kitchen On Off"
+- alias: "Motion Detection - Kitchen On Off Goodnight Scene Active"
   trigger:
 
     platform: state
