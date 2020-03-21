@@ -25,11 +25,11 @@
         entity_id: light.hallway
         brightness_pct: "{{ 20 if is_state('binary_sensor.node_17', 'on') else 0 }}"
 
-#    - service_template: >-
-#        {% if (states.binary_sensor.node_17.state) == 'on' %} switch.turn_on
-#        {% else %} switch.turn_off
-#        {% endif %}
-#      entity_id: switch.meek_hallway
+    - service_template: >-
+        {% if (states.binary_sensor.node_17.state) == 'on' %} switch.turn_on
+        {% else %} switch.turn_off
+        {% endif %}
+      entity_id: switch.meek_hallway
 
     - service: mqtt.publish
       data_template:
