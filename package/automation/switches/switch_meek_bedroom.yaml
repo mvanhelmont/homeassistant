@@ -1,6 +1,6 @@
 ###########################################################################################
 #
-# SWITCH CONTROL FOR BALCONY
+# CONTROL LIGHT BEDROOM WHEN DAYTOME SCENE IS OFF
 #
 ###########################################################################################
 
@@ -14,7 +14,6 @@
     service: light.turn_on
     data_template:
       entity_id: light.bedroom_all
-      #kelvin: 2800
       brightness_pct: >-
         {% if (states.switch.meek_bedroom.state) == 'on' and (states.binary_sensor.node_12.state) == 'on' %} 20
         {% elif (states.switch.meek_bedroom.state) == 'on' and (states.binary_sensor.node_12.state) == 'off' %} 100
