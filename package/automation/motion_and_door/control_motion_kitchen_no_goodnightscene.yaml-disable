@@ -1,6 +1,5 @@
 ###########################################################################################
 #
-# KITCHEN CONTROL LIGHTS BASED ON SENSOR STATUS AND EVENT
 #
 ###########################################################################################
 
@@ -12,20 +11,21 @@
 
   condition:
     - condition: state
-      entity_id: switch.mqtt_scene_goodnight
+      entity_id: switch.mqtt_scene_daytime
       state: "off"
 
     - condition: state
-      entity_id: switch.mqtt_scene_guests
+      entity_id: switch.mqtt_scene_cooking
       state: "off"
 
   action:
-#    - service: light.turn_on
-#      data_template:
-#        entity_id:
-#          - light.kitchen_all
-#          - light.sink_all
-#        brightness_pct: "{{ 20 if is_state('binary_sensor.node_16', 'on') else 0 }}"
+    - service_template: >-
+        {% if (states.sensor.holiday.state) == 'Christmas' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
+        {% elif (states.sensor.holiday.state) == 'Halloween' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on
+        {% elif (states.sensor.holiday.state) == 'Kingsday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
+        {% elif (states.sensor.holiday.state) == 'Birthday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
+        {% else %} script.kitchen_normal_turn_on
+        {% endif %}
 
     - service_template: >-
         {% if (states.binary_sensor.node_16.state) == 'on' %} switch.turn_on
@@ -34,6 +34,7 @@
       entity_id:
         - switch.meek_kitchen_seeling
         - switch.meek_kitchen_sink
+        - switch.meek_cooking
 
     - service: mqtt.publish
       data_template:
