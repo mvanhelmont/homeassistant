@@ -16,7 +16,7 @@ media_player.kodi:
 media_player.peter_s_echo_dot:
   friendly_name: "Alexa Echo Dot"
 
-media_player.woonkamer_2:
+media_player.woonkamer:
   friendly_name: "Apple TV"
 
 media_player.browser_d519dbc2_9d8ae50c:

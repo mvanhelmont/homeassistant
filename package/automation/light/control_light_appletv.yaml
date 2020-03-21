@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: media_player.woonkamer_2
+    entity_id: media_player.woonkamer
 
   condition:
     - condition: state
@@ -33,7 +33,7 @@
     - delay: "00:00:02"
 
     - service_template: >-
-        {% if (states.media_player.woonkamer_2.state) == 'playing' %} script.appletv_control_playing
-        {% elif (states.media_player.woonkamer_2.state) == 'paused' %} script.appletv_control_paused
+        {% if (states.media_player.woonkamer.state) == 'playing' %} script.appletv_control_playing
+        {% elif (states.media_player.woonkamer.state) == 'paused' %} script.appletv_control_paused
         {% else %} script.appletv_control_idle
         {% endif %}

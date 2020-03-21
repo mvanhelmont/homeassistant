@@ -45,12 +45,12 @@ appletv_control_playing:
   alias: "AppleTV Control Playing Scene"
   sequence:
 
-    - wait_template: "{{ not is_state('media_player.woonkamer_2', 'playing') }}"
+    - wait_template: "{{ not is_state('media_player.woonkamer', 'playing') }}"
       timeout: "00:00:10"
       continue_on_timeout: "true"
 
     - condition: state
-      entity_id: media_player.woonkamer_2
+      entity_id: media_player.woonkamer
       state: playing
 
     - service: light.turn_on
