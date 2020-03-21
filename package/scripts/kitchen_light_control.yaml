@@ -4,6 +4,20 @@
 #
 ###########################################################################################
 
+kitchen_turn_off:
+  alias: "Kitchen Turn off"
+  sequence:
+    - service: switch.turn_off
+      entity_id:
+        - switch.meek_kitchen_seeling
+        - switch.meek_kitchen_sink
+
+###########################################################################################
+#
+# NORMAL
+#
+###########################################################################################
+
 kitchen_normal_turn_on:
   alias: "Kitchen Normal Turn On"
   sequence:
