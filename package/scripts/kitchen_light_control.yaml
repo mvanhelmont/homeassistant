@@ -5,19 +5,19 @@
 ###########################################################################################
 
 kitchen_seeling_turn_off:
-  alias: "Kitchen Turn off"
+  alias: "Kitchen Seeling Turn off"
   sequence:
     service: switch.turn_off
     entity_id: switch.meek_kitchen_seeling
 
 kitchen_sink_turn_off:
-  alias: "Kitchen Turn off"
+  alias: "Kitchen Sink Turn off"
   sequence:
     service: switch.turn_off
     entity_id: switch.meek_kitchen_sink
 
 kitchen_cooking_turn_off:
-  alias: "Kitchen Turn off"
+  alias: "Kitchen Cooking Turn off"
   sequence:
     service: switch.turn_off
     entity_id: switch.meek_cooking
