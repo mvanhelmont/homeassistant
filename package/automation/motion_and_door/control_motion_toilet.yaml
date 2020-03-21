@@ -16,16 +16,16 @@
     state: "on"
 
   action:
-#    - service: light.turn_on
-#      data_template:
-#        entity_id: light.toilet_all
-#        brightness_pct: "{{ 20 if is_state('binary_sensor.node_20', 'on') else 0 }}"
+    - service: light.turn_on
+      data_template:
+        entity_id: light.toilet_all
+        brightness_pct: "{{ 20 if is_state('binary_sensor.node_20', 'on') else 0 }}"
 
-    - service_template: >-
-        {% if (states.binary_sensor.node_20.state) == 'on' %} switch.turn_on
-        {% else %}  switch.turn_off
-        {% endif %}
-      entity_id: switch.meek_toilet
+#    - service_template: >-
+#        {% if (states.binary_sensor.node_20.state) == 'on' %} switch.turn_on
+#        {% else %}  switch.turn_off
+#        {% endif %}
+#      entity_id: switch.meek_toilet
 
     - service: mqtt.publish
       data_template:
