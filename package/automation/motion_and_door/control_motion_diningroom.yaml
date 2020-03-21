@@ -27,7 +27,7 @@
 
     - service_template: >-
         {% if (states.binary_sensor.node_18.state) == 'on' %} switch.turn_on
-        {% elif (states.binary_sensor.node_18.state) == 'off' %} switch.turn_off
+        {% elif %} switch.turn_off
         {% endif %}
       entity_id: switch.meek_dressoir
 
