@@ -11,12 +11,10 @@
     entity_id: switch.meek_kitchen_seeling
 
   action:
-    service: light.turn_on
-    data_template:
-      entity_id: light.kitchen_all
-      #kelvin: 2800
-      brightness_pct: >-
-        {% if (states.switch.meek_kitchen_seeling.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 20
-        {% elif (states.switch.meek_kitchen_seeling.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
-        {% else %} 0
-        {% endif %}
+    service_template: >-
+      {% if (states.sensor.holiday.state) == 'Christmas' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
+      {% elif (states.sensor.holiday.state) == 'Halloween' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on
+      {% elif (states.sensor.holiday.state) == 'Kingsday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
+      {% elif (states.sensor.holiday.state) == 'Birthday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
+      {% else %} script.kitchen_normal_turn_on
+      {% endif %}

@@ -19,6 +19,10 @@
       entity_id: switch.mqtt_scene_guests
       state: "off"
 
+    - condition: state
+      entity_id: sensor.holiday.state
+      state: "No holiday today"
+
   action:
 #    - service: light.turn_on
 #      data_template:
