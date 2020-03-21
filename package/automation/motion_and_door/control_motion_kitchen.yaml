@@ -35,6 +35,7 @@
       entity_id:
         - switch.meek_kitchen_seeling
         - switch.meek_kitchen_sink
+        - switch.meek_cooking
 
     - service: mqtt.publish
       data_template:
