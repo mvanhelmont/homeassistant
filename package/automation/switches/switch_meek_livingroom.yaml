@@ -16,7 +16,7 @@
       entity_id: light.livingroom_all
       #kelvin: 2800
       brightness_pct: >-
-        {% if (states.switch.meek_livingroom.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 50
+        {% if (states.switch.meek_livingroom.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 20
         {% elif (states.switch.meek_livingroom.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
-        {% else %}0
+        {% else %} 0
         {% endif %}

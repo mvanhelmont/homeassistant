@@ -18,5 +18,5 @@
       brightness_pct: >-
         {% if (states.switch.meek_balcony.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 20
         {% elif (states.switch.meek_balcony.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
-        {% else %}0
+        {% else %} 0
         {% endif %}
