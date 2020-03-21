@@ -8,7 +8,7 @@
 ---
 platform: template
 switches:
-  goodnight_hallway:
+  goodnight_dressoir:
     value_template: "{{ is_state('binary_sensor.node_18', 'on') }}"
     turn_on:
       - service: light.turn_on
@@ -23,3 +23,19 @@ switches:
       service: switch.turn_off
       data:
         entity_id: switch.meek_dressoir
+
+  goodnight_hallway:
+    value_template: "{{ is_state('binary_sensor.node_17', 'on') }}"
+    turn_on:
+      - service: light.turn_on
+        data:
+          entity_id: light.hallway
+          color_name: blue
+          brightness_pct: 100
+      - service: switch.turn_on
+        data:
+          entity_id: switch.meek_hallway
+    turn_off:
+      service: switch.turn_off
+      data:
+        entity_id: switch.meek_hallway
