@@ -15,9 +15,9 @@
       entity_id: switch.mqtt_scene_daytime
       state: "off"
 
-      - condition: state
-        entity_id: switch.mqtt_scene_goodnight
-        state: "off"
+    - condition: state
+      entity_id: switch.mqtt_scene_goodnight
+      state: "off"
 
     - condition: state
       entity_id: switch.mqtt_scene_cooking
@@ -32,7 +32,7 @@
 #        {% else %} script.kitchen_normal_turn_on
 #        {% endif %}
 
-   - service_template: >-
+    - service_template: >-
         {% if (states.binary_sensor.node_16.state) == 'on' %} switch.turn_on
         {% else %} switch.turn_off
         {% endif %}
