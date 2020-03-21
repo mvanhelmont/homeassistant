@@ -1,5 +1,6 @@
 ###########################################################################################
 #
+# CONTROL LIGHT KITCHEN WHEN GOODNIGHT SCENE IS NOT ACTIVE
 #
 ###########################################################################################
 
@@ -14,20 +15,24 @@
       entity_id: switch.mqtt_scene_daytime
       state: "off"
 
+      - condition: state
+        entity_id: switch.mqtt_scene_goodnight
+        state: "off"
+
     - condition: state
       entity_id: switch.mqtt_scene_cooking
       state: "off"
 
   action:
-    - service_template: >-
-        {% if (states.sensor.holiday.state) == 'Christmas' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
-        {% elif (states.sensor.holiday.state) == 'Halloween' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on
-        {% elif (states.sensor.holiday.state) == 'Kingsday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
-        {% elif (states.sensor.holiday.state) == 'Birthday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
-        {% else %} script.kitchen_normal_turn_on
-        {% endif %}
+#    - service_template: >-
+#        {% if (states.sensor.holiday.state) == 'Christmas' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
+#        {% elif (states.sensor.holiday.state) == 'Halloween' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on
+#        {% elif (states.sensor.holiday.state) == 'Kingsday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
+#        {% elif (states.sensor.holiday.state) == 'Birthday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
+#        {% else %} script.kitchen_normal_turn_on
+#        {% endif %}
 
-    - service_template: >-
+   - service_template: >-
         {% if (states.binary_sensor.node_16.state) == 'on' %} switch.turn_on
         {% else %} switch.turn_off
         {% endif %}

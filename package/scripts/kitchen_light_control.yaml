@@ -11,6 +11,7 @@ kitchen_turn_off:
     entity_id:
       - switch.meek_kitchen_seeling
       - switch.meek_kitchen_sink
+      - switch.meek_cooking
 
 ###########################################################################################
 #
