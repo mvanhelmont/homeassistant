@@ -20,7 +20,7 @@
       state: "off"
 
     - condition: state
-      entity_id: sensor.holiday.state
+      entity_id: sensor.holiday
       state: "No holiday today"
 
   action:
