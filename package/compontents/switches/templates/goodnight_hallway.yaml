@@ -5,16 +5,16 @@
 # https://www.home-assistant.io/integrations/switch.template/
 #
 ###########################################################################################
-  ---
-  platform: template
-  switches:
-    goodnight_hallway:
-      value_template: "{{ is_state('binary_sensor.node_17', 'on') }}"
-      turn_on:
-        service: switch.turn_on
-        data:
-          entity_id: switch.meek_hallway
-      turn_off:
-        service: switch.turn_off
-        data:
-          entity_id: switch.meek_hallway
+---
+platform: template
+switches:
+  goodnight_hallway:
+    value_template: "{{ is_state('binary_sensor.node_17', 'on') }}"
+    turn_on:
+      service: switch.turn_on
+      data:
+        entity_id: switch.meek_hallway
+    turn_off:
+      service: switch.turn_off
+      data:
+        entity_id: switch.meek_hallway
