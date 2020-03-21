@@ -24,6 +24,7 @@ switches:
       data:
         entity_id: switch.meek_dressoir
 
+switches:
   goodnight_hallway:
     value_template: "{{ is_state('binary_sensor.node_17', 'on') }}"
     turn_on:
