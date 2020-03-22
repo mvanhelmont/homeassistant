@@ -4,18 +4,18 @@
 #
 ###########################################################################################
 
-- alias: "Switch - Meek Sink"
+- alias: "Switch - Meek Toilet"
   trigger:
 
     platform: state
-    entity_id: switch.meek_kitchen_sink
+    entity_id: switch.meek_toilet
 
   action:
     service: light.turn_on
     data_template:
-      entity_id: light.sink_all
+      entity_id: light.toilet_all
       brightness_pct: >-
-        {% if (states.switch.meek_kitchen_sink.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 50
-        {% elif (states.switch.meek_kitchen_sink.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
+        {% if (states.switch.meek_toilet.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 50
+        {% elif (states.switch.meek_toilet.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
         {% else %} 0
         {% endif %}

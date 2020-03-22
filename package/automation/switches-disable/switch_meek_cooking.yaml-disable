@@ -1,0 +1,15 @@
+###########################################################################################
+#
+# SWITCH CONTROL FOR BALCONY
+#
+###########################################################################################
+
+- alias: "Switch - Meek Cooking"
+  trigger:
+
+    platform: state
+    entity_id: switch.meek_cooking
+
+  action:
+    service_template: "{{ 'switch.turn_on' if is_state('switch.meek_cooking', 'on') else 'switch.turn_off' }}"
+    entity_id: switch.newkaku_011fad02_c # OLD KAKU DIMMER

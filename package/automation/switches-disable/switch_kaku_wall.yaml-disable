@@ -1,0 +1,18 @@
+###########################################################################################
+#
+# SWITCH CONTROL FOR LIVINGROOM WALL LIGHTS
+#
+###########################################################################################
+
+- alias: "Switch - Wall"
+  trigger:
+
+    platform: state
+    entity_id: switch.newkaku_0114ef92_b
+
+  action:
+    service: light.turn_on
+    data_template:
+      entity_id: light.livingroom_wall
+      #kelvin: 2800
+      brightness_pct: "{{ 100 if is_state('switch.newkaku_0114ef92_b', 'on') else 0 }}"
