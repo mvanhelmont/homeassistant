@@ -8,5 +8,5 @@
 ---
 platform: mqtt
 name: "P1 Tarifcode"
-state_topic: "p1monitor/smartmeter/tarifcode"
+state_topic: "Servers/smartmeter/tarifcode"
 value_template: "{{ value }}"

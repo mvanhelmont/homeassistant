@@ -8,5 +8,5 @@
 ---
 platform: mqtt
 name: "P1 Total kWh Low"
-state_topic: "p1monitor/smartmeter/consumption_kwh_low"
+state_topic: "Servers/smartmeter/consumption_kwh_low"
 value_template: "{{ value }}"

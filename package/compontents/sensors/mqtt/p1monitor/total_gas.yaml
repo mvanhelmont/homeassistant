@@ -8,5 +8,5 @@
 ---
 platform: mqtt
 name: "P1 Total Gas m3"
-state_topic: "p1monitor/smartmeter/consumption_gas_m3"
+state_topic: "Servers/smartmeter/consumption_gas_m3"
 value_template: "{{ value }}"

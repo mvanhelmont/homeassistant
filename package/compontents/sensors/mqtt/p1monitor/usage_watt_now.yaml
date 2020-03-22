@@ -8,5 +8,5 @@
 ---
 platform: mqtt
 name: "P1 Usage Watt Now"
-state_topic: "p1monitor/smartmeter/consumption_kw"
+state_topic: "Servers/smartmeter/consumption_kw"
 value_template: "{{ value }}"
