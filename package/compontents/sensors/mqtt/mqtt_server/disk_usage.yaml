@@ -8,6 +8,6 @@
 ---
 platform: mqtt
 name: "MQTT Disk Usage"
-state_topic: "homeassistant/mqtt_server/systemstatus"
+state_topic: "Servers/mqtt_server/systemstatus"
 value_template: "{{ value_json.diskusage | round(0) }}"
 unit_of_measurement: "%"

@@ -8,6 +8,6 @@
 ---
 platform: mqtt
 name: "MQTT Power Supply"
-state_topic: "homeassistant/mqtt_server/systemstatus"
+state_topic: "Servers/mqtt_server/systemstatus"
 unit_of_measurement: "V"
 value_template: "{{ value_json.volt | round(3) }}"

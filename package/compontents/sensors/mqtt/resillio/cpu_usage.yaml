@@ -8,6 +8,6 @@
 ---
 platform: mqtt
 name: "Resillio CPU Usage"
-state_topic: "homeassistant/resillio/systemstatus"
+state_topic: "Servers/resillio/systemstatus"
 unit_of_measurement: "%"
 value_template: "{{ value_json.cpuusage | round(0) }}"

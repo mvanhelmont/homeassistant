@@ -8,6 +8,6 @@
 ---
 platform: mqtt
 name: "MQTT CPU Usage"
-state_topic: "homeassistant/mqtt_server/systemstatus"
+state_topic: "Servers/mqtt_server/systemstatus"
 unit_of_measurement: "%"
 value_template: "{{ value_json.cpuusage | round (0) }}"

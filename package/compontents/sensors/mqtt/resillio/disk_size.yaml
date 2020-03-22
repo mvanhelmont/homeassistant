@@ -8,5 +8,5 @@
 ---
 platform: mqtt
 name: "Resillio Disk Size"
-state_topic: "homeassistant/resillio/systemstatus"
+state_topic: "Servers/resillio/systemstatus"
 value_template: "{{ value_json.disktotal | round(0) }}"

@@ -8,6 +8,6 @@
 ---
 platform: mqtt
 name: "Resillio CPU Temp"
-state_topic: "homeassistant/resillio/systemstatus"
+state_topic: "Servers/resillio/systemstatus"
 unit_of_measurement: "°F"
 value_template: "{{ value_json.cputemp | round(0) }}"
