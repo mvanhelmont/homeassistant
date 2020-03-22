@@ -8,7 +8,7 @@
 ---
 platform: mqtt
 name: "ITHO Speed"
-state_topic: "ITHO/Fan/State"
+state_topic: "Servers/ITHO/Fan/State"
 value_template: >-
   {% if value|float == 0 %}
     Standby

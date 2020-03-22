@@ -8,6 +8,6 @@
 ---
 platform: mqtt
 name: "ITHO Tijd"
-state_topic: "ITHO/Fan/Timer"
+state_topic: "Servers/ITHO/Fan/Timer"
 value_template: "{{ value }}"
 unit_of_measurement: "s"

@@ -7,10 +7,10 @@
 ###########################################################################################
 ---
 platform: mqtt
-command_topic: "ITHO/Fan/cmd"
-state_topic: "ITHO/Fan/State"
-speed_command_topic: "ITHO/Fan/cmd"
-speed_state_topic: "ITHO/Fan/State"
+command_topic: "Servers/ITHO/Fan/cmd"
+state_topic: "Servers/ITHO/Fan/State"
+speed_command_topic: "Servers/ITHO/Fan/cmd"
+speed_state_topic: "Servers/ITHO/Fan/State"
 state_value_template: "{% if value|float==0 %}State 0{% endif %}{% if value|float >0 %}State 1{% endif %}"
 speed_value_template: "{% if value|float==0 %}State 0{% endif %}{% if value|float >0 and value|float <=4 %}State {{value}}{% endif %}{% if value|float >=11 %}State 3{% endif %}"
 payload_on: "State 1"
