@@ -4,11 +4,12 @@
 #
 # https://www.home-assistant.io/integrations/rest/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: rest
 resource: !secret mvpsjsonvmail
 method: GET
+verify_ssl: false
 name: "VMail Last Backup Size"
 value_template: "{{ value_json['vmailbackup']['size'] }}"
 unit_of_measurement: "MB"
