@@ -13,4 +13,3 @@ verify_ssl: false
 name: "WWW Backup information"
 json_attributes:
   - "www"
-value_template: "OK"

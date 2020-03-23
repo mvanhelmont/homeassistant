@@ -13,4 +13,3 @@ verify_ssl: false
 name: "MVPS SSH Information"
 json_attributes:
   - "ssh"
-value_template: "OK"

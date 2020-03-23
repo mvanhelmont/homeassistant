@@ -13,4 +13,3 @@ verify_ssl: false
 name: "VMail Backup information"
 json_attributes:
   - "vmailbackup"
-value_template: "OK"
