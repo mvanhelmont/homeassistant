@@ -1,0 +1,16 @@
+###########################################################################################
+#
+# SENSOR REST
+#
+# https://www.home-assistant.io/integrations/rest/
+#
+###########################################################################################
+---
+platform: rest
+resource: !secret mvpsjsonssh
+method: GET
+verify_ssl: false
+name: "MVPS SSH Information"
+json_attributes:
+  - "ssh"
+value_template: "OK"

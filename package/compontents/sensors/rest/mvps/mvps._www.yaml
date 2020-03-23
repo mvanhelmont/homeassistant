@@ -1,0 +1,16 @@
+###########################################################################################
+#
+# SENSOR REST
+#
+# https://www.home-assistant.io/integrations/rest/
+#
+###########################################################################################
+---
+platform: rest
+resource: !secret mvpsjsonwww
+method: GET
+verify_ssl: false
+name: "WWW Backup information"
+json_attributes:
+  - "www"
+value_template: "OK"
