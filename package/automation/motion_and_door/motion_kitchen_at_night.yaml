@@ -21,7 +21,7 @@
 
     - condition: state
       entity_id: sensor.holiday
-      state: "No holiday today"
+      state: "Nothing"
 
   action:
 #    - service: light.turn_on
