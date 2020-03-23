@@ -1,0 +1,21 @@
+###########################################################################################
+#
+# SENSOR REST
+#
+# https://www.home-assistant.io/integrations/rest/
+#
+###########################################################################################
+---
+platform: rest
+resource: http://192.168.100.70/about
+name: "Milight About V2"
+json_attributes:
+  - firmware
+  - version
+  - ip_address
+  - reset_reason
+  - variant
+  - free_heap
+  - arduino_version
+  - queue_stats
+value_template: "OK"
