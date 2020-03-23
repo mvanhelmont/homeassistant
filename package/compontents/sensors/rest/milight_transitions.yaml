@@ -7,14 +7,9 @@
 ###########################################################################################
 ---
 platform: rest
-resource: http://192.168.100.70/about
-name: "Milight About"
-value_template: "{{ value_json.version }}"
+resource: http://192.168.100.70/transitions
+scan_interval: 5
+name: "Milight Transitions"
 json_attributes:
-  - "firmware"
-  - "version"
-  - "ip_address"
-  - "reset_reason"
-  - "variant"
-  - "free_heap"
-  - "arduino_version"
+  - transitions
+value_template: "OK"
