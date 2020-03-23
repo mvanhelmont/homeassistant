@@ -10,6 +10,7 @@ platform: rest
 resource: !secret mvpsjsonvmail
 method: GET
 verify_ssl: false
+scan_interval: 15
 name: "VMail Backup information"
 json_attributes:
   - vmailbackup
