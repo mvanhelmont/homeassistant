@@ -12,4 +12,5 @@ method: GET
 verify_ssl: false
 name: "WWW Backup information"
 json_attributes:
-  - "www"
+  - www
+value_template: "OK"

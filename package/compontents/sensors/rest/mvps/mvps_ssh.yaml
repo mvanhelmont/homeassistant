@@ -12,4 +12,5 @@ method: GET
 verify_ssl: false
 name: "MVPS SSH Information"
 json_attributes:
-  - "ssh"
+  - ssh
+value_template: "OK"
