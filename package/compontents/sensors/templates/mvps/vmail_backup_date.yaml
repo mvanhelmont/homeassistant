@@ -8,6 +8,6 @@
 ---
 platform: template
 sensors:
-  www_oudenes_size:
+  vmail_backup_date:
     entity_id: sensor.date
     value_template: '{{ states.sensor.www_backup_information.attributes["vmailbackup"]["date"] }}'
