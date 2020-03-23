@@ -13,4 +13,4 @@ verify_ssl: false
 name: "WWW Backup information"
 json_attributes:
   - www
-value_template: "OK"
+value_template: '{{ value_json }}'
