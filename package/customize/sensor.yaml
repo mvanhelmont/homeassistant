@@ -284,11 +284,11 @@ sensor.www_oudenes_size:
 
 sensor.www_asia_size:
   icon: mdi:harddisk
-    friendly_name: "WWW Asia Size"
+  friendly_name: "WWW Asia Size"
 
 sensor.www_hairdelicious_size:
   icon: mdi:harddisk
-    friendly_name: "WWW Hair Size"
+  friendly_name: "WWW Hair Size"
 
 ###########################################################################################
 #
@@ -315,7 +315,6 @@ sensor.www_backup_date:
 sensor.www_backup_time:
   icon: mdi:backup-restore
   friendly_name: "WWW Backup Time"
-
 
 ###########################################################################################
 #
