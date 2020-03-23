@@ -10,4 +10,5 @@ platform: template
 sensors:
   www_backup_date:
     entity_id: sensor.date
+    name: "MVPS WWW Backup Date"
     value_template: '{{ states.sensor.www_backup_information.attributes["www"]["date"] }}'

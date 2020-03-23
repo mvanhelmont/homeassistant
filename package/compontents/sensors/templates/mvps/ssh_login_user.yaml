@@ -8,7 +8,7 @@
 ---
 platform: template
 sensors:
-  www_backup_time:
+  ssh_login_date:
+    name: "MVPS SSH Login User"
     entity_id: sensor.date
-    name: "MVPS WWW Backup Time"
-    value_template: '{{ states.sensor.www_backup_information.attributes["www"]["time"] }}'
+    value_template: '{{ states.sensor.mvps_ssh_information.attributes["ssh"]["user"] }}'

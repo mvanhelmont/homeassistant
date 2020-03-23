@@ -8,7 +8,7 @@
 ---
 platform: template
 sensors:
-  www_backup_time:
+  www_oudenes_size:
     entity_id: sensor.date
-    name: "MVPS WWW Backup Time"
-    value_template: '{{ states.sensor.www_backup_information.attributes["www"]["time"] }}'
+    name: "MVPS Vmail Backup Time"
+    value_template: '{{ states.sensor.www_backup_information.attributes["vmailbackup"]["time"] }}'
