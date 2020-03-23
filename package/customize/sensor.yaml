@@ -184,10 +184,13 @@ sensor.m5_packets_sent:
 #
 ###########################################################################################
 
-sensor.esp8266_milight_hub_dropped_packets:
-    friendly_name: "Dropped Packets"
+sensor.milight_firmware:
+  friendly_name: "Firmware"
 
-sensor.esp8266_milight_hub_queue_length:
+sensor.milight_dropped_packets:
+  friendly_name: "Dropped Packets"
+
+sensor.milight_queue_length:
   friendly_name: "Packet Queue Length"
 
 sensor.milight_arduino_version:
