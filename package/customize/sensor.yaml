@@ -278,14 +278,44 @@ sensor.mvps_ssh_login_time:
 sensor.mvps_ssh_login_user:
   friendly_name: "Client username"
 
-sensor.oudenes_file_size:
+sensor.www_oudenes_size:
   icon: mdi:harddisk
+  friendly_name: "WWW Oudenes Size"
 
-sensor.asia_file_size:
+sensor.www_asia_size:
   icon: mdi:harddisk
+    friendly_name: "WWW Asia Size"
 
-sensor.hairdelicious_file_size:
+sensor.www_hairdelicious_size:
   icon: mdi:harddisk
+    friendly_name: "WWW Hair Size"
+
+###########################################################################################
+#
+# MVPS
+#
+###########################################################################################
+
+sensor.vmail_backup_date:
+  icon: mdi:backup-restore
+  friendly_name: "VMail Backup Date"
+
+sensor.vmail_backup_time:
+  icon: mdi:backup-restore
+  friendly_name: "VMail Backup Time"
+
+sensor.vmail_backup_size:
+  icon: mdi:harddisk
+  friendly_name: "VMail Backup Size"
+
+sensor.www_backup_date:
+  icon: mdi:backup-restore
+  friendly_name: "WWW Backup Date"
+
+sensor.www_backup_time:
+  icon: mdi:backup-restore
+  friendly_name: "WWW Backup Time"
+
 
 ###########################################################################################
 #
@@ -422,27 +452,6 @@ sensor.u_s_air_quality_index:
 
 sensor.u_s_main_pollutant:
   friendly_name: "Main Pollutant"
-
-###########################################################################################
-#
-# MVPS
-#
-###########################################################################################
-
-sensor.vmail_last_backup_date:
-  icon: mdi:backup-restore
-
-sensor.vmail_last_backup_time:
-  icon: mdi:backup-restore
-
-sensor.vmail_last_backup_size:
-  icon: mdi:harddisk
-
-sensor.www_last_backup_date:
-  icon: mdi:backup-restore
-
-sensor.www_last_backup_time:
-  icon: mdi:backup-restore
 
 ###########################################################################################
 #
