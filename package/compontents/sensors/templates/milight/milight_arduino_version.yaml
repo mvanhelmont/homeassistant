@@ -8,6 +8,6 @@
 ---
 platform: template
 sensors:
-  milight_dropped_packets:
+  milight_arduino_version:
     entity_id: sensor.date
-    value_template: '{{ states.sensor.milight_about.attributes["dropped_packets"] }}'
+    value_template: '{{ states.sensor.milight_about.attributes["arduino_version"] }}'
