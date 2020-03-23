@@ -10,7 +10,7 @@ platform: rest
 resource: !secret mvpsjsonssh
 method: GET
 verify_ssl: false
-scan_interval: 15
+scan_interval: 60
 name: "MVPS SSH Information"
 json_attributes:
   - ssh
