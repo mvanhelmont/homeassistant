@@ -10,5 +10,4 @@ platform: template
 sensors:
   www_hairdelicious_size:
     entity_id: sensor.date
-    name: "MVPS WWW Hair Size"
     value_template: '{{ states.sensor.www_backup_information.attributes["www"]["hairdelicious"] }}'

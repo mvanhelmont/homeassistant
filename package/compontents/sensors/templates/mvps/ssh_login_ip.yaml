@@ -9,6 +9,5 @@
 platform: template
 sensors:
   ssh_login_date:
-    name: "MVPS SSH Login IP"
     entity_id: sensor.date
     value_template: '{{ states.sensor.mvps_ssh_information.attributes["ssh"]["ip"] }}'

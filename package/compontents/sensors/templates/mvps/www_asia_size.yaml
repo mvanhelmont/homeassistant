@@ -10,5 +10,4 @@ platform: template
 sensors:
   www_asia_size:
     entity_id: sensor.date
-    name: "MVPS WWW Asia Size"
     value_template: '{{ states.sensor.www_backup_information.attributes["www"]["asia"] }}'
