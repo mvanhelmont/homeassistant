@@ -266,16 +266,16 @@ sensor.mqtt_power_supply:
 #
 ###########################################################################################
 
-sensor.mvps_ssh_login_client_ip:
+sensor.ssh_login_ip:
   friendly_name: "Client login IP"
 
-sensor.mvps_ssh_login_date:
+sensor.ssh_login_date:
   friendly_name: "Client login date"
 
-sensor.mvps_ssh_login_time:
+sensor.ssh_login_time:
   friendly_name: "Client login time"
 
-sensor.mvps_ssh_login_user:
+sensor.ssh_login_user:
   friendly_name: "Client username"
 
 sensor.www_oudenes_size:
