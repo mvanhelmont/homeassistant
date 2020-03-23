@@ -195,6 +195,11 @@ switch.meek_cooking:
   friendly_name: "Cooking"
   homebridge_name: "Cooking Switch"
 
+switch.meek_livingroom:
+  icon: mdi:nintendo-switch
+  friendly_name: "Livingroom"
+  homebridge_name: "Livingroom Switch"
+
 ###########################################################################################
 #
 # SWITCH.NEWKAKU

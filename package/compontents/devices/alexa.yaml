@@ -67,8 +67,15 @@ smart_home:
 # NEST
       - climate.entryway
 # MEEK Switches
-      - switch.toilet
-      - switch.hallway
+      - switch.meek_kitchen_seeling
+      - switch.meek_kitchen_sink
+      - switch.meek_hallway
+      - switch.meek_bedroom
+      - switch.meek_bathroom
+      - switch.meek_toilet
+      - switch.meek_cooking
+      - switch.meek_dressoir
+      - switch.meek_livingroom
 # Device trackers - IS NOT SEEN AS TRACKER BUT AS CAMERA
       - binary_sensor.manual_kay_home
       - binary_sensor.manual_peter_home
