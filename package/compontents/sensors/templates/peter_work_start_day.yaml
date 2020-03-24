@@ -1,0 +1,13 @@
+###########################################################################################
+#
+# SENSOR TEMPLATE
+#
+# https://www.home-assistant.io/integrations/template/
+#
+###########################################################################################
+---
+platform: template
+sensors:
+  peter_work_start_day:
+    friendly_name: "Start werk Peter dag"
+    value_template: "{{(as_timestamp(states.calendar.werk.attributes.start_time)) | timestamp_custom('%d/%m') }}"
