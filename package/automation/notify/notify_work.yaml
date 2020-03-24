@@ -12,7 +12,7 @@
 
   condition:
     condition: template
-    value_template: {{ as_timestamp(now()) | int < (as_timestamp(states.calendar.werk.attributes.start_time)-3600) | int }}"
+    value_template: "{{ as_timestamp(now()) | int < (as_timestamp(states.calendar.werk.attributes.start_time)-3600) | int }}"
 
   action:
     service: script.pushover_engine
