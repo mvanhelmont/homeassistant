@@ -1,0 +1,17 @@
+###########################################################################################
+#
+# NOTIFY WHEN THERE IS A BAD LOGIN
+#
+###########################################################################################
+
+- alias: "Notification - Goto Work V2"
+  trigger:
+    platform: template
+    value_template: "{{ states('sensor.time') == as_timestamp(state_attr('calendar.werk', 'start_time') - 3600)|timestamp_custom('%H:%M') }}"
+  action:
+    service: script.pushover_engine
+    data_template:
+      message: "Met een uur moet je naar je werk"
+      priority: "0"
+      sound: "bike"
+      title: "HA Wwerken"
