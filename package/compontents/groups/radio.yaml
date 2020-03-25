@@ -4,9 +4,9 @@
 #
 # https://www.home-assistant.io/integrations/group/
 #
-########################################################################################### 
+###########################################################################################
 ---
-group_residence_radio:
+residence_radio:
   entities:
   - input_select.radio_station
   - input_select.radio_selector
