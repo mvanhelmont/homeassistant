@@ -37,7 +37,7 @@ group.group_residence_radio:
     icon: mdi:group
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
-group.group_circadian_lights:
+group.circadian_lights:
   friendly_name: "Circardian Group"
   templates:
     icon: mdi:group

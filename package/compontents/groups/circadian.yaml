@@ -6,7 +6,7 @@
 #
 ###########################################################################################
 ---
-group_circadian_lights:
+circadian_lights:
   entities:
     - switch.circadian_lighting_circadian_dressoir
     - switch.circadian_lighting_circadian_hallway

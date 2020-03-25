@@ -31,7 +31,7 @@
       entity_id: switch.mqtt_scene_daytime
 
     - service: homeassistant.turn_on
-      entity_id: group.group_circadian_lights
+      entity_id: group.circadian_lights
 
     - service: switch.turn_off
       data:

@@ -16,9 +16,9 @@
       state: "Nothing"
 
     - condition: state
-      entity_id: group.group_circadian_lights
+      entity_id: group.circadian_lights
       state: "off"
 
   action:
     service_template: "{{ 'homeassistant.turn_on' if is_state('sensor.holiday', 'Nothing') else 'homeassistant.turn_off' }}"
-    entity_id: group.group_circadian_lights
+    entity_id: group.circadian_lights
