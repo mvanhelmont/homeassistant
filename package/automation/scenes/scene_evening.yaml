@@ -7,8 +7,8 @@
 - alias: "Scene - Evening"
   trigger:
 
-    - platform: time_pattern
-      minutes: "/1"
+#    - platform: time_pattern
+#      minutes: "/1"
 
     - platform: state
       entity_id: sun.sun
@@ -16,9 +16,9 @@
     - platform: state
       entity_id: binary_sensor.sensor_manual_family_home
 
-    - entity_id: sensor.harmony
-      platform: state
-      to: "off"
+#    - entity_id: sensor.harmony
+#      platform: state
+#      to: "off"
 
     - platform: state
       entity_id: switch.mqtt_scene_goodnight
@@ -27,7 +27,6 @@
     - condition: state
       entity_id: sun.sun
       state: "below_horizon"
-#      before_offset: "-00:03:00"
 
     - condition: state
       entity_id: switch.mqtt_scene_evening
