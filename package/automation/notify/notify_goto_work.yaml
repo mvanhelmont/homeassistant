@@ -7,7 +7,7 @@
 - alias: "Notification - Goto Work V2"
   trigger:
     platform: template
-    value_template: "{{ states('sensor.time') == (as_timestamp(state_attr('calendar.werk', 'start_time')) - 3600)|timestamp_custom('%H:%M') }}"
+    value_template: "{{ states('sensor.time') == (as_timestamp(state_attr('calendar.werk', 'start_time')) - 1800)|timestamp_custom('%H:%M') }}"
   action:
     service: script.pushover_engine
     data_template:
