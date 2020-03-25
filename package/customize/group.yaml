@@ -7,7 +7,7 @@
 #
 ###########################################################################################
 
-group.group_door_sensors:
+group.door_sensors:
   friendly_name: "Group Door Sensors"
   templates:
     icon: mdi:group
