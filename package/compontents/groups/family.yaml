@@ -6,7 +6,7 @@
 #
 ###########################################################################################
 ---
-group_family:
+family:
   entities:
     - device_tracker.geofency_peter
     - device_tracker.geofency_kay
