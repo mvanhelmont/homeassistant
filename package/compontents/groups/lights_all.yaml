@@ -4,9 +4,9 @@
 #
 # https://www.home-assistant.io/integrations/group/
 #
-########################################################################################### 
+###########################################################################################
 ---
-group_lights_group0:
+lights_group_all:
   entities:
     - light.hallway
     - light.balcony

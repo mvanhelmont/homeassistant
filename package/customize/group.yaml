@@ -19,7 +19,7 @@ group.family:
     icon: mdi:group
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
-group.group_lights_group0:
+group.lights_group_all:
   friendly_name: "Group All Lights Group 0"
   templates:
     icon: mdi:group
