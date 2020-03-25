@@ -6,7 +6,7 @@
 #
 ###########################################################################################
 ---
-group_zwave_switches:
+zwave_switches:
   entities:
     - switch.node_2_switch # iMac
     - switch.node_3_switch # Diningroom
