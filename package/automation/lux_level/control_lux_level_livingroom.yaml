@@ -7,9 +7,6 @@
 - alias: "Control - Lux Control Livingroom On"
   trigger:
 
-    - platform: time_pattern
-      minutes: "/1"
-
     - platform: state
       entity_id: sensor.node_19_luminance
 
@@ -67,9 +64,6 @@
 
 - alias: "Control - Lux Control Livingroom Off"
   trigger:
-
-    - platform: time_pattern
-      minutes: "/1"
 
     - platform: state
       entity_id: sensor.node_19_luminance
