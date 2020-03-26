@@ -10,4 +10,4 @@ platform: template
 sensors:
   ssh_login_user:
     entity_id: sensor.date
-    value_template: "{{ states.sensor.mvps_ssh_information.attributes['ssh']['user'] }}"
+    value_template: "{{ states.sensor.mvps_ssh_information.attributes["ssh"]["user"] }}"
