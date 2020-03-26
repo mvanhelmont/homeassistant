@@ -11,7 +11,7 @@
       {% if state_attr('calendar.werk', 'start_time') == none %}
         {{ false }}
       {% else %}
-        {{ states('sensor.time') == (as_timestamp(state_attr('calendar.werk', 'start_time')) - 3600)|timestamp_custom('%H:%M') }}
+        {{ (states('sensor.time') == (as_timestamp(state_attr('calendar.werk', 'start_time')) - 3600)|timestamp_custom('%H:%M')) }}
       {% endif %}
   action:
     service: script.pushover_engine

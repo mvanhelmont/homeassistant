@@ -14,4 +14,4 @@
     service: notify.ha_email
     data_template:
       title: "HA - APK Keuring loop af"
-      message: "De APK keuring verloopt op {{ states.sensor.toyota_aygo_expdate.state }}. Plan een APK keuring bij de garage."
+      message: "De APK keuring verloopt op {{ (states.sensor.toyota_aygo_expdate.state) }}. Plan een APK keuring bij de garage."
