@@ -11,10 +11,7 @@
     entity_id: binary_sensor.node_15 # Motion Bathroom
 
   action:
-    - service_template: >-
-        {% if states('binary_sensor.node_15') == 'on' %} switch.turn_on
-        {% else %} switch.turn_off
-        {% endif %}
+    - service_template: "{{ 'switch.turn_on' if is_state('binary_sensor.node_15', 'on') else 'switch.turn_off' }}"
       entity_id: switch.meek_bathroom
 
     - service: mqtt.publish
