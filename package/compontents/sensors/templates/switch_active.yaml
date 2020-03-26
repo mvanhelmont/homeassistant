@@ -11,15 +11,15 @@ sensors:
   switch_active:
     friendly_name: "Switch "
     value_template: >-
-      {% if states.switch.newkaku_0114ef92_b.state == "on" %} Wall {% endif %}
-      {% if states.switch.newkaku_0114ef92_c.state == "on" %} Window {% endif %}
-      {% if states.switch.meek_kitchen_seeling.state == "on" %} Kitchen Seeling {% endif %}
-      {% if states.switch.meek_kitchen_sink.state == "on" %} Kitchen Sink {% endif %}
-      {% if states.switch.newkaku_011fdd46_c.state == "on" %} Dressoir {% endif %}
-      {% if states.switch.meek_hallway.state == "on" %} Hallway {% endif %}
-      {% if states.switch.newkaku_011fdd46_b.state == "on" %} Balcony {% endif %}
-      {% if states.switch.meek_bedroom.state == "on" %} Bedroom {% endif %}
-      {% if states.switch.meek_bathroom.state == "on" %} Bathroom {% endif %}
-      {% if states.switch.meek_toilet.state == "on" %} Toilet {% endif %}
-      {% if states.switch.meek_cooking.state == "on" %} Cooking {% endif %}
-      {% if states.switch.newkaku_014e5906_a.state == "on" %} Testing {% endif %}
+      {% if (states.switch.newkaku_0114ef92_b.state == "on") %} Wall {% endif %}
+      {% if (states.switch.newkaku_0114ef92_c.state == "on") %} Window {% endif %}
+      {% if (states.switch.meek_kitchen_seeling.state == "on") %} Kitchen Seeling {% endif %}
+      {% if (states.switch.meek_kitchen_sink.state == "on") %} Kitchen Sink {% endif %}
+      {% if (states.switch.newkaku_011fdd46_c.state == "on") %} Dressoir {% endif %}
+      {% if (states.switch.meek_hallway.state == "on") %} Hallway {% endif %}
+      {% if (states.switch.newkaku_011fdd46_b.state == "on") %} Balcony {% endif %}
+      {% if (states.switch.meek_bedroom.state == "on") %} Bedroom {% endif %}
+      {% if (states.switch.meek_bathroom.state == "on") %} Bathroom {% endif %}
+      {% if (states.switch.meek_toilet.state == "on") %} Toilet {% endif %}
+      {% if (states.switch.meek_cooking.state == "on") %} Cooking {% endif %}
+      {% if (states.switch.newkaku_014e5906_a.state == "on") %} Testing {% endif %}
