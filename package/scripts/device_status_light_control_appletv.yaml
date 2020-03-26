@@ -72,11 +72,11 @@ appletv_control_playing:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 25 }}"
 
     - service: light.turn_on
-      data_template:
+      data:
         entity_id:
           - light.kitchen_all
           - light.sink_all
-        brightness_pct: "{{ 100 if is_state('binary_sensor.node_16', 'on') else 0 }}"
+        brightness_pct: 0
 
     - service: light.turn_on
       data_template:
@@ -112,11 +112,11 @@ appletv_control_idle:
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
     - service: light.turn_on
-      data_template:
+      data:
         entity_id:
           - light.kitchen_all
           - light.sink_all
-        brightness_pct: "{{ 100 if is_state('binary_sensor.node_16', 'on') else 0 }}"
+        brightness_pct: 0
 
     - service: light.turn_on
       data_template:
