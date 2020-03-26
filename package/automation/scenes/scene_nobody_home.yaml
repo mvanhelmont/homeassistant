@@ -9,11 +9,7 @@
 
     platform: state
     entity_id: binary_sensor.sensor_manual_family_home
-
-  condition:
-    condition: state
-    entity_id: binary_sensor.sensor_manual_family_home
-    state: "off"
+    to: "off"
 
   action:
     - service: switch.turn_on
