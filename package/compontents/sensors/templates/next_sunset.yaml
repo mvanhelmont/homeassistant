@@ -4,11 +4,11 @@
 #
 # https://www.home-assistant.io/integrations/template/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: template
-sensors: 
+sensors:
   nextsunset:
     friendly_name: "Next Sun Set"
-    value_template: "{{ as_timestamp(states.sun.sun.attributes.next_setting) | timestamp_custom('%-H:%M') }}"
+    value_template: "{{ (as_timestamp(states.sun.sun.attributes.next_setting) | timestamp_custom('%-H:%M')) }}"
     icon_template: mdi:weather-sunset-down

@@ -9,4 +9,4 @@ platform: template
 sensors:
   milight_length:
     entity_id: sensor.date
-    value_template: '{{ states.sensor.milight_about.attributes["queue_stats"]["length"] }}'
+    value_template: '{{ (states.sensor.milight_about.attributes["queue_stats"]["length"]) }}'

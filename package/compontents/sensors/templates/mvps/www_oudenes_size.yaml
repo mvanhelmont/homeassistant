@@ -10,4 +10,4 @@ platform: template
 sensors:
   www_oudenes_size:
     entity_id: sensor.date
-    value_template: '{{ states.sensor.www_backup_information.attributes["www"]["oudenes"] }}'
+    value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["oudenes"]) }}'
