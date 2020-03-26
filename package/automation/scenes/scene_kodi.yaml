@@ -28,10 +28,6 @@
       state: "off"
 
     - condition: state
-      entity_id: sensor.harmony
-      state: "kodi"
-
-    - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
 
