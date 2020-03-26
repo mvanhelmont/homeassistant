@@ -30,7 +30,7 @@
   {%- endmacro -%}
 
   {%- macro outside_weather() -%}
-    "Outside, it is "{{ states('sensor.dark_sky_temperature')|int }}" degrees. The forcast for today is "{{ states('sensor.dark_sky_daily_summary') }}"."
+    "Outside, it is "{{ (states('sensor.dark_sky_temperature'))|int }}" degrees. The forcast for today is "{{ (states('sensor.dark_sky_daily_summary')) }}"."
   {%- endmacro -%}
 
 

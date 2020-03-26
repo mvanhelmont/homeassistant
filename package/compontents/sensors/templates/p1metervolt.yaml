@@ -4,10 +4,10 @@
 #
 # https://www.home-assistant.io/integrations/template/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: template
 sensors:
   volt_1min:
     entity_id: sensor.date
-    value_template: "{{ states('sensor.voltage_phase_l1') }}"
+    value_template: "{{ (states('sensor.voltage_phase_l1')) }}"
