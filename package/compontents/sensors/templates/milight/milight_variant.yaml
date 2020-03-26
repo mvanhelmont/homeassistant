@@ -10,4 +10,4 @@ platform: template
 sensors:
   milight_variant:
     entity_id: sensor.date
-    value_template: '{{ states('sensor.milight_about.attributes["variant"]) }}'
+    value_template: '{{ (states.sensor.milight_about.attributes["variant"]) }}'

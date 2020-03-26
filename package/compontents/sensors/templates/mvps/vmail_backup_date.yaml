@@ -10,4 +10,4 @@ platform: template
 sensors:
   vmail_backup_date:
     entity_id: sensor.date
-    value_template: "{{ states.sensor.vmail_backup_information.attributes["vmailbackup"]["date"] }}"
+    value_template: '{{ (states.sensor.vmail_backup_information.attributes["vmailbackup"]["date"]) }}'

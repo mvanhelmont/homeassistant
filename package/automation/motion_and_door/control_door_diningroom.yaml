@@ -24,8 +24,8 @@
       data_template:
         entity_id: light.dressoir_all
         brightness_pct: >-
-          {% if states('binary_sensor.node_21') == 'on' and (states('sensor.season') == 'autumn' or states('sensor.season') == 'winter') %} 100
-          {% elif states('binary_sensor.node_21') == 'on' and (states('sensor.season') == 'spring' or states('sensor.season') == 'summer') %} 20
+          {% if (states.binary_sensor.node_21.state) == 'on' and ((states.sensor.season.state) == 'autumn' or (states.sensor.season.state) == 'winter') %} 100
+          {% elif (states.binary_sensor.node_21.state) == 'on' and ((states.sensor.season.state) == 'spring' or (states.sensor.season.state) == 'summer') %} 20
           {% else %} 100
           {% endif %}
 
@@ -33,9 +33,9 @@
       data_template:
         entity_id: light.newkaku_01401eb6_a
         brightness_pct: >-
-          {% if states('binary_sensor.node_21') == 'on' and states('switch.mqtt_kay_learning') == 'off' and (states('sensor.season') == 'spring' or states('sensor.season') == 'summer') %} 0
-          {% elif states('binary_sensor.node_21') == 'off' and states('switch.mqtt_kay_learning') == 'off' and (states('sensor.season') == 'spring' or states('sensor.season') == 'summer') %} 50
-          {% elif states('binary_sensor.node_21') == 'on' and states('switch.mqtt_kay_learning') == 'on' %} 100
-          {% elif states('binary_sensor.node_21') == 'off' and states('switch.mqtt_kay_learning') == 'on' %} 100
+          {% if (states.binary_sensor.node_21.state) == 'on' and (states.switch.mqtt_kay_learning.state) == 'off' and ((states.sensor.season.state) == 'spring' or (states.sensor.season.state) == 'summer') %} 0
+          {% elif (states.binary_sensor.node_21.state) == 'off' and (states.switch.mqtt_kay_learning.state) == 'off' and ((states.sensor.season.state) == 'spring' or (states.sensor.season.state) == 'summer') %} 50
+          {% elif (states.binary_sensor.node_21.state) == 'on' and (states.switch.mqtt_kay_learning.state) == 'on' %} 100
+          {% elif (states.binary_sensor.node_21.state) == 'off' and (states.switch.mqtt_kay_learning.state) == 'on' %} 100
           {% else %} 50
           {% endif %}

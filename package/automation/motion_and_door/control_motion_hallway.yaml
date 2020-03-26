@@ -21,7 +21,7 @@
 
   action:
     - service_template: >-
-        {% if states('binary_sensor.node_17') == 'on' %} switch.turn_on
+        {% if (states.binary_sensor.node_17.state) == 'on' %} switch.turn_on
         {% else %} switch.turn_off
         {% endif %}
       entity_id: switch.meek_hallway

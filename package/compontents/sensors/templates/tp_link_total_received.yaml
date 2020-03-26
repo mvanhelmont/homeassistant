@@ -9,10 +9,10 @@
 platform: template
 sensors:
   tp_link_total_recieved_mb:
-    value_template: "{{ states('sensor.m5_bytes_received.state | float / 1073741823) | round(2) }}"
+    value_template: "{{ (states.sensor.m5_bytes_received.state | float / 1073741823) | round(2) }}"
     friendly_name: "Total Reieved GB"
     unit_of_measurement: "GB"
   tp_link_total_send_mb:
-    value_template: "{{ states('sensor.m5_bytes_sent.state | float / 1073741823) | round(2) }}"
+    value_template: "{{ (states.sensor.m5_bytes_sent.state | float / 1073741823) | round(2) }}"
     friendly_name: "Total Sent GB"
     unit_of_measurement: "GB"

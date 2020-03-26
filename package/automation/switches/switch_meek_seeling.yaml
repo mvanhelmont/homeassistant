@@ -15,7 +15,7 @@
     data_template:
       entity_id: light.kitchen_all
       brightness_pct: >-
-        {% if states('switch.meek_kitchen_seeling') == 'on' and states('switch.mqtt_scene_goodnight') == 'on' %} 10
-        {% elif states('switch.meek_kitchen_seeling') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 100
+        {% if (states.switch.meek_kitchen_seeling.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 10
+        {% elif (states.switch.meek_kitchen_seeling.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
         {% else %} 0
         {% endif %}
