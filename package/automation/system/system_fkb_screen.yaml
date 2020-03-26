@@ -15,6 +15,6 @@
 
   action:
     service_template: >-
-      {% if (states.binary_sensor.node_17.state) == 'on' or (states.binary_sensor.node_16.state) == 'on' %} shell_command.fullykiosk_screen_on
+      {% if states('binary_sensor.node_17') == 'on' or states('binary_sensor.node_16') == 'on' %} shell_command.fullykiosk_screen_on
       {% else %} shell_command.fullykiosk_sceen_off
       {% endif %}

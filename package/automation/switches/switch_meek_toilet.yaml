@@ -15,7 +15,7 @@
     data_template:
       entity_id: light.toilet_all
       brightness_pct: >-
-        {% if (states.switch.meek_toilet.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 40
-        {% elif (states.switch.meek_toilet.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
+        {% if states('switch.meek_toilet') == 'on' and states('switch.mqtt_scene_goodnight') == 'on' %} 40
+        {% elif states('switch.meek_toilet') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 100
         {% else %} 0
         {% endif %}

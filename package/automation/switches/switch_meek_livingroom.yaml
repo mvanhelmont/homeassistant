@@ -15,7 +15,7 @@
     data_template:
       entity_id: light.livingroom_all
       brightness_pct: >-
-        {% if (states.switch.meek_livingroom.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} 10
-        {% elif (states.switch.meek_livingroom.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} 100
+        {% if states('switch.meek_livingroom') == 'on' and states('switch.mqtt_scene_goodnight') == 'on' %} 10
+        {% elif states('switch.meek_livingroom') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 100
         {% else %} 0
         {% endif %}
