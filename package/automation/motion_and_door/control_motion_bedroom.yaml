@@ -26,7 +26,7 @@
 #        {% endif %}
 #      entity_id: switch.meek_bedroom
 
-    - service_template: "{{ switch.turn_on if is_state('binary_sensor.node_14', 'on') else switch.turn_off }}"
+    - service_template: "{{ 'switch.turn_on' if is_state('binary_sensor.node_14', 'on') else 'switch.turn_off' }}"
       entity_id: switch.meek_bedroom
 
     - service: mqtt.publish
