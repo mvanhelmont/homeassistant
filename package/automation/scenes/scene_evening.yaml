@@ -16,6 +16,9 @@
     - platform: state
       entity_id: switch.mqtt_scene_goodnight
 
+    - platform: states
+      entity_id: sensor.harmony
+
   condition:
     - condition: state
       entity_id: sun.sun
