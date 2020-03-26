@@ -11,16 +11,16 @@ sensors:
   scene_active:
     friendly_name: "Scene "
     value_template: >-
-      {% if states('switch.mqtt_scene_daytime.state == "on") %} Daytime
-      {% elif states('switch.mqtt_scene_evening.state == "on") %} Evening
-      {% elif states('switch.mqtt_scene_goodnight.state == "on") %} Goodnight
-      {% elif states('switch.mqtt_scene_appletv.state == "on") %} AppleTV
-      {% elif states('switch.mqtt_scene_tv.state == "on") %} TV
-      {% elif states('switch.mqtt_scene_kodi.state == "on") %} Kodi
+      {% if states('switch.mqtt_scene_daytime') == "on" %} Daytime
+      {% elif states('switch.mqtt_scene_evening') == "on" %} Evening
+      {% elif states('switch.mqtt_scene_goodnight') == "on" %} Goodnight
+      {% elif states('switch.mqtt_scene_appletv') == "on" %} AppleTV
+      {% elif states('switch.mqtt_scene_tv') == "on" %} TV
+      {% elif states('switch.mqtt_scene_kodi') == "on" %} Kodi
       {% endif %}
-      {% if states('switch.mqtt_scene_sleeping.state == "on") %} and Sleeping {% endif %}
-      {% if states('switch.mqtt_scene_sexy.state == "on") %} and Sexy {% endif %}
-      {% if states('switch.mqtt_scene_disco.state == "on") %} and Disco {% endif %}
-      {% if states('switch.mqtt_scene_cooking.state == "on") %} and Cooking {% endif %}
-      {% if states('switch.mqtt_kay_learning.state == "on") %} and Kay Learning {% endif %}
-      {% if states('switch.mqtt_scene_guests.state == "on") %} and Guests {% endif %}
+      {% if states('switch.mqtt_scene_sleeping') == "on" %} and Sleeping {% endif %}
+      {% if states('switch.mqtt_scene_sexy') == "on" %} and Sexy {% endif %}
+      {% if states('switch.mqtt_scene_disco') == "on" %} and Disco {% endif %}
+      {% if states('switch.mqtt_scene_cooking') == "on" %} and Cooking {% endif %}
+      {% if states('switch.mqtt_kay_learning') == "on" %} and Kay Learning {% endif %}
+      {% if states('switch.mqtt_scene_guests') == "on" %} and Guests {% endif %}

@@ -10,4 +10,4 @@ platform: template
 sensors:
   www_backup_time:
     entity_id: sensor.date
-    value_template: '{{ states('sensor.www_backup_information.attributes["www"]["time"]) }}'
+    value_template: "{{ states.sensor.www_backup_information.attributes['www']['time'] }}"
