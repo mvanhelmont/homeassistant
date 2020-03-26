@@ -12,11 +12,11 @@
 
   action:
     service_template: >-
-      {% if (states.switch.meek_kitchen_seeling.state) == 'on' and (states.switch.mqtt_scene_goodnight.state) == 'on' %} script.kitchen_normal_turn_on
-      {% elif (states.switch.meek_kitchen_seeling.state) == 'on' and (states.sensor.holiday.state) == 'Christmas' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
-      {% elif (states.switch.meek_kitchen_seeling.state) == 'on' and (states.sensor.holiday.state) == 'Halloween' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on
-      {% elif (states.switch.meek_kitchen_seeling.state) == 'on' and (states.sensor.holiday.state) == 'Kingsday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
-      {% elif (states.switch.meek_kitchen_seeling.state) == 'on' and (states.sensor.holiday.state) == 'Birthday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
-      {% elif (states.switch.meek_kitchen_seeling.state) == 'on' and (states.sensor.holiday.state) == 'Nothing' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_normal_turn_on
+      {% if states('switch.meek_kitchen_seeling') == 'on' and states('switch.mqtt_scene_goodnight') == 'on' %} script.kitchen_normal_turn_on
+      {% elif states('switch.meek_kitchen_seeling') == 'on' and states('sensor.holiday') == 'Christmas' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_christmas_turn_on
+      {% elif states('switch.meek_kitchen_seeling') == 'on' and states('sensor.holiday') == 'Halloween' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_halloween_turn_on
+      {% elif states('switch.meek_kitchen_seeling') == 'on' and states('sensor.holiday') == 'Kingsday' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_kingsday_turn_on
+      {% elif states('switch.meek_kitchen_seeling') == 'on' and states('sensor.holiday') == 'Birthday' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_birthday_turn_on
+      {% elif states('switch.meek_kitchen_seeling') == 'on' and states('sensor.holiday') == 'Nothing' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_normal_turn_on
       {% else %} script.kitchen_seeling_turn_off
       {% endif %}

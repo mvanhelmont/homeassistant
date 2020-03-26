@@ -59,18 +59,18 @@
         entity_id: light.nanoleaf
         brightness_pct: 20
         effect: >-
-          {% if (states.sensor.holiday.state) == 'Christmas' %} Christmas
-          {% elif (states.sensor.holiday.state) == 'Halloween' %} Halloween
-          {% elif (states.sensor.holiday.state) == 'Kingsday' %} Kingsday
-          {% elif (states.sensor.holiday.state) == 'Birthday' %} Kingsday
+          {% if states('sensor.holiday') == 'Christmas' %} Christmas
+          {% elif states('sensor.holiday') == 'Halloween' %} Halloween
+          {% elif states('sensor.holiday') == 'Kingsday' %} Kingsday
+          {% elif states('sensor.holiday') == 'Birthday' %} Kingsday
           {% else %} Kay
           {% endif %}
 
     - service_template: >-
-         {% if (states.sensor.holiday.state) == 'Christmas' %} script.appletv_christmas
-         {% elif (states.sensor.holiday.state) == 'Halloween' %} script.appletv_halloween
-         {% elif (states.sensor.holiday.state) == 'Kingsday' %} script.appletv_kingsday
-         {% elif (states.sensor.holiday.state) == 'Birthday' %} script.appletv_birthday
+         {% if states('sensor.holiday') == 'Christmas' %} script.appletv_christmas
+         {% elif states('sensor.holiday') == 'Halloween' %} script.appletv_halloween
+         {% elif states('sensor.holiday') == 'Kingsday' %} script.appletv_kingsday
+         {% elif states('sensor.holiday') == 'Birthday' %} script.appletv_birthday
          {% else %} script.evening_normal
          {% endif %}
 
@@ -78,9 +78,9 @@
       data_template:
         entity_id: light.newkaku_01401eb6_a
         brightness_pct: >-
-          {% if (states.binary_sensor.node_21.state) == 'on' and (states.switch.mqtt_kay_learning.state) == 'on' %} 100
-          {% elif (states.binary_sensor.node_21.state) == 'on' and (states.switch.mqtt_kay_learning.state) == 'off' %} 0
-          {% elif (states.binary_sensor.node_21.state) == 'off' and (states.switch.mqtt_kay_learning.state) == 'on' %} 100
+          {% if states('binary_sensor.node_21') == 'on' and states('switch.mqtt_kay_learning') == 'on' %} 100
+          {% elif states('binary_sensor.node_21') == 'on' and states('switch.mqtt_kay_learning') == 'off' %} 0
+          {% elif states('binary_sensor.node_21') == 'off' and states('switch.mqtt_kay_learning') == 'on' %} 100
           {% else %} 50
           {% endif %}
 

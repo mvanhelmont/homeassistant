@@ -25,7 +25,7 @@
 
   action:
     - service_template: >-
-        {% if (states.binary_sensor.node_16.state) == 'on' %} switch.turn_on
+        {% if states('binary_sensor.node_16') == 'on' %} switch.turn_on
         {% else %} switch.turn_off
         {% endif %}
       entity_id:
@@ -39,9 +39,9 @@
         payload: "{{ 1 if is_state('binary_sensor.node_16', 'on') else 0 }}"
 
 #    - service_template: >-
-#        {% if (states.sensor.holiday.state) == 'Christmas' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
-#        {% elif (states.sensor.holiday.state) == 'Halloween' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on
-#        {% elif (states.sensor.holiday.state) == 'Kingsday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
-#        {% elif (states.sensor.holiday.state) == 'Birthday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
+#        {% if states('sensor.holiday') == 'Christmas' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_christmas_turn_on
+#        {% elif states('sensor.holiday') == 'Halloween' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_halloween_turn_on
+#        {% elif states('sensor.holiday') == 'Kingsday' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_kingsday_turn_on
+#        {% elif states('sensor.holiday') == 'Birthday' and states('switch.mqtt_scene_goodnight') == 'off' %} script.kitchen_birthday_turn_on
 #        {% else %} script.kitchen_normal_turn_on
 #        {% endif %}

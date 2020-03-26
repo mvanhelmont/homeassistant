@@ -10,4 +10,4 @@ platform: template
 sensors:
   www_hairdelicious_size:
     entity_id: sensor.date
-    value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["hairdelicious"]) }}'
+    value_template: '{{ states('sensor.www_backup_information.attributes["www"]["hairdelicious"]) }}'

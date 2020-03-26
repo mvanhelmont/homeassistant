@@ -10,4 +10,4 @@ platform: template
 sensors:
   milight_ip:
     entity_id: sensor.date
-    value_template: '{{ (states.sensor.milight_about.attributes["ip_address"]) }}'
+    value_template: '{{ states('sensor.milight_about.attributes["ip_address"]) }}'

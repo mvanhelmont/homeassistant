@@ -10,4 +10,4 @@ platform: template
 sensors:
   milight_dropped_packets:
     entity_id: sensor.date
-    value_template: '{{ (states.sensor.milight_about.attributes["queue_stats"]["dropped_packets"]) }}'
+    value_template: '{{ states('sensor.milight_about.attributes["queue_stats"]["dropped_packets"]) }}'
