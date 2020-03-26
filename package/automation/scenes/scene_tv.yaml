@@ -26,11 +26,7 @@
     - condition: state
       entity_id: switch.mqtt_scene_goodnight
       state: "off"
-
-    - condition: state
-      entity_id: sensor.harmony
-      state: "tv"
-
+      
     - condition: state
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
