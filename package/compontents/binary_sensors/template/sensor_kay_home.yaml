@@ -4,10 +4,10 @@
 #
 # https://www.home-assistant.io/integrations/binary_sensor.template/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: template
 sensors:
   manual_kay_home:
-    value_template: "{{ states.input_boolean.kay_home_manual.state == 'on' }}"
+    value_template: "{{ (states.input_boolean.kay_home_manual.state == 'on') }}"
     entity_id: input_boolean.kay_home_manual

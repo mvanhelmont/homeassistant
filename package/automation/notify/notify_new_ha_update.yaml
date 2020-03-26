@@ -13,12 +13,12 @@
 
   condition:
     condition: template
-    value_template: "{{ states('sensor.current_version') != states('sensor.latest_version') }}"
+    value_template: "{{ (states('sensor.current_version') != states('sensor.latest_version')) }}"
 
   action:
     service: script.pushover_engine
     data_template:
-      message: "HA version {{ states('sensor.latest_version') }} is available!. {{now().strftime('%d-%m-%Y')}}"
+      message: "HA version {{ (states('sensor.latest_version')) }} is available!. {{now().strftime('%d-%m-%Y') }}"
       priority: "2"
       sound: "bike"
       title: "HA System"

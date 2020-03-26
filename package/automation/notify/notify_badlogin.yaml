@@ -8,7 +8,7 @@
   trigger:
 
     platform: template
-    value_template: "{{ states('persistent_notification.http_login') != 'unknown' }}"
+    value_template: "{{ (states('persistent_notification.http_login') != 'unknown') }}"
 
   action:
     service: script.pushover_engine

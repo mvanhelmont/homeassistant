@@ -4,10 +4,10 @@
 #
 # https://www.home-assistant.io/integrations/binary_sensor.template/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: template
 sensors:
   update_available:
     entity_id: sensor.latest_version
-    value_template: "{{ states('sensor.current_version') < states('sensor.latest_version') }}"
+    value_template: "{{ (states('sensor.current_version') < states('sensor.latest_version')) }}"

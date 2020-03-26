@@ -10,4 +10,4 @@ platform: template
 sensors:
   milight_reset_reason:
     entity_id: sensor.date
-    value_template: '{{ states.sensor.milight_about.attributes["reset_reason"] }}'
+    value_template: '{{ (states.sensor.milight_about.attributes["reset_reason"]) }}'
