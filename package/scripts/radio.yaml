@@ -11,7 +11,7 @@ stream_radio:
       data_template:
         entity_id: >-
           {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_da44cbb8_3c8227c9
-          {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.browser_d519dbc2_9d8ae50c
+          {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.peter_s_echo_dot
           {% endif %}
         media_content_id: >-
           {% if is_state('input_select.radio_station', 'Radio 538') and is_state('input_select.radio_selector', 'Kitchen') %} https://18973.live.streamtheworld.com/RADIO538.mp3 {% else %} https://tunein.com/radio/538-1021-s6712/ {% endif %}
@@ -26,8 +26,8 @@ stream_radio:
           {% if is_state('input_select.radio_station', 'SLAM! Hardstyle') and is_state('input_select.radio_selector', 'Kitchen') %} http://streaming.slam.nl/web11_mp3 {% else %} https://tunein.com/radio/SLAM-Hardstyle-s155542/ {% endif %}
           {% if is_state('input_select.radio_station', 'SLAM!') and is_state('input_select.radio_selector', 'Kitchen') %} http://stream.radiocorp.nl/web14_mp3 {% else %} https://tunein.com/radio/SLAM-911-s67814/ {% endif %}
         media_content_type: >-
-          {% if is_state('input_select.radio_selector', 'Kitchen') %} audio/mp3
-          {% elif is_state('input_select.radio_selector', 'Alexa') %} tunein
+          {% if is_state('input_select.radio_selector', 'Kitchen') %} "audio/mp3"
+          {% elif is_state('input_select.radio_selector', 'Alexa') %} "tunein"
           {% endif %}
 
 stream_radio_stop:
@@ -37,5 +37,5 @@ stream_radio_stop:
       data_template:
         entity_id: >-
           {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_da44cbb8_3c8227c9
-          {% elif is_state('input_select.radio_selector', 'iMac') %} media_player.browser_d519dbc2_9d8ae50c
+          {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.peter_s_echo_dot
           {% endif %}
