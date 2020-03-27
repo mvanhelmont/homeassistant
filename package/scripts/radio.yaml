@@ -14,17 +14,31 @@ stream_radio:
           {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.peter_s_echo_dot
           {% endif %}
         media_content_id: >-
-          {% if is_state('input_select.radio_station', 'Radio 538') and is_state('input_select.radio_selector', 'Kitchen') %} https://18973.live.streamtheworld.com/RADIO538.mp3 {% else %} https://tunein.com/radio/538-1021-s6712/ {% endif %}
-          {% if is_state('input_select.radio_station', 'Q-Music') and is_state('input_select.radio_selector', 'Kitchen') %} http://icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_96.mp3 {% else %} https://tunein.com/radio/Qmusic-1004-s87683/ {% endif %}
-          {% if is_state('input_select.radio_station', '3FM') and is_state('input_select.radio_selector', 'Kitchen') %} http://icecast.omroep.nl/3fm-bb-mp3 {% else %} https://tunein.com/radio/NPO-3FM-968-s6707/ {% endif %}
-          {% if is_state('input_select.radio_station', '100% NL') and is_state('input_select.radio_selector', 'Kitchen') %} http://stream.100p.nl/100pctnl.mp3 {% else %} https://tunein.com/radio/100-NL-1044-s76590/ {% endif %}
-          {% if is_state('input_select.radio_station', 'Veronica') and is_state('input_select.radio_selector', 'Kitchen') %} https://21633.live.streamtheworld.com/SRGSTR09.mp3 {% else %} https://tunein.com/radio/Radio-Veronica-916-s6717/ {% endif %}
-          {% if is_state('input_select.radio_station', 'Sky Radio') and is_state('input_select.radio_selector', 'Kitchen') %} https://19993.live.streamtheworld.com/SKYRADIO.mp3 {% else %} https://tunein.com/radio/Sky-Radio-101-FM-1012-s9067/ {% endif %}
-          {% if is_state('input_select.radio_station', 'Sky Radio Christmas') and is_state('input_select.radio_selector', 'Kitchen') %} https://21303.live.streamtheworld.com/SRGSTR08AAC.aac {% else %} https://tunein.com/radio/Sky-Radio-Christmas-s224031/ {% endif %}
-          {% if is_state('input_select.radio_station', 'Classic FM') and is_state('input_select.radio_selector', 'Kitchen') %} http://21303.live.streamtheworld.com/CLASSICFM.mp3 {% else %} https://tunein.com/radio/classicnl-s2967/ {% endif %}
-          {% if is_state('input_select.radio_station', 'BNR Nieuwsradio') and is_state('input_select.radio_selector', 'Kitchen') %} http://icecast-bnr-cdp.triple-it.nl/bnr_mp3_96_04 {% else %} https://tunein.com/radio/BNR-Nieuwsradio-1018-s1993/ {% endif %}
-          {% if is_state('input_select.radio_station', 'SLAM! Hardstyle') and is_state('input_select.radio_selector', 'Kitchen') %} http://streaming.slam.nl/web11_mp3 {% else %} https://tunein.com/radio/SLAM-Hardstyle-s155542/ {% endif %}
-          {% if is_state('input_select.radio_station', 'SLAM!') and is_state('input_select.radio_selector', 'Kitchen') %} http://stream.radiocorp.nl/web14_mp3 {% else %} https://tunein.com/radio/SLAM-911-s67814/ {% endif %}
+            {% if is_state('input_select.radio_station', 'Radio 538') and is_state('input_select.radio_selector', 'Kitchen') %} https://18973.live.streamtheworld.com/RADIO538.mp3
+            {% elif is_state('input_select.radio_station', 'Q-Music') and is_state('input_select.radio_selector', 'Kitchen') %} http://icecast-qmusic.cdp.triple-it.nl/Qmusic_nl_live_96.mp3
+            {% elif is_state('input_select.radio_station', '3FM') and is_state('input_select.radio_selector', 'Kitchen')  %} http://icecast.omroep.nl/3fm-bb-mp3
+            {% elif is_state('input_select.radio_station', '100% NL') and is_state('input_select.radio_selector', 'Kitchen') %} http://stream.100p.nl/100pctnl.mp3
+            {% elif is_state('input_select.radio_station', 'Veronica') and is_state('input_select.radio_selector', 'Kitchen') %} https://21633.live.streamtheworld.com/SRGSTR09.mp3
+            {% elif is_state('input_select.radio_station', 'Sky Radio') and is_state('input_select.radio_selector', 'Kitchen') %} https://19993.live.streamtheworld.com/SKYRADIO.mp3
+            {% elif is_state('input_select.radio_station', 'Sky Radio Christmas') and is_state('input_select.radio_selector', 'Kitchen') %} https://21303.live.streamtheworld.com/SRGSTR08AAC.aac
+            {% elif is_state('input_select.radio_station', 'Classic FM') and is_state('input_select.radio_selector', 'Kitchen') %} http://21303.live.streamtheworld.com/CLASSICFM.mp3
+            {% elif is_state('input_select.radio_station', 'BNR Nieuwsradio') and is_state('input_select.radio_selector', 'Kitchen') %} http://icecast-bnr-cdp.triple-it.nl/bnr_mp3_96_04
+            {% elif is_state('input_select.radio_station', 'SLAM! Hardstyle') and is_state('input_select.radio_selector', 'Kitchen') %} http://streaming.slam.nl/web11_mp3
+            {% elif is_state('input_select.radio_station', 'SLAM!') and is_state('input_select.radio_selector', 'Kitchen') %} http://stream.radiocorp.nl/web14_mp3
+
+            {% elif is_state('input_select.radio_station', 'Radio 538') and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/538-1021-s6712/
+            {% elif is_state('input_select.radio_station', 'Q-Music')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/Qmusic-1004-s87683/
+            {% elif is_state('input_select.radio_station', '3FM')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/NPO-3FM-968-s6707/
+            {% elif is_state('input_select.radio_station', '100% NL')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/100-NL-1044-s76590/
+            {% elif is_state('input_select.radio_station', 'Veronica')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/Radio-Veronica-916-s6717/
+            {% elif is_state('input_select.radio_station', 'Sky Radio')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/Sky-Radio-101-FM-1012-s9067/
+            {% elif is_state('input_select.radio_station', 'Sky Radio Christmas')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/Sky-Radio-Christmas-s224031/
+            {% elif is_state('input_select.radio_station', 'Classic FM')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/classicnl-s2967/
+            {% elif is_state('input_select.radio_station', 'BNR Nieuwsradio')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/BNR-Nieuwsradio-1018-s1993/
+            {% elif is_state('input_select.radio_station', 'SLAM! Hardstyle')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/SLAM-Hardstyle-s155542/
+            {% elif is_state('input_select.radio_station', 'SLAM!')  and is_state('input_select.radio_selector', 'Alexa') %} https://tunein.com/radio/SLAM-911-s67814/
+            {% endif %}
+
         media_content_type: >-
           {% if is_state('input_select.radio_selector', 'Kitchen') %} "audio/mp3"
           {% elif is_state('input_select.radio_selector', 'Alexa') %} "tunein"
