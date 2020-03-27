@@ -1,0 +1,14 @@
+###########################################################################################
+#
+# CLEAR LOGfILE IF SIZE IS > 50 MB
+#
+###########################################################################################
+
+- alias: clear_log_filesize
+  initial_state: true
+  trigger:
+  - platform: numeric_state
+    entity_id: sensor.home_assistant_log
+    above: 50
+  action:
+  - service: shell_command.clear_logs

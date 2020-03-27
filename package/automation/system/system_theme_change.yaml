@@ -12,11 +12,6 @@
 
     - platform: state
       entity_id: sun.sun
-      to: "above_horizon"
-
-    - platform: state
-      entity_id: sun.sun
-      to: "below_horizon"
 
   action:
     service_template: frontend.set_theme

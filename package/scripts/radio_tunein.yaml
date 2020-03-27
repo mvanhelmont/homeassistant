@@ -1,0 +1,41 @@
+###########################################################################################
+#
+# TUNEIN RADIO STREAM SEQUENCE
+#
+###########################################################################################
+
+tunein_stream_radio:
+  alias: "Play TuneIn Radio"
+  sequence:
+    - service: media_player.play_media
+      data_template:
+        entity_id: >-
+          {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_da44cbb8_3c8227c9
+          {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.peter_s_echo_dot
+          {% elif is_state('input_select.radio_selector', 'iMac') %} media_player.browser_d519dbc2_9d8ae50c
+          {% endif %}
+        media_content_id: >-
+          {% if is_state('input_select.radio_station', 'Radio 538') %} https://tunein.com/radio/538-1021-s6712/
+          {% elif is_state('input_select.radio_station', 'Q-Music') %} https://tunein.com/radio/Qmusic-1004-s87683/
+          {% elif is_state('input_select.radio_station', '3FM') %} https://tunein.com/radio/NPO-3FM-968-s6707/
+          {% elif is_state('input_select.radio_station', '100% NL') %} https://tunein.com/radio/100-NL-1044-s76590/
+          {% elif is_state('input_select.radio_station', 'Veronica') %} https://tunein.com/radio/Radio-Veronica-916-s6717/
+          {% elif is_state('input_select.radio_station', 'Sky Radio') %} https://tunein.com/radio/Sky-Radio-101-FM-1012-s9067/
+          {% elif is_state('input_select.radio_station', 'Sky Radio Christmas') %} https://tunein.com/radio/Sky-Radio-Christmas-s224031/
+          {% elif is_state('input_select.radio_station', 'Classic FM') %} https://tunein.com/radio/classicnl-s2967/
+          {% elif is_state('input_select.radio_station', 'BNR Nieuwsradio') %} https://tunein.com/radio/BNR-Nieuwsradio-1018-s1993/
+          {% elif is_state('input_select.radio_station', 'SLAM! Hardstyle') %} https://tunein.com/radio/SLAM-Hardstyle-s155542/
+          {% elif is_state('input_select.radio_station', 'SLAM!') %} https://tunein.com/radio/SLAM-911-s67814/
+          {% endif %}
+        media_content_type: "audio/mp3"
+
+tunein_stream_radio_stop:
+  alias: "Stop Radio"
+  sequence:
+    - service: media_player.media_stop
+      data_template:
+        entity_id: >-
+          {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_da44cbb8_3c8227c9
+          {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.peter_s_echo_dot
+          {% elif is_state('input_select.radio_selector', 'iMac') %} media_player.browser_d519dbc2_9d8ae50c
+          {% endif %}
