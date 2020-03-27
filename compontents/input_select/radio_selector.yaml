@@ -9,4 +9,5 @@
 radio_selector:
   options:
     - "Kitchen"
+    - "Alexa"
   initial: "Kitchen"
