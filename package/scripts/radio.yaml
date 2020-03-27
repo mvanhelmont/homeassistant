@@ -41,7 +41,7 @@ stream_radio:
 
         media_content_type: >-
           {% if is_state('input_select.radio_selector', 'Kitchen') %} "audio/mp3"
-          {% elif is_state('input_select.radio_selector', 'Alexa') %} "tunein"
+          {% elif is_state('input_select.radio_selector', 'Alexa') %} "TUNEIN"
           {% endif %}
 
 stream_radio_stop:
