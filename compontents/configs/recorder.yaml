@@ -19,11 +19,30 @@ include:
     - media_player
     - updater
   entities:
+###########################################################################################
+#
+# TRACKER - KAY
+#
+###########################################################################################  
+
     - device_tracker.geofency_kay
     - device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f
+    
+###########################################################################################
+#
+# TRACKER - PETER
+#
+###########################################################################################
+
     - device_tracker.geofency_peter
     - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
-    - device_tracker.poudenes_owntracker_peter
+    - device_tracker.peter_owntrack_iphone
+
+###########################################################################################
+#
+# SCENES
+#
+###########################################################################################
     - switch.mqtt_scene_appletv
     - switch.mqtt_scene_cooking
     - switch.mqtt_scene_disco
@@ -52,6 +71,7 @@ exclude:
     - sensor.broker_message_send_counter
     - sensor.broker_message_received_counter
     - sensor.broker_message_dropped_counter
+    
 ###########################################################################################
 #
 # ZWAVE

@@ -14,7 +14,7 @@ include:
     # Trackers Peter
     - device_tracker.geofency_peter
     - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
-    - device_tracker.poudenes_owntracker_peter
+    - device_tracker.peter_owntrack_iphone
     # The rest
     - light.bathroom_all
     - light.bedroom_all
@@ -34,17 +34,7 @@ include:
     - binary_sensor.node_21 # Sensor Diningroom Door
     - binary_sensor.node_12 # Sensor Bedroom Door
     - sensor.fibaro_frontdoor_custom_sensor
-    - switch.mqtt_scene_appletv
-    - switch.mqtt_scene_cooking
-    - switch.mqtt_scene_disco
-    - switch.mqtt_scene_evening
-    - switch.mqtt_scene_goodnight
-    - switch.mqtt_scene_guests
-    - switch.mqtt_scene_kodi
-    - switch.mqtt_scene_tv
-    - switch.mqtt_scene_daytime
-    - switch.mqtt_scene_sexy
-    - switch.mqtt_scene_sleeping
+
 exclude:
   entities:
     - sensor.p1_usage_watt_now
