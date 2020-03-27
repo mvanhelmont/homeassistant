@@ -25,7 +25,6 @@ stream_radio:
           {% if is_state('input_select.radio_station', 'BNR Nieuwsradio') and is_state('input_select.radio_selector', 'Kitchen') %} http://icecast-bnr-cdp.triple-it.nl/bnr_mp3_96_04 {% else %} https://tunein.com/radio/BNR-Nieuwsradio-1018-s1993/ {% endif %}
           {% if is_state('input_select.radio_station', 'SLAM! Hardstyle') and is_state('input_select.radio_selector', 'Kitchen') %} http://streaming.slam.nl/web11_mp3 {% else %} https://tunein.com/radio/SLAM-Hardstyle-s155542/ {% endif %}
           {% if is_state('input_select.radio_station', 'SLAM!') and is_state('input_select.radio_selector', 'Kitchen') %} http://stream.radiocorp.nl/web14_mp3 {% else %} https://tunein.com/radio/SLAM-911-s67814/ {% endif %}
-          {% endif %}
         media_content_type: >-
           {% if is_state('input_select.radio_selector', 'Kitchen') %} audio/mp3
           {% elif is_state('input_select.radio_selector', 'Alexa') %} tunein
