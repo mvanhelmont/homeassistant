@@ -29,7 +29,7 @@ stream_radio:
             {% elif is_state('input_select.radio_station', 'Radio 538') and is_state('input_select.radio_selector', 'Alexa') %} 538
             {% elif is_state('input_select.radio_station', 'Q-Music')  and is_state('input_select.radio_selector', 'Alexa') %} Qmusic
             {% elif is_state('input_select.radio_station', '3FM')  and is_state('input_select.radio_selector', 'Alexa') %} NPO 3FM
-            {% elif is_state('input_select.radio_station', '100% NL')  and is_state('input_select.radio_selector', 'Alexa') %} 100% NL/
+            {% elif is_state('input_select.radio_station', '100% NL')  and is_state('input_select.radio_selector', 'Alexa') %} 100% NL
             {% elif is_state('input_select.radio_station', 'Veronica')  and is_state('input_select.radio_selector', 'Alexa') %} Radio Veronica
             {% elif is_state('input_select.radio_station', 'Sky Radio')  and is_state('input_select.radio_selector', 'Alexa') %} Sky Radio 101 FM
             {% elif is_state('input_select.radio_station', 'Sky Radio Christmas')  and is_state('input_select.radio_selector', 'Alexa') %} Sky Radio Christmas
@@ -40,8 +40,8 @@ stream_radio:
             {% endif %}
 
         media_content_type: >-
-          {% if is_state('input_select.radio_selector', 'Kitchen') %} "audio/mp3"
-          {% elif is_state('input_select.radio_selector', 'Alexa') %} "TUNEIN"
+          {% if is_state('input_select.radio_selector', 'Kitchen') %} audio/mp3
+          {% elif is_state('input_select.radio_selector', 'Alexa') %} TUNEIN
           {% endif %}
 
 stream_radio_stop:
