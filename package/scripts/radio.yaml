@@ -10,7 +10,7 @@ stream_radio:
     - service: media_player.play_media
       data_template:
         entity_id: >-
-          {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_da44cbb8_3c8227c9
+          {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_35efb15c_2d91fcb9
           {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.peter_s_echo_dot
           {% endif %}
         media_content_id: >-
@@ -53,6 +53,6 @@ stream_radio_stop:
         {% endif %}
       data_template:
         entity_id: >-
-          {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_da44cbb8_3c8227c9
+          {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_35efb15c_2d91fcb9
           {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.peter_s_echo_dot
           {% endif %}
