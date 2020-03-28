@@ -23,11 +23,11 @@ include:
 #
 # TRACKER - KAY
 #
-###########################################################################################  
+###########################################################################################
 
     - device_tracker.geofency_kay
     - device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f
-    
+
 ###########################################################################################
 #
 # TRACKER - PETER
@@ -36,7 +36,6 @@ include:
 
     - device_tracker.geofency_peter
     - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
-    - device_tracker.peter_owntrack_iphone
 
 ###########################################################################################
 #
@@ -73,7 +72,7 @@ exclude:
     - sensor.broker_message_dropped_counter
     - sensor.peter_last_changed_tracker
     - sensor.kay_last_changed_tracker
-    
+
 ###########################################################################################
 #
 # ZWAVE

@@ -4,14 +4,14 @@
 #
 # https://www.home-assistant.io/integrations/template/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: template
 sensors:
   peter_last_changed_tracker:
     entity_id: sensor.time
     value_template: >-
-      {%- set time = (as_timestamp(now()) - as_timestamp(states.device_tracker.peter_owntrack_iphone.last_changed)) | int %}
+      {%- set time = (as_timestamp(now()) - as_timestamp(states.device_tracker.geofency_peter.last_changed)) | int %}
       {%- set minutes = ((time % 3600) // 60) %}
       {%- set hours = ((time % 86400) // 3600) %}
       {%- set days = (time // 86400) %}
@@ -29,6 +29,6 @@ sensors:
        {{ hours }}h and {{ minutes }}m
       {% elif time > 86400 %}
       {# mer eller = 1 dag #}
-       {{ days }}d 
+       {{ days }}d
       {% else %}
       {% endif %}
