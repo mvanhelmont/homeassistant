@@ -337,7 +337,7 @@ sensor.kay_last_changed_tracker:
   icon: mdi:av-timer
 
 sensor.peter_distance:
-  friendly_name: "Owntrack Peter Distance"
+  friendly_name: "Geofency Peter Distance"
   icon: mdi:map-marker-distance
 
 ###########################################################################################
