@@ -91,7 +91,7 @@
         value: 1
 
     - service: light.turn_off
-      entity_id: light.browser_da44cbb8_3c8227c9
+      entity_id: light.browser_35efb15c_2d91fcb9
 
     - service: script.engine_say
       data_template:

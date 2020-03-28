@@ -44,7 +44,7 @@ filter:
     - light.bathroom_all
     - light.toilet_all
     - light.nanoleaf
-    - light.browser_da44cbb8_3c8227c9
+    - light.browser_35efb15c_2d91fcb9
 # Scenes
     - switch.mqtt_scene_sleeping
     - switch.mqtt_scene_sexy
