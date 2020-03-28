@@ -22,6 +22,15 @@ zeroconf:
 
 ###################################################
 #
+# Automation components
+#
+###################################################
+
+automation: !include_dir_merge_list package/automation
+script: !include_dir_merge_named package/scripts
+
+###################################################
+#
 # Components that needs a file with info
 #
 ###################################################
@@ -53,7 +62,6 @@ zwave: !include compontents/devices/zwave.yaml
 #
 ###################################################
 
-automation: !include_dir_merge_list package/automation
 binary_sensor: !include_dir_list compontents/binary_sensors
 calendar: !include_dir_list compontents/caldav
 fan: !include_dir_list compontents/fan
@@ -64,7 +72,6 @@ input_select: !include_dir_merge_named compontents/input_select
 light: !include_dir_list compontents/light
 media_player: !include_dir_list compontents/media_players
 notify: !include_dir_list compontents/configs/notify
-script: !include_dir_merge_named package/scripts
 sensor: !include_dir_list compontents/sensors
 switch: !include_dir_list compontents/switches
 # timer: !include_dir_merge_named compontents/timer

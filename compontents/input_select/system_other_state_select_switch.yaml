@@ -8,8 +8,6 @@
 ---
 system_other_state_select_switch:
   options:
-    - "Air Pollution Level" 
-    - "CO2 Production NLD"
     - "Device Trackers"
     - "External IP"
     - "Google Drive Snapshots"
@@ -18,3 +16,4 @@ system_other_state_select_switch:
     - "ITHO"
     - "Milight Hub"
     - "RDW Toyota" 
+  initial: "Home Assistant Update"

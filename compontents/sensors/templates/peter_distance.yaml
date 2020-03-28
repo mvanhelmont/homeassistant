@@ -2,15 +2,14 @@
 platform: template
 sensors:
   peter_distance:
-    friendly_name: "Peter Distance"
     value_template: >-
       {%- set lat1 = state_attr("zone.home","latitude") -%}
       {%- set lon1 = state_attr("zone.home","longitude") -%}
-      {%- set lat2 = state_attr("device_tracker.peter_iphone","latitude") -%}
-      {%- set lon2 = state_attr("device_tracker.peter_iphone","longitude") -%}
+      {%- set lat2 = state_attr("device_tracker.peter_owntrack_iphone","latitude") -%}
+      {%- set lon2 = state_attr("device_tracker.peter_owntrack_iphone","longitude") -%}
           
       {%- set distance = sqrt((lat2-lat1)**2+(lon2-lon1)**2)*111.32 -%}
           
       {{- distance|round(1) -}}
     unit_of_measurement: "km"
-    entity_id: device_tracker.peter_iphone
+    entity_id: device_tracker.peter_owntrack_iphone

@@ -11,6 +11,7 @@
     entity_id:
       - device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f
       - device_tracker.geofency_kay
+      - device_tracker.kay_owntrack_iphone
 
   action:
     service_template: >-

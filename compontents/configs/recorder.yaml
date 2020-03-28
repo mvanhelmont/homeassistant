@@ -71,6 +71,8 @@ exclude:
     - sensor.broker_message_send_counter
     - sensor.broker_message_received_counter
     - sensor.broker_message_dropped_counter
+    - sensor.peter_last_changed_tracker
+    - sensor.kay_last_changed_tracker
     
 ###########################################################################################
 #
