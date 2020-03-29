@@ -14,5 +14,5 @@ logs:
   homeassistant.components.zwave: warning
   homeassistant.helpers.service: warning
   homeassistant.components.pushover.notify: warning
-  homeassistant.loader: warning
+  homeassistant.loader: fatal
   homeassistant.components.alexa.state_report: fatal
