@@ -15,10 +15,10 @@ auth_providers:
     trusted_networks:
       - 127.0.0.1
       - !secret local_network
-#    trusted_users:
-#      127.0.0.1: !secret user_id1
-#      127.0.0.1: !secret user_id2
-#      !secret local_network: !secret user_id1
-#      !secret local_network: !secret user_id1
+    trusted_users:
+      127.0.0.1: !secret user_id1
+      127.0.0.1: !secret user_id2
+      !secret local_network: !secret user_id1
+      !secret local_network: !secret user_id1
 #    allow_bypass_login: true
   - type: homeassistant
