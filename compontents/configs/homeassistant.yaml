@@ -8,12 +8,17 @@
 ---
 customize: !include_dir_merge_named /config/package/customize/
 customize_glob: !include_dir_merge_named /config/package/customize_global/
-#  fan.*:
-#    custom_ui_state_card: state-card-custom-fanspeed
-auth_providers:
-  - type: homeassistant
-  - type: trusted_networks
-    trusted_networks:
-      - 192.168.100.0/24
 whitelist_external_dirs:
   - /config
+auth_providers:
+  - type: trusted_networks
+    trusted_networks:
+      - 127.0.0.1
+      - !secret local_network
+    trusted_users:
+      127.0.0.1: !secret user_id1
+      127.0.0.1: !secret user_id2
+      !secret local_network: !secret user_id1
+      !secret local_network: !secret user_id1
+    allow_bypass_login: true
+  - type: homeassistant
