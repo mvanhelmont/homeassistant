@@ -14,7 +14,7 @@
     service: media_player.volume_set
     data_template:
       entity_id: >-
-        {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_35efb15c_2d91fcb9
+        {% if is_state('input_select.radio_selector', 'Kitchen') %} media_player.browser_321be4fb_d450a466
         {% elif is_state('input_select.radio_selector', 'Alexa') %} media_player.peter_s_echo_dot
         {% endif %}
       volume_level: "{{  states.input_number.volume_radio.state  }}"
