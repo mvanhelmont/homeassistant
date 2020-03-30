@@ -4,10 +4,14 @@
 #
 # https://www.home-assistant.io/integrations/template/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: template
 sensors:
   dayofyear:
     value_template: "{{ now().strftime('%j') }}"
+    entity_id: sensor.date
+
+  weekofyear:
+    value_template: "{{ now().strftime('%U') }}"
     entity_id: sensor.date

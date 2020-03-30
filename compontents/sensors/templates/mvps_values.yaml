@@ -11,3 +11,47 @@ sensors:
   ssh_login_date:
     entity_id: sensor.date
     value_template: '{{ (states.sensor.mvps_ssh_information.attributes["ssh"]["date"]) }}'
+
+  ssh_login_ip:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.mvps_ssh_information.attributes["ssh"]["ip"]) }}'
+
+  ssh_login_time:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.mvps_ssh_information.attributes["ssh"]["time"]) }}'
+
+  ssh_login_user:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.mvps_ssh_information.attributes["ssh"]["user"]) }}'
+
+  www_oudenes_size:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["oudenes"]) }}'
+
+  www_hairdelicious_size:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["hairdelicious"]) }}'
+
+  www_backup_time:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["time"]) }}'
+
+  www_backup_date:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["date"]) }}'
+
+  www_asia_size:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["asia"]) }}'
+
+  vmail_backup_time:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.vmail_backup_information.attributes["vmailbackup"]["time"]) }}'
+
+  vmail_backup_size:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.vmail_backup_information.attributes["vmailbackup"]["size"]) }}'
+
+  vmail_backup_date:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.vmail_backup_information.attributes["vmailbackup"]["date"]) }}'

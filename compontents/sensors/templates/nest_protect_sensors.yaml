@@ -4,10 +4,18 @@
 #
 # https://www.home-assistant.io/integrations/template/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: template
 sensors:
   nest_protect_bedroom_status_homekit:
     friendly_name: "Nest Protect Bedroom Homekit"
     value_template: "{{ 'off' if is_state('sensor.bedroom_nest_protect_color_status', 'green') else 'on' }}"
+
+  nest_protect_livingroom_status_homekit:
+    friendly_name: "Nest Protect Livingroom Homekit"
+    value_template: "{{ 'off' if is_state('sensor.living_room_nest_protect_color_status', 'green') else 'on' }}"
+
+  nest_protect_diningroom_status_homekit:
+    friendly_name: "Nest Protect diningroom Homekit"
+    value_template: "{{ 'off' if is_state('sensor.dining_room_nest_protect_color_status', 'green') else 'on' }}"

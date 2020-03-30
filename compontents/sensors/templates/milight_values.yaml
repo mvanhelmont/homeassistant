@@ -11,3 +11,35 @@ sensors:
   milight_arduino_version:
     entity_id: sensor.date
     value_template: '{{ (states.sensor.milight_about.attributes["arduino_version"]) }}'
+
+  milight_dropped_packets:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.milight_about.attributes["queue_stats"]["dropped_packets"]) }}'
+
+  milight_firmware:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.milight_about.attributes["firmware"]) }}'
+
+  milight_free_heap:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.milight_about.attributes["free_heap"]) }}'
+
+  milight_ip:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.milight_about.attributes["ip_address"]) }}'
+
+  milight_length:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.milight_about.attributes["queue_stats"]["length"]) }}'
+
+  milight_reset_reason:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.milight_about.attributes["reset_reason"]) }}'
+
+  milight_variant:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.milight_about.attributes["variant"]) }}'
+
+  milight_version:
+    entity_id: sensor.date
+    value_template: '{{ (states.sensor.milight_about.attributes["version"]) }}'
