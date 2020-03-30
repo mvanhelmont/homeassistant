@@ -30,8 +30,8 @@ sensors:
     value_template: >-
       {% if state('switch.newkaku_0114ef92_b')== "on" %} Wall {% endif %}
       {% if state('switch.newkaku_0114ef92_c')== "on" %} Window {% endif %}
-      {% if state('switch.meek_kitchen_seeling')== "on" %} Kitchen Seeling {% endif %}
-      {% if state('switch.meek_kitchen_sink')== "on" %} Kitchen Sink {% endif %}
+      {% if state('switch.meek_kitchen_seeling')== "on" %} Seeling {% endif %}
+      {% if state('switch.meek_kitchen_sink')== "on" %} Sink {% endif %}
       {% if state('switch.newkaku_011fdd46_c')== "on" %} Dressoir {% endif %}
       {% if state('switch.meek_hallway')== "on" %} Hallway {% endif %}
       {% if state('switch.newkaku_011fdd46_b')== "on" %} Balcony {% endif %}
