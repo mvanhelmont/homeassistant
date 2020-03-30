@@ -11,32 +11,32 @@ sensors:
   scene_active:
     friendly_name: "Scene "
     value_template: >-
-      {% if state('switch.mqtt_scene_daytime')== "on" %} Daytime
-      {% elif state('switch.mqtt_scene_evening')== "on" %} Evening
-      {% elif state('switch.mqtt_scene_goodnight')== "on" %} Goodnight
-      {% elif state('switch.mqtt_scene_appletv')== "on" %} AppleTV
-      {% elif state('switch.mqtt_scene_tv')== "on" %} TV
-      {% elif state('switch.mqtt_scene_kodi')== "on" %} Kodi
+      {% if states('switch.mqtt_scene_daytime')== "on" %} Daytime
+      {% elif states('switch.mqtt_scene_evening')== "on" %} Evening
+      {% elif states('switch.mqtt_scene_goodnight')== "on" %} Goodnight
+      {% elif states('switch.mqtt_scene_appletv')== "on" %} AppleTV
+      {% elif states('switch.mqtt_scene_tv')== "on" %} TV
+      {% elif states('switch.mqtt_scene_kodi')== "on" %} Kodi
       {% endif %}
-      {% if state('switch.mqtt_scene_sleeping')== "on" %} and Sleeping {% endif %}
-      {% if state('switch.mqtt_scene_sexy')== "on" %} and Sexy {% endif %}
-      {% if state('switch.mqtt_scene_disco')== "on" %} and Disco {% endif %}
-      {% if state('switch.mqtt_scene_cooking')== "on" %} and Cooking {% endif %}
-      {% if state('switch.mqtt_kay_learning')== "on" %} and Kay Learning {% endif %}
-      {% if state('switch.mqtt_scene_guests')== "on" %} and Guests {% endif %}
+      {% if states('switch.mqtt_scene_sleeping')== "on" %} and Sleeping {% endif %}
+      {% if states('switch.mqtt_scene_sexy')== "on" %} and Sexy {% endif %}
+      {% if states('switch.mqtt_scene_disco')== "on" %} and Disco {% endif %}
+      {% if states('switch.mqtt_scene_cooking')== "on" %} and Cooking {% endif %}
+      {% if states('switch.mqtt_kay_learning')== "on" %} and Kay Learning {% endif %}
+      {% if states('switch.mqtt_scene_guests')== "on" %} and Guests {% endif %}
 
   switch_active:
     friendly_name: "Switch "
     value_template: >-
-      {% if state('switch.newkaku_0114ef92_b')== "on" %} Wall {% endif %}
-      {% if state('switch.newkaku_0114ef92_c')== "on" %} Window {% endif %}
-      {% if state('switch.meek_kitchen_seeling')== "on" %} Seeling {% endif %}
-      {% if state('switch.meek_kitchen_sink')== "on" %} Sink {% endif %}
-      {% if state('switch.newkaku_011fdd46_c')== "on" %} Dressoir {% endif %}
-      {% if state('switch.meek_hallway')== "on" %} Hallway {% endif %}
-      {% if state('switch.newkaku_011fdd46_b')== "on" %} Balcony {% endif %}
-      {% if state('switch.meek_bedroom')== "on" %} Bedroom {% endif %}
-      {% if state('switch.meek_bathroom')== "on" %} Bathroom {% endif %}
-      {% if state('switch.meek_toilet')== "on" %} Toilet {% endif %}
-      {% if state('switch.meek_cooking')== "on" %} Cooking {% endif %}
-      {% if state('switch.newkaku_014e5906_a')== "on" %} Testing {% endif %}
+      {% if states('switch.newkaku_0114ef92_b')== "on" %} Wall {% endif %}
+      {% if states('switch.newkaku_0114ef92_c')== "on" %} Window {% endif %}
+      {% if states('switch.meek_kitchen_seeling')== "on" %} Seeling {% endif %}
+      {% if states('switch.meek_kitchen_sink')== "on" %} Sink {% endif %}
+      {% if states('switch.newkaku_011fdd46_c')== "on" %} Dressoir {% endif %}
+      {% if states('switch.meek_hallway')== "on" %} Hallway {% endif %}
+      {% if states('switch.newkaku_011fdd46_b')== "on" %} Balcony {% endif %}
+      {% if states('switch.meek_bedroom')== "on" %} Bedroom {% endif %}
+      {% if states('switch.meek_bathroom')== "on" %} Bathroom {% endif %}
+      {% if states('switch.meek_toilet')== "on" %} Toilet {% endif %}
+      {% if states('switch.meek_cooking')== "on" %} Cooking {% endif %}
+      {% if states('switch.newkaku_014e5906_a')== "on" %} Testing {% endif %}
