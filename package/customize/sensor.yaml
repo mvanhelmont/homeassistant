@@ -28,11 +28,11 @@ sensor.harmony:
 
 sensor.scene_active:
   icon: mdi:arrow-decision-auto
-  icon_color: rgba(251,214,67,1)
+  icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 sensor.switch_active:
   icon: mdi:ceiling-light
-  icon_color: rgba(251,214,67,1)
+  icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 sensor.home_assistant_log:
   icon: mdi:paper-roll
