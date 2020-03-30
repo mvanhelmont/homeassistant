@@ -28,6 +28,12 @@ switch.kodi:
 switch.tv:
   icon: mdi:television-box
 
+switch.mqtt_fan_toilet:
+  friendly_name: "Toilet Fan"
+  templates:
+    icon: mdi:nintendo-switch
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
 ###########################################################################################
 #
 # SWITCH.MQTT Some control stuff
