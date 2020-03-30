@@ -16,7 +16,15 @@
 #    state: "on"
 
   action:
-    - service_template: "{{ 'switch.turn_on' if is_state('binary_sensor.node_20', 'on') else 'switch.turn_off' }}"
+#    - service_template: "{{ 'switch.turn_on' if is_state('binary_sensor.node_20', 'on') else 'switch.turn_off' }}"
+#      entity_id: switch.meek_toilet
+
+    - service_template: >-
+        {%   if states('binary_sensor.node_20') == 'on'  and states('switch.mqtt_fan_toilet') == 'off' %} switch.turn_on
+        {% elif states('binary_sensor.node_20') == 'on'  and states('switch.mqtt_fan_toilet') == 'on' %} script.none
+        {% elif states('binary_sensor.node_20') == 'off' and states('switch.mqtt_fan_toilet') == 'on' %} script.none
+        {% else %} switch.turn_off
+        {% endif %}
       entity_id: switch.meek_toilet
 
     - service: mqtt.publish
