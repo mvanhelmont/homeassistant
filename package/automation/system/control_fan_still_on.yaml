@@ -13,6 +13,11 @@
     platform: state
     entity_id: binary_sensor.node_16 # Motion Kitchen
 
+  condition:
+    condition: state
+    entity_id: fan.afzuiging_badkamer
+    state: "on"
+
   action:
     - service_template: >-
         {% if states('binary_sensor.node_16') == 'off' and states('binary_sensor.node_15') == 'off' %} fan.turn_off
