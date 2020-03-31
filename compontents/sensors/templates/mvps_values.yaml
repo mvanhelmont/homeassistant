@@ -27,10 +27,12 @@ sensors:
   www_oudenes_size:
     entity_id: sensor.date
     value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["oudenes"]) }}'
+    unit_of_measurement: 'MB'
 
   www_hairdelicious_size:
     entity_id: sensor.date
     value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["hairdelicious"]) }}'
+    unit_of_measurement: 'MB'
 
   www_backup_time:
     entity_id: sensor.date
@@ -43,6 +45,7 @@ sensors:
   www_asia_size:
     entity_id: sensor.date
     value_template: '{{ (states.sensor.www_backup_information.attributes["www"]["asia"]) }}'
+    unit_of_measurement: 'MB'
 
   vmail_backup_time:
     entity_id: sensor.date
@@ -51,6 +54,7 @@ sensors:
   vmail_backup_size:
     entity_id: sensor.date
     value_template: '{{ (states.sensor.vmail_backup_information.attributes["vmailbackup"]["size"]) }}'
+    unit_of_measurement: 'MB'
 
   vmail_backup_date:
     entity_id: sensor.date
