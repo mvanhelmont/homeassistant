@@ -17,9 +17,6 @@
     - service: switch.turn_off
       entity_id: switch.meek_bathroom
 
-    - service_template: "{{ 'fan.turn_on' if is_state('binary_sensor.node_16', 'on') else 'fan.turn_off' }}"
-      entity_id: fan.afzuiging_badkamer
-
     - service: script.pushover_engine
       data_template:
         message: "Nobody in bathroom for 3 minutes. Turned off bathroom switch and light"
