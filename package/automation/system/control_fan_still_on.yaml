@@ -4,7 +4,7 @@
 #
 ###########################################################################################
 
-- alias: "Control - Bathroom Lights Are On"
+- alias: "Control - Fan still on"
   trigger:
 
     platform: state
