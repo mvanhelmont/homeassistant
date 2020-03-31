@@ -472,12 +472,15 @@ sensor.hp_printer_ink_black:
   icon: mdi:cup-water
 
 sensor.hp_printer_ink_cyan:
+  icon_color: rgb(rgb(0,255,255))
   icon: mdi:cup-water
 
 sensor.hp_printer_ink_magenta:
+  icon_color: rgb(rgb(255,0,255)
   icon: mdi:cup-water
 
 sensor.hp_printer_ink_yellow:
+  icon_color: rgb(rgb(255,255,0)
   icon: mdi:cup-water
 
 sensor.hp_printer_printer:
