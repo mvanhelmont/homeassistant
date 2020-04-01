@@ -7,11 +7,11 @@
 - alias: "Control - Fan still on"
   trigger:
 
-    platform: state
-    entity_id: binary_sensor.node_15 # Motion Bathroom
+    - platform: state
+      entity_id: binary_sensor.node_15 # Motion Bathroom
 
-    platform: state
-    entity_id: binary_sensor.node_16 # Motion Kitchen
+    - platform: state
+      entity_id: binary_sensor.node_16 # Motion Kitchen
 
   condition:
     condition: state
@@ -27,7 +27,7 @@
 
     - service: script.pushover_engine
       data_template:
-        message: "Bathroom and Kitchen off, turn off Fan"
+        message: "Turned bathroom Fan off"
         priority: 0
         sound: bike
         title: "HA System"
