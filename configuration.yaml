@@ -19,6 +19,7 @@ sun:
 system_health:
 updater:
 zeroconf:
+ios:
 
 ###################################################
 #
