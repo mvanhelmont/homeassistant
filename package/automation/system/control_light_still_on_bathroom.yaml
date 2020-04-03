@@ -13,13 +13,18 @@
     for:
       minutes: 2
 
+  condition:
+    - condition: state
+      entity_id: switch.meek_bathroom
+      state: "on"
+
   action:
     - service: switch.turn_off
       entity_id: switch.meek_bathroom
 
     - service: script.pushover_engine
       data_template:
-        message: "Nobody in bathroom for 3 minutes. Turned off bathroom switch and light"
+        message: "Nobody in bathroom for 3 minutes. Nobody switched off the lights. Turned off bathroom switch and light"
         priority: 0
         sound: bike
         title: "HA System"
