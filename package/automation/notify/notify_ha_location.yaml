@@ -1,0 +1,20 @@
+###########################################################################################
+#
+# NOTIFY WHEN PETER iOS LOCATION IS CHANGE
+#
+###########################################################################################
+
+- alias: "Notification - Peter iOS Location change"
+  trigger:
+
+    platform: state
+    entity_id:
+      - sensor.peter_iphone_ha_geocoded_location
+
+  action:
+    service: script.pushover_engine
+    data_template:
+      message: "{{ states('sensor.peter_iphone_ha_geocoded_location') }}"
+      priority: "0"
+      sound: "bike"
+      title: "HA iOS Location change"
