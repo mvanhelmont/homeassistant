@@ -1,0 +1,11 @@
+###########################################################################################
+#
+# SENSOR CERT EXPIRY
+#
+# https://www.home-assistant.io/integrations/cert_expiry/
+#
+###########################################################################################
+
+---
+platform: cert_expiry
+host: rpi.oudenes.photography
