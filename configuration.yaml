@@ -20,57 +20,38 @@ system_health:
 updater:
 zeroconf:
 
-###################################################
-#
-# Automation components
-#
-###################################################
-
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
 
-###################################################
-#
-# Components that needs a file with info
-#
-###################################################
-
 alexa: !include compontents/devices/alexa.yaml
+binary_sensor: !include_dir_list compontents/binary_sensors
 browser_mod: !include compontents/configs/browser_mod.yaml
+calendar: !include_dir_list compontents/caldav
 customizer: !include compontents/configs/customizer.yaml
 device_tracker: !include compontents/configs/device_tracker.yaml
+fan: !include_dir_list compontents/fan
+group: !include_dir_merge_named compontents/groups
 frontend: !include compontents/configs/frontend.yaml
 homeassistant: !include compontents/configs/homeassistant.yaml
 homekit: !include compontents/configs/homekit.yaml
 history: !include compontents/configs/history.yaml
 http: !include compontents/configs/http.yaml
-logger: !include compontents/configs/logger.yaml
-nest: !include compontents/devices/nest.yaml
-panel_custom: !include compontents/configs/panel_custom.yaml
-recorder: !include compontents/configs/recorder.yaml
-remote: !include compontents/devices/remote.yaml
-rflink: !include compontents/devices/rflink.yaml
-shell_command: !include compontents/devices/shell_commands.yaml
-speedtestdotnet: !include compontents/configs/speedtest.yaml
-tts: !include compontents/devices/tts.yaml
-weather: !include compontents/configs/weather.yaml
-zwave: !include compontents/devices/zwave.yaml
-
-###################################################
-#
-# Components use merge to build configuration
-#
-###################################################
-
-binary_sensor: !include_dir_list compontents/binary_sensors
-calendar: !include_dir_list compontents/caldav
-fan: !include_dir_list compontents/fan
-group: !include_dir_merge_named compontents/groups
 input_boolean: !include_dir_merge_named compontents/input_boolean
 input_number: !include_dir_merge_named compontents/input_number
 input_select: !include_dir_merge_named compontents/input_select
 light: !include_dir_list compontents/light
+logger: !include compontents/configs/logger.yaml
 media_player: !include_dir_list compontents/media_players
+nest: !include compontents/devices/nest.yaml
 notify: !include_dir_list compontents/configs/notify
+panel_custom: !include compontents/configs/panel_custom.yaml
+recorder: !include compontents/configs/recorder.yaml
+remote: !include compontents/devices/remote.yaml
+rflink: !include compontents/devices/rflink.yaml
 sensor: !include_dir_list compontents/sensors
+shell_command: !include compontents/devices/shell_commands.yaml
+speedtestdotnet: !include compontents/configs/speedtest.yaml
 switch: !include_dir_list compontents/switches
+tts: !include compontents/devices/tts.yaml
+weather: !include compontents/configs/weather.yaml
+zwave: !include compontents/devices/zwave.yaml
