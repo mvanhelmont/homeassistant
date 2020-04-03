@@ -19,8 +19,10 @@ auth_providers:
       127.0.0.1:
         - !secret user_id1
         - !secret user_id2
+        - !secret user_id3
       !secret local_network:
         - !secret user_id1
         - !secret user_id2
+        - !secret user_id3
     allow_bypass_login: true
   - type: homeassistant
