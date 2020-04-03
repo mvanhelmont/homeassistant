@@ -12,7 +12,9 @@
     to: "false"
 
   action:
-    service: notify.ha_email
+    service: script.pushover_engine
     data_template:
-      title: "HA - Auto verzekering verlopen"
       message: "De auto is niet verzekerd! Sluit een autoverzekering af voordat je ermee de weg op gaat."
+      priority: "0"
+      sound: "bike"
+      title: "HA - Auto verzekering verlopen"

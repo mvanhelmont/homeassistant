@@ -12,7 +12,9 @@
     to: "true"
 
   action:
-    service: notify.ha_email
+    service: script.pushover_engine
     data_template:
-      title: "HA - Terugroepactie"
       message: "Er is een terugroepactie uitgevaardigd voor de auto. Maak een afspraak bij de garage om het probleem te verhelpen."
+      priority: "0"
+      sound: "bike"
+      title: "HA - Terugroepactie"
