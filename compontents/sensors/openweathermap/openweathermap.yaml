@@ -1,0 +1,21 @@
+###########################################################################################
+#
+# OPEN WEATHER
+#
+# https://www.home-assistant.io/integrations/openweathermap/
+#
+###########################################################################################
+---
+platform: openweathermap
+api_key: !secret openweather_api
+monitored_conditions:
+  - weather
+  - temperature
+  - wind_speed
+  - humidity
+  - pressure
+  - clouds
+  - rain
+  - snow
+#weather_code
+#wind_bearing
