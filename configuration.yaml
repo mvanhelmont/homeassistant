@@ -21,6 +21,14 @@ updater:
 zeroconf:
 emulated_hue:
   listen_port: 80
+  expose_by_default: true
+  exposed_domains:
+    - light
+  entities:
+    light.dressoir_all:
+      name: "Dressoir"
+    light.bedroom_all:
+      hidden: true
 
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
