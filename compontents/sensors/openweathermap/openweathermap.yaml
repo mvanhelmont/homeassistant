@@ -8,8 +8,6 @@
 ---
 platform: openweathermap
 api_key: !secret openweather_api
-mode: freedaily
-name: Weather Map
 monitored_conditions:
   - weather
   - temperature
