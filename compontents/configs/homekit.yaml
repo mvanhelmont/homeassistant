@@ -66,15 +66,15 @@ filter:
 # NEST
     - climate.entryway
 # MEEK Switches
-    - switch.meek_kitchen_seeling
-    - switch.meek_kitchen_sink
-    - switch.meek_hallway
-    - switch.meek_bedroom
-    - switch.meek_bathroom
-    - switch.meek_toilet
-    - switch.meek_cooking
-    - switch.meek_dressoir
-    - switch.meek_livingroom
+#    - switch.meek_kitchen_seeling
+#    - switch.meek_kitchen_sink
+#    - switch.meek_hallway
+#    - switch.meek_bedroom
+#    - switch.meek_bathroom
+#    - switch.meek_toilet
+#    - switch.meek_cooking
+#    - switch.meek_dressoir
+#    - switch.meek_livingroom
 # Device trackers
     - binary_sensor.manual_kay_home
     - binary_sensor.manual_peter_home
