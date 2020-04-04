@@ -51,7 +51,6 @@ kitchen_normal_turn_on:
         entity_id:
           - light.kitchen_all
           - light.sink_all
-        #kelvin: 2800
         brightness_pct: >-
           {% if states('binary_sensor.node_16') == 'on' and states('switch.mqtt_scene_goodnight') == 'on' %} 20
           {% elif states('binary_sensor.node_16') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 100
@@ -72,7 +71,6 @@ kitchen_halloween_turn_on:
         entity_id:
           - light.kitchen_all
           - light.sink_all
-        #kelvin: 2800
         brightness_pct: >-
           {% if states('binary_sensor.node_16') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 100
           {% else %}0
@@ -90,7 +88,6 @@ kitchen_christmas_turn_on:
     - service: light.turn_on
       data_template:
         entity_id: light.kitchen_all
-        #kelvin: 2800
         brightness_pct: >-
           {% if states('binary_sensor.node_16') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 70
           {% else %}0
@@ -126,7 +123,6 @@ kitchen_kingsday_turn_on:
     - service: light.turn_on
       data_template:
         entity_id: light.kitchen_all
-        #kelvin: 2800
         brightness_pct: >-
           {% if states('binary_sensor.node_16') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 70
           {% else %}0
@@ -171,7 +167,6 @@ kitchen_birthday_turn_on:
     - service: light.turn_on
       data_template:
         entity_id: light.kitchen_all
-        #kelvin: 2800
         brightness_pct: >-
           {% if states('binary_sensor.node_16') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 100
           {% else %}0

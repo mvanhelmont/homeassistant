@@ -11,13 +11,11 @@ tv_normal:
     - service: light.turn_on
       data:
         entity_id: light.livingroom_all
-        kelvin: 2800
         brightness_pct: 100
 
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
-        kelvin: 2800
         brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
 
     - service: light.turn_on
@@ -39,7 +37,6 @@ tv_birthday:
     - service: light.turn_on
       data:
         entity_id: light.livingroom_all
-        kelvin: 2800
         brightness_pct: 100
 
     - service: light.turn_on
@@ -106,7 +103,6 @@ tv_kingsday:
     - service: light.turn_on
       data:
         entity_id: light.livingroom_all
-        kelvin: 2800
         brightness_pct: 100
 
     - service: light.turn_on

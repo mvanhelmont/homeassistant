@@ -14,7 +14,6 @@
     service: light.turn_on
     data_template:
       entity_id: light.toilet_all
-      #kelvin: 2800
       brightness_pct: >-
         {% if states('switch.meek_toilet') == 'on' and states('switch.mqtt_scene_goodnight') == 'on' %} 40
         {% elif states('switch.meek_toilet') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 100
