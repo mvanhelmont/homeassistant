@@ -1,0 +1,18 @@
+###########################################################################################
+#
+# EMULATED_HUE
+#
+# https://www.home-assistant.io/integrations/emulated_hue/
+#
+###########################################################################################
+
+---
+listen_port: 80
+expose_by_default: true
+exposed_domains:
+  - light
+entities:
+  light.dressoir_all:
+    name: "Dressoir"
+  light.bedroom_all:
+    hidden: true
