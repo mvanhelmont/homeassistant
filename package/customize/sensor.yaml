@@ -1111,3 +1111,218 @@ sensor.weekofyear:
 sensor.holiday:
   friendly_name: "Holiday!"
   icon: mdi:palm-tree
+
+sensor.buienradar_stationname:
+  friendly_name: "Station name"
+sensor.buienradar_sunchance_1d:
+  friendly_name: "Sun change 1 day"
+sensor.buienradar_sunchance_2d:
+  friendly_name: "Sun change 2 days"
+sensor.buienradar_barometer:
+  friendly_name: "Barometer"
+sensor.buienradar_barometer_value:
+  friendly_name: "Barometer value"
+sensor.buienradar_condition:
+  friendly_name: "Condition now"
+sensor.buienradar_condition_1d:
+  friendly_name: "Condition 1 day"
+sensor.buienradar_condition_2d:
+  friendly_name: "Condition 3 days"
+sensor.buienradar_condition_code:
+  friendly_name: "Condition code"
+sensor.buienradar_condition_code_1d:
+  friendly_name: "Condition code 1 day"
+sensor.buienradar_condition_code_2d:
+  friendly_name: "Condition code 2 days"
+sensor.buienradar_detailed_condition:
+  friendly_name: "Condition simple now"
+sensor.buienradar_detailed_condition_1d:
+  friendly_name: "Condition simple 1 day"
+sensor.buienradar_detailed_condition_2d:
+  friendly_name: "Condition simple 2 days"
+sensor.buienradar_full_condition:
+  friendly_name: "Condition details now"
+sensor.buienradar_full_condition_1d:
+  friendly_name: "Condition detals 1 day"
+sensor.buienradar_full_condition_2d:
+  friendly_name: "Condition details 2 days"
+sensor.buienradar_symbol:
+  friendly_name: "Symbol now"
+sensor.buienradar_symbol_1d:
+  friendly_name: "Symbol 1 day"
+sensor.buienradar_symbol_2d:
+  friendly_name: "Symbol 2 days"
+sensor.buienradar_feel_temperature:
+  friendly_name: "Feel Temp."
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+sensor.buienradar_humidity:
+sensor.buienradar_temperature:
+  friendly_name: "Temp now"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+sensor.buienradar_temperature_1d:
+  friendly_name: "Temp. after 1 day"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+sensor.buienradar_temperature_2d:
+  friendly_name: "Temp. after 2 days"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+sensor.buienradar_minimum_temperature_1d:
+  friendly_name: "Min. Temp. after 1 day"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+sensor.buienradar_minimum_temperature_2d:
+  friendly_name: "Min. Temp. after 2 days"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+sensor.buienradar_ground_temperature:
+  friendly_name: "Ground Temp."
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+sensor.buienradar_wind_speed:
+  friendly_name: "Wind speed now"
+sensor.buienradar_wind_speed_1d:
+  friendly_name: "Wind speed 1 day"
+sensor.buienradar_wind_speed_2d:
+  friendly_name: "Winf speed 2 days"
+sensor.buienradar_wind_force:
+  friendly_name: "Wind force now"
+sensor.buienradar_wind_force_1d:
+  friendly_name: "Wind force 1 day"
+sensor.buienradar_wind_force_2d:
+  friendly_name: "Wind force 2 days"
+sensor.buienradar_wind_direction:
+  friendly_name: "Wind direction now"
+sensor.buienradar_wind_direction_1d:
+  friendly_name: "Wind direction 1 day"
+sensor.buienradar_wind_direction_2d:
+  friendly_name: "Wind direction 2 days"
+sensor.buienradar_wind_direction_azimuth:
+  friendly_name: "Wind azimuth now"
+sensor.buienradar_wind_direction_azimuth_1d:
+  friendly_name: "Wind azimuth 1 day"
+sensor.buienradar_wind_direction_azimuth_2d:
+  friendly_name: "Wind azimuth 2 days"
+sensor.buienradar_pressure:
+  friendly_name: "Pressure"
+sensor.buienradar_visibility:
+  friendly_name: "Visibility"
+sensor.buienradar_wind_gust:
+  friendly_name: "Wind gust"
+sensor.buienradar_precipitation:
+  friendly_name: "Precipitation"
+sensor.buienradar_precipitation_forecast_average:
+  friendly_name: "Precipitation forecast average"
+sensor.buienradar_precipitation_forecast_total:
+  friendly_name: "Precipitation forecast total"
+sensor.buienradar_irradiance:
+  friendly_name: "Watt m2"
+sensor.buienradar_rain_last_24h:
+  friendly_name: "Rain within 24h"
+sensor.buienradar_rain_last_hour:
+  friendly_name: "Rain within last hour"
+sensor.buienradar_rain_1d:
+  friendly_name: "Rain 1 day"
+sensor.buienradar_rain_2d:
+  friendly_name: "Rain 2 days"
+sensor.buienradar_rainchance_1d:
+  friendly_name: "Rain change 1 day"
+sensor.buienradar_rainchance_2d:
+  friendly_name: "Rain change 2 days"
+sensor.buienradar_maximum_rain_1d:
+  friendly_name: "Max rain 1 day"
+sensor.buienradar_minimum_rain_1d:
+  friendly_name: "Min rain 1 day"
