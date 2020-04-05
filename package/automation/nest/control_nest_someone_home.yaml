@@ -32,7 +32,7 @@
     data_template:
       entity_id: climate.entryway
       temperature: >-
-        {% set outside = states('sensor.dark_sky_temperature') | float %}
+        {% set outside = states('sensor.buienradar_temperature') | float %}
         {% set inside = states('sensor.climate_temp_inside') | float %}
         {% if outside > 12 and inside > 15 %} 10
         {% elif outside < 12 and inside > 15 %} 10
