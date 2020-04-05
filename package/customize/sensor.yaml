@@ -1170,6 +1170,7 @@ sensor.buienradar_feel_temperature:
       if (state > -23) return 'rgb(189,0,107)';
       return 'rgb(0,0,0)';
 sensor.buienradar_humidity:
+  friendly_name: "Humidity"
 sensor.buienradar_temperature:
   friendly_name: "Temp now"
   templates:
