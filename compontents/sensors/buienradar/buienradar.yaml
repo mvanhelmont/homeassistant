@@ -36,7 +36,6 @@ monitored_conditions:
   - irradiance
   - rainlast24hour
   - rainlasthour
-
   # conditions for forecasted data:
   - temperature_1d
   - temperature_2d
