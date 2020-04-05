@@ -8,12 +8,12 @@
   trigger:
 
     platform: state
-    entity_id: device_tracker.geofency_kay
+    entity_id: device_tracker.kay_iphone_geofency
 
   action:
     service: script.pushover_engine
     data_template:
-      message: "{{ 'Kay arrived home' if is_state('device_tracker.geofency_kay', 'home') else 'Kay left home.' }}"
+      message: "{{ 'Kay arrived home' if is_state('device_tracker.kay_iphone_geofency', 'home') else 'Kay left home.' }}"
       priority: "0"
       sound: "bike"
       title: "HA Notify Engine"

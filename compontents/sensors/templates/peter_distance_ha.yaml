@@ -5,11 +5,11 @@ sensors:
     value_template: >-
       {%- set lat1 = state_attr("zone.home","latitude") -%}
       {%- set lon1 = state_attr("zone.home","longitude") -%}
-      {%- set lat2 = state_attr("device_tracker.geofency_peter","latitude") -%}
-      {%- set lon2 = state_attr("device_tracker.geofency_peter","longitude") -%}
+      {%- set lat2 = state_attr("device_tracker.peter_iphone_ha","latitude") -%}
+      {%- set lon2 = state_attr("device_tracker.peter_iphone_ha","longitude") -%}
 
       {%- set distance = sqrt((lat2-lat1)**2+(lon2-lon1)**2)*111.32 -%}
 
       {{- distance|round(1) -}}
     unit_of_measurement: "km"
-    entity_id: device_tracker.geofency_peter
+    entity_id: device_tracker.peter_iphone_geofency

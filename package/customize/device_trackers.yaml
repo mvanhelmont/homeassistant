@@ -15,7 +15,7 @@ device_tracker.peter_iphone_ha:
     friendly_name: "Peter HA iOS"
     entity_picture: "/local/images/peter-home.jpg"
 
-device_tracker.geofency_peter:
+device_tracker.peter_iphone_geofency:
   friendly_name: "Peter Geofency"
   entity_picture: "/local/images/peter-home.jpg"
 
@@ -23,6 +23,6 @@ device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f:
   friendly_name: "Kay Locative"
   entity_picture: "/local/images/kay-home.jpg"
 
-device_tracker.geofency_kay:
+device_tracker.kay_iphone_geofency:
   friendly_name: "Kay GeoFency"
   entity_picture: "/local/images/kay-home.jpg"
