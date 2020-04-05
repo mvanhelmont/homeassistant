@@ -6,8 +6,13 @@
 #
 ###########################################################################################
 ---
-platform: darksky
-api_key: !secret darsky_apikey
-mode: daily
-latitude: !secret latitude
-longitude: !secret longitude
+#platform: darksky
+#api_key: !secret darsky_apikey
+#mode: daily
+#latitude: !secret latitude
+#longitude: !secret longitude
+
+platform: openweathermap
+api_key: 572cb43fafbfebe91150ceda1b1b9743
+name: "Open Weather"
+mode: "freedaily"
