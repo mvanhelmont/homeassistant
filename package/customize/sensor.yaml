@@ -332,14 +332,25 @@ sensor.peter_last_changed_tracker:
   friendly_name: "Geofency Peter Tracker changed"
   icon: mdi:av-timer
 
+sensor.peter_distance_geofency:
+  friendly_name: "Peter Geofency Distance"
+  icon: mdi:map-marker-distance
+
+sensor.peter_distance_ha:
+  friendly_name: "Peter HA Distance"
+  icon: mdi:map-marker-distance
+
 sensor.kay_last_changed_tracker:
   friendly_name: "Geofency Kay Tracker changed"
   icon: mdi:av-timer
 
-sensor.peter_distance:
-  friendly_name: "Geofency Peter Distance"
+sensor.kay_distance_geofency:
+  friendly_name: "Kay Geofency Distance"
   icon: mdi:map-marker-distance
 
+sensor.kay_distance_ha:
+  friendly_name: "Kay HA Distance"
+  icon: mdi:map-marker-distance
 ###########################################################################################
 #
 # SENSOR.PETER_S_ECHO_DOT

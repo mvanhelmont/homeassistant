@@ -13,7 +13,12 @@
   action:
     service: script.pushover_engine
     data_template:
-      message: "{{ 'Kay arrived home' if is_state('device_tracker.kay_iphone_geofency', 'home') else 'Kay left home.' }}"
+      message: >-
+        {% if trigger.to_state.state == 'home' %}
+          Kay arrived home
+        {% else %}
+          Kay left home
+        {% endif %}
       priority: "0"
       sound: "bike"
       title: "HA Notify Engine"
