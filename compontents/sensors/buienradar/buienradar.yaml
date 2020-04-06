@@ -11,36 +11,36 @@ timeframe: 60
 name: "buienradar"
 monitored_conditions:
   # current condition:
-  - stationname
-  - barometerfc
-  - barometerfcname
-  - conditioncode
+#  - stationname
+#  - barometerfc
+#  - barometerfcname
+#  - conditioncode
   - condition
   - conditiondetailed
   - conditionexact
   - symbol
-  - feeltemperature
+#  - feeltemperature
   - humidity
   - temperature
-  - groundtemperature
+#  - groundtemperature
   - windspeed
-  - windforce
+#  - windforce
   - winddirection
-  - windazimuth
+#  - windazimuth
   - pressure
   - visibility
-  - windgust
+#  - windgust
   - precipitation
   - precipitation_forecast_average
   - precipitation_forecast_total
-  - irradiance
-  - rainlast24hour
+#  - irradiance
+#  - rainlast24hour
   - rainlasthour
   # conditions for forecasted data:
   - temperature_1d
   - temperature_2d
-  - mintemp_1d
-  - mintemp_2d
+#  - mintemp_1d
+#  - mintemp_2d
   - rainchance_1d
   - rainchance_2d
   - sunchance_1d
@@ -49,16 +49,16 @@ monitored_conditions:
   - rain_2d
   - minrain_1d
   - maxrain_1d
-  - windazimuth_1d
-  - windazimuth_2d
+#  - windazimuth_1d
+#  - windazimuth_2d
   - winddirection_1d
   - winddirection_2d
-  - windforce_1d
-  - windforce_2d
+#  - windforce_1d
+#  - windforce_2d
   - windspeed_1d
   - windspeed_2d
-  - conditioncode_1d
-  - conditioncode_2d
+#  - conditioncode_1d
+#  - conditioncode_2d
   - condition_1d
   - condition_2d
   - conditiondetailed_1d
