@@ -12,4 +12,4 @@ sensors:
 
       {{- distance|round(1) -}}
     unit_of_measurement: "km"
-    entity_id: device_tracker.peter_iphone_geofency
+    entity_id: device_tracker.peter_iphone_ha
