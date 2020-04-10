@@ -13,5 +13,5 @@ system_server_state_select_switch:
     - "MQTT Server"
     - "MVPS VMail and WWW"
     - "MVPS SSH Login"
-    - "Resillio"
+    - "Nextcloud"
   initial: "Home Assistant"
