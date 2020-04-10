@@ -14,7 +14,7 @@
       - device_tracker.peter_iphone_ha
 
   action:
-    service: >-
+    service_template: >-
       {%- if trigger.from_state.state == trigger.to_state.state -%}
         script.pushover_engine
       {%- else -%}
