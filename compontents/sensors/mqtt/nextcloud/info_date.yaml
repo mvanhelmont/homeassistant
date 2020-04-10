@@ -1,0 +1,12 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+name: "Nextcloud Last Update"
+state_topic: "Servers/nextcloud/systemstatus"
+value_template: "{{ value_json.datetimedatacollected }}"
