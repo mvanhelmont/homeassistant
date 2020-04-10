@@ -53,4 +53,4 @@
       entity_id: fan.afzuiging_badkamer
 
     - service: light.turn_off
-      entity_id: light.browser_c8f3d613_7b0bacbc
+      entity_id: light.browser_890da611_f381e6e1

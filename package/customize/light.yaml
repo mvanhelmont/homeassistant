@@ -192,7 +192,7 @@ light.toilet_3:
   homebridge_name: "Toilet 3"
   icon: mdi:ceiling-light
 
-light.browser_c8f3d613_7b0bacbc:
+light.browser_890da611_f381e6e1:
   friendly_name: Fully Kiosk Screen
 
 light.newkaku_01401eb6_a:
@@ -203,4 +203,4 @@ light.newkaku_01401eb6_a:
 light.nanoleaf:
   friendly_name: "NanoLeaf"
 
-#light.browser_c8f3d613_7b0bacbc:
+#light.browser_890da611_f381e6e1:
