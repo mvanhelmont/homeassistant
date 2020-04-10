@@ -15,7 +15,7 @@
 
   action:
     service: >-
-      {%- if trigger.from_state.state) < states('trigger.to_state.state') -%}
+      {%- if trigger.from_state.state == trigger.to_state.state -%}
         script.pushover_engine
       {%- else -%}
         script.none
