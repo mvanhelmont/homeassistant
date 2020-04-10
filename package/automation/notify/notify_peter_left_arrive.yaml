@@ -14,7 +14,12 @@
       - device_tracker.peter_iphone_ha
 
   action:
-    service: script.pushover_engine
+    service: >-
+      {%- if trigger.from_state.state) < states('trigger.to_state.state') -%}
+        script.pushover_engine
+      {%- else -%}
+        script.none
+      {%- endif -%}
     data_template:
       message: >-
         {% if trigger.to_state.state == 'home' %}
