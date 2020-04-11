@@ -4,7 +4,7 @@
 #
 ###########################################################################################
 
-- alias: clear_log_filesize
+- alias: "System - Clear HA Log file"
   initial_state: true
   trigger:
 
