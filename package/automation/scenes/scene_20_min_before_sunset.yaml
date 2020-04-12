@@ -22,6 +22,11 @@
 
   action:
     - service: light.turn_on
+      data:
+        entity_id: light.browser_ae1b43e7_eb57c683
+        brightness_pct: 50
+
+    - service: light.turn_on
       data_template:
         entity_id: light.nanoleaf
         brightness_pct: 30

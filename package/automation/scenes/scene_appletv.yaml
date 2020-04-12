@@ -36,6 +36,11 @@
       state: "apple_tv"
 
   action:
+    - service: light.turn_on
+      data:
+        entity_id: light.browser_ae1b43e7_eb57c683
+        brightness_pct: 50
+
     - service: switch.turn_on
       entity_id: switch.mqtt_scene_appletv
 

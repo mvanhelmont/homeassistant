@@ -10,6 +10,6 @@ prefix: "browser_"
 devices:
   d519dbc2 9d8ae50c:
     name: "iMac Safari"
-  da44cbb8 3c8227c9:
-    name: "Lenovo Full Kiosk"
+  ae1b43e7 eb57c683:
+    name: "Samsung FKB"
     camera: true
