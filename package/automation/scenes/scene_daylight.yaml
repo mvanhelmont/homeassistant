@@ -28,7 +28,7 @@
 
   action:
     - service: light.turn_off
-      entity_id: light.browser_890da611_f381e6e1
+      entity_id: light.browser_ae1b43e7_eb57c683
 
     - service: switch.turn_on
       entity_id: switch.mqtt_scene_daytime

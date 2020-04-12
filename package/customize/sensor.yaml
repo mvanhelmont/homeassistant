@@ -10,7 +10,7 @@
 #
 ###########################################################################################
 
-sensor.browser_890da611_f381e6e1:
+sensor.browser_ae1b43e7_eb57c683:
   friendly_name: Fully Kiosk Sensor
 
 sensor.fibaro_frontdoor_custom_sensor:
