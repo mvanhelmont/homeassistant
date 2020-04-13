@@ -9,17 +9,11 @@
 
     platform: state
     entity_id:
-#      - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
       - device_tracker.peter_beacon
       - device_tracker.peter_iphone_ha
 
   action:
-    service_template: >-
-      {%- if trigger.from_state.state == trigger.to_state.state -%}
-        script.pushover_engine
-      {%- else -%}
-        script.none
-      {%- endif -%}
+    service: script.pushover_engine
     data_template:
       message: >-
         {% if trigger.to_state.state == 'home' %}

@@ -1,4 +1,4 @@
-- alias: "System - Update devic_tracker.peter_beacon to home"
+- alias: "System - Update device_tracker.peter_beacon to home"
 
   trigger:
     platform: numeric_state
@@ -12,7 +12,7 @@
       location_name: home
       source_type: bluetooth
 
-- alias: "System - Update devic_tracker.peter_beacon to not_home"
+- alias: "System - Update device_tracker.peter_beacon to not_home"
 
   trigger:
     platform: numeric_state
