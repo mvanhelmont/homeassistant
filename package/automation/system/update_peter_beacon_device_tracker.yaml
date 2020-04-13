@@ -8,7 +8,7 @@
   action:
     service: device_tracker.see
     data:
-      dev_id: device_tracker.peter_beacon
+      dev_id: peter_beacon
       location_name: home
       source_type: bluetooth
 
@@ -16,12 +16,12 @@
 
   trigger:
     platform: numeric_state
-    entity_id: sensor.john_occupancy_confidence
+    entity_id: sensor.peter_iphone_ibeacon
     below: 10
 
   action:
     service: device_tracker.see
     data:
-      dev_id: device_tracker.peter_beacon
+      dev_id: peter_beacon
       location_name: not_home
       source_type: bluetooth
