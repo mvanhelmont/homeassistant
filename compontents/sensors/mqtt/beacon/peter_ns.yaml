@@ -7,7 +7,7 @@
 ###########################################################################################
 ---
 platform: mqtt
-state_topic: "beacon/hallway/peter_ns'
-value_template: '{{ value_json.confidence }}'
-unit_of_measurement: '%'
+state_topic: "beacon/hallway/peter_ns"
+value_template: "{{ value_json.confidence }}"
+unit_of_measurement: "%"
 name: "Peter NS iBeacon"
