@@ -25,7 +25,7 @@
 
     - condition: numeric_state
       entity_id: sensor.node_19_luminance
-      below: 160
+      below: 180
 
     - condition: state
       entity_id: switch.mqtt_scene_guests
@@ -75,7 +75,7 @@
 
     - condition: numeric_state
       entity_id: sensor.node_19_luminance
-      above: 161
+      above: 181
 
     - condition: state
       entity_id: switch.mqtt_lux_level_low
