@@ -10,4 +10,4 @@ platform: mqtt
 state_topic: "beacon/hallway/kay_iphone"
 value_template: "{{ value_json.confidence }}"
 unit_of_measurement: "%"
-name: "Peter NS iBeacon"
+name: "Kay iPhone iBeacon"
