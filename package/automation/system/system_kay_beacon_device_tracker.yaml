@@ -1,0 +1,27 @@
+- alias: "System - Update devic_tracker.peter_beacon to home"
+
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.kay_iphone_ibeacon
+    above: 10
+
+  action:
+    service: device_tracker.see
+    data:
+      dev_id: kay_beacon
+      location_name: home
+      source_type: bluetooth
+
+- alias: "System - Update devic_tracker.kay_beacon to not_home"
+
+  trigger:
+    platform: numeric_state
+    entity_id: sensor.kay_iphone_ibeacon
+    below: 10
+
+  action:
+    service: device_tracker.see
+    data:
+      dev_id: kay_beacon
+      location_name: not_home
+      source_type: bluetooth

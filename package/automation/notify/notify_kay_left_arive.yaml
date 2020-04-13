@@ -8,7 +8,9 @@
   trigger:
 
     platform: state
-    entity_id: device_tracker.kay_iphone_geofency
+    entity_id:
+      - device_tracker.kay_iphone_geofency
+      - device_tracker.kay_beacon
 
   action:
     service: script.pushover_engine
