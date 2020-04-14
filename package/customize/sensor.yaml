@@ -327,6 +327,9 @@ sensor.www_backup_time:
 # SENSOR - TRACKER
 #
 ###########################################################################################
+sensor.peter_iphone_ibeacon:
+  friendly_name: "Peter Beacon Confidence"
+  icon: mdi:map-marker-distance
 
 sensor.peter_last_changed_tracker:
   friendly_name: "Geofency Peter Tracker changed"
@@ -348,8 +351,8 @@ sensor.kay_distance_geofency:
   friendly_name: "Kay Geofency Distance"
   icon: mdi:map-marker-distance
 
-sensor.kay_distance_ha:
-  friendly_name: "Kay HA Distance"
+sensor.kay_iphone_ibeacon:
+  friendly_name: "Kay Beacon Confidence"
   icon: mdi:map-marker-distance
 ###########################################################################################
 #
