@@ -9,7 +9,7 @@
 
     platform: state
     entity_id:
-      - device_tracker.peter_beacon
+      - device_tracker.peter_iphone_beacon_tracker
       - device_tracker.peter_iphone_ha
 
   action:
@@ -17,9 +17,9 @@
     data_template:
       message: >-
         {% if trigger.to_state.state == 'home' %}
-          Peter arrived home
+          Peter arrived home - { trigger.from_state.attributes.friendly_name}}
         {% else %}
-          Peter left home
+          Peter left home - { trigger.from_state.attributes.friendly_name}}
         {% endif %}
       priority: "0"
       sound: "bike"

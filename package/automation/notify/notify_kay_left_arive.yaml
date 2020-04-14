@@ -10,16 +10,16 @@
     platform: state
     entity_id:
       - device_tracker.kay_iphone_geofency
-      - device_tracker.kay_beacon
+      - device_tracker.kay_iphone_beacon_tracker
 
   action:
     service: script.pushover_engine
     data_template:
       message: >-
         {% if trigger.to_state.state == 'home' %}
-          Kay arrived home
+          Kay arrived home - { trigger.from_state.attributes.friendly_name}}
         {% else %}
-          Kay left home
+          Kay left home - { trigger.from_state.attributes.friendly_name}}
         {% endif %}
       priority: "0"
       sound: "bike"
