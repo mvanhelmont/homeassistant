@@ -8,9 +8,9 @@
 ---
 platform: mqtt
 devices:
-andrew_first_floor: 'beacon/hallway/peter_iphone/device_tracker'
+peter_iphone_beacon_tracker: 'beacon/hallway/peter_iphone/device_tracker'
 
 ---
 platform: mqtt
 devices:
-andrew_first_floor: 'beacon/hallway/kay_iphone/device_tracker'
+kay_iphone_beacon_tracker: 'beacon/hallway/kay_iphone/device_tracker'
