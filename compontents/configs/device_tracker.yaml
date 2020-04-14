@@ -1,23 +1,16 @@
 ###########################################################################################
 #
-# NMAP_TRACKER
+# MONITOR BEACON
 #
-# https://www.home-assistant.io/integrations/nmap_tracker/
+# https://github.com/andrewjfreyer/monitor/blob/master/support/README.md
 #
 ###########################################################################################
 ---
-#platform: nmap_tracker
-#hosts: 192.168.100.0/24
-#home_interval: 1
+platform: mqtt
+devices:
+andrew_first_floor: 'beacon/hallway/peter_iphone/device_tracker'
 
-###########################################################################################
-#
-# GOOGLE MAPS
-#
-# https://www.home-assistant.io/integrations/google_maps/
-#
-###########################################################################################
-#
-#platform: google_maps
-#username: hassio.oudenes@gmail.com
-#max_gps_accuracy: 50
+---
+platform: mqtt
+devices:
+andrew_first_floor: 'beacon/hallway/kay_iphone/device_tracker'
