@@ -29,7 +29,6 @@ browser_mod: !include compontents/configs/browser_mod.yaml
 calendar: !include_dir_list compontents/caldav
 customizer: !include compontents/configs/customizer.yaml
 device_tracker: !include compontents/configs/device_tracker.yaml
-emulated_hue: !include compontents/configs/emulated_hue.yaml
 fan: !include_dir_list compontents/fan
 group: !include_dir_merge_named compontents/groups
 frontend: !include compontents/configs/frontend.yaml

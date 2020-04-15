@@ -1,0 +1,12 @@
+###########################################################################################
+#
+# NEST
+#
+# https://www.home-assistant.io/integrations/nest/
+#
+###########################################################################################
+---
+url: !secret nextcloud_url
+username: !secret nextcloud_user
+password: !secret nextcloud_password
+
