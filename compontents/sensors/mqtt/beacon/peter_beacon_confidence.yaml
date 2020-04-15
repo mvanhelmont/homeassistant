@@ -8,7 +8,7 @@
 ###########################################################################################
 ---
 platform: mqtt
-state_topic: "beacon/hallway/peter_iphone"
+state_topic: "HABeacon/Hallway/peter_iphone"
 value_template: "{{ value_json.confidence }}"
 unit_of_measurement: "%"
 name: "Peter Beacon Confidence"
