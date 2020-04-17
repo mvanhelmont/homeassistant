@@ -9,7 +9,7 @@ api:
 circadian_lighting:
 config:
 discovery:
-logbook:
+#logbook:
 map:
 mobile_app:
 person:
