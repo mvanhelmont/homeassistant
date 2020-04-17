@@ -8,7 +8,7 @@
 ###########################################################################################
 ---
 platform: mqtt
-state_topic: "HABeacon/Hallway/peter_iphone"
-value_template: "{{ value_json.rssi }}"
+state_topic: "HABeacon/Hallway/peter_iphone/rssi"
+value_template: "{{ value_json }}"
 unit_of_measurement: "Meter"
 name: "Peter Beacon RSSI"
