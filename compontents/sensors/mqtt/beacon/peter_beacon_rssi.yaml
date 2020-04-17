@@ -10,5 +10,5 @@
 platform: mqtt
 state_topic: "HABeacon/Hallway/peter_iphone/rssi"
 value_template: "{{ value_json }}"
-unit_of_measurement: "Meter"
+unit_of_measurement: "RSSI"
 name: "Peter Beacon RSSI"
