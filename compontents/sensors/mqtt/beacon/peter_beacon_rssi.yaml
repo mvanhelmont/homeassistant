@@ -1,0 +1,14 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+# https://github.com/andrewjfreyer/monitor
+#
+###########################################################################################
+---
+platform: mqtt
+state_topic: "HABeacon/Hallway/peter_iphone"
+value_template: "{{ value_json.rssi }}"
+unit_of_measurement: "Meter"
+name: "Peter Beacon RSSI"
