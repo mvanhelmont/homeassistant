@@ -10,6 +10,7 @@
     platform: state
     entity_id:
       - device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f
+      - device_tracker.kay_iphone_geofency
 
   action:
     - service_template: >-
