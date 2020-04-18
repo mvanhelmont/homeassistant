@@ -14,8 +14,20 @@
       - device_tracker.peter_iphone_ha
 
   action:
-    service_template: >-
-      {% if trigger.to_state.state == 'home' %} input_boolean.turn_on
-      {% else %} input_boolean.turn_off
-      {% endif %}
-    entity_id: input_boolean.peter_home_manual
+    - service_template: >-
+        {% if trigger.to_state.state == 'home' %} input_boolean.turn_on
+        {% else %} input_boolean.turn_off
+        {% endif %}
+      entity_id: input_boolean.peter_home_manual
+
+    - service: script.pushover_engine
+      data_template:
+        message: >-
+          {% if trigger.to_state.state == 'home' %}
+            Peter arrived home - {{ trigger.from_state.attributes.friendly_name }}
+          {% else %}
+            Peter left home - {{ trigger.from_state.attributes.friendly_name }}
+          {% endif %}
+        priority: "0"
+        sound: "bike"
+        title: "HA Notify Engine"

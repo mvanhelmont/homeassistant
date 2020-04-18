@@ -12,8 +12,20 @@
       - device_tracker.e7b5aad4_fc4c_4ee8_98fd_2337da788a0f
 
   action:
-    service_template: >-
-      {% if trigger.to_state.state == 'home' %} input_boolean.turn_on
-      {% else %} input_boolean.turn_off
-      {% endif %}
-    entity_id: input_boolean.kay_home_manual
+    - service_template: >-
+        {% if trigger.to_state.state == 'home' %} input_boolean.turn_on
+        {% else %} input_boolean.turn_off
+        {% endif %}
+      entity_id: input_boolean.kay_home_manual
+
+    - service: script.pushover_engine
+      data_template:
+        message: >-
+          {% if trigger.to_state.state == 'home' %}
+            Kay arrived home - {{ trigger.from_state.attributes.friendly_name}}
+          {% else %}
+            Kay left home - {{ trigger.from_state.attributes.friendly_name}}
+          {% endif %}
+        priority: "0"
+        sound: "bike"
+        title: "HA Notify Engine"
