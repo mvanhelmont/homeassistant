@@ -27,9 +27,9 @@ smart_home:
       - light.browser_ae1b43e7_eb57c683
 # Motion Sensors - Not seen as motion sensors
       - binary_sensor.node_14 # Motion Bedroom
-      - binary_sensor.node_15 # Motion Bathroom
+      - binary_sensor.node_17 # Motion Bathroom
       - binary_sensor.node_16 # Motion Kitchen
-      - binary_sensor.node_17 # Motion Hallway
+      - binary_sensor.node_15 # Motion Hallway
       - binary_sensor.node_18 # Motion Diningroom
       - binary_sensor.node_19 # Motion Livingroom
       - binary_sensor.node_20 # Motion Toilet
@@ -83,9 +83,9 @@ smart_home:
       - sensor.node_11_temperature
       - sensor.node_13_temperature
       - sensor.node_14_temperature
-      - sensor.node_15_temperature
-      - sensor.node_16_temperature
       - sensor.node_17_temperature
+      - sensor.node_16_temperature
+      - sensor.node_15_temperature
       - sensor.node_18_temperature
       - sensor.node_19_temperature
       - sensor.node_20_temperature
@@ -107,7 +107,7 @@ smart_home:
       name: "Temp. Bedroom"
       description: "Temp. inside the dedroom"
       display_categories: TEMPERATURE_SENSOR
-    sensor.node_15_temperature:
+    sensor.node_17_temperature:
       name: "Temp. Bathroom"
       description: "Temp. insode the bathroom"
       display_categories: TEMPERATURE_SENSOR
@@ -115,7 +115,7 @@ smart_home:
       name: "Temp. Kitchen"
       description: "Temp. inside the kitchen"
       display_categories: TEMPERATURE_SENSOR
-    sensor.node_17_temperature:
+    sensor.node_15_temperature:
       name: "Temp. Hallway"
       description: "Temp. inside the hallway"
       display_categories: TEMPERATURE_SENSOR
@@ -136,7 +136,7 @@ smart_home:
       name: "Motion Bedroom"
       description: "Motion sensor inside the bedroom"
       display_categories: MOTION_SENSOR
-    binary_sensor.node_15:
+    binary_sensor.node_17:
       name: "Motion Bathroom"
       description: "Motion sensor inside the bathroom"
       display_categories: MOTION_SENSOR
@@ -144,7 +144,7 @@ smart_home:
       name: "Motion Kitchen"
       description: "Motion sensor inside the kitchen"
       display_categories: MOTION_SENSOR
-    binary_sensor.node_17:
+    binary_sensor.node_15:
       name: "Motion Hallway"
       description: "Motion sensor inside the hallway"
       display_categories: MOTION_SENSOR

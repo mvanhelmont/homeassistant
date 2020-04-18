@@ -8,7 +8,7 @@
   trigger:
 
     platform: state
-    entity_id: binary_sensor.node_17 # Motion Hallway
+    entity_id: binary_sensor.node_15 # Motion Hallway
 
   condition:
     - condition: state
@@ -20,15 +20,15 @@
       state: "off"
 
   action:
-    - service_template: "{{ 'switch.turn_on' if is_state('binary_sensor.node_17', 'on') else 'switch.turn_off' }}"
+    - service_template: "{{ 'switch.turn_on' if is_state('binary_sensor.node_15', 'on') else 'switch.turn_off' }}"
       entity_id: switch.meek_hallway
 
     - service: mqtt.publish
       data_template:
         topic: "homeassistant/motion/hallway"
-        payload: "{{ 1 if is_state('binary_sensor.node_17', 'on') else 0 }}"
+        payload: "{{ 1 if is_state('binary_sensor.node_15', 'on') else 0 }}"
 
 #    - service: light.turn_on
 #      data_template:
 #        entity_id: light.hallway
-#        brightness_pct: "{{ 20 if is_state('binary_sensor.node_17', 'on') else 0 }}"
+#        brightness_pct: "{{ 20 if is_state('binary_sensor.node_15', 'on') else 0 }}"

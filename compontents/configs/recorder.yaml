@@ -337,10 +337,10 @@ exclude:
 #
 ###########################################################################################
 
-    - sensor.node_15_alarm_level
-    - sensor.node_15_alarm_type
-    - sensor.node_15_burglar
-    - sensor.node_15_sourcenodeid
+    - sensor.node_17_alarm_level
+    - sensor.node_17_alarm_type
+    - sensor.node_17_burglar
+    - sensor.node_17_sourcenodeid
 
 ###########################################################################################
 #
@@ -359,10 +359,10 @@ exclude:
 #
 ###########################################################################################
 
-    - sensor.node_17_alarm_level
-    - sensor.node_17_alarm_type
-    - sensor.node_17_burglar
-    - sensor.node_17_sourcenodeid
+    - sensor.node_15_alarm_level
+    - sensor.node_15_alarm_type
+    - sensor.node_15_burglar
+    - sensor.node_15_sourcenodeid
 
 ###########################################################################################
 #

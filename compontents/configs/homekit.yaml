@@ -15,9 +15,9 @@ filter:
 
 # Motion Sensors
     - binary_sensor.node_14 # Motion Bedroom
-    - binary_sensor.node_15 # Motion Bathroom
+    - binary_sensor.node_17 # Motion Bathroom
     - binary_sensor.node_16 # Motion Kitchen
-    - binary_sensor.node_17 # Motion Hallway
+    - binary_sensor.node_15 # Motion Hallway
     - binary_sensor.node_18 # Motion Diningroom
     - binary_sensor.node_19 # Motion Livingroom
     - binary_sensor.node_20 # Motion Toilet
@@ -82,9 +82,9 @@ filter:
     - sensor.node_11_temperature
     - sensor.node_13_temperature
     - sensor.node_14_temperature
-    - sensor.node_15_temperature
-    - sensor.node_16_temperature
     - sensor.node_17_temperature
+    - sensor.node_16_temperature
+    - sensor.node_15_temperature
     - sensor.node_18_temperature
     - sensor.node_19_temperature
     - sensor.node_20_temperature

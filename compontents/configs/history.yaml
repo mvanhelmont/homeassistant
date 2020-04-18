@@ -25,9 +25,9 @@ include:
     - light.kitchen_all
     - light.sink_all
     - binary_sensor.node_14 # Motion Bedroom
-    - binary_sensor.node_15 # Motion Bathroom
+    - binary_sensor.node_17 # Motion Bathroom
     - binary_sensor.node_16 # Motion Kitchen
-    - binary_sensor.node_17 # Motion Hallway
+    - binary_sensor.node_15 # Motion Hallway
     - binary_sensor.node_18 # Motion Diningroom
     - binary_sensor.node_19 # Motion Livingroom
     - binary_sensor.node_20 # Motion Toilet
@@ -314,10 +314,10 @@ exclude:
 #
 ###########################################################################################
 
-    - sensor.node_15_alarm_level
-    - sensor.node_15_alarm_type
-    - sensor.node_15_burglar
-    - sensor.node_15_sourcenodeid
+    - sensor.node_17_alarm_level
+    - sensor.node_17_alarm_type
+    - sensor.node_17_burglar
+    - sensor.node_17_sourcenodeid
 
 ###########################################################################################
 #
@@ -336,10 +336,10 @@ exclude:
 #
 ###########################################################################################
 
-    - sensor.node_17_alarm_level
-    - sensor.node_17_alarm_type
-    - sensor.node_17_burglar
-    - sensor.node_17_sourcenodeid
+    - sensor.node_15_alarm_level
+    - sensor.node_15_alarm_type
+    - sensor.node_15_burglar
+    - sensor.node_15_sourcenodeid
 
 ###########################################################################################
 #
