@@ -1082,6 +1082,9 @@ sensor.local_ip:
 sensor.external_ip:
   icon: mdi:wan
 
+sensor.mqtt_vpn_ext_ip:
+  icon: mdi:wan  
+
 sensor.database_size:
   icon: mdi:database
 
