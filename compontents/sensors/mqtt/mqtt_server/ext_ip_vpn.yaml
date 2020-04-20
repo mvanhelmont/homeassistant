@@ -1,0 +1,13 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+name: "MQTT VPN Ext IP"
+state_topic: "Servers/mqtt_server/external_ip"
+value_template: "{{ value }}"
+#unit_of_measurement: ""
