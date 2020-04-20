@@ -1,0 +1,24 @@
+###########################################################################################
+#
+# NOTIFY WHEN MQTT SERVER EXT IP IS NOT VPN ANYMORE
+#
+###########################################################################################
+
+- alias: "Notification - VPN not running on Asus"
+  initial_state: "on"
+  trigger:
+
+    platform: state
+    entity_id: sensor.mqtt_vpn_ext_ip
+
+  condition:
+    condition: template
+    value_template: "{{ (states('sensor.mqtt_vpn_ext_ip') != states('sensor.external_ip')) }}"
+
+  action:
+    service: script.pushover_engine
+    data_template:
+      message: "HA Critical MQTT Ext IP is not behind VPN. {{now().strftime('%d-%m-%Y') }}"
+      priority: "2"
+      sound: "bike"
+      title: "HA System"
