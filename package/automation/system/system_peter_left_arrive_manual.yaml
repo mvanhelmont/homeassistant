@@ -24,9 +24,9 @@
       data_template:
         message: >-
           {% if trigger.to_state.state == 'home' %}
-            Peter arrived home - {{ trigger.from_state.attributes.friendly_name }}
+            Peter arrived home
           {% else %}
-            Peter left home - {{ trigger.from_state.attributes.friendly_name }}
+            Peter left home
           {% endif %}
         priority: "0"
         sound: "bike"
