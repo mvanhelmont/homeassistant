@@ -8,6 +8,6 @@
 ---
 platform: mqtt
 name: "MQTT VPN Ext IP"
-state_topic: "Servers/mqtt_server/external_ip"
+state_topic: "Servers/nextcloud/external_ip"
 value_template: "{{ value }}"
 #unit_of_measurement: ""
