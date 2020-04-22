@@ -13,3 +13,4 @@ name: "Milight Transitions"
 json_attributes:
   - transitions
 value_template: "OK"
+timeout: 30

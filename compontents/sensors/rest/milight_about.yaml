@@ -20,3 +20,4 @@ json_attributes:
   - arduino_version
   - queue_stats
 value_template: "OK"
+timeout: 30
