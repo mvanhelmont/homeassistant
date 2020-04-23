@@ -46,7 +46,7 @@ nest: !include compontents/devices/nest.yaml
 notify: !include_dir_list compontents/configs/notify
 panel_custom: !include compontents/configs/panel_custom.yaml
 recorder: !include compontents/configs/recorder.yaml
-remote: !include compontents/devices/remote.yaml
+#remote: !include compontents/devices/remote.yaml
 rflink: !include compontents/devices/rflink.yaml
 sensor: !include_dir_list compontents/sensors
 shell_command: !include compontents/devices/shell_commands.yaml
