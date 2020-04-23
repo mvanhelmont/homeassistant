@@ -19,6 +19,6 @@
     service: script.pushover_engine
     data_template:
       message: "HA Critical MQTT Ext IP is not behind VPN. {{now().strftime('%d-%m-%Y') }}"
-      priority: "2"
+      priority: "0"
       sound: "bike"
       title: "HA System"
