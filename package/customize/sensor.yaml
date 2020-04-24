@@ -72,117 +72,6 @@ sensor.circadian_values:
 
 ###########################################################################################
 #
-# CO2 Signal
-#
-###########################################################################################
-
-sensor.co2_intensity_52_37_4_9:
-  friendly_name: "CO2 Intensity"
-
-###########################################################################################
-#
-# MEEK P1 METER
-#
-#sensor.power_consumption
-#sensor.power_consumption_low
-#sensor.power_consumption_normal
-#sensor.power_consumption_phase_l1
-#sensor.power_consumption_phase_l2
-#sensor.power_consumption_phase_l3
-#sensor.power_consumption_total
-#sensor.power_production
-#sensor.power_production_low
-#sensor.power_production_normal
-#sensor.power_production_phase_l1
-#sensor.power_production_phase_l2
-#sensor.power_production_phase_l3
-#sensor.power_tariff
-#sensor.gas_consumption:
-#sensor.hourly_gas_consumption:
-#
-###########################################################################################
-
-sensor.volt_1min:
-  icon: mdi:flash
-  friendly_name: "Volt Usage Every mintue"
-
-sensor.kw_1min:
-  icon: mdi:flash
-  friendly_name: "kW Usage Every mintue"
-
-sensor.voltage_phase_l1:
-  icon: mdi:flash
-
-sensor.voltage_phase_l2:
-  icon: mdi:flash
-
-sensor.voltage_phase_l3:
-  icon: mdi:flash
-
-sensor.voltage_sags_phase_l1:
-  icon: mdi:flash
-
-sensor.voltage_sags_phase_l2:
-  icon: mdi:flash
-
-sensor.voltage_sags_phase_l3:
-  icon: mdi:flash
-
-sensor.voltage_swells_phase_l1:
-  icon: mdi:flash
-
-sensor.voltage_swells_phase_l2:
-  icon: mdi:flash
-
-sensor.voltage_swells_phase_l3:
-  icon: mdi:flash
-
-###########################################################################################
-#
-# SENSOR.M5 - TP-LINK
-#
-###########################################################################################
-
-sensor.tp_link_total_send_mb:
-  icon: mdi:upload-network
-
-sensor.tp_link_total_recieved_mb:
-  icon: mdi:download-network
-
-sensor.m5_bytes_received:
-  friendly_name: "Total Kb Received"
-  icon: mdi:download-network
-
-sensor.m5_bytes_sent:
-  friendly_name: "Total Kb Sent"
-  icon: mdi:upload-network
-
-sensor.m5_kbyte_sec_received:
-  friendly_name: "Kb/Sec Recieved"
-  icon: mdi:download-network
-
-sensor.m5_kbyte_sec_sent:
-  friendly_name: "Kb/Sec Sent"
-  icon: mdi:upload-network
-
-sensor.m5_packets_received:
-  friendly_name: "Total Packets Recieved"
-  icon: mdi:download-network
-
-sensor.m5_packets_sec_received:
-  friendly_name: "Packets/sec Recieved"
-  icon: mdi:download-network
-
-sensor.m5_packets_sec_sent:
-  friendly_name: "Packets/Sec Sent"
-  icon: mdi:upload-network
-
-sensor.m5_packets_sent:
-  friendly_name: "Total Packets Sent"
-  icon: mdi:upload-network
-
-###########################################################################################
-#
 # SENSOR.MILIGHT
 #
 ###########################################################################################
@@ -213,58 +102,6 @@ sensor.milight_variant:
 
 sensor.milight_version:
   friendly_name: "Version"
-
-###########################################################################################
-#
-# SENSOR.MQTT.*
-#
-###########################################################################################
-
-sensor.mqtt_last_update:
-  friendly_name: "Last Sensors Update"
-  icon: mdi:update
-
-sensor.mqtt_boot_time:
-  friendly_name: "Last Boot Time"
-  icon: mdi:clock
-
-sensor.mqtt_cpu_temp:
-  friendly_name: "CPU Temp."
-  templates:
-    icon: mdi:temperature-celsius
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.mqtt_cpu_usage:
-  friendly_name: "CPU Usage"
-  icon: mdi:cpu-64-bit
-
-sensor.mqtt_disk_size:
-  friendly_name: "Disk Size"
-  icon: mdi:harddisk
-
-sensor.mqtt_disk_usage:
-  friendly_name: "Disk Usage"
-  icon: mdi:harddisk
-
-sensor.mqtt_memory_used:
-  friendly_name: "Memory Usage"
-  icon: mdi:memory
-
-sensor.mqtt_power_supply:
-  icon: mdi:power-plug
 
 ###########################################################################################
 #
@@ -354,6 +191,7 @@ sensor.kay_distance_geofency:
 sensor.kay_iphone_ibeacon:
   friendly_name: "Kay Beacon Confidence"
   icon: mdi:map-marker-distance
+
 ###########################################################################################
 #
 # SENSOR.PETER_S_ECHO_DOT
@@ -393,25 +231,6 @@ sensor.nextcloud_boot_time:
   friendly_name: "Last Boot Time"
   icon: mdi:clock
 
-sensor.nextcloud_cpu_temp:
-  friendly_name: "CPU Temp."
-  templates:
-    icon: mdi:temperature-celsius
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
 sensor.nextcloud_cpu_usage:
   friendly_name: "CPU Usage"
   icon: mdi:cpu-64-bit
@@ -430,6 +249,25 @@ sensor.nextcloud_memory_used:
 
 sensor.nextcloud_power_supply:
   icon: mdi:power-plug
+
+sensor.nextcloud_cpu_temp:
+  friendly_name: "CPU Temp."
+  templates:
+    icon: mdi:temperature-celsius
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
 
 ###########################################################################################
 #
@@ -463,21 +301,6 @@ sensor.toyota_aygo_recall:
 
 ###########################################################################################
 #
-# AIR POLLUTION
-#
-###########################################################################################
-
-sensor.u_s_air_pollution_level:
-  friendly_name: "Air Pollution Level"
-
-sensor.u_s_air_quality_index:
-  friendly_name: "Air Quality Index"
-
-sensor.u_s_main_pollutant:
-  friendly_name: "Main Pollutant"
-
-###########################################################################################
-#
 # SENSOR.HP_*
 #
 ###########################################################################################
@@ -508,367 +331,6 @@ sensor.hp_printer_scanner:
 
 ###########################################################################################
 #
-# SENSOR.DARK_SKY
-#
-###########################################################################################
-
-sensor.dark_sky_dew_point:
-  friendly_name: "Dew Point Now"
-
-sensor.dark_sky_dew_point_0d:
-  friendly_name: "Dew Point Today"
-
-sensor.dark_sky_dew_point_0h:
-  friendly_name: "Dew Point This Hour"
-
-sensor.dark_sky_dew_point_1d:
-  friendly_name: "Dw Point Next Day"
-
-sensor.dark_sky_dew_point_1h:
-  friendly_name: "Dew Point Next Hour"
-
-sensor.dark_sky_dew_point_2d:
-  friendly_name: "Dew Point Second Day"
-
-sensor.dark_sky_dew_point_2h:
-  friendly_name: "Dew Piont Second Hour"
-
-sensor.dark_sky_humidity_0d:
-  friendly_name: "Humidity Today"
-
-sensor.dark_sky_humidity_0h:
-  friendly_name: "Humidity This Hour"
-
-sensor.dark_sky_humidity_1d:
-  friendly_name: "Humidity Next Day"
-
-sensor.dark_sky_humidity_1h:
-  friendly_name: "Humidity Next Hour"
-
-sensor.dark_sky_humidity_2d:
-  friendly_name: "Humidity Second Day"
-
-sensor.dark_sky_humidity_2h:
-  friendly_name: "Humidity Second Hour"
-
-sensor.dark_sky_wind_bearing_0d:
-  friendly_name: "Wind Bearing Today"
-
-sensor.dark_sky_wind_bearing_0h:
-  friendly_name: "Wind Bearing This Hour"
-
-sensor.dark_sky_wind_bearing_1d:
-  friendly_name: "Wind Bearing Next Day"
-
-sensor.dark_sky_wind_bearing_1h:
-  friendly_name: "Wind Bearing Next Hour"
-
-sensor.dark_sky_wind_bearing_2d:
-  friendly_name: "Wind Bearing Second Day"
-
-sensor.dark_sky_wind_bearing_2h:
-  friendly_name: "Wind Bearing Second Hour"
-
-sensor.dark_sky_daily_summary:
-  friendly_name: "Daily Summary"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_cloud_coverage:
-  friendly_name: "Cloud Coverage now"
-
-sensor.dark_sky_cloud_coverage_0d:
-  friendly_name: "Cloud Coverage today"
-
-sensor.dark_sky_cloud_coverage_0h:
-  friendly_name: "Cloud Coverage this hour"
-
-sensor.dark_sky_cloud_coverage_1d:
-  friendly_name: "Cloud Coverage next day"
-
-sensor.dark_sky_cloud_coverage_1h:
-  friendly_name: "Cloud Coverage next hour"
-
-sensor.dark_sky_cloud_coverage_2d:
-  friendly_name: "Cloud Coverage second day"
-
-sensor.dark_sky_cloud_coverage_2h:
-  friendly_name: "Cloud Coverage second hour"
-
-sensor.dark_sky_daytime_high_temperature_0d:
-  friendly_name: "Max Temperature Now"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.dark_sky_daytime_high_temperature_1d:
-  friendly_name: "Max Temprature Tomorrow"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.dark_sky_daytime_high_temperature_2d:
-  friendly_name: "Max Temprature 2nd Day"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.dark_sky_hourly_summary:
-  friendly_name: "Hourly Summary"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_humidity:
-  friendly_name: "Current Humidity"
-
-sensor.dark_sky_moon_phase_0d:
-  friendly_name: "Moon Phase today"
-
-sensor.dark_sky_moon_phase_1d:
-  friendly_name: "Moon Phase next day"
-
-sensor.dark_sky_moon_phase_2d:
-  friendly_name: "Moon Phase 2nd Day"
-
-sensor.dark_sky_overnight_low_temperature_0d:
-  friendly_name: "Night Temp today"
-
-sensor.dark_sky_overnight_low_temperature_1d:
-  friendly_name: "Night Temp next day"
-
-sensor.dark_sky_overnight_low_temperature_2d:
-  friendly_name: "Night Temp second day"
-
-sensor.dark_sky_pressure:
-  friendly_name: "Current Pressure"
-
-sensor.dark_sky_pressure_0d:
-  friendly_name: "Current today"
-
-sensor.dark_sky_pressure_0h:
-  friendly_name: "Current this hour"
-
-sensor.dark_sky_pressure_1d:
-  friendly_name: "Current next day"
-
-sensor.dark_sky_pressure_1h:
-  friendly_name: "Current next hour"
-
-sensor.dark_sky_pressure_2d:
-  friendly_name: "Current second day"
-
-sensor.dark_sky_pressure_2h:
-  friendly_name: "Current second hour"
-
-sensor.dark_sky_summary:
-  friendly_name: "Now"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_summary_0d:
-  friendly_name: "Today"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_summary_0h:
-  friendly_name: "This hour"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_summary_1d:
-  friendly_name: "Next Day"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_summary_1h:
-  friendly_name: "Next Hour"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_summary_2d:
-  friendly_name: "Second Day"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_summary_2h:
-  friendly_name: "Second Hour"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_temperature:
-  friendly_name: "Current Temperature"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.dark_sky_temperature_0h:
-  friendly_name: "Tempertrure Now"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.dark_sky_temperature_1h:
-  friendly_name: "Temperature after 1 hour"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.dark_sky_temperature_2h:
-  friendly_name: "Temperature after 2 hours"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-sensor.dark_sky_uv_index:
-  friendly_name: "UV Now"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_uv_index_0d:
-  friendly_name: "UV Today"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_uv_index_0h:
-  friendly_name: "UV This Hour"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_uv_index_1d:
-  friendly_name: "UV Next Day"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_uv_index_1h:
-  friendly_name: "UV Next Hour"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_uv_index_2d:
-  friendly_name: "UV Second Day"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_uv_index_2h:
-  friendly_name: "UV Second Hour"
-  icon_color: rgba(71,116,157,1)
-
-sensor.dark_sky_visibility:
-  friendly_name: "Visibility now"
-
-sensor.dark_sky_visibility_0d:
-  friendly_name: "Visibility today"
-
-sensor.dark_sky_visibility_0h:
-  friendly_name: "Visibility this hour"
-
-sensor.dark_sky_visibility_1d:
-  friendly_name: "Visibility next day"
-
-sensor.dark_sky_visibility_1h:
-  friendly_name: "Visibility next hour"
-
-sensor.dark_sky_visibility_2d:
-  friendly_name: "Visibility second day"
-
-sensor.dark_sky_visibility_2h:
-  friendly_name: "Visibility second hour"
-
-sensor.dark_sky_wind_bearing:
-  friendly_name: "Current Wind Bearing"
-
-sensor.dark_sky_wind_speed:
-  friendly_name: "Wind Speed Now"
-
-sensor.dark_sky_wind_speed_0d:
-  friendly_name: "Wind Speed today"
-
-sensor.dark_sky_wind_speed_0h:
-  friendly_name: "Wind Speed this hour"
-
-sensor.dark_sky_wind_speed_1d:
-  friendly_name: "Wind Speed next day"
-
-sensor.dark_sky_wind_speed_1h:
-  friendly_name: "Wind Speed next hour"
-
-sensor.dark_sky_wind_speed_2d:
-  friendly_name: "Wind Speed second day"
-
-sensor.dark_sky_wind_speed_2h:
-  friendly_name: "Wind Speed second hour"
-
-###########################################################################################
-#
 # SENSOR CLIMATE
 #
 ###########################################################################################
@@ -890,25 +352,6 @@ sensor.entryway_thermostat_temperature:
 
 sensor.asingaborg_eta:
   friendly_name: "Nest ETA"
-
-sensor.climate_temp_inside:
-  friendly_name: "Temperature inside"
-  templates:
-    icon: mdi:temperature-celsius
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
 
 sensor.bedroom_nest_protect_battery_health:
   icon: mdi:battery
@@ -948,6 +391,25 @@ sensor.living_room_nest_protect_color_status:
 
 sensor.living_room_nest_protect_smoke_status:
   icon: mdi:smoke-detector
+
+sensor.climate_temp_inside:
+  friendly_name: "Temperature inside"
+  templates:
+    icon: mdi:temperature-celsius
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
 
 ###########################################################################################
 #
@@ -1035,6 +497,51 @@ sensor.last_boot_2:
 sensor.latest_version:
   friendly_name: "HA Latest Version"
 
+sensor.swap_use_percent:
+  friendly_name: "Swap Usage"
+
+sensor.local_ip:
+  icon: mdi:wan
+
+sensor.external_ip:
+  icon: mdi:wan
+
+sensor.mqtt_vpn_ext_ip:
+  icon: mdi:wan
+
+sensor.database_size:
+  icon: mdi:database
+
+sensor.processor_use:
+  friendly_name: "HA CPU Usage"
+
+sensor.rpi_power_status:
+  friendly_name: "HA Power State"
+
+sensor.hacs:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.birthday:
+  icon: mdi:balloon
+  friendly_name: "Birthday!"
+
+sensor.season:
+  friendly_name: "Season Period"
+
+sensor.dayofyear:
+  icon: mdi:calendar-today
+  friendly_name: "Day of Year"
+
+sensor.weekofyear:
+  icon: mdi:calendar-week-begin
+  friendly_name: "Week of Year"
+
+sensor.holiday:
+  friendly_name: "Holiday!"
+  icon: mdi:palm-tree
+
 sensor.ha_cpu_temp:
   friendly_name: "HA CPU Temperature"
   templates:
@@ -1073,50 +580,11 @@ sensor.ha_gpu_temp:
       if (state > -23) return 'rgb(189,0,107)';
       return 'rgb(0,0,0)';
 
-sensor.swap_use_percent:
-  friendly_name: "Swap Usage"
-
-sensor.local_ip:
-  icon: mdi:wan
-
-sensor.external_ip:
-  icon: mdi:wan
-
-sensor.mqtt_vpn_ext_ip:
-  icon: mdi:wan  
-
-sensor.database_size:
-  icon: mdi:database
-
-sensor.processor_use:
-  friendly_name: "HA CPU Usage"
-
-sensor.rpi_power_status:
-  friendly_name: "HA Power State"
-
-sensor.hacs:
-  templates:
-    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.birthday:
-  icon: mdi:balloon
-  friendly_name: "Birthday!"
-
-sensor.season:
-  friendly_name: "Season Period"
-
-sensor.dayofyear:
-  icon: mdi:calendar-today
-  friendly_name: "Day of Year"
-
-sensor.weekofyear:
-  icon: mdi:calendar-week-begin
-  friendly_name: "Week of Year"
-
-sensor.holiday:
-  friendly_name: "Holiday!"
-  icon: mdi:palm-tree
+###########################################################################################
+#
+# BUIENRADAR
+#
+###########################################################################################
 
 sensor.buienradar_stationname:
   friendly_name: "Station name"
