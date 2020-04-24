@@ -15,3 +15,4 @@ name: "WWW Backup information"
 json_attributes:
   - www
 value_template: "OK"
+timeout: 30

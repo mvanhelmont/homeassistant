@@ -4,10 +4,11 @@
 #
 # https://www.home-assistant.io/integrations/rest/
 #
-########################################################################################### 
+###########################################################################################
 ---
 platform: rest
 scan_interval: 86400
 resource: https://api.ipify.org/
 name: "External IP"
 value_template: "{{ value }}"
+timeout: 30
