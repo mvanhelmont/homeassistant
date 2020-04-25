@@ -11,4 +11,3 @@ name: "Circadian Dressoir"
 lights_ct:
   - light.dressoir_all
 disable_brightness_adjust: true
-max_colortemp: 3800

@@ -11,4 +11,3 @@ name: "Circadian Toilet"
 lights_ct:
   - light.toilet_all
 disable_brightness_adjust: true
-max_colortemp: 3800
