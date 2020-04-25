@@ -11,3 +11,4 @@ name: "Circadian Hallway"
 lights_ct:
   - light.hallway
 disable_brightness_adjust: true
+max_colortemp: 3800

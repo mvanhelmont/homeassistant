@@ -11,3 +11,4 @@ name: "Circadian Bedroom"
 lights_ct:
   - light.bedroom_all
 disable_brightness_adjust: true
+max_colortemp: 3800
