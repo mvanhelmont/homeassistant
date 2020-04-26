@@ -245,10 +245,10 @@ sensor.dsmr_day_consumption_gas_cost:
    friendly_name: Total cost gas today
 
 sensor.dsmr_consumption_gas_read_at:
-   friendly_name: Last DSMR update
+   friendly_name: DSMR update
 
 sensor.dsmr_consumption_gas_currently_delivered:
-   friendly_name: gas used now
+   friendly_name: Gas used now
 
 sensor.dsmr_reading_extra_device_delivered:
    friendly_name: Gas used total - extra
@@ -260,7 +260,7 @@ sensor.dsmr_day_consumption_gas:
    friendly_name: Gas used today
 
 sensor.dsmr_consumption_gas_read_at:
-   friendly_name: Last DSMR update
+   friendly_name: DSMR update
 
 sensor.dsmr_day_consumption_electricity1:
    friendly_name: Power low used today
