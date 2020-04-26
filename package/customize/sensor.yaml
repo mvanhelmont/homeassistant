@@ -259,9 +259,6 @@ sensor.dsmr_consumption_gas_delivered:
 sensor.dsmr_day_consumption_gas:
    friendly_name: Gas used today
 
-sensor.dsmr_consumption_gas_read_at:
-   friendly_name: DSMR update
-
 sensor.dsmr_day_consumption_electricity1:
    friendly_name: Power low used today
 
