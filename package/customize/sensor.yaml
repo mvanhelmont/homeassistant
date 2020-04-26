@@ -219,6 +219,96 @@ sensor.alexa_last_message:
 
 ###########################################################################################
 #
+# SENSOR.DSMR
+##
+###########################################################################################
+
+sensor.dsmr_day_consumption_electricity1_cost:
+   friendly_name: Low cost power today
+
+sensor.dsmr_day_consumption_electricity2_cost:
+   friendly_name: High cost power today
+
+sensor.dsmr_day_consumption_electricity_cost_merged:
+   friendly_name: Total cost power today
+
+sensor.dsmr_day_consumption_energy_supplier_price_electricity_delivered_1:
+   friendly_name: Low cost price kWh
+
+sensor.dsmr_day_consumption_energy_supplier_price_electricity_delivered_2:
+   friendly_name: High cost price kWh
+
+sensor.dsmr_day_consumption_energy_supplier_price_gas:
+   friendly_name: Gas cost price m3h
+
+sensor.dsmr_day_consumption_gas_cost:
+   friendly_name: Total cost gas today
+
+sensor.dsmr_consumption_gas_read_at:
+   friendly_name: Last DSMR update
+
+sensor.dsmr_consumption_gas_currently_delivered:
+   friendly_name: gas used now
+
+sensor.dsmr_reading_extra_device_delivered:
+   friendly_name: Gas used total - extra
+
+sensor.dsmr_consumption_gas_delivered:
+   friendly_name: Gas used total
+
+sensor.dsmr_day_consumption_gas:
+   friendly_name: Gas used today
+
+sensor.dsmr_consumption_gas_read_at:
+   friendly_name: Last DSMR update
+
+sensor.dsmr_day_consumption_electricity1:
+   friendly_name: Power low used today
+
+sensor.dsmr_day_consumption_electricity2:
+   friendly_name: Power high used today
+
+sensor.dsmr_day_consumption_electricity_merged:
+   friendly_name: Power used total today
+
+sensor.dsmr_reading_electricity_currently_delivered:
+   friendly_name: Power used now
+
+sensor.dsmr_reading_electricity_delivered_1:
+   friendly_name: Power low used today
+
+sensor.dsmr_reading_electricity_delivered_2:
+   friendly_name: Power high used total
+
+sensor.dsmr_reading_phase_currently_delivered_l1:
+   friendly_name: Phase current use
+
+sensor.dsmr_reading_phase_voltage_l1:
+   friendly_name: Phase current volatge
+
+sensor.dsmr_meter_stats_dsmr_version:
+   friendly_name: DSMR Version
+
+sensor.dsmr_meter_stats_electricity_tariff:
+   friendly_name: Power tariff
+
+sensor.dsmr_meter_stats_long_power_failure_count:
+   friendly_name: Long power failure
+
+sensor.dsmr_meter_stats_power_failure_count:
+   friendly_name: Power failure
+
+sensor.dsmr_meter_stats_rejected_telegrams:
+   friendly_name: Rejected telegrams
+
+sensor.dsmr_meter_stats_voltage_sag_count_l1:
+   friendly_name: Voltage sag count
+
+sensor.dsmr_meter_stats_voltage_swell_count_l1:
+   friendly_name: Voltage swell count
+
+###########################################################################################
+#
 # SENSOR.NEXTCLOUD.*
 #
 ###########################################################################################
