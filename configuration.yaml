@@ -55,4 +55,4 @@ speedtestdotnet: !include compontents/configs/speedtest.yaml
 switch: !include_dir_list compontents/switches
 tts: !include compontents/devices/tts.yaml
 weather: !include compontents/configs/weather.yaml
-zwave: !include compontents/devices/zwave.yaml
+# zwave: !include compontents/devices/zwave.yaml
