@@ -6,7 +6,11 @@
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
 #
 ###########################################################################################
+binary_sensor.*_contact:
+  icon: mdi:walk
+  device_class: motion
 
+  
 binary_sensor.hp_printer:
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
