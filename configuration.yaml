@@ -51,7 +51,7 @@ logger: !include compontents/configs/logger.yaml
 media_player: !include_dir_list compontents/media_players
 nest: !include compontents/devices/nest.yaml
 notify: !include_dir_list compontents/configs/notify
-panel_custom: !include compontents/configs/panel_custom.yaml
+#panel_custom: !include compontents/configs/panel_custom.yaml
 recorder: !include compontents/configs/recorder.yaml
 #remote: !include compontents/devices/remote.yaml
 rflink: !include compontents/devices/rflink.yaml
