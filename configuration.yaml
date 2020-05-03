@@ -21,6 +21,12 @@ system_health:
 updater:
 zeroconf:
 
+panel_iframe:
+  zwave2mqtt:
+    title: Z-Wave to MQTT
+    icon: mdi:z-wave
+    url: !secret zwave2mqtt
+
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
 
