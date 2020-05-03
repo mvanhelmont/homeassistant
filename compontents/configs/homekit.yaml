@@ -6,7 +6,7 @@
 #
 ###########################################################################################
 ---
-auto_start: "false"
+auto_start: "true"
 filter:
   include_domains:
     - climate
