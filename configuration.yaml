@@ -21,11 +21,11 @@ system_health:
 updater:
 zeroconf:
 
-panel_iframe:
-  zwave2mqtt:
-    title: Z-Wave to MQTT
-    icon: mdi:z-wave
-    url: !secret zwave2mqtt
+#panel_iframe:
+#  zwave2mqtt:
+#    title: Z-Wave to MQTT
+#    icon: mdi:z-wave
+#    url: !secret zwave2mqtt
 
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
@@ -52,6 +52,7 @@ media_player: !include_dir_list compontents/media_players
 nest: !include compontents/devices/nest.yaml
 notify: !include_dir_list compontents/configs/notify
 #panel_custom: !include compontents/configs/panel_custom.yaml
+panel_iframe: !include_dir_list compontents/configs/panel_iframe
 recorder: !include compontents/configs/recorder.yaml
 #remote: !include compontents/devices/remote.yaml
 rflink: !include compontents/devices/rflink.yaml

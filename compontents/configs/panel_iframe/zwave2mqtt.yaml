@@ -1,0 +1,12 @@
+###########################################################################################
+#
+# PANEL_IFRAME
+#
+# https://www.home-assistant.io/integrations/panel_iframe/
+#
+###########################################################################################
+---
+zwave2mqtt:
+title: Z-Wave to MQTT
+icon: mdi:z-wave
+url: !secret zwave2mqtt
