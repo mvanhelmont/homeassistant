@@ -52,7 +52,7 @@ media_player: !include_dir_list compontents/media_players
 nest: !include compontents/devices/nest.yaml
 notify: !include_dir_list compontents/configs/notify
 #panel_custom: !include compontents/configs/panel_custom.yaml
-panel_iframe: !include_dir_list compontents/configs/panel_iframe
+panel_iframe: !include compontents/configs/panel_iframe.yaml
 recorder: !include compontents/configs/recorder.yaml
 #remote: !include compontents/devices/remote.yaml
 rflink: !include compontents/devices/rflink.yaml
