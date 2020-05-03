@@ -16,8 +16,6 @@
       entity_id:
         - automation.notification_random_door_open_close
 
-    - service: homekit.start
-
     - service: homeassistant.update_entity
       data:
         entity_id: sensor.ssl_certificate_expiry
