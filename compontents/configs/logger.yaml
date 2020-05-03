@@ -16,4 +16,4 @@ logs:
   homeassistant.components.pushover.notify: warning
   homeassistant.loader: fatal
   homeassistant.components.alexa.state_report: fatal
-  custom_components.alexa_media: debug
+  #custom_components.alexa_media: debug
