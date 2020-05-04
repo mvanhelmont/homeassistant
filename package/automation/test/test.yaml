@@ -4,19 +4,22 @@
 #
 ###########################################################################################
 
-- alias: "TEST - trigger statement ATOM"
+- alias: "TEST - trigger statement ATOM on"
   trigger:
     platform: state
     entity_id: switch.newkaku_014e5906_a
     to: "on"
 
   action:
-    service: light.turn_on
+    service: notify.alexa_media_peter_s_echo_dot
     data_template:
-      entity_id: light.dressoir_all
-      brightness_pct: 10
+      data:
+        type: announce
+        method: all
+      message: "test"
+      target: media_player.peter_s_echo_dot
 
-- alias: "TEST - trigger statement ATOM"
+- alias: "TEST - trigger statement ATOM off"
   trigger:
     platform: state
     entity_id: switch.newkaku_014e5906_a
