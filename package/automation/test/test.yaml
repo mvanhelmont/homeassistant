@@ -15,7 +15,6 @@
       data:
         data:
           type: announce
-          method: all
         message: "test"
         target: media_player.peter_s_echo_dot
 
