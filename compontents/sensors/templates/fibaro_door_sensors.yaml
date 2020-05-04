@@ -10,10 +10,10 @@ platform: template
 sensors:
   fibaro_imac_custom_sensor:
     friendly_name: "Fibaro iMac"
-    value_template: "{{ 'off' if is_state('sensor.node_13_access_control', '23') else 'on' }}"
-    icon_template: "{{ 'mdi:checkbox-blank-circle-outline' if is_state('sensor.node_13_access_control', '23') else 'mdi:check-circle' }}"
+    value_template: "{{ 'on' if is_state('sensor.node_13_access_control', 'Door/Window Open') else 'off' }}"
+    icon_template: "{{ 'mdi:checkbox-blank-circle-outline' if is_state('sensor.node_13_access_control', 'Door/Window Open') else 'mdi:check-circle' }}"
 
   fibaro_frontdoor_custom_sensor:
     friendly_name: "Fibaro Frontdoor"
-    value_template: "{{ 'off' if is_state('sensor.node_11_access_control', '23') else 'on' }}"
-    icon_template: "{{ 'mdi:checkbox-blank-circle-outline' if is_state('sensor.node_11_access_control', '23') else 'mdi:check-circle' }}"
+    value_template: "{{ 'on' if is_state('sensor.node_11_access_control', 'Door/Window Open') else 'off' }}"
+    icon_template: "{{ 'mdi:checkbox-blank-circle-outline' if is_state('sensor.node_11_access_control', 'Door/Window Open') else 'mdi:check-circle' }}"
