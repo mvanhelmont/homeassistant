@@ -12,7 +12,6 @@ system_zwave_node_switch:
     - "Current Watt"
     - "Temperature"
     - "Luminance"
-    - "Node Status"
     - "Power Usage"
     - "Switches"
     - "Door Sensors"
