@@ -842,6 +842,7 @@ sensor.node_14_temperature:
 
 binary_sensor.node_14:
   friendly_name: "PIR Bedroom"
+  device_class: "motion"
   templates:
     icon: mdi:motion-sensor
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
@@ -894,6 +895,7 @@ sensor.node_17_temperature:
 
 binary_sensor.node_17:
   friendly_name: "PIR Bathroom"
+  device_class: "motion"
   templates:
     icon: mdi:motion-sensor
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
@@ -946,6 +948,7 @@ sensor.node_16_temperature:
 
 binary_sensor.node_16:
   friendly_name: "PIR Kitchen"
+  device_class: "motion"
   templates:
     icon: mdi:motion-sensor
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
@@ -998,6 +1001,7 @@ sensor.node_15_temperature:
 
 binary_sensor.node_15:
   friendly_name: "PIR Hallway"
+  device_class: "motion"
   templates:
     icon: mdi:motion-sensor
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
@@ -1050,6 +1054,7 @@ sensor.node_18_temperature:
 
 binary_sensor.node_18:
   friendly_name: "PIR Diningroom"
+  device_class: "motion"
   templates:
     icon: mdi:motion-sensor
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
@@ -1102,6 +1107,7 @@ sensor.node_19_temperature:
 
 binary_sensor.node_19:
   friendly_name: "PIR Livingroom"
+  device_class: "motion"
   templates:
     icon: mdi:motion-sensor
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
@@ -1154,6 +1160,7 @@ sensor.node_20_temperature:
 
 binary_sensor.node_20:
   friendly_name: "PIR Toilet"
+  device_class: "motion"
   templates:
     icon: mdi:motion-sensor
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';

@@ -6,44 +6,6 @@
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
 #
 ###########################################################################################
-binary_sensor.toilet_motion_toilet_contact:
-  friendly_name: "Z2M Motion Toilet"
-  icon: mdi:walk
-  device_class: motion
-binary_sensor.livingroom_motion_livingroom_contact:
-  friendly_name: "Z2M Motion Livingroom"
-  icon: mdi:walk
-  device_class: motion
-binary_sensor.kitchen_motion_kitchen_contact:
-  friendly_name: "Z2M Motion Kitchen"
-  icon: mdi:walk
-  device_class: motion
-binary_sensor.hallway_motion_hallway_contact:
-  friendly_name: "Z2M Motion Hallway"
-  icon: mdi:walk
-  device_class: motion
-binary_sensor.diningroom_motion_diningroom_contact:
-  friendly_name: "Z2M Motion Diningroom"
-  icon: mdi:walk
-  device_class: motion
-binary_sensor.diningroom_door_diningroom_contact:
-  friendly_name: "Z2M Door Diningroom"
-  icon: mdi:leak
-  device_class: motion
-binary_sensor.bedroom_motion_bedroom_contact:
-  friendly_name: "Z2M Motion Bedroom"
-  icon: mdi:walk
-  device_class: motion
-binary_sensor.bedroom_door_bedroom_contact:
-  friendly_name: "Z2M Door Bedroom "
-  icon: mdi:leak
-  device_class: motion
-binary_sensor.bathroom_motion_bathroom_contact:
-  friendly_name: "Z2M Motion Bathroom"
-  icon: mdi:walk
-  device_class: motion
-
-
 binary_sensor.hp_printer:
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
