@@ -4,7 +4,7 @@
 #
 ###########################################################################################
 
-- alias: "TEST - trigger statement ATOM on"
+- alias: "Test - Notify Alexa On"
   trigger:
     platform: state
     entity_id: switch.newkaku_014e5906_a
