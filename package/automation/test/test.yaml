@@ -11,7 +11,7 @@
     to: "on"
 
   action:
-    service: notify.alexa_media_peter_s_echo_dot
+    service: notify.alexa_media
     data_template:
       data:
         type: announce
