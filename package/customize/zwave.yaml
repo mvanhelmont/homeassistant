@@ -654,7 +654,7 @@ sensor.node_11_sourcenodeid:
 
 sensor.node_11_temperature:
   friendly_name: "Frontdoor Temp"
-  device_class: "temperature"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -770,7 +770,7 @@ sensor.node_13_sourcenodeid:
 
 sensor.node_13_temperature:
   friendly_name: "Door iMac Temp"
-  device_class: "temperature"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
