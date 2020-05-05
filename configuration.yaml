@@ -27,6 +27,11 @@ panel_iframe:
     icon: mdi:z-wave
     url: !secret zwave2mqtt
 
+nextcloud:
+  url: !secret nextcloud_url
+  username: !secret nextcloud_username
+  password: @secret nextcloud_password
+
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
 
