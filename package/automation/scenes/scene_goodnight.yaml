@@ -37,6 +37,7 @@
           - switch.mqtt_scene_sexy
           - switch.mqtt_scene_sleeping
           - switch.mqtt_scene_tv
+          - switch.newkaku_011fad02_c
 
     - service: remote.turn_off
       entity_id: remote.logitech_harmony
