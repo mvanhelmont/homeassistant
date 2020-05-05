@@ -99,22 +99,6 @@ filter:
 #    - switch.newkaku_01616a32_a
 #    - switch.newkaku_014e5906_a
 
-#  entity_config:
-#    binary_sensor.node_14:
-#      linked_battery_sensor: sensor.node_14_battery_level
-#    binary_sensor.node_17:
-#      linked_battery_sensor: sensor.node_17_battery_level
-#    binary_sensor.node_16:
-#      linked_battery_sensor: sensor.node_16_battery_level
-#    binary_sensor.node_15:
-#      linked_battery_sensor: sensor.node_15_battery_level
-#    binary_sensor.node_18:
-#      linked_battery_sensor: sensor.node_18_battery_level
-#    binary_sensor.node_19:
-#      linked_battery_sensor: sensor.node_19_battery_level
-#    binary_sensor.node_20:
-#      linked_battery_sensor: sensor.node_20_battery_level
-
   exclude_entities:
     - binary_sensor.bedroom_nest_protect_online
     - binary_sensor.dining_room_nest_protect_online
@@ -125,3 +109,19 @@ filter:
     - binary_sensor.milight_hub
     - binary_sensor.toshiba_laptop
     - binary_sensor.asingaborg_away
+
+entity_config:
+    binary_sensor.node_14:
+      linked_battery_sensor: sensor.node_14_battery_level
+    binary_sensor.node_17:
+      linked_battery_sensor: sensor.node_17_battery_level
+    binary_sensor.node_16:
+      linked_battery_sensor: sensor.node_16_battery_level
+    binary_sensor.node_15:
+      linked_battery_sensor: sensor.node_15_battery_level
+    binary_sensor.node_18:
+      linked_battery_sensor: sensor.node_18_battery_level
+    binary_sensor.node_19:
+      linked_battery_sensor: sensor.node_19_battery_level
+    binary_sensor.node_20:
+      linked_battery_sensor: sensor.node_20_battery_level
