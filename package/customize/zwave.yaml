@@ -654,6 +654,7 @@ sensor.node_11_sourcenodeid:
 
 sensor.node_11_temperature:
   friendly_name: "Frontdoor Temp"
+  device_class: "temperature"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -769,6 +770,7 @@ sensor.node_13_sourcenodeid:
 
 sensor.node_13_temperature:
   friendly_name: "Door iMac Temp"
+  device_class: "temperature"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -795,7 +797,7 @@ binary_sensor.node_13:
   friendly_name: "Door iMac"
 
 sensor.node_13_battery_level:
-  friendly_name: "Battery Door iMac"
+  friendly_name: "Door iMac Battery"
 
 ###########################################################################################
 #
