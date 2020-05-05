@@ -1056,7 +1056,7 @@ sensor.node_18_temperature:
 
 binary_sensor.node_18:
   friendly_name: "PIR Diningroom"
-#  device_class: "motion"
+  device_class: motion
   templates:
     icon: mdi:motion-sensor
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
