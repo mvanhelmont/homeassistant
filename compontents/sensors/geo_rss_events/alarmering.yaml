@@ -1,0 +1,8 @@
+platform: geo_rss_events
+name: "112 Meldingen Ams"
+url: feed:https://www.alarmeringdroid.nl/rss/67acd0b5
+unit_of_measurement: 'Incidents'
+#categories:
+#  - 'Emergency Warning'
+#  - 'Watch and Act'
+#  - 'Advice'
