@@ -8,6 +8,7 @@
 ---
 system_server_state_select_switch:
   options:
+    - "DSNR Reader"
     - "Home Assistant"
     - "Milight Hub"
     - "MQTT Server"
