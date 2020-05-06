@@ -16,7 +16,7 @@
       entity_id: light.newkaku_01401eb6_a
       brightness_pct: >-
         {% if states('switch.mqtt_kay_learning') == 'on' and states('switch.meek_diningtable') == 'on' %} 100
-        {% elif states('switch.mqtt_kay_learning') == 'off' and states('switch.meek_diningtable') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 100
+        {% elif states('switch.mqtt_kay_learning') == 'off' and states('switch.meek_diningtable') == 'on' and states('switch.mqtt_scene_goodnight') == 'off' %} 50
         {% elif states('switch.mqtt_kay_learning') == 'off' and states('switch.meek_diningtable') == 'on' and states('switch.mqtt_scene_goodnight') == 'on' %} 20
         {% else %} 0
         {% endif %}
