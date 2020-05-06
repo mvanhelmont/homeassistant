@@ -712,6 +712,7 @@ sensor.node_12_sourcenodeid:
 
 sensor.node_12_temperature:
   friendly_name: "Bedroom Door Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -826,6 +827,7 @@ sensor.node_14_sourcenodeid:
 
 sensor.node_14_temperature:
   friendly_name: "PIR Bedroom Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -879,6 +881,7 @@ sensor.node_17_sourcenodeid:
 
 sensor.node_17_temperature:
   friendly_name: "PIR Bathroom Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -932,6 +935,7 @@ sensor.node_16_sourcenodeid:
 
 sensor.node_16_temperature:
   friendly_name: "PIR Kitchen Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -985,6 +989,7 @@ sensor.node_15_sourcenodeid:
 
 sensor.node_15_temperature:
   friendly_name: "PIR Hallway Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -1038,6 +1043,7 @@ sensor.node_18_sourcenodeid:
 
 sensor.node_18_temperature:
   friendly_name: "PIR Diningroom Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -1091,6 +1097,7 @@ sensor.node_19_sourcenodeid:
 
 sensor.node_19_temperature:
   friendly_name: "PIR Livingroom Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -1144,6 +1151,7 @@ sensor.node_20_sourcenodeid:
 
 sensor.node_20_temperature:
   friendly_name: "PIR Toilet Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
@@ -1199,6 +1207,7 @@ sensor.node_21_sourcenodeid:
 
 sensor.node_21_temperature:
   friendly_name: "Diningroom Door Temp"
+  unit_of_measurement: "°C"
   templates:
     icon_color: >-
       if (state > 38) return 'rgb(181,14,2)';
