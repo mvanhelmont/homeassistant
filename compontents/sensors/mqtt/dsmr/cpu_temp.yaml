@@ -1,0 +1,13 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+name: "DSMR CPU Temp"
+state_topic: "Servers/dsmr/systemstatus"
+unit_of_measurement: "°C"
+value_template: "{{ value_json.cputemp | round(0) }}"

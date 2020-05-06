@@ -1,0 +1,13 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+name: "DSMR Memory Used"
+state_topic: "Servers/dsmr/systemstatus"
+value_template: "{{ value_json.virtualmem | round(0) }}"
+unit_of_measurement: "%"
