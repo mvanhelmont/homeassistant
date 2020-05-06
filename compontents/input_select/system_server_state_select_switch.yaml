@@ -11,7 +11,6 @@ system_server_state_select_switch:
     - "DSMR Reader"
     - "Home Assistant"
     - "Milight Hub"
-    - "MQTT Server"
     - "MVPS VMail and WWW"
     - "MVPS SSH Login"
     - "Nextcloud"
