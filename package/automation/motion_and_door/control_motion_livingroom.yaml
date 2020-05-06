@@ -16,11 +16,11 @@
       state: "on"
 
     - condition: state
-      entity_id: switch.newkaku_0114ef92_b
+      entity_id: switch.meek_wall
       state: "off"
 
     - condition: state
-      entity_id: switch.newkaku_0114ef92_c
+      entity_id: switch.meek_window
       state: "off"
 
     - condition: state
