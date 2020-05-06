@@ -13,18 +13,6 @@
 sensor.browser_ae1b43e7_eb57c683:
   friendly_name: Fully Kiosk Sensor
 
-sensor.fibaro_frontdoor_custom_sensor:
-  device_class: "door"
-  templates:
-    icon: mdi:leak
-    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.fibaro_imac_custom_sensor:
-  device_class: "door"
-  templates:
-    icon: mdi:leak
-    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
-
 sensor.harmony:
   icon: mdi:remote-tv
 

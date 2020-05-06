@@ -6,23 +6,17 @@
 
 - alias: "Notification - Random Door Open Close"
   trigger:
-
-    platform: state
+  - platform: state
     entity_id:
       - binary_sensor.node_21 # Sensor Diningroom Door
       - binary_sensor.node_12 # Sensor Bedroom Door
-      - sensor.fibaro_frontdoor_custom_sensor
-      - sensor.fibaro_imac_custom_sensor
-
+      - binary_sensor.fibaro_frontdoor_custom_sensor
+      - binary_sensor.fibaro_imac_custom_sensor
   action:
     service: script.pushover_engine
     data_template:
       message: >-
-        {% if trigger.to_state.state == 'off' %}
-          {{ trigger.from_state.attributes.friendly_name}} is open
-        {% else %}
-          {{ trigger.from_state.attributes.friendly_name}} is closed
-        {% endif %}
+        {{ trigger.from_state.attributes.friendly_name }} is {{ 'open' if trigger.to_state.state == 'on' else 'closed' }}
       priority: "0"
       sound: "bike"
       title: "HA Notify Engine"
