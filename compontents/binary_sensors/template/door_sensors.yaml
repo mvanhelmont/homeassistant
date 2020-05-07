@@ -1,0 +1,29 @@
+###########################################################################################
+#
+# SENSOR TEMPLATE
+#
+# https://www.home-assistant.io/integrations/template/
+#
+###########################################################################################
+---
+platform: template
+sensors:
+  fibaro_imac_custom_sensor:
+    friendly_name: "Fibaro iMac"
+    value_template: "{{ is_state('sensor.node_13_access_control', 'Door/Window Open') }}"
+    device_class: opening
+
+  fibaro_frontdoor_custom_sensor:
+    friendly_name: "Fibaro Frontdoor"
+    value_template: "{{ is_state('sensor.node_11_access_control', 'Door/Window Open') }}"
+    device_class: opening
+
+  neo_diningroomdoor_custom_sensor:
+    friendly_name: "Fibaro Frontdoor"
+    value_template: "{{ is_state('sensor.node_21_access_control', 'Door/Window Open') }}"
+    device_class: opening
+
+  neo_bedroomdoor_custom_sensor:
+    friendly_name: "Fibaro Frontdoor"
+    value_template: "{{ is_state('sensor.node_12_access_control', 'Door/Window Open') }}"
+    device_class: opening
