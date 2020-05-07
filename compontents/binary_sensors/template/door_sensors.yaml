@@ -19,11 +19,11 @@ sensors:
     device_class: opening
 
   neo_diningroomdoor_custom_sensor:
-    friendly_name: "Fibaro Frontdoor"
+    friendly_name: "Neo Diningroom door"
     value_template: "{{ is_state('sensor.node_21_access_control', 'Door/Window Open') }}"
     device_class: opening
 
   neo_bedroomdoor_custom_sensor:
-    friendly_name: "Fibaro Frontdoor"
+    friendly_name: "Neo Bedroom door"
     value_template: "{{ is_state('sensor.node_12_access_control', 'Door/Window Open') }}"
     device_class: opening
