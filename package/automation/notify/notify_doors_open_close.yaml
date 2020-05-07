@@ -9,9 +9,9 @@
   - platform: state
     entity_id:
       - binary_sensor.node_21 # Sensor Diningroom Door
-      - binary_sensor.node_12 # Sensor Bedroom Door
-      - binary_sensor.fibaro_frontdoor_custom_sensor
-      - binary_sensor.fibaro_imac_custom_sensor
+  #    - binary_sensor.node_12 # Sensor Bedroom Door
+  #    - binary_sensor.fibaro_frontdoor_custom_sensor
+  #    - binary_sensor.fibaro_imac_custom_sensor
   action:
     service: script.pushover_engine
     data_template:
