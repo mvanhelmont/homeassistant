@@ -34,11 +34,3 @@
       data_template:
         topic: 'homeassistant/motion/kitchen'
         payload: "{{ 1 if is_state('binary_sensor.node_16', 'on') else 0 }}"
-
-#    - service_template: >-
-#        {% if (states.sensor.holiday.state) == 'Christmas' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_christmas_turn_on
-#        {% elif (states.sensor.holiday.state) == 'Halloween' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_halloween_turn_on
-#        {% elif (states.sensor.holiday.state) == 'Kingsday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_kingsday_turn_on
-#        {% elif (states.sensor.holiday.state) == 'Birthday' and (states.switch.mqtt_scene_goodnight.state) == 'off' %} script.kitchen_birthday_turn_on
-#        {% else %} script.kitchen_normal_turn_on
-#        {% endif %}
