@@ -11,3 +11,4 @@ door_sensors:
     - binary_sensor.neo_bedroomdoor_custom_sensor
     - binary_sensor.neo_diningroomdoor_custom_sensor
     - binary_sensor.fibaro_frontdoor_custom_sensor
+    - binary_sensor.fibaro_imac_custom_sensor
