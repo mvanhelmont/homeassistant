@@ -71,6 +71,18 @@ binary_sensor.fibaro_imac_custom_sensor:
     icon: mdi:leak
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
+binary_sensor.node_21:
+  device_class: "door"
+  templates:
+    icon: mdi:leak
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+binary_sensor.node_21:
+  device_class: "door"
+  templates:
+    icon: mdi:leak
+    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
 ###########################################################################################
 #
 # BINARY_SENSOR CLIMATE
