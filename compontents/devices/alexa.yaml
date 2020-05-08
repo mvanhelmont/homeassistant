@@ -25,6 +25,7 @@ smart_home:
       - light.toilet_all
       - light.nanoleaf
       - light.browser_ae1b43e7_eb57c683
+      - light.newkaku_01401eb6_a
 # Motion Sensors - Not seen as motion sensors
       - binary_sensor.node_14 # Motion Bedroom
       - binary_sensor.node_17 # Motion Bathroom
