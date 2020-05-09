@@ -12,18 +12,14 @@
 
 sensor.browser_ae1b43e7_eb57c683:
   friendly_name: Fully Kiosk Sensor
-
 sensor.harmony:
   icon: mdi:remote-tv
-
 sensor.scene_active:
   icon: mdi:arrow-decision-auto
   icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
-
 sensor.switch_active:
   icon: mdi:ceiling-light
   icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
-
 sensor.home_assistant_log:
   icon: mdi:paper-roll
 
@@ -35,19 +31,14 @@ sensor.home_assistant_log:
 
 sensor.netherlands_coronavirus_confirmed:
   unit_of_measurement:
-
 sensor.netherlands_coronavirus_deaths:
   unit_of_measurement:
-
 sensor.netherlands_coronavirus_recovered:
   unit_of_measurement:
-
 sensor.worldwide_coronavirus_confirmed:
   unit_of_measurement:
-
 sensor.worldwide_coronavirus_deaths:
   unit_of_measurement:
-
 sensor.worldwide_coronavirus_recovered:
   unit_of_measurement:
 
@@ -62,89 +53,39 @@ sensor.circadian_values:
 
 ###########################################################################################
 #
-# SENSOR.MILIGHT
-#
-###########################################################################################
-
-sensor.milight_firmware:
-  friendly_name: "Firmware"
-
-sensor.milight_dropped_packets:
-  friendly_name: "Dropped Packets"
-
-sensor.milight_length:
-  friendly_name: "Packet Queue Length"
-
-sensor.milight_arduino_version:
-  friendly_name: "Arduino Version"
-
-sensor.milight_free_heap:
-  friendly_name: "Free heap"
-
-sensor.milight_reset_reason:
-  friendly_name: "Reset reason"
-
-sensor.milight_transitions:
-  friendly_name: "Transitions"
-
-sensor.milight_variant:
-  friendly_name: "Board type"
-
-sensor.milight_version:
-  friendly_name: "Version"
-
-###########################################################################################
-#
-# SENSOR.MVPS
+# MVPS Webserver
 #
 ###########################################################################################
 
 sensor.ssh_login_ip:
   friendly_name: "Client login IP"
-
 sensor.ssh_login_date:
   friendly_name: "Client login date"
-
 sensor.ssh_login_time:
   friendly_name: "Client login time"
-
 sensor.ssh_login_user:
   friendly_name: "Client username"
-
 sensor.www_oudenes_size:
   icon: mdi:harddisk
   friendly_name: "WWW Oudenes Size"
-
 sensor.www_asia_size:
   icon: mdi:harddisk
   friendly_name: "WWW Asia Size"
-
 sensor.www_hairdelicious_size:
   icon: mdi:harddisk
   friendly_name: "WWW Hair Size"
-
-###########################################################################################
-#
-# MVPS
-#
-###########################################################################################
-
 sensor.vmail_backup_date:
   icon: mdi:backup-restore
   friendly_name: "VMail Backup Date"
-
 sensor.vmail_backup_time:
   icon: mdi:backup-restore
   friendly_name: "VMail Backup Time"
-
 sensor.vmail_backup_size:
   icon: mdi:harddisk
   friendly_name: "VMail Backup Size"
-
 sensor.www_backup_date:
   icon: mdi:backup-restore
   friendly_name: "WWW Backup Date"
-
 sensor.www_backup_time:
   icon: mdi:backup-restore
   friendly_name: "WWW Backup Time"
@@ -157,27 +98,21 @@ sensor.www_backup_time:
 sensor.peter_iphone_ibeacon:
   friendly_name: "Peter Beacon Confidence"
   icon: mdi:map-marker-distance
-
 sensor.peter_last_changed_tracker:
   friendly_name: "Geofency Peter Tracker changed"
   icon: mdi:av-timer
-
 sensor.peter_distance_geofency:
   friendly_name: "Peter Geofency Distance"
   icon: mdi:map-marker-distance
-
 sensor.peter_distance_ha:
   friendly_name: "Peter HA Distance"
   icon: mdi:map-marker-distance
-
 sensor.kay_last_changed_tracker:
   friendly_name: "Geofency Kay Tracker changed"
   icon: mdi:av-timer
-
 sensor.kay_distance_geofency:
   friendly_name: "Kay Geofency Distance"
   icon: mdi:map-marker-distance
-
 sensor.kay_iphone_ibeacon:
   friendly_name: "Kay Beacon Confidence"
   icon: mdi:map-marker-distance
@@ -190,19 +125,14 @@ sensor.kay_iphone_ibeacon:
 
 sensor.this_device_next_reminder:
   friendly_name: "This Deivce Next Reminder"
-
 sensor.last_alexa:
   friendly_name: "Last Alexa Device"
-
 sensor.peter_s_echo_dot_next_alarm:
   friendly_name: "Alexa Echo Dot Alarm"
-
 sensor.peter_s_echo_dot_next_reminder:
   friendly_name: "Alexa Echo Dot Reminder"
-
 sensor.peter_s_echo_dot_next_timer:
   friendly_name: "Alexa Echo Dot Timer"
-
 sensor.alexa_last_message:
   friendly_name: "Last message"
   icon: mdi:amazon-alexa
@@ -215,118 +145,85 @@ sensor.alexa_last_message:
 
 sensor.dsmr_day_consumption_electricity1_cost:
    friendly_name: Low cost power today
-
 sensor.dsmr_day_consumption_electricity2_cost:
    friendly_name: High cost power today
-
 sensor.dsmr_day_consumption_electricity_cost_merged:
    friendly_name: Total cost power today
-
 sensor.dsmr_day_consumption_energy_supplier_price_electricity_delivered_1:
    friendly_name: Low cost price kWh
-
 sensor.dsmr_day_consumption_energy_supplier_price_electricity_delivered_2:
    friendly_name: High cost price kWh
-
 sensor.dsmr_day_consumption_energy_supplier_price_gas:
    friendly_name: Gas cost price m3h
-
 sensor.dsmr_day_consumption_gas_cost:
    friendly_name: Total cost gas today
-
 sensor.dsmr_consumption_gas_read_at:
    friendly_name: DSMR update
-
 sensor.dsmr_consumption_gas_currently_delivered:
    friendly_name: Gas used now
-
 sensor.dsmr_reading_extra_device_delivered:
    friendly_name: Gas used total - extra
-
 sensor.dsmr_consumption_gas_delivered:
    friendly_name: Gas used total
-
 sensor.dsmr_day_consumption_gas:
    friendly_name: Gas used today
-
 sensor.dsmr_day_consumption_electricity1:
    friendly_name: Power low used today
-
 sensor.dsmr_day_consumption_electricity2:
    friendly_name: Power high used today
-
 sensor.dsmr_day_consumption_electricity_merged:
    friendly_name: Power used total today
-
 sensor.dsmr_reading_electricity_currently_delivered:
    friendly_name: Power used now
-
 sensor.dsmr_reading_electricity_delivered_1:
    friendly_name: Power low used today
-
 sensor.dsmr_reading_electricity_delivered_2:
    friendly_name: Power high used total
-
 sensor.dsmr_reading_phase_currently_delivered_l1:
    friendly_name: Phase current use
-
 sensor.dsmr_reading_phase_voltage_l1:
    friendly_name: Phase current volatge
-
 sensor.dsmr_meter_stats_dsmr_version:
    friendly_name: DSMR Version
-
 sensor.dsmr_meter_stats_electricity_tariff:
    friendly_name: Power tariff
-
 sensor.dsmr_meter_stats_long_power_failure_count:
    friendly_name: Long power failure
-
 sensor.dsmr_meter_stats_power_failure_count:
    friendly_name: Power failure
-
 sensor.dsmr_meter_stats_rejected_telegrams:
    friendly_name: Rejected telegrams
-
 sensor.dsmr_meter_stats_voltage_sag_count_l1:
    friendly_name: Voltage sag count
-
 sensor.dsmr_meter_stats_voltage_swell_count_l1:
    friendly_name: Voltage swell count
 
 ###########################################################################################
 #
-# SENSOR.DSMR.*
+# SENSOR.DSMR SYSTEM INFO
 #
 ###########################################################################################
 
 sensor.dsmr_last_update:
   friendly_name: "Last Sensors Update"
   icon: mdi:update
-
 sensor.dsmr_boot_time:
   friendly_name: "Last Boot Time"
   icon: mdi:clock
-
 sensor.dsmr_cpu_usage:
   friendly_name: "CPU Usage"
   icon: mdi:cpu-64-bit
-
 sensor.dsmr_disk_size:
   friendly_name: "Disk Size"
-
   icon: mdi:harddisk
 sensor.dsmr_disk_usage:
   friendly_name: "Disk Usage"
   icon: mdi:harddisk
-
 sensor.dsmr_memory_used:
   friendly_name: "Memory Usage"
   icon: mdi:memory
-
 sensor.dsmr_power_supply:
   icon: mdi:power-plug
-
 sensor.dsmr_cpu_temp:
   friendly_name: "CPU Temp."
   templates:
@@ -348,37 +245,31 @@ sensor.dsmr_cpu_temp:
 
 ###########################################################################################
 #
-# SENSOR.NEXTCLOUD.*
+# SENSOR.NEXTCLOUD SYSTEM INFO
 #
 ###########################################################################################
-
+sensor.nextcloud_vpn_ext_ip:
+  icon: mdi:lan
 sensor.nextcloud_last_update:
   friendly_name: "Last Sensors Update"
   icon: mdi:update
-
 sensor.nextcloud_boot_time:
   friendly_name: "Last Boot Time"
   icon: mdi:clock
-
 sensor.nextcloud_cpu_usage:
   friendly_name: "CPU Usage"
   icon: mdi:cpu-64-bit
-
 sensor.nextcloud_disk_size:
   friendly_name: "Disk Size"
-
   icon: mdi:harddisk
 sensor.nextcloud_disk_usage:
   friendly_name: "Disk Usage"
   icon: mdi:harddisk
-
 sensor.nextcloud_memory_used:
   friendly_name: "Memory Usage"
   icon: mdi:memory
-
 sensor.nextcloud_power_supply:
   icon: mdi:power-plug
-
 sensor.nextcloud_cpu_temp:
   friendly_name: "CPU Temp."
   templates:
@@ -406,10 +297,8 @@ sensor.nextcloud_cpu_temp:
 
 sensor.speedtest_download:
   friendly_name: "Download"
-
 sensor.speedtest_ping:
   friendly_name: "Ping"
-
 sensor.speedtest_upload:
   friendly_name: "Upload"
 
@@ -421,10 +310,8 @@ sensor.speedtest_upload:
 
 sensor.toyota_aygo_expdate:
   friendly_name: "APK Vervaldatum"
-
 sensor.toyota_aygo_insured:
   friendly_name: "Verzekerd"
-
 sensor.toyota_aygo_recall:
   friendly_name: "Terugroepstatus"
 
@@ -436,25 +323,19 @@ sensor.toyota_aygo_recall:
 
 sensor.hp_printer_ink_black:
   icon: mdi:cup-water
-
 sensor.hp_printer_ink_cyan:
   icon_color: rgb(rgb(0,255,255))
   icon: mdi:cup-water
-
 sensor.hp_printer_ink_magenta:
   icon_color: rgb(rgb(255,0,255)
   icon: mdi:cup-water
-
 sensor.hp_printer_ink_yellow:
   icon_color: rgb(rgb(255,255,0)
   icon: mdi:cup-water
-
 sensor.hp_printer_printer:
   icon: mdi:file-outline
-
 sensor.hp_printer_printhead_cmyk:
   icon: mdi:file-outline
-
 sensor.hp_printer_scanner:
   icon: mdi:scanner
 
@@ -466,61 +347,43 @@ sensor.hp_printer_scanner:
 
 sensor.entryway_thermostat_humidity:
   friendly_name: "Nest Humidity"
-
 sensor.entryway_thermostat_hvac_state:
   friendly_name: "Nest HVAC State"
-
 sensor.entryway_thermostat_operation_mode:
   friendly_name: "Nest Operation Mode"
-
 sensor.entryway_thermostat_target:
   friendly_name: "Nest Temp. Target"
-
 sensor.entryway_thermostat_temperature:
   friendly_name: "Nest Temperature Now"
-
 sensor.asingaborg_eta:
   friendly_name: "Nest ETA"
-
 sensor.bedroom_nest_protect_battery_health:
   icon: mdi:battery
-
 sensor.bedroom_nest_protect_co_status:
   icon: mdi:smoke-detector
-
 sensor.bedroom_nest_protect_color_status:
   friendly_name: "Bedroom"
   icon: mdi:palette
-
 sensor.bedroom_nest_protect_smoke_status:
   icon: mdi:smoke-detector
-
 sensor.dining_room_nest_protect_battery_health:
   icon: mdi:battery
-
 sensor.dining_room_nest_protect_co_status:
   icon: mdi:smoke-detector
-
 sensor.dining_room_nest_protect_color_status:
   friendly_name: "Diningroom"
   icon: mdi:palette
-
 sensor.dining_room_nest_protect_smoke_status:
   icon: mdi:smoke-detector
-
 sensor.living_room_nest_protect_battery_health:
   icon: mdi:battery
-
 sensor.living_room_nest_protect_co_status:
   icon: mdi:smoke-detector
-
 sensor.living_room_nest_protect_color_status:
   friendly_name: "Livingroom"
   icon: mdi:palette
-
 sensor.living_room_nest_protect_smoke_status:
   icon: mdi:smoke-detector
-
 sensor.climate_temp_inside:
   friendly_name: "Temperature inside"
   unit_of_measurement: "°C"
@@ -575,103 +438,72 @@ sensor.itho_tijd:
 
 sensor.date_time:
   friendly_name: "Date and Time"
-
 sensor.date_time_iso:
   friendly_name: "Date and Time ISO"
-
 sensor.nextsunrise:
   friendly_name: "Next Sunrise"
-
 sensor.nextsunset:
   friendly_name: "Next Sunset"
-
 sensor.period_of_day:
   friendly_name: "Period of Day"
-
 sensor.time_date:
   friendly_name: "Time and Date"
-
 sensor.time_utc:
   friendly_name: "Time UTC"
-
 sensor.internet_time:
   friendly_name: "Swatch Internet Time"
-
 sensor.ipv4_address_wlan0:
   friendly_name: "wlan0 IPv4 Address"
-
 sensor.ssl_certificate_expiry:
   friendly_name: "Letscrypt SSL Cert. Expiry"
-
 sensor.memory_free:
   friendly_name: "HA Free Memory"
-
 sensor.memory_use_percent:
   friendly_name: "HA Memory Usage"
-
 sensor.current_version:
   friendly_name: "HA Current Version"
-
 sensor.disk_free:
   friendly_name: "HA Free Diskspace"
-
 sensor.disk_use_percent:
   friendly_name: "HA Diskpace Usage"
-
 sensor.last_boot:
   friendly_name: "HA Last Boot"
-
 sensor.last_boot_2:
   friendly_name: "HA Last Boot"
-
 sensor.latest_version:
   friendly_name: "HA Latest Version"
-
 sensor.swap_use_percent:
   friendly_name: "Swap Usage"
-
 sensor.local_ip:
   icon: mdi:wan
-
 sensor.external_ip:
   icon: mdi:wan
-
 sensor.mqtt_vpn_ext_ip:
   icon: mdi:wan
-
 sensor.database_size:
   icon: mdi:database
-
 sensor.processor_use:
   friendly_name: "HA CPU Usage"
-
 sensor.rpi_power_status:
   friendly_name: "HA Power State"
-
 sensor.hacs:
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
 sensor.birthday:
   icon: mdi:balloon
   friendly_name: "Birthday!"
-
 sensor.season:
   friendly_name: "Season Period"
-
 sensor.dayofyear:
   icon: mdi:calendar-today
   friendly_name: "Day of Year"
-
 sensor.weekofyear:
   icon: mdi:calendar-week-begin
   friendly_name: "Week of Year"
-
 sensor.holiday:
   friendly_name: "Holiday!"
   icon: mdi:palm-tree
-
 sensor.ha_cpu_temp:
   friendly_name: "HA CPU Temperature"
   templates:
@@ -690,7 +522,6 @@ sensor.ha_cpu_temp:
       if (state > -18) return 'rgb(176,0,189)';
       if (state > -23) return 'rgb(189,0,107)';
       return 'rgb(0,0,0)';
-
 sensor.ha_gpu_temp:
   friendly_name: "HA GPU Temperature"
   templates:

@@ -19,12 +19,6 @@ group.family:
     icon: mdi:group
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
-group.lights_group_all:
-  friendly_name: "Group All Lights Group 0"
-  templates:
-    icon: mdi:group
-    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
-
 group.motion_sensors:
   friendly_name: "Group Motion Sensors"
   templates:
@@ -42,7 +36,7 @@ group.circadian_lights:
   templates:
     icon: mdi:group
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
-    
+
 group.zwave_switches:
   friendly_name: "Group Zwave switches"
   templates:

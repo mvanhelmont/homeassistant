@@ -20,12 +20,7 @@ binary_sensor.meek_p1_meter:
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-binary_sensor.milight_hub:
-  templates:
-    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
+    
 binary_sensor.dsmr:
   templates:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
