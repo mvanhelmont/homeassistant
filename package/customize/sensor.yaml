@@ -92,6 +92,31 @@ sensor.www_backup_time:
 
 ###########################################################################################
 #
+# SYSTEM INFO MILIGHT
+#
+###########################################################################################
+
+sensor.milight_firmware:
+  friendly_name: "Firmware"
+sensor.milight_dropped_packets:
+  friendly_name: "Dropped Packets"
+sensor.milight_length:
+  friendly_name: "Packet Queue Length"
+sensor.milight_arduino_version:
+  friendly_name: "Arduino Version"
+sensor.milight_free_heap:
+  friendly_name: "Free heap"
+sensor.milight_reset_reason:
+  friendly_name: "Reset reason"
+sensor.milight_transitions:
+  friendly_name: "Transitions"
+sensor.milight_variant:
+  friendly_name: "Board type"
+sensor.milight_version:
+  friendly_name: "Version"
+
+###########################################################################################
+#
 # SENSOR - TRACKER
 #
 ###########################################################################################

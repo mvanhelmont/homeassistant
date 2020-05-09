@@ -3,236 +3,45 @@
 # BINARY_SENSOR
 #
 ###########################################################################################
----
-binary_sensor.milight_hub:
-  templates:
-    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+#binary_sensor.milight_hub:
+#  templates:
+#    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+#    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 ###########################################################################################
 #
 # GROUP
 #
 ###########################################################################################
----
-group.lights_group_all:
-  friendly_name: "Group All Lights Group 0"
-  templates:
-    icon: mdi:group
-    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
+
+#group.lights_group_all:
+#  friendly_name: "Group All Lights Group 0"
+#  templates:
+#    icon: mdi:group
+#    icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 ###########################################################################################
 #
 # SYSTEM INFO
 #
 ###########################################################################################
----
-sensor.milight_firmware:
-  friendly_name: "Firmware"
-sensor.milight_dropped_packets:
-  friendly_name: "Dropped Packets"
-sensor.milight_length:
-  friendly_name: "Packet Queue Length"
-sensor.milight_arduino_version:
-  friendly_name: "Arduino Version"
-sensor.milight_free_heap:
-  friendly_name: "Free heap"
-sensor.milight_reset_reason:
-  friendly_name: "Reset reason"
-sensor.milight_transitions:
-  friendly_name: "Transitions"
-sensor.milight_variant:
-  friendly_name: "Board type"
-sensor.milight_version:
-  friendly_name: "Version"
 
-###########################################################################################
-#
-# LIGHT
-#
-###########################################################################################
----
-light.hallway:
-  friendly_name: "Hallway"
-  homebridge_name: "Hallway"
-  icon: mdi:ceiling-light
-
-light.balcony:
-  friendly_name: "Balcony"
-  homebridge_name: "Balcony"
-  icon: mdi:ceiling-light
-
-light.bathroom_all:
-  friendly_name: "Bathroom"
-  homebridge_name: "Bathroom"
-  icon: mdi:lightbulb-group
-
-light.bathroom_1:
-  friendly_name: "Bathroom 1"
-  homebridge_name: "Bathroom 1"
-  icon: mdi:ceiling-light
-
-light.bathroom_2:
-  friendly_name: "Bathroom 2"
-  homebridge_name: "Bathroom 2"
-  icon: mdi:ceiling-light
-
-light.bathroom_3:
-  friendly_name: "Bathroom 3"
-  homebridge_name: "Bathroom 3"
-  icon: mdi:ceiling-light
-
-light.bathroom_4:
-  friendly_name: "Bathroom 4"
-  homebridge_name: "Bathroom 4"
-  icon: mdi:ceiling-light
-
-light.bedroom_all:
-  friendly_name: "Bedroom"
-  homebridge_name: "Master Bedroom"
-  icon: mdi:lightbulb-group
-
-light.bedroom_1:
-  friendly_name: "Bedroom 1"
-  homebridge_name: "Master Bedroom 1"
-  icon: mdi:ceiling-light
-
-light.bedroom_2:
-  friendly_name: "Bedroom 2"
-  homebridge_name: "Master Bedroom 2"
-  icon: mdi:ceiling-light
-
-light.bedroom_3:
-  friendly_name: "Bedroom 3"
-  homebridge_name: "Master Bedroom 3"
-  icon: mdi:ceiling-light
-
-light.bedroom_4:
-  friendly_name: "Bedroom 4"
-  homebridge_name: "Master Bedroom 4"
-  icon: mdi:ceiling-light
-
-light.bedroom_5:
-  friendly_name: "Bedroom 5"
-  homebridge_name: "Master Bedroom 5"
-  icon: mdi:ceiling-light
-
-light.bedroom_6:
-  friendly_name: "Bedroom 6"
-  homebridge_name: "Master Bedroom 6"
-  icon: mdi:ceiling-light
-
-light.dressoir_all:
-  friendly_name: "Dressoir"
-  homebridge_name: "Dressoir"
-  icon: mdi:lightbulb-group
-
-light.dressoir_1:
-  friendly_name: "Dressoir 1"
-  homebridge_name: "Dressoir 1"
-  icon: mdi:ceiling-light
-
-light.dressoir_2:
-  friendly_name: "Dressoir 2"
-  homebridge_name: "Dressoir 2"
-  icon: mdi:ceiling-light
-
-light.dressoir_3:
-  friendly_name: "Dressoir 3"
-  homebridge_name: "Dressoir 3"
-  icon: mdi:ceiling-light
-
-light.kitchen_all:
-  friendly_name: "Kitchen"
-  homebridge_name: "Kitchen"
-  icon: mdi:lightbulb-group
-
-light.kitchen_1:
-  friendly_name: "Kitchen 1"
-  homebridge_name: "Kitchen 1"
-  icon: mdi:ceiling-light
-
-light.kitchen_2:
-  friendly_name: "Kitchen 2"
-  homebridge_name: "Kitchen 2"
-  icon: mdi:ceiling-light
-
-light.kitchen_3:
-  friendly_name: "Kicthen 3"
-  homebridge_name: "Kitchen 3"
-  icon: mdi:ceiling-light
-
-light.livingroom_all:
-  friendly_name: "Livingroom"
-  homebridge_name: "Livingroom"
-  icon: mdi:lightbulb-group
-
-light.livingroom_1:
-  friendly_name: "Livingroom 1"
-  homebridge_name: "Livingroom 1"
-  icon: mdi:floor-lamp
-
-light.livingroom_2:
-  friendly_name: "Livingroom 2"
-  homebridge_name: "Livingroom 2"
-  icon: mdi:floor-lamp
-
-light.livingroom_3:
-  friendly_name: "Livingroom 3"
-  homebridge_name: "Livingroom 3"
-  icon: mdi:floor-lamp
-
-light.livingroom_4:
-  friendly_name: "Livingroom 4"
-  homebridge_name: "Livingroom 4"
-  icon: mdi:floor-lamp
-
-light.livingroom_wall:
-  friendly_name: "Livingroom Wall"
-  homebridge_name: "Livingroom Wall"
-  icon: mdi:floor-lamp
-
-light.livingroom_window:
-  friendly_name: "Livingroom Window"
-  homebridge_name: "Livingroom Window"
-  icon: mdi:floor-lamp
-
-light.sink_all:
-  friendly_name: "Sink"
-  homebridge_name: "Sink"
-  icon: mdi:lightbulb-group
-
-light.sink_1:
-  friendly_name: "Sink 1"
-  homebridge_name: "Sink 1"
-  icon: mdi:ceiling-light
-
-light.sink_2:
-  friendly_name: "Sink 2"
-  homebridge_name: "Sink 2"
-  icon: mdi:ceiling-light
-
-light.sink_3:
-  friendly_name: "Sink 3"
-  homebridge_name: "Sink 3"
-  icon: mdi:ceiling-light
-
-light.toilet_all:
-  friendly_name: "Toilet"
-  homebridge_name: "Toilet"
-  icon: mdi:lightbulb-group
-
-light.toilet_1:
-  friendly_name: "Toilet 1"
-  homebridge_name: "Toilet 1"
-  icon: mdi:ceiling-light
-
-light.toilet_2:
-  friendly_name: "Toilet 2"
-  homebridge_name: "Toilet 2"
-  icon: mdi:ceiling-light
-
-light.toilet_3:
-  friendly_name: "Toilet 3"
-  homebridge_name: "Toilet 3"
-  icon: mdi:ceiling-light
+#sensor.milight_firmware:
+#  friendly_name: "Firmware"
+#sensor.milight_dropped_packets:
+#  friendly_name: "Dropped Packets"
+#sensor.milight_length:
+#  friendly_name: "Packet Queue Length"
+#sensor.milight_arduino_version:
+#  friendly_name: "Arduino Version"
+#sensor.milight_free_heap:
+#  friendly_name: "Free heap"
+#sensor.milight_reset_reason:
+#  friendly_name: "Reset reason"
+#sensor.milight_transitions:
+#  friendly_name: "Transitions"
+#sensor.milight_variant:
+#  friendly_name: "Board type"
+#sensor.milight_version:
+#  friendly_name: "Version"
