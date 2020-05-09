@@ -7,7 +7,7 @@
 ###########################################################################################
 ---
 #customize: !include_dir_merge_named /config/package/customize/
-customize: !include_dir_list /config/package/customize/
+customize: !include_dir_merge_list /config/package/customize/
 customize_glob: !include_dir_merge_named /config/package/customize_global/
 whitelist_external_dirs:
   - /config
