@@ -5,7 +5,7 @@
 ###########################################################################################
 
 engine_notify_speech:
-  alias: 'TTS Notify Engine'
+  alias: "TTS Notify Engine"
   sequence:
     service: script.engine_say
     data_template:
@@ -14,7 +14,7 @@ engine_notify_speech:
       say_greeting: "false"
 
 engine_say:
-  alias: 'TTS Say Briefing Engine'
+  alias: "TTS Say Briefing Engine"
   sequence:
     - service: media_player.volume_set
       data_template:
@@ -37,7 +37,7 @@ engine_say:
         title: "{{ title }}"
 
 engine_speech_processing:
-  alias: 'TTS Processing Engine'
+  alias: "TTS Processing Engine"
   sequence:
     - service: notify.alexa_media_peter_s_echo_dot
       data_template:
