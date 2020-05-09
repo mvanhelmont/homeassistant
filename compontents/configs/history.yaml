@@ -31,7 +31,7 @@ include:
     - binary_sensor.node_18 # Motion Diningroom
     - binary_sensor.node_19 # Motion Livingroom
     - binary_sensor.node_20 # Motion Toilet
-    - binary_sensor.node_21 # Sensor Diningroom Door
+    - binary_sensor.neo_diningroomdoor_custom_sensor # Sensor Diningroom Door
     - binary_sensor.node_12 # Sensor Bedroom Door
     - sensor.fibaro_frontdoor_custom_sensor
 

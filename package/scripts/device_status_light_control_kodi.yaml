@@ -32,7 +32,7 @@ kodi_control_paused:
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.neo_diningroomdoor_custom_sensor', 'on') else 100 }}"
 
 ###########################################################################################
 #
@@ -60,7 +60,7 @@ kodi_control_playing:
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 25 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.neo_diningroomdoor_custom_sensor', 'on') else 25 }}"
 
     - service: light.turn_on
       data:
@@ -100,7 +100,7 @@ kodi_control_idle:
     - service: light.turn_on
       data_template:
         entity_id: light.dressoir_all
-        brightness_pct: "{{ 0 if is_state('binary_sensor.node_21', 'on') else 100 }}"
+        brightness_pct: "{{ 0 if is_state('binary_sensor.neo_diningroomdoor_custom_sensor', 'on') else 100 }}"
 
     - service: light.turn_on
       data:

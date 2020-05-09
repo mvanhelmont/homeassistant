@@ -11,7 +11,7 @@
       entity_id:
         - binary_sensor.node_17 # Motion Bathroom
         - binary_sensor.node_20 # Motion Toilet
-        - binary_sensor.node_21 # Sensor Diningroom Door
+        - binary_sensor.neo_diningroomdoor_custom_sensor # Sensor Diningroom Door
         - binary_sensor.node_12 # Sensor Bedroom Door
         - binary_sensor.node_14 # Motion Bedroom
         - binary_sensor.node_16 # Motion Kitchen
