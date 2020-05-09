@@ -35,17 +35,6 @@ smart_home:
       - binary_sensor.node_19 # Motion Livingroom
       - binary_sensor.node_20 # Motion Toilet
 
-# Nest Protect - Not seen as smoke sensors
-#      - sensor.bedroom_nest_protect_co_status
-#      - sensor.bedroom_nest_protect_smoke_status
-#      - sensor.dining_room_nest_protect_co_status
-#      - sensor.dining_room_nest_protect_smoke_status
-#      - sensor.living_room_nest_protect_co_status
-#      - sensor.living_room_nest_protect_smoke_status
-#      - sensor.nest_protect_bedroom_status_homekit
-#      - sensor.nest_protect_diningroom_status_homekit
-#      - sensor.nest_protect_livingroom_status_homekit
-
 # Scenes
       - switch.mqtt_scene_sleeping
       - switch.mqtt_scene_sexy
@@ -59,27 +48,17 @@ smart_home:
       - switch.mqtt_scene_cooking
       - switch.mqtt_kay_learning
       - switch.mqtt_disable_nest_control
+
 # Logitech Activities
       - switch.airplay
       - switch.iptv
       - switch.kodi
       - switch.tv
       - switch.appletv
+
 # NEST
       - climate.entryway
-# MEEK Switches
-#      - switch.meek_kitchen_seeling
-#      - switch.meek_kitchen_sink
-#      - switch.meek_hallway
-#      - switch.meek_bedroom
-#      - switch.meek_bathroom
-#      - switch.meek_toilet
-#      - switch.meek_cooking
-#      - switch.meek_dressoir
-#      - switch.meek_livingroom
-# Device trackers - IS NOT SEEN AS TRACKER BUT AS CAMERA
-#      - binary_sensor.manual_kay_home
-#      - binary_sensor.manual_peter_home
+
 # Temperature sensors
       - sensor.node_11_temperature
       - sensor.node_13_temperature
@@ -132,7 +111,6 @@ smart_home:
       name: "Temp. Toilet"
       description: "Temp. inside the toilet"
       display_categories: TEMPERATURE_SENSOR
-
     binary_sensor.node_14:
       name: "Motion Bedroom"
       description: "Motion sensor inside the bedroom"
@@ -161,7 +139,6 @@ smart_home:
       name: "Motion Toilet"
       description: "Motion sensor inside the toilet"
       display_categories: MOTION_SENSOR
-
     binary_sensor.manual_kay_home:
       name: "Presence Kay"
       description: "Indication that Kay is home"

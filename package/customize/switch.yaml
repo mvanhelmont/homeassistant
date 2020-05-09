@@ -7,7 +7,6 @@
 #
 ###########################################################################################
 
-
 #switch.circadian_lighting_circadian_lighting:
 
 switch.flux_test:
@@ -212,70 +211,66 @@ switch.meek_livingroom:
 #
 ###########################################################################################
 
-switch.newkaku_0114ef92_b:
+switch.newkaku_014e5906_a:
   icon: mdi:nintendo-switch
-  friendly_name: "KaKu Wall"
-  homebridge_name: "KaKu Wall Switch"
+  friendly_name: "KaKu Testing"
+  homebridge_name: "KaKu Testing"
 
-switch.newkaku_0114ef92_c:
-  friendly_name: "KaKu Window"
-  homebridge_name: "KaKu Window Switch"
-  icon: mdi:nintendo-switch
+#switch.newkaku_0114ef92_b:
+#  icon: mdi:nintendo-switch
+#  friendly_name: "KaKu Wall"
+#  homebridge_name: "KaKu Wall Switch"
 
-switch.newkaku_011fdd46_b:
-  icon: mdi:nintendo-switch
-  friendly_name: "KaKu Balcony"
-  homebridge_name: "KaKu Balcony Switch"
+#switch.newkaku_0114ef92_c:
+#  friendly_name: "KaKu Window"
+#  homebridge_name: "KaKu Window Switch"
+#  icon: mdi:nintendo-switch
 
-switch.newkaku_011fdd46_c:
-  icon: mdi:nintendo-switch
-  friendly_name: "KaKu Dressoir"
-  homebridge_name: "KaKu Dressoir Switch"
+#switch.newkaku_011fdd46_b:
+#  icon: mdi:nintendo-switch
+#  friendly_name: "KaKu Balcony"
+#  homebridge_name: "KaKu Balcony Switch"
 
-switch.newkaku_01074522_a:
-  icon: mdi:nintendo-switch
-  friendly_name: "KaKu Bedroom"
-  homebridge_name: "KaKu Bedroom Switch"
+#switch.newkaku_011fdd46_c:
+#  icon: mdi:nintendo-switch
+#  friendly_name: "KaKu Dressoir"
+#  homebridge_name: "KaKu Dressoir Switch"
 
-switch.newkaku_011fad02_b:
-  icon: mdi:nintendo-switch
-  friendly_name: "KaKu Kitchen"
-  homebridge_name: "KaKu Kitchen Switch"
+#switch.newkaku_01074522_a:
+#  icon: mdi:nintendo-switch
+#  friendly_name: "KaKu Bedroom"
+#  homebridge_name: "KaKu Bedroom Switch"
 
-switch.newkaku_011fad02_c:
-  icon: mdi:nintendo-switch
-  friendly_name: "KaKu Cooker"
-  homebridge_name: "CKaKu ooker Switch"
+#switch.newkaku_011fad02_b:
+#  icon: mdi:nintendo-switch
+#  friendly_name: "KaKu Kitchen"
+#  homebridge_name: "KaKu Kitchen Switch"
+
+#switch.newkaku_011fad02_c:
+#  icon: mdi:nintendo-switch
+#  friendly_name: "KaKu Cooker"
+#  homebridge_name: "CKaKu ooker Switch"
 
 #switch.newkaku_014ad3ba_a:
 #  icon: mdi:nintendo-switch
 #  friendly_name: "Kitchen
 #  homebridge_name: "Kitchen Switch
 
-switch.newkaku_01616a32_a:
-  icon: mdi:nintendo-switch
-  friendly_name: "KaKu Bathroom"
-  homebridge_name: "KaKu Bathroom Switch"
+#switch.newkaku_01616a32_a:
+#  icon: mdi:nintendo-switch
+#  friendly_name: "KaKu Bathroom"
+#  homebridge_name: "KaKu Bathroom Switch"
 
-switch.newkaku_014e5906_a:
-  icon: mdi:nintendo-switch
-  friendly_name: "KaKu Testing"
-  homebridge_name: "KaKu Testing"
-
-switch.newkaku_016138ba_a:
-  icon: mdi:nintendo-switch
-  friendly_name: "KaKu Hallway"
-  homebridge_name: "KaKu Hallway Switch"
+#switch.newkaku_016138ba_a:
+#  icon: mdi:nintendo-switch
+#  friendly_name: "KaKu Hallway"
+#  homebridge_name: "KaKu Hallway Switch"
 
 ###########################################################################################
 #
 # SWITCH.PETER_S_ALEXA
 #
 ###########################################################################################
-
-#switch.peter_s_alexa_apps_do_not_disturb_switch:
-#switch.peter_s_alexa_apps_repeat_switch:
-#switch.peter_s_alexa_apps_shuffle_switch:
 
 switch.peter_s_echo_dot_do_not_disturb_switch:
   friendly_name: "Alexa Echo Dot do not disturb"
@@ -285,6 +280,10 @@ switch.peter_s_echo_dot_repeat_switch:
 
 switch.peter_s_echo_dot_shuffle_switch:
   friendly_name: "Alexa Echo Dot suffle"
+
+#switch.peter_s_alexa_apps_do_not_disturb_switch:
+#switch.peter_s_alexa_apps_repeat_switch:
+#switch.peter_s_alexa_apps_shuffle_switch:
 
 #switch.this_device_do_not_disturb_switch:
 #switch.this_device_repeat_switch:

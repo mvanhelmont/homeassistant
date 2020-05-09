@@ -12,7 +12,7 @@ zwave.aeon_labs_zw090_z_stick_gen5_eu:
 
 ###########################################################################################
 #
-# NODE 2 - SWITCH
+# NODE 2 - SWITCH IMAC
 #
 ###########################################################################################
 
@@ -83,7 +83,7 @@ switch.node_2_switch:
 
 ###########################################################################################
 #
-# NODE 3 - SWITCH
+# NODE 3 - SWITCH DININGROOM
 #
 ###########################################################################################
 
@@ -151,7 +151,7 @@ switch.node_3_switch:
 
 ###########################################################################################
 #
-# NODE 4 - SWITCH
+# NODE 4 - SWITCH TOOG
 #
 ###########################################################################################
 
@@ -219,7 +219,7 @@ switch.node_4_switch:
 
 ###########################################################################################
 #
-# NODE 5 - SWITCH
+# NODE 5 - SWITCH KAY
 #
 ###########################################################################################
 
@@ -287,7 +287,7 @@ switch.node_5_switch:
 
 ###########################################################################################
 #
-# NODE 6 - SWITCH
+# NODE 6 - SWITCH PETER
 #
 ###########################################################################################
 
@@ -355,7 +355,7 @@ switch.node_6_switch:
 
 ###########################################################################################
 #
-# NODE 7 - SWITCH
+# NODE 7 - SWITCH COFFEE
 #
 ###########################################################################################
 
@@ -423,7 +423,7 @@ switch.node_7_switch:
 
 ###########################################################################################
 #
-# NODE 8 - SWITCH
+# NODE 8 - SWITCH BANK
 #
 ###########################################################################################
 
@@ -491,7 +491,7 @@ switch.node_8_switch:
 
 ###########################################################################################
 #
-# NODE 9 - SWITCH
+# NODE 9 - SWITCH HALLWAY
 #
 ###########################################################################################
 
@@ -559,7 +559,7 @@ switch.node_9_switch:
 
 ###########################################################################################
 #
-# NODE 10 - MOTION
+# NODE 10 - SWITCH BEDROOM
 #
 ###########################################################################################
 
@@ -627,7 +627,385 @@ switch.node_10_switch:
 
 ###########################################################################################
 #
-# NODE 11 - MOTION
+# NODE 14 - MOTION BEDROOM
+#
+###########################################################################################
+
+zwave.node_14:
+  friendly_name: "PIR Bedroom"
+
+sensor.node_14_alarm_level:
+  friendly_name: "PIR Bedroom Alarm Level"
+
+sensor.node_14_alarm_type:
+  friendly_name: "PIR Bedroom Alarm Type"
+
+sensor.node_14_burglar:
+  friendly_name: "PIR Bedroom Burglar"
+
+sensor.node_14_luminance:
+  friendly_name: "PIR Bedroom Lux"
+  icon: mdi:weather-partly-cloudy
+
+sensor.node_14_sourcenodeid:
+  friendly_name: "PIR Bedroom SourceID"
+
+sensor.node_14_temperature:
+  friendly_name: "PIR Bedroom Temp"
+  unit_of_measurement: "°C"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_14:
+  friendly_name: "PIR Bedroom"
+  device_class: "motion"
+  templates:
+    icon: mdi:motion-sensor
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.node_14_battery_level:
+  friendly_name: "PIR Battery Bedroom"
+
+###########################################################################################
+#
+# NODE 15 - MOTION BATHROOM
+#
+###########################################################################################
+
+zwave.node_17:
+  friendly_name: "PIR Bathroom"
+
+sensor.node_17_alarm_level:
+  friendly_name: "PIR Bathroom Alarm Level"
+
+sensor.node_17_alarm_type:
+  friendly_name: "PIR Bathroom Alarm Type"
+
+sensor.node_17_burglar:
+  friendly_name: "PIR Bathroom Burglar"
+
+sensor.node_17_luminance:
+  friendly_name: "PIR Bathroom Lux"
+  icon: mdi:weather-partly-cloudy
+
+sensor.node_17_sourcenodeid:
+  friendly_name: "PIR Bathroom SourceID"
+
+sensor.node_17_temperature:
+  friendly_name: "PIR Bathroom Temp"
+  unit_of_measurement: "°C"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_17:
+  friendly_name: "PIR Bathroom"
+  device_class: "motion"
+  templates:
+    icon: mdi:motion-sensor
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.node_17_battery_level:
+  friendly_name: "PIR Bathroom Battery"
+
+###########################################################################################
+#
+# NODE 16 - MOTION KITCHEN
+#
+###########################################################################################
+
+zwave.node_16:
+  friendly_name: "PIR Kitchen"
+
+sensor.node_16_alarm_level:
+  friendly_name: "PIR Kitchen Alarm Level"
+
+sensor.node_16_alarm_type:
+  friendly_name: "PIR Kitchen Alarm Type"
+
+sensor.node_16_burglar:
+  friendly_name: "PIR Kitchen Burglar"
+
+sensor.node_16_luminance:
+  friendly_name: "PIR Kitchen Lux"
+  icon: mdi:weather-partly-cloudy
+
+sensor.node_16_sourcenodeid:
+  friendly_name: "PIR Kitchen SourceID"
+
+sensor.node_16_temperature:
+  friendly_name: "PIR Kitchen Temp"
+  unit_of_measurement: "°C"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_16:
+  friendly_name: "PIR Kitchen"
+  device_class: "motion"
+  templates:
+    icon: mdi:motion-sensor
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.node_16_battery_level:
+  friendly_name: "PIR Kitchen Battery"
+
+###########################################################################################
+#
+# NODE 17 - MOTION HALLWAY
+#
+###########################################################################################
+
+zwave.node_15:
+  friendly_name: "PIR Hallway"
+
+sensor.node_15_alarm_level:
+  friendly_name: "PIR Hallway Alarm Level"
+
+sensor.node_15_alarm_type:
+  friendly_name: "PIR Hallway Alarm Type"
+
+sensor.node_15_burglar:
+  friendly_name: "PIR Hallway Burglar"
+
+sensor.node_15_luminance:
+  friendly_name: "PIR Hallway Lux"
+  icon: mdi:weather-partly-cloudy
+
+sensor.node_15_sourcenodeid:
+  friendly_name: "PIR Hallway SourceID"
+
+sensor.node_15_temperature:
+  friendly_name: "PIR Hallway Temp"
+  unit_of_measurement: "°C"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_15:
+  friendly_name: "PIR Hallway"
+  device_class: "motion"
+  templates:
+    icon: mdi:motion-sensor
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.node_15_battery_level:
+  friendly_name: "PIR Hallway Battery"
+
+###########################################################################################
+#
+# NODE 18 - MOTION DININGROOM
+#
+###########################################################################################
+
+zwave.node_18:
+  friendly_name: "PIR Diningroom"
+
+sensor.node_18_alarm_level:
+  friendly_name: "PIR Diningroom Alarm Level"
+
+sensor.node_18_alarm_type:
+  friendly_name: "PIR Diningroom Alarm Type"
+
+sensor.node_18_burglar:
+  friendly_name: "PIR Diningroom Burglar"
+
+sensor.node_18_luminance:
+  friendly_name: "PIR Diningroom Lux"
+  icon: mdi:weather-partly-cloudy
+
+sensor.node_18_sourcenodeid:
+  friendly_name: "PIR Diningroom SourceID"
+
+sensor.node_18_temperature:
+  friendly_name: "PIR Diningroom Temp"
+  unit_of_measurement: "°C"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_18:
+  friendly_name: "PIR Diningroom"
+  device_class: "motion"
+  templates:
+    icon: mdi:motion-sensor
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.node_18_battery_level:
+  friendly_name: "PIR Diningroom Battery"
+
+###########################################################################################
+#
+# NODE 19 - MOTION LIVINGROOM
+#
+###########################################################################################
+
+zwave.node_19:
+  friendly_name: "PIR Livingroom"
+
+sensor.node_19_alarm_level:
+  friendly_name: "PIR Livingroom Alarm Level"
+
+sensor.node_19_alarm_type:
+  friendly_name: "PIR Livingroom Alarm Type"
+
+sensor.node_19_burglar:
+  friendly_name: "PIR Livingroom Burglar"
+
+sensor.node_19_luminance:
+  friendly_name: "PIR Livingroom Lux"
+  icon: mdi:weather-partly-cloudy
+
+sensor.node_19_sourcenodeid:
+  friendly_name: "PIR Livingroom SourceID"
+
+sensor.node_19_temperature:
+  friendly_name: "PIR Livingroom Temp"
+  unit_of_measurement: "°C"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_19:
+  friendly_name: "PIR Livingroom"
+  device_class: "motion"
+  templates:
+    icon: mdi:motion-sensor
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.node_19_battery_level:
+  friendly_name: "PIR Livingroom Battery"
+
+###########################################################################################
+#
+# NODE 20 - MOTION TOILET
+#
+###########################################################################################
+
+zwave.node_20:
+  friendly_name: "PIR Toilet"
+
+sensor.node_20_alarm_level:
+  friendly_name: "PIR Toilet Alarm Level"
+
+sensor.node_20_alarm_type:
+  friendly_name: "PIR Toilet Alarm Type"
+
+sensor.node_20_burglar:
+  friendly_name: "PIR Toilet Burglar"
+
+sensor.node_20_luminance:
+  friendly_name: "PIR Toilet Lux"
+  icon: mdi:weather-partly-cloudy
+
+sensor.node_20_sourcenodeid:
+  friendly_name: "PIR Toilet SourceID"
+
+sensor.node_20_temperature:
+  friendly_name: "PIR Toilet Temp"
+  unit_of_measurement: "°C"
+  templates:
+    icon_color: >-
+      if (state > 38) return 'rgb(181,14,2)';
+      if (state > 32) return 'rgb(214,18,4)';
+      if (state > 27) return 'rgb(255,0,0)';
+      if (state > 21) return 'rgb(255,150,0)';
+      if (state > 16) return 'rgb(255,204,0)';
+      if (state > 10) return 'rgb(0,255,0)';
+      if (state > 4) return 'rgb(4,181,4)';
+      if (state > -1) return 'rgb(0,170,217)';
+      if (state > -7) return 'rgb(0,0,255)';
+      if (state > -12) return 'rgb(121,24,196)';
+      if (state > -18) return 'rgb(176,0,189)';
+      if (state > -23) return 'rgb(189,0,107)';
+      return 'rgb(0,0,0)';
+
+binary_sensor.node_20:
+  friendly_name: "PIR Toilet"
+  device_class: "motion"
+  templates:
+    icon: mdi:motion-sensor
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+
+sensor.node_20_battery_level:
+  friendly_name: "PIR Toilet Battery"
+
+###########################################################################################
+#
+# NODE 11 - MOTION DOOR HALLWAY
 #
 ###########################################################################################
 
@@ -685,7 +1063,7 @@ sensor.node_11_battery_level:
 
 ###########################################################################################
 #
-# NODE 12 - MOTION
+# NODE 12 - MOTION DOOR BEDROOM
 #
 ###########################################################################################
 
@@ -744,7 +1122,7 @@ sensor.node_12_battery_level:
 
 ###########################################################################################
 #
-# NODE 13 - MOTION
+# NODE 13 - MOTION DOOR IMAC
 #
 ###########################################################################################
 
@@ -802,385 +1180,7 @@ sensor.node_13_battery_level:
 
 ###########################################################################################
 #
-# NODE 14 - MOTION
-#
-###########################################################################################
-
-zwave.node_14:
-  friendly_name: "PIR Bedroom"
-
-sensor.node_14_alarm_level:
-  friendly_name: "PIR Bedroom Alarm Level"
-
-sensor.node_14_alarm_type:
-  friendly_name: "PIR Bedroom Alarm Type"
-
-sensor.node_14_burglar:
-  friendly_name: "PIR Bedroom Burglar"
-
-sensor.node_14_luminance:
-  friendly_name: "PIR Bedroom Lux"
-  icon: mdi:weather-partly-cloudy
-
-sensor.node_14_sourcenodeid:
-  friendly_name: "PIR Bedroom SourceID"
-
-sensor.node_14_temperature:
-  friendly_name: "PIR Bedroom Temp"
-  unit_of_measurement: "°C"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-binary_sensor.node_14:
-  friendly_name: "PIR Bedroom"
-  device_class: "motion"
-  templates:
-    icon: mdi:motion-sensor
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.node_14_battery_level:
-  friendly_name: "PIR Battery Bedroom"
-
-###########################################################################################
-#
-# NODE 15 - MOTION
-#
-###########################################################################################
-
-zwave.node_17:
-  friendly_name: "PIR Bathroom"
-
-sensor.node_17_alarm_level:
-  friendly_name: "PIR Bathroom Alarm Level"
-
-sensor.node_17_alarm_type:
-  friendly_name: "PIR Bathroom Alarm Type"
-
-sensor.node_17_burglar:
-  friendly_name: "PIR Bathroom Burglar"
-
-sensor.node_17_luminance:
-  friendly_name: "PIR Bathroom Lux"
-  icon: mdi:weather-partly-cloudy
-
-sensor.node_17_sourcenodeid:
-  friendly_name: "PIR Bathroom SourceID"
-
-sensor.node_17_temperature:
-  friendly_name: "PIR Bathroom Temp"
-  unit_of_measurement: "°C"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-binary_sensor.node_17:
-  friendly_name: "PIR Bathroom"
-  device_class: "motion"
-  templates:
-    icon: mdi:motion-sensor
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.node_17_battery_level:
-  friendly_name: "PIR Bathroom Battery"
-
-###########################################################################################
-#
-# NODE 16 - MOTION
-#
-###########################################################################################
-
-zwave.node_16:
-  friendly_name: "PIR Kitchen"
-
-sensor.node_16_alarm_level:
-  friendly_name: "PIR Kitchen Alarm Level"
-
-sensor.node_16_alarm_type:
-  friendly_name: "PIR Kitchen Alarm Type"
-
-sensor.node_16_burglar:
-  friendly_name: "PIR Kitchen Burglar"
-
-sensor.node_16_luminance:
-  friendly_name: "PIR Kitchen Lux"
-  icon: mdi:weather-partly-cloudy
-
-sensor.node_16_sourcenodeid:
-  friendly_name: "PIR Kitchen SourceID"
-
-sensor.node_16_temperature:
-  friendly_name: "PIR Kitchen Temp"
-  unit_of_measurement: "°C"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-binary_sensor.node_16:
-  friendly_name: "PIR Kitchen"
-  device_class: "motion"
-  templates:
-    icon: mdi:motion-sensor
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.node_16_battery_level:
-  friendly_name: "PIR Kitchen Battery"
-
-###########################################################################################
-#
-# NODE 17 - MOTION
-#
-###########################################################################################
-
-zwave.node_15:
-  friendly_name: "PIR Hallway"
-
-sensor.node_15_alarm_level:
-  friendly_name: "PIR Hallway Alarm Level"
-
-sensor.node_15_alarm_type:
-  friendly_name: "PIR Hallway Alarm Type"
-
-sensor.node_15_burglar:
-  friendly_name: "PIR Hallway Burglar"
-
-sensor.node_15_luminance:
-  friendly_name: "PIR Hallway Lux"
-  icon: mdi:weather-partly-cloudy
-
-sensor.node_15_sourcenodeid:
-  friendly_name: "PIR Hallway SourceID"
-
-sensor.node_15_temperature:
-  friendly_name: "PIR Hallway Temp"
-  unit_of_measurement: "°C"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-binary_sensor.node_15:
-  friendly_name: "PIR Hallway"
-  device_class: "motion"
-  templates:
-    icon: mdi:motion-sensor
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.node_15_battery_level:
-  friendly_name: "PIR Hallway Battery"
-
-###########################################################################################
-#
-# NODE 18 - MOTION
-#
-###########################################################################################
-
-zwave.node_18:
-  friendly_name: "PIR Diningroom"
-
-sensor.node_18_alarm_level:
-  friendly_name: "PIR Diningroom Alarm Level"
-
-sensor.node_18_alarm_type:
-  friendly_name: "PIR Diningroom Alarm Type"
-
-sensor.node_18_burglar:
-  friendly_name: "PIR Diningroom Burglar"
-
-sensor.node_18_luminance:
-  friendly_name: "PIR Diningroom Lux"
-  icon: mdi:weather-partly-cloudy
-
-sensor.node_18_sourcenodeid:
-  friendly_name: "PIR Diningroom SourceID"
-
-sensor.node_18_temperature:
-  friendly_name: "PIR Diningroom Temp"
-  unit_of_measurement: "°C"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-binary_sensor.node_18:
-  friendly_name: "PIR Diningroom"
-  device_class: "motion"
-  templates:
-    icon: mdi:motion-sensor
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.node_18_battery_level:
-  friendly_name: "PIR Diningroom Battery"
-
-###########################################################################################
-#
-# NODE 19 - MOTION
-#
-###########################################################################################
-
-zwave.node_19:
-  friendly_name: "PIR Livingroom"
-
-sensor.node_19_alarm_level:
-  friendly_name: "PIR Livingroom Alarm Level"
-
-sensor.node_19_alarm_type:
-  friendly_name: "PIR Livingroom Alarm Type"
-
-sensor.node_19_burglar:
-  friendly_name: "PIR Livingroom Burglar"
-
-sensor.node_19_luminance:
-  friendly_name: "PIR Livingroom Lux"
-  icon: mdi:weather-partly-cloudy
-
-sensor.node_19_sourcenodeid:
-  friendly_name: "PIR Livingroom SourceID"
-
-sensor.node_19_temperature:
-  friendly_name: "PIR Livingroom Temp"
-  unit_of_measurement: "°C"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-binary_sensor.node_19:
-  friendly_name: "PIR Livingroom"
-  device_class: "motion"
-  templates:
-    icon: mdi:motion-sensor
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.node_19_battery_level:
-  friendly_name: "PIR Livingroom Battery"
-
-###########################################################################################
-#
-# NODE 20 - MOTION
-#
-###########################################################################################
-
-zwave.node_20:
-  friendly_name: "PIR Toilet"
-
-sensor.node_20_alarm_level:
-  friendly_name: "PIR Toilet Alarm Level"
-
-sensor.node_20_alarm_type:
-  friendly_name: "PIR Toilet Alarm Type"
-
-sensor.node_20_burglar:
-  friendly_name: "PIR Toilet Burglar"
-
-sensor.node_20_luminance:
-  friendly_name: "PIR Toilet Lux"
-  icon: mdi:weather-partly-cloudy
-
-sensor.node_20_sourcenodeid:
-  friendly_name: "PIR Toilet SourceID"
-
-sensor.node_20_temperature:
-  friendly_name: "PIR Toilet Temp"
-  unit_of_measurement: "°C"
-  templates:
-    icon_color: >-
-      if (state > 38) return 'rgb(181,14,2)';
-      if (state > 32) return 'rgb(214,18,4)';
-      if (state > 27) return 'rgb(255,0,0)';
-      if (state > 21) return 'rgb(255,150,0)';
-      if (state > 16) return 'rgb(255,204,0)';
-      if (state > 10) return 'rgb(0,255,0)';
-      if (state > 4) return 'rgb(4,181,4)';
-      if (state > -1) return 'rgb(0,170,217)';
-      if (state > -7) return 'rgb(0,0,255)';
-      if (state > -12) return 'rgb(121,24,196)';
-      if (state > -18) return 'rgb(176,0,189)';
-      if (state > -23) return 'rgb(189,0,107)';
-      return 'rgb(0,0,0)';
-
-binary_sensor.node_20:
-  friendly_name: "PIR Toilet"
-  device_class: "motion"
-  templates:
-    icon: mdi:motion-sensor
-    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
-
-sensor.node_20_battery_level:
-  friendly_name: "PIR Toilet Battery"
-
-###########################################################################################
-#
-# NODE 21 - SWITCH
+# NODE 21 - SWITCH DININGROOM DOOR
 #
 ###########################################################################################
 

@@ -7,8 +7,8 @@
 #
 ###########################################################################################
 
-weather.asingaborg:
-  friendly_name: "Weather Asingaborg"
+#weather.asingaborg:
+#  friendly_name: "Weather Asingaborg"
 
-weather.dark_sky:
-  friendly_name: "Weather DarkSky"
+#weather.dark_sky:
+#  friendly_name: "Weather DarkSky"
