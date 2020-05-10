@@ -1,0 +1,16 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://github.com/cyberjunky/home-assistant-p2000
+#
+###########################################################################################
+---
+platform: p2000
+name: "Amsterdam Buitenveldert"
+regios: 13
+disciplines: 1,2,3,4
+radius: 1500
+scan_interval: 30
+latitude: 52.3316
+longitude: 4.8735
