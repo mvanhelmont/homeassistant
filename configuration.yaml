@@ -27,14 +27,14 @@ panel_iframe:
     icon: mdi:z-wave
     url: !secret zwave2mqtt
 
-mqtt:
-  birth_message:
-    topic: 'hass/status'
-    payload: 'online'
-  will_message:
-    topic: 'hass/status'
-    payload: 'offline'
-    
+#mqtt:
+#  birth_message:
+#    topic: 'hass/status'
+#    payload: 'online'
+#  will_message:
+#    topic: 'hass/status'
+#    payload: 'offline'
+
 #nextcloud:
 #  url: !secret nextcloud_url
 #  username: !secret nextcloud_username
