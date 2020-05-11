@@ -15,9 +15,10 @@ binary_sensor.meek_bathroom_lwt:
     icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
-binary_sensor.meek_bedroom_lwt:templates:
-  icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
-  icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
+binary_sensor.meek_bedroom_lwt:
+  templates:
+    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';
+    icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 binary_sensor.meek_dressoir_lwt:
   templates:
