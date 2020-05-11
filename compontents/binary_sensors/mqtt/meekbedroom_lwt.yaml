@@ -1,0 +1,14 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+#
+###########################################################################################
+platform: mqtt
+name: "Meek Bedroom LWT"
+state_topic: "Meek/MeekBedroom/status/LWT"
+payload_on: "Online"
+payload_off: "Offline"
+qos: 1
+device_class: connectivity
