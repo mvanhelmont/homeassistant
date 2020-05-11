@@ -54,3 +54,145 @@
 
     - service_template: switch.turn_off
       entity_id: switch.meek_bedroom
+
+# A VERY DIRTY SOLUTION TO TURN ALL LIGHTS OFF IN MQTT BROKER
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/3"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAA1/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAA1/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAA1/rgb_cct/3"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAA2/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAA2/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAA2/rgb_cct/3"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAA/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAA/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAA/rgb_cct/4"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAA/rgb_cct/3"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAB/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAB/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAC/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAC/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAC/rgb_cct/3"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAC/rgb_cct/4"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAD/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAD/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAD/rgb_cct/3"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAD/rgb_cct/4"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAE/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAE/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAE/rgb_cct/3"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAABB/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAABB/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
