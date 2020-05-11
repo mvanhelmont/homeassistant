@@ -9,8 +9,15 @@
 
     platform: state
     entity_id:
-      - binary_sensor.resillio
       - binary_sensor.milight_hub
+      - binary_sensor.itho_lwt
+      - binary_sensor.meek_bathroom_lwt
+      - binary_sensor.meek_bedroom_lwt
+      - binary_sensor.meek_dressoir_lwt
+      - binary_sensor.meek_hallway_lwt
+      - binary_sensor.meek_kitchen_lwt
+      - binary_sensor.meek_livingroom_lwt
+      - binary_sensor.meek_wc_lwt
     to: "off"
 
   action:
@@ -28,6 +35,13 @@
     entity_id:
       - binary_sensor.resillio
       - binary_sensor.milight_hub
+      - binary_sensor.meek_bathroom_lwt
+      - binary_sensor.meek_bedroom_lwt
+      - binary_sensor.meek_dressoir_lwt
+      - binary_sensor.meek_hallway_lwt
+      - binary_sensor.meek_kitchen_lwt
+      - binary_sensor.meek_livingroom_lwt
+      - binary_sensor.meek_wc_lwt
     to: "on"
 
   action:
