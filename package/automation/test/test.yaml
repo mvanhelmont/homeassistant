@@ -11,12 +11,20 @@
     to: "on"
 
   action:
-    - service: notify.alexa_media
-      data:
-        data:
-          type: announce
-        message: "test"
-        target: media_player.peter_s_echo_dot
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/1"
+        payload: "{'state': 'ON'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/2"
+        payload: "{'state': 'ON'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/3"
+        payload: "{'state': 'ON'}"
 
 - alias: "TEST - trigger statement ATOM off"
   trigger:
@@ -25,6 +33,17 @@
     to: "off"
 
   action:
-    service: light.turn_off
-    data_template:
-      entity_id: light.dressoir_all
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/1"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/2"
+        payload: "{'state': 'OFF'}"
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/0xAAAF/rgb_cct/3"
+        payload: "{'state': 'OFF'}"
