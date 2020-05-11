@@ -6,8 +6,8 @@
 #
 ###########################################################################################
 ---
-customize: !include_dir_merge_named /config/customize/
-customize_glob: !include_dir_merge_named /config/customize_global/
+customize: !include_dir_merge_named /config/package/customize/
+customize_glob: !include_dir_merge_named /config/package/customize_global/
 whitelist_external_dirs:
   - /config
 auth_providers:
