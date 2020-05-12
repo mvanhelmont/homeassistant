@@ -1,0 +1,30 @@
+###########################################################################################
+#
+# SEND A BIRTH SIGNAL MQTT OUT AND ALSO WHEN THERE IS A WILL SIGNAL WHEN OFFLINE HA
+#
+###########################################################################################
+
+- alias: "System - HA Birth MQTT Signal"
+  trigger:
+    - platform: homeassistant
+      event: start
+
+  action:
+    - service: mqtt.publish
+      data:
+        topic: "hass/status"
+        payload: "online"
+
+
+- alias: "System - HA Will MQTT Signal"
+  trigger:
+    - platform: homeassistant
+      event: shutdown
+
+  action:
+    - service: mqtt.publish
+      data:
+        topic: "hass/status"
+        payload: "offline"
+        qos: 0
+        retain: false
