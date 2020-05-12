@@ -75,7 +75,7 @@
 
     - condition: numeric_state
       entity_id: sensor.node_19_luminance
-      above: 181
+      above: 191
 
     - condition: state
       entity_id: switch.mqtt_lux_level_low
