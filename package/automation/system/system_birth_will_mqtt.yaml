@@ -10,6 +10,8 @@
       event: start
 
   action:
+    - delay: "00:00:30"
+
     - service: mqtt.publish
       data:
         topic: "hass/status"
@@ -27,4 +29,4 @@
         topic: "hass/status"
         payload: "offline"
         qos: 0
-        retain: false
+        retain: "false"
