@@ -13,7 +13,7 @@ command_topic: "milight/0xAAA2/rgb_cct/2"
 state_topic: "milight/states/0xAAA2/rgb_cct/2"
 qos: 1
 optimistic: "false"
-retain: "true"
+retain: "false"
 brightness: "true"
 rgb: "true"
 color_temp: "true"
