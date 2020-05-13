@@ -28,15 +28,28 @@ sensors:
   switch_active:
     friendly_name: "Switch "
     value_template: >-
-      {% if states('switch.newkaku_0114ef92_b')== "on" %} Wall {% endif %}
-      {% if states('switch.newkaku_0114ef92_c')== "on" %} Window {% endif %}
-      {% if states('switch.meek_kitchen_seeling')== "on" %} Seeling {% endif %}
-      {% if states('switch.meek_kitchen_sink')== "on" %} Sink {% endif %}
-      {% if states('switch.newkaku_011fdd46_c')== "on" %} Dressoir {% endif %}
-      {% if states('switch.meek_hallway')== "on" %} Hallway {% endif %}
-      {% if states('switch.newkaku_011fdd46_b')== "on" %} Balcony {% endif %}
-      {% if states('switch.meek_bedroom')== "on" %} Bedroom {% endif %}
-      {% if states('switch.meek_bathroom')== "on" %} Bathroom {% endif %}
-      {% if states('switch.meek_toilet')== "on" %} Toilet {% endif %}
-      {% if states('switch.meek_cooking')== "on" %} Cooking {% endif %}
-      {% if states('switch.newkaku_014e5906_a')== "on" %} Testing {% endif %}
+      {% if states('switch.meek_wall') == "on" %} Wall {% endif %}
+      {% if states('switch.meek_window') == "on" %} Window {% endif %}
+      {% if states('switch.meek_livingroom') == "on" %} Livingroom {% endif %}
+      {% if states('switch.meek_kitchen_seeling') == "on" %} Seeling {% endif %}
+      {% if states('switch.meek_kitchen_sink') == "on" %} Sink {% endif %}
+      {% if states('switch.meek_diningtable') == "on" %} Diningroom {% endif %}
+      {% if states('switch.meek_dressoir') == "on" %} Dressoir {% endif %}
+      {% if states('switch.meek_hallway') == "on" %} Hallway {% endif %}
+      {% if states('switch.meek_balcony') == "on" %} Balcony {% endif %}
+      {% if states('switch.meek_bedroom') == "on" %} Bedroom {% endif %}
+      {% if states('switch.meek_bathroom') == "on" %} Bathroom {% endif %}
+      {% if states('switch.meek_toilet') == "on" %} Toilet {% endif %}
+      {% if states('switch.meek_cooking') == "on" %} Cooking {% endif %}
+      {% if states('switch.newkaku_014e5906_a') == "on" %} Testing {% endif %}
+      
+  other_active:
+    friendly_name: "Other "
+    value_template: >-
+      {% if states('switch.mqtt_disable_nest_control') == "on" %} DNC {% endif %}
+      {% if states('switch.mqtt_kay_learning') == "on" %} Kay Learning {% endif %}
+      {% if states('switch.mqtt_lux_level_low') == "on" %} Lux Low {% endif %}
+      {% if states('switch.mqtt_emulate_holiday') == "on" %} Emu. Holiday {% endif %}
+      {% if states('group.circadian_lights') == "on" %} Cir. Lightning {% endif %}
+      {% if states('group.zwave_switches') == "on" %} ZWave Switches {% endif %}
+      {% if states('switch.mqtt_fan_toilet') == "on" %} Toilet Fan {% endif %}
