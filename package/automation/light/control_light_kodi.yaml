@@ -16,6 +16,10 @@
       state: "below_horizon"
 
     - condition: state
+      entity_id: switch.mqtt_scene_goodnight
+      state: "off"
+      
+    - condition: state
       entity_id: switch.mqtt_scene_kodi
       state: "on"
 
