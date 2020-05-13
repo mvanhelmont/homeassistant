@@ -1,0 +1,25 @@
+esphome:
+  name: meek_hallway
+  platform: ESP8266
+  board: esp01_1m
+
+wifi:
+  ssid: "oudenes.photography"
+  password: "Abercrombie1977"
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Meek Hallway Fallback Hotspot"
+    password: "rfI8xrpQaqag"
+
+captive_portal:
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  password: "tf87w(d)"
+
+ota:
+  password: "tf87w(d)"

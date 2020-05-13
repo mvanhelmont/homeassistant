@@ -39,8 +39,8 @@
           - switch.mqtt_scene_tv
           - switch.newkaku_011fad02_c
 
-    - service: remote.turn_off
-      entity_id: remote.logitech_harmony
+#    - service: remote.turn_off
+#      entity_id: remote.logitech_harmony
 
     - delay: 00:00:01
 

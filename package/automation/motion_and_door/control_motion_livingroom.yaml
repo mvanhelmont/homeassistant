@@ -22,6 +22,10 @@
     - condition: state
       entity_id: switch.meek_window
       state: "off"
+      
+    - condition: state
+      entity_id: switch.meek_livingroom
+      state: "off"
 
     - condition: state
       entity_id: switch.mqtt_scene_guests

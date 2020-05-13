@@ -1,0 +1,24 @@
+{
+  "storage_version": 1,
+  "name": "meektest",
+  "comment": null,
+  "esphome_version": "1.14.3",
+  "src_version": 1,
+  "arduino_version": "espressif8266@2.2.3",
+  "address": "meektest.local",
+  "esp_platform": "ESP8266",
+  "board": "esp01_1m",
+  "build_path": "/config/esphome/meektest",
+  "firmware_bin_path": "/data/meektest/.pioenvs/meektest/firmware.bin",
+  "loaded_integrations": [
+    "api",
+    "async_tcp",
+    "captive_portal",
+    "esphome",
+    "logger",
+    "network",
+    "ota",
+    "web_server_base",
+    "wifi"
+  ]
+}
