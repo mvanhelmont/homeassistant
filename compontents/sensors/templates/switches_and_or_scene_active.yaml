@@ -42,14 +42,14 @@ sensors:
       {% if states('switch.meek_toilet') == "on" %} Toilet {% endif %}
       {% if states('switch.meek_cooking') == "on" %} Cooking {% endif %}
       {% if states('switch.newkaku_014e5906_a') == "on" %} Testing {% endif %}
-      
+
   other_active:
     friendly_name: "Other "
     value_template: >-
-      {% if states('switch.mqtt_disable_nest_control') == "on" %} DNC {% endif %}
-      {% if states('switch.mqtt_kay_learning') == "on" %} Kay Learning {% endif %}
-      {% if states('switch.mqtt_lux_level_low') == "on" %} Lux Low {% endif %}
-      {% if states('switch.mqtt_emulate_holiday') == "on" %} Emu. Holiday {% endif %}
-      {% if states('group.circadian_lights') == "on" %} Cir. Lightning {% endif %}
-      {% if states('group.zwave_switches') == "on" %} ZWave Switches {% endif %}
-      {% if states('switch.mqtt_fan_toilet') == "on" %} Toilet Fan {% endif %}
+      {% if states('switch.mqtt_disable_nest_control') == "on" %} DNC, {% endif %}
+      {% if states('switch.mqtt_kay_learning') == "on" %} Kay Learning, {% endif %}
+      {% if states('switch.mqtt_lux_level_low') == "on" %} Lux Low, {% endif %}
+      {% if states('switch.mqtt_emulate_holiday') == "on" %} Emu. Holiday, {% endif %}
+      {% if states('group.circadian_lights') == "on" %} Cir. Lightning, {% endif %}
+      {% if states('group.zwave_switches') == "on" %} ZWave Switches, {% endif %}
+      {% if states('switch.mqtt_fan_toilet') == "on" %} Toilet Fan, {% endif %}
