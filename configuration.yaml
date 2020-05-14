@@ -1,7 +1,5 @@
 ###################################################
-#
 #  Home Assistant Main Configuration File
-#
 ###################################################
 
 #default_config:
@@ -27,9 +25,7 @@ binary_sensor: !include_dir_list compontents/binary_sensors
 browser_mod: !include compontents/configs/browser_mod.yaml
 calendar: !include_dir_list compontents/caldav
 circadian_lighting: !include compontents/configs/circadian_lighting.yaml
-#  max_colortemp: 3800
 customizer: !include compontents/configs/customizer.yaml
-# device_tracker: !include compontents/configs/device_tracker.yaml
 fan: !include_dir_list compontents/fan
 group: !include_dir_merge_named compontents/groups
 frontend: !include compontents/configs/frontend.yaml
@@ -45,14 +41,8 @@ logger: !include compontents/configs/logger.yaml
 media_player: !include_dir_list compontents/media_players
 nest: !include compontents/devices/nest.yaml
 notify: !include_dir_list compontents/configs/notify
-#panel_custom: !include compontents/configs/panel_custom.yaml
 panel_iframe: !include compontents/configs/panel_iframe.yaml
-#  zwave2mqtt:
-#    title: Z-Wave to MQTT
-#    icon: mdi:z-wave
-#    url: !secret zwave2mqtt
 recorder: !include compontents/configs/recorder.yaml
-#remote: !include compontents/devices/remote.yaml
 rflink: !include compontents/devices/rflink.yaml
 sensor: !include_dir_list compontents/sensors
 shell_command: !include compontents/devices/shell_commands.yaml
@@ -60,3 +50,8 @@ speedtestdotnet: !include compontents/configs/speedtest.yaml
 switch: !include_dir_list compontents/switches
 tts: !include compontents/devices/tts.yaml
 weather: !include compontents/configs/weather.yaml
+
+# DISABLED
+# device_tracker: !include compontents/configs/device_tracker.yaml
+# panel_custom: !include compontents/configs/panel_custom.yaml
+# remote: !include compontents/devices/remote.yaml
