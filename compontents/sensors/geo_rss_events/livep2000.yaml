@@ -1,0 +1,4 @@
+platform: geo_rss_events
+name: "Live P2000"
+url: http://feeds.livep2000.nl?r=13&d=1,2,3,4
+unit_of_measurement: 'Incidents'
