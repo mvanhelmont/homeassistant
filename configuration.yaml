@@ -5,12 +5,10 @@
 ###################################################
 
 #default_config:
+#logbook:
 api:
-circadian_lighting:
-  max_colortemp: 3800
 config:
 discovery:
-#logbook:
 map:
 mobile_app:
 person:
@@ -21,25 +19,6 @@ system_health:
 updater:
 zeroconf:
 
-panel_iframe:
-  zwave2mqtt:
-    title: Z-Wave to MQTT
-    icon: mdi:z-wave
-    url: !secret zwave2mqtt
-
-#mqtt:
-#  birth_message:
-#    topic: 'hass/status'
-#    payload: 'online'
-#  will_message:
-#    topic: 'hass/status'
-#    payload: 'offline'
-
-#nextcloud:
-#  url: !secret nextcloud_url
-#  username: !secret nextcloud_username
-#  password: !secret nextcloud_password
-
 automation: !include_dir_merge_list package/automation
 script: !include_dir_merge_named package/scripts
 
@@ -47,6 +26,8 @@ alexa: !include compontents/devices/alexa.yaml
 binary_sensor: !include_dir_list compontents/binary_sensors
 browser_mod: !include compontents/configs/browser_mod.yaml
 calendar: !include_dir_list compontents/caldav
+circadian_lighting: !include compontents/configs/circadian_lighting.yaml
+#  max_colortemp: 3800
 customizer: !include compontents/configs/customizer.yaml
 # device_tracker: !include compontents/configs/device_tracker.yaml
 fan: !include_dir_list compontents/fan
@@ -65,7 +46,11 @@ media_player: !include_dir_list compontents/media_players
 nest: !include compontents/devices/nest.yaml
 notify: !include_dir_list compontents/configs/notify
 #panel_custom: !include compontents/configs/panel_custom.yaml
-#panel_iframe: !include compontents/configs/panel_iframe.yaml
+panel_iframe: !include compontents/configs/panel_iframe.yaml
+#  zwave2mqtt:
+#    title: Z-Wave to MQTT
+#    icon: mdi:z-wave
+#    url: !secret zwave2mqtt
 recorder: !include compontents/configs/recorder.yaml
 #remote: !include compontents/devices/remote.yaml
 rflink: !include compontents/devices/rflink.yaml
