@@ -13,16 +13,16 @@
   condition:
     - condition: state
       entity_id: switch.mqtt_scene_goodnight
-      state: "on"
-
-    - condition: state
-      entity_id: switch.meek_wall
       state: "off"
 
-    - condition: state
-      entity_id: switch.meek_window
-      state: "off"
-      
+#    - condition: state
+#      entity_id: switch.meek_wall
+#      state: "off"
+
+#    - condition: state
+#      entity_id: switch.meek_window
+#      state: "off"
+
     - condition: state
       entity_id: switch.meek_livingroom
       state: "off"
