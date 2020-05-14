@@ -7,6 +7,6 @@
 ###########################################################################################
 ---
 zwave2mqtt:
-title: "Z-Wave2MQTT"
-icon: mdi:z-wave
-url: !secret zwave2mqtt
+  title: "Z-Wave2MQTT"
+  icon: mdi:z-wave
+  url: !secret zwave2mqtt
