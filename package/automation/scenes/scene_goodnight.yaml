@@ -23,11 +23,7 @@
         entity_id:
           - switch.mqtt_lux_level_low
           - switch.mqtt_disable_nest_control
-          - switch.circadian_lighting_circadian_bedroom
-
-    - service: switch.turn_off
-      data:
-        entity_id:
+          - group.circadian_lights
           - switch.mqtt_scene_appletv
           - switch.mqtt_scene_cooking
           - switch.mqtt_scene_daytime
@@ -88,6 +84,9 @@
           - light.dressoir_all
           - light.livingroom_all
           - light.balcony
+
+    - service: switch.turn_off
+      entity_id: switch.newkaku_011fad02_c # OLD KAKU DIMMER
 
     - service_template: input_number.set_value
       data_template:

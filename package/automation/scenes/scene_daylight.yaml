@@ -28,7 +28,9 @@
 
   action:
     - service: switch.turn_on
-      entity_id: switch.mqtt_scene_daytime
+      entity_id:
+        - switch.mqtt_scene_daytime
+        - group.circadian_lights
 
     - service: light.turn_on
       data:
@@ -67,7 +69,7 @@
     - service_template: input_number.set_value
       data_template:
         entity_id: input_number.fullykiosk_brightness_slider
-        value: 100
+        value: 80
 
     - service_template: "{{ 'light.turn_on' if is_state('binary_sensor.node_17', 'on') else 'light.turn_off' }}"
       entity_id: light.bathroom_all
