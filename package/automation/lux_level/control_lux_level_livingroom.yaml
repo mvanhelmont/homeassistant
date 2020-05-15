@@ -31,20 +31,6 @@
       entity_id: switch.mqtt_scene_guests
       state: "off"
 
-    - condition: or
-      conditions:
-        - condition: state
-          entity_id: binary_sensor.node_18 # Motion Diningroom
-          state: 'on'
-          for:
-            seconds: 25
-            
-        - condition: state
-          entity_id: binary_sensor.node_19 # Motion Livingroom
-          state: 'on'
-          for:
-            seconds: 25
-
   action:
     - service: light.turn_on
       entity_id:
