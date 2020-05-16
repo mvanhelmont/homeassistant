@@ -9,4 +9,5 @@
 platform: mqtt
 name: "Meek Bedroom Uptime"
 state_topic: "Meek/MeekBedroom/uptime/minutes"
-value_template: "{{ value_json / 60 }}"
+value_template: "{{ (value_json / 60 |float)|round(0) }}"
+unit_of_measurement: "Hours"
