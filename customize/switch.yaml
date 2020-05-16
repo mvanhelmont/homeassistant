@@ -205,6 +205,16 @@ switch.meek_livingroom:
   friendly_name: "Livingroom"
   homebridge_name: "Livingroom Switch"
 
+switch.meek_wall:
+  icon: mdi:nintendo-switch
+  friendly_name: "Wall"
+  homebridge_name: "Wall Switch"
+
+switch.meek_window:
+  icon: mdi:nintendo-switch
+  friendly_name: "Window"
+  homebridge_name: "Window Switch"
+
 switch.meek_diningtable:
   icon: mdi:nintendo-switch
   friendly_name: "Diningroom"
