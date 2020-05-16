@@ -8,6 +8,6 @@
 ---
 platform: mqtt
 name: "Meek Toilet Uptime"
-state_topic: "Meek/MeekToilet/uptime/minutes"
+state_topic: "Meek/MeekWC/uptime/minutes"
 value_template: "{{ (value_json / 60 |float)|round(0) }}"
 unit_of_measurement: "Hours"
