@@ -1,0 +1,12 @@
+###########################################################################################
+#
+# SENSOR MQTT
+#
+# https://www.home-assistant.io/integrations/sensor.mqtt/
+#
+###########################################################################################
+---
+platform: mqtt
+name: "Meek Dressoir Uptime"
+state_topic: "Meek/MeekDressoir/uptime/minutes"
+value_template: "{{ value_json / 60 }}"
