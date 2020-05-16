@@ -32,6 +32,9 @@
       state: "off"
 
   action:
+    - service: switch.turn_off
+      entity_id: group.circadian_lights
+
     - service: light.turn_on
       entity_id:
         - light.livingroom_all
@@ -47,6 +50,11 @@
       data_template:
         media_player: media_player.this_device
         say_lux_evening_on: "true"
+
+    - delay: 00:00:15
+
+    - service: switch.turn_on
+      entity_id: group.circadian_lights
 
 - alias: "Control - Lux Control Livingroom Off"
   trigger:
