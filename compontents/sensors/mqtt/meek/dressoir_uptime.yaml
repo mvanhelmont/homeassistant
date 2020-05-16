@@ -7,6 +7,6 @@
 ###########################################################################################
 ---
 platform: mqtt
-name: "Meek Bedroom Uptime"
-state_topic: "Meek/MeekBedroom/uptime/minutes"
+name: "Meek Dressoir Uptime"
+state_topic: "Meek/MeekDressoir/uptime/minutes"
 value_template: "{{ value_json / 60 }}"
