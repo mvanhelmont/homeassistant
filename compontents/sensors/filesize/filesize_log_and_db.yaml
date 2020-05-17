@@ -1,12 +1,9 @@
 ###########################################################################################
-#
 # SENSOR FIlESIZE
-#
 # https://www.home-assistant.io/integrations/filesize/
-#
 ###########################################################################################
 
---- 
+---
 platform: filesize
 file_paths:
   - /config/home-assistant.log

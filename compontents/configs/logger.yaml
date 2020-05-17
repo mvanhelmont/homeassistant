@@ -1,11 +1,7 @@
 ###########################################################################################
-#
 # LOGGER
-#
 # https://www.home-assistant.io/integrations/logger/
-#
 # critical < fatal < error < warning < warn < info < debug < notset
-#
 ###########################################################################################
 ---
 default: error

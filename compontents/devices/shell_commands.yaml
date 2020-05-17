@@ -1,9 +1,6 @@
 ###########################################################################################
-#
 # SHELL_COMMAND
-#
 # https://www.home-assistant.io/integrations/shell_command/
-#
 ###########################################################################################
 ---
 fullykiosk_brightness_slider: !secret fullykiosk_brightness_slider

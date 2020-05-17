@@ -1,9 +1,6 @@
 ###########################################################################################
-#
 # HOMEKIT
-#
 # https://www.home-assistant.io/integrations/homekit/
-#
 ###########################################################################################
 ---
 auto_start: "true"
@@ -84,7 +81,7 @@ filter:
     - sensor.node_18_temperature
     - sensor.node_19_temperature
     - sensor.node_20_temperature
-    
+
   exclude_entities:
     - binary_sensor.bedroom_nest_protect_online
     - binary_sensor.dining_room_nest_protect_online

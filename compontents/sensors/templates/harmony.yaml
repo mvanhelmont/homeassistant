@@ -1,17 +1,14 @@
 ###########################################################################################
-#
 # SENSOR TEMPLATE
-#
 # https://www.home-assistant.io/integrations/template/
-#
-########################################################################################### 
+###########################################################################################
 ---
 platform: template
 sensors:
   harmony:
     friendly_name: "Harmony Status"
     value_template: >-
-      {% if states.remote.logitech_harmony.attributes.current_activity == "PowerOff" %}         
+      {% if states.remote.logitech_harmony.attributes.current_activity == "PowerOff" %}
         off
       {% elif states.remote.logitech_harmony.attributes.current_activity == "AppleTV" %}
         apple_tv

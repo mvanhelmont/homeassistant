@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # THEMES
-#
 ###########################################################################################
 summer_breeze:
   lovelace-background: 'center / cover no-repeat url("/local/background.jpg") fixed' #Background-image

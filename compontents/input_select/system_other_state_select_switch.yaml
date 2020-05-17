@@ -1,9 +1,6 @@
 ###########################################################################################
-#
 # INPUT_SELECT
-#
 # https://www.home-assistant.io/integrations/input_select/
-#
 ###########################################################################################
 ---
 system_other_state_select_switch:
@@ -15,5 +12,5 @@ system_other_state_select_switch:
     - "HP Printer"
     - "ITHO"
     - "Milight Hub"
-    - "RDW Toyota" 
+    - "RDW Toyota"
   initial: "Home Assistant Update"
