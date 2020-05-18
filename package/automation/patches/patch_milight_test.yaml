@@ -6,25 +6,29 @@
   trigger:
 
     platform: mqtt
-    topic: milight/updates/+/rgbw_cct/0
+    topic: "milight/updates/+/rgbw_cct/0"
 
   action:
     - service: mqtt.publish
       data_template:
         topic: "milight/{{ trigger.topic.split('/')[2] }}/rgbw_cct/1"
-        payload_template: {{ trigger.payload }}
+        payload_template: >
+          {{ trigger.payload }}
 
     - service: mqtt.publish
       data_template:
         topic: "milight/{{ trigger.topic.split('/')[2] }}/rgbw_cct/2"
-        payload_template: {{ trigger.payload }}
+        payload_template: >
+          {{ trigger.payload }}
 
     - service: mqtt.publish
       data_template:
         topic: "milight/{{ trigger.topic.split('/')[2] }}/rgbw_cct/3"
-        payload_template: {{ trigger.payload }}
+        payload_template: >
+          {{ trigger.payload }}
 
     - service: mqtt.publish
       data_template:
         topic: "milight/{{ trigger.topic.split('/')[2] }}/rgbw_cct/4"
-        payload_template: {{ trigger.payload }}
+        payload_template: >
+          {{ trigger.payload }}
