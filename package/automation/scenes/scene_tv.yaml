@@ -74,7 +74,7 @@
          {% elif states('sensor.holiday') == 'Halloween' %} script.tv_halloween
          {% elif states('sensor.holiday') == 'Kingsday' %} script.tv_kingsday
          {% elif states('sensor.holiday') == 'Birthday' %} script.tv_birthday
-         {% else %} script.evening_normal
+         {% else %} script.tv_normal
          {% endif %}
 
     - service: homeassistant.turn_on
