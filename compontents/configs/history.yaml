@@ -12,7 +12,7 @@ include:
     - device_tracker.peter_iphone_geofency
     - device_tracker.1717fe36_3c70_4599_963c_b70b6ee95eba
     - device_tracker.peter_iphone_ha
-    # The rest
+
     - light.bathroom_all
     - light.bedroom_all
     - light.hallway
@@ -21,6 +21,7 @@ include:
     - light.livingroom_all
     - light.kitchen_all
     - light.sink_all
+    
     - binary_sensor.node_14 # Motion Bedroom
     - binary_sensor.node_17 # Motion Bathroom
     - binary_sensor.node_16 # Motion Kitchen
@@ -31,6 +32,20 @@ include:
     - binary_sensor.neo_diningroomdoor_custom_sensor # Sensor Diningroom Door
     - binary_sensor.neo_bedroomdoor_custom_sensor # Sensor Bedroom Door
     - sensor.fibaro_frontdoor_custom_sensor
+
+    - switch.meek_kitchen_seeling
+    - switch.meek_kitchen_sink
+    - switch.meek_hallway
+    - switch.meek_bedroom
+    - switch.meek_bathroom
+    - switch.meek_toilet
+    - switch.meek_cooking
+    - switch.meek_dressoir
+    - switch.meek_diningtable
+    - switch.meek_wall
+    - switch.meek_window
+    - switch.meek_balcony
+    - switch.newkaku_014e5906_a
 
 exclude:
   entities:
