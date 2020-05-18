@@ -1,0 +1,30 @@
+###########################################################################################
+# PATCH WHEN GROUP 0 IS ON OR OFF THE CORRECT STATUS WILL SEND TO MILIGHT HUB FOR ALL LIGHTS INSIDE GROUP
+###########################################################################################
+- alias: "ALL zones MiLight repeater"
+  initial_state: True
+  trigger:
+
+    platform: mqtt
+    topic: milight/updates/+/rgbw_cct/0
+
+  action:
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/{{ trigger.topic.split('/')[2] }}/rgbw_cct/1"
+        payload_template: {{ trigger.payload }}
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/{{ trigger.topic.split('/')[2] }}/rgbw_cct/2"
+        payload_template: {{ trigger.payload }}
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/{{ trigger.topic.split('/')[2] }}/rgbw_cct/3"
+        payload_template: {{ trigger.payload }}
+
+    - service: mqtt.publish
+      data_template:
+        topic: "milight/{{ trigger.topic.split('/')[2] }}/rgbw_cct/4"
+        payload_template: {{ trigger.payload }}
