@@ -33,6 +33,8 @@
     - service: switch.turn_off
       entity_id: group.circadian_lights
 
+    - delay: 00:00:03
+
     - service: light.turn_on
       entity_id:
         - light.livingroom_all
