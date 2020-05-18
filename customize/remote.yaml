@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # REMOTE
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 remote.logitech_harmony:
   friendly_name: "Logitech Harmony Hub"
 

@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # INPUT_NUMBER
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 input_number.fullykiosk_brightness_slider:
   friendly_name: "FKB Brightness"
   icon: mdi:brightness-percent

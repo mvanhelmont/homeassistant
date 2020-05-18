@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # MEDIAPLAYER
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 media_player.browser_ae1b43e7_eb57c683:
   friendly_name: "Fully Kiosk Media Player"
 
@@ -24,5 +20,3 @@ media_player.browser_d519dbc2_9d8ae50c:
 
 media_player.peter_s_alexa_apps:
   friendly_name: "Alexa App on iPhone"
-
-#media_player.this_device:

@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # PERSON
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 person.kay_acar:
   friendly_name: "Kay"
   entity_picture: /local/images/kay-home-grey.jpg

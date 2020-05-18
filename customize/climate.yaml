@@ -1,11 +1,7 @@
----
 ###########################################################################################
-#
 # CLIMATE
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 climate.entryway:
   friendly_name: "Nest Thermostat"

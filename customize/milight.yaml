@@ -1,9 +1,7 @@
 ###########################################################################################
-#
 # BINARY_SENSOR
-#
 ###########################################################################################
-
+---
 #binary_sensor.milight_hub:
 #  templates:
 #    icon: if (state === 'on') return 'mdi:server-network'; return 'mdi:server-network-off';

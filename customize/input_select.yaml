@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # INPUT_SELECT
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 input_select.radio_selector:
   friendly_name: "Select Player"
   icon: mdi:speaker-wireless

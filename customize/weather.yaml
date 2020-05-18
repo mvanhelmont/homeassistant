@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # WEATHER
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 #weather.asingaborg:
 #  friendly_name: "Weather Asingaborg"
 

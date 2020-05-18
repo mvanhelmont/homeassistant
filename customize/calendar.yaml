@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # CALENDAR IOS
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 calendar.vangrail:
   friendly_name: "iOS Vangrail"
 

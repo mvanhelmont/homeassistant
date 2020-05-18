@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # SCRIPT
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 script.stream_radio:
   friendly_name: Start Playing
   icon: mdi:play

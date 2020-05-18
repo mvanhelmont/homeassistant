@@ -1,8 +1,6 @@
 ---
 ###########################################################################################
-#
 # BINARY_SENSOR MQTT LWT CONNECTION STATUS
-#
 ###########################################################################################
 
 binary_sensor.itho_lwt:
@@ -46,11 +44,8 @@ binary_sensor.meek_wc_lwt:
     icon_color: if (state === 'on') return 'rgba(251, 214, 67,1)'; return 'rgba(71,116,157,1)';
 
 ###########################################################################################
-#
 # BINARY_SENSOR
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
 
 binary_sensor.hp_printer:
@@ -122,9 +117,7 @@ binary_sensor.neo_diningroomdoor_custom_sensor:
     icon_color: if (state === 'on') return 'rgba(251,214,67,1)'; return 'rgba(71,116,157,1)';
 
 ###########################################################################################
-#
 # BINARY_SENSOR CLIMATE
-#
 ###########################################################################################
 
 binary_sensor.bedroom_nest_protect_online:
@@ -167,9 +160,7 @@ binary_sensor.asingaborg_away:
   friendly_name: "Nest Thermostat away"
 
 ###########################################################################################
-#
 # BINARY_SENSOR MILIGHT
-#
 ###########################################################################################
 
 binary_sensor.milight_hub:

@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # INPUT_BOOLEAN
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 input_boolean.circadian_ligting_enabler:
   friendly_name: "Circadian Light Enabler"
   homebridge_name: "Cir Light Enabler"

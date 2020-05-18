@@ -1,12 +1,8 @@
----
 ###########################################################################################
-#
 # GROUP
-#
 # https://www.home-assistant.io/docs/configuration/customizing-devices/
-#
 ###########################################################################################
-
+---
 group.door_sensors:
   friendly_name: "Group Door Sensors"
   templates:
