@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # NEST CONTROL TEMP BASED ON SOMEONE HOME AND TEMP INSIDE AND OUTSIDE
-#
 ###########################################################################################
 
 - alias: "Control - Nest Control Someone Home"

@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # CONTROL DININGROOM LIGHTS BASED ON DINIGROOM SENSOR
-#
 ###########################################################################################
 
 - alias: "Door Sensor - Diningroom door open Diningroom light off"

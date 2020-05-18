@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # NOTIFY WHEN NEW HOME ASSISTANRT UPDATE IS AVAILABLE
-#
 ###########################################################################################
 
 - alias: "Notification - Update Available Notification"

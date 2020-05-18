@@ -1,12 +1,10 @@
 ###########################################################################################
-#
 # SYSTEM FKB CHANGE BRIGHTNESS
-#
 ###########################################################################################
 
 - alias: "System - FKB Change Brightness"
   trigger:
-    
+
     platform: state
     entity_id: input_number.fullykiosk_brightness_slider
 

@@ -1,7 +1,5 @@
 ###########################################################################################
-#
-# LIVINGROOM AND DINGROOM CONTROL LIGHTS BASED ON LUX LEVEL
-#
+# LIVINGROOM AND DINGROOM CONTROL LIGHTS BASED ON LUX LEVEL ON STATUS
 ###########################################################################################
 
 - alias: "Control - Lux Control Livingroom On"
@@ -60,6 +58,9 @@
     - service: switch.turn_on
       entity_id: group.circadian_lights
 
+###########################################################################################
+# LIVINGROOM AND DINGROOM CONTROL LIGHTS BASED ON LUX LEVEL OFF STATUS
+###########################################################################################
 - alias: "Control - Lux Control Livingroom Off"
   trigger:
 
@@ -90,7 +91,7 @@
     - condition: state
       entity_id: switch.mqtt_scene_goodnight
       state: "off"
-      
+
   action:
     - service: light.turn_on
       entity_id:

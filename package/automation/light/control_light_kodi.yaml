@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # KODI CONTROL LIGHTS RUN SCRIPT BASED ON STATUS
-#
 ###########################################################################################
 
 - alias: "Control - Kodi Status"
@@ -18,7 +16,7 @@
     - condition: state
       entity_id: switch.mqtt_scene_goodnight
       state: "off"
-      
+
     - condition: state
       entity_id: switch.mqtt_scene_kodi
       state: "on"

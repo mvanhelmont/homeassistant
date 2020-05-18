@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # APPLETV CONTROL LIGHTS RUN SCRIPT BASTED ON STATUS
-#
 ###########################################################################################
 
 - alias: "Control - AppleTV Status"
@@ -18,7 +16,7 @@
     - condition: state
       entity_id: switch.mqtt_scene_goodnight
       state: "off"
-      
+
     - condition: state
       entity_id: switch.mqtt_scene_appletv
       state: "on"

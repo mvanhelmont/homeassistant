@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # SEND A BIRTH SIGNAL MQTT OUT AND ALSO WHEN THERE IS A WILL SIGNAL WHEN OFFLINE HA
-#
 ###########################################################################################
 
 - alias: "System - HA Birth MQTT Signal"

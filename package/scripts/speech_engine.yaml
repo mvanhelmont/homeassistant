@@ -1,7 +1,5 @@
 ###########################################################################################
-#
-# SPEAK ENGINE
-#
+# SPEAK ENGINE - NOTIFY SPEECH
 ###########################################################################################
 
 engine_notify_speech:
@@ -12,6 +10,10 @@ engine_notify_speech:
       media_player: "{{ media_player }}"
       message: "{{ message }}"
       say_greeting: "false"
+
+###########################################################################################
+# SPEAK ENGINE - SAY
+###########################################################################################
 
 engine_say:
   alias: "TTS Say Briefing Engine"
@@ -35,6 +37,10 @@ engine_say:
         media_player: "{{ media_player }}"
         briefing: !include ../../package/templates/briefing.yaml
         title: "{{ title }}"
+
+###########################################################################################
+# SPEAK ENGINE - PROSESSING
+###########################################################################################
 
 engine_speech_processing:
   alias: "TTS Processing Engine"

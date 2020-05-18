@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # SCENE FOR KODI WHEN SUN BELOW HORIZON TURN LIGHTS ON BASED ON STATUS KODI
-#
 ###########################################################################################
 
 - alias: "Scene - Kodi"
@@ -40,7 +38,7 @@
       data:
         entity_id: light.browser_ae1b43e7_eb57c683
         brightness_pct: 50
-        
+
     - service: switch.turn_on
       entity_id: switch.mqtt_scene_kodi
 

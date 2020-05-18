@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # NEST ENABLE/DISABLE CONTROL NEST TEMP BASED ON TEMP INSIDE AND OUTSIDE
-#
 ###########################################################################################
 
 - alias: "Control - Disable Nest Control"

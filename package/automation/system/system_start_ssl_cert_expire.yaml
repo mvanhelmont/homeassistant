@@ -1,7 +1,5 @@
 ###########################################################################################
-#
 # SYSTEM ENABLE RANDOM DOORS OPEN AUTOMATION AFTER HA START OTHERWISE VALUES ARE INCORRECT
-#
 ###########################################################################################
 
 - alias: "System - Restart SSL Cert after HA is started"
