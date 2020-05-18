@@ -9,6 +9,12 @@
       entity_id: sensor.node_19_luminance
 
   condition:
+    - condition: numeric_state
+      entity_id: sensor.node_19_luminance
+      below: 180
+      for:
+        minutes: 5
+
     - condition: state
       entity_id: sun.sun
       state: "above_horizon"
@@ -21,16 +27,8 @@
       entity_id: binary_sensor.sensor_manual_family_home
       state: "on"
 
-    - condition: numeric_state
-      entity_id: sensor.node_19_luminance
-      below: 180
-
     - condition: state
       entity_id: switch.mqtt_scene_guests
-      state: "off"
-
-    - condition: state
-      entity_id: switch.mqtt_scene_goodnight
       state: "off"
 
   action:
@@ -75,6 +73,8 @@
     - condition: numeric_state
       entity_id: sensor.node_19_luminance
       above: 191
+      for:
+        minutes: 10
 
     - condition: state
       entity_id: switch.mqtt_lux_level_low
@@ -86,10 +86,6 @@
 
     - condition: state
       entity_id: switch.mqtt_scene_guests
-      state: "off"
-
-    - condition: state
-      entity_id: switch.mqtt_scene_goodnight
       state: "off"
 
   action:
