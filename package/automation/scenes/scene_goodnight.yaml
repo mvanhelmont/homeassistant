@@ -83,8 +83,13 @@
           - light.livingroom_all
           - light.balcony
 
-    - service: switch.turn_off
-      entity_id: switch.newkaku_011fad02_c # OLD KAKU DIMMER
+    - service: light.turn_on
+      data_template:
+        entity_id: light.newkaku_01401eb6_a
+        brightness_pct: >-
+          {% if states('switch.mqtt_kay_learning') == 'on' %} 100
+          {% else %} 0
+          {% endif %}
 
     - service_template: input_number.set_value
       data_template:
